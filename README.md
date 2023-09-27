@@ -27,3 +27,24 @@ Validate Lua syntax in samples:
 find lua/ -name '*.lua' -print0 | xargs --null -i lua {}
 find lua/ -name '*.lua' -print0 | xargs --null -i luajit {}
 ```
+
+#### TODO
+
+- добавить названия бенчмарков
+- добавить комменты для багов
+- сниппеты из книжки CERN
+- Tarantool's regression testsuite, https://github.com/tarantool/tarantool/tree/master/test
+- luajit-tests, https://github.com/tarantool/luajit/tree/tarantool/master/test/LuaJIT-tests
+- lua-Harness-tests, https://github.com/tarantool/luajit/tree/tarantool/master/test/lua-Harness-tests
+- tarantool-tests, https://github.com/tarantool/luajit/tree/tarantool/master/test/tarantool-tests
+- https://github.com/facebookresearch/CParser
+- https://github.com/intxparts/LuaModules
+- https://github.com/safeteeWow/LibDeflate
+- https://github.com/somesocks/lua-lockbox
+- https://luarocks.org/modules/mpeterv/sha1
+- https://www.zash.se/lua-cbor.html
+- https://github.com/tst2005/lua-utf8string
+- https://github.com/justincormack/ljsyscall
+- https://github.com/Wiladams/LJIT2libc
+- https://github.com/luafun/luafun
+- https://springrts.com/wiki/Lua_Performance
