@@ -1,0 +1,1 @@
+BuildTestCLib(testoomframe testoomframe.c)

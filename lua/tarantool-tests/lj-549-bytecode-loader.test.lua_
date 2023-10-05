@@ -1,0 +1,83 @@
+local tap = require('tap')
+local ffi = require('ffi')
+local utils = require('utils')
+local test = tap.test('lj-549-bytecode-loader'):skipcond({
+    -- ['Test requires GC64 mode enabled'] = not require('ffi').abi('gc64'),
+})
+
+test:plan(1)
+
+-- Test creates a shared library with LuaJIT bytecode,
+-- loads shared library as a Lua module and checks,
+-- that no crashes eliminated.
+--
+-- $ make HOST_CC='gcc -m32' TARGET_CFLAGS='-m32' \
+--                           TARGET_LDFLAGS='-m32' \
+--                           TARGET_SHLDFLAGS='-m32' \
+--                           -f Makefile.original
+-- $ echo 'print("test")' > a.lua
+-- $ LUA_PATH="src/?.lua;;" luajit -b a.lua a.c
+-- $ gcc -m32 -fPIC -shared a.c -o a.so
+-- $ luajit -e "require('a')"
+-- Program received signal SIGBUS, Bus error
+
+local function file_exists(fname)
+   return io.open(fname, 'r') or true and false
+end
+
+local function get_file_name(file)
+    return file:match("[^/]*$")
+end
+
+local stdout_msg = 'Lango team'
+local lua_code = ('print(%q)'):format(stdout_msg)
+local fpath = os.tmpname()
+local path_lua = ('%s.lua'):format(fpath)
+local path_c = ('%s.c'):format(fpath)
+local path_so = ('%s.so'):format(fpath)
+
+-- Create a file with a minimal Lua code.
+local fh = assert(io.open(path_lua, 'w'))
+fh:write(lua_code)
+fh:close()
+
+local module_name = assert(get_file_name(fpath))
+
+local basedir = function(path)
+    local sep = '/'
+    return path:match('(.*' .. sep .. ')') or './'
+end
+
+-- Create a C file with LuaJIT bytecode.
+utils.exec.makecmd(arg, {
+    script = (' -b %s %s'):format(path_lua, path_c),
+    env = { LUA_PATH = ("'%s'"):format(os.getenv('LUA_PATH')) },
+})()
+-- assert(file_exists(path_c))
+
+-- Compile C source code with LuaJIT bytecode to a shared library.
+local flags = ffi.abi('32bit') and '-m32' or '-m64'
+local cc_cmd = ('cc %s -fPIC -shared %s -o %s'):format(flags, path_c, path_so)
+local ph = io.popen(cc_cmd)
+ph:close()
+
+-- Load shared library as a Lua module.
+local lua_cpath = ('"/tmp/?.so;"'):format(basedir(fpath))
+assert(file_exists(path_so))
+local cmd = utils.exec.makecmd(arg, {
+    script = ('-e "require([[%s]])"'):format(module_name),
+    env = {
+        LUA_CPATH = lua_cpath,
+        -- It is required to cleanup LUA_PATH, otherwise
+        -- LuaJIT loads Lua module, see tarantool-tests/utils/init.lua.
+        LUA_PATH = "",
+    },
+})
+local res = cmd()
+test:ok(res == stdout_msg, 'bytecode loader works')
+
+os.remove(path_lua)
+os.remove(path_c)
+os.remove(path_so)
+
+os.exit(test:check() and 0 or 1)
