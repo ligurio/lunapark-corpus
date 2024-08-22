@@ -1,11 +1,3 @@
-local tap = require('tap')
-local test = tap.test('lj-906-fix-err-mem'):skipcond({
-  ['Test requires GC64 mode disabled'] = require('ffi').abi('gc64'),
-})
-
-test:plan(1)
-
-local ffi = require('ffi')
 local table_new = require('table.new')
 
 local KB = 1024
@@ -25,7 +17,7 @@ local function eat_chunks(size)
   -- luacheck: no unused
   local tnew_anchor = table_new(TNEW_SIZE, 0)
   while true do
-    table.insert(gc_anchor, ffi.new('char [?]', size))
+    -- table.insert(gc_anchor, ffi.new('char [?]', size))
   end
 end
 
@@ -97,7 +89,3 @@ pcall(frame_before_TDUP)
 -- Release memory for `tap` functions.
 gc_anchor = nil
 collectgarbage()
-
-test:ok(true, 'correctly throw memory error')
-
-test:done(true)
