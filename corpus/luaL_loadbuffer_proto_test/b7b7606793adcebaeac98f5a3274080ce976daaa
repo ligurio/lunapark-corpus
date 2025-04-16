@@ -1,0 +1,100 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "*"
+                  }
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      var {
+                      }
+                    }
+                    exp {
+                      nil: 51456
+                    }
+                  }
+                }
+                vars {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: ":"
+                  }
+                }
+                vars {
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: false
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            true: 0
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

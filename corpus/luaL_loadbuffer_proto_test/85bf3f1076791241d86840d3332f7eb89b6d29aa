@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "setme"
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            exp {
+              unary {
+                unop {
+                  length: 11777
+                }
+                exp {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+              negate: 4
+            }
+            exp {
+              true: 536870912
+            }
+          }
+        }
+        expressions {
+          number: -415.5
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

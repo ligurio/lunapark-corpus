@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: "]"
+          num: 0
+        }
+        names {
+          name: "\300"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                      binary {
+                                        leftexp {
+                                          number: 0
+                                        }
+                                        binop {
+                                          add: 0
+                                        }
+                                        rightexp {
+                                          binary {
+                                            leftexp {
+                                              str: "0.3E2"
+                                            }
+                                            binop {
+                                              mult: 0
+                                            }
+                                            rightexp {
+                                              number: -2.9740338169555661e+284
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    binop {
+                                      concat: 0
+                                    }
+                                    rightexp {
+                                      str: "0.3E2"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              sub: 2
+                            }
+                            rightexp {
+                              number: 3.3156184727898e-316
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+}

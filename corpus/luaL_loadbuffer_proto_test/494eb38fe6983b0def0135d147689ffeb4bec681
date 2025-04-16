@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              unary {
+                unop {
+                  negate: 0
+                }
+                exp {
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              negate: 0
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                  ellipsis: "file:seek"
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          nil: 2097152
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  concat: 43264
+                }
+                rightexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          number: -5.0000000000000071
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          str: "e3333"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

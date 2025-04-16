@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 0
+          }
+          binop {
+            and: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greater: 1667592704
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            call {
+              namedArgs {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        str: "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+                      }
+                    }
+                  }
+                }
+                name {
+                  name: "\\027\\000\\000\\000\\000\\000\\000\\000"
+                  num: 2048
+                }
+                args {
+                }
+              }
+            }
+            semicolon: false
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

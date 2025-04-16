@@ -1,0 +1,114 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        number: 1.3981012991296586e-76
+      }
+      first {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "or"
+                  }
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                and: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            greater: 0
+          }
+          rightexp {
+            ellipsis: ",\\000\\000\\000"
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                          indexname {
+                            prefixexp {
+                            }
+                            Name: "or"
+                          }
+                        }
+                      }
+                      explist {
+                        explast {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "do"
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        number: 0
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

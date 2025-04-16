@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: 0
+      }
+      stopexp {
+        number: 2
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                          vars {
+                            indexexpr {
+                              prefixexp {
+                              }
+                              exp {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                  }
+                                  rightexp {
+                                    true: 0
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    laststat {
+                      break: 4
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            indexname {
+                              prefixexp {
+                              }
+                              Name: "require"
+                            }
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 83886080
+  }
+}

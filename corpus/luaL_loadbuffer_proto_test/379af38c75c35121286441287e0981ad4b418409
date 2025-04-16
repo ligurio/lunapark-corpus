@@ -1,0 +1,157 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+        vars {
+        }
+        vars {
+        }
+      }
+      explist {
+        explast {
+          function {
+            body {
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        expressions {
+                        }
+                        expressions {
+                        }
+                        expressions {
+                        }
+                        expressions {
+                          str: "6"
+                        }
+                        explast {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                      expression {
+                                        binary {
+                                          leftexp {
+                                          }
+                                          binop {
+                                            exp: 0
+                                          }
+                                          rightexp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                          false: 0
+                                        }
+                                        value {
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                          false: 0
+                                        }
+                                        value {
+                                          unary {
+                                            unop {
+                                              negate: 0
+                                            }
+                                            exp {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                          false: 0
+                                        }
+                                        value {
+                                          ellipsis: ""
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+  }
+}

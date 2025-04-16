@@ -1,0 +1,133 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            lessEqual: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    lastSep {
+                      comma: 4
+                    }
+                  }
+                }
+              }
+              binop {
+                sub: 16
+              }
+              rightexp {
+                false: 0
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            lessEqual: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                false: 0
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

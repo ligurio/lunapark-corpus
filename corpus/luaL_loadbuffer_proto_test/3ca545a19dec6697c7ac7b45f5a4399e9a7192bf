@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: "\376\377"
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              number: 1.24335690876871e-314
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

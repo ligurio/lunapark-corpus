@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            div: 67
+          }
+          rightexp {
+            str: "\'atcycle {\n      block {\n        chunk {\n          stat {\n            whilecycle {\n              condition {\n                binary {\n"
+          }
+        }
+      }
+      first {
+        chunk {
+          laststat {
+            break: 1073741824
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: "\377\377\377"
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: "]"
+            num: 0
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+}

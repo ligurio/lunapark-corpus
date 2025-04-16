@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 1
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+              }
+              Name: "next"
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

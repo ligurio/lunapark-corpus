@@ -1,0 +1,121 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          str: "+"
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              prefixexp {
+                                var {
+                                  indexexpr {
+                                    prefixexp {
+                                    }
+                                    exp {
+                                      str: "+"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+            }
+            binop {
+              or: 0
+            }
+            rightexp {
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                }
+                exp {
+                  str: "+"
+                }
+              }
+            }
+          }
+        }
+        explast {
+          str: ""
+        }
+      }
+    }
+  }
+  laststat {
+    break: 16777216
+  }
+}

@@ -1,0 +1,100 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        ellipsis: "\000\000\000\000\177\377\376\377"
+                      }
+                      binop {
+                        concat: 0
+                      }
+                      rightexp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            exp: 0
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                        binary {
+                                          leftexp {
+                                            number: -48.00000000000005
+                                          }
+                                          binop {
+                                            concat: 0
+                                          }
+                                          rightexp {
+                                            number: 1.0728402099575969e+253
+                                          }
+                                        }
+                                      }
+                                      binop {
+                                        concat: 0
+                                      }
+                                      rightexp {
+                                        number: 1.0728402099575969e+253
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              binop {
+                                mod: 0
+                              }
+                              rightexp {
+                                number: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                add: 1
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,184 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    nil: 0
+                  }
+                }
+              }
+            }
+            exp {
+              number: 0
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              number: 0
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              binary {
+                leftexp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      lastSep {
+                        semicolon: 50432
+                      }
+                    }
+                  }
+                }
+                binop {
+                }
+                rightexp {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          fields {
+                            field {
+                            }
+                            sep {
+                              semicolon: 0
+                            }
+                          }
+                          lastSep {
+                            semicolon: 0
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      number: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          nil: 4
+        }
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              ellipsis: "while"
+            }
+          }
+        }
+        expressions {
+          unary {
+            unop {
+              negate: 262144
+            }
+            exp {
+              ellipsis: "\026\000\000\000\000\000\000\000"
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+            exp {
+              binary {
+                leftexp {
+                  str: "while"
+                }
+                binop {
+                  or: 3276801
+                }
+                rightexp {
+                  false: 0
+                }
+              }
+            }
+          }
+        }
+        explast {
+          function {
+            body {
+              parlist {
+                ellipsis: "while"
+              }
+              block {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

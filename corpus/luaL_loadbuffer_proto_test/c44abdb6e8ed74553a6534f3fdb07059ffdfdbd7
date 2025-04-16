@@ -1,0 +1,54 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          str: ""
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                functioncall {
+                  prefArgs {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            str: "ab"
+                          }
+                        }
+                      }
+                    }
+                    args {
+                      str: "ab   block {\n        chunk {\n        }\n      }\n      condition {\n        nil: 0\n      }\n    }\n  }\n  stat {\n    whilecycle {\n      condition {\n        tableconstructor {\n          fieldlist {\n            firstField {\n              exprassign {\n                key {\n                  number: -0\n                }\n                value {\n                }\n              }\n            }\n            fields {\n              field {\n                exprassign {\n                  key {\n                    tableconstructor {\n "
+                    }
+                  }
+                }
+              }
+              args {
+                str: "ab"
+              }
+            }
+          }
+        }
+        args {
+          str: "ab"
+        }
+      }
+    }
+  }
+}

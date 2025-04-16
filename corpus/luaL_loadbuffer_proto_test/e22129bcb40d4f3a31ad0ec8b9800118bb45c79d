@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1
+        }
+        names {
+          name: ""
+          num: 1
+        }
+        names {
+          name: ""
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 4
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: ""
+                      num: 1
+                    }
+                  }
+                  vars {
+                    name {
+                      name: ""
+                      num: 4
+                    }
+                  }
+                  vars {
+                  }
+                  vars {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                        }
+                      }
+                      binop {
+                        sub: 4
+                      }
+                      rightexp {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

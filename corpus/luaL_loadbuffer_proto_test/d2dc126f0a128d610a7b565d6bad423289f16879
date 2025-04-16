@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 7
+                }
+              }
+              expressions {
+                expressions {
+                  binary {
+                    leftexp {
+                      number: 1.24335690876871e-314
+                    }
+                    binop {
+                      greaterEqual: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                explast {
+                  ellipsis: ""
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              number: 1.24335690876871e-314
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

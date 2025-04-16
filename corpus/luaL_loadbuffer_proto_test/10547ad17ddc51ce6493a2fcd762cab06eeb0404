@@ -1,0 +1,103 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+            nil: 4194307
+          }
+        }
+        name {
+          name: ""
+          num: 4294967293
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                      unary {
+                                        unop {
+                                        }
+                                        exp {
+                                        }
+                                      }
+                                    }
+                                    binop {
+                                      concat: 0
+                                    }
+                                    rightexp {
+                                      str: "0.3E2"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                            }
+                            rightexp {
+                              number: 3.3156184727898e-316
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

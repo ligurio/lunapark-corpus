@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "\310"
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            var {
+              name {
+                name: "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                num: 0
+              }
+            }
+          }
+        }
+        expressions {
+          str: "\000\000\377\276"
+        }
+        explast {
+          nil: 83886084
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                nil: 4
+              }
+              binop {
+                add: 4
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greater: 0
+                  }
+                  rightexp {
+                    str: "ffi.fill"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+  }
+}

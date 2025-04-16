@@ -1,0 +1,168 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                        }
+                      }
+                      condition {
+                      }
+                    }
+                  }
+                  stat {
+                    forcyclename {
+                      name {
+                        name: ""
+                        num: 4
+                      }
+                      startexp {
+                      }
+                      stopexp {
+                        nil: 0
+                      }
+                      stepexp {
+                        str: "instunroll"
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    forcyclename {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      startexp {
+                      }
+                      stopexp {
+                      }
+                      stepexp {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: "instunroll"
+                num: 4
+              }
+              startexp {
+                unary {
+                  unop {
+                    length: 67108864
+                  }
+                  exp {
+                    unary {
+                      unop {
+                        length: 4
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              stopexp {
+              }
+              stepexp {
+                str: "instunroll"
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      break: 32
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 4
+              }
+              startexp {
+                unary {
+                  unop {
+                    length: 67108864
+                  }
+                  exp {
+                  }
+                }
+              }
+              stopexp {
+                nil: 0
+              }
+              stepexp {
+                str: "instll"
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

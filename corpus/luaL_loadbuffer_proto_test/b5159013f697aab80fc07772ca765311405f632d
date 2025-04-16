@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: "\000\000\000\000\000\000\000\000\000"
+          num: 2
+        }
+        names {
+          name: "\000\000\000\000\000\000\000\000\000"
+          num: 2
+        }
+        names {
+          name: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+          num: 2
+        }
+      }
+      body {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            stat {
+              call {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+            num: 2
+          }
+        }
+        vars {
+          name {
+            name: ""
+            num: 32
+          }
+        }
+      }
+      explist {
+        explast {
+          function {
+            body {
+              parlist {
+                ellipsis: "RRRRRRRRRRRR"
+              }
+              block {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

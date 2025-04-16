@@ -1,0 +1,47 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    number: -2
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    number: -2.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            number: -2
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            number: -2.5
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

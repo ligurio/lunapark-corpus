@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            unary {
+                              unop {
+                                length: 0
+                              }
+                              exp {
+                                str: "0.3E2"
+                              }
+                            }
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            str: "0.3E2"
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    sub: 2
+                  }
+                  rightexp {
+                    nil: 6488064
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+}

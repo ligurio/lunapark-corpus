@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                    exp {
+                      str: "\377\377\377\377\377\377\377\377\377\377\377\377"
+                    }
+                  }
+                  exp {
+                  }
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "coroutine"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                nil: 0
+              }
+              explast {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

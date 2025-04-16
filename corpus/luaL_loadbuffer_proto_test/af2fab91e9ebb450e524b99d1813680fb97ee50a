@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: ""
+            num: 4
+          }
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 4
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            name {
+                              name: ""
+                              num: 4
+                            }
+                          }
+                        }
+                        explist {
+                          explast {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                  }
+                                  args {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          exprassign {
+                                            key {
+                                              false: 0
+                                            }
+                                            value {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          expressions {
+                            nil: 0
+                          }
+                          explast {
+                            unary {
+                              unop {
+                                not: 0
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+}

@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greaterEqual: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              explist {
+                explast {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greaterEqual: 0
+                    }
+                    rightexp {
+                      false: 1684104562
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              tableconstructor {
+              }
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+            laststat {
+              break: 8388608
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "\377\377\376\272"
+        }
+        block {
+          chunk {
+            laststat {
+              break: 8388608
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          false: 0
+        }
+      }
+    }
+  }
+}

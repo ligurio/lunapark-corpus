@@ -1,0 +1,148 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            and: 4
+          }
+          rightexp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                true: 0
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+                true: 0
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            and: 4
+          }
+          rightexp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    and: 4
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            and: 4
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    ifstat {
+                      condition {
+                        binary {
+                          leftexp {
+                            nil: 0
+                          }
+                          binop {
+                            and: 4
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      unary {
+                        unop {
+                          negate: 4
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

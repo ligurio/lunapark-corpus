@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          name {
+            name: "\001\000\000\000\000\000\000\010"
+            num: 0
+          }
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              length: 4
+            }
+            exp {
+              prefixexp {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                  exprassign {
+                    key {
+                      true: 4
+                    }
+                    value {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                            }
+                            exp {
+                              unary {
+                                unop {
+                                  length: 4
+                                }
+                                exp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+              lastSep {
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

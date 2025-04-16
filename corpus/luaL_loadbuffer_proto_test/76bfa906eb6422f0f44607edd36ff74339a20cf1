@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              unary {
+                unop {
+                  negate: 0
+                }
+                exp {
+                }
+              }
+            }
+          }
+        }
+        vars {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              negate: 0
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                  ellipsis: "file:seek"
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          str: "e3333"
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  greater: 0
+                }
+                rightexp {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          str: "io.input"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

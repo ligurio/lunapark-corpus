@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                      exp {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                            }
+                            lastSep {
+                              comma: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                    Name: ""
+                  }
+                }
+              }
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        expressions {
+          number: 2.10060501100088
+        }
+        expressions {
+          number: 3.1006011441495502
+        }
+        explast {
+          number: 2.1006050110008991
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          number: 3.1006011963036144
+        }
+        expressions {
+          number: 2.10060501100088
+        }
+        expressions {
+          number: 3.10060501100088
+        }
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+            }
+            rightexp {
+              function {
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        true: 0
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                unary {
+                  unop {
+                  }
+                  exp {
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: ""
+            num: 0
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        add: 0
+                      }
+                      rightexp {
+                        str: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+                number: -2.9740338169555661e+284
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+}

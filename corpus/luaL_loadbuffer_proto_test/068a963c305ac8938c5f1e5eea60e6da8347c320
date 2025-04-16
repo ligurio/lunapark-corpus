@@ -1,0 +1,111 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                notEqual: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            mod: 32768
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 2105376
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 64767
+          }
+          binop {
+            notEqual: 32768
+          }
+          rightexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    notEqual: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,53 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    number: -19.28515625
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        length: 4
+                      }
+                      exp {
+                        str: "package.path"
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                mod: 0
+              }
+              rightexp {
+                unary {
+                  unop {
+                    length: 4
+                  }
+                  exp {
+                    ellipsis: "package.path"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

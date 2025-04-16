@@ -1,0 +1,103 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                          }
+                        }
+                        condition {
+                          number: 0
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                    }
+                    laststat {
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            stat {
+            }
+            laststat {
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "\001\000\000\000"
+        }
+        block {
+          chunk {
+            stat {
+            }
+            laststat {
+              explist {
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 4
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

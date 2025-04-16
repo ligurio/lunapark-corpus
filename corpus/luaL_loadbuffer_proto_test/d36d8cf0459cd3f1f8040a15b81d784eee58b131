@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        str: "."
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                str: "."
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    number: 415.9453125
+                  }
+                  value {
+                    str: "\\001\\005"
+                  }
+                }
+              }
+              sep {
+                comma: 16777216
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                expression {
+                  true: 3080192
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+              comma: 16777216
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

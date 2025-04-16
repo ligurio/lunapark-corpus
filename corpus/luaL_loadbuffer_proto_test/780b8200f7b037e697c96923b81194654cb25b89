@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          number: -2
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          number: -3.5
+                        }
+                      }
+                    }
+                    binop {
+                      div: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          number: -4.9591064453125e-05
+                        }
+                        binop {
+                          div: 4
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              number: -4.9591064453125e-05
+                            }
+                            binop {
+                              concat: 0
+                            }
+                            rightexp {
+                              number: -4.9591064453125e-05
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              call {
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                      binop {
+                        mult: 8192000
+                      }
+                      rightexp {
+                        function {
+                          body {
+                            parlist {
+                              ellipsis: "instunroll"
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                lessEqual: 1024
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

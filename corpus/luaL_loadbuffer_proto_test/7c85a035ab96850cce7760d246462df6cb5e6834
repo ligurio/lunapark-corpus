@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 4
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                str: "instunroll"
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "inunroll"
+        }
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          function {
+            body {
+              parlist {
+                ellipsis: "\000\000\000\000"
+              }
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        explast {
+          ellipsis: "\241"
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

@@ -1,0 +1,197 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 4096
+                }
+              }
+              explist {
+                expressions {
+                  false: 4096
+                }
+                expressions {
+                  nil: 0
+                }
+                explast {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 4
+                }
+              }
+              expressions {
+                expressions {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+                expressions {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      nil: 1
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+            }
+            binop {
+              add: 0
+            }
+            rightexp {
+              nil: 1
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              localnames {
+                namelist {
+                  firstname {
+                    name: ""
+                    num: 4096
+                  }
+                }
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        add: 0
+                      }
+                      rightexp {
+                        nil: 1
+                      }
+                    }
+                  }
+                  explast {
+                    str: "pairs"
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 4
+                  }
+                }
+                expressions {
+                  expressions {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        add: 0
+                      }
+                      rightexp {
+                        nil: 1
+                      }
+                    }
+                  }
+                  explast {
+                    ellipsis: ""
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 0
+            semicolon: false
+          }
+        }
+      }
+    }
+  }
+}

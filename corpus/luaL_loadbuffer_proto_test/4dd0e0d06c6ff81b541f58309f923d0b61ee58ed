@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              length: 5
+            }
+            exp {
+              binary {
+                leftexp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            number: 2
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            false: 1024
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

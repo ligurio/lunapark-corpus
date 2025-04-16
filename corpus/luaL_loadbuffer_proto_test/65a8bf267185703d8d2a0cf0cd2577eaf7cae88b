@@ -1,0 +1,91 @@
+chunk {
+  stat {
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              binary {
+                leftexp {
+                  false: 0
+                }
+                binop {
+                  or: 0
+                }
+                rightexp {
+                }
+              }
+            }
+            binop {
+              or: 0
+            }
+            rightexp {
+              prefixexp {
+                var {
+                  name {
+                    name: "setmetatable"
+                    num: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          binary {
+            leftexp {
+              false: 0
+            }
+            binop {
+              or: 0
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "setmetatable"
+              num: 0
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      false: 0
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

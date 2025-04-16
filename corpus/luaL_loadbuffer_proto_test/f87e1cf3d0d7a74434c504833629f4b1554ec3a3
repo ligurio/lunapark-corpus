@@ -1,0 +1,214 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+              not: 0
+            }
+            exp {
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          name {
+            name: ""
+            num: 4294967293
+          }
+        }
+        vars {
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              str: "o\'"
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        namedassign {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          value {
+                            unary {
+                              unop {
+                                length: 0
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                false: 0
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+                comma: 0
+              }
+            }
+            fields {
+              field {
+                expression {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          false: 0
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: ""
+                                  num: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                          comma: 0
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              ellipsis: ""
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    ellipsis: ""
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                      laststat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

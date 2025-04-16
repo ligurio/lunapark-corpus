@@ -1,0 +1,250 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073741824
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        str: "\002"
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      true: 0
+                    }
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    forcyclelist {
+                      names {
+                        firstname {
+                          name: ""
+                          num: 0
+                        }
+                      }
+                      expressions {
+                        explast {
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            laststat {
+                              explist {
+                                explist {
+                                  explast {
+                                    ellipsis: "\224"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                    laststat {
+                    }
+                  }
+                }
+              }
+              clauses {
+                condition {
+                  prefixexp {
+                  }
+                }
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          prefixexp {
+                          }
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                        clauses {
+                          condition {
+                            prefixexp {
+                            }
+                          }
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                        clauses {
+                          condition {
+                            prefixexp {
+                            }
+                          }
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    laststat {
+                      break: 262144
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+          }
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                explist {
+                  explist {
+                    explast {
+                      false: 1073741824
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+            exp {
+              prefixexp {
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            laststat {
+              break: 262144
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

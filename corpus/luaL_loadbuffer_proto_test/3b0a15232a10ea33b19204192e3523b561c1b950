@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        str: "."
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                str: "."
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    number: 415.9453125
+                  }
+                  value {
+                    str: "\\001\\005"
+                  }
+                }
+              }
+              sep {
+                comma: 16777216
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    ellipsis: "\001\000\000\000\000\000\000\004"
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                expression {
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

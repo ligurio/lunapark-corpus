@@ -1,0 +1,126 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                        str: "\000\000\000\000\000\000\000\000"
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                    }
+                    laststat {
+                      explist {
+                        explist {
+                          expressions {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  namedassign {
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    value {
+                                      binary {
+                                        leftexp {
+                                          str: "\000\000\000\000\000\000\000\000"
+                                        }
+                                        binop {
+                                        }
+                                        rightexp {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          expressions {
+                            prefixexp {
+                            }
+                          }
+                          explast {
+                            ellipsis: ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+  }
+}

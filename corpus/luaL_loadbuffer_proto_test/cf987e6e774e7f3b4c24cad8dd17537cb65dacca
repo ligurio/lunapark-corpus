@@ -1,0 +1,147 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                }
+              }
+              binop {
+                add: 1
+              }
+              rightexp {
+                nil: 16777216
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            true: 0
+                          }
+                          value {
+                            ellipsis: ""
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            binary {
+                              leftexp {
+                                number: 416
+                              }
+                              binop {
+                                div: 0
+                              }
+                              rightexp {
+                                number: -4.9591064453125e-05
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                          semicolon: 0
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              true: 1
+                            }
+                            value {
+                              ellipsis: "z"
+                            }
+                          }
+                        }
+                        sep {
+                          comma: 16777216
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 512
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      lastSep {
+                        comma: 0
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                          }
+                          first {
+                            chunk {
+                              laststat {
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      laststat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+}

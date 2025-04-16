@@ -1,0 +1,179 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                    exp {
+                      str: "555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555"
+                    }
+                  }
+                }
+                stopexp {
+                  prefixexp {
+                  }
+                }
+                stepexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                            ellipsis: "\376\377\377\375"
+                          }
+                          stopexp {
+                            prefixexp {
+                            }
+                          }
+                          stepexp {
+                            function {
+                              body {
+                                block {
+                                  chunk {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                negate: 0
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      laststat {
+                        break: 1
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          explast {
+                            prefixexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        startexp {
+                        }
+                        stopexp {
+                          number: 0
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    laststat {
+                      break: 1
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              indexname {
+                                prefixexp {
+                                }
+                                Name: "io.type"
+                              }
+                            }
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    unary {
+                      unop {
+                        negate: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

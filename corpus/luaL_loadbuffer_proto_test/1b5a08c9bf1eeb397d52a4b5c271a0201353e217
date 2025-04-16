@@ -1,0 +1,156 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        ellipsis: "\\005\\000\\000\\000"
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          str: "2"
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              str: "\\005\\000\\000\\000"
+            }
+            binop {
+            }
+            rightexp {
+              number: 2.5131350027914734e+180
+            }
+          }
+        }
+        explast {
+          unary {
+            unop {
+            }
+            exp {
+              unary {
+                unop {
+                }
+                exp {
+                  unary {
+                    unop {
+                      negate: 822083584
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    number: 45
+                  }
+                  value {
+                    number: 415.93749916926026
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    str: "\000\000\000\000"
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    number: 415.93749916926026
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    number: 2.5131350027914734e+180
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

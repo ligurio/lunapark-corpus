@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  ellipsis: "\\010\\000"
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 6
+                }
+                startexp {
+                  false: 85
+                }
+                stopexp {
+                  true: 6
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 0
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            number: -48.00000000000005
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                                number: 1.0728402099575969e+253
+                              }
+                              binop {
+                                exp: 0
+                              }
+                              rightexp {
+                                number: -5
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 46
+                      }
+                      rightexp {
+                        number: 6.63123684676648e-316
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                exp: 6
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+  }
+}

@@ -1,0 +1,119 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  number: 4
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: true
+                                }
+                                stat {
+                                  call {
+                                    prefArgs {
+                                      prefixexp {
+                                        var {
+                                          name {
+                                            name: "and"
+                                            num: 0
+                                          }
+                                        }
+                                      }
+                                      args {
+                                        explist {
+                                          explist {
+                                            expressions {
+                                              number: 4
+                                            }
+                                            expressions {
+                                              str: "function: 0x7f2e7e6eaf20Name"
+                                            }
+                                            explast {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                stat {
+                                  localnames {
+                                    namelist {
+                                      firstname {
+                                        name: "~"
+                                        num: 0
+                                      }
+                                    }
+                                  }
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        call {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    namedassign {
+                                      name {
+                                        name: ""
+                                        num: 0
+                                      }
+                                      value {
+                                      }
+                                    }
+                                  }
+                                  lastSep {
+                                    semicolon: 4
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

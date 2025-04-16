@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 65536
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              call {
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 6
+                }
+                startexp {
+                  number: 44.0625
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                              stat {
+                              }
+                            }
+                          }
+                          condition {
+                            unary {
+                              unop {
+                                negate: 0
+                              }
+                              exp {
+                                nil: 128
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+}

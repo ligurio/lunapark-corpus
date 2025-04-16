@@ -1,0 +1,115 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          exp {
+            str: "\377\377\377\377\377\377\t\272"
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          str: "io.stdout"
+        }
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        exp {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                  laststat {
+                                    semicolon: true
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      sub: 2
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          unary {
+                            unop {
+                              length: 0
+                            }
+                            exp {
+                              str: "\'"
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          str: ""
+                        }
+                      }
+                    }
+                  }
+                }
+                stopexp {
+                }
+                stepexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

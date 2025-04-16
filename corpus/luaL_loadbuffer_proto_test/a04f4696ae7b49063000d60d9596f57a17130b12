@@ -1,0 +1,132 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              str: "\004\000"
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      localnames {
+                        namelist {
+                          firstname {
+                            name: ""
+                            num: 0
+                          }
+                          names {
+                            name: ""
+                            num: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      function {
+                        body {
+                          parlist {
+                            namelist {
+                              namelist {
+                                firstname {
+                                  name: ""
+                                  num: 0
+                                }
+                              }
+                              ellipsis: "$"
+                            }
+                          }
+                          block {
+                            chunk {
+                              stat {
+                                localfunc {
+                                  name {
+                                    name: "%"
+                                    num: 0
+                                  }
+                                  funcbody {
+                                    block {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "\240"
+        }
+        block {
+          chunk {
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 4194304
+                  }
+                }
+                expressions {
+                  explast {
+                    number: 1.7451559670503e-310
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

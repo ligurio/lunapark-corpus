@@ -1,0 +1,185 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 65535
+        }
+        names {
+          name: "\331\376\377\377"
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 65535
+        }
+        names {
+          name: "\331\376\377\377"
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "\331\376\377\377"
+          num: 0
+        }
+        names {
+          name: "\331\376\377\377"
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+            }
+            exp {
+              binary {
+                leftexp {
+                  str: "__mul"
+                }
+                binop {
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                          exp {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                  var {
+                                    indexexpr {
+                                      prefixexp {
+                                        exp {
+                                        }
+                                      }
+                                      exp {
+                                        prefixexp {
+                                          functioncall {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              binop {
+                                and: 1
+                              }
+                              rightexp {
+                                tableconstructor {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        exp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  and: 1
+                }
+                rightexp {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                  }
+                }
+                binop {
+                  lessEqual: 65535
+                }
+                rightexp {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          nil: 553648128
+        }
+        explast {
+          function {
+            body {
+              block {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

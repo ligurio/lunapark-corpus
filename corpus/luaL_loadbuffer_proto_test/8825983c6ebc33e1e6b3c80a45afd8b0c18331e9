@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          function {
+            body {
+              parlist {
+                namelist {
+                  namelist {
+                    firstname {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+              }
+              block {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "coroutine"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                nil: 0
+              }
+              explast {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          laststat {
+            break: 8388608
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

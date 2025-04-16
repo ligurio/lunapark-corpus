@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        number: 7.0025861101854e-313
+                      }
+                      binop {
+                        or: 3276801
+                      }
+                      rightexp {
+                        false: 0
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                ellipsis: "\t"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

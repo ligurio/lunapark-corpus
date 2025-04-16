@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+              namedArgs {
+                prefixexp {
+                  exp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        true: 0
+                      }
+                    }
+                  }
+                }
+                name {
+                  name: ""
+                  num: 0
+                }
+                args {
+                }
+              }
+            }
+          }
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        exp {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                              true: 0
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

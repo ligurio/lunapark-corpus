@@ -1,0 +1,189 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      condition {
+        prefixexp {
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        str: "{"
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                expression {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      lessEqual: 0
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                  expression {
+                                    prefixexp {
+                                    }
+                                  }
+                                }
+                                sep {
+                                  comma: 512
+                                }
+                              }
+                              fields {
+                                field {
+                                  expression {
+                                    binary {
+                                      leftexp {
+                                        number: 0
+                                      }
+                                      binop {
+                                        concat: 2
+                                      }
+                                      rightexp {
+                                        binary {
+                                          leftexp {
+                                            number: 0
+                                          }
+                                          binop {
+                                            sub: 512
+                                          }
+                                          rightexp {
+                                            binary {
+                                              leftexp {
+                                                false: 512
+                                              }
+                                              binop {
+                                                lessEqual: 0
+                                              }
+                                              rightexp {
+                                                function {
+                                                  body {
+                                                    parlist {
+                                                      namelist {
+                                                        namelist {
+                                                          firstname {
+                                                            name: "and"
+                                                            num: 0
+                                                          }
+                                                        }
+                                                        ellipsis: "\305"
+                                                      }
+                                                    }
+                                                    block {
+                                                      chunk {
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                sep {
+                                  semicolon: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                  function {
+                    body {
+                      parlist {
+                        namelist {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                          ellipsis: "\305"
+                        }
+                      }
+                      block {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

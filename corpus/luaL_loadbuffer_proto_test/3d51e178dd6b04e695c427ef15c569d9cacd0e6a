@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 4
+        }
+        names {
+          name: ""
+          num: 5
+        }
+        names {
+          name: "\260"
+          num: 2560
+        }
+        names {
+          name: ""
+          num: 4
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 0
+                          }
+                          rightexp {
+                            number: 2
+                          }
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                        }
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                            prefixexp {
+                            }
+                          }
+                          binop {
+                            or: 10
+                          }
+                          rightexp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                        }
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 2560
+                          }
+                          rightexp {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    str: "\260"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

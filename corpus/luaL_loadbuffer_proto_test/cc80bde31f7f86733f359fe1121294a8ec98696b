@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: ""
+            num: 4
+          }
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 4
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            name {
+                              name: ""
+                              num: 4
+                            }
+                          }
+                        }
+                        explist {
+                          explast {
+                            prefixexp {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            name {
+                              name: ""
+                              num: 4
+                            }
+                          }
+                        }
+                        explist {
+                          explast {
+                            prefixexp {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: false
+                    }
+                  }
+                }
+                condition {
+                  prefixexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

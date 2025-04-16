@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        nil: 65535
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 1
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  nil: 2555904
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    nil: 0
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        explist {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+  }
+}

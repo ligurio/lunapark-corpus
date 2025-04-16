@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  nil: 131072
+                }
+                value {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  add: 4
+                                }
+                                rightexp {
+                                  binary {
+                                    leftexp {
+                                      number: -128.25
+                                    }
+                                    binop {
+                                      exp: 0
+                                    }
+                                    rightexp {
+                                      number: 108.75
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                  number: -128.25
+                                }
+                                binop {
+                                  exp: 0
+                                }
+                                rightexp {
+                                  number: 108.75
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                          semicolon: 131072
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

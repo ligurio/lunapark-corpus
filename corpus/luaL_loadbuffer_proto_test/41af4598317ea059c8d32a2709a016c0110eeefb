@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: "maxsnap"
+                num: 4
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                str: "instunroll"
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+            num: 0
+          }
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "inunroll"
+        }
+        expressions {
+          function {
+            body {
+              parlist {
+              }
+              block {
+                chunk {
+                  laststat {
+                    break: 4
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+        }
+        expressions {
+        }
+        explast {
+          ellipsis: "\241"
+        }
+      }
+    }
+  }
+  laststat {
+    break: 4
+  }
+}

@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            function {
+              body {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          true: 0
+                        }
+                        first {
+                          chunk {
+                            laststat {
+                              break: 0
+                              semicolon: true
+                            }
+                          }
+                        }
+                        last {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            mult: 4
+          }
+          rightexp {
+            function {
+              body {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          true: 0
+                        }
+                        first {
+                          chunk {
+                            laststat {
+                              break: 0
+                              semicolon: true
+                            }
+                          }
+                        }
+                        last {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              ifstat {
+                condition {
+                  true: 4
+                }
+                first {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}
