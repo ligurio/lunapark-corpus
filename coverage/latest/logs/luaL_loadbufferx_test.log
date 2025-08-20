@@ -1,36 +1,7 @@
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 2125312100
-INFO: Loaded 1 modules   (19774 inline 8-bit counters): 19774 [0x56426ffd7da8, 0x56426ffdcae6), 
-INFO: Loaded 1 PC tables (19774 PCs): 19774 [0x56426ffdcae8,0x564270029ec8), 
-MERGE-OUTER: 189525 files, 0 in the initial corpus, 0 processed earlier
-MERGE-OUTER: attempt 1
-INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 2126471527
-INFO: Loaded 1 modules   (19774 inline 8-bit counters): 19774 [0x55dae5182da8, 0x55dae5187ae6), 
-INFO: Loaded 1 PC tables (19774 PCs): 19774 [0x55dae5187ae8,0x55dae51d4ec8), 
-INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 1048576 bytes
-MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge462.txt'
-MERGE-INNER: 189525 total files; 0 processed earlier; will process 189525 files now
-#1	pulse  cov: 424 ft: 425 exec/s: 0 rss: 64Mb
-#2	pulse  cov: 432 ft: 443 exec/s: 0 rss: 64Mb
-#4	pulse  cov: 434 ft: 459 exec/s: 0 rss: 64Mb
-#8	pulse  cov: 464 ft: 559 exec/s: 0 rss: 64Mb
-#16	pulse  cov: 468 ft: 587 exec/s: 0 rss: 64Mb
-#32	pulse  cov: 477 ft: 619 exec/s: 0 rss: 64Mb
-#64	pulse  cov: 528 ft: 728 exec/s: 0 rss: 64Mb
-#128	pulse  cov: 544 ft: 746 exec/s: 0 rss: 64Mb
-#256	pulse  cov: 614 ft: 861 exec/s: 0 rss: 64Mb
-#512	pulse  cov: 805 ft: 1214 exec/s: 0 rss: 64Mb
-#1024	pulse  cov: 877 ft: 1407 exec/s: 0 rss: 64Mb
-#2048	pulse  cov: 1102 ft: 1758 exec/s: 0 rss: 64Mb
-#4096	pulse  cov: 1418 ft: 2566 exec/s: 0 rss: 64Mb
-#8192	pulse  cov: 1587 ft: 3553 exec/s: 8192 rss: 64Mb
-#16384	pulse  cov: 1797 ft: 4853 exec/s: 4096 rss: 64Mb
-#32768	pulse  cov: 1944 ft: 6637 exec/s: 3640 rss: 64Mb
-#65536	pulse  cov: 2037 ft: 9348 exec/s: 3120 rss: 65Mb
-#131072	pulse  cov: 2278 ft: 12831 exec/s: 2520 rss: 65Mb
-#189525	DONE   cov: 2402 ft: 14524 exec/s: 1207 rss: 66Mb
-MERGE-OUTER: successful in 1 attempt(s)
-MERGE-OUTER: the control file has 25338516 bytes
-MERGE-OUTER: consumed 14Mb (89Mb rss) to parse the control file
-MERGE-OUTER: 5987 new files with 14524 new features added; 2402 new coverage edges
+INFO: Seed: 2312168937
+INFO: Loaded 1 modules   (19774 inline 8-bit counters): 19774 [0x55fc7cf1dda8, 0x55fc7cf22ae6), 
+INFO: Loaded 1 PC tables (19774 PCs): 19774 [0x55fc7cf22ae8,0x55fc7cf6fec8), 
+MERGE-OUTER: 190158 files, 0 in the initial corpus, 0 processed earlier
+MERGE-OUTER: failed to write to the control file: /tmp/libFuzzerTemp.Merge462.txt
+LLVM Profile Error: Failed to write file "/github/workspace/cifuzz-coverage/dumps/luaL_loadbufferx_test.8000763890268736318_0.profraw": No space left on device
