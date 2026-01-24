@@ -1,0 +1,1182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <!-- Custom style overrides -->
+    <style>
+      /* Copyright 2018 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+th, td {
+  padding: 5px 16px;
+}
+
+tbody td, tfoot td {
+  font-size: 14px;
+}
+
+thead th {
+  font-size: 16px;
+}
+
+thead th, tfoot td {
+  background-color: #f5f5f5;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  color: #484848;
+  text-transform: uppercase;
+}
+
+tbody tr:hover td, tfoot tr:hover td {
+  background-color: #f5f5f5;
+  border-color: #e4e4e4 !important;
+}
+    </style>
+  </head>
+  <body>
+    <h2>Coverage Report</h2>
+    <p>
+      View results by:
+            <a href='directory_view_index.html'>Directories</a>
+              | <a href='file_view_index.html'>Files</a>
+          </p>
+    <div class='centered'><table>
+  <thead>
+    <tr>
+      <th class="column-entry-bold">Path</th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.LINE)" title=
+          "Line coverage is the percentage of code lines which have been executed at least once. Only executable lines within function bodies are considered to be code lines.">
+        Line Coverage
+      </th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.FUNCTION)" title=
+          "Function coverage is the percentage of functions which have been executed at least once. A function is considered to be executed if any of its instantiations are executed.">
+        Function Coverage
+      </th>
+      <th class="column-entry-bold" onclick="sortTable(SORT_COLUMN.REGION)" title=
+          "Region coverage is the percentage of code regions which have been executed at least once. A code region may span multiple lines (e.g in a large function body with no control flow). However, it's also possible for a single line to contain multiple code regions (e.g in 'return x || y &amp;&amp; z').">
+        Region Coverage
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lib_aux.c.html'>src/lunapark/build/luajit-v2.1/source/src/lib_aux.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 14.88% (36/242)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  9.09% (2/22)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 13.70% (30/219)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lib_base.c.html'>src/lunapark/build/luajit-v2.1/source/src/lib_base.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/484)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/41)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/816)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lib_ffi.c.html'>src/lunapark/build/luajit-v2.1/source/src/lib_ffi.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  3.93% (25/636)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  5.88% (3/51)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  6.90% (72/1044)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_alloc.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_alloc.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 83.84% (529/631)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 87.50% (21/24)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 81.46% (1507/1850)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_api.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_api.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 10.57% (109/1031)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 14.74% (14/95)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  7.40% (202/2728)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_asm.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_asm.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1561)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/64)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/3015)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_asm_x86.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_asm_x86.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2130)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/73)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/4301)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_assert.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_assert.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/10)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/7)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_bc.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_bc.h</a></pre>
+              </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (6/6)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (2/2)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (12/12)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_bcread.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_bcread.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/338)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/20)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/431)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_bcwrite.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_bcwrite.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 78.47% (266/339)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 78.57% (11/14)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 63.55% (347/546)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_buf.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_buf.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 21.78% (49/225)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 26.32% (5/19)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 16.16% (58/359)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_buf.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_buf.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 55.22% (37/67)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 64.29% (9/14)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 50.88% (29/57)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_carith.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_carith.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/338)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/18)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/632)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ccall.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ccall.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/282)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/9)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/524)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ccallback.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ccallback.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  1.53% (4/262)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  7.69% (1/13)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  1.35% (7/517)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_cconv.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_cconv.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/607)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/18)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1291)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_cconv.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_cconv.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/12)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/22)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_cdata.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_cdata.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  4.52% (10/221)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 11.11% (1/9)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  3.71% (18/485)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_cdata.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_cdata.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 17.65% (6/34)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 25.00% (1/4)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  4.08% (2/49)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_clib.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_clib.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 14.39% (19/132)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 30.77% (4/13)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  6.59% (11/167)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_cparse.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_cparse.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1497)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/64)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1910)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_crecord.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_crecord.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1564)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/53)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2899)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ctype.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ctype.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 14.54% (58/399)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 19.23% (5/26)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  9.93% (56/564)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ctype.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ctype.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 51.52% (17/33)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 57.14% (4/7)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 38.78% (19/49)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_debug.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_debug.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  4.65% (28/602)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  4.76% (1/21)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  2.80% (31/1106)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_def.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_def.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 25.00% (3/12)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 25.00% (1/4)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 25.00% (1/4)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_dispatch.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_dispatch.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  8.64% (33/382)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 11.11% (2/18)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  7.82% (55/703)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_emit_x86.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_emit_x86.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/352)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/26)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/391)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_err.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_err.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 18.45% (88/477)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 22.22% (8/36)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 10.80% (81/750)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ffrecord.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ffrecord.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1212)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/85)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1494)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_func.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_func.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 30.83% (41/133)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 54.55% (6/11)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 16.08% (32/199)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_gc.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_gc.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 66.57% (438/658)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 75.68% (28/37)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 48.94% (991/2025)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_gc.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_gc.h</a></pre>
+              </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (14/14)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (2/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 72.41% (21/29)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ir.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ir.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/303)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/24)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/444)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_ir.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_ir.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/30)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/4)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/49)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_iropt.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_iropt.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/14)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/3)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/5)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_jit.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_jit.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/15)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/5)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_lex.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_lex.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 93.83% (380/405)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (17/17)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 87.66% (412/470)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_lib.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_lib.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 21.94% (61/278)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 10.53% (2/19)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 11.95% (68/569)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_load.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_load.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 49.56% (56/113)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 63.64% (7/11)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 47.48% (66/139)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_mcode.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_mcode.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  3.95% (6/152)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  6.25% (1/16)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  1.86% (3/161)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_meta.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_meta.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 11.05% (39/353)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 17.65% (3/17)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  5.88% (72/1224)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_obj.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_obj.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 45.83% (11/24)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 50.00% (1/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 34.12% (29/85)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_obj.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_obj.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 50.00% (37/74)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 63.64% (7/11)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 29.41% (40/136)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_dce.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_dce.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/39)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/3)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/34)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_fold.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_fold.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1467)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/154)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/3628)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_loop.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_loop.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/280)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/6)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/318)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_mem.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_mem.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/729)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/28)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1130)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_narrow.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_narrow.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/302)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/17)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/579)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_opt_sink.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_opt_sink.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/194)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/8)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/284)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_parse.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_parse.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 98.03% (1992/2032)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (116/116)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 87.44% (2096/2397)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_prng.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_prng.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 54.29% (19/35)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 75.00% (3/4)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 40.48% (17/42)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_prng.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_prng.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/6)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_profile.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_profile.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  4.24% (5/118)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 12.50% (1/8)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  4.17% (4/96)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_record.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_record.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2226)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/67)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/4109)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_serialize.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_serialize.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/390)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/14)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/718)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_snap.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_snap.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/661)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/21)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1360)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_snap.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_snap.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/6)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/6)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_state.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_state.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 80.52% (215/267)</pre>
+      </td>
+            <td class='column-entry-yellow'>
+        <pre> 86.67% (13/15)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 60.86% (241/396)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_state.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_state.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/5)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/4)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_str.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_str.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 44.36% (118/266)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 54.55% (6/11)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 40.06% (127/317)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_strfmt.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_strfmt.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 24.62% (112/455)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 21.74% (5/23)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 12.64% (102/807)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_strfmt.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_strfmt.h</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 83.33% (5/6)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (1/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 55.56% (5/9)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_strfmt_num.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_strfmt_num.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/444)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/10)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/507)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_strscan.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_strscan.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 78.69% (288/366)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 71.43% (5/7)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 71.11% (485/682)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_strscan.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_strscan.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/3)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/16)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_tab.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_tab.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 62.00% (328/529)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 70.00% (21/30)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 53.73% (497/925)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_tab.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_tab.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 61.11% (11/18)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (2/2)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (7/7)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_target.h.html'>src/lunapark/build/luajit-v2.1/source/src/lj_target.h</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/6)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/1)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/13)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_trace.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_trace.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  5.29% (36/680)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  6.67% (2/30)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  3.57% (40/1120)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_udata.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_udata.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 42.11% (16/38)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 66.67% (2/3)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 32.20% (19/59)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_vmevent.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_vmevent.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/40)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre>  0.00% (0/120)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/build/luajit-v2.1/source/src/lj_vmmath.c.html'>src/lunapark/build/luajit-v2.1/source/src/lj_vmmath.c</a></pre>
+              </td>
+            <td class='column-entry-red'>
+        <pre> 28.89% (13/45)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 40.00% (2/5)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 10.81% (8/74)</pre>
+      </td>
+          </tr>
+        <tr class="light-row">
+      <td>
+                  <pre><a href='src/lunapark/tests/capi/lua_dump_test.c.html'>src/lunapark/tests/capi/lua_dump_test.c</a></pre>
+              </td>
+            <td class='column-entry-yellow'>
+        <pre> 96.00% (24/25)</pre>
+      </td>
+            <td class='column-entry-green'>
+        <pre>100.00% (2/2)</pre>
+      </td>
+            <td class='column-entry-red'>
+        <pre> 70.83% (17/24)</pre>
+      </td>
+          </tr>
+      </tbody>
+      <tfoot>
+      <tr class="light-row-bold">
+        <td>
+          <pre>Totals</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 18.40% (5588/30362)</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 21.42% (350/1634)</pre>
+        </td>
+                <td class='column-entry-red'>
+          <pre> 14.63% (7937/54264)</pre>
+        </td>
+              </tr>
+    </tfoot>
+  </table>
+
+<script>
+  const SORT_COLUMN = {
+    LINE: 2,
+    FUNCTION: 3,
+    REGION: 4,
+  }
+
+  const SORT_TYPES = {
+    UNSET: -1,
+    PERCENT: 0,
+    AGGREGATE: 1,
+  }
+
+  var SORT_ORDER = {
+    [SORT_COLUMN.LINE]: [SORT_TYPES.UNSET],
+    [SORT_COLUMN.FUNCTION]: [SORT_TYPES.UNSET],
+    [SORT_COLUMN.REGION]: [SORT_TYPES.UNSET],
+  }
+
+  function sortTable(columnNumber) {
+    SORT_ORDER[columnNumber] = ++SORT_ORDER[columnNumber] % 2;
+
+    let columnSortOrder = SORT_ORDER[columnNumber];
+    let tbody = document.getElementsByTagName("tbody")[0];
+
+    [].slice.call(tbody.rows).sort(function(a, b) {
+      let aColumn = a.cells[columnNumber-1].textContent;
+      let bColumn = b.cells[columnNumber-1].textContent;
+
+      let aColumnCompare, bColumnCompare;
+      if (columnSortOrder == SORT_TYPES.PERCENT) {
+        aColumnCompare = parseFloat(/([0-9.]+)%/.exec(aColumn)[1]);
+        bColumnCompare = parseFloat(/([0-9.]+)%/.exec(bColumn)[1]);
+      } else {
+        aColumnCompare = parseInt(/\/(\d+)/.exec(aColumn)[1]);
+        bColumnCompare = parseInt(/\/(\d+)/.exec(bColumn)[1]);
+      }
+
+      return (
+          aColumnCompare < bColumnCompare ? -1:
+              aColumnCompare > bColumnCompare ? 1 : 0);
+    }).forEach(function(value, index) {
+      tbody.appendChild(value);
+    });
+  }
+
+</script>    </div>
+  </body>
+</html>
