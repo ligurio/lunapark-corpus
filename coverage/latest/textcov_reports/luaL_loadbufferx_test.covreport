@@ -1161,20 +1161,20 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  933|  1.13M|      tchunkptr *CP;\
   |  |  |  |  934|  1.34M|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 100k, False: 1.24M]
+  |  |  |  |  |  Branch (934:14): [True: 101k, False: 1.24M]
   |  |  |  |  ------------------
   |  |  |  |  935|  1.34M|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 104k, False: 1.13M]
+  |  |  |  |  |  Branch (935:7): [True: 103k, False: 1.13M]
   |  |  |  |  ------------------
-  |  |  |  |  936|   205k|	R = *(RP = CP);\
-  |  |  |  |  937|   205k|      }\
+  |  |  |  |  936|   204k|	R = *(RP = CP);\
+  |  |  |  |  937|   204k|      }\
   |  |  |  |  938|  1.13M|      *RP = 0;\
   |  |  |  |  939|  1.13M|    }\
   |  |  |  |  940|  5.35M|  }\
   |  |  |  |  941|  5.75M|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 5.52M, False: 231k]
+  |  |  |  |  |  Branch (941:7): [True: 5.52M, False: 230k]
   |  |  |  |  ------------------
   |  |  |  |  942|  5.52M|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
@@ -1186,7 +1186,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  944|  3.69M|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (944:11): [True: 2.75M, False: 942k]
+  |  |  |  |  |  Branch (944:11): [True: 2.75M, False: 943k]
   |  |  |  |  ------------------
   |  |  |  |  945|  3.69M|	clear_treemap(M, X->index);\
   |  |  |  |  ------------------
@@ -1429,17 +1429,17 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  923|  16.1M|  tchunkptr R;\
   |  |  |  |  924|  16.1M|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 634k, False: 15.5M]
+  |  |  |  |  |  Branch (924:7): [True: 635k, False: 15.5M]
   |  |  |  |  ------------------
-  |  |  |  |  925|   634k|    tchunkptr F = X->fd;\
-  |  |  |  |  926|   634k|    R = X->bk;\
-  |  |  |  |  927|   634k|    F->bk = R;\
-  |  |  |  |  928|   634k|    R->fd = F;\
+  |  |  |  |  925|   635k|    tchunkptr F = X->fd;\
+  |  |  |  |  926|   635k|    R = X->bk;\
+  |  |  |  |  927|   635k|    F->bk = R;\
+  |  |  |  |  928|   635k|    R->fd = F;\
   |  |  |  |  929|  15.5M|  } else {\
   |  |  |  |  930|  15.5M|    tchunkptr *RP;\
   |  |  |  |  931|  15.5M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (931:9): [True: 582k, False: 14.9M]
+  |  |  |  |  |  Branch (931:9): [True: 581k, False: 14.9M]
   |  |  |  |  ------------------
   |  |  |  |  932|  15.5M|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  |  |  ------------------
@@ -1448,11 +1448,11 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  933|  1.08M|      tchunkptr *CP;\
   |  |  |  |  934|  1.27M|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 94.1k, False: 1.18M]
+  |  |  |  |  |  Branch (934:14): [True: 93.3k, False: 1.18M]
   |  |  |  |  ------------------
   |  |  |  |  935|  1.27M|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 97.5k, False: 1.08M]
+  |  |  |  |  |  Branch (935:7): [True: 97.9k, False: 1.08M]
   |  |  |  |  ------------------
   |  |  |  |  936|   191k|	R = *(RP = CP);\
   |  |  |  |  937|   191k|      }\
@@ -1473,13 +1473,13 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  944|  9.88M|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (944:11): [True: 8.99M, False: 885k]
+  |  |  |  |  |  Branch (944:11): [True: 9.00M, False: 884k]
   |  |  |  |  ------------------
   |  |  |  |  945|  9.88M|	clear_treemap(M, X->index);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  806|  8.99M|#define clear_treemap(M,i)	((M)->treemap  &= ~idx2bit(i))
+  |  |  |  |  |  |  806|  9.00M|#define clear_treemap(M,i)	((M)->treemap  &= ~idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|  8.99M|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|  9.00M|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  946|  9.88M|    } else {\
@@ -1499,18 +1499,18 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  954|  1.20M|      R->parent = XP;\
   |  |  |  |  955|  1.20M|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 328k, False: 876k]
+  |  |  |  |  |  Branch (955:11): [True: 328k, False: 875k]
   |  |  |  |  ------------------
   |  |  |  |  956|   328k|	R->child[0] = C0;\
   |  |  |  |  957|   328k|	C0->parent = R;\
   |  |  |  |  958|   328k|      }\
   |  |  |  |  959|  1.20M|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 130k, False: 1.07M]
+  |  |  |  |  |  Branch (959:11): [True: 129k, False: 1.07M]
   |  |  |  |  ------------------
-  |  |  |  |  960|   130k|	R->child[1] = C1;\
-  |  |  |  |  961|   130k|	C1->parent = R;\
-  |  |  |  |  962|   130k|      }\
+  |  |  |  |  960|   129k|	R->child[1] = C1;\
+  |  |  |  |  961|   129k|	C1->parent = R;\
+  |  |  |  |  962|   129k|      }\
   |  |  |  |  963|  1.20M|    }\
   |  |  |  |  964|  15.6M|  }\
   |  |  |  |  965|  16.1M|}
@@ -1765,31 +1765,31 @@ lj_alloc.c:lj_alloc_free:
   ------------------
  1633|  22.7M|      if (--fm->release_checks == 0)
   ------------------
-  |  Branch (1633:11): [True: 36.8k, False: 22.6M]
+  |  Branch (1633:11): [True: 36.9k, False: 22.6M]
   ------------------
- 1634|  36.8k|	release_unused_segments(fm);
+ 1634|  36.9k|	release_unused_segments(fm);
  1635|  22.7M|    }
  1636|  47.8M|  }
  1637|  49.3M|  return NULL;
  1638|  51.6M|#endif
  1639|  51.6M|}
 lj_alloc.c:segment_holding:
-  726|    661|{
-  727|    661|  msegmentptr sp = &m->seg;
-  728|    661|  for (;;) {
-  729|    661|    if (addr >= sp->base && addr < sp->base + sp->size)
+  726|    660|{
+  727|    660|  msegmentptr sp = &m->seg;
+  728|    660|  for (;;) {
+  729|    660|    if (addr >= sp->base && addr < sp->base + sp->size)
   ------------------
-  |  Branch (729:9): [True: 661, False: 0]
-  |  Branch (729:29): [True: 661, False: 0]
+  |  Branch (729:9): [True: 660, False: 0]
+  |  Branch (729:29): [True: 660, False: 0]
   ------------------
-  730|    661|      return sp;
+  730|    660|      return sp;
   731|      0|    if ((sp = sp->next) == 0)
   ------------------
   |  Branch (731:9): [True: 0, False: 0]
   ------------------
   732|      0|      return 0;
   733|      0|  }
-  734|    661|}
+  734|    660|}
 lj_alloc.c:CALL_MREMAP_:
   492|  1.99k|{
   493|  1.99k|  int olderr = errno;
@@ -1812,14 +1812,14 @@ lj_alloc.c:CALL_MREMAP_:
   510|  1.99k|  return ptr;
   511|  1.99k|}
 lj_alloc.c:release_unused_segments:
- 1211|  36.8k|{
- 1212|  36.8k|  size_t released = 0;
- 1213|  36.8k|  size_t nsegs = 0;
- 1214|  36.8k|  msegmentptr pred = &m->seg;
- 1215|  36.8k|  msegmentptr sp = pred->next;
+ 1211|  36.9k|{
+ 1212|  36.9k|  size_t released = 0;
+ 1213|  36.9k|  size_t nsegs = 0;
+ 1214|  36.9k|  msegmentptr pred = &m->seg;
+ 1215|  36.9k|  msegmentptr sp = pred->next;
  1216|  38.9k|  while (sp != 0) {
   ------------------
-  |  Branch (1216:10): [True: 2.06k, False: 36.8k]
+  |  Branch (1216:10): [True: 2.06k, False: 36.9k]
   ------------------
  1217|  2.06k|    char *base = sp->base;
  1218|  2.06k|    size_t size = sp->size;
@@ -2174,18 +2174,18 @@ lj_alloc.c:release_unused_segments:
  1244|  2.06k|    sp = next;
  1245|  2.06k|  }
  1246|       |  /* Reset check counter */
- 1247|  36.8k|  m->release_checks = nsegs > MAX_RELEASE_CHECK_RATE ?
+ 1247|  36.9k|  m->release_checks = nsegs > MAX_RELEASE_CHECK_RATE ?
   ------------------
-  |  |   44|  36.8k|#define MAX_RELEASE_CHECK_RATE	255
+  |  |   44|  36.9k|#define MAX_RELEASE_CHECK_RATE	255
   ------------------
-  |  Branch (1247:23): [True: 0, False: 36.8k]
+  |  Branch (1247:23): [True: 0, False: 36.9k]
   ------------------
- 1248|  36.8k|		      nsegs : MAX_RELEASE_CHECK_RATE;
+ 1248|  36.9k|		      nsegs : MAX_RELEASE_CHECK_RATE;
   ------------------
-  |  |   44|  73.7k|#define MAX_RELEASE_CHECK_RATE	255
+  |  |   44|  73.8k|#define MAX_RELEASE_CHECK_RATE	255
   ------------------
- 1249|  36.8k|  return released;
- 1250|  36.8k|}
+ 1249|  36.9k|  return released;
+ 1250|  36.9k|}
 lj_alloc.c:lj_alloc_malloc:
  1450|  50.4M|{
  1451|       |#if LUAJIT_USE_ASAN
@@ -2371,7 +2371,7 @@ lj_alloc.c:lj_alloc_malloc:
   |  |  858|  1.94M|  mchunkptr F = P->fd;\
   |  |  859|  1.94M|  if (B == F) {\
   |  |  ------------------
-  |  |  |  Branch (859:7): [True: 1.35M, False: 592k]
+  |  |  |  Branch (859:7): [True: 1.35M, False: 593k]
   |  |  ------------------
   |  |  860|  1.35M|    clear_smallmap(M, I);\
   |  |  ------------------
@@ -2381,9 +2381,9 @@ lj_alloc.c:lj_alloc_malloc:
   |  |  |  |  ------------------
   |  |  ------------------
   |  |  861|  1.35M|  } else {\
-  |  |  862|   592k|    B->fd = F;\
-  |  |  863|   592k|    F->bk = B;\
-  |  |  864|   592k|  }\
+  |  |  862|   593k|    B->fd = F;\
+  |  |  863|   593k|    F->bk = B;\
+  |  |  864|   593k|  }\
   |  |  865|  1.94M|}
   ------------------
  1472|  1.94M|      set_inuse_and_pinuse(ms, p, small_index2size(idx));
@@ -2510,29 +2510,29 @@ lj_alloc.c:lj_alloc_malloc:
   |  |  ------------------
   ------------------
   |  Branch (1489:6): [True: 1.74M, Folded]
-  |  Branch (1489:26): [True: 530k, False: 1.21M]
+  |  Branch (1489:26): [True: 529k, False: 1.21M]
   ------------------
- 1490|   530k|	  set_inuse_and_pinuse(ms, p, small_index2size(i));
+ 1490|   529k|	  set_inuse_and_pinuse(ms, p, small_index2size(i));
   ------------------
-  |  |  819|   530k|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
+  |  |  819|   529k|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
   |  |  ------------------
-  |  |  |  |  595|   530k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  595|   529k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|   530k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|   529k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
   |  |  ------------------
-  |  |  |  |  596|   530k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  596|   529k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   56|   530k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |   56|   529k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  820|   530k|  ((mchunkptr)(((char *)(p)) + (s)))->head |= PINUSE_BIT)
+  |  |  820|   529k|  ((mchunkptr)(((char *)(p)) + (s)))->head |= PINUSE_BIT)
   |  |  ------------------
-  |  |  |  |  595|   530k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  595|   529k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|   530k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|   529k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
@@ -2578,49 +2578,49 @@ lj_alloc.c:lj_alloc_malloc:
   |  |  870|  1.21M|  size_t DVS = M->dvsize;\
   |  |  871|  1.21M|  if (DVS != 0) {\
   |  |  ------------------
-  |  |  |  Branch (871:7): [True: 543k, False: 667k]
+  |  |  |  Branch (871:7): [True: 544k, False: 668k]
   |  |  ------------------
-  |  |  872|   543k|    mchunkptr DV = M->dv;\
-  |  |  873|   543k|    insert_small_chunk(M, DV, DVS);\
+  |  |  872|   544k|    mchunkptr DV = M->dv;\
+  |  |  873|   544k|    insert_small_chunk(M, DV, DVS);\
   |  |  ------------------
-  |  |  |  |  829|   543k|#define insert_small_chunk(M, P, S) {\
-  |  |  |  |  830|   543k|  bindex_t I = small_index(S);\
+  |  |  |  |  829|   544k|#define insert_small_chunk(M, P, S) {\
+  |  |  |  |  830|   544k|  bindex_t I = small_index(S);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  759|   543k|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
+  |  |  |  |  |  |  759|   544k|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  677|   543k|#define SMALLBIN_SHIFT		(3U)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  ------------------
-  |  |  |  |  831|   543k|  mchunkptr B = smallbin_at(M, I);\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  764|   543k|#define smallbin_at(M, i)	((sbinptr)((char *)&((M)->smallbins[(i)<<1])))
-  |  |  |  |  ------------------
-  |  |  |  |  832|   543k|  mchunkptr F = B;\
-  |  |  |  |  833|   543k|  if (!smallmap_is_marked(M, I))\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  803|   543k|#define smallmap_is_marked(M,i)	((M)->smallmap &   idx2bit(i))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|   543k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  677|   544k|#define SMALLBIN_SHIFT		(3U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (833:7): [True: 267k, False: 276k]
+  |  |  |  |  831|   544k|  mchunkptr B = smallbin_at(M, I);\
   |  |  |  |  ------------------
-  |  |  |  |  834|   543k|    mark_smallmap(M, I);\
+  |  |  |  |  |  |  764|   544k|#define smallbin_at(M, i)	((sbinptr)((char *)&((M)->smallbins[(i)<<1])))
+  |  |  |  |  ------------------
+  |  |  |  |  832|   544k|  mchunkptr F = B;\
+  |  |  |  |  833|   544k|  if (!smallmap_is_marked(M, I))\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  803|   544k|#define smallmap_is_marked(M,i)	((M)->smallmap &   idx2bit(i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |  798|   544k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  ------------------
+  |  |  |  |  |  Branch (833:7): [True: 267k, False: 277k]
+  |  |  |  |  ------------------
+  |  |  |  |  834|   544k|    mark_smallmap(M, I);\
   |  |  |  |  ------------------
   |  |  |  |  |  |  801|   267k|#define mark_smallmap(M,i)	((M)->smallmap |=  idx2bit(i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  798|   267k|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  835|   543k|  else\
-  |  |  |  |  836|   543k|    F = B->fd;\
-  |  |  |  |  837|   543k|  B->fd = P;\
-  |  |  |  |  838|   543k|  F->bk = P;\
-  |  |  |  |  839|   543k|  P->fd = F;\
-  |  |  |  |  840|   543k|  P->bk = B;\
-  |  |  |  |  841|   543k|}
+  |  |  |  |  835|   544k|  else\
+  |  |  |  |  836|   544k|    F = B->fd;\
+  |  |  |  |  837|   544k|  B->fd = P;\
+  |  |  |  |  838|   544k|  F->bk = P;\
+  |  |  |  |  839|   544k|  P->fd = F;\
+  |  |  |  |  840|   544k|  P->bk = B;\
+  |  |  |  |  841|   544k|}
   |  |  ------------------
-  |  |  874|   543k|  }\
+  |  |  874|   544k|  }\
   |  |  875|  1.21M|  M->dvsize = S;\
   |  |  876|  1.21M|  M->dv = P;\
   |  |  877|  1.21M|}
@@ -2642,14 +2642,14 @@ lj_alloc.c:lj_alloc_malloc:
  1501|  1.74M|	return mem;
  1502|  29.0M|      } else if (ms->treemap != 0 && (mem = tmalloc_small(ms, nb)) != 0) {
   ------------------
-  |  Branch (1502:18): [True: 667k, False: 28.4M]
-  |  Branch (1502:38): [True: 667k, False: 0]
+  |  Branch (1502:18): [True: 666k, False: 28.4M]
+  |  Branch (1502:38): [True: 666k, False: 0]
   ------------------
  1503|       |#if LUAJIT_USE_ASAN
  1504|       |  mem = mark_memory_region(mem - REDZONE_SIZE, mem_size, poison_size);
  1505|       |#endif
- 1506|   667k|	return mem;
- 1507|   667k|      }
+ 1506|   666k|	return mem;
+ 1507|   666k|      }
  1508|  30.8M|    }
  1509|  47.3M|  } else if (nsize >= MAX_REQUEST) {
   ------------------
@@ -2906,35 +2906,35 @@ lj_alloc.c:lj_alloc_malloc:
  1556|  45.8M|#endif
  1557|  45.8M|}
 lj_alloc.c:tmalloc_small:
- 1360|   667k|{
- 1361|   667k|  tchunkptr t, v;
- 1362|   667k|  mchunkptr r;
- 1363|   667k|  size_t rsize;
- 1364|   667k|  bindex_t i = lj_ffs(m->treemap);
+ 1360|   666k|{
+ 1361|   666k|  tchunkptr t, v;
+ 1362|   666k|  mchunkptr r;
+ 1363|   666k|  size_t rsize;
+ 1364|   666k|  bindex_t i = lj_ffs(m->treemap);
   ------------------
-  |  |  149|   667k|#define lj_ffs(x)	((uint32_t)__builtin_ctz(x))
+  |  |  149|   666k|#define lj_ffs(x)	((uint32_t)__builtin_ctz(x))
   ------------------
  1365|       |
- 1366|   667k|  v = t = *treebin_at(m, i);
+ 1366|   666k|  v = t = *treebin_at(m, i);
   ------------------
-  |  |  765|   667k|#define treebin_at(M,i)		(&((M)->treebins[i]))
+  |  |  765|   666k|#define treebin_at(M,i)		(&((M)->treebins[i]))
   ------------------
- 1367|   667k|  rsize = chunksize(t) - nb;
+ 1367|   666k|  rsize = chunksize(t) - nb;
   ------------------
-  |  |  605|   667k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
+  |  |  605|   666k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
   |  |  ------------------
-  |  |  |  |  597|   667k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
+  |  |  |  |  597|   666k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  595|   667k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  |  |  595|   666k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|   667k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|   666k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |               #define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  596|   667k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  |  |  596|   666k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   56|   667k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |  |  |   56|   666k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
@@ -2944,96 +2944,96 @@ lj_alloc.c:tmalloc_small:
   ------------------
   |  |  659|   792k|#define leftmost_child(t) ((t)->child[0] != 0? (t)->child[0] : (t)->child[1])
   |  |  ------------------
-  |  |  |  Branch (659:28): [True: 78.4k, False: 713k]
+  |  |  |  Branch (659:28): [True: 77.9k, False: 714k]
   |  |  ------------------
   ------------------
-  |  Branch (1369:10): [True: 124k, False: 667k]
+  |  Branch (1369:10): [True: 125k, False: 666k]
   ------------------
- 1370|   124k|    size_t trem = chunksize(t) - nb;
+ 1370|   125k|    size_t trem = chunksize(t) - nb;
   ------------------
-  |  |  605|   124k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
+  |  |  605|   125k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
   |  |  ------------------
-  |  |  |  |  597|   124k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
+  |  |  |  |  597|   125k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  595|   124k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  |  |  595|   125k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|   124k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|   125k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |               #define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  596|   124k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  |  |  596|   125k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   56|   124k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |  |  |   56|   125k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1371|   124k|    if (trem < rsize) {
+ 1371|   125k|    if (trem < rsize) {
   ------------------
-  |  Branch (1371:9): [True: 53.3k, False: 71.5k]
+  |  Branch (1371:9): [True: 53.2k, False: 71.8k]
   ------------------
- 1372|  53.3k|      rsize = trem;
- 1373|  53.3k|      v = t;
- 1374|  53.3k|    }
- 1375|   124k|  }
+ 1372|  53.2k|      rsize = trem;
+ 1373|  53.2k|      v = t;
+ 1374|  53.2k|    }
+ 1375|   125k|  }
  1376|       |
- 1377|   667k|  r = chunk_plus_offset(v, nb);
+ 1377|   666k|  r = chunk_plus_offset(v, nb);
   ------------------
-  |  |  611|   667k|#define chunk_plus_offset(p, s)		((mchunkptr)(((char *)(p)) + (s)))
+  |  |  611|   666k|#define chunk_plus_offset(p, s)		((mchunkptr)(((char *)(p)) + (s)))
   ------------------
- 1378|   667k|  unlink_large_chunk(m, v);
+ 1378|   666k|  unlink_large_chunk(m, v);
   ------------------
-  |  |  921|   667k|#define unlink_large_chunk(M, X) {\
-  |  |  922|   667k|  tchunkptr XP = X->parent;\
-  |  |  923|   667k|  tchunkptr R;\
-  |  |  924|   667k|  if (X->bk != X) {\
+  |  |  921|   666k|#define unlink_large_chunk(M, X) {\
+  |  |  922|   666k|  tchunkptr XP = X->parent;\
+  |  |  923|   666k|  tchunkptr R;\
+  |  |  924|   666k|  if (X->bk != X) {\
   |  |  ------------------
-  |  |  |  Branch (924:7): [True: 70.1k, False: 597k]
+  |  |  |  Branch (924:7): [True: 70.0k, False: 596k]
   |  |  ------------------
-  |  |  925|  70.1k|    tchunkptr F = X->fd;\
-  |  |  926|  70.1k|    R = X->bk;\
-  |  |  927|  70.1k|    F->bk = R;\
-  |  |  928|  70.1k|    R->fd = F;\
-  |  |  929|   597k|  } else {\
-  |  |  930|   597k|    tchunkptr *RP;\
-  |  |  931|   597k|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
+  |  |  925|  70.0k|    tchunkptr F = X->fd;\
+  |  |  926|  70.0k|    R = X->bk;\
+  |  |  927|  70.0k|    F->bk = R;\
+  |  |  928|  70.0k|    R->fd = F;\
+  |  |  929|   596k|  } else {\
+  |  |  930|   596k|    tchunkptr *RP;\
+  |  |  931|   596k|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  ------------------
-  |  |  |  Branch (931:9): [True: 11.3k, False: 585k]
+  |  |  |  Branch (931:9): [True: 11.2k, False: 585k]
   |  |  ------------------
-  |  |  932|   597k|	((R = *(RP = &(X->child[0]))) != 0)) {\
+  |  |  932|   596k|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  ------------------
-  |  |  |  Branch (932:2): [True: 3.16k, False: 582k]
+  |  |  |  Branch (932:2): [True: 3.20k, False: 582k]
   |  |  ------------------
-  |  |  933|  14.5k|      tchunkptr *CP;\
-  |  |  934|  19.5k|      while ((*(CP = &(R->child[1])) != 0) ||\
+  |  |  933|  14.4k|      tchunkptr *CP;\
+  |  |  934|  19.4k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  ------------------
-  |  |  |  Branch (934:14): [True: 3.16k, False: 16.3k]
+  |  |  |  Branch (934:14): [True: 3.17k, False: 16.2k]
   |  |  ------------------
-  |  |  935|  19.5k|	     (*(CP = &(R->child[0])) != 0)) {\
+  |  |  935|  19.4k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  ------------------
-  |  |  |  Branch (935:7): [True: 1.88k, False: 14.5k]
+  |  |  |  Branch (935:7): [True: 1.85k, False: 14.4k]
   |  |  ------------------
-  |  |  936|  5.04k|	R = *(RP = CP);\
-  |  |  937|  5.04k|      }\
-  |  |  938|  14.5k|      *RP = 0;\
-  |  |  939|  14.5k|    }\
-  |  |  940|   597k|  }\
-  |  |  941|   667k|  if (XP != 0) {\
+  |  |  936|  5.02k|	R = *(RP = CP);\
+  |  |  937|  5.02k|      }\
+  |  |  938|  14.4k|      *RP = 0;\
+  |  |  939|  14.4k|    }\
+  |  |  940|   596k|  }\
+  |  |  941|   666k|  if (XP != 0) {\
   |  |  ------------------
-  |  |  |  Branch (941:7): [True: 667k, False: 0]
+  |  |  |  Branch (941:7): [True: 666k, False: 0]
   |  |  ------------------
-  |  |  942|   667k|    tbinptr *H = treebin_at(M, X->index);\
+  |  |  942|   666k|    tbinptr *H = treebin_at(M, X->index);\
   |  |  ------------------
-  |  |  |  |  765|   667k|#define treebin_at(M,i)		(&((M)->treebins[i]))
+  |  |  |  |  765|   666k|#define treebin_at(M,i)		(&((M)->treebins[i]))
   |  |  ------------------
-  |  |  943|   667k|    if (X == *H) {\
+  |  |  943|   666k|    if (X == *H) {\
   |  |  ------------------
-  |  |  |  Branch (943:9): [True: 622k, False: 44.4k]
+  |  |  |  Branch (943:9): [True: 622k, False: 44.3k]
   |  |  ------------------
   |  |  944|   622k|      if ((*H = R) == 0) \
   |  |  ------------------
-  |  |  |  Branch (944:11): [True: 563k, False: 58.9k]
+  |  |  |  Branch (944:11): [True: 563k, False: 58.7k]
   |  |  ------------------
   |  |  945|   622k|	clear_treemap(M, X->index);\
   |  |  ------------------
@@ -3043,90 +3043,90 @@ lj_alloc.c:tmalloc_small:
   |  |  |  |  ------------------
   |  |  ------------------
   |  |  946|   622k|    } else {\
-  |  |  947|  44.4k|      if (XP->child[0] == X) \
+  |  |  947|  44.3k|      if (XP->child[0] == X) \
   |  |  ------------------
-  |  |  |  Branch (947:11): [True: 37.2k, False: 7.14k]
+  |  |  |  Branch (947:11): [True: 37.1k, False: 7.24k]
   |  |  ------------------
-  |  |  948|  44.4k|	XP->child[0] = R;\
-  |  |  949|  44.4k|      else \
-  |  |  950|  44.4k|	XP->child[1] = R;\
-  |  |  951|  44.4k|    }\
-  |  |  952|   667k|    if (R != 0) {\
+  |  |  948|  44.3k|	XP->child[0] = R;\
+  |  |  949|  44.3k|      else \
+  |  |  950|  44.3k|	XP->child[1] = R;\
+  |  |  951|  44.3k|    }\
+  |  |  952|   666k|    if (R != 0) {\
   |  |  ------------------
-  |  |  |  Branch (952:9): [True: 84.6k, False: 582k]
+  |  |  |  Branch (952:9): [True: 84.4k, False: 582k]
   |  |  ------------------
-  |  |  953|  84.6k|      tchunkptr C0, C1;\
-  |  |  954|  84.6k|      R->parent = XP;\
-  |  |  955|  84.6k|      if ((C0 = X->child[0]) != 0) {\
+  |  |  953|  84.4k|      tchunkptr C0, C1;\
+  |  |  954|  84.4k|      R->parent = XP;\
+  |  |  955|  84.4k|      if ((C0 = X->child[0]) != 0) {\
   |  |  ------------------
-  |  |  |  Branch (955:11): [True: 16.8k, False: 67.8k]
+  |  |  |  Branch (955:11): [True: 16.4k, False: 68.0k]
   |  |  ------------------
-  |  |  956|  16.8k|	R->child[0] = C0;\
-  |  |  957|  16.8k|	C0->parent = R;\
-  |  |  958|  16.8k|      }\
-  |  |  959|  84.6k|      if ((C1 = X->child[1]) != 0) {\
+  |  |  956|  16.4k|	R->child[0] = C0;\
+  |  |  957|  16.4k|	C0->parent = R;\
+  |  |  958|  16.4k|      }\
+  |  |  959|  84.4k|      if ((C1 = X->child[1]) != 0) {\
   |  |  ------------------
-  |  |  |  Branch (959:11): [True: 35.5k, False: 49.1k]
+  |  |  |  Branch (959:11): [True: 35.5k, False: 48.9k]
   |  |  ------------------
   |  |  960|  35.5k|	R->child[1] = C1;\
   |  |  961|  35.5k|	C1->parent = R;\
   |  |  962|  35.5k|      }\
-  |  |  963|  84.6k|    }\
-  |  |  964|   667k|  }\
-  |  |  965|   667k|}
+  |  |  963|  84.4k|    }\
+  |  |  964|   666k|  }\
+  |  |  965|   666k|}
   ------------------
- 1379|   667k|  if (rsize < MIN_CHUNK_SIZE) {
+ 1379|   666k|  if (rsize < MIN_CHUNK_SIZE) {
   ------------------
-  |  |  567|   667k|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  567|   666k|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |  556|   667k|#define MCHUNK_SIZE		(sizeof(mchunk))
+  |  |  |  |  556|   666k|#define MCHUNK_SIZE		(sizeof(mchunk))
   |  |  ------------------
   |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|   667k|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|   666k|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|   667k|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|   666k|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|   667k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|   666k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|   667k|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|   666k|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|   667k|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|   666k|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|   667k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|   666k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (1379:7): [True: 1.45k, False: 665k]
+  |  Branch (1379:7): [True: 1.42k, False: 665k]
   ------------------
- 1380|  1.45k|    set_inuse_and_pinuse(m, v, (rsize + nb));
+ 1380|  1.42k|    set_inuse_and_pinuse(m, v, (rsize + nb));
   ------------------
-  |  |  819|  1.45k|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
+  |  |  819|  1.42k|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
   |  |  ------------------
-  |  |  |  |  595|  1.45k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  595|  1.42k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|  1.45k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|  1.42k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((p)->head = (s|PINUSE_BIT|CINUSE_BIT),\
   |  |  ------------------
-  |  |  |  |  596|  1.45k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  596|  1.42k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   56|  1.45k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |   56|  1.42k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  820|  1.45k|  ((mchunkptr)(((char *)(p)) + (s)))->head |= PINUSE_BIT)
+  |  |  820|  1.42k|  ((mchunkptr)(((char *)(p)) + (s)))->head |= PINUSE_BIT)
   |  |  ------------------
-  |  |  |  |  595|  1.45k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  595|  1.42k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|  1.45k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|  1.42k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
@@ -3216,17 +3216,17 @@ lj_alloc.c:tmalloc_small:
   |  |  877|   665k|}
   ------------------
  1385|   665k|  }
- 1386|   667k|  return chunk2mem(v);
+ 1386|   666k|  return chunk2mem(v);
   ------------------
-  |  |  575|   667k|#define chunk2mem(p)		((void *)((char *)(p) + TWO_SIZE_T_SIZES))
+  |  |  575|   666k|#define chunk2mem(p)		((void *)((char *)(p) + TWO_SIZE_T_SIZES))
   |  |  ------------------
-  |  |  |  |   57|   667k|#define TWO_SIZE_T_SIZES	(SIZE_T_SIZE<<1)
+  |  |  |  |   57|   666k|#define TWO_SIZE_T_SIZES	(SIZE_T_SIZE<<1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   49|   667k|#define SIZE_T_SIZE		(sizeof(size_t))
+  |  |  |  |  |  |   49|   666k|#define SIZE_T_SIZE		(sizeof(size_t))
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1387|   667k|}
+ 1387|   666k|}
 lj_alloc.c:tmalloc_large:
  1296|   488k|{
  1297|   488k|  tchunkptr v = 0;
@@ -3296,29 +3296,29 @@ lj_alloc.c:tmalloc_large:
   |  |  ------------------
   ------------------
  1306|   164k|    tchunkptr rst = 0;  /* The deepest untaken right subtree */
- 1307|   207k|    for (;;) {
- 1308|   207k|      tchunkptr rt;
- 1309|   207k|      size_t trem = chunksize(t) - nb;
+ 1307|   208k|    for (;;) {
+ 1308|   208k|      tchunkptr rt;
+ 1309|   208k|      size_t trem = chunksize(t) - nb;
   ------------------
-  |  |  605|   207k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
+  |  |  605|   208k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
   |  |  ------------------
-  |  |  |  |  597|   207k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
+  |  |  |  |  597|   208k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  595|   207k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  |  |  595|   208k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|   207k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|   208k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |               #define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  596|   207k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  |  |  596|   208k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   56|   207k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |  |  |   56|   208k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1310|   207k|      if (trem < rsize) {
+ 1310|   208k|      if (trem < rsize) {
   ------------------
   |  Branch (1310:11): [True: 159k, False: 48.2k]
   ------------------
@@ -3340,25 +3340,25 @@ lj_alloc.c:tmalloc_large:
   ------------------
  1317|   129k|      if (rt != 0 && rt != t)
   ------------------
-  |  Branch (1317:11): [True: 35.2k, False: 94.5k]
-  |  Branch (1317:22): [True: 28.2k, False: 7.01k]
+  |  Branch (1317:11): [True: 35.4k, False: 94.3k]
+  |  Branch (1317:22): [True: 28.4k, False: 7.01k]
   ------------------
- 1318|  28.2k|	rst = rt;
+ 1318|  28.4k|	rst = rt;
  1319|   129k|      if (t == 0) {
   ------------------
-  |  Branch (1319:11): [True: 86.4k, False: 43.4k]
+  |  Branch (1319:11): [True: 86.4k, False: 43.3k]
   ------------------
  1320|  86.4k|	t = rst; /* set t to least subtree holding sizes > nb */
  1321|  86.4k|	break;
  1322|  86.4k|      }
- 1323|  43.4k|      sizebits <<= 1;
- 1324|  43.4k|    }
+ 1323|  43.3k|      sizebits <<= 1;
+ 1324|  43.3k|    }
  1325|   164k|  }
  1326|       |
  1327|   488k|  if (t == 0 && v == 0) { /* set t to root of next non-empty treebin */
   ------------------
-  |  Branch (1327:7): [True: 394k, False: 93.5k]
-  |  Branch (1327:17): [True: 353k, False: 40.7k]
+  |  Branch (1327:7): [True: 394k, False: 93.6k]
+  |  Branch (1327:17): [True: 353k, False: 40.6k]
   ------------------
  1328|   353k|    binmap_t leftbits = left_bits(idx2bit(idx)) & m->treemap;
   ------------------
@@ -3409,7 +3409,7 @@ lj_alloc.c:tmalloc_large:
   ------------------
   |  |  659|   336k|#define leftmost_child(t) ((t)->child[0] != 0? (t)->child[0] : (t)->child[1])
   |  |  ------------------
-  |  |  |  Branch (659:28): [True: 57.6k, False: 279k]
+  |  |  |  Branch (659:28): [True: 57.3k, False: 279k]
   |  |  ------------------
   ------------------
  1340|   336k|  }
@@ -3418,7 +3418,7 @@ lj_alloc.c:tmalloc_large:
  1343|   488k|  if (v != 0 && rsize < (size_t)(m->dvsize - nb)) {
   ------------------
   |  Branch (1343:7): [True: 287k, False: 200k]
-  |  Branch (1343:17): [True: 261k, False: 25.8k]
+  |  Branch (1343:17): [True: 261k, False: 25.7k]
   ------------------
  1344|   261k|    mchunkptr r = chunk_plus_offset(v, nb);
   ------------------
@@ -3431,33 +3431,33 @@ lj_alloc.c:tmalloc_large:
   |  |  923|   261k|  tchunkptr R;\
   |  |  924|   261k|  if (X->bk != X) {\
   |  |  ------------------
-  |  |  |  Branch (924:7): [True: 66.9k, False: 194k]
+  |  |  |  Branch (924:7): [True: 67.1k, False: 194k]
   |  |  ------------------
-  |  |  925|  66.9k|    tchunkptr F = X->fd;\
-  |  |  926|  66.9k|    R = X->bk;\
-  |  |  927|  66.9k|    F->bk = R;\
-  |  |  928|  66.9k|    R->fd = F;\
+  |  |  925|  67.1k|    tchunkptr F = X->fd;\
+  |  |  926|  67.1k|    R = X->bk;\
+  |  |  927|  67.1k|    F->bk = R;\
+  |  |  928|  67.1k|    R->fd = F;\
   |  |  929|   194k|  } else {\
   |  |  930|   194k|    tchunkptr *RP;\
   |  |  931|   194k|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  ------------------
-  |  |  |  Branch (931:9): [True: 8.87k, False: 185k]
+  |  |  |  Branch (931:9): [True: 8.95k, False: 185k]
   |  |  ------------------
   |  |  932|   194k|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  ------------------
-  |  |  |  Branch (932:2): [True: 4.88k, False: 180k]
+  |  |  |  Branch (932:2): [True: 4.79k, False: 180k]
   |  |  ------------------
   |  |  933|  13.7k|      tchunkptr *CP;\
   |  |  934|  17.6k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  ------------------
-  |  |  |  Branch (934:14): [True: 2.13k, False: 15.5k]
+  |  |  |  Branch (934:14): [True: 2.11k, False: 15.4k]
   |  |  ------------------
   |  |  935|  17.6k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  ------------------
-  |  |  |  Branch (935:7): [True: 1.79k, False: 13.7k]
+  |  |  |  Branch (935:7): [True: 1.74k, False: 13.7k]
   |  |  ------------------
-  |  |  936|  3.92k|	R = *(RP = CP);\
-  |  |  937|  3.92k|      }\
+  |  |  936|  3.86k|	R = *(RP = CP);\
+  |  |  937|  3.86k|      }\
   |  |  938|  13.7k|      *RP = 0;\
   |  |  939|  13.7k|    }\
   |  |  940|   194k|  }\
@@ -3475,7 +3475,7 @@ lj_alloc.c:tmalloc_large:
   |  |  ------------------
   |  |  944|   220k|      if ((*H = R) == 0) \
   |  |  ------------------
-  |  |  |  Branch (944:11): [True: 160k, False: 59.4k]
+  |  |  |  Branch (944:11): [True: 160k, False: 59.7k]
   |  |  ------------------
   |  |  945|   220k|	clear_treemap(M, X->index);\
   |  |  ------------------
@@ -3487,7 +3487,7 @@ lj_alloc.c:tmalloc_large:
   |  |  946|   220k|    } else {\
   |  |  947|  41.5k|      if (XP->child[0] == X) \
   |  |  ------------------
-  |  |  |  Branch (947:11): [True: 33.5k, False: 7.99k]
+  |  |  |  Branch (947:11): [True: 33.6k, False: 7.89k]
   |  |  ------------------
   |  |  948|  41.5k|	XP->child[0] = R;\
   |  |  949|  41.5k|      else \
@@ -3495,25 +3495,25 @@ lj_alloc.c:tmalloc_large:
   |  |  951|  41.5k|    }\
   |  |  952|   261k|    if (R != 0) {\
   |  |  ------------------
-  |  |  |  Branch (952:9): [True: 80.7k, False: 180k]
+  |  |  |  Branch (952:9): [True: 80.9k, False: 180k]
   |  |  ------------------
-  |  |  953|  80.7k|      tchunkptr C0, C1;\
-  |  |  954|  80.7k|      R->parent = XP;\
-  |  |  955|  80.7k|      if ((C0 = X->child[0]) != 0) {\
+  |  |  953|  80.9k|      tchunkptr C0, C1;\
+  |  |  954|  80.9k|      R->parent = XP;\
+  |  |  955|  80.9k|      if ((C0 = X->child[0]) != 0) {\
   |  |  ------------------
-  |  |  |  Branch (955:11): [True: 28.6k, False: 52.0k]
+  |  |  |  Branch (955:11): [True: 28.6k, False: 52.3k]
   |  |  ------------------
   |  |  956|  28.6k|	R->child[0] = C0;\
   |  |  957|  28.6k|	C0->parent = R;\
   |  |  958|  28.6k|      }\
-  |  |  959|  80.7k|      if ((C1 = X->child[1]) != 0) {\
+  |  |  959|  80.9k|      if ((C1 = X->child[1]) != 0) {\
   |  |  ------------------
-  |  |  |  Branch (959:11): [True: 38.3k, False: 42.4k]
+  |  |  |  Branch (959:11): [True: 38.4k, False: 42.4k]
   |  |  ------------------
-  |  |  960|  38.3k|	R->child[1] = C1;\
-  |  |  961|  38.3k|	C1->parent = R;\
-  |  |  962|  38.3k|      }\
-  |  |  963|  80.7k|    }\
+  |  |  960|  38.4k|	R->child[1] = C1;\
+  |  |  961|  38.4k|	C1->parent = R;\
+  |  |  962|  38.4k|      }\
+  |  |  963|  80.9k|    }\
   |  |  964|   261k|  }\
   |  |  965|   261k|}
   ------------------
@@ -3616,188 +3616,188 @@ lj_alloc.c:tmalloc_large:
   |  |  |  |  ------------------
   |  |  |  |  |  |  675|   160k|#define NSMALLBINS		(32U)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (758:22): [True: 74.2k, False: 86.2k]
+  |  |  |  |  |  Branch (758:22): [True: 74.3k, False: 86.1k]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 if (is_small(S)) { insert_small_chunk(M, P, S)\
   |  |  ------------------
-  |  |  |  |  829|  74.2k|#define insert_small_chunk(M, P, S) {\
-  |  |  |  |  830|  74.2k|  bindex_t I = small_index(S);\
+  |  |  |  |  829|  74.3k|#define insert_small_chunk(M, P, S) {\
+  |  |  |  |  830|  74.3k|  bindex_t I = small_index(S);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  759|  74.2k|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
+  |  |  |  |  |  |  759|  74.3k|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  677|  74.2k|#define SMALLBIN_SHIFT		(3U)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  ------------------
-  |  |  |  |  831|  74.2k|  mchunkptr B = smallbin_at(M, I);\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  764|  74.2k|#define smallbin_at(M, i)	((sbinptr)((char *)&((M)->smallbins[(i)<<1])))
-  |  |  |  |  ------------------
-  |  |  |  |  832|  74.2k|  mchunkptr F = B;\
-  |  |  |  |  833|  74.2k|  if (!smallmap_is_marked(M, I))\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  803|  74.2k|#define smallmap_is_marked(M,i)	((M)->smallmap &   idx2bit(i))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|  74.2k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  677|  74.3k|#define SMALLBIN_SHIFT		(3U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (833:7): [True: 55.8k, False: 18.4k]
+  |  |  |  |  831|  74.3k|  mchunkptr B = smallbin_at(M, I);\
   |  |  |  |  ------------------
-  |  |  |  |  834|  74.2k|    mark_smallmap(M, I);\
+  |  |  |  |  |  |  764|  74.3k|#define smallbin_at(M, i)	((sbinptr)((char *)&((M)->smallbins[(i)<<1])))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  801|  55.8k|#define mark_smallmap(M,i)	((M)->smallmap |=  idx2bit(i))
+  |  |  |  |  832|  74.3k|  mchunkptr F = B;\
+  |  |  |  |  833|  74.3k|  if (!smallmap_is_marked(M, I))\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  803|  74.3k|#define smallmap_is_marked(M,i)	((M)->smallmap &   idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|  55.8k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|  74.3k|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  835|  74.2k|  else\
-  |  |  |  |  836|  74.2k|    F = B->fd;\
-  |  |  |  |  837|  74.2k|  B->fd = P;\
-  |  |  |  |  838|  74.2k|  F->bk = P;\
-  |  |  |  |  839|  74.2k|  P->fd = F;\
-  |  |  |  |  840|  74.2k|  P->bk = B;\
-  |  |  |  |  841|  74.2k|}
+  |  |  |  |  |  Branch (833:7): [True: 56.0k, False: 18.3k]
+  |  |  |  |  ------------------
+  |  |  |  |  834|  74.3k|    mark_smallmap(M, I);\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  801|  56.0k|#define mark_smallmap(M,i)	((M)->smallmap |=  idx2bit(i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |  798|  56.0k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  ------------------
+  |  |  |  |  835|  74.3k|  else\
+  |  |  |  |  836|  74.3k|    F = B->fd;\
+  |  |  |  |  837|  74.3k|  B->fd = P;\
+  |  |  |  |  838|  74.3k|  F->bk = P;\
+  |  |  |  |  839|  74.3k|  P->fd = F;\
+  |  |  |  |  840|  74.3k|  P->bk = B;\
+  |  |  |  |  841|  74.3k|}
   |  |  ------------------
-  |  |  971|  86.2k|  } else { tchunkptr TP = (tchunkptr)(P); insert_large_chunk(M, TP, S); }
+  |  |  971|  86.1k|  } else { tchunkptr TP = (tchunkptr)(P); insert_large_chunk(M, TP, S); }
   |  |  ------------------
-  |  |  |  |  882|  86.2k|#define insert_large_chunk(M, X, S) {\
-  |  |  |  |  883|  86.2k|  tbinptr *H;\
-  |  |  |  |  884|  86.2k|  bindex_t I;\
-  |  |  |  |  885|  86.2k|  compute_tree_index(S, I);\
+  |  |  |  |  882|  86.1k|#define insert_large_chunk(M, X, S) {\
+  |  |  |  |  883|  86.1k|  tbinptr *H;\
+  |  |  |  |  884|  86.1k|  bindex_t I;\
+  |  |  |  |  885|  86.1k|  compute_tree_index(S, I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  768|  86.2k|#define compute_tree_index(S, I)\
-  |  |  |  |  |  |  769|  86.2k|{\
-  |  |  |  |  |  |  770|  86.2k|  unsigned int X = (unsigned int)(S >> TREEBIN_SHIFT);\
+  |  |  |  |  |  |  768|  86.1k|#define compute_tree_index(S, I)\
+  |  |  |  |  |  |  769|  86.1k|{\
+  |  |  |  |  |  |  770|  86.1k|  unsigned int X = (unsigned int)(S >> TREEBIN_SHIFT);\
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  679|  86.2k|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  |  |  679|  86.1k|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  771|  86.2k|  if (X == 0) {\
+  |  |  |  |  |  |  771|  86.1k|  if (X == 0) {\
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (771:7): [True: 0, False: 86.2k]
+  |  |  |  |  |  |  |  Branch (771:7): [True: 0, False: 86.1k]
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  772|      0|    I = 0;\
-  |  |  |  |  |  |  773|  86.2k|  } else if (X > 0xFFFF) {\
+  |  |  |  |  |  |  773|  86.1k|  } else if (X > 0xFFFF) {\
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (773:14): [True: 0, False: 86.2k]
+  |  |  |  |  |  |  |  Branch (773:14): [True: 0, False: 86.1k]
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  774|      0|    I = NTREEBINS-1;\
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  676|      0|#define NTREEBINS		(32U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  775|  86.2k|  } else {\
-  |  |  |  |  |  |  776|  86.2k|    unsigned int K = lj_fls(X);\
+  |  |  |  |  |  |  775|  86.1k|  } else {\
+  |  |  |  |  |  |  776|  86.1k|    unsigned int K = lj_fls(X);\
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  150|  86.2k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
+  |  |  |  |  |  |  |  |  150|  86.1k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  777|  86.2k|    I =  (bindex_t)((K << 1) + ((S >> (K + (TREEBIN_SHIFT-1)) & 1)));\
+  |  |  |  |  |  |  777|  86.1k|    I =  (bindex_t)((K << 1) + ((S >> (K + (TREEBIN_SHIFT-1)) & 1)));\
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  679|  86.2k|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  |  |  679|  86.1k|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  778|  86.2k|  }\
-  |  |  |  |  |  |  779|  86.2k|}
+  |  |  |  |  |  |  778|  86.1k|  }\
+  |  |  |  |  |  |  779|  86.1k|}
   |  |  |  |  ------------------
-  |  |  |  |  886|  86.2k|  H = treebin_at(M, I);\
+  |  |  |  |  886|  86.1k|  H = treebin_at(M, I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  765|  86.2k|#define treebin_at(M,i)		(&((M)->treebins[i]))
+  |  |  |  |  |  |  765|  86.1k|#define treebin_at(M,i)		(&((M)->treebins[i]))
   |  |  |  |  ------------------
-  |  |  |  |  887|  86.2k|  X->index = I;\
-  |  |  |  |  888|  86.2k|  X->child[0] = X->child[1] = 0;\
-  |  |  |  |  889|  86.2k|  if (!treemap_is_marked(M, I)) {\
+  |  |  |  |  887|  86.1k|  X->index = I;\
+  |  |  |  |  888|  86.1k|  X->child[0] = X->child[1] = 0;\
+  |  |  |  |  889|  86.1k|  if (!treemap_is_marked(M, I)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  807|  86.2k|#define treemap_is_marked(M,i)	((M)->treemap  &   idx2bit(i))
+  |  |  |  |  |  |  807|  86.1k|#define treemap_is_marked(M,i)	((M)->treemap  &   idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|  86.2k|#define idx2bit(i)		((binmap_t)(1) << (i))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  ------------------
-  |  |  |  |  |  Branch (889:7): [True: 78.7k, False: 7.48k]
-  |  |  |  |  ------------------
-  |  |  |  |  890|  78.7k|    mark_treemap(M, I);\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  805|  78.7k|#define mark_treemap(M,i)	((M)->treemap  |=  idx2bit(i))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|  78.7k|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|  86.1k|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  891|  78.7k|    *H = X;\
-  |  |  |  |  892|  78.7k|    X->parent = (tchunkptr)H;\
-  |  |  |  |  893|  78.7k|    X->fd = X->bk = X;\
-  |  |  |  |  894|  78.7k|  } else {\
-  |  |  |  |  895|  7.48k|    tchunkptr T = *H;\
-  |  |  |  |  896|  7.48k|    size_t K = S << leftshift_for_tree_index(I);\
+  |  |  |  |  |  Branch (889:7): [True: 78.6k, False: 7.53k]
   |  |  |  |  ------------------
-  |  |  |  |  |  |  787|  7.48k|   ((i == NTREEBINS-1)? 0 : \
+  |  |  |  |  890|  78.6k|    mark_treemap(M, I);\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  805|  78.6k|#define mark_treemap(M,i)	((M)->treemap  |=  idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  676|  7.48k|#define NTREEBINS		(32U)
+  |  |  |  |  |  |  |  |  798|  78.6k|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 7.48k]
+  |  |  |  |  ------------------
+  |  |  |  |  891|  78.6k|    *H = X;\
+  |  |  |  |  892|  78.6k|    X->parent = (tchunkptr)H;\
+  |  |  |  |  893|  78.6k|    X->fd = X->bk = X;\
+  |  |  |  |  894|  78.6k|  } else {\
+  |  |  |  |  895|  7.53k|    tchunkptr T = *H;\
+  |  |  |  |  896|  7.53k|    size_t K = S << leftshift_for_tree_index(I);\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  787|  7.53k|   ((i == NTREEBINS-1)? 0 : \
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  788|  7.48k|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
+  |  |  |  |  |  |  |  |  676|  7.53k|#define NTREEBINS		(32U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   50|  7.48k|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
+  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 7.53k]
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  788|  7.53k|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |   50|  7.53k|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|  7.48k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|  7.53k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  679|  7.48k|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  |  |  679|  7.53k|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  897|  9.69k|    for (;;) {\
-  |  |  |  |  898|  9.69k|      if (chunksize(T) != S) {\
+  |  |  |  |  897|  9.73k|    for (;;) {\
+  |  |  |  |  898|  9.73k|      if (chunksize(T) != S) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  605|  9.69k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
+  |  |  |  |  |  |  605|  9.73k|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  597|  9.69k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
+  |  |  |  |  |  |  |  |  597|  9.73k|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  595|  9.69k|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  |  |  |  |  |  |  595|  9.73k|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  |  |   55|  9.69k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |  |  |  |  |   55|  9.73k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |               #define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  596|  9.69k|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  |  |  |  |  |  |  596|  9.73k|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  |  |   56|  9.69k|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |  |  |  |  |  |  |   56|  9.73k|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (898:11): [True: 8.06k, False: 1.62k]
+  |  |  |  |  |  Branch (898:11): [True: 8.11k, False: 1.61k]
   |  |  |  |  ------------------
-  |  |  |  |  899|  8.06k|	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
+  |  |  |  |  899|  8.11k|	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |   50|  8.06k|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
+  |  |  |  |  |  |   50|  8.11k|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
   |  |  |  |  ------------------
   |  |  |  |               	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|  8.06k|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|  8.11k|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
-  |  |  |  |  900|  8.06k|	K <<= 1;\
-  |  |  |  |  901|  8.06k|	if (*C != 0) {\
+  |  |  |  |  900|  8.11k|	K <<= 1;\
+  |  |  |  |  901|  8.11k|	if (*C != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (901:6): [True: 2.21k, False: 5.85k]
+  |  |  |  |  |  Branch (901:6): [True: 2.19k, False: 5.92k]
   |  |  |  |  ------------------
-  |  |  |  |  902|  2.21k|	  T = *C;\
-  |  |  |  |  903|  5.85k|	} else {\
-  |  |  |  |  904|  5.85k|	  *C = X;\
-  |  |  |  |  905|  5.85k|	  X->parent = T;\
-  |  |  |  |  906|  5.85k|	  X->fd = X->bk = X;\
-  |  |  |  |  907|  5.85k|	  break;\
-  |  |  |  |  908|  5.85k|	}\
-  |  |  |  |  909|  8.06k|      } else {\
-  |  |  |  |  910|  1.62k|	tchunkptr F = T->fd;\
-  |  |  |  |  911|  1.62k|	T->fd = F->bk = X;\
-  |  |  |  |  912|  1.62k|	X->fd = F;\
-  |  |  |  |  913|  1.62k|	X->bk = T;\
-  |  |  |  |  914|  1.62k|	X->parent = 0;\
-  |  |  |  |  915|  1.62k|	break;\
-  |  |  |  |  916|  1.62k|      }\
-  |  |  |  |  917|  9.69k|    }\
-  |  |  |  |  918|  7.48k|  }\
-  |  |  |  |  919|  86.2k|}
+  |  |  |  |  902|  2.19k|	  T = *C;\
+  |  |  |  |  903|  5.92k|	} else {\
+  |  |  |  |  904|  5.92k|	  *C = X;\
+  |  |  |  |  905|  5.92k|	  X->parent = T;\
+  |  |  |  |  906|  5.92k|	  X->fd = X->bk = X;\
+  |  |  |  |  907|  5.92k|	  break;\
+  |  |  |  |  908|  5.92k|	}\
+  |  |  |  |  909|  8.11k|      } else {\
+  |  |  |  |  910|  1.61k|	tchunkptr F = T->fd;\
+  |  |  |  |  911|  1.61k|	T->fd = F->bk = X;\
+  |  |  |  |  912|  1.61k|	X->fd = F;\
+  |  |  |  |  913|  1.61k|	X->bk = T;\
+  |  |  |  |  914|  1.61k|	X->parent = 0;\
+  |  |  |  |  915|  1.61k|	break;\
+  |  |  |  |  916|  1.61k|      }\
+  |  |  |  |  917|  9.73k|    }\
+  |  |  |  |  918|  7.53k|  }\
+  |  |  |  |  919|  86.1k|}
   |  |  ------------------
   ------------------
  1352|   160k|    }
@@ -4039,21 +4039,21 @@ lj_alloc.c:alloc_sys:
  1181|  10.7k|      sp = &m->seg;
  1182|  11.4k|      while (sp != 0 && sp->base != tbase + tsize)
   ------------------
-  |  Branch (1182:14): [True: 10.7k, False: 661]
-  |  Branch (1182:25): [True: 694, False: 10.0k]
+  |  Branch (1182:14): [True: 10.7k, False: 660]
+  |  Branch (1182:25): [True: 693, False: 10.0k]
   ------------------
- 1183|    694|	sp = sp->next;
+ 1183|    693|	sp = sp->next;
  1184|  10.7k|      if (sp != 0) {
   ------------------
-  |  Branch (1184:11): [True: 10.0k, False: 661]
+  |  Branch (1184:11): [True: 10.0k, False: 660]
   ------------------
  1185|  10.0k|	char *oldbase = sp->base;
  1186|  10.0k|	sp->base = tbase;
  1187|  10.0k|	sp->size += tsize;
  1188|  10.0k|	return prepend_alloc(m, tbase, oldbase, nb);
  1189|  10.0k|      } else {
- 1190|    661|	add_segment(m, tbase, tsize);
- 1191|    661|      }
+ 1190|    660|	add_segment(m, tbase, tsize);
+ 1191|    660|      }
  1192|  10.7k|    }
  1193|       |
  1194|  2.51k|    if (nb < m->topsize) { /* Allocate from new or extended top space */
@@ -4467,130 +4467,130 @@ lj_alloc.c:prepend_alloc:
   |  |  |  |  ------------------
   |  |  |  |  |  |  675|    693|#define NSMALLBINS		(32U)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (758:22): [True: 21, False: 672]
+  |  |  |  |  |  Branch (758:22): [True: 19, False: 674]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 if (is_small(S)) { unlink_small_chunk(M, P, S)\
   |  |  ------------------
-  |  |  |  |  844|     21|#define unlink_small_chunk(M, P, S) {\
-  |  |  |  |  845|     21|  mchunkptr F = P->fd;\
-  |  |  |  |  846|     21|  mchunkptr B = P->bk;\
-  |  |  |  |  847|     21|  bindex_t I = small_index(S);\
+  |  |  |  |  844|     19|#define unlink_small_chunk(M, P, S) {\
+  |  |  |  |  845|     19|  mchunkptr F = P->fd;\
+  |  |  |  |  846|     19|  mchunkptr B = P->bk;\
+  |  |  |  |  847|     19|  bindex_t I = small_index(S);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  759|     21|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
+  |  |  |  |  |  |  759|     19|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  677|     21|#define SMALLBIN_SHIFT		(3U)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  ------------------
-  |  |  |  |  848|     21|  if (F == B) {\
-  |  |  |  |  ------------------
-  |  |  |  |  |  Branch (848:7): [True: 17, False: 4]
-  |  |  |  |  ------------------
-  |  |  |  |  849|     17|    clear_smallmap(M, I);\
-  |  |  |  |  ------------------
-  |  |  |  |  |  |  802|     17|#define clear_smallmap(M,i)	((M)->smallmap &= ~idx2bit(i))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|     17|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  677|     19|#define SMALLBIN_SHIFT		(3U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  850|     17|  } else {\
-  |  |  |  |  851|      4|    F->bk = B;\
-  |  |  |  |  852|      4|    B->fd = F;\
-  |  |  |  |  853|      4|  }\
-  |  |  |  |  854|     21|}
+  |  |  |  |  848|     19|  if (F == B) {\
+  |  |  |  |  ------------------
+  |  |  |  |  |  Branch (848:7): [True: 16, False: 3]
+  |  |  |  |  ------------------
+  |  |  |  |  849|     16|    clear_smallmap(M, I);\
+  |  |  |  |  ------------------
+  |  |  |  |  |  |  802|     16|#define clear_smallmap(M,i)	((M)->smallmap &= ~idx2bit(i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |  798|     16|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  ------------------
+  |  |  |  |  850|     16|  } else {\
+  |  |  |  |  851|      3|    F->bk = B;\
+  |  |  |  |  852|      3|    B->fd = F;\
+  |  |  |  |  853|      3|  }\
+  |  |  |  |  854|     19|}
   |  |  ------------------
-  |  |  975|    672|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
+  |  |  975|    674|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
   |  |  ------------------
-  |  |  |  |  921|    672|#define unlink_large_chunk(M, X) {\
-  |  |  |  |  922|    672|  tchunkptr XP = X->parent;\
-  |  |  |  |  923|    672|  tchunkptr R;\
-  |  |  |  |  924|    672|  if (X->bk != X) {\
+  |  |  |  |  921|    674|#define unlink_large_chunk(M, X) {\
+  |  |  |  |  922|    674|  tchunkptr XP = X->parent;\
+  |  |  |  |  923|    674|  tchunkptr R;\
+  |  |  |  |  924|    674|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 17, False: 655]
+  |  |  |  |  |  Branch (924:7): [True: 18, False: 656]
   |  |  |  |  ------------------
-  |  |  |  |  925|     17|    tchunkptr F = X->fd;\
-  |  |  |  |  926|     17|    R = X->bk;\
-  |  |  |  |  927|     17|    F->bk = R;\
-  |  |  |  |  928|     17|    R->fd = F;\
-  |  |  |  |  929|    655|  } else {\
-  |  |  |  |  930|    655|    tchunkptr *RP;\
-  |  |  |  |  931|    655|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
+  |  |  |  |  925|     18|    tchunkptr F = X->fd;\
+  |  |  |  |  926|     18|    R = X->bk;\
+  |  |  |  |  927|     18|    F->bk = R;\
+  |  |  |  |  928|     18|    R->fd = F;\
+  |  |  |  |  929|    656|  } else {\
+  |  |  |  |  930|    656|    tchunkptr *RP;\
+  |  |  |  |  931|    656|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (931:9): [True: 2, False: 653]
+  |  |  |  |  |  Branch (931:9): [True: 1, False: 655]
   |  |  |  |  ------------------
-  |  |  |  |  932|    655|	((R = *(RP = &(X->child[0]))) != 0)) {\
+  |  |  |  |  932|    656|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (932:2): [True: 21, False: 632]
+  |  |  |  |  |  Branch (932:2): [True: 20, False: 635]
   |  |  |  |  ------------------
-  |  |  |  |  933|     23|      tchunkptr *CP;\
-  |  |  |  |  934|     33|      while ((*(CP = &(R->child[1])) != 0) ||\
+  |  |  |  |  933|     21|      tchunkptr *CP;\
+  |  |  |  |  934|     29|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 3, False: 30]
+  |  |  |  |  |  Branch (934:14): [True: 2, False: 27]
   |  |  |  |  ------------------
-  |  |  |  |  935|     33|	     (*(CP = &(R->child[0])) != 0)) {\
+  |  |  |  |  935|     29|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 7, False: 23]
+  |  |  |  |  |  Branch (935:7): [True: 6, False: 21]
   |  |  |  |  ------------------
-  |  |  |  |  936|     10|	R = *(RP = CP);\
-  |  |  |  |  937|     10|      }\
-  |  |  |  |  938|     23|      *RP = 0;\
-  |  |  |  |  939|     23|    }\
-  |  |  |  |  940|    655|  }\
-  |  |  |  |  941|    672|  if (XP != 0) {\
+  |  |  |  |  936|      8|	R = *(RP = CP);\
+  |  |  |  |  937|      8|      }\
+  |  |  |  |  938|     21|      *RP = 0;\
+  |  |  |  |  939|     21|    }\
+  |  |  |  |  940|    656|  }\
+  |  |  |  |  941|    674|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 669, False: 3]
+  |  |  |  |  |  Branch (941:7): [True: 670, False: 4]
   |  |  |  |  ------------------
-  |  |  |  |  942|    669|    tbinptr *H = treebin_at(M, X->index);\
+  |  |  |  |  942|    670|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  765|    669|#define treebin_at(M,i)		(&((M)->treebins[i]))
+  |  |  |  |  |  |  765|    670|#define treebin_at(M,i)		(&((M)->treebins[i]))
   |  |  |  |  ------------------
-  |  |  |  |  943|    669|    if (X == *H) {\
+  |  |  |  |  943|    670|    if (X == *H) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (943:9): [True: 628, False: 41]
+  |  |  |  |  |  Branch (943:9): [True: 629, False: 41]
   |  |  |  |  ------------------
-  |  |  |  |  944|    628|      if ((*H = R) == 0) \
+  |  |  |  |  944|    629|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (944:11): [True: 605, False: 23]
+  |  |  |  |  |  Branch (944:11): [True: 606, False: 23]
   |  |  |  |  ------------------
-  |  |  |  |  945|    628|	clear_treemap(M, X->index);\
+  |  |  |  |  945|    629|	clear_treemap(M, X->index);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  806|    605|#define clear_treemap(M,i)	((M)->treemap  &= ~idx2bit(i))
+  |  |  |  |  |  |  806|    606|#define clear_treemap(M,i)	((M)->treemap  &= ~idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|    605|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|    606|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  946|    628|    } else {\
+  |  |  |  |  946|    629|    } else {\
   |  |  |  |  947|     41|      if (XP->child[0] == X) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (947:11): [True: 29, False: 12]
+  |  |  |  |  |  Branch (947:11): [True: 28, False: 13]
   |  |  |  |  ------------------
   |  |  |  |  948|     41|	XP->child[0] = R;\
   |  |  |  |  949|     41|      else \
   |  |  |  |  950|     41|	XP->child[1] = R;\
   |  |  |  |  951|     41|    }\
-  |  |  |  |  952|    669|    if (R != 0) {\
+  |  |  |  |  952|    670|    if (R != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (952:9): [True: 37, False: 632]
+  |  |  |  |  |  Branch (952:9): [True: 35, False: 635]
   |  |  |  |  ------------------
-  |  |  |  |  953|     37|      tchunkptr C0, C1;\
-  |  |  |  |  954|     37|      R->parent = XP;\
-  |  |  |  |  955|     37|      if ((C0 = X->child[0]) != 0) {\
+  |  |  |  |  953|     35|      tchunkptr C0, C1;\
+  |  |  |  |  954|     35|      R->parent = XP;\
+  |  |  |  |  955|     35|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 12, False: 25]
+  |  |  |  |  |  Branch (955:11): [True: 11, False: 24]
   |  |  |  |  ------------------
-  |  |  |  |  956|     12|	R->child[0] = C0;\
-  |  |  |  |  957|     12|	C0->parent = R;\
-  |  |  |  |  958|     12|      }\
-  |  |  |  |  959|     37|      if ((C1 = X->child[1]) != 0) {\
+  |  |  |  |  956|     11|	R->child[0] = C0;\
+  |  |  |  |  957|     11|	C0->parent = R;\
+  |  |  |  |  958|     11|      }\
+  |  |  |  |  959|     35|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 3, False: 34]
+  |  |  |  |  |  Branch (959:11): [True: 3, False: 32]
   |  |  |  |  ------------------
   |  |  |  |  960|      3|	R->child[1] = C1;\
   |  |  |  |  961|      3|	C1->parent = R;\
   |  |  |  |  962|      3|      }\
-  |  |  |  |  963|     37|    }\
-  |  |  |  |  964|    669|  }\
-  |  |  |  |  965|    672|}
+  |  |  |  |  963|     35|    }\
+  |  |  |  |  964|    670|  }\
+  |  |  |  |  965|    674|}
   |  |  ------------------
   ------------------
  1083|    693|      oldfirst = chunk_plus_offset(oldfirst, nsize);
@@ -4731,7 +4731,7 @@ lj_alloc.c:prepend_alloc:
   |  |  |  |  |  |  |  |  798|  10.0k|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (889:7): [True: 9.92k, False: 107]
+  |  |  |  |  |  Branch (889:7): [True: 9.92k, False: 106]
   |  |  |  |  ------------------
   |  |  |  |  890|  9.92k|    mark_treemap(M, I);\
   |  |  |  |  ------------------
@@ -4744,72 +4744,72 @@ lj_alloc.c:prepend_alloc:
   |  |  |  |  892|  9.92k|    X->parent = (tchunkptr)H;\
   |  |  |  |  893|  9.92k|    X->fd = X->bk = X;\
   |  |  |  |  894|  9.92k|  } else {\
-  |  |  |  |  895|    107|    tchunkptr T = *H;\
-  |  |  |  |  896|    107|    size_t K = S << leftshift_for_tree_index(I);\
+  |  |  |  |  895|    106|    tchunkptr T = *H;\
+  |  |  |  |  896|    106|    size_t K = S << leftshift_for_tree_index(I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  787|    107|   ((i == NTREEBINS-1)? 0 : \
+  |  |  |  |  |  |  787|    106|   ((i == NTREEBINS-1)? 0 : \
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  676|    107|#define NTREEBINS		(32U)
+  |  |  |  |  |  |  |  |  676|    106|#define NTREEBINS		(32U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 107]
+  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 106]
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  788|    107|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
+  |  |  |  |  |  |  788|    106|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   50|    107|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
+  |  |  |  |  |  |  |  |   50|    106|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    107|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|    106|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  679|    107|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  |  |  679|    106|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  897|    110|    for (;;) {\
-  |  |  |  |  898|    110|      if (chunksize(T) != S) {\
+  |  |  |  |  897|    109|    for (;;) {\
+  |  |  |  |  898|    109|      if (chunksize(T) != S) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  605|    110|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
+  |  |  |  |  |  |  605|    109|#define chunksize(p)		((p)->head & ~(INUSE_BITS))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  597|    110|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
+  |  |  |  |  |  |  |  |  597|    109|#define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  595|    110|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  |  |  |  |  |  |  595|    109|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  |  |   55|    110|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |  |  |  |  |   55|    109|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |               #define INUSE_BITS		(PINUSE_BIT|CINUSE_BIT)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  596|    110|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  |  |  |  |  |  |  596|    109|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  |  |   56|    110|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |  |  |  |  |  |  |   56|    109|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (898:11): [True: 108, False: 2]
+  |  |  |  |  |  Branch (898:11): [True: 107, False: 2]
   |  |  |  |  ------------------
-  |  |  |  |  899|    108|	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
+  |  |  |  |  899|    107|	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |   50|    108|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
+  |  |  |  |  |  |   50|    107|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
   |  |  |  |  ------------------
   |  |  |  |               	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    108|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    107|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
-  |  |  |  |  900|    108|	K <<= 1;\
-  |  |  |  |  901|    108|	if (*C != 0) {\
+  |  |  |  |  900|    107|	K <<= 1;\
+  |  |  |  |  901|    107|	if (*C != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (901:6): [True: 3, False: 105]
+  |  |  |  |  |  Branch (901:6): [True: 3, False: 104]
   |  |  |  |  ------------------
   |  |  |  |  902|      3|	  T = *C;\
-  |  |  |  |  903|    105|	} else {\
-  |  |  |  |  904|    105|	  *C = X;\
-  |  |  |  |  905|    105|	  X->parent = T;\
-  |  |  |  |  906|    105|	  X->fd = X->bk = X;\
-  |  |  |  |  907|    105|	  break;\
-  |  |  |  |  908|    105|	}\
-  |  |  |  |  909|    108|      } else {\
+  |  |  |  |  903|    104|	} else {\
+  |  |  |  |  904|    104|	  *C = X;\
+  |  |  |  |  905|    104|	  X->parent = T;\
+  |  |  |  |  906|    104|	  X->fd = X->bk = X;\
+  |  |  |  |  907|    104|	  break;\
+  |  |  |  |  908|    104|	}\
+  |  |  |  |  909|    107|      } else {\
   |  |  |  |  910|      2|	tchunkptr F = T->fd;\
   |  |  |  |  911|      2|	T->fd = F->bk = X;\
   |  |  |  |  912|      2|	X->fd = F;\
@@ -4817,8 +4817,8 @@ lj_alloc.c:prepend_alloc:
   |  |  |  |  914|      2|	X->parent = 0;\
   |  |  |  |  915|      2|	break;\
   |  |  |  |  916|      2|      }\
-  |  |  |  |  917|    110|    }\
-  |  |  |  |  918|    107|  }\
+  |  |  |  |  917|    109|    }\
+  |  |  |  |  918|    106|  }\
   |  |  |  |  919|  10.0k|}
   |  |  ------------------
   ------------------
@@ -4836,177 +4836,177 @@ lj_alloc.c:prepend_alloc:
   ------------------
  1091|  10.0k|}
 lj_alloc.c:add_segment:
- 1095|    661|{
+ 1095|    660|{
  1096|       |  /* Determine locations and sizes of segment, fenceposts, old top */
- 1097|    661|  char *old_top = (char *)m->top;
- 1098|    661|  msegmentptr oldsp = segment_holding(m, old_top);
+ 1097|    660|  char *old_top = (char *)m->top;
+ 1098|    660|  msegmentptr oldsp = segment_holding(m, old_top);
  1099|       |#if LUAJIT_USE_ASAN
  1100|       |  ASAN_UNPOISON_MEMORY_REGION(oldsp, sizeof(struct malloc_segment));
  1101|       |#endif
- 1102|    661|  char *old_end = oldsp->base + oldsp->size;
- 1103|    661|  size_t ssize = pad_request(sizeof(struct malloc_segment));
+ 1102|    660|  char *old_end = oldsp->base + oldsp->size;
+ 1103|    660|  size_t ssize = pad_request(sizeof(struct malloc_segment));
   ------------------
-  |  |  587|    661|   (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  587|    660|   (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |  558|    661|#define CHUNK_OVERHEAD		(SIZE_T_SIZE)
+  |  |  |  |  558|    660|#define CHUNK_OVERHEAD		(SIZE_T_SIZE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   49|    661|#define SIZE_T_SIZE		(sizeof(size_t))
+  |  |  |  |  |  |   49|    660|#define SIZE_T_SIZE		(sizeof(size_t))
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                  (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                  (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1104|    661|  char *rawsp = old_end - (ssize + FOUR_SIZE_T_SIZES + CHUNK_ALIGN_MASK);
+ 1104|    660|  char *rawsp = old_end - (ssize + FOUR_SIZE_T_SIZES + CHUNK_ALIGN_MASK);
   ------------------
-  |  |   58|    661|#define FOUR_SIZE_T_SIZES	(SIZE_T_SIZE<<2)
+  |  |   58|    660|#define FOUR_SIZE_T_SIZES	(SIZE_T_SIZE<<2)
   |  |  ------------------
-  |  |  |  |   49|    661|#define SIZE_T_SIZE		(sizeof(size_t))
+  |  |  |  |   49|    660|#define SIZE_T_SIZE		(sizeof(size_t))
   |  |  ------------------
   ------------------
                 char *rawsp = old_end - (ssize + FOUR_SIZE_T_SIZES + CHUNK_ALIGN_MASK);
   ------------------
-  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  ------------------
-  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  ------------------
   |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  ------------------
-  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  ------------------
   ------------------
- 1105|    661|  size_t offset = align_offset(chunk2mem(rawsp));
+ 1105|    660|  size_t offset = align_offset(chunk2mem(rawsp));
   ------------------
-  |  |   66|    661| ((((size_t)(A) & CHUNK_ALIGN_MASK) == 0)? 0 :\
+  |  |   66|    660| ((((size_t)(A) & CHUNK_ALIGN_MASK) == 0)? 0 :\
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (66:3): [True: 0, False: 661]
+  |  |  |  Branch (66:3): [True: 0, False: 660]
   |  |  ------------------
-  |  |   67|    661|  ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
+  |  |   67|    660|  ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
   |  |  ------------------
-  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  ------------------
   |  |                 ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1106|    661|  char *asp = rawsp + offset;
- 1107|    661|  char *csp = (asp < (old_top + MIN_CHUNK_SIZE))? old_top : asp;
+ 1106|    660|  char *asp = rawsp + offset;
+ 1107|    660|  char *csp = (asp < (old_top + MIN_CHUNK_SIZE))? old_top : asp;
   ------------------
-  |  |  567|    661|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  567|    660|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |  556|    661|#define MCHUNK_SIZE		(sizeof(mchunk))
+  |  |  |  |  556|    660|#define MCHUNK_SIZE		(sizeof(mchunk))
   |  |  ------------------
   |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  ------------------
-  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
   |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (1107:15): [True: 14, False: 647]
+  |  Branch (1107:15): [True: 13, False: 647]
   ------------------
- 1108|    661|  mchunkptr sp = (mchunkptr)csp;
- 1109|    661|  msegmentptr ss = (msegmentptr)(chunk2mem(sp));
+ 1108|    660|  mchunkptr sp = (mchunkptr)csp;
+ 1109|    660|  msegmentptr ss = (msegmentptr)(chunk2mem(sp));
   ------------------
-  |  |  575|    661|#define chunk2mem(p)		((void *)((char *)(p) + TWO_SIZE_T_SIZES))
+  |  |  575|    660|#define chunk2mem(p)		((void *)((char *)(p) + TWO_SIZE_T_SIZES))
   |  |  ------------------
-  |  |  |  |   57|    661|#define TWO_SIZE_T_SIZES	(SIZE_T_SIZE<<1)
+  |  |  |  |   57|    660|#define TWO_SIZE_T_SIZES	(SIZE_T_SIZE<<1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   49|    661|#define SIZE_T_SIZE		(sizeof(size_t))
+  |  |  |  |  |  |   49|    660|#define SIZE_T_SIZE		(sizeof(size_t))
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
  1110|       |#if LUAJIT_USE_ASAN
  1111|       |  ss = (msegmentptr)((void *)ss - REDZONE_SIZE);
  1112|       |#endif
- 1113|    661|  mchunkptr tnext = chunk_plus_offset(sp, ssize);
+ 1113|    660|  mchunkptr tnext = chunk_plus_offset(sp, ssize);
   ------------------
-  |  |  611|    661|#define chunk_plus_offset(p, s)		((mchunkptr)(((char *)(p)) + (s)))
+  |  |  611|    660|#define chunk_plus_offset(p, s)		((mchunkptr)(((char *)(p)) + (s)))
   ------------------
- 1114|    661|  mchunkptr p = tnext;
+ 1114|    660|  mchunkptr p = tnext;
  1115|       |
  1116|       |  /* reset top to new space */
- 1117|    661|  init_top(m, (mchunkptr)tbase, tsize - TOP_FOOT_SIZE);
+ 1117|    660|  init_top(m, (mchunkptr)tbase, tsize - TOP_FOOT_SIZE);
   ------------------
-  |  |  754|    661|  (align_offset(TWO_SIZE_T_SIZES)+pad_request(sizeof(struct malloc_segment))+MIN_CHUNK_SIZE)
+  |  |  754|    660|  (align_offset(TWO_SIZE_T_SIZES)+pad_request(sizeof(struct malloc_segment))+MIN_CHUNK_SIZE)
   |  |  ------------------
-  |  |  |  |   66|    661| ((((size_t)(A) & CHUNK_ALIGN_MASK) == 0)? 0 :\
+  |  |  |  |   66|    660| ((((size_t)(A) & CHUNK_ALIGN_MASK) == 0)? 0 :\
   |  |  |  |  ------------------
-  |  |  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (66:3): [True: 661, Folded]
+  |  |  |  |  |  Branch (66:3): [True: 660, Folded]
   |  |  |  |  ------------------
-  |  |  |  |   67|    661|  ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
+  |  |  |  |   67|    660|  ((MALLOC_ALIGNMENT - ((size_t)(A) & CHUNK_ALIGN_MASK)) & CHUNK_ALIGN_MASK))
   |  |  |  |  ------------------
   |  |  |  |  |  |   39|      0|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  ------------------
@@ -5035,89 +5035,89 @@ lj_alloc.c:add_segment:
   |  |  ------------------
   |  |                 (align_offset(TWO_SIZE_T_SIZES)+pad_request(sizeof(struct malloc_segment))+MIN_CHUNK_SIZE)
   |  |  ------------------
-  |  |  |  |  587|    661|   (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  |  |  587|    660|   (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  558|    661|#define CHUNK_OVERHEAD		(SIZE_T_SIZE)
+  |  |  |  |  |  |  558|    660|#define CHUNK_OVERHEAD		(SIZE_T_SIZE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   49|    661|#define SIZE_T_SIZE		(sizeof(size_t))
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  ------------------
-  |  |  |  |                  (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
-  |  |  |  |  ------------------
-  |  |  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   49|    660|#define SIZE_T_SIZE		(sizeof(size_t))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |                  (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  ------------------
+  |  |  |  |                  (((req) + CHUNK_OVERHEAD + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  |  |  ------------------
+  |  |  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 (align_offset(TWO_SIZE_T_SIZES)+pad_request(sizeof(struct malloc_segment))+MIN_CHUNK_SIZE)
   |  |  ------------------
-  |  |  |  |  567|    661|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  |  |  567|    660|  ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  556|    661|#define MCHUNK_SIZE		(sizeof(mchunk))
-  |  |  |  |  ------------------
-  |  |  |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
-  |  |  |  |  ------------------
-  |  |  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
-  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
-  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  556|    660|#define MCHUNK_SIZE		(sizeof(mchunk))
   |  |  |  |  ------------------
   |  |  |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   62|    661|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   39|    661|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  ------------------
+  |  |  |  |                 ((MCHUNK_SIZE + CHUNK_ALIGN_MASK) & ~CHUNK_ALIGN_MASK)
+  |  |  |  |  ------------------
+  |  |  |  |  |  |   62|    660|#define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |   39|    660|#define MALLOC_ALIGNMENT	((size_t)8U)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |               #define CHUNK_ALIGN_MASK	(MALLOC_ALIGNMENT - SIZE_T_ONE)
+  |  |  |  |  |  |  ------------------
+  |  |  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
  1118|       |
  1119|       |  /* Set up segment record */
- 1120|    661|  set_size_and_pinuse_of_inuse_chunk(m, sp, ssize);
+ 1120|    660|  set_size_and_pinuse_of_inuse_chunk(m, sp, ssize);
   ------------------
-  |  |  824|    661|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT))
+  |  |  824|    660|  ((p)->head = (s|PINUSE_BIT|CINUSE_BIT))
   |  |  ------------------
-  |  |  |  |  595|    661|#define PINUSE_BIT		(SIZE_T_ONE)
+  |  |  |  |  595|    660|#define PINUSE_BIT		(SIZE_T_ONE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   55|    661|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |   55|    660|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((p)->head = (s|PINUSE_BIT|CINUSE_BIT))
   |  |  ------------------
-  |  |  |  |  596|    661|#define CINUSE_BIT		(SIZE_T_TWO)
+  |  |  |  |  596|    660|#define CINUSE_BIT		(SIZE_T_TWO)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   56|    661|#define SIZE_T_TWO		((size_t)2)
+  |  |  |  |  |  |   56|    660|#define SIZE_T_TWO		((size_t)2)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
- 1121|    661|  *ss = m->seg; /* Push current record */
- 1122|    661|  m->seg.base = tbase;
- 1123|    661|  m->seg.size = tsize;
- 1124|    661|  m->seg.next = ss;
+ 1121|    660|  *ss = m->seg; /* Push current record */
+ 1122|    660|  m->seg.base = tbase;
+ 1123|    660|  m->seg.size = tsize;
+ 1124|    660|  m->seg.next = ss;
  1125|       |
  1126|       |  /* Insert trailing fenceposts */
  1127|  2.00k|  for (;;) {
@@ -5151,17 +5151,17 @@ lj_alloc.c:add_segment:
   ------------------
  1130|  2.00k|    if ((char *)(&(nextp->head)) < old_end)
   ------------------
-  |  Branch (1130:9): [True: 1.34k, False: 661]
+  |  Branch (1130:9): [True: 1.34k, False: 660]
   ------------------
  1131|  1.34k|      p = nextp;
- 1132|    661|    else
- 1133|    661|      break;
+ 1132|    660|    else
+ 1133|    660|      break;
  1134|  2.00k|  }
  1135|       |
  1136|       |  /* Insert the rest of old top into a bin as an ordinary free chunk */
- 1137|    661|  if (csp != old_top) {
+ 1137|    660|  if (csp != old_top) {
   ------------------
-  |  Branch (1137:7): [True: 647, False: 14]
+  |  Branch (1137:7): [True: 647, False: 13]
   ------------------
  1138|    647|    mchunkptr q = (mchunkptr)old_top;
  1139|    647|    size_t psize = (size_t)(csp - old_top);
@@ -5233,13 +5233,13 @@ lj_alloc.c:add_segment:
   |  |  |  |  |  |  |  |  798|     74|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (833:7): [True: 65, False: 9]
+  |  |  |  |  |  Branch (833:7): [True: 66, False: 8]
   |  |  |  |  ------------------
   |  |  |  |  834|     74|    mark_smallmap(M, I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  801|     65|#define mark_smallmap(M,i)	((M)->smallmap |=  idx2bit(i))
+  |  |  |  |  |  |  801|     66|#define mark_smallmap(M,i)	((M)->smallmap |=  idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|     65|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|     66|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  835|     74|  else\
@@ -5301,39 +5301,39 @@ lj_alloc.c:add_segment:
   |  |  |  |  |  |  |  |  798|    573|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (889:7): [True: 462, False: 111]
+  |  |  |  |  |  Branch (889:7): [True: 461, False: 112]
   |  |  |  |  ------------------
-  |  |  |  |  890|    462|    mark_treemap(M, I);\
+  |  |  |  |  890|    461|    mark_treemap(M, I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  805|    462|#define mark_treemap(M,i)	((M)->treemap  |=  idx2bit(i))
+  |  |  |  |  |  |  805|    461|#define mark_treemap(M,i)	((M)->treemap  |=  idx2bit(i))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  798|    462|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  |  |  798|    461|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  891|    462|    *H = X;\
-  |  |  |  |  892|    462|    X->parent = (tchunkptr)H;\
-  |  |  |  |  893|    462|    X->fd = X->bk = X;\
-  |  |  |  |  894|    462|  } else {\
-  |  |  |  |  895|    111|    tchunkptr T = *H;\
-  |  |  |  |  896|    111|    size_t K = S << leftshift_for_tree_index(I);\
+  |  |  |  |  891|    461|    *H = X;\
+  |  |  |  |  892|    461|    X->parent = (tchunkptr)H;\
+  |  |  |  |  893|    461|    X->fd = X->bk = X;\
+  |  |  |  |  894|    461|  } else {\
+  |  |  |  |  895|    112|    tchunkptr T = *H;\
+  |  |  |  |  896|    112|    size_t K = S << leftshift_for_tree_index(I);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  787|    111|   ((i == NTREEBINS-1)? 0 : \
+  |  |  |  |  |  |  787|    112|   ((i == NTREEBINS-1)? 0 : \
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  676|    111|#define NTREEBINS		(32U)
+  |  |  |  |  |  |  |  |  676|    112|#define NTREEBINS		(32U)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 111]
+  |  |  |  |  |  |  |  Branch (787:5): [True: 0, False: 112]
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  788|    111|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
+  |  |  |  |  |  |  788|    112|    ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   50|    111|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
+  |  |  |  |  |  |  |  |   50|    112|#define SIZE_T_BITSIZE		(sizeof(size_t) << 3)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   55|    111|#define SIZE_T_ONE		((size_t)1)
+  |  |  |  |  |  |  |  |   55|    112|#define SIZE_T_ONE		((size_t)1)
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |                   ((SIZE_T_BITSIZE-SIZE_T_ONE) - (((i) >> 1) + TREEBIN_SHIFT - 2)))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  679|    111|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  |  |  679|    112|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  897|    123|    for (;;) {\
@@ -5370,15 +5370,15 @@ lj_alloc.c:add_segment:
   |  |  |  |  900|    120|	K <<= 1;\
   |  |  |  |  901|    120|	if (*C != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (901:6): [True: 12, False: 108]
+  |  |  |  |  |  Branch (901:6): [True: 11, False: 109]
   |  |  |  |  ------------------
-  |  |  |  |  902|     12|	  T = *C;\
-  |  |  |  |  903|    108|	} else {\
-  |  |  |  |  904|    108|	  *C = X;\
-  |  |  |  |  905|    108|	  X->parent = T;\
-  |  |  |  |  906|    108|	  X->fd = X->bk = X;\
-  |  |  |  |  907|    108|	  break;\
-  |  |  |  |  908|    108|	}\
+  |  |  |  |  902|     11|	  T = *C;\
+  |  |  |  |  903|    109|	} else {\
+  |  |  |  |  904|    109|	  *C = X;\
+  |  |  |  |  905|    109|	  X->parent = T;\
+  |  |  |  |  906|    109|	  X->fd = X->bk = X;\
+  |  |  |  |  907|    109|	  break;\
+  |  |  |  |  908|    109|	}\
   |  |  |  |  909|    120|      } else {\
   |  |  |  |  910|      3|	tchunkptr F = T->fd;\
   |  |  |  |  911|      3|	T->fd = F->bk = X;\
@@ -5388,12 +5388,12 @@ lj_alloc.c:add_segment:
   |  |  |  |  915|      3|	break;\
   |  |  |  |  916|      3|      }\
   |  |  |  |  917|    123|    }\
-  |  |  |  |  918|    111|  }\
+  |  |  |  |  918|    112|  }\
   |  |  |  |  919|    573|}
   |  |  ------------------
   ------------------
  1143|    647|  }
- 1144|    661|}
+ 1144|    660|}
 lj_alloc.c:lj_alloc_realloc:
  1642|  1.55M|{
  1643|       |#if LUAJIT_USE_ASAN
@@ -7855,9 +7855,9 @@ lj_debug_shortname:
   357|   228k|}
 
 lj_str.c:lj_bswap:
-  182|   466k|{
-  183|   466k|  return (uint32_t)__builtin_bswap32((int32_t)x);
-  184|   466k|}
+  182|   465k|{
+  183|   465k|  return (uint32_t)__builtin_bswap32((int32_t)x);
+  184|   465k|}
 lj_str.c:lj_getu32:
   238|   103M|{
   239|   103M|  return ((const Unaligned32 *)p)->u;
@@ -9384,7 +9384,7 @@ lj_gc_separateudata:
   |  |  |  |  |  |   18|   122k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (32:20): [True: 121k, False: 1.07k]
+  |  |  |  Branch (32:20): [True: 121k, False: 1.04k]
   |  |  ------------------
   ------------------
                   if (!(iswhite(o) || all) || isfinalized(gco2ud(o))) {
@@ -9397,7 +9397,7 @@ lj_gc_separateudata:
   |  |  |  Branch (40:27): [True: 121k, False: 0]
   |  |  ------------------
   ------------------
-  |  Branch (148:25): [True: 198, False: 872]
+  |  Branch (148:25): [True: 186, False: 863]
   ------------------
   149|  68.6k|      p = &o->gch.nextgc;  /* Nothing to do. */
   150|  68.6k|    } else if (!lj_meta_fastg(g, tabref(gco2ud(o)->metatable), MM_gc)) {
@@ -10418,8 +10418,8 @@ lj_gc.c:gc_sweepstr:
   |  |  ------------------
   |  |  |  |  357|  9.93M|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 3.83M, False: 3.05M]
-  |  |  |  |  |  Branch (357:5): [True: 3.05M, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 3.83M, False: 3.04M]
+  |  |  |  |  |  Branch (357:5): [True: 3.04M, False: 0]
   |  |  |  |  ------------------
   |  |  |  |  358|  6.88M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
@@ -10620,9 +10620,9 @@ lj_gc.c:gc_onestep:
   ------------------
   |  |   67|   274k|#define gcref(r)	((GCobj *)(r).gcptr64)
   ------------------
-  |  Branch (688:9): [True: 47.6k, False: 226k]
+  |  Branch (688:9): [True: 47.7k, False: 226k]
   ------------------
-  689|  47.6k|      if (g->str.num <= (g->str.mask >> 2) && g->str.mask > LJ_MIN_STRTAB*2-1)
+  689|  47.7k|      if (g->str.num <= (g->str.mask >> 2) && g->str.mask > LJ_MIN_STRTAB*2-1)
   ------------------
   |  |   79|  4.22k|#define LJ_MIN_STRTAB	256		/* Min. string table size (pow2). */
   ------------------
@@ -10630,9 +10630,9 @@ lj_gc.c:gc_onestep:
   |  Branch (689:47): [True: 0, False: 4.22k]
   ------------------
   690|      0|	lj_str_resize(L, g->str.mask >> 1);  /* Shrink string table. */
-  691|  47.6k|      if (gcref(g->gc.mmudata)) {  /* Need any finalizations? */
+  691|  47.7k|      if (gcref(g->gc.mmudata)) {  /* Need any finalizations? */
   ------------------
-  |  |   67|  47.6k|#define gcref(r)	((GCobj *)(r).gcptr64)
+  |  |   67|  47.7k|#define gcref(r)	((GCobj *)(r).gcptr64)
   |  |  ------------------
   |  |  |  Branch (67:18): [True: 17.6k, False: 30.0k]
   |  |  ------------------
@@ -10642,7 +10642,7 @@ lj_gc.c:gc_onestep:
   694|  30.0k|	g->gc.state = GCSpause;  /* End of GC cycle. */
   695|  30.0k|	g->gc.debt = 0;
   696|  30.0k|      }
-  697|  47.6k|    }
+  697|  47.7k|    }
   698|   274k|    return GCSWEEPMAX*GCSWEEPCOST;
   ------------------
   |  |   33|   274k|#define GCSWEEPMAX	40
@@ -11318,8 +11318,8 @@ lj_gc.c:gc_traverse_tab:
   |  |  |  |  ------------------
   |  |  |  |  |  |  357|  18.6M|  ((c) ? (void)0 : \
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (357:5): [True: 18.6M, False: 14.6k]
-  |  |  |  |  |  |  |  Branch (357:5): [True: 14.6k, False: 0]
+  |  |  |  |  |  |  |  Branch (357:5): [True: 18.6M, False: 14.4k]
+  |  |  |  |  |  |  |  Branch (357:5): [True: 14.4k, False: 0]
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  358|  18.6M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  ------------------
@@ -11351,40 +11351,40 @@ lj_gc.c:gc_traverse_tab:
   |  |  |  |  |  |  |  |  |  |  264|  18.6M|#define LJ_TSTR			(~4u)
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (811:20): [True: 14.6k, False: 18.6M]
+  |  |  |  |  |  |  |  Branch (811:20): [True: 14.4k, False: 18.6M]
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |               #define tviswhite(x)	(tvisgcv(x) && iswhite(gcV(x)))
   |  |  |  |  ------------------
-  |  |  |  |  |  |   32|  29.2k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
+  |  |  |  |  |  |   32|  28.9k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   27|  14.6k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |  |  |  |  |   27|  14.4k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |   17|  14.6k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |  |  |  |  |   17|  14.4k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |   18|  14.6k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |  |  |  |  |   18|  14.4k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  Branch (32:20): [True: 3.51k, False: 11.0k]
-  |  |  |  |  |  |  |  Branch (32:22): [True: 14.6k, False: 0]
+  |  |  |  |  |  |  |  Branch (32:20): [True: 3.48k, False: 10.9k]
+  |  |  |  |  |  |  |  Branch (32:22): [True: 14.4k, False: 0]
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                   if (tviswhite(tv)) gc_mark(g, gcV(tv)); }
   |  |  ------------------
-  |  |  |  |  860|  3.51k|#define gcV(o)		check_exp(tvisgcv(o), gcval(o))
+  |  |  |  |  860|  3.48k|#define gcV(o)		check_exp(tvisgcv(o), gcval(o))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  369|  3.51k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  |  |  369|  3.48k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  368|  3.51k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  |  |  368|  3.48k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  357|  3.51k|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  |  |  357|  3.48k|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 3.51k, False: 0]
+  |  |  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 3.48k, False: 0]
   |  |  |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  |  358|  3.51k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  |  |  358|  3.48k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
@@ -11534,7 +11534,7 @@ lj_gc.c:gc_traverse_tab:
   |  |  ------------------
   |  |  |  |   35|  22.1M|#define tviswhite(x)	(tvisgcv(x) && iswhite(gcV(x)))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  811|  44.3M|#define tvisgcv(o)	((itype(o) - LJ_TISGCV) > (LJ_TNUMX - LJ_TISGCV))
+  |  |  |  |  |  |  811|  44.2M|#define tvisgcv(o)	((itype(o) - LJ_TISGCV) > (LJ_TNUMX - LJ_TISGCV))
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |  |  |  783|  22.1M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  |  |  |  |  ------------------
@@ -11817,7 +11817,7 @@ lj_gc.c:gc_traverse_proto:
   ------------------
   |  |   52|  3.15M|  { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
   |  |  ------------------
-  |  |  |  |   32|  6.30M|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
+  |  |  |  |   32|  6.31M|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
   |  |  |  |  ------------------
   |  |  |  |  |  |   27|  3.15M|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
@@ -11850,7 +11850,7 @@ lj_gc.c:gc_traverse_proto:
 lj_gc.c:gc_traverse_thread:
   310|   227k|{
   311|   227k|  TValue *o, *top = th->top;
-  312|   836k|  for (o = tvref(th->stack)+1+LJ_FR2; o < top; o++)
+  312|   835k|  for (o = tvref(th->stack)+1+LJ_FR2; o < top; o++)
   ------------------
   |  |  217|   227k|#define tvref(r)	(mref(r, TValue))
   |  |  ------------------
@@ -12721,42 +12721,42 @@ lj_gc.c:gc_mark:
   ------------------
   |  |  147|  16.6M|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  ------------------
-  |  |  |  Branch (147:24): [True: 21.4k, False: 16.6M]
+  |  |  |  Branch (147:24): [True: 21.3k, False: 16.6M]
   |  |  ------------------
   ------------------
-   65|  21.4k|    GCtab *mt = tabref(gco2ud(o)->metatable);
+   65|  21.3k|    GCtab *mt = tabref(gco2ud(o)->metatable);
   ------------------
-  |  |  514|  21.4k|#define tabref(r)	((GCtab *)gcref((r)))
+  |  |  514|  21.3k|#define tabref(r)	((GCtab *)gcref((r)))
   |  |  ------------------
-  |  |  |  |   67|  42.8k|#define gcref(r)	((GCobj *)(r).gcptr64)
+  |  |  |  |   67|  42.7k|#define gcref(r)	((GCobj *)(r).gcptr64)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (67:29): [True: 21.4k, False: 0]
+  |  |  |  |  |  Branch (67:29): [True: 21.3k, False: 0]
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-   66|  21.4k|    gray2black(o);  /* Userdata are never gray. */
+   66|  21.3k|    gray2black(o);  /* Userdata are never gray. */
   ------------------
-  |  |   39|  21.4k|#define gray2black(x)		((x)->gch.marked |= LJ_GC_BLACK)
+  |  |   39|  21.3k|#define gray2black(x)		((x)->gch.marked |= LJ_GC_BLACK)
   |  |  ------------------
-  |  |  |  |   19|  21.4k|#define LJ_GC_BLACK	0x04
+  |  |  |  |   19|  21.3k|#define LJ_GC_BLACK	0x04
   |  |  ------------------
   ------------------
-   67|  21.4k|    if (mt) gc_markobj(g, mt);
+   67|  21.3k|    if (mt) gc_markobj(g, mt);
   ------------------
-  |  |   52|  21.4k|  { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
+  |  |   52|  21.3k|  { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
   |  |  ------------------
-  |  |  |  |   32|  21.4k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
+  |  |  |  |   32|  21.3k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   27|  21.4k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |  |  |   27|  21.3k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   17|  21.4k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |  |  |   17|  21.3k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   18|  21.4k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |  |  |   18|  21.3k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (32:20): [True: 20.5k, False: 900]
+  |  |  |  |  |  Branch (32:20): [True: 20.5k, False: 891]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
@@ -12764,60 +12764,60 @@ lj_gc.c:gc_mark:
   |  |  |  |  777|  20.5k|#define obj2gco(v)	((GCobj *)(v))
   |  |  ------------------
   ------------------
-  |  Branch (67:9): [True: 21.4k, False: 0]
+  |  Branch (67:9): [True: 21.3k, False: 0]
   ------------------
-   68|  21.4k|    gc_markobj(g, tabref(gco2ud(o)->env));
+   68|  21.3k|    gc_markobj(g, tabref(gco2ud(o)->env));
   ------------------
-  |  |   52|  21.4k|  { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
+  |  |   52|  21.3k|  { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
   |  |  ------------------
-  |  |  |  |   32|  42.8k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
+  |  |  |  |   32|  42.7k|#define iswhite(x)	((x)->gch.marked & LJ_GC_WHITES)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   27|  21.4k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |  |  |   27|  21.3k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   17|  21.4k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |  |  |   17|  21.3k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   18|  21.4k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |  |  |   18|  21.3k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (32:20): [True: 21.4k, False: 0]
-  |  |  |  |  |  Branch (32:22): [True: 21.4k, False: 0]
+  |  |  |  |  |  Branch (32:20): [True: 21.3k, False: 0]
+  |  |  |  |  |  Branch (32:22): [True: 21.3k, False: 0]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 { if (iswhite(obj2gco(o))) gc_mark(g, obj2gco(o)); }
   |  |  ------------------
-  |  |  |  |  777|  42.8k|#define obj2gco(v)	((GCobj *)(v))
+  |  |  |  |  777|  42.7k|#define obj2gco(v)	((GCobj *)(v))
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (777:31): [True: 21.4k, False: 0]
+  |  |  |  |  |  Branch (777:31): [True: 21.3k, False: 0]
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-   69|  42.8k|    if (LJ_HASBUFFER && gco2ud(o)->udtype == UDTYPE_BUFFER) {
+   69|  42.7k|    if (LJ_HASBUFFER && gco2ud(o)->udtype == UDTYPE_BUFFER) {
   ------------------
-  |  |  628|  42.8k|#define LJ_HASBUFFER		1
+  |  |  628|  42.7k|#define LJ_HASBUFFER		1
   |  |  ------------------
-  |  |  |  Branch (628:23): [True: 21.4k, Folded]
+  |  |  |  Branch (628:23): [True: 21.3k, Folded]
   |  |  ------------------
   ------------------
                   if (LJ_HASBUFFER && gco2ud(o)->udtype == UDTYPE_BUFFER) {
   ------------------
-  |  |  774|  21.4k|#define gco2ud(o)	check_exp((o)->gch.gct == ~LJ_TUDATA, &(o)->ud)
+  |  |  774|  21.3k|#define gco2ud(o)	check_exp((o)->gch.gct == ~LJ_TUDATA, &(o)->ud)
   |  |  ------------------
-  |  |  |  |  369|  21.4k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  369|  21.3k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  368|  21.4k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  368|  21.3k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  357|  21.4k|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  357|  21.3k|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 21.4k, False: 0]
+  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 21.3k, False: 0]
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  358|  21.4k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  358|  21.3k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (69:25): [True: 0, False: 21.4k]
+  |  Branch (69:25): [True: 0, False: 21.3k]
   ------------------
    70|      0|      SBufExt *sbx = (SBufExt *)uddata(gco2ud(o));
   ------------------
@@ -13098,53 +13098,53 @@ lj_lex.c:lj_mem_free:
   122|   721k|  g->allocf(g->allocd, p, osize, 0);
   123|   721k|}
 lj_parse.c:lj_gc_barrierback:
-   82|  4.60k|{
-   83|  4.60k|  GCobj *o = obj2gco(t);
+   82|  4.71k|{
+   83|  4.71k|  GCobj *o = obj2gco(t);
   ------------------
-  |  |  777|  4.60k|#define obj2gco(v)	((GCobj *)(v))
+  |  |  777|  4.71k|#define obj2gco(v)	((GCobj *)(v))
   ------------------
-   84|  4.60k|  lj_assertG(isblack(o) && !isdead(g, o),
+   84|  4.71k|  lj_assertG(isblack(o) && !isdead(g, o),
   ------------------
-  |  |  366|  4.60k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
+  |  |  366|  4.71k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|  9.20k|  ((c) ? (void)0 : \
+  |  |  |  |  357|  9.42k|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 4.60k, False: 0]
-  |  |  |  |  |  Branch (357:5): [True: 4.60k, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 4.71k, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 4.71k, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|  4.60k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|  4.71k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-   85|  4.60k|	     "bad object states for backward barrier");
-   86|  4.60k|  lj_assertG(g->gc.state != GCSfinalize && g->gc.state != GCSpause,
+   85|  4.71k|	     "bad object states for backward barrier");
+   86|  4.71k|  lj_assertG(g->gc.state != GCSfinalize && g->gc.state != GCSpause,
   ------------------
-  |  |  366|  4.60k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
+  |  |  366|  4.71k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|  9.20k|  ((c) ? (void)0 : \
+  |  |  |  |  357|  9.42k|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 4.60k, False: 0]
-  |  |  |  |  |  Branch (357:5): [True: 4.60k, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 4.71k, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 4.71k, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|  4.60k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|  4.71k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-   87|  4.60k|	     "bad GC state");
-   88|  4.60k|  black2gray(o);
+   87|  4.71k|	     "bad GC state");
+   88|  4.71k|  black2gray(o);
   ------------------
-  |  |   44|  4.60k|#define black2gray(x)	((x)->gch.marked &= (uint8_t)~LJ_GC_BLACK)
+  |  |   44|  4.71k|#define black2gray(x)	((x)->gch.marked &= (uint8_t)~LJ_GC_BLACK)
   |  |  ------------------
-  |  |  |  |   19|  4.60k|#define LJ_GC_BLACK	0x04
+  |  |  |  |   19|  4.71k|#define LJ_GC_BLACK	0x04
   |  |  ------------------
   ------------------
-   89|  4.60k|  setgcrefr(t->gclist, g->gc.grayagain);
+   89|  4.71k|  setgcrefr(t->gclist, g->gc.grayagain);
   ------------------
-  |  |   77|  4.60k|#define setgcrefr(r, v)	((r).gcptr64 = (v).gcptr64)
+  |  |   77|  4.71k|#define setgcrefr(r, v)	((r).gcptr64 = (v).gcptr64)
   ------------------
-   90|  4.60k|  setgcref(g->gc.grayagain, o);
+   90|  4.71k|  setgcref(g->gc.grayagain, o);
   ------------------
-  |  |   72|  4.60k|#define setgcref(r, gc)	((r).gcptr64 = (uint64_t)&(gc)->gch)
+  |  |   72|  4.71k|#define setgcref(r, gc)	((r).gcptr64 = (uint64_t)&(gc)->gch)
   ------------------
-   91|  4.60k|}
+   91|  4.71k|}
 lj_trace.c:lj_mem_free:
   120|   962k|{
   121|   962k|  g->gc.total -= (GCSize)osize;
@@ -14714,7 +14714,7 @@ lua_loadx:
   |  |  ------------------
   |  |  |  |  147|   240k|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (147:24): [True: 626, False: 239k]
+  |  |  |  |  |  Branch (147:24): [True: 625, False: 239k]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |   67|   240k|      lj_gc_step(L); }
@@ -15150,89 +15150,89 @@ lj_meta_tset:
   198|   240k|}
 
 lj_obj_equal:
-   24|  73.5M|{
-   25|  73.5M|  if (itype(o1) == itype(o2)) {
+   24|  67.0M|{
+   25|  67.0M|  if (itype(o1) == itype(o2)) {
   ------------------
-  |  |  783|  73.5M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  783|  67.0M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   ------------------
                 if (itype(o1) == itype(o2)) {
   ------------------
-  |  |  783|  73.5M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  783|  67.0M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   ------------------
-  |  Branch (25:7): [True: 61.3M, False: 12.1M]
+  |  Branch (25:7): [True: 55.5M, False: 11.5M]
   ------------------
-   26|  61.3M|    if (tvispri(o1))
+   26|  55.5M|    if (tvispri(o1))
   ------------------
-  |  |  809|  61.3M|#define tvispri(o)	(itype(o) >= LJ_TISPRI)
+  |  |  809|  55.5M|#define tvispri(o)	(itype(o) >= LJ_TISPRI)
   |  |  ------------------
-  |  |  |  |  783|  61.3M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|  55.5M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvispri(o)	(itype(o) >= LJ_TISPRI)
   |  |  ------------------
-  |  |  |  |  283|  61.3M|#define LJ_TISPRI		LJ_TTRUE
+  |  |  |  |  283|  55.5M|#define LJ_TISPRI		LJ_TTRUE
   |  |  |  |  ------------------
-  |  |  |  |  |  |  262|  61.3M|#define LJ_TTRUE		(~2u)
+  |  |  |  |  |  |  262|  55.5M|#define LJ_TTRUE		(~2u)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (809:20): [True: 17.5k, False: 61.3M]
+  |  |  |  Branch (809:20): [True: 17.5k, False: 55.5M]
   |  |  ------------------
   ------------------
    27|  17.5k|      return 1;
-   28|  61.3M|    if (!tvisnum(o1))
+   28|  55.5M|    if (!tvisnum(o1))
   ------------------
-  |  |  806|  61.3M|#define tvisnum(o)	(itype(o) < LJ_TISNUM)
+  |  |  806|  55.5M|#define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  783|  61.3M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|  55.5M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  280|  61.3M|#define LJ_TISNUM		LJ_TNUMX
+  |  |  |  |  280|  55.5M|#define LJ_TISNUM		LJ_TNUMX
   |  |  |  |  ------------------
-  |  |  |  |  |  |  274|  61.3M|#define LJ_TNUMX		(~13u)
+  |  |  |  |  |  |  274|  55.5M|#define LJ_TNUMX		(~13u)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (28:9): [True: 59.7M, False: 1.62M]
+  |  Branch (28:9): [True: 53.9M, False: 1.62M]
   ------------------
-   29|  59.7M|      return gcrefeq(o1->gcr, o2->gcr);
+   29|  53.9M|      return gcrefeq(o1->gcr, o2->gcr);
   ------------------
-  |  |   70|  59.7M|#define gcrefeq(r1, r2)	((r1).gcptr64 == (r2).gcptr64)
+  |  |   70|  53.9M|#define gcrefeq(r1, r2)	((r1).gcptr64 == (r2).gcptr64)
   ------------------
-   30|  61.3M|  } else if (!tvisnumber(o1) || !tvisnumber(o2)) {
+   30|  55.5M|  } else if (!tvisnumber(o1) || !tvisnumber(o2)) {
   ------------------
-  |  |  804|  24.3M|#define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
+  |  |  804|  23.0M|#define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  783|  12.1M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|  11.5M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  280|  12.1M|#define LJ_TISNUM		LJ_TNUMX
+  |  |  |  |  280|  11.5M|#define LJ_TISNUM		LJ_TNUMX
   |  |  |  |  ------------------
-  |  |  |  |  |  |  274|  12.1M|#define LJ_TNUMX		(~13u)
+  |  |  |  |  |  |  274|  11.5M|#define LJ_TNUMX		(~13u)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
                 } else if (!tvisnumber(o1) || !tvisnumber(o2)) {
   ------------------
-  |  |  804|   361k|#define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
+  |  |  804|   198k|#define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  783|   361k|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|   198k|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvisnumber(o)	(itype(o) <= LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  280|   361k|#define LJ_TISNUM		LJ_TNUMX
+  |  |  |  |  280|   198k|#define LJ_TISNUM		LJ_TNUMX
   |  |  |  |  ------------------
-  |  |  |  |  |  |  274|   361k|#define LJ_TNUMX		(~13u)
+  |  |  |  |  |  |  274|   198k|#define LJ_TNUMX		(~13u)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (30:14): [True: 11.8M, False: 361k]
-  |  Branch (30:33): [True: 267k, False: 93.0k]
+  |  Branch (30:14): [True: 11.3M, False: 198k]
+  |  Branch (30:33): [True: 105k, False: 92.8k]
   ------------------
-   31|  12.0M|    return 0;
-   32|  12.0M|  }
+   31|  11.4M|    return 0;
+   32|  11.4M|  }
    33|  1.72M|  return numberVnum(o1) == numberVnum(o2);
-   34|  73.5M|}
+   34|  67.0M|}
 
 lj_state.c:setgcVraw:
   920|   721k|{
@@ -17616,14 +17616,14 @@ lj_parse.c:expr_table:
   |  |  ------------------
   |  |  |  |  147|  11.0M|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (147:24): [True: 4.60k, False: 11.0M]
+  |  |  |  |  |  Branch (147:24): [True: 4.71k, False: 11.0M]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 { if (LJ_UNLIKELY(isblack(obj2gco(t)))) lj_gc_barrierback(G(L), (t)); }
   |  |  ------------------
-  |  |  |  |  707|  4.60k|#define G(L)			(mref(L->glref, global_State))
+  |  |  |  |  707|  4.71k|#define G(L)			(mref(L->glref, global_State))
   |  |  |  |  ------------------
-  |  |  |  |  |  |   36|  4.60k|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |  |  |   36|  4.71k|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
@@ -17777,7 +17777,7 @@ lj_parse.c:expr_table:
   |  |  ------------------
   |  |  |  |  147|  9.37M|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (147:24): [True: 298k, False: 9.07M]
+  |  |  |  |  |  Branch (147:24): [True: 299k, False: 9.07M]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |   67|  9.37M|      lj_gc_step(L); }
@@ -22281,7 +22281,7 @@ lj_parse.c:fs_fixup_k:
   |  |  |  |  |  |  |  |   18|  3.78M|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (32:20): [True: 3.34M, False: 440k]
+  |  |  |  |  |  Branch (32:20): [True: 3.34M, False: 439k]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 { if (iswhite(obj2gco(o)) && isblack(obj2gco(p))) \
@@ -22518,37 +22518,37 @@ lj_parse.c:fs_fixup_var:
  1513|   948k|}
 
 lj_prng_u64:
-   48|   842k|{
-   49|   842k|  uint64_t z, r = 0;
-   50|   842k|  TW223_STEP(rs, z, r)
+   48|   843k|{
+   49|   843k|  uint64_t z, r = 0;
+   50|   843k|  TW223_STEP(rs, z, r)
   ------------------
-  |  |   41|   842k|  TW223_GEN(rs, z, r, 0, 63, 31, 18) \
+  |  |   41|   843k|  TW223_GEN(rs, z, r, 0, 63, 31, 18) \
   |  |  ------------------
-  |  |  |  |   36|   842k|  z = rs->u[i]; \
-  |  |  |  |   37|   842k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
-  |  |  |  |   38|   842k|  r ^= z; rs->u[i] = z;
+  |  |  |  |   36|   843k|  z = rs->u[i]; \
+  |  |  |  |   37|   843k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
+  |  |  |  |   38|   843k|  r ^= z; rs->u[i] = z;
   |  |  ------------------
-  |  |   42|   842k|  TW223_GEN(rs, z, r, 1, 58, 19, 28) \
+  |  |   42|   843k|  TW223_GEN(rs, z, r, 1, 58, 19, 28) \
   |  |  ------------------
-  |  |  |  |   36|   842k|  z = rs->u[i]; \
-  |  |  |  |   37|   842k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
-  |  |  |  |   38|   842k|  r ^= z; rs->u[i] = z;
+  |  |  |  |   36|   843k|  z = rs->u[i]; \
+  |  |  |  |   37|   843k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
+  |  |  |  |   38|   843k|  r ^= z; rs->u[i] = z;
   |  |  ------------------
-  |  |   43|   842k|  TW223_GEN(rs, z, r, 2, 55, 24,  7) \
+  |  |   43|   843k|  TW223_GEN(rs, z, r, 2, 55, 24,  7) \
   |  |  ------------------
-  |  |  |  |   36|   842k|  z = rs->u[i]; \
-  |  |  |  |   37|   842k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
-  |  |  |  |   38|   842k|  r ^= z; rs->u[i] = z;
+  |  |  |  |   36|   843k|  z = rs->u[i]; \
+  |  |  |  |   37|   843k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
+  |  |  |  |   38|   843k|  r ^= z; rs->u[i] = z;
   |  |  ------------------
-  |  |   44|   842k|  TW223_GEN(rs, z, r, 3, 47, 21,  8)
+  |  |   44|   843k|  TW223_GEN(rs, z, r, 3, 47, 21,  8)
   |  |  ------------------
-  |  |  |  |   36|   842k|  z = rs->u[i]; \
-  |  |  |  |   37|   842k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
-  |  |  |  |   38|   842k|  r ^= z; rs->u[i] = z;
+  |  |  |  |   36|   843k|  z = rs->u[i]; \
+  |  |  |  |   37|   843k|  z = (((z<<q)^z) >> (k-s)) ^ ((z&((uint64_t)(int64_t)-1 << (64-k)))<<s); \
+  |  |  |  |   38|   843k|  r ^= z; rs->u[i] = z;
   |  |  ------------------
   ------------------
-   51|   842k|  return r;
-   52|   842k|}
+   51|   843k|  return r;
+   52|   843k|}
 lj_prng_seed_secure:
   167|   240k|{
   168|       |#if LJ_TARGET_XBOX360
@@ -22794,14 +22794,14 @@ lj_state_shrinkstack:
   |  |  |  |  605|   215k|#define LJ_FR2			1
   |  |  ------------------
   ------------------
-  |  Branch (96:7): [True: 840, False: 214k]
+  |  Branch (96:7): [True: 838, False: 214k]
   ------------------
    97|       |      /* Don't shrink stack of live trace. */
-   98|    840|      (tvref(G(L)->jit_base) == NULL || obj2gco(L) != gcref(G(L)->cur_L)))
+   98|    838|      (tvref(G(L)->jit_base) == NULL || obj2gco(L) != gcref(G(L)->cur_L)))
   ------------------
-  |  |  217|    840|#define tvref(r)	(mref(r, TValue))
+  |  |  217|    838|#define tvref(r)	(mref(r, TValue))
   |  |  ------------------
-  |  |  |  |   36|    840|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|    838|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
                     (tvref(G(L)->jit_base) == NULL || obj2gco(L) != gcref(G(L)->cur_L)))
@@ -22812,10 +22812,10 @@ lj_state_shrinkstack:
   ------------------
   |  |   67|      0|#define gcref(r)	((GCobj *)(r).gcptr64)
   ------------------
-  |  Branch (98:8): [True: 840, False: 0]
+  |  Branch (98:8): [True: 838, False: 0]
   |  Branch (98:41): [True: 0, False: 0]
   ------------------
-   99|    840|    resizestack(L, L->stacksize >> 1);
+   99|    838|    resizestack(L, L->stacksize >> 1);
   100|   227k|}
 lj_state_growstack:
   104|  4.45k|{
@@ -23810,81 +23810,81 @@ lj_str_resize:
   152|       |  /* Check which chains need secondary hashes. */
   153|   248k|  if (g->str.second) {
   ------------------
-  |  Branch (153:7): [True: 5.92k, False: 242k]
+  |  Branch (153:7): [True: 5.94k, False: 242k]
   ------------------
-  154|  5.92k|    int newsecond = 0;
+  154|  5.94k|    int newsecond = 0;
   155|       |    /* Compute primary chain lengths. */
   156|  1.85M|    for (i = g->str.mask; i != ~(MSize)0; i--) {
   ------------------
-  |  Branch (156:27): [True: 1.84M, False: 5.92k]
+  |  Branch (156:27): [True: 1.85M, False: 5.94k]
   ------------------
-  157|  1.84M|      GCobj *o = (GCobj *)(gcrefu(oldtab[i]) & ~(uintptr_t)1);
+  157|  1.85M|      GCobj *o = (GCobj *)(gcrefu(oldtab[i]) & ~(uintptr_t)1);
   ------------------
-  |  |   69|  1.84M|#define gcrefu(r)	((r).gcptr64)
+  |  |   69|  1.85M|#define gcrefu(r)	((r).gcptr64)
   ------------------
-  158|  3.71M|      while (o) {
+  158|  3.72M|      while (o) {
   ------------------
-  |  Branch (158:14): [True: 1.86M, False: 1.84M]
+  |  Branch (158:14): [True: 1.87M, False: 1.85M]
   ------------------
-  159|  1.86M|	GCstr *s = gco2str(o);
+  159|  1.87M|	GCstr *s = gco2str(o);
   ------------------
-  |  |  767|  1.86M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
+  |  |  767|  1.87M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
   |  |  ------------------
-  |  |  |  |  369|  1.86M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  369|  1.87M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  368|  1.86M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  368|  1.87M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  357|  1.86M|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  357|  1.87M|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 1.86M, False: 0]
+  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 1.87M, False: 0]
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  358|  1.86M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  358|  1.87M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  160|  1.86M|	MSize hash = s->hashalg ? hash_sparse(g->str.seed, strdata(s), s->len) :
+  160|  1.87M|	MSize hash = s->hashalg ? hash_sparse(g->str.seed, strdata(s), s->len) :
   ------------------
   |  |  316|   140k|#define strdata(s)	((const char *)((s)+1))
   ------------------
-  |  Branch (160:15): [True: 140k, False: 1.72M]
+  |  Branch (160:15): [True: 140k, False: 1.73M]
   ------------------
-  161|  1.86M|				  s->hash;
-  162|  1.86M|	hash &= newmask;
-  163|  1.86M|	setgcrefp(newtab[hash], gcrefu(newtab[hash]) + 1);
+  161|  1.87M|				  s->hash;
+  162|  1.87M|	hash &= newmask;
+  163|  1.87M|	setgcrefp(newtab[hash], gcrefu(newtab[hash]) + 1);
   ------------------
-  |  |   75|  1.86M|#define setgcrefp(r, p)	((r).gcptr64 = (uint64_t)(p))
+  |  |   75|  1.87M|#define setgcrefp(r, p)	((r).gcptr64 = (uint64_t)(p))
   ------------------
-  164|  1.86M|	o = gcnext(o);
+  164|  1.87M|	o = gcnext(o);
   ------------------
-  |  |   90|  1.86M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
+  |  |   90|  1.87M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
   |  |  ------------------
-  |  |  |  |   67|  1.86M|#define gcref(r)	((GCobj *)(r).gcptr64)
+  |  |  |  |   67|  1.87M|#define gcref(r)	((GCobj *)(r).gcptr64)
   |  |  ------------------
   ------------------
-  165|  1.86M|      }
-  166|  1.84M|    }
+  165|  1.87M|      }
+  166|  1.85M|    }
   167|       |    /* Mark secondary chains. */
-  168|  3.69M|    for (i = newmask; i != ~(MSize)0; i--) {
+  168|  3.70M|    for (i = newmask; i != ~(MSize)0; i--) {
   ------------------
-  |  Branch (168:23): [True: 3.69M, False: 5.92k]
+  |  Branch (168:23): [True: 3.70M, False: 5.94k]
   ------------------
-  169|  3.69M|      int secondary = gcrefu(newtab[i]) > LJ_STR_MAXCOLL;
+  169|  3.70M|      int secondary = gcrefu(newtab[i]) > LJ_STR_MAXCOLL;
   ------------------
-  |  |   69|  3.69M|#define gcrefu(r)	((r).gcptr64)
+  |  |   69|  3.70M|#define gcrefu(r)	((r).gcptr64)
   ------------------
                     int secondary = gcrefu(newtab[i]) > LJ_STR_MAXCOLL;
   ------------------
-  |  |  135|  3.69M|#define LJ_STR_MAXCOLL		32
+  |  |  135|  3.70M|#define LJ_STR_MAXCOLL		32
   ------------------
-  170|  3.69M|      newsecond |= secondary;
-  171|  3.69M|      setgcrefp(newtab[i], secondary);
+  170|  3.70M|      newsecond |= secondary;
+  171|  3.70M|      setgcrefp(newtab[i], secondary);
   ------------------
-  |  |   75|  3.69M|#define setgcrefp(r, p)	((r).gcptr64 = (uint64_t)(p))
+  |  |   75|  3.70M|#define setgcrefp(r, p)	((r).gcptr64 = (uint64_t)(p))
   ------------------
-  172|  3.69M|    }
-  173|  5.92k|    g->str.second = newsecond;
-  174|  5.92k|  }
+  172|  3.70M|    }
+  173|  5.94k|    g->str.second = newsecond;
+  174|  5.94k|  }
   175|   248k|#endif
   176|       |
   177|       |  /* Reinsert all strings from the old table into the new table. */
@@ -23968,12 +23968,12 @@ lj_str_resize:
   ------------------
   198|   140k|	if (u & 1) {
   ------------------
-  |  Branch (198:6): [True: 10.2k, False: 130k]
+  |  Branch (198:6): [True: 10.5k, False: 130k]
   ------------------
-  199|  10.2k|	  hash &= newmask;
-  200|  10.2k|	  u = gcrefu(newtab[hash]);
+  199|  10.5k|	  hash &= newmask;
+  200|  10.5k|	  u = gcrefu(newtab[hash]);
   ------------------
-  |  |   69|  10.2k|#define gcrefu(r)	((r).gcptr64)
+  |  |   69|  10.5k|#define gcrefu(r)	((r).gcptr64)
   ------------------
   201|   130k|	} else {  /* Revert string back to primary hash. */
   202|   130k|	  s->hash = shash;
@@ -24043,48 +24043,48 @@ lj_str_new:
   ------------------
   |  |  147|  62.9M|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  ------------------
-  |  |  |  Branch (147:24): [True: 248k, False: 62.6M]
+  |  |  |  Branch (147:24): [True: 247k, False: 62.6M]
   |  |  ------------------
   ------------------
-  335|   248k|      hashalg = 1;
-  336|   248k|      hash = hash_dense(g->str.seed, hash, str, len);
-  337|   248k|      o = (GCobj *)(gcrefu(g->str.tab[hash & g->str.mask]) & ~(uintptr_t)1);
+  335|   247k|      hashalg = 1;
+  336|   247k|      hash = hash_dense(g->str.seed, hash, str, len);
+  337|   247k|      o = (GCobj *)(gcrefu(g->str.tab[hash & g->str.mask]) & ~(uintptr_t)1);
   ------------------
-  |  |   69|   248k|#define gcrefu(r)	((r).gcptr64)
+  |  |   69|   247k|#define gcrefu(r)	((r).gcptr64)
   ------------------
-  338|   248k|    }
+  338|   247k|    }
   339|  62.9M|#endif
   340|  79.1M|    while (o != NULL) {
   ------------------
-  |  Branch (340:12): [True: 55.6M, False: 23.5M]
+  |  Branch (340:12): [True: 55.5M, False: 23.5M]
   ------------------
-  341|  55.6M|      GCstr *sx = gco2str(o);
+  341|  55.5M|      GCstr *sx = gco2str(o);
   ------------------
-  |  |  767|  55.6M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
+  |  |  767|  55.5M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
   |  |  ------------------
-  |  |  |  |  369|  55.6M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  369|  55.5M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  368|  55.6M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  368|  55.5M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  357|  55.6M|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  357|  55.5M|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 55.6M, False: 0]
+  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 55.5M, False: 0]
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  358|  55.6M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  358|  55.5M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  342|  55.6M|      if (sx->hash == hash && sx->len == len) {
+  342|  55.5M|      if (sx->hash == hash && sx->len == len) {
   ------------------
-  |  Branch (342:11): [True: 41.1M, False: 14.5M]
+  |  Branch (342:11): [True: 41.1M, False: 14.4M]
   |  Branch (342:31): [True: 40.9M, False: 125k]
   ------------------
   343|  40.9M|	if (memcmp(str, strdata(sx), len) == 0) {
   ------------------
   |  |  316|  40.9M|#define strdata(s)	((const char *)((s)+1))
   ------------------
-  |  Branch (343:6): [True: 39.4M, False: 1.56M]
+  |  Branch (343:6): [True: 39.4M, False: 1.55M]
   ------------------
   344|  39.4M|	  if (isdead(g, o)) flipwhite(o);  /* Resurrect if dead. */
   ------------------
@@ -24113,36 +24113,36 @@ lj_str_new:
   |  |  |  |  |  |   18|  39.4M|#define LJ_GC_WHITE1	0x02
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (37:22): [True: 1.73k, False: 39.4M]
+  |  |  |  Branch (37:22): [True: 1.74k, False: 39.4M]
   |  |  ------------------
   ------------------
               	  if (isdead(g, o)) flipwhite(o);  /* Resurrect if dead. */
   ------------------
-  |  |   43|  1.73k|#define flipwhite(x)	((x)->gch.marked ^= LJ_GC_WHITES)
+  |  |   43|  1.74k|#define flipwhite(x)	((x)->gch.marked ^= LJ_GC_WHITES)
   |  |  ------------------
-  |  |  |  |   27|  1.73k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |   27|  1.74k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   17|  1.73k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |   17|  1.74k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  ------------------
   |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   18|  1.73k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |   18|  1.74k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
   345|  39.4M|	  return sx;  /* Return existing string. */
   346|  39.4M|	}
-  347|  1.56M|	coll++;
-  348|  1.56M|      }
-  349|  16.2M|      coll++;
-  350|  16.2M|      o = gcnext(o);
+  347|  1.55M|	coll++;
+  348|  1.55M|      }
+  349|  16.1M|      coll++;
+  350|  16.1M|      o = gcnext(o);
   ------------------
-  |  |   90|  16.2M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
+  |  |   90|  16.1M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
   |  |  ------------------
-  |  |  |  |   67|  16.2M|#define gcref(r)	((GCobj *)(r).gcptr64)
+  |  |  |  |   67|  16.1M|#define gcref(r)	((GCobj *)(r).gcptr64)
   |  |  ------------------
   ------------------
-  351|  16.2M|    }
+  351|  16.1M|    }
   352|  23.5M|#if LUAJIT_SECURITY_STRHASH
   353|       |    /* Rehash chain if there are too many collisions. */
   354|  23.5M|    if (LJ_UNLIKELY(coll > LJ_STR_MAXCOLL) && !hashalg) {
@@ -24231,14 +24231,14 @@ lj_str.c:hash_sparse:
   104|  63.2M|  return h;
   105|  63.2M|}
 lj_str.c:hash_dense:
-  111|   466k|{
-  112|   466k|  StrHash b = lj_bswap(lj_rol(h ^ (StrHash)(seed >> 32), 4));
+  111|   465k|{
+  112|   465k|  StrHash b = lj_bswap(lj_rol(h ^ (StrHash)(seed >> 32), 4));
   ------------------
-  |  |  113|   466k|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
+  |  |  113|   465k|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
   ------------------
-  113|   466k|  if (len > 12) {
+  113|   465k|  if (len > 12) {
   ------------------
-  |  Branch (113:7): [True: 456k, False: 9.39k]
+  |  Branch (113:7): [True: 456k, False: 8.73k]
   ------------------
   114|   456k|    StrHash a = (StrHash)seed;
   115|   456k|    const char *pe = str+len-12, *p = pe, *q = str;
@@ -24276,8 +24276,8 @@ lj_str.c:hash_dense:
   |  |  113|   456k|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
   ------------------
   128|   456k|  }
-  129|   466k|  return b;
-  130|   466k|}
+  129|   465k|  return b;
+  130|   465k|}
 lj_str.c:lj_str_rehash_chain:
   230|  11.2k|{
   231|  11.2k|  global_State *g = G(L);
@@ -24289,19 +24289,19 @@ lj_str.c:lj_str_rehash_chain:
   ------------------
   232|  11.2k|  int ow = g->gc.state == GCSsweepstring ? otherwhite(g) : 0;  /* Sweeping? */
   ------------------
-  |  |   36|    324|#define otherwhite(g)	(g->gc.currentwhite ^ LJ_GC_WHITES)
+  |  |   36|    327|#define otherwhite(g)	(g->gc.currentwhite ^ LJ_GC_WHITES)
   |  |  ------------------
-  |  |  |  |   27|    324|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |   27|    327|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   17|    324|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |   17|    327|#define LJ_GC_WHITE0	0x01
   |  |  |  |  ------------------
   |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   18|    324|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |   18|    327|#define LJ_GC_WHITE1	0x02
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (232:12): [True: 324, False: 10.9k]
+  |  Branch (232:12): [True: 327, False: 10.9k]
   ------------------
   233|  11.2k|  GCRef *strtab = g->str.tab;
   234|  11.2k|  MSize strmask = g->str.mask;
@@ -24346,88 +24346,88 @@ lj_str.c:lj_str_rehash_chain:
   242|      0|    StrHash hash;
   243|   217k|    if (ow) {  /* Must sweep while rechaining. */
   ------------------
-  |  Branch (243:9): [True: 5.86k, False: 211k]
+  |  Branch (243:9): [True: 5.95k, False: 211k]
   ------------------
-  244|  5.86k|      if (((o->gch.marked ^ LJ_GC_WHITES) & ow)) {  /* String alive? */
+  244|  5.95k|      if (((o->gch.marked ^ LJ_GC_WHITES) & ow)) {  /* String alive? */
   ------------------
-  |  |   27|  5.86k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |   27|  5.95k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  ------------------
-  |  |  |  |   17|  5.86k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |   17|  5.95k|#define LJ_GC_WHITE0	0x01
   |  |  ------------------
   |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  ------------------
-  |  |  |  |   18|  5.86k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |   18|  5.95k|#define LJ_GC_WHITE1	0x02
   |  |  ------------------
   ------------------
-  |  Branch (244:11): [True: 5.82k, False: 36]
+  |  Branch (244:11): [True: 5.92k, False: 30]
   ------------------
-  245|  5.82k|	lj_assertG(!isdead(g, o) || (o->gch.marked & LJ_GC_FIXED),
+  245|  5.92k|	lj_assertG(!isdead(g, o) || (o->gch.marked & LJ_GC_FIXED),
   ------------------
-  |  |  366|  5.82k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
+  |  |  366|  5.92k|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|  5.93k|  ((c) ? (void)0 : \
+  |  |  |  |  357|  6.04k|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 5.71k, False: 106]
-  |  |  |  |  |  Branch (357:5): [True: 106, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 5.80k, False: 119]
+  |  |  |  |  |  Branch (357:5): [True: 119, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|  5.82k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|  5.92k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-  246|  5.82k|		   "sweep of undead string");
-  247|  5.82k|	makewhite(g, o);
+  246|  5.92k|		   "sweep of undead string");
+  247|  5.92k|	makewhite(g, o);
   ------------------
-  |  |   42|  5.82k|  ((x)->gch.marked = ((x)->gch.marked & (uint8_t)~LJ_GC_COLORS) | curwhite(g))
+  |  |   42|  5.92k|  ((x)->gch.marked = ((x)->gch.marked & (uint8_t)~LJ_GC_COLORS) | curwhite(g))
   |  |  ------------------
-  |  |  |  |   28|  5.82k|#define LJ_GC_COLORS	(LJ_GC_WHITES | LJ_GC_BLACK)
+  |  |  |  |   28|  5.92k|#define LJ_GC_COLORS	(LJ_GC_WHITES | LJ_GC_BLACK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   27|  5.82k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |  |  |   27|  5.92k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   17|  5.82k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |  |  |   17|  5.92k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   18|  5.82k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |  |  |   18|  5.92k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |               #define LJ_GC_COLORS	(LJ_GC_WHITES | LJ_GC_BLACK)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   19|  5.82k|#define LJ_GC_BLACK	0x04
+  |  |  |  |  |  |   19|  5.92k|#define LJ_GC_BLACK	0x04
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 ((x)->gch.marked = ((x)->gch.marked & (uint8_t)~LJ_GC_COLORS) | curwhite(g))
   |  |  ------------------
-  |  |  |  |   39|  5.82k|#define curwhite(g)	((g)->gc.currentwhite & LJ_GC_WHITES)
+  |  |  |  |   39|  5.92k|#define curwhite(g)	((g)->gc.currentwhite & LJ_GC_WHITES)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   27|  5.82k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
+  |  |  |  |  |  |   27|  5.92k|#define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   17|  5.82k|#define LJ_GC_WHITE0	0x01
+  |  |  |  |  |  |  |  |   17|  5.92k|#define LJ_GC_WHITE0	0x01
   |  |  |  |  |  |  ------------------
   |  |  |  |  |  |               #define LJ_GC_WHITES	(LJ_GC_WHITE0 | LJ_GC_WHITE1)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   18|  5.82k|#define LJ_GC_WHITE1	0x02
+  |  |  |  |  |  |  |  |   18|  5.92k|#define LJ_GC_WHITE1	0x02
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  248|  5.82k|      } else {  /* Free dead string. */
-  249|     36|	lj_assertG(isdead(g, o) || ow == LJ_GC_SFIXED,
+  248|  5.92k|      } else {  /* Free dead string. */
+  249|     30|	lj_assertG(isdead(g, o) || ow == LJ_GC_SFIXED,
   ------------------
-  |  |  366|     36|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
+  |  |  366|     30|#define lj_assertG(c, ...)	lj_assert_check(g, (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|     36|  ((c) ? (void)0 : \
+  |  |  |  |  357|     30|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 36, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 30, False: 0]
   |  |  |  |  |  Branch (357:5): [True: 0, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|     36|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|     30|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-  250|     36|		   "sweep of unlive string");
-  251|     36|	lj_str_free(g, s);
-  252|     36|	o = next;
-  253|     36|	continue;
-  254|     36|      }
-  255|  5.86k|    }
+  250|     30|		   "sweep of unlive string");
+  251|     30|	lj_str_free(g, s);
+  252|     30|	o = next;
+  253|     30|	continue;
+  254|     30|      }
+  255|  5.95k|    }
   256|   217k|    hash = s->hash;
   257|   217k|    if (!s->hashalg) {  /* Rehash with secondary hash. */
   ------------------
@@ -26300,18 +26300,18 @@ lj_strscan.c:strscan_dec:
   ------------------
   304|  37.8M|	if (hi == lo) { xi[DPREV(lo)] |= 1; break; }
   ------------------
-  |  |   70|  12.0k|#define DPREV(a)	(((a)-1) & STRSCAN_DMASK)
+  |  |   70|  11.8k|#define DPREV(a)	(((a)-1) & STRSCAN_DMASK)
   |  |  ------------------
-  |  |  |  |   65|  12.0k|#define STRSCAN_DMASK	(STRSCAN_DDIG-1)
+  |  |  |  |   65|  11.8k|#define STRSCAN_DMASK	(STRSCAN_DDIG-1)
   |  |  |  |  ------------------
-  |  |  |  |  |  |   64|  12.0k|#define STRSCAN_DDIG	(STRSCAN_DIG/2)
+  |  |  |  |  |  |   64|  11.8k|#define STRSCAN_DDIG	(STRSCAN_DIG/2)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |   62|  12.0k|#define STRSCAN_DIG	1024
+  |  |  |  |  |  |  |  |   62|  11.8k|#define STRSCAN_DIG	1024
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (304:6): [True: 12.0k, False: 37.8M]
+  |  Branch (304:6): [True: 11.8k, False: 37.8M]
   ------------------
   305|  37.8M|	xi[lo] = (cy >> 6); lo = DNEXT(lo);
   ------------------
@@ -26394,7 +26394,7 @@ lj_strscan.c:strscan_dec:
   ------------------
   323|  57.6k|	} while (i != lo);
   ------------------
-  |  Branch (323:11): [True: 56.1k, False: 1.58k]
+  |  Branch (323:11): [True: 56.0k, False: 1.58k]
   ------------------
   324|   561k|      }
   325|   583k|      strscan_double(x, o, ex2, neg);
@@ -26661,7 +26661,7 @@ lj_tab_getstr:
   394|  3.13M|  do {
   395|  5.06M|    if (tvisstr(&n->key) && strV(&n->key) == key)
   ------------------
-  |  |  797|  6.26M|#define tvisstr(o)	(itype(o) == LJ_TSTR)
+  |  |  797|  6.27M|#define tvisstr(o)	(itype(o) == LJ_TSTR)
   |  |  ------------------
   |  |  |  |  783|  3.13M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
@@ -26689,17 +26689,17 @@ lj_tab_getstr:
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (395:29): [True: 2.21M, False: 322k]
+  |  Branch (395:29): [True: 2.21M, False: 324k]
   ------------------
   396|  2.21M|      return &n->val;
   397|  3.13M|  } while ((n = nextnode(n)));
   ------------------
-  |  |  516|   922k|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  516|   924k|#define nextnode(n)	(mref((n)->next, Node))
   |  |  ------------------
-  |  |  |  |   36|   922k|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|   924k|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  |  Branch (397:12): [True: 308k, False: 614k]
+  |  Branch (397:12): [True: 310k, False: 614k]
   ------------------
   398|   614k|  return NULL;
   399|  2.82M|}
@@ -26904,131 +26904,131 @@ lj_tab_newkey:
   ------------------
   |  |  784|   147M|#define tvisnil(o)	((o)->it64 == -1)
   ------------------
-  |  Branch (439:7): [True: 35.5M, False: 37.9M]
-  |  Branch (439:28): [True: 1.81M, False: 36.1M]
+  |  Branch (439:7): [True: 35.0M, False: 38.4M]
+  |  Branch (439:28): [True: 1.81M, False: 36.6M]
   ------------------
-  440|  37.3M|    Node *nodebase = noderef(t->node);
+  440|  36.8M|    Node *nodebase = noderef(t->node);
   ------------------
-  |  |  515|  37.3M|#define noderef(r)	(mref((r), Node))
+  |  |  515|  36.8M|#define noderef(r)	(mref((r), Node))
   |  |  ------------------
-  |  |  |  |   36|  37.3M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  36.8M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  441|  37.3M|    Node *collide, *freenode = getfreetop(t, nodebase);
+  441|  36.8M|    Node *collide, *freenode = getfreetop(t, nodebase);
   ------------------
-  |  |  518|  37.3M|#define getfreetop(t, n)	(noderef((t)->freetop))
+  |  |  518|  36.8M|#define getfreetop(t, n)	(noderef((t)->freetop))
   |  |  ------------------
-  |  |  |  |  515|  37.3M|#define noderef(r)	(mref((r), Node))
+  |  |  |  |  515|  36.8M|#define noderef(r)	(mref((r), Node))
   |  |  |  |  ------------------
-  |  |  |  |  |  |   36|  37.3M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |  |  |   36|  36.8M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  442|  37.3M|    lj_assertL(freenode >= nodebase && freenode <= nodebase+t->hmask+1,
+  442|  36.8M|    lj_assertL(freenode >= nodebase && freenode <= nodebase+t->hmask+1,
   ------------------
-  |  |  367|  37.3M|#define lj_assertL(c, ...)	lj_assert_check(G(L), (c), __VA_ARGS__)
+  |  |  367|  36.8M|#define lj_assertL(c, ...)	lj_assert_check(G(L), (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|  74.7M|  ((c) ? (void)0 : \
+  |  |  |  |  357|  73.7M|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:5): [True: 37.3M, False: 0]
-  |  |  |  |  |  Branch (357:5): [True: 37.3M, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 36.8M, False: 0]
+  |  |  |  |  |  Branch (357:5): [True: 36.8M, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|  37.3M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|  36.8M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-  443|  37.3M|	       "bad freenode");
-  444|  60.5M|    do {
-  445|  60.5M|      if (freenode == nodebase) {  /* No free node found? */
+  443|  36.8M|	       "bad freenode");
+  444|  60.2M|    do {
+  445|  60.2M|      if (freenode == nodebase) {  /* No free node found? */
   ------------------
-  |  Branch (445:11): [True: 5.22M, False: 55.3M]
+  |  Branch (445:11): [True: 5.22M, False: 55.0M]
   ------------------
   446|  5.22M|	rehashtab(L, t, key);  /* Rehash table. */
   447|  5.22M|	return lj_tab_set(L, t, key);  /* Retry key insertion. */
   448|  5.22M|      }
-  449|  60.5M|    } while (!tvisnil(&(--freenode)->key));
+  449|  60.2M|    } while (!tvisnil(&(--freenode)->key));
   ------------------
-  |  |  784|  55.3M|#define tvisnil(o)	((o)->it64 == -1)
+  |  |  784|  55.0M|#define tvisnil(o)	((o)->it64 == -1)
   ------------------
-  |  Branch (449:14): [True: 23.1M, False: 32.1M]
+  |  Branch (449:14): [True: 23.3M, False: 31.6M]
   ------------------
-  450|  32.1M|    setfreetop(t, nodebase, freenode);
+  450|  31.6M|    setfreetop(t, nodebase, freenode);
   ------------------
-  |  |  519|  32.1M|#define setfreetop(t, n, v)	(setmref((t)->freetop, (v)))
+  |  |  519|  31.6M|#define setfreetop(t, n, v)	(setmref((t)->freetop, (v)))
   |  |  ------------------
-  |  |  |  |   39|  32.1M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
+  |  |  |  |   39|  31.6M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
   |  |  ------------------
   ------------------
-  451|  32.1M|    lj_assertL(freenode != &G(L)->nilnode, "store to fallback hash");
+  451|  31.6M|    lj_assertL(freenode != &G(L)->nilnode, "store to fallback hash");
   ------------------
-  |  |  367|  32.1M|#define lj_assertL(c, ...)	lj_assert_check(G(L), (c), __VA_ARGS__)
+  |  |  367|  31.6M|#define lj_assertL(c, ...)	lj_assert_check(G(L), (c), __VA_ARGS__)
   |  |  ------------------
-  |  |  |  |  357|  32.1M|  ((c) ? (void)0 : \
+  |  |  |  |  357|  31.6M|  ((c) ? (void)0 : \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (357:4): [True: 32.1M, False: 0]
+  |  |  |  |  |  Branch (357:4): [True: 31.6M, False: 0]
   |  |  |  |  ------------------
-  |  |  |  |  358|  32.1M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  358|  31.6M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  ------------------
   ------------------
-  452|  32.1M|    collide = hashkey(t, &n->key);
-  453|  32.1M|    if (collide != n) {  /* Colliding node not the main node? */
+  452|  31.6M|    collide = hashkey(t, &n->key);
+  453|  31.6M|    if (collide != n) {  /* Colliding node not the main node? */
   ------------------
-  |  Branch (453:9): [True: 4.29M, False: 27.8M]
+  |  Branch (453:9): [True: 4.17M, False: 27.4M]
   ------------------
-  454|  7.42M|      while (noderef(collide->next) != n)  /* Find predecessor. */
+  454|  6.90M|      while (noderef(collide->next) != n)  /* Find predecessor. */
   ------------------
-  |  |  515|  7.42M|#define noderef(r)	(mref((r), Node))
+  |  |  515|  6.90M|#define noderef(r)	(mref((r), Node))
   |  |  ------------------
-  |  |  |  |   36|  7.42M|#define mref(r, t)	((t *)(void *)(r).ptr64)
-  |  |  ------------------
-  ------------------
-  |  Branch (454:14): [True: 3.12M, False: 4.29M]
-  ------------------
-  455|  3.12M|	collide = nextnode(collide);
-  ------------------
-  |  |  516|  3.12M|#define nextnode(n)	(mref((n)->next, Node))
-  |  |  ------------------
-  |  |  |  |   36|  3.12M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  6.90M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  456|  4.29M|      setmref(collide->next, freenode);  /* Relink chain. */
+  |  Branch (454:14): [True: 2.73M, False: 4.17M]
   ------------------
-  |  |   39|  4.29M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
+  455|  2.73M|	collide = nextnode(collide);
+  ------------------
+  |  |  516|  2.73M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  ------------------
+  |  |  |  |   36|  2.73M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  ------------------
+  ------------------
+  456|  4.17M|      setmref(collide->next, freenode);  /* Relink chain. */
+  ------------------
+  |  |   39|  4.17M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
   ------------------
   457|       |      /* Copy colliding node into free node and free main node. */
-  458|  4.29M|      freenode->val = n->val;
-  459|  4.29M|      freenode->key = n->key;
-  460|  4.29M|      freenode->next = n->next;
-  461|  4.29M|      setmref(n->next, NULL);
+  458|  4.17M|      freenode->val = n->val;
+  459|  4.17M|      freenode->key = n->key;
+  460|  4.17M|      freenode->next = n->next;
+  461|  4.17M|      setmref(n->next, NULL);
   ------------------
-  |  |   39|  4.29M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
+  |  |   39|  4.17M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
   ------------------
-  462|  4.29M|      setnilV(&n->val);
+  462|  4.17M|      setnilV(&n->val);
   ------------------
-  |  |  874|  4.29M|#define setnilV(o)		((o)->it64 = -1)
+  |  |  874|  4.17M|#define setnilV(o)		((o)->it64 = -1)
   ------------------
   463|       |      /* Rechain pseudo-resurrected string keys with colliding hashes. */
-  464|  6.95M|      while (nextnode(freenode)) {
+  464|  6.62M|      while (nextnode(freenode)) {
   ------------------
-  |  |  516|  6.95M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  516|  6.62M|#define nextnode(n)	(mref((n)->next, Node))
   |  |  ------------------
-  |  |  |  |   36|  6.95M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  6.62M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
-  |  |  |  Branch (516:21): [True: 2.66M, False: 4.29M]
-  |  |  ------------------
-  ------------------
-  465|  2.66M|	Node *nn = nextnode(freenode);
-  ------------------
-  |  |  516|  2.66M|#define nextnode(n)	(mref((n)->next, Node))
-  |  |  ------------------
-  |  |  |  |   36|  2.66M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  Branch (516:21): [True: 2.45M, False: 4.17M]
   |  |  ------------------
   ------------------
-  466|  2.66M|	if (!tvisnil(&nn->val) && hashkey(t, &nn->key) == n) {
+  465|  2.45M|	Node *nn = nextnode(freenode);
   ------------------
-  |  |  784|  5.32M|#define tvisnil(o)	((o)->it64 == -1)
+  |  |  516|  2.45M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  ------------------
+  |  |  |  |   36|  2.45M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  ------------------
   ------------------
-  |  Branch (466:6): [True: 2.65M, False: 4.20k]
-  |  Branch (466:28): [True: 0, False: 2.65M]
+  466|  2.45M|	if (!tvisnil(&nn->val) && hashkey(t, &nn->key) == n) {
+  ------------------
+  |  |  784|  4.90M|#define tvisnil(o)	((o)->it64 == -1)
+  ------------------
+  |  Branch (466:6): [True: 2.44M, False: 4.20k]
+  |  Branch (466:28): [True: 0, False: 2.44M]
   ------------------
   467|      0|	  freenode->next = nn->next;
   468|      0|	  nn->next = n->next;
@@ -27079,22 +27079,22 @@ lj_tab_newkey:
   490|      0|	    }
   491|      0|	  }
   492|      0|	  break;
-  493|  2.66M|	} else {
-  494|  2.66M|	  freenode = nn;
-  495|  2.66M|	}
-  496|  2.66M|      }
-  497|  27.8M|    } else {  /* Otherwise use free node. */
-  498|  27.8M|      setmrefr(freenode->next, n->next);  /* Insert into chain. */
+  493|  2.45M|	} else {
+  494|  2.45M|	  freenode = nn;
+  495|  2.45M|	}
+  496|  2.45M|      }
+  497|  27.4M|    } else {  /* Otherwise use free node. */
+  498|  27.4M|      setmrefr(freenode->next, n->next);  /* Insert into chain. */
   ------------------
-  |  |   41|  27.8M|#define setmrefr(r, v)	((r).ptr64 = (v).ptr64)
+  |  |   41|  27.4M|#define setmrefr(r, v)	((r).ptr64 = (v).ptr64)
   ------------------
-  499|  27.8M|      setmref(n->next, freenode);
+  499|  27.4M|      setmref(n->next, freenode);
   ------------------
-  |  |   39|  27.8M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
+  |  |   39|  27.4M|#define setmref(r, p)	((r).ptr64 = (uint64_t)(void *)(p))
   ------------------
-  500|  27.8M|      n = freenode;
-  501|  27.8M|    }
-  502|  32.1M|  }
+  500|  27.4M|      n = freenode;
+  501|  27.4M|    }
+  502|  31.6M|  }
   503|  68.2M|  n->key.u64 = key->u64;
   504|  68.2M|  if (LJ_UNLIKELY(tvismzero(&n->key)))
   ------------------
@@ -27146,34 +27146,34 @@ lj_tab_setinth:
   |  |  |  |   44|  4.48M|#define hashlohi(t, lo, hi)	hashmask((t), hashrot((lo), (hi)))
   |  |  ------------------
   ------------------
-  517|  5.14M|  do {
-  518|  5.14M|    if (tvisnum(&n->key) && n->key.n == k.n)
+  517|  5.13M|  do {
+  518|  5.13M|    if (tvisnum(&n->key) && n->key.n == k.n)
   ------------------
   |  |  806|  10.2M|#define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  783|  5.14M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|  5.13M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  280|  5.14M|#define LJ_TISNUM		LJ_TNUMX
+  |  |  |  |  280|  5.13M|#define LJ_TISNUM		LJ_TNUMX
   |  |  |  |  ------------------
-  |  |  |  |  |  |  274|  5.14M|#define LJ_TNUMX		(~13u)
+  |  |  |  |  |  |  274|  5.13M|#define LJ_TNUMX		(~13u)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (806:20): [True: 2.06M, False: 3.08M]
+  |  |  |  Branch (806:20): [True: 2.06M, False: 3.07M]
   |  |  ------------------
   ------------------
   |  Branch (518:29): [True: 459k, False: 1.60M]
   ------------------
   519|   459k|      return &n->val;
-  520|  5.14M|  } while ((n = nextnode(n)));
+  520|  5.13M|  } while ((n = nextnode(n)));
   ------------------
-  |  |  516|  4.68M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  516|  4.67M|#define nextnode(n)	(mref((n)->next, Node))
   |  |  ------------------
-  |  |  |  |   36|  4.68M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  4.67M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  |  Branch (520:12): [True: 657k, False: 4.02M]
+  |  Branch (520:12): [True: 653k, False: 4.02M]
   ------------------
   521|  4.02M|  return lj_tab_newkey(L, t, &k);
   522|  4.48M|}
@@ -27195,7 +27195,7 @@ lj_tab_setstr:
   |  |  ------------------
   |  |  |  |  264|   110M|#define LJ_TSTR			(~4u)
   |  |  ------------------
-  |  |  |  Branch (797:20): [True: 74.6M, False: 36.2M]
+  |  |  |  Branch (797:20): [True: 74.6M, False: 36.1M]
   |  |  ------------------
   ------------------
                   if (tvisstr(&n->key) && strV(&n->key) == key)
@@ -27220,12 +27220,12 @@ lj_tab_setstr:
   530|  59.7M|      return &n->val;
   531|   110M|  } while ((n = nextnode(n)));
   ------------------
-  |  |  516|  51.2M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  516|  51.0M|#define nextnode(n)	(mref((n)->next, Node))
   |  |  ------------------
-  |  |  |  |   36|  51.2M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  51.0M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  |  Branch (531:12): [True: 12.7M, False: 38.5M]
+  |  Branch (531:12): [True: 12.5M, False: 38.5M]
   ------------------
   532|  38.5M|  setstrV(L, &k, key);
   533|  38.5M|  return lj_tab_newkey(L, t, &k);
@@ -27384,20 +27384,20 @@ lj_tab_set:
   553|      0|    lj_err_msg(L, LJ_ERR_NILIDX);
   554|      0|  }
   555|  32.6M|  n = hashkey(t, key);
-  556|  73.5M|  do {
-  557|  73.5M|    if (lj_obj_equal(&n->key, key))
+  556|  67.0M|  do {
+  557|  67.0M|    if (lj_obj_equal(&n->key, key))
   ------------------
-  |  Branch (557:9): [True: 1.91M, False: 71.6M]
+  |  Branch (557:9): [True: 1.91M, False: 65.1M]
   ------------------
   558|  1.91M|      return &n->val;
-  559|  73.5M|  } while ((n = nextnode(n)));
+  559|  67.0M|  } while ((n = nextnode(n)));
   ------------------
-  |  |  516|  71.6M|#define nextnode(n)	(mref((n)->next, Node))
+  |  |  516|  65.1M|#define nextnode(n)	(mref((n)->next, Node))
   |  |  ------------------
-  |  |  |  |   36|  71.6M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  65.1M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  |  Branch (559:12): [True: 40.8M, False: 30.7M]
+  |  Branch (559:12): [True: 34.4M, False: 30.7M]
   ------------------
   560|  30.7M|  return lj_tab_newkey(L, t, key);
   561|  32.6M|}
@@ -27659,7 +27659,7 @@ lj_tab.c:hashkey:
   |  |  ------------------
   |  |  |  |  264|   140M|#define LJ_TSTR			(~4u)
   |  |  ------------------
-  |  |  |  Branch (797:20): [True: 46.9M, False: 94.0M]
+  |  |  |  Branch (797:20): [True: 46.9M, False: 93.3M]
   |  |  ------------------
   ------------------
    24|   140M|    return hashstr(t, strV(key));
@@ -27669,82 +27669,82 @@ lj_tab.c:hashkey:
   |  |  |  Branch (42:37): [True: 46.9M, False: 0]
   |  |  ------------------
   ------------------
-   25|  94.0M|  else if (tvisnum(key))
+   25|  93.3M|  else if (tvisnum(key))
   ------------------
-  |  |  806|  94.0M|#define tvisnum(o)	(itype(o) < LJ_TISNUM)
+  |  |  806|  93.3M|#define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  783|  94.0M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  783|  93.3M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  ------------------
   |  |               #define tvisnum(o)	(itype(o) < LJ_TISNUM)
   |  |  ------------------
-  |  |  |  |  280|  94.0M|#define LJ_TISNUM		LJ_TNUMX
+  |  |  |  |  280|  93.3M|#define LJ_TISNUM		LJ_TNUMX
   |  |  |  |  ------------------
-  |  |  |  |  |  |  274|  94.0M|#define LJ_TNUMX		(~13u)
+  |  |  |  |  |  |  274|  93.3M|#define LJ_TNUMX		(~13u)
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (806:20): [True: 8.33M, False: 85.7M]
+  |  |  |  Branch (806:20): [True: 8.27M, False: 85.0M]
   |  |  ------------------
   ------------------
-   26|  8.33M|    return hashnum(t, key);
+   26|  8.27M|    return hashnum(t, key);
   ------------------
-  |  |   45|  8.33M|#define hashnum(t, o)		hashlohi((t), (o)->u32.lo, ((o)->u32.hi << 1))
+  |  |   45|  8.27M|#define hashnum(t, o)		hashlohi((t), (o)->u32.lo, ((o)->u32.hi << 1))
   |  |  ------------------
-  |  |  |  |   44|  8.33M|#define hashlohi(t, lo, hi)	hashmask((t), hashrot((lo), (hi)))
+  |  |  |  |   44|  8.27M|#define hashlohi(t, lo, hi)	hashmask((t), hashrot((lo), (hi)))
   |  |  ------------------
   ------------------
-   27|  85.7M|  else if (tvisbool(key))
+   27|  85.0M|  else if (tvisbool(key))
   ------------------
-  |  |  791|  85.7M|#define tvisbool(o)	(tvisfalse(o) || tvistrue(o))
+  |  |  791|  85.0M|#define tvisbool(o)	(tvisfalse(o) || tvistrue(o))
   |  |  ------------------
-  |  |  |  |  789|   171M|#define tvisfalse(o)	(itype(o) == LJ_TFALSE)
+  |  |  |  |  789|   170M|#define tvisfalse(o)	(itype(o) == LJ_TFALSE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  783|  85.7M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  |  |  783|  85.0M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  |  |  ------------------
   |  |  |  |               #define tvisfalse(o)	(itype(o) == LJ_TFALSE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  261|  85.7M|#define LJ_TFALSE		(~1u)
+  |  |  |  |  |  |  261|  85.0M|#define LJ_TFALSE		(~1u)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (789:22): [True: 39.9k, False: 85.6M]
+  |  |  |  |  |  Branch (789:22): [True: 40.1k, False: 85.0M]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |               #define tvisbool(o)	(tvisfalse(o) || tvistrue(o))
   |  |  ------------------
-  |  |  |  |  790|  85.6M|#define tvistrue(o)	(itype(o) == LJ_TTRUE)
+  |  |  |  |  790|  85.0M|#define tvistrue(o)	(itype(o) == LJ_TTRUE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  783|  85.6M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
+  |  |  |  |  |  |  783|  85.0M|#define itype(o)	((uint32_t)((o)->it64 >> 47))
   |  |  |  |  ------------------
   |  |  |  |               #define tvistrue(o)	(itype(o) == LJ_TTRUE)
   |  |  |  |  ------------------
-  |  |  |  |  |  |  262|  85.6M|#define LJ_TTRUE		(~2u)
+  |  |  |  |  |  |  262|  85.0M|#define LJ_TTRUE		(~2u)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (790:21): [True: 2.20k, False: 85.6M]
+  |  |  |  |  |  Branch (790:21): [True: 2.20k, False: 85.0M]
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-   28|  42.1k|    return hashmask(t, boolV(key));
+   28|  42.3k|    return hashmask(t, boolV(key));
   ------------------
-  |  |  839|  42.1k|#define boolV(o)	check_exp(tvisbool(o), (LJ_TFALSE - itype(o)))
+  |  |  839|  42.3k|#define boolV(o)	check_exp(tvisbool(o), (LJ_TFALSE - itype(o)))
   |  |  ------------------
-  |  |  |  |  369|  42.1k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  369|  42.3k|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  368|  42.1k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  368|  42.3k|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  357|  44.4k|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  357|  44.5k|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  Branch (357:5): [True: 39.9k, False: 2.20k]
+  |  |  |  |  |  |  |  |  |  Branch (357:5): [True: 40.1k, False: 2.20k]
   |  |  |  |  |  |  |  |  |  Branch (357:5): [True: 2.20k, False: 0]
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  358|  42.1k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  358|  42.3k|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-   29|  85.6M|  else
-   30|  85.6M|    return hashgcref(t, key->gcr);
+   29|  85.0M|  else
+   30|  85.0M|    return hashgcref(t, key->gcr);
   ------------------
-  |  |   48|  85.6M|  hashlohi((t), (uint32_t)gcrefu(r), (uint32_t)(gcrefu(r) >> 32))
+  |  |   48|  85.0M|  hashlohi((t), (uint32_t)gcrefu(r), (uint32_t)(gcrefu(r) >> 32))
   |  |  ------------------
-  |  |  |  |   44|  85.6M|#define hashlohi(t, lo, hi)	hashmask((t), hashrot((lo), (hi)))
+  |  |  |  |   44|  85.0M|#define hashlohi(t, lo, hi)	hashmask((t), hashrot((lo), (hi)))
   |  |  ------------------
   ------------------
    31|       |  /* Only hash 32 bits of lightuserdata on a 64 bit CPU. Good enough? */
@@ -27950,31 +27950,31 @@ lj_ctype.c:hashrot:
    31|  5.46M|  return hi;
    32|  5.46M|}
 lj_tab.c:hashmask:
-   36|   246M|{
-   37|   246M|  Node *n = noderef(t->node);
+   36|   245M|{
+   37|   245M|  Node *n = noderef(t->node);
   ------------------
-  |  |  515|   246M|#define noderef(r)	(mref((r), Node))
+  |  |  515|   245M|#define noderef(r)	(mref((r), Node))
   |  |  ------------------
-  |  |  |  |   36|   246M|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|   245M|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-   38|   246M|  return &n[hash & t->hmask];
-   39|   246M|}
+   38|   245M|  return &n[hash & t->hmask];
+   39|   245M|}
 lj_tab.c:hashrot:
-   19|  98.5M|{
-   20|  98.5M|#if LJ_TARGET_X86ORX64
+   19|  97.8M|{
+   20|  97.8M|#if LJ_TARGET_X86ORX64
    21|       |  /* Prefer variant that compiles well for a 2-operand CPU. */
-   22|  98.5M|  lo ^= hi; hi = lj_rol(hi, HASH_ROT1);
+   22|  97.8M|  lo ^= hi; hi = lj_rol(hi, HASH_ROT1);
   ------------------
-  |  |  113|  98.5M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
+  |  |  113|  97.8M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
   ------------------
-   23|  98.5M|  lo -= hi; hi = lj_rol(hi, HASH_ROT2);
+   23|  97.8M|  lo -= hi; hi = lj_rol(hi, HASH_ROT2);
   ------------------
-  |  |  113|  98.5M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
+  |  |  113|  97.8M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
   ------------------
-   24|  98.5M|  hi ^= lo; hi -= lj_rol(lo, HASH_ROT3);
+   24|  97.8M|  hi ^= lo; hi -= lj_rol(lo, HASH_ROT3);
   ------------------
-  |  |  113|  98.5M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
+  |  |  113|  97.8M|#define lj_rol(x, n)	(((x)<<(n)) | ((x)>>(-(int)(n)&(8*sizeof(x)-1))))
   ------------------
    25|       |#else
    26|       |  lo ^= hi;
@@ -27982,8 +27982,8 @@ lj_tab.c:hashrot:
    28|       |  hi = lo ^ lj_rol(hi, HASH_ROT1 + HASH_ROT2);
    29|       |  hi = hi - lj_rol(lo, HASH_ROT3);
    30|       |#endif
-   31|  98.5M|  return hi;
-   32|  98.5M|}
+   31|  97.8M|  return hi;
+   32|  97.8M|}
 
 lj_trace_initstate:
   307|   240k|{

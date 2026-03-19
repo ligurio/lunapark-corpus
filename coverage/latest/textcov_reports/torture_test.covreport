@@ -999,7 +999,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (1576:9): [True: 10.2M, False: 15.4M]
+  |  Branch (1576:9): [True: 10.2M, False: 15.3M]
   ------------------
  1577|  10.2M|      size_t prevsize = p->prev_foot;
  1578|  10.2M|      if ((prevsize & IS_DIRECT_BIT) != 0) {
@@ -1093,12 +1093,12 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  923|  3.48M|  tchunkptr R;\
   |  |  |  |  924|  3.48M|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 66.7k, False: 3.41M]
+  |  |  |  |  |  Branch (924:7): [True: 66.4k, False: 3.41M]
   |  |  |  |  ------------------
-  |  |  |  |  925|  66.7k|    tchunkptr F = X->fd;\
-  |  |  |  |  926|  66.7k|    R = X->bk;\
-  |  |  |  |  927|  66.7k|    F->bk = R;\
-  |  |  |  |  928|  66.7k|    R->fd = F;\
+  |  |  |  |  925|  66.4k|    tchunkptr F = X->fd;\
+  |  |  |  |  926|  66.4k|    R = X->bk;\
+  |  |  |  |  927|  66.4k|    F->bk = R;\
+  |  |  |  |  928|  66.4k|    R->fd = F;\
   |  |  |  |  929|  3.41M|  } else {\
   |  |  |  |  930|  3.41M|    tchunkptr *RP;\
   |  |  |  |  931|  3.41M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
@@ -1107,25 +1107,25 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  932|  3.41M|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (932:2): [True: 138k, False: 3.01M]
+  |  |  |  |  |  Branch (932:2): [True: 139k, False: 3.01M]
   |  |  |  |  ------------------
   |  |  |  |  933|   402k|      tchunkptr *CP;\
   |  |  |  |  934|   423k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 12.7k, False: 410k]
+  |  |  |  |  |  Branch (934:14): [True: 12.6k, False: 411k]
   |  |  |  |  ------------------
   |  |  |  |  935|   423k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 8.31k, False: 402k]
+  |  |  |  |  |  Branch (935:7): [True: 8.35k, False: 402k]
   |  |  |  |  ------------------
-  |  |  |  |  936|  21.0k|	R = *(RP = CP);\
-  |  |  |  |  937|  21.0k|      }\
+  |  |  |  |  936|  20.9k|	R = *(RP = CP);\
+  |  |  |  |  937|  20.9k|      }\
   |  |  |  |  938|   402k|      *RP = 0;\
   |  |  |  |  939|   402k|    }\
   |  |  |  |  940|  3.41M|  }\
   |  |  |  |  941|  3.48M|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 3.44M, False: 38.6k]
+  |  |  |  |  |  Branch (941:7): [True: 3.44M, False: 38.5k]
   |  |  |  |  ------------------
   |  |  |  |  942|  3.44M|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
@@ -1133,7 +1133,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  943|  3.44M|    if (X == *H) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (943:9): [True: 2.83M, False: 605k]
+  |  |  |  |  |  Branch (943:9): [True: 2.83M, False: 606k]
   |  |  |  |  ------------------
   |  |  |  |  944|  2.83M|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
@@ -1147,14 +1147,14 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  946|  2.83M|    } else {\
-  |  |  |  |  947|   605k|      if (XP->child[0] == X) \
+  |  |  |  |  947|   606k|      if (XP->child[0] == X) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (947:11): [True: 278k, False: 326k]
+  |  |  |  |  |  Branch (947:11): [True: 278k, False: 328k]
   |  |  |  |  ------------------
-  |  |  |  |  948|   605k|	XP->child[0] = R;\
-  |  |  |  |  949|   605k|      else \
-  |  |  |  |  950|   605k|	XP->child[1] = R;\
-  |  |  |  |  951|   605k|    }\
+  |  |  |  |  948|   606k|	XP->child[0] = R;\
+  |  |  |  |  949|   606k|      else \
+  |  |  |  |  950|   606k|	XP->child[1] = R;\
+  |  |  |  |  951|   606k|    }\
   |  |  |  |  952|  3.44M|    if (R != 0) {\
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (952:9): [True: 430k, False: 3.01M]
@@ -1163,18 +1163,18 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  954|   430k|      R->parent = XP;\
   |  |  |  |  955|   430k|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 23.9k, False: 406k]
+  |  |  |  |  |  Branch (955:11): [True: 23.7k, False: 406k]
   |  |  |  |  ------------------
-  |  |  |  |  956|  23.9k|	R->child[0] = C0;\
-  |  |  |  |  957|  23.9k|	C0->parent = R;\
-  |  |  |  |  958|  23.9k|      }\
+  |  |  |  |  956|  23.7k|	R->child[0] = C0;\
+  |  |  |  |  957|  23.7k|	C0->parent = R;\
+  |  |  |  |  958|  23.7k|      }\
   |  |  |  |  959|   430k|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 22.3k, False: 408k]
+  |  |  |  |  |  Branch (959:11): [True: 22.4k, False: 408k]
   |  |  |  |  ------------------
-  |  |  |  |  960|  22.3k|	R->child[1] = C1;\
-  |  |  |  |  961|  22.3k|	C1->parent = R;\
-  |  |  |  |  962|  22.3k|      }\
+  |  |  |  |  960|  22.4k|	R->child[1] = C1;\
+  |  |  |  |  961|  22.4k|	C1->parent = R;\
+  |  |  |  |  962|  22.4k|      }\
   |  |  |  |  963|   430k|    }\
   |  |  |  |  964|  3.44M|  }\
   |  |  |  |  965|  3.48M|}
@@ -1258,9 +1258,9 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (1597:9): [True: 15.4M, False: 10.2M]
+  |  Branch (1597:9): [True: 15.3M, False: 10.2M]
   ------------------
- 1598|  15.4M|      if (next == fm->top) {
+ 1598|  15.3M|      if (next == fm->top) {
   ------------------
   |  Branch (1598:11): [True: 2.37M, False: 13.0M]
   ------------------
@@ -1341,22 +1341,22 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  |  |  675|  13.0M|#define NSMALLBINS		(32U)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (758:22): [True: 9.05M, False: 3.97M]
+  |  |  |  |  |  Branch (758:22): [True: 9.04M, False: 3.97M]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 if (is_small(S)) { unlink_small_chunk(M, P, S)\
   |  |  ------------------
-  |  |  |  |  844|  9.05M|#define unlink_small_chunk(M, P, S) {\
-  |  |  |  |  845|  9.05M|  mchunkptr F = P->fd;\
-  |  |  |  |  846|  9.05M|  mchunkptr B = P->bk;\
-  |  |  |  |  847|  9.05M|  bindex_t I = small_index(S);\
+  |  |  |  |  844|  9.04M|#define unlink_small_chunk(M, P, S) {\
+  |  |  |  |  845|  9.04M|  mchunkptr F = P->fd;\
+  |  |  |  |  846|  9.04M|  mchunkptr B = P->bk;\
+  |  |  |  |  847|  9.04M|  bindex_t I = small_index(S);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  759|  9.05M|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
+  |  |  |  |  |  |  759|  9.04M|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  677|  9.05M|#define SMALLBIN_SHIFT		(3U)
+  |  |  |  |  |  |  |  |  677|  9.04M|#define SMALLBIN_SHIFT		(3U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  848|  9.05M|  if (F == B) {\
+  |  |  |  |  848|  9.04M|  if (F == B) {\
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (848:7): [True: 5.47M, False: 3.57M]
   |  |  |  |  ------------------
@@ -1371,48 +1371,48 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  851|  3.57M|    F->bk = B;\
   |  |  |  |  852|  3.57M|    B->fd = F;\
   |  |  |  |  853|  3.57M|  }\
-  |  |  |  |  854|  9.05M|}
+  |  |  |  |  854|  9.04M|}
   |  |  ------------------
-  |  |  975|  9.05M|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
+  |  |  975|  9.04M|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
   |  |  ------------------
   |  |  |  |  921|  3.97M|#define unlink_large_chunk(M, X) {\
   |  |  |  |  922|  3.97M|  tchunkptr XP = X->parent;\
   |  |  |  |  923|  3.97M|  tchunkptr R;\
   |  |  |  |  924|  3.97M|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 76.5k, False: 3.90M]
+  |  |  |  |  |  Branch (924:7): [True: 76.5k, False: 3.89M]
   |  |  |  |  ------------------
   |  |  |  |  925|  76.5k|    tchunkptr F = X->fd;\
   |  |  |  |  926|  76.5k|    R = X->bk;\
   |  |  |  |  927|  76.5k|    F->bk = R;\
   |  |  |  |  928|  76.5k|    R->fd = F;\
-  |  |  |  |  929|  3.90M|  } else {\
-  |  |  |  |  930|  3.90M|    tchunkptr *RP;\
-  |  |  |  |  931|  3.90M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
+  |  |  |  |  929|  3.89M|  } else {\
+  |  |  |  |  930|  3.89M|    tchunkptr *RP;\
+  |  |  |  |  931|  3.89M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (931:9): [True: 210k, False: 3.69M]
+  |  |  |  |  |  Branch (931:9): [True: 209k, False: 3.68M]
   |  |  |  |  ------------------
-  |  |  |  |  932|  3.90M|	((R = *(RP = &(X->child[0]))) != 0)) {\
+  |  |  |  |  932|  3.89M|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (932:2): [True: 106k, False: 3.58M]
   |  |  |  |  ------------------
-  |  |  |  |  933|   316k|      tchunkptr *CP;\
-  |  |  |  |  934|   326k|      while ((*(CP = &(R->child[1])) != 0) ||\
+  |  |  |  |  933|   315k|      tchunkptr *CP;\
+  |  |  |  |  934|   325k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 4.56k, False: 321k]
+  |  |  |  |  |  Branch (934:14): [True: 4.56k, False: 320k]
   |  |  |  |  ------------------
-  |  |  |  |  935|   326k|	     (*(CP = &(R->child[0])) != 0)) {\
+  |  |  |  |  935|   325k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 4.78k, False: 316k]
+  |  |  |  |  |  Branch (935:7): [True: 4.71k, False: 315k]
   |  |  |  |  ------------------
-  |  |  |  |  936|  9.34k|	R = *(RP = CP);\
-  |  |  |  |  937|  9.34k|      }\
-  |  |  |  |  938|   316k|      *RP = 0;\
-  |  |  |  |  939|   316k|    }\
-  |  |  |  |  940|  3.90M|  }\
+  |  |  |  |  936|  9.28k|	R = *(RP = CP);\
+  |  |  |  |  937|  9.28k|      }\
+  |  |  |  |  938|   315k|      *RP = 0;\
+  |  |  |  |  939|   315k|    }\
+  |  |  |  |  940|  3.89M|  }\
   |  |  |  |  941|  3.97M|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 3.92M, False: 51.3k]
+  |  |  |  |  |  Branch (941:7): [True: 3.92M, False: 51.6k]
   |  |  |  |  ------------------
   |  |  |  |  942|  3.92M|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
@@ -1420,11 +1420,11 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  943|  3.92M|    if (X == *H) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (943:9): [True: 3.00M, False: 919k]
+  |  |  |  |  |  Branch (943:9): [True: 3.00M, False: 917k]
   |  |  |  |  ------------------
   |  |  |  |  944|  3.00M|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (944:11): [True: 2.67M, False: 329k]
+  |  |  |  |  |  Branch (944:11): [True: 2.67M, False: 328k]
   |  |  |  |  ------------------
   |  |  |  |  945|  3.00M|	clear_treemap(M, X->index);\
   |  |  |  |  ------------------
@@ -1434,35 +1434,35 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  946|  3.00M|    } else {\
-  |  |  |  |  947|   919k|      if (XP->child[0] == X) \
+  |  |  |  |  947|   917k|      if (XP->child[0] == X) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (947:11): [True: 606k, False: 312k]
+  |  |  |  |  |  Branch (947:11): [True: 606k, False: 310k]
   |  |  |  |  ------------------
-  |  |  |  |  948|   919k|	XP->child[0] = R;\
-  |  |  |  |  949|   919k|      else \
-  |  |  |  |  950|   919k|	XP->child[1] = R;\
-  |  |  |  |  951|   919k|    }\
+  |  |  |  |  948|   917k|	XP->child[0] = R;\
+  |  |  |  |  949|   917k|      else \
+  |  |  |  |  950|   917k|	XP->child[1] = R;\
+  |  |  |  |  951|   917k|    }\
   |  |  |  |  952|  3.92M|    if (R != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (952:9): [True: 342k, False: 3.58M]
+  |  |  |  |  |  Branch (952:9): [True: 340k, False: 3.58M]
   |  |  |  |  ------------------
-  |  |  |  |  953|   342k|      tchunkptr C0, C1;\
-  |  |  |  |  954|   342k|      R->parent = XP;\
-  |  |  |  |  955|   342k|      if ((C0 = X->child[0]) != 0) {\
+  |  |  |  |  953|   340k|      tchunkptr C0, C1;\
+  |  |  |  |  954|   340k|      R->parent = XP;\
+  |  |  |  |  955|   340k|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 17.3k, False: 324k]
+  |  |  |  |  |  Branch (955:11): [True: 17.2k, False: 323k]
   |  |  |  |  ------------------
-  |  |  |  |  956|  17.3k|	R->child[0] = C0;\
-  |  |  |  |  957|  17.3k|	C0->parent = R;\
-  |  |  |  |  958|  17.3k|      }\
-  |  |  |  |  959|   342k|      if ((C1 = X->child[1]) != 0) {\
+  |  |  |  |  956|  17.2k|	R->child[0] = C0;\
+  |  |  |  |  957|  17.2k|	C0->parent = R;\
+  |  |  |  |  958|  17.2k|      }\
+  |  |  |  |  959|   340k|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 12.5k, False: 329k]
+  |  |  |  |  |  Branch (959:11): [True: 12.2k, False: 328k]
   |  |  |  |  ------------------
-  |  |  |  |  960|  12.5k|	R->child[1] = C1;\
-  |  |  |  |  961|  12.5k|	C1->parent = R;\
-  |  |  |  |  962|  12.5k|      }\
-  |  |  |  |  963|   342k|    }\
+  |  |  |  |  960|  12.2k|	R->child[1] = C1;\
+  |  |  |  |  961|  12.2k|	C1->parent = R;\
+  |  |  |  |  962|  12.2k|      }\
+  |  |  |  |  963|   340k|    }\
   |  |  |  |  964|  3.92M|  }\
   |  |  |  |  965|  3.97M|}
   |  |  ------------------
@@ -1489,7 +1489,7 @@ lj_alloc.c:lj_alloc_free:
  1621|      0|	  return NULL;
  1622|      0|	}
  1623|  13.0M|      }
- 1624|  15.4M|    } else {
+ 1624|  15.3M|    } else {
  1625|  10.2M|      set_free_with_pinuse(p, psize, next);
   ------------------
   |  |  631|  10.2M|  (clear_pinuse(n), set_size_and_pinuse_of_free_chunk(p, s))
@@ -22960,29 +22960,29 @@ lj_str_new:
   339|  21.0M|#endif
   340|  22.9M|    while (o != NULL) {
   ------------------
-  |  Branch (340:12): [True: 4.37M, False: 18.5M]
+  |  Branch (340:12): [True: 4.38M, False: 18.5M]
   ------------------
-  341|  4.37M|      GCstr *sx = gco2str(o);
+  341|  4.38M|      GCstr *sx = gco2str(o);
   ------------------
-  |  |  767|  4.37M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
+  |  |  767|  4.38M|#define gco2str(o)	check_exp((o)->gch.gct == ~LJ_TSTR, &(o)->str)
   |  |  ------------------
-  |  |  |  |  369|  4.37M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
+  |  |  |  |  369|  4.38M|#define check_exp(c, e)		(lj_assertX((c), #c), (e))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  368|  4.37M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
+  |  |  |  |  |  |  368|  4.38M|#define lj_assertX(c, ...)	lj_assert_check(NULL, (c), __VA_ARGS__)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  357|  4.37M|  ((c) ? (void)0 : \
+  |  |  |  |  |  |  |  |  357|  4.38M|  ((c) ? (void)0 : \
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 4.37M, False: 0]
+  |  |  |  |  |  |  |  |  |  Branch (357:4): [True: 4.38M, False: 0]
   |  |  |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  358|  4.37M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
+  |  |  |  |  |  |  |  |  358|  4.38M|   (lj_assert_fail((g), __FILE__, __LINE__, __func__, __VA_ARGS__), 0))
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  342|  4.37M|      if (sx->hash == hash && sx->len == len) {
+  342|  4.38M|      if (sx->hash == hash && sx->len == len) {
   ------------------
   |  Branch (342:11): [True: 2.48M, False: 1.89M]
-  |  Branch (342:31): [True: 2.48M, False: 10]
+  |  Branch (342:31): [True: 2.48M, False: 8]
   ------------------
   343|  2.48M|	if (memcmp(str, strdata(sx), len) == 0) {
   ------------------
@@ -23399,37 +23399,37 @@ lj_strfmt_wint:
   116|  93.7k|    uint32_t v = u / 10000; u -= v * 10000;
   117|  93.7k|    if (v < 10000) {
   ------------------
-  |  Branch (117:9): [True: 82.5k, False: 11.1k]
+  |  Branch (117:9): [True: 93.7k, False: 0]
   ------------------
-  118|  82.5k|      if (v < 10) goto dig5;
+  118|  93.7k|      if (v < 10) goto dig5;
   ------------------
-  |  Branch (118:11): [True: 0, False: 82.5k]
+  |  Branch (118:11): [True: 0, False: 93.7k]
   ------------------
-  119|  82.5k|      if (v < 100) goto dig6;
+  119|  93.7k|      if (v < 100) goto dig6;
   ------------------
-  |  Branch (119:11): [True: 82.5k, False: 0]
+  |  Branch (119:11): [True: 93.7k, False: 0]
   ------------------
   120|      0|      if (v < 1000) goto dig7;
   ------------------
   |  Branch (120:11): [True: 0, False: 0]
   ------------------
-  121|  11.1k|    } else {
-  122|  11.1k|      uint32_t w = v / 10000; v -= w * 10000;
-  123|  11.1k|      if (w >= 10) WINT_R(w, 10, 10)
+  121|      0|    } else {
+  122|      0|      uint32_t w = v / 10000; v -= w * 10000;
+  123|      0|      if (w >= 10) WINT_R(w, 10, 10)
   ------------------
   |  |   99|      0|  { uint32_t d = (x*(((1<<sh)+sc-1)/sc))>>sh; x -= d*sc; *p++ = (char)('0'+d); }
   ------------------
-  |  Branch (123:11): [True: 0, False: 11.1k]
+  |  Branch (123:11): [True: 0, False: 0]
   ------------------
-  124|  11.1k|      *p++ = (char)('0'+w);
-  125|  11.1k|    }
-  126|  11.1k|    WINT_R(v, 23, 1000)
+  124|      0|      *p++ = (char)('0'+w);
+  125|      0|    }
+  126|      0|    WINT_R(v, 23, 1000)
   ------------------
-  |  |   99|  11.1k|  { uint32_t d = (x*(((1<<sh)+sc-1)/sc))>>sh; x -= d*sc; *p++ = (char)('0'+d); }
+  |  |   99|      0|  { uint32_t d = (x*(((1<<sh)+sc-1)/sc))>>sh; x -= d*sc; *p++ = (char)('0'+d); }
   ------------------
-  127|  11.1k|    dig7: WINT_R(v, 12, 100)
+  127|      0|    dig7: WINT_R(v, 12, 100)
   ------------------
-  |  |   99|  11.1k|  { uint32_t d = (x*(((1<<sh)+sc-1)/sc))>>sh; x -= d*sc; *p++ = (char)('0'+d); }
+  |  |   99|      0|  { uint32_t d = (x*(((1<<sh)+sc-1)/sc))>>sh; x -= d*sc; *p++ = (char)('0'+d); }
   ------------------
   128|  93.7k|    dig6: WINT_R(v, 10, 10)
   ------------------
@@ -24260,28 +24260,28 @@ lj_strfmt_num.c:lj_strfmt_wfnum:
   |  |  116|  93.7k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
   408|  93.7k|	goto load_t_lo; rescale_failed:
-  409|  82.5k|	t.n = n;
-  410|  82.5k|	e = (t.u32.hi >> 20) & 0x7ff;
-  411|  82.5k|	ndebias = ndhi = 0;
-  412|  82.5k|      }
+  409|  93.7k|	t.n = n;
+  410|  93.7k|	e = (t.u32.hi >> 20) & 0x7ff;
+  411|  93.7k|	ndebias = ndhi = 0;
+  412|  93.7k|      }
   413|  95.2k|    }
-  414|  84.1k|    nd[0] = t.u32.hi & 0xfffff;
-  415|  84.1k|    if (e == 0) e++; else nd[0] |= 0x100000;
+  414|  95.3k|    nd[0] = t.u32.hi & 0xfffff;
+  415|  95.3k|    if (e == 0) e++; else nd[0] |= 0x100000;
   ------------------
-  |  Branch (415:9): [True: 82.7k, False: 1.46k]
+  |  Branch (415:9): [True: 93.8k, False: 1.46k]
   ------------------
-  416|  84.1k|    e -= 1043;
-  417|  84.1k|    if (t.u32.lo) {
+  416|  95.3k|    e -= 1043;
+  417|  95.3k|    if (t.u32.lo) {
   ------------------
-  |  Branch (417:9): [True: 82.5k, False: 1.59k]
+  |  Branch (417:9): [True: 93.7k, False: 1.59k]
   ------------------
-  418|   176k|      e -= 32 + (ND_MUL2K_MAX_SHIFT < 29); load_t_lo:
+  418|   187k|      e -= 32 + (ND_MUL2K_MAX_SHIFT < 29); load_t_lo:
   ------------------
-  |  |  116|  82.5k|#define ND_MUL2K_MAX_SHIFT	29
+  |  |  116|  93.7k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
-  419|   176k|#if ND_MUL2K_MAX_SHIFT >= 29
-  420|   176k|      nd[0] = (nd[0] << 3) | (t.u32.lo >> 29);
-  421|   176k|      ndhi = nd_mul2k(nd, ndhi, 29, t.u32.lo & 0x1fffffff, sf);
+  419|   187k|#if ND_MUL2K_MAX_SHIFT >= 29
+  420|   187k|      nd[0] = (nd[0] << 3) | (t.u32.lo >> 29);
+  421|   187k|      ndhi = nd_mul2k(nd, ndhi, 29, t.u32.lo & 0x1fffffff, sf);
   422|       |#elif ND_MUL2K_MAX_SHIFT >= 11
   423|       |      ndhi = nd_mul2k(nd, ndhi, 11, t.u32.lo >> 21, sf);
   424|       |      ndhi = nd_mul2k(nd, ndhi, 11, (t.u32.lo >> 10) & 0x7ff, sf);
@@ -24289,48 +24289,48 @@ lj_strfmt_num.c:lj_strfmt_wfnum:
   426|       |#else
   427|       |#error "ND_MUL2K_MAX_SHIFT too small"
   428|       |#endif
-  429|   176k|    }
-  430|   177k|    if (e >= 0) {
+  429|   187k|    }
+  430|   189k|    if (e >= 0) {
   ------------------
-  |  Branch (430:9): [True: 0, False: 177k]
+  |  Branch (430:9): [True: 0, False: 189k]
   ------------------
   431|      0|      ndhi = nd_mul2k(nd, ndhi, (uint32_t)e, 0, sf);
   432|      0|      ndlo = 0;
-  433|   177k|    } else {
-  434|   177k|      ndlo = nd_div2k(nd, ndhi, (uint32_t)-e, sf);
-  435|   177k|      if (ndhi && !nd[ndhi]) ndhi--;
+  433|   189k|    } else {
+  434|   189k|      ndlo = nd_div2k(nd, ndhi, (uint32_t)-e, sf);
+  435|   189k|      if (ndhi && !nd[ndhi]) ndhi--;
   ------------------
-  |  Branch (435:11): [True: 176k, False: 1.59k]
-  |  Branch (435:19): [True: 176k, False: 0]
+  |  Branch (435:11): [True: 187k, False: 1.59k]
+  |  Branch (435:19): [True: 187k, False: 0]
   ------------------
-  436|   177k|    }
+  436|   189k|    }
   437|       |    /* abs(n) == nd * 10^ndebias (for slightly loose interpretation of ==) */
-  438|   177k|    if ((sf & STRFMT_T_FP_E)) {
+  438|   189k|    if ((sf & STRFMT_T_FP_E)) {
   ------------------
-  |  |   31|   177k|#define STRFMT_T_FP_E	0x0010	/* STRFMT_NUM */
+  |  |   31|   189k|#define STRFMT_T_FP_E	0x0010	/* STRFMT_NUM */
   ------------------
-  |  Branch (438:9): [True: 177k, False: 0]
+  |  Branch (438:9): [True: 189k, False: 0]
   ------------------
   439|       |      /* %e or %g - assume %e and start by calculating nd's exponent (nde). */
-  440|   177k|      char eprefix = '+';
-  441|   177k|      int32_t nde = -1;
-  442|   177k|      MSize hilen;
-  443|   177k|      if (ndlo && !nd[ndhi]) {
+  440|   189k|      char eprefix = '+';
+  441|   189k|      int32_t nde = -1;
+  442|   189k|      MSize hilen;
+  443|   189k|      if (ndlo && !nd[ndhi]) {
   ------------------
-  |  Branch (443:11): [True: 176k, False: 1.59k]
-  |  Branch (443:19): [True: 82.5k, False: 93.7k]
+  |  Branch (443:11): [True: 187k, False: 1.59k]
+  |  Branch (443:19): [True: 93.7k, False: 93.7k]
   ------------------
-  444|  2.89M|	ndhi = 64; do {} while (!nd[--ndhi]);
+  444|  3.28M|	ndhi = 64; do {} while (!nd[--ndhi]);
   ------------------
-  |  Branch (444:26): [True: 2.80M, False: 82.5k]
+  |  Branch (444:26): [True: 3.18M, False: 93.7k]
   ------------------
-  445|  82.5k|	nde -= 64 * 9;
-  446|  82.5k|      }
-  447|   177k|      hilen = ndigits_dec(nd[ndhi]);
-  448|   177k|      nde += ndhi * 9 + hilen;
-  449|   177k|      if (ndebias) {
+  445|  93.7k|	nde -= 64 * 9;
+  446|  93.7k|      }
+  447|   189k|      hilen = ndigits_dec(nd[ndhi]);
+  448|   189k|      nde += ndhi * 9 + hilen;
+  449|   189k|      if (ndebias) {
   ------------------
-  |  Branch (449:11): [True: 93.7k, False: 84.1k]
+  |  Branch (449:11): [True: 93.7k, False: 95.3k]
   ------------------
   450|       |	/*
   451|       |	** Rescaling was performed, but this introduced some error, and might
@@ -24370,11 +24370,11 @@ lj_strfmt_num.c:lj_strfmt_wfnum:
   ------------------
   |  |  147|  93.7k|#define LJ_UNLIKELY(x)	__builtin_expect(!!(x), 0)
   |  |  ------------------
-  |  |  |  Branch (147:24): [True: 82.5k, False: 11.1k]
+  |  |  |  Branch (147:24): [True: 93.7k, False: 0]
   |  |  ------------------
   ------------------
-  467|  82.5k|	  goto rescale_failed;
-  468|  82.5k|	}
+  467|  93.7k|	  goto rescale_failed;
+  468|  93.7k|	}
   469|  93.7k|      }
   470|  95.3k|      if ((int32_t)(prec - nde) < (0x3f & -(int32_t)ndlo) * 9) {
   ------------------
@@ -24727,7 +24727,7 @@ lj_strfmt_num.c:lj_strfmt_wfnum:
   606|      0|	}
   607|  1.59k|      }
   608|  1.59k|    }
-  609|   177k|  }
+  609|   189k|  }
   610|  95.3k|  if ((sf & STRFMT_F_LEFT)) while (width-- > len) *p++ = ' ';
   ------------------
   |  |   37|  95.3k|#define STRFMT_F_LEFT	0x0100
@@ -24738,30 +24738,30 @@ lj_strfmt_num.c:lj_strfmt_wfnum:
   611|  95.3k|  return p;
   612|  95.3k|}
 lj_strfmt_num.c:ndigits_dec:
-   64|   366k|{
-   65|   366k|  MSize t = ((lj_fls(x | 1) * 77) >> 8) + 1; /* 2^8/77 is roughly log2(10) */
+   64|   378k|{
+   65|   378k|  MSize t = ((lj_fls(x | 1) * 77) >> 8) + 1; /* 2^8/77 is roughly log2(10) */
   ------------------
-  |  |  150|   366k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
+  |  |  150|   378k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
   ------------------
-   66|   366k|  return t + (x > ndigits_dec_threshold[t]);
-   67|   366k|}
+   66|   378k|  return t + (x > ndigits_dec_threshold[t]);
+   67|   378k|}
 lj_strfmt_num.c:nd_mul2k:
-  126|   176k|{
-  127|   176k|  uint32_t i, ndlo = 0, start = 1;
+  126|   187k|{
+  127|   187k|  uint32_t i, ndlo = 0, start = 1;
   128|       |  /* Performance hacks. */
-  129|   176k|  if (k > ND_MUL2K_MAX_SHIFT*2 && STRFMT_FP(sf) != STRFMT_FP(STRFMT_T_FP_F)) {
+  129|   187k|  if (k > ND_MUL2K_MAX_SHIFT*2 && STRFMT_FP(sf) != STRFMT_FP(STRFMT_T_FP_F)) {
   ------------------
-  |  |  116|   176k|#define ND_MUL2K_MAX_SHIFT	29
-  ------------------
-                if (k > ND_MUL2K_MAX_SHIFT*2 && STRFMT_FP(sf) != STRFMT_FP(STRFMT_T_FP_F)) {
-  ------------------
-  |  |   51|      0|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
+  |  |  116|   187k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
                 if (k > ND_MUL2K_MAX_SHIFT*2 && STRFMT_FP(sf) != STRFMT_FP(STRFMT_T_FP_F)) {
   ------------------
   |  |   51|      0|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
   ------------------
-  |  Branch (129:7): [True: 0, False: 176k]
+                if (k > ND_MUL2K_MAX_SHIFT*2 && STRFMT_FP(sf) != STRFMT_FP(STRFMT_T_FP_F)) {
+  ------------------
+  |  |   51|      0|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
+  ------------------
+  |  Branch (129:7): [True: 0, False: 187k]
   |  Branch (129:35): [True: 0, False: 0]
   ------------------
   130|      0|    start = ndhi - (STRFMT_PREC(sf) + 17) / 8;
@@ -24773,44 +24773,44 @@ lj_strfmt_num.c:nd_mul2k:
   ------------------
   131|      0|  }
   132|       |  /* Real logic. */
-  133|   352k|  while (k >= ND_MUL2K_MAX_SHIFT) {
+  133|   374k|  while (k >= ND_MUL2K_MAX_SHIFT) {
   ------------------
-  |  |  116|   352k|#define ND_MUL2K_MAX_SHIFT	29
+  |  |  116|   374k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
-  |  Branch (133:10): [True: 176k, False: 176k]
+  |  Branch (133:10): [True: 187k, False: 187k]
   ------------------
-  134|   352k|    for (i = ndlo; i <= ndhi; i++) {
+  134|   374k|    for (i = ndlo; i <= ndhi; i++) {
   ------------------
-  |  Branch (134:20): [True: 176k, False: 176k]
+  |  Branch (134:20): [True: 187k, False: 187k]
   ------------------
-  135|   176k|      uint64_t val = ((uint64_t)nd[i] << ND_MUL2K_MAX_SHIFT) | carry_in;
+  135|   187k|      uint64_t val = ((uint64_t)nd[i] << ND_MUL2K_MAX_SHIFT) | carry_in;
   ------------------
-  |  |  116|   176k|#define ND_MUL2K_MAX_SHIFT	29
+  |  |  116|   187k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
-  136|   176k|      carry_in = ND_MUL2K_DIV1E9(val);
+  136|   187k|      carry_in = ND_MUL2K_DIV1E9(val);
   ------------------
-  |  |  117|   176k|#define ND_MUL2K_DIV1E9(val)	((uint32_t)((val) / 1000000000))
+  |  |  117|   187k|#define ND_MUL2K_DIV1E9(val)	((uint32_t)((val) / 1000000000))
   ------------------
-  137|   176k|      nd[i] = (uint32_t)val - carry_in * 1000000000;
-  138|   176k|    }
-  139|   176k|    if (carry_in) {
+  137|   187k|      nd[i] = (uint32_t)val - carry_in * 1000000000;
+  138|   187k|    }
+  139|   187k|    if (carry_in) {
   ------------------
-  |  Branch (139:9): [True: 176k, False: 0]
+  |  Branch (139:9): [True: 187k, False: 0]
   ------------------
-  140|   176k|      nd[++ndhi] = carry_in; carry_in = 0;
-  141|   176k|      if (start++ == ndlo) ++ndlo;
+  140|   187k|      nd[++ndhi] = carry_in; carry_in = 0;
+  141|   187k|      if (start++ == ndlo) ++ndlo;
   ------------------
-  |  Branch (141:11): [True: 0, False: 176k]
+  |  Branch (141:11): [True: 0, False: 187k]
   ------------------
-  142|   176k|    }
-  143|   176k|    k -= ND_MUL2K_MAX_SHIFT;
+  142|   187k|    }
+  143|   187k|    k -= ND_MUL2K_MAX_SHIFT;
   ------------------
-  |  |  116|   176k|#define ND_MUL2K_MAX_SHIFT	29
+  |  |  116|   187k|#define ND_MUL2K_MAX_SHIFT	29
   ------------------
-  144|   176k|  }
-  145|   176k|  if (k) {
+  144|   187k|  }
+  145|   187k|  if (k) {
   ------------------
-  |  Branch (145:7): [True: 0, False: 176k]
+  |  Branch (145:7): [True: 0, False: 187k]
   ------------------
   146|      0|    for (i = ndlo; i <= ndhi; i++) {
   ------------------
@@ -24828,15 +24828,15 @@ lj_strfmt_num.c:nd_mul2k:
   |  Branch (151:9): [True: 0, False: 0]
   ------------------
   152|      0|  }
-  153|   176k|  return ndhi;
-  154|   176k|}
+  153|   187k|  return ndhi;
+  154|   187k|}
 lj_strfmt_num.c:nd_div2k:
-  158|   177k|{
-  159|   177k|  uint32_t ndlo = 0, stop1 = ~0, stop2 = ~0;
+  158|   189k|{
+  159|   189k|  uint32_t ndlo = 0, stop1 = ~0, stop2 = ~0;
   160|       |  /* Performance hacks. */
-  161|   177k|  if (!ndhi) {
+  161|   189k|  if (!ndhi) {
   ------------------
-  |  Branch (161:7): [True: 1.59k, False: 176k]
+  |  Branch (161:7): [True: 1.59k, False: 187k]
   ------------------
   162|  1.59k|    if (!nd[0]) {
   ------------------
@@ -24855,108 +24855,108 @@ lj_strfmt_num.c:nd_div2k:
   167|      0|      nd[0] >>= s; k -= s;
   168|      0|    }
   169|  1.59k|  }
-  170|   176k|  if (k > 18) {
+  170|   187k|  if (k > 18) {
   ------------------
-  |  Branch (170:7): [True: 176k, False: 0]
+  |  Branch (170:7): [True: 187k, False: 0]
   ------------------
-  171|   176k|    if (STRFMT_FP(sf) == STRFMT_FP(STRFMT_T_FP_F)) {
+  171|   187k|    if (STRFMT_FP(sf) == STRFMT_FP(STRFMT_T_FP_F)) {
   ------------------
-  |  |   51|   176k|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
+  |  |   51|   187k|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
   ------------------
                   if (STRFMT_FP(sf) == STRFMT_FP(STRFMT_T_FP_F)) {
   ------------------
-  |  |   51|   176k|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
+  |  |   51|   187k|#define STRFMT_FP(sf)		(((sf) >> 4) & 3)
   ------------------
-  |  Branch (171:9): [True: 0, False: 176k]
+  |  Branch (171:9): [True: 0, False: 187k]
   ------------------
   172|       |      /* Must not limit precision here or nd_round cannot round to even.
   173|       |      ** stop1 = 63 - (int32_t)STRFMT_PREC(sf) / 9;
   174|       |      */
-  175|   176k|    } else {
-  176|   176k|      int32_t floorlog2 = ndhi * 29 + lj_fls(nd[ndhi]) - k;
+  175|   187k|    } else {
+  176|   187k|      int32_t floorlog2 = ndhi * 29 + lj_fls(nd[ndhi]) - k;
   ------------------
-  |  |  150|   176k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
+  |  |  150|   187k|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
   ------------------
-  177|   176k|      int32_t floorlog10 = (int32_t)(floorlog2 * 0.30102999566398114);
-  178|   176k|      stop1 = 62 + (floorlog10 - (int32_t)STRFMT_PREC(sf)) / 9;
+  177|   187k|      int32_t floorlog10 = (int32_t)(floorlog2 * 0.30102999566398114);
+  178|   187k|      stop1 = 62 + (floorlog10 - (int32_t)STRFMT_PREC(sf)) / 9;
   ------------------
-  |  |   50|   176k|#define STRFMT_PREC(sf)		((((sf) >> STRFMT_SH_PREC) & 255u) - 1u)
+  |  |   50|   187k|#define STRFMT_PREC(sf)		((((sf) >> STRFMT_SH_PREC) & 255u) - 1u)
   |  |  ------------------
-  |  |  |  |   46|   176k|#define STRFMT_SH_PREC	24
-  |  |  ------------------
-  ------------------
-  179|   176k|      stop2 = 61 + ndhi - (int32_t)STRFMT_PREC(sf) / 8;
-  ------------------
-  |  |   50|   176k|#define STRFMT_PREC(sf)		((((sf) >> STRFMT_SH_PREC) & 255u) - 1u)
-  |  |  ------------------
-  |  |  |  |   46|   176k|#define STRFMT_SH_PREC	24
+  |  |  |  |   46|   187k|#define STRFMT_SH_PREC	24
   |  |  ------------------
   ------------------
-  180|   176k|    }
-  181|   176k|  }
+  179|   187k|      stop2 = 61 + ndhi - (int32_t)STRFMT_PREC(sf) / 8;
+  ------------------
+  |  |   50|   187k|#define STRFMT_PREC(sf)		((((sf) >> STRFMT_SH_PREC) & 255u) - 1u)
+  |  |  ------------------
+  |  |  |  |   46|   187k|#define STRFMT_SH_PREC	24
+  |  |  ------------------
+  ------------------
+  180|   187k|    }
+  181|   187k|  }
   182|       |  /* Real logic. */
-  183|  10.1M|  while (k >= 9) {
+  183|  11.5M|  while (k >= 9) {
   ------------------
-  |  Branch (183:10): [True: 10.0M, False: 176k]
+  |  Branch (183:10): [True: 11.3M, False: 187k]
   ------------------
-  184|  10.0M|    uint32_t i = ndhi, carry = 0;
-  185|  45.8M|    for (;;) {
-  186|  45.8M|      uint32_t val = nd[i];
-  187|  45.8M|      nd[i] = (val >> 9) + carry;
-  188|  45.8M|      carry = (val & 0x1ff) * 1953125;
-  189|  45.8M|      if (i == ndlo) break;
+  184|  11.3M|    uint32_t i = ndhi, carry = 0;
+  185|  52.0M|    for (;;) {
+  186|  52.0M|      uint32_t val = nd[i];
+  187|  52.0M|      nd[i] = (val >> 9) + carry;
+  188|  52.0M|      carry = (val & 0x1ff) * 1953125;
+  189|  52.0M|      if (i == ndlo) break;
   ------------------
-  |  Branch (189:11): [True: 10.0M, False: 35.7M]
+  |  Branch (189:11): [True: 11.3M, False: 40.6M]
   ------------------
-  190|  35.7M|      i = (i - 1) & 0x3f;
-  191|  35.7M|    }
-  192|  10.0M|    if (ndlo != stop1 && ndlo != stop2) {
+  190|  40.6M|      i = (i - 1) & 0x3f;
+  191|  40.6M|    }
+  192|  11.3M|    if (ndlo != stop1 && ndlo != stop2) {
   ------------------
-  |  Branch (192:9): [True: 9.51M, False: 495k]
-  |  Branch (192:26): [True: 3.32M, False: 6.19M]
+  |  Branch (192:9): [True: 10.7M, False: 562k]
+  |  Branch (192:26): [True: 3.65M, False: 7.12M]
   ------------------
-  193|  3.32M|      if (carry) { ndlo = (ndlo - 1) & 0x3f; nd[ndlo] = carry; }
+  193|  3.65M|      if (carry) { ndlo = (ndlo - 1) & 0x3f; nd[ndlo] = carry; }
   ------------------
-  |  Branch (193:11): [True: 3.24M, False: 82.5k]
+  |  Branch (193:11): [True: 3.65M, False: 0]
   ------------------
-  194|  3.32M|      if (!nd[ndhi]) { ndhi = (ndhi - 1) & 0x3f; stop2--; }
+  194|  3.65M|      if (!nd[ndhi]) { ndhi = (ndhi - 1) & 0x3f; stop2--; }
   ------------------
-  |  Branch (194:11): [True: 82.5k, False: 3.24M]
+  |  Branch (194:11): [True: 93.7k, False: 3.56M]
   ------------------
-  195|  6.68M|    } else if (!nd[ndhi]) {
+  195|  7.68M|    } else if (!nd[ndhi]) {
   ------------------
-  |  Branch (195:16): [True: 2.89M, False: 3.79M]
+  |  Branch (195:16): [True: 3.28M, False: 4.40M]
   ------------------
-  196|  2.89M|      if (ndhi != ndlo) { ndhi = (ndhi - 1) & 0x3f; stop2--; }
+  196|  3.28M|      if (ndhi != ndlo) { ndhi = (ndhi - 1) & 0x3f; stop2--; }
   ------------------
-  |  Branch (196:11): [True: 2.89M, False: 0]
+  |  Branch (196:11): [True: 3.28M, False: 0]
   ------------------
   197|      0|      else return ndlo;
-  198|  2.89M|    }
-  199|  10.0M|    k -= 9;
-  200|  10.0M|  }
-  201|   176k|  if (k) {
+  198|  3.28M|    }
+  199|  11.3M|    k -= 9;
+  200|  11.3M|  }
+  201|   187k|  if (k) {
   ------------------
-  |  Branch (201:7): [True: 176k, False: 0]
+  |  Branch (201:7): [True: 187k, False: 0]
   ------------------
-  202|   176k|    uint32_t mask = (1U << k) - 1, mul = 1000000000 >> k, i = ndhi, carry = 0;
-  203|   622k|    for (;;) {
-  204|   622k|      uint32_t val = nd[i];
-  205|   622k|      nd[i] = (val >> k) + carry;
-  206|   622k|      carry = (val & mask) * mul;
-  207|   622k|      if (i == ndlo) break;
+  202|   187k|    uint32_t mask = (1U << k) - 1, mul = 1000000000 >> k, i = ndhi, carry = 0;
+  203|   656k|    for (;;) {
+  204|   656k|      uint32_t val = nd[i];
+  205|   656k|      nd[i] = (val >> k) + carry;
+  206|   656k|      carry = (val & mask) * mul;
+  207|   656k|      if (i == ndlo) break;
   ------------------
-  |  Branch (207:11): [True: 176k, False: 446k]
+  |  Branch (207:11): [True: 187k, False: 468k]
   ------------------
-  208|   446k|      i = (i - 1) & 0x3f;
-  209|   446k|    }
-  210|   176k|    if (carry) { ndlo = (ndlo - 1) & 0x3f; nd[ndlo] = carry; }
+  208|   468k|      i = (i - 1) & 0x3f;
+  209|   468k|    }
+  210|   187k|    if (carry) { ndlo = (ndlo - 1) & 0x3f; nd[ndlo] = carry; }
   ------------------
-  |  Branch (210:9): [True: 176k, False: 0]
+  |  Branch (210:9): [True: 187k, False: 0]
   ------------------
-  211|   176k|  }
-  212|   176k|  return ndlo;
-  213|   176k|}
+  211|   187k|  }
+  212|   187k|  return ndlo;
+  213|   187k|}
 lj_strfmt_num.c:nd_add_m10e:
   217|   187k|{
   218|   187k|  uint32_t i, carry;
@@ -25048,8 +25048,8 @@ lj_strfmt_num.c:nd_similar:
   299|  93.7k|  lj_strfmt_wuint9(ref9, *ref);
   300|  93.7k|  return !memcmp(nd9, ref9, prec) && (nd9[prec] < '5') == (ref9[prec] < '5');
   ------------------
-  |  Branch (300:10): [True: 11.1k, False: 82.5k]
-  |  Branch (300:38): [True: 11.1k, False: 0]
+  |  Branch (300:10): [True: 0, False: 93.7k]
+  |  Branch (300:38): [True: 0, False: 0]
   ------------------
   301|  93.7k|}
 lj_strfmt_num.c:nd_round:
@@ -25076,17 +25076,17 @@ lj_strfmt_num.c:nd_round:
   263|      0|    return ndhi;  /* Don't round up. */
   264|  93.7k|  } else if (buf[d] == '5') {  /* Must check for round to even. */
   ------------------
-  |  Branch (264:14): [True: 82.5k, False: 11.1k]
+  |  Branch (264:14): [True: 0, False: 93.7k]
   ------------------
-  265|  82.5k|    if (d ? (buf[d-1] & 1) : (nd[(i + 1) & 0x3f] & 1))
+  265|      0|    if (d ? (buf[d-1] & 1) : (nd[(i + 1) & 0x3f] & 1))
   ------------------
-  |  Branch (265:9): [True: 82.5k, False: 0]
-  |  Branch (265:9): [True: 0, False: 82.5k]
+  |  Branch (265:9): [True: 0, False: 0]
+  |  Branch (265:9): [True: 0, False: 0]
   ------------------
   266|      0|      goto round_up;  /* Round up '[13579]5.*' */
-  267|  82.5k|    while (++d < 9) {  /* Check remaining digits in buffer. */
+  267|      0|    while (++d < 9) {  /* Check remaining digits in buffer. */
   ------------------
-  |  Branch (267:12): [True: 0, False: 82.5k]
+  |  Branch (267:12): [True: 0, False: 0]
   ------------------
   268|      0|      if (buf[d] != '0')
   ------------------
@@ -25094,19 +25094,19 @@ lj_strfmt_num.c:nd_round:
   ------------------
   269|      0|	goto round_up;  /* Round up '[02468]5[^0]*'. */
   270|      0|    }
-  271|  82.5k|    while (i != ndlo) {  /* Check remaining fraction. */
+  271|      0|    while (i != ndlo) {  /* Check remaining fraction. */
   ------------------
-  |  Branch (271:12): [True: 82.5k, False: 0]
+  |  Branch (271:12): [True: 0, False: 0]
   ------------------
-  272|  82.5k|      if (nd[i])
+  272|      0|      if (nd[i])
   ------------------
-  |  Branch (272:11): [True: 82.5k, False: 0]
+  |  Branch (272:11): [True: 0, False: 0]
   ------------------
-  273|  82.5k|	goto round_up;  /* Round up '[02468]5[^0]*'. */
+  273|      0|	goto round_up;  /* Round up '[02468]5[^0]*'. */
   274|      0|      i = (i - 1) & 0x3f;
   275|      0|    }
   276|      0|    return ndhi;  /* Don't round up. */
-  277|  82.5k|  } /* else: round up.*/
+  277|      0|  } /* else: round up.*/
   278|  93.7k|round_up:
   279|  93.7k|  return nd_add_m10e(nd, ndhi, 5, e);  /* Round up by adding 5*10^e. */
   280|  93.7k|}
@@ -25984,7 +25984,7 @@ lj_tab_getstr:
   |  |  ------------------
   |  |  |  |  264|  3.70M|#define LJ_TSTR			(~4u)
   |  |  ------------------
-  |  |  |  Branch (797:20): [True: 155k, False: 3.55M]
+  |  |  |  Branch (797:20): [True: 155k, False: 3.54M]
   |  |  ------------------
   ------------------
                   if (tvisstr(&n->key) && strV(&n->key) == key)
@@ -26004,7 +26004,7 @@ lj_tab_getstr:
   |  |  |  |  ------------------
   |  |  ------------------
   ------------------
-  |  Branch (395:29): [True: 148k, False: 6.67k]
+  |  Branch (395:29): [True: 148k, False: 6.75k]
   ------------------
   396|   148k|      return &n->val;
   397|  3.70M|  } while ((n = nextnode(n)));
@@ -26264,7 +26264,7 @@ lj_tab_newkey:
   ------------------
   |  |  784|  17.2k|#define tvisnil(o)	((o)->it64 == -1)
   ------------------
-  |  Branch (449:14): [True: 6.62k, False: 10.6k]
+  |  Branch (449:14): [True: 6.64k, False: 10.6k]
   ------------------
   450|  10.6k|    setfreetop(t, nodebase, freenode);
   ------------------
@@ -26870,28 +26870,28 @@ lj_tab_next:
   613|      0|  }
   614|  5.33k|  idx -= t->asize;
   615|       |  /* Then traverse the hash part. */
-  616|  8.07k|  for (; idx <= t->hmask; idx++) {
+  616|  8.00k|  for (; idx <= t->hmask; idx++) {
   ------------------
-  |  Branch (616:10): [True: 7.98k, False: 90]
+  |  Branch (616:10): [True: 7.91k, False: 90]
   ------------------
-  617|  7.98k|    Node *n = &noderef(t->node)[idx];
+  617|  7.91k|    Node *n = &noderef(t->node)[idx];
   ------------------
-  |  |  515|  7.98k|#define noderef(r)	(mref((r), Node))
+  |  |  515|  7.91k|#define noderef(r)	(mref((r), Node))
   |  |  ------------------
-  |  |  |  |   36|  7.98k|#define mref(r, t)	((t *)(void *)(r).ptr64)
+  |  |  |  |   36|  7.91k|#define mref(r, t)	((t *)(void *)(r).ptr64)
   |  |  ------------------
   ------------------
-  618|  7.98k|    if (!tvisnil(&n->val)) {
+  618|  7.91k|    if (!tvisnil(&n->val)) {
   ------------------
-  |  |  784|  7.98k|#define tvisnil(o)	((o)->it64 == -1)
+  |  |  784|  7.91k|#define tvisnil(o)	((o)->it64 == -1)
   ------------------
-  |  Branch (618:9): [True: 5.24k, False: 2.74k]
+  |  Branch (618:9): [True: 5.24k, False: 2.67k]
   ------------------
   619|  5.24k|      o[0] = n->key;
   620|  5.24k|      o[1] = n->val;
   621|  5.24k|      return 1;
   622|  5.24k|    }
-  623|  7.98k|  }
+  623|  7.91k|  }
   624|     90|  return (int32_t)idx < 0 ? -1 : 0;  /* Invalid key or end of traversal. */
   ------------------
   |  Branch (624:10): [True: 0, False: 90]
