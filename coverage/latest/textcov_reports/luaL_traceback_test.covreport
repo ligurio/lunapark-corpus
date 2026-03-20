@@ -904,22 +904,22 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  |  |  675|  7.39M|#define NSMALLBINS		(32U)
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (758:22): [True: 5.02M, False: 2.36M]
+  |  |  |  |  |  Branch (758:22): [True: 5.03M, False: 2.35M]
   |  |  |  |  ------------------
   |  |  ------------------
   |  |                 if (is_small(S)) { unlink_small_chunk(M, P, S)\
   |  |  ------------------
-  |  |  |  |  844|  5.02M|#define unlink_small_chunk(M, P, S) {\
-  |  |  |  |  845|  5.02M|  mchunkptr F = P->fd;\
-  |  |  |  |  846|  5.02M|  mchunkptr B = P->bk;\
-  |  |  |  |  847|  5.02M|  bindex_t I = small_index(S);\
+  |  |  |  |  844|  5.03M|#define unlink_small_chunk(M, P, S) {\
+  |  |  |  |  845|  5.03M|  mchunkptr F = P->fd;\
+  |  |  |  |  846|  5.03M|  mchunkptr B = P->bk;\
+  |  |  |  |  847|  5.03M|  bindex_t I = small_index(S);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  759|  5.02M|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
+  |  |  |  |  |  |  759|  5.03M|#define small_index(s)		((s)  >> SMALLBIN_SHIFT)
   |  |  |  |  |  |  ------------------
-  |  |  |  |  |  |  |  |  677|  5.02M|#define SMALLBIN_SHIFT		(3U)
+  |  |  |  |  |  |  |  |  677|  5.03M|#define SMALLBIN_SHIFT		(3U)
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
-  |  |  |  |  848|  5.02M|  if (F == B) {\
+  |  |  |  |  848|  5.03M|  if (F == B) {\
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (848:7): [True: 2.30M, False: 2.72M]
   |  |  |  |  ------------------
@@ -934,21 +934,21 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  851|  2.72M|    F->bk = B;\
   |  |  |  |  852|  2.72M|    B->fd = F;\
   |  |  |  |  853|  2.72M|  }\
-  |  |  |  |  854|  5.02M|}
+  |  |  |  |  854|  5.03M|}
   |  |  ------------------
-  |  |  975|  5.02M|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
+  |  |  975|  5.03M|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
   |  |  ------------------
-  |  |  |  |  921|  2.36M|#define unlink_large_chunk(M, X) {\
-  |  |  |  |  922|  2.36M|  tchunkptr XP = X->parent;\
-  |  |  |  |  923|  2.36M|  tchunkptr R;\
-  |  |  |  |  924|  2.36M|  if (X->bk != X) {\
+  |  |  |  |  921|  2.35M|#define unlink_large_chunk(M, X) {\
+  |  |  |  |  922|  2.35M|  tchunkptr XP = X->parent;\
+  |  |  |  |  923|  2.35M|  tchunkptr R;\
+  |  |  |  |  924|  2.35M|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 36.7k, False: 2.32M]
+  |  |  |  |  |  Branch (924:7): [True: 36.6k, False: 2.32M]
   |  |  |  |  ------------------
-  |  |  |  |  925|  36.7k|    tchunkptr F = X->fd;\
-  |  |  |  |  926|  36.7k|    R = X->bk;\
-  |  |  |  |  927|  36.7k|    F->bk = R;\
-  |  |  |  |  928|  36.7k|    R->fd = F;\
+  |  |  |  |  925|  36.6k|    tchunkptr F = X->fd;\
+  |  |  |  |  926|  36.6k|    R = X->bk;\
+  |  |  |  |  927|  36.6k|    F->bk = R;\
+  |  |  |  |  928|  36.6k|    R->fd = F;\
   |  |  |  |  929|  2.32M|  } else {\
   |  |  |  |  930|  2.32M|    tchunkptr *RP;\
   |  |  |  |  931|  2.32M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
@@ -959,23 +959,23 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (932:2): [True: 100k, False: 2.10M]
   |  |  |  |  ------------------
-  |  |  |  |  933|   218k|      tchunkptr *CP;\
+  |  |  |  |  933|   217k|      tchunkptr *CP;\
   |  |  |  |  934|   227k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 4.38k, False: 222k]
+  |  |  |  |  |  Branch (934:14): [True: 4.44k, False: 222k]
   |  |  |  |  ------------------
   |  |  |  |  935|   227k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 4.74k, False: 218k]
+  |  |  |  |  |  Branch (935:7): [True: 4.65k, False: 217k]
   |  |  |  |  ------------------
-  |  |  |  |  936|  9.13k|	R = *(RP = CP);\
-  |  |  |  |  937|  9.13k|      }\
-  |  |  |  |  938|   218k|      *RP = 0;\
-  |  |  |  |  939|   218k|    }\
+  |  |  |  |  936|  9.10k|	R = *(RP = CP);\
+  |  |  |  |  937|  9.10k|      }\
+  |  |  |  |  938|   217k|      *RP = 0;\
+  |  |  |  |  939|   217k|    }\
   |  |  |  |  940|  2.32M|  }\
-  |  |  |  |  941|  2.36M|  if (XP != 0) {\
+  |  |  |  |  941|  2.35M|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 2.34M, False: 19.1k]
+  |  |  |  |  |  Branch (941:7): [True: 2.34M, False: 19.2k]
   |  |  |  |  ------------------
   |  |  |  |  942|  2.34M|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
@@ -983,11 +983,11 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  943|  2.34M|    if (X == *H) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (943:9): [True: 1.98M, False: 352k]
+  |  |  |  |  |  Branch (943:9): [True: 1.98M, False: 353k]
   |  |  |  |  ------------------
   |  |  |  |  944|  1.98M|      if ((*H = R) == 0) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (944:11): [True: 1.76M, False: 223k]
+  |  |  |  |  |  Branch (944:11): [True: 1.76M, False: 222k]
   |  |  |  |  ------------------
   |  |  |  |  945|  1.98M|	clear_treemap(M, X->index);\
   |  |  |  |  ------------------
@@ -997,14 +997,14 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  946|  1.98M|    } else {\
-  |  |  |  |  947|   352k|      if (XP->child[0] == X) \
+  |  |  |  |  947|   353k|      if (XP->child[0] == X) \
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (947:11): [True: 188k, False: 163k]
+  |  |  |  |  |  Branch (947:11): [True: 189k, False: 164k]
   |  |  |  |  ------------------
-  |  |  |  |  948|   352k|	XP->child[0] = R;\
-  |  |  |  |  949|   352k|      else \
-  |  |  |  |  950|   352k|	XP->child[1] = R;\
-  |  |  |  |  951|   352k|    }\
+  |  |  |  |  948|   353k|	XP->child[0] = R;\
+  |  |  |  |  949|   353k|      else \
+  |  |  |  |  950|   353k|	XP->child[1] = R;\
+  |  |  |  |  951|   353k|    }\
   |  |  |  |  952|  2.34M|    if (R != 0) {\
   |  |  |  |  ------------------
   |  |  |  |  |  Branch (952:9): [True: 235k, False: 2.10M]
@@ -1013,21 +1013,21 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  954|   235k|      R->parent = XP;\
   |  |  |  |  955|   235k|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 16.9k, False: 218k]
+  |  |  |  |  |  Branch (955:11): [True: 16.6k, False: 218k]
   |  |  |  |  ------------------
-  |  |  |  |  956|  16.9k|	R->child[0] = C0;\
-  |  |  |  |  957|  16.9k|	C0->parent = R;\
-  |  |  |  |  958|  16.9k|      }\
+  |  |  |  |  956|  16.6k|	R->child[0] = C0;\
+  |  |  |  |  957|  16.6k|	C0->parent = R;\
+  |  |  |  |  958|  16.6k|      }\
   |  |  |  |  959|   235k|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 6.93k, False: 228k]
+  |  |  |  |  |  Branch (959:11): [True: 6.88k, False: 228k]
   |  |  |  |  ------------------
-  |  |  |  |  960|  6.93k|	R->child[1] = C1;\
-  |  |  |  |  961|  6.93k|	C1->parent = R;\
-  |  |  |  |  962|  6.93k|      }\
+  |  |  |  |  960|  6.88k|	R->child[1] = C1;\
+  |  |  |  |  961|  6.88k|	C1->parent = R;\
+  |  |  |  |  962|  6.88k|      }\
   |  |  |  |  963|   235k|    }\
   |  |  |  |  964|  2.34M|  }\
-  |  |  |  |  965|  2.36M|}
+  |  |  |  |  965|  2.35M|}
   |  |  ------------------
   ------------------
  1590|  7.39M|	} else if ((next->head & INUSE_BITS) == INUSE_BITS) {
@@ -1208,7 +1208,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  ------------------
   |  |  |  |  848|  6.27M|  if (F == B) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (848:7): [True: 3.65M, False: 2.62M]
+  |  |  |  |  |  Branch (848:7): [True: 3.65M, False: 2.61M]
   |  |  |  |  ------------------
   |  |  |  |  849|  3.65M|    clear_smallmap(M, I);\
   |  |  |  |  ------------------
@@ -1218,9 +1218,9 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  |  |  850|  3.65M|  } else {\
-  |  |  |  |  851|  2.62M|    F->bk = B;\
-  |  |  |  |  852|  2.62M|    B->fd = F;\
-  |  |  |  |  853|  2.62M|  }\
+  |  |  |  |  851|  2.61M|    F->bk = B;\
+  |  |  |  |  852|  2.61M|    B->fd = F;\
+  |  |  |  |  853|  2.61M|  }\
   |  |  |  |  854|  6.27M|}
   |  |  ------------------
   |  |  975|  6.27M|  } else { tchunkptr TP = (tchunkptr)(P); unlink_large_chunk(M, TP); }
@@ -1230,39 +1230,39 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  923|  3.08M|  tchunkptr R;\
   |  |  |  |  924|  3.08M|  if (X->bk != X) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (924:7): [True: 26.2k, False: 3.06M]
+  |  |  |  |  |  Branch (924:7): [True: 26.3k, False: 3.06M]
   |  |  |  |  ------------------
-  |  |  |  |  925|  26.2k|    tchunkptr F = X->fd;\
-  |  |  |  |  926|  26.2k|    R = X->bk;\
-  |  |  |  |  927|  26.2k|    F->bk = R;\
-  |  |  |  |  928|  26.2k|    R->fd = F;\
+  |  |  |  |  925|  26.3k|    tchunkptr F = X->fd;\
+  |  |  |  |  926|  26.3k|    R = X->bk;\
+  |  |  |  |  927|  26.3k|    F->bk = R;\
+  |  |  |  |  928|  26.3k|    R->fd = F;\
   |  |  |  |  929|  3.06M|  } else {\
   |  |  |  |  930|  3.06M|    tchunkptr *RP;\
   |  |  |  |  931|  3.06M|    if (((R = *(RP = &(X->child[1]))) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (931:9): [True: 88.7k, False: 2.97M]
+  |  |  |  |  |  Branch (931:9): [True: 88.5k, False: 2.97M]
   |  |  |  |  ------------------
   |  |  |  |  932|  3.06M|	((R = *(RP = &(X->child[0]))) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (932:2): [True: 95.1k, False: 2.87M]
+  |  |  |  |  |  Branch (932:2): [True: 95.3k, False: 2.87M]
   |  |  |  |  ------------------
   |  |  |  |  933|   183k|      tchunkptr *CP;\
   |  |  |  |  934|   189k|      while ((*(CP = &(R->child[1])) != 0) ||\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (934:14): [True: 2.75k, False: 186k]
+  |  |  |  |  |  Branch (934:14): [True: 2.74k, False: 186k]
   |  |  |  |  ------------------
   |  |  |  |  935|   189k|	     (*(CP = &(R->child[0])) != 0)) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (935:7): [True: 3.04k, False: 183k]
+  |  |  |  |  |  Branch (935:7): [True: 2.92k, False: 183k]
   |  |  |  |  ------------------
-  |  |  |  |  936|  5.80k|	R = *(RP = CP);\
-  |  |  |  |  937|  5.80k|      }\
+  |  |  |  |  936|  5.66k|	R = *(RP = CP);\
+  |  |  |  |  937|  5.66k|      }\
   |  |  |  |  938|   183k|      *RP = 0;\
   |  |  |  |  939|   183k|    }\
   |  |  |  |  940|  3.06M|  }\
   |  |  |  |  941|  3.08M|  if (XP != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (941:7): [True: 3.07M, False: 14.3k]
+  |  |  |  |  |  Branch (941:7): [True: 3.07M, False: 14.4k]
   |  |  |  |  ------------------
   |  |  |  |  942|  3.07M|    tbinptr *H = treebin_at(M, X->index);\
   |  |  |  |  ------------------
@@ -1300,18 +1300,18 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  954|   195k|      R->parent = XP;\
   |  |  |  |  955|   195k|      if ((C0 = X->child[0]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (955:11): [True: 10.9k, False: 184k]
+  |  |  |  |  |  Branch (955:11): [True: 10.8k, False: 184k]
   |  |  |  |  ------------------
-  |  |  |  |  956|  10.9k|	R->child[0] = C0;\
-  |  |  |  |  957|  10.9k|	C0->parent = R;\
-  |  |  |  |  958|  10.9k|      }\
+  |  |  |  |  956|  10.8k|	R->child[0] = C0;\
+  |  |  |  |  957|  10.8k|	C0->parent = R;\
+  |  |  |  |  958|  10.8k|      }\
   |  |  |  |  959|   195k|      if ((C1 = X->child[1]) != 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (959:11): [True: 4.15k, False: 191k]
+  |  |  |  |  |  Branch (959:11): [True: 3.95k, False: 191k]
   |  |  |  |  ------------------
-  |  |  |  |  960|  4.15k|	R->child[1] = C1;\
-  |  |  |  |  961|  4.15k|	C1->parent = R;\
-  |  |  |  |  962|  4.15k|      }\
+  |  |  |  |  960|  3.95k|	R->child[1] = C1;\
+  |  |  |  |  961|  3.95k|	C1->parent = R;\
+  |  |  |  |  962|  3.95k|      }\
   |  |  |  |  963|   195k|    }\
   |  |  |  |  964|  3.07M|  }\
   |  |  |  |  965|  3.08M|}
@@ -1379,7 +1379,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  ------------------
   |  |  |  |  675|  16.7M|#define NSMALLBINS		(32U)
   |  |  ------------------
-  |  |  |  Branch (758:22): [True: 11.3M, False: 5.45M]
+  |  |  |  Branch (758:22): [True: 11.3M, False: 5.44M]
   |  |  ------------------
   ------------------
  1629|  11.3M|      insert_small_chunk(fm, p, psize);
@@ -1422,56 +1422,56 @@ lj_alloc.c:lj_alloc_free:
   |  |  841|  11.3M|}
   ------------------
  1630|  11.3M|    } else {
- 1631|  5.45M|      tchunkptr tp = (tchunkptr)p;
- 1632|  5.45M|      insert_large_chunk(fm, tp, psize);
+ 1631|  5.44M|      tchunkptr tp = (tchunkptr)p;
+ 1632|  5.44M|      insert_large_chunk(fm, tp, psize);
   ------------------
-  |  |  882|  5.45M|#define insert_large_chunk(M, X, S) {\
-  |  |  883|  5.45M|  tbinptr *H;\
-  |  |  884|  5.45M|  bindex_t I;\
-  |  |  885|  5.45M|  compute_tree_index(S, I);\
+  |  |  882|  5.44M|#define insert_large_chunk(M, X, S) {\
+  |  |  883|  5.44M|  tbinptr *H;\
+  |  |  884|  5.44M|  bindex_t I;\
+  |  |  885|  5.44M|  compute_tree_index(S, I);\
   |  |  ------------------
-  |  |  |  |  768|  5.45M|#define compute_tree_index(S, I)\
-  |  |  |  |  769|  5.45M|{\
-  |  |  |  |  770|  5.45M|  unsigned int X = (unsigned int)(S >> TREEBIN_SHIFT);\
+  |  |  |  |  768|  5.44M|#define compute_tree_index(S, I)\
+  |  |  |  |  769|  5.44M|{\
+  |  |  |  |  770|  5.44M|  unsigned int X = (unsigned int)(S >> TREEBIN_SHIFT);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  679|  5.45M|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  679|  5.44M|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  ------------------
-  |  |  |  |  771|  5.45M|  if (X == 0) {\
+  |  |  |  |  771|  5.44M|  if (X == 0) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (771:7): [True: 0, False: 5.45M]
+  |  |  |  |  |  Branch (771:7): [True: 0, False: 5.44M]
   |  |  |  |  ------------------
   |  |  |  |  772|      0|    I = 0;\
-  |  |  |  |  773|  5.45M|  } else if (X > 0xFFFF) {\
+  |  |  |  |  773|  5.44M|  } else if (X > 0xFFFF) {\
   |  |  |  |  ------------------
-  |  |  |  |  |  Branch (773:14): [True: 0, False: 5.45M]
+  |  |  |  |  |  Branch (773:14): [True: 0, False: 5.44M]
   |  |  |  |  ------------------
   |  |  |  |  774|      0|    I = NTREEBINS-1;\
   |  |  |  |  ------------------
   |  |  |  |  |  |  676|      0|#define NTREEBINS		(32U)
   |  |  |  |  ------------------
-  |  |  |  |  775|  5.45M|  } else {\
-  |  |  |  |  776|  5.45M|    unsigned int K = lj_fls(X);\
+  |  |  |  |  775|  5.44M|  } else {\
+  |  |  |  |  776|  5.44M|    unsigned int K = lj_fls(X);\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  150|  5.45M|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
+  |  |  |  |  |  |  150|  5.44M|#define lj_fls(x)	((uint32_t)(__builtin_clz(x)^31))
   |  |  |  |  ------------------
-  |  |  |  |  777|  5.45M|    I =  (bindex_t)((K << 1) + ((S >> (K + (TREEBIN_SHIFT-1)) & 1)));\
+  |  |  |  |  777|  5.44M|    I =  (bindex_t)((K << 1) + ((S >> (K + (TREEBIN_SHIFT-1)) & 1)));\
   |  |  |  |  ------------------
-  |  |  |  |  |  |  679|  5.45M|#define TREEBIN_SHIFT		(8U)
+  |  |  |  |  |  |  679|  5.44M|#define TREEBIN_SHIFT		(8U)
   |  |  |  |  ------------------
-  |  |  |  |  778|  5.45M|  }\
-  |  |  |  |  779|  5.45M|}
+  |  |  |  |  778|  5.44M|  }\
+  |  |  |  |  779|  5.44M|}
   |  |  ------------------
-  |  |  886|  5.45M|  H = treebin_at(M, I);\
+  |  |  886|  5.44M|  H = treebin_at(M, I);\
   |  |  ------------------
-  |  |  |  |  765|  5.45M|#define treebin_at(M,i)		(&((M)->treebins[i]))
+  |  |  |  |  765|  5.44M|#define treebin_at(M,i)		(&((M)->treebins[i]))
   |  |  ------------------
-  |  |  887|  5.45M|  X->index = I;\
-  |  |  888|  5.45M|  X->child[0] = X->child[1] = 0;\
-  |  |  889|  5.45M|  if (!treemap_is_marked(M, I)) {\
+  |  |  887|  5.44M|  X->index = I;\
+  |  |  888|  5.44M|  X->child[0] = X->child[1] = 0;\
+  |  |  889|  5.44M|  if (!treemap_is_marked(M, I)) {\
   |  |  ------------------
-  |  |  |  |  807|  5.45M|#define treemap_is_marked(M,i)	((M)->treemap  &   idx2bit(i))
+  |  |  |  |  807|  5.44M|#define treemap_is_marked(M,i)	((M)->treemap  &   idx2bit(i))
   |  |  |  |  ------------------
-  |  |  |  |  |  |  798|  5.45M|#define idx2bit(i)		((binmap_t)(1) << (i))
+  |  |  |  |  |  |  798|  5.44M|#define idx2bit(i)		((binmap_t)(1) << (i))
   |  |  |  |  ------------------
   |  |  ------------------
   |  |  |  Branch (889:7): [True: 4.27M, False: 1.17M]
@@ -1530,7 +1530,7 @@ lj_alloc.c:lj_alloc_free:
   |  |  |  |  |  |  ------------------
   |  |  |  |  ------------------
   |  |  ------------------
-  |  |  |  Branch (898:11): [True: 1.17M, False: 62.9k]
+  |  |  |  Branch (898:11): [True: 1.17M, False: 63.0k]
   |  |  ------------------
   |  |  899|  1.17M|	tchunkptr *C = &(T->child[(K >> (SIZE_T_BITSIZE-SIZE_T_ONE)) & 1]);\
   |  |  ------------------
@@ -1543,9 +1543,9 @@ lj_alloc.c:lj_alloc_free:
   |  |  900|  1.17M|	K <<= 1;\
   |  |  901|  1.17M|	if (*C != 0) {\
   |  |  ------------------
-  |  |  |  Branch (901:6): [True: 60.8k, False: 1.11M]
+  |  |  |  Branch (901:6): [True: 60.1k, False: 1.11M]
   |  |  ------------------
-  |  |  902|  60.8k|	  T = *C;\
+  |  |  902|  60.1k|	  T = *C;\
   |  |  903|  1.11M|	} else {\
   |  |  904|  1.11M|	  *C = X;\
   |  |  905|  1.11M|	  X->parent = T;\
@@ -1553,23 +1553,23 @@ lj_alloc.c:lj_alloc_free:
   |  |  907|  1.11M|	  break;\
   |  |  908|  1.11M|	}\
   |  |  909|  1.17M|      } else {\
-  |  |  910|  62.9k|	tchunkptr F = T->fd;\
-  |  |  911|  62.9k|	T->fd = F->bk = X;\
-  |  |  912|  62.9k|	X->fd = F;\
-  |  |  913|  62.9k|	X->bk = T;\
-  |  |  914|  62.9k|	X->parent = 0;\
-  |  |  915|  62.9k|	break;\
-  |  |  916|  62.9k|      }\
+  |  |  910|  63.0k|	tchunkptr F = T->fd;\
+  |  |  911|  63.0k|	T->fd = F->bk = X;\
+  |  |  912|  63.0k|	X->fd = F;\
+  |  |  913|  63.0k|	X->bk = T;\
+  |  |  914|  63.0k|	X->parent = 0;\
+  |  |  915|  63.0k|	break;\
+  |  |  916|  63.0k|      }\
   |  |  917|  1.23M|    }\
   |  |  918|  1.17M|  }\
-  |  |  919|  5.45M|}
+  |  |  919|  5.44M|}
   ------------------
- 1633|  5.45M|      if (--fm->release_checks == 0)
+ 1633|  5.44M|      if (--fm->release_checks == 0)
   ------------------
-  |  Branch (1633:11): [True: 0, False: 5.45M]
+  |  Branch (1633:11): [True: 0, False: 5.44M]
   ------------------
  1634|      0|	release_unused_segments(fm);
- 1635|  5.45M|    }
+ 1635|  5.44M|    }
  1636|  16.7M|  }
  1637|  18.1M|  return NULL;
  1638|  19.1M|#endif
@@ -9135,7 +9135,7 @@ lj_str_new:
   ------------------
   342|  1.94M|      if (sx->hash == hash && sx->len == len) {
   ------------------
-  |  Branch (342:11): [True: 544k, False: 1.39M]
+  |  Branch (342:11): [True: 544k, False: 1.40M]
   |  Branch (342:31): [True: 544k, False: 0]
   ------------------
   343|   544k|	if (memcmp(str, strdata(sx), len) == 0) {
@@ -9192,15 +9192,15 @@ lj_str_new:
   346|   544k|	}
   347|      0|	coll++;
   348|      0|      }
-  349|  1.39M|      coll++;
-  350|  1.39M|      o = gcnext(o);
+  349|  1.40M|      coll++;
+  350|  1.40M|      o = gcnext(o);
   ------------------
-  |  |   90|  1.39M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
+  |  |   90|  1.40M|#define gcnext(gc)	(gcref((gc)->gch.nextgc))
   |  |  ------------------
-  |  |  |  |   67|  1.39M|#define gcref(r)	((GCobj *)(r).gcptr64)
+  |  |  |  |   67|  1.40M|#define gcref(r)	((GCobj *)(r).gcptr64)
   |  |  ------------------
   ------------------
-  351|  1.39M|    }
+  351|  1.40M|    }
   352|  13.8M|#if LUAJIT_SECURITY_STRHASH
   353|       |    /* Rehash chain if there are too many collisions. */
   354|  13.8M|    if (LJ_UNLIKELY(coll > LJ_STR_MAXCOLL) && !hashalg) {
@@ -9337,15 +9337,15 @@ lj_str.c:lj_str_alloc:
   296|       |#elif STRID_RESEED_INTERVAL
   297|  13.8M|  if (!g->str.idreseed--) {
   ------------------
-  |  Branch (297:7): [True: 331k, False: 13.5M]
+  |  Branch (297:7): [True: 330k, False: 13.5M]
   ------------------
-  298|   331k|    uint64_t r = lj_prng_u64(&g->prng);
-  299|   331k|    g->str.id = (StrID)r;
-  300|   331k|    g->str.idreseed = (uint8_t)(r >> (64 - STRID_RESEED_INTERVAL));
+  298|   330k|    uint64_t r = lj_prng_u64(&g->prng);
+  299|   330k|    g->str.id = (StrID)r;
+  300|   330k|    g->str.idreseed = (uint8_t)(r >> (64 - STRID_RESEED_INTERVAL));
   ------------------
-  |  |  276|   331k|#define STRID_RESEED_INTERVAL	8
+  |  |  276|   330k|#define STRID_RESEED_INTERVAL	8
   ------------------
-  301|   331k|  }
+  301|   330k|  }
   302|  13.8M|  s->sid = g->str.id++;
   303|       |#else
   304|       |  s->sid = (StrID)lj_prng_u64(&g->prng);
