@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\000"
+          num: 125
+        }
+        names {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          true: 0
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 125
+                }
+                startexp {
+                }
+                stopexp {
+                  true: 125
+                }
+                stepexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      sub: 4353
+                    }
+                    rightexp {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              explist {
+                                explist {
+                                  expressions {
+                                    ellipsis: "\377\377\377"
+                                  }
+                                  explast {
+                                    ellipsis: "\000"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 125
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 125
+    semicolon: true
+  }
+}

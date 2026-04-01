@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          negate: 771751936
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              length: 0
+                            }
+                            exp {
+                              tableconstructor {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                      }
+                      value {
+                        ellipsis: "loopunroll"
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+                fields {
+                  field {
+                    expression {
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 771751936
+    semicolon: true
+  }
+}

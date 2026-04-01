@@ -1,0 +1,107 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    prefixexp {
+                      exp {
+                        ellipsis: ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 8192
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                }
+              }
+              lastSep {
+                comma: 1048576
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                functioncall {
+                  prefArgs {
+                    prefixexp {
+                    }
+                    args {
+                      str: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                    }
+                  }
+                }
+              }
+              args {
+                explist {
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        binary {
+                          leftexp {
+                            str: "1"
+                          }
+                          binop {
+                            add: 256
+                          }
+                          rightexp {
+                            number: 2
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            stat {
+                              ifstat {
+                                condition {
+                                }
+                                first {
+                                  chunk {
+                                    laststat {
+                                      explist {
+                                        explist {
+                                          expressions {
+                                            function {
+                                              body {
+                                                block {
+                                                  chunk {
+                                                    stat {
+                                                      semicolon: true
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          explast {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              semicolon: false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                false: 0
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+    semicolon: true
+  }
+}

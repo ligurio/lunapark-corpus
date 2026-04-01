@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  exprassign {
+                                    key {
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                                fields {
+                                  field {
+                                  }
+                                  sep {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: false
+                    }
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                  }
+                }
+                stopexp {
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 125
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

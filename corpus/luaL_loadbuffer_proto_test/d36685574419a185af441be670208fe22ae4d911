@@ -1,0 +1,122 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              tableconstructor {
+                fieldlist {
+                  firstField {
+                  }
+                  lastSep {
+                    comma: 10
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            lastSep {
+              comma: 10
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    nil: 10
+                  }
+                  explast {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                            exp {
+                              ellipsis: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                            }
+                          }
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

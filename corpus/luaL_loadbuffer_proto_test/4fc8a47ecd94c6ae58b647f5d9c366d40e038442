@@ -1,0 +1,69 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: "\\t"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  str: "\\t"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            str: "\\t"
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      laststat {
+                        break: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: "\\t"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

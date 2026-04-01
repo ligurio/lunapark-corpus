@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              localnames {
+                namelist {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                explist {
+                  expressions {
+                    str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                  }
+                  expressions {
+                    number: 1.87798699761941e-317
+                  }
+                  expressions {
+                    binary {
+                      leftexp {
+                        unary {
+                          unop {
+                            negate: 7143424
+                          }
+                          exp {
+                            str: "5\000\036555555555555555555555555"
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 6488064
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  explast {
+                    false: 0
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

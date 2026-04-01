@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        str: "\254"
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                true: 252
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        str: "\254"
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

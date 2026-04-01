@@ -1,0 +1,48 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\005\000\000\000\000\000\000\000"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          tableconstructor {
+                          }
+                        }
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

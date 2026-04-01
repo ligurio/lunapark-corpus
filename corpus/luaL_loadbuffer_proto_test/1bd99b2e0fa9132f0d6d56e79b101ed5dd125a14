@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+        }
+        expressions {
+          binary {
+            leftexp {
+              unary {
+                unop {
+                  negate: 7143424
+                }
+                exp {
+                  str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                }
+              }
+            }
+            binop {
+              concat: 6488064
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                      unary {
+                        unop {
+                          negate: 0
+                        }
+                        exp {
+                          str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 6488064
+                    }
+                    rightexp {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

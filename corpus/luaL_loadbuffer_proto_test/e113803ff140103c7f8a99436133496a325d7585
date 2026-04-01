@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    str: "\000\000\000\000"
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    number: 0
+                  }
+                }
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                              var {
+                              }
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: "\001\000\377\377"
+                        num: 0
+                      }
+                      args {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                                nil: 536870912
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: ""
+                    num: 536870912
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

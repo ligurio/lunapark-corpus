@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        ellipsis: "\010\000\000\000"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              lastSep {
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          or: 25344
+                        }
+                        rightexp {
+                          tableconstructor {
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      or: 980705635
+                    }
+                    rightexp {
+                      ellipsis: "\010\000\000\000"
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  nil: 8192
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

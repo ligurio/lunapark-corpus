@@ -1,0 +1,38 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                tableconstructor {
+                }
+              }
+            }
+            fields {
+              field {
+                expression {
+                  tableconstructor {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      exp: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 4
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                            true: 4
+                          }
+                          stepexp {
+                            function {
+                              body {
+                                parlist {
+                                  ellipsis: "u"
+                                }
+                                block {
+                                  chunk {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

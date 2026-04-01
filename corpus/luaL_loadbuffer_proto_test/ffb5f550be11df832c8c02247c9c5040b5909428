@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          str: "-"
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 1048576
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    add: 0
+                  }
+                  rightexp {
+                    number: 1.6247916446565031e+243
+                  }
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 3774873600
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                str: "-"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

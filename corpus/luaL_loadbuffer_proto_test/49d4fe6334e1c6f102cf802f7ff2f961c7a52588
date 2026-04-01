@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        fields {
+                          field {
+                            exprassign {
+                              key {
+                                nil: 0
+                              }
+                              value {
+                                prefixexp {
+                                  var {
+                                    indexexpr {
+                                      prefixexp {
+                                      }
+                                      exp {
+                                        number: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                        fields {
+                          field {
+                            namedassign {
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              value {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                    notEqual: 2
+                                  }
+                                  rightexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                        lastSep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

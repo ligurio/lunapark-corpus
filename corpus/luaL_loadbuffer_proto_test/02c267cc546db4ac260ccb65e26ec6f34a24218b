@@ -1,0 +1,113 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            prefixexp {
+                              functioncall {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                              ellipsis: ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

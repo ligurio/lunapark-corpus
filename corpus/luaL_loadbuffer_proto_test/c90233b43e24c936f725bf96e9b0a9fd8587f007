@@ -1,0 +1,29 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          functioncall {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+}

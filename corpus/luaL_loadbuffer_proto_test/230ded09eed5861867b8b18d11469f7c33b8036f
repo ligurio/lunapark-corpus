@@ -1,0 +1,115 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 43
+      }
+      startexp {
+      }
+      stopexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          or: 0
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+                stepexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            exp {
+                              nil: 8192
+                            }
+                          }
+                        }
+                        binop {
+                          mod: 128
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                            }
+                            binop {
+                              mod: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                          prefixexp {
+                                            functioncall {
+                                              namedArgs {
+                                                prefixexp {
+                                                }
+                                                name {
+                                                  name: ""
+                                                  num: 0
+                                                }
+                                                args {
+                                                  str: "1"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        value {
+                                          prefixexp {
+                                            exp {
+                                              prefixexp {
+                                                functioncall {
+                                                  prefArgs {
+                                                    prefixexp {
+                                                    }
+                                                    args {
+                                                      str: "\000\000\000\001"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  value {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          args {
+                            str: "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        true: 32
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

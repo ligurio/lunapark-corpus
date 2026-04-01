@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 131072
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    ellipsis: "\007\000\000\000"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

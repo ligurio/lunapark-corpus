@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            binary {
+              leftexp {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                            }
+                            binop {
+                            }
+                            rightexp {
+                              prefixexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                              exp {
+                                str: "111111111111111111111111111111111111111111111111111111"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 25344
+  }
+}

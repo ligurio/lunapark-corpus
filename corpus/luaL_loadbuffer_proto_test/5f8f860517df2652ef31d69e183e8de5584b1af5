@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+          binop {
+            concat: 64
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  parlist {
+                    namelist {
+                      namelist {
+                        firstname {
+                          name: "\357"
+                          num: 0
+                        }
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+  }
+}

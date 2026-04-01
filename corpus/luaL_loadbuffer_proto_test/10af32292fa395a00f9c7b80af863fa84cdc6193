@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                    length: 0
+                  }
+                  exp {
+                  }
+                }
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    unary {
+                      unop {
+                        not: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  binop {
+                    less: 0
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        less: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            less: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                    not: 0
+                  }
+                  exp {
+                  }
+                }
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    less: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                        length: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

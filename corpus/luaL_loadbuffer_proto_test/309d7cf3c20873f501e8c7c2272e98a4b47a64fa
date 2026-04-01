@@ -1,0 +1,49 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        str: "X"
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                and: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            less: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

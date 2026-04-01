@@ -1,0 +1,78 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  ellipsis: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      prefixexp {
+                        var {
+                          name {
+                            name: ""
+                            num: 2
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 2
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

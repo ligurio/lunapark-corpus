@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+        }
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              prefixexp {
+                functioncall {
+                  prefArgs {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                            exp {
+                              function {
+                                body {
+                                  parlist {
+                                    ellipsis: "."
+                                  }
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          Name: ""
+                        }
+                      }
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+          }
+        }
+        explast {
+          prefixexp {
+            functioncall {
+              namedArgs {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            idiv: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                name {
+                  name: ""
+                  num: 0
+                }
+                args {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

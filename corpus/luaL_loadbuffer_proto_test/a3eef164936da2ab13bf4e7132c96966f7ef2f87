@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: "\311"
+          }
+        }
+        vars {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+              or: 67108864
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      or: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: "\001\000\000\001"
+            num: 0
+          }
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+          }
+        }
+        explast {
+          prefixexp {
+            functioncall {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

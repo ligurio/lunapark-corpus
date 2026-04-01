@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            sub: 1024
+          }
+          rightexp {
+            true: 287488
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 287488
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

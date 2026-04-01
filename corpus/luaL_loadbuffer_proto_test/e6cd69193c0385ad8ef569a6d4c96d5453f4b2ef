@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+        }
+        explast {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                            }
+                            exp {
+                              str: "1"
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                args {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

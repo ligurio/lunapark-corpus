@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                true: 0
+              }
+              binop {
+                sub: 1024
+              }
+              rightexp {
+                false: 0
+              }
+            }
+          }
+          binop {
+            sub: 1024
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        fields {
+                          field {
+                            exprassign {
+                              key {
+                                number: 1.390671161567e-309
+                              }
+                              value {
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  explast {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 8388608
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

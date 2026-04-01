@@ -1,0 +1,58 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                ellipsis: "\360\376\377\377"
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            nil: 78
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

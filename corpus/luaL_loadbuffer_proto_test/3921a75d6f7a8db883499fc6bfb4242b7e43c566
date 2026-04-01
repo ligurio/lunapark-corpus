@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              nil: 0
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    explist {
+                      explist {
+                        explast {
+                          str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            exp {
+              nil: 0
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              str: "&"
+            }
+          }
+        }
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+                exp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              add: 1
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 4294967020
+  }
+}

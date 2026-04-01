@@ -1,0 +1,145 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 65536
+        }
+      }
+      expressions {
+        expressions {
+          str: "callunroll"
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclelist {
+                          names {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                          expressions {
+                            explast {
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: false
+                                }
+                                stat {
+                                  semicolon: true
+                                }
+                                laststat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        number: 5.4323092248711e-312
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    exprassign {
+                                      key {
+                                      }
+                                      value {
+                                      }
+                                    }
+                                  }
+                                  lastSep {
+                                    comma: 512
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      laststat {
+                        explist {
+                          explist {
+                            expressions {
+                              str: "+"
+                            }
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+  }
+}

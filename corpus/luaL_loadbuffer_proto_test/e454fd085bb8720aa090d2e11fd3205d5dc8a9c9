@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    str: "\000\000\000\000\000\000\000\000"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            function {
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          tableconstructor {
+                          }
+                        }
+                        binop {
+                          mod: 1024
+                        }
+                        rightexp {
+                          nil: 0
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      nil: 4
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 1024
+                  }
+                  lastname {
+                    name: ""
+                    num: 1024
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073741824
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

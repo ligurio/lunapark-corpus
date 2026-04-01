@@ -1,0 +1,124 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          explist {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: "\377\377\377\377\377\377\377\022"
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            stat {
+                              semicolon: false
+                            }
+                          }
+                        }
+                        condition {
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+  }
+}

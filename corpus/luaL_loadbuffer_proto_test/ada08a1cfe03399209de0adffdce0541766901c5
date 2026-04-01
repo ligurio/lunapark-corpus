@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        ellipsis: "\377\377\377\377\377\377\377\003"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 125
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  true: 6488064
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  unary {
+                    unop {
+                      length: 256
+                    }
+                    exp {
+                    }
+                  }
+                }
+                stepexp {
+                  true: 6488064
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+    semicolon: false
+  }
+}

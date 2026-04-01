@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "`"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      or: 1
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  true: 16765
+                }
+                stopexp {
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 16765
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  laststat {
+    break: 0
+  }
+}

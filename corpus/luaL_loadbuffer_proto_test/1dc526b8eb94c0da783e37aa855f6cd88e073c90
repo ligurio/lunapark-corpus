@@ -1,0 +1,67 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "minstitch"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                              exp {
+                                binary {
+                                  leftexp {
+                                    true: 4096
+                                  }
+                                  binop {
+                                    add: 262144
+                                  }
+                                  rightexp {
+                                    unary {
+                                      unop {
+                                        negate: 7143424
+                                      }
+                                      exp {
+                                        ellipsis: "minstitch"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

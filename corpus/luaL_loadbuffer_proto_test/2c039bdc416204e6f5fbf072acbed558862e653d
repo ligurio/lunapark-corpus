@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+              }
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                    ellipsis: "\001#"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

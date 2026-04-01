@@ -1,0 +1,42 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+              functioncall {
+              }
+            }
+            Name: "    local v1, v2 = ...\n    r(v1) >> always_nu"
+          }
+        }
+        vars {
+          name {
+            name: ""
+            num: 16384
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+              negate: 65280
+            }
+            exp {
+              str: "-3"
+            }
+          }
+        }
+        explast {
+          false: 65280
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

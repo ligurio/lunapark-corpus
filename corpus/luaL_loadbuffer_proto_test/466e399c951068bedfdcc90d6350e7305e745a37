@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        str: ""
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      stepexp {
+        prefixexp {
+          var {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        shr: 8
+                      }
+                      rightexp {
+                        prefixexp {
+                          var {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    true: 8
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 4
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

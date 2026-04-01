@@ -1,0 +1,103 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 1024
+        }
+      }
+      expressions {
+        explast {
+          false: 4
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: false
+                    }
+                    stat {
+                      block {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          nil: 4
+                        }
+                        binop {
+                          sub: 1056964608
+                        }
+                        rightexp {
+                          unary {
+                            unop {
+                              length: 1023410176
+                            }
+                            exp {
+                              tableconstructor {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      mod: 0
+                    }
+                    rightexp {
+                      number: 2.0615234375
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

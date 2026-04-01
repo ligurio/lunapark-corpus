@@ -1,0 +1,181 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            unary {
+              unop {
+                length: 0
+              }
+              exp {
+                unary {
+                  unop {
+                    length: 0
+                  }
+                  exp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          false: 0
+                        }
+                        binop {
+                          sub: 1048576
+                        }
+                        rightexp {
+                          prefixexp {
+                            exp {
+                              str: "22\007"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            false: 1048576
+                          }
+                          binop {
+                            sub: 1048576
+                          }
+                          rightexp {
+                            prefixexp {
+                              exp {
+                                str: "22\007"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    false: 1048576
+                  }
+                  binop {
+                    sub: 1048576
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        str: "22\007"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    false: 1048576
+                  }
+                  binop {
+                    sub: 1048576
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        str: "22\007"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

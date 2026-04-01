@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                            }
+                            fields {
+                              field {
+                                exprassign {
+                                  key {
+                                    tableconstructor {
+                                    }
+                                  }
+                                  value {
+                                    str: ","
+                                  }
+                                }
+                              }
+                              sep {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      value {
+                        str: ","
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

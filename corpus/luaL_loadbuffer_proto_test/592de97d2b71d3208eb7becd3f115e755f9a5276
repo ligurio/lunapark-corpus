@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        ellipsis: "x"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                      explist {
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            explist {
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

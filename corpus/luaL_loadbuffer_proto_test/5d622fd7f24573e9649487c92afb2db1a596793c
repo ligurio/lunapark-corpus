@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: "IdempotencyUn"
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      exp: 0
+                    }
+                    rightexp {
+                      prefixexp {
+                        functioncall {
+                          namedArgs {
+                            prefixexp {
+                              exp {
+                                str: "\006\000\000\000"
+                              }
+                            }
+                            name {
+                              name: "IdempotencyUn"
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

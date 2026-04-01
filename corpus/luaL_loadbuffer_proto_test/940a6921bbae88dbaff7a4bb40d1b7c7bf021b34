@@ -1,0 +1,60 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              namedassign {
+                name {
+                  name: ""
+                  num: 0
+                }
+                value {
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+                unary {
+                  unop {
+                    negate: 0
+                  }
+                  exp {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+    semicolon: false
+  }
+}

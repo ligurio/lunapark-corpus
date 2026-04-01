@@ -1,0 +1,60 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 64256
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "\311"
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    true: 0
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          ellipsis: "\003\000\000\000\000\000\000\000"
+        }
+      }
+    }
+  }
+}

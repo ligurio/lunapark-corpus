@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            false: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            function {
+              body {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            laststat {
+                              explist {
+                                explist {
+                                  expressions {
+                                    function {
+                                      body {
+                                        parlist {
+                                          ellipsis: "%"
+                                        }
+                                        block {
+                                          chunk {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  explast {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        condition {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            less: 1048576
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            unary {
+                              unop {
+                                length: 4294967295
+                              }
+                              exp {
+                                str: "\\\'"
+                              }
+                            }
+                          }
+                          binop {
+                          }
+                          rightexp {
+                            prefixexp {
+                              var {
+                                indexname {
+                                  prefixexp {
+                                    exp {
+                                      ellipsis: "\001\031"
+                                    }
+                                  }
+                                  Name: ""
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    sub: 1048576
+                  }
+                  rightexp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        fields {
+                          field {
+                            namedassign {
+                              name {
+                                name: "\202\202\202\202\202\202\202\202\202\202\202\202\202\202\202\202\202"
+                                num: 0
+                              }
+                              value {
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

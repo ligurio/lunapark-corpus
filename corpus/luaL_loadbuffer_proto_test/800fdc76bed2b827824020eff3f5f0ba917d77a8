@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            whilecycle {
+              condition {
+                number: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 1048576
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                bor: 512
+              }
+              rightexp {
+                ellipsis: "\002\000\000\000"
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

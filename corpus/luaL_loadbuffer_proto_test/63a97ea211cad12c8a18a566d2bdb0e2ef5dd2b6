@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              str: ""
+                            }
+                            value {
+                              prefixexp {
+                                functioncall {
+                                  namedArgs {
+                                    prefixexp {
+                                    }
+                                    name {
+                                      name: ""
+                                      num: 256
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                          }
+                          Name: ""
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greaterEqual: 512
+                      }
+                      rightexp {
+                        false: 8192
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexname {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                  }
+                  Name: "+"
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              ellipsis: "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

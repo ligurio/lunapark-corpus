@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          exp {
+                            str: "\002\000\000\000"
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                    functioncall {
+                                      namedArgs {
+                                        prefixexp {
+                                        }
+                                        name {
+                                          name: "\376\376\377\177\000\000\000\000"
+                                          num: 0
+                                        }
+                                        args {
+                                        }
+                                      }
+                                    }
+                                  }
+                                  args {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                          comma: 1024
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      laststat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

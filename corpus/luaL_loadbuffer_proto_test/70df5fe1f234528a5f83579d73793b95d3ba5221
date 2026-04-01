@@ -1,0 +1,118 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: ""
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            function {
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      nil: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            binary {
+                              leftexp {
+                                tableconstructor {
+                                }
+                              }
+                              binop {
+                                concat: 0
+                              }
+                              rightexp {
+                                nil: 0
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      false: 175972352
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+}

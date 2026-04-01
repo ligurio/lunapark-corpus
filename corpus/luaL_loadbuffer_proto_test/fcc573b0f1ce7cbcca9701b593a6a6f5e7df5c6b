@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              tableconstructor {
+                fieldlist {
+                  firstField {
+                  }
+                  fields {
+                    field {
+                    }
+                    sep {
+                      comma: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                }
+                exp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                          comma: 2424832
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "    local v1, v2 = ...\n    return always_num\000\000\000@v1) & always_num"
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: "="
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+          }
+        }
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

@@ -1,0 +1,53 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        expressions {
+                        }
+                        explast {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+              }
+            }
+          }
+          laststat {
+            break: 33554432
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  laststat {
+    break: 33554432
+  }
+}

@@ -1,0 +1,52 @@
+chunk {
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+        }
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    exp {
+                      number: 2.0000152587890625
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          exp {
+            str: "callunroll"
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

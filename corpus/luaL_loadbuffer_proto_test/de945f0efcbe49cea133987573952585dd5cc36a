@@ -1,0 +1,31 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            unary {
+              unop {
+                negate: 1
+              }
+              exp {
+                str: "4444444\0244444444444444444444444444444444444444444444444444444444444444444444444"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

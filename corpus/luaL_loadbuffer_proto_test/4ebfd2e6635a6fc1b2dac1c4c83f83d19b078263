@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        and: 0
+                      }
+                      rightexp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    and: 0
+                  }
+                  rightexp {
+                    false: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+                stat {
+                  call {
+                    prefArgs {
+                      prefixexp {
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\001\000\000\000"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        expressions {
+                          unary {
+                            unop {
+                              negate: 1024
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                        explast {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                      }
+                                      lastSep {
+                                        semicolon: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+          }
+        }
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    nil: 1
+                  }
+                  value {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              nil: 1
+                            }
+                            value {
+                              unary {
+                                unop {
+                                  bnot: 512
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

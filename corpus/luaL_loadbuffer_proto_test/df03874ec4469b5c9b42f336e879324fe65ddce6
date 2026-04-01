@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                expression {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          expression {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                  }
+                                  args {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          exprassign {
+                                            key {
+                                              tableconstructor {
+                                              }
+                                            }
+                                            value {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                          comma: 0
+                        }
+                      }
+                      lastSep {
+                        comma: 0
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,166 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          number: 4.94065645841247e-323
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        nil: 65534
+      }
+      stopexp {
+        unary {
+          unop {
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                  }
+                  sep {
+                    semicolon: 1702129512
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        number: 1.06224113855868e-321
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    str: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                            true: 0
+                          }
+                          stopexp {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  call {
+                                  }
+                                }
+                                laststat {
+                                  break: 65534
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        mult: 256
+                      }
+                      rightexp {
+                        str: "\014\000"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

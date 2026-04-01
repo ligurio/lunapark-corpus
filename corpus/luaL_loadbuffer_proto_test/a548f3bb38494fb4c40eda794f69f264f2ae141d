@@ -1,0 +1,182 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                ellipsis: "\""
+              }
+            }
+          }
+          binop {
+            exp: 0
+          }
+          rightexp {
+            unary {
+              unop {
+                not: 125
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ";"
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                            }
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                  number: 6.953355807835e-310
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                    binary {
+                      leftexp {
+                        number: 6.953355807835e-310
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+                semicolon: 536870912
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                      }
+                      rightexp {
+                        true: 32
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+        }
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

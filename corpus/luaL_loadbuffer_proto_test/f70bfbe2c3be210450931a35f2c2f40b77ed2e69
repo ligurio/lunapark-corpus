@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 1
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              semicolon: true
+            }
+            laststat {
+              explist {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

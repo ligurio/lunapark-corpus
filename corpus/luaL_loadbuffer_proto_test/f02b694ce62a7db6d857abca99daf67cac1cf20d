@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              namedassign {
+                name {
+                  name: ""
+                  num: 0
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                          exp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                                fields {
+                                  field {
+                                    exprassign {
+                                      key {
+                                      }
+                                      value {
+                                      }
+                                    }
+                                  }
+                                  sep {
+                                    comma: 0
+                                  }
+                                }
+                                lastSep {
+                                  comma: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  number: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                last {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

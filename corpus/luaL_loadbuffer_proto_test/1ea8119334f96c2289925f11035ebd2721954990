@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        ellipsis: ""
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                              exp {
+                                unary {
+                                  unop {
+                                  }
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                      }
+                                      binop {
+                                        shl: 2
+                                      }
+                                      rightexp {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 2097152000
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                args {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

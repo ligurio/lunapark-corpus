@@ -1,0 +1,150 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        tableconstructor {
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+                tableconstructor {
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                str: "callunroll"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 15104
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        str: "IdempotencyUn"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          tableconstructor {
+                          }
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      prefixexp {
+                        exp {
+                          str: "callunroll"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

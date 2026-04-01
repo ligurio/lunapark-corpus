@@ -1,0 +1,125 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  str: "\000\000\000\000\000\000\000\000"
+                }
+                stepexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            exp {
+                              prefixexp {
+                                functioncall {
+                                  namedArgs {
+                                    prefixexp {
+                                    }
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          mod: 128
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      mod: 128
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              mod: 687865856
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

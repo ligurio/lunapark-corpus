@@ -1,0 +1,32 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

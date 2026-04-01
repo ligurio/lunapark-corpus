@@ -1,0 +1,96 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          expressions {
+                            unary {
+                              unop {
+                                negate: 255
+                              }
+                              exp {
+                                str: "+"
+                              }
+                            }
+                          }
+                          explast {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "+"
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 0
+            semicolon: false
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 536870912
+  }
+}

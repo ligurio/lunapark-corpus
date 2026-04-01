@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+              }
+            }
+            fields {
+              field {
+                expression {
+                  str: "\'"
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+                comma: 0
+              }
+            }
+            fields {
+              field {
+                expression {
+                  str: "\'"
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  number: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

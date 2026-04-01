@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                  stat {
+                    ifstat {
+                      condition {
+                        nil: 0
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                      clauses {
+                        condition {
+                        }
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                              semicolon: false
+                            }
+                          }
+                        }
+                      }
+                      clauses {
+                        condition {
+                        }
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                              semicolon: false
+                            }
+                          }
+                        }
+                      }
+                      clauses {
+                        condition {
+                        }
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                              semicolon: false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  laststat {
+                    break: 2
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                number: 0
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

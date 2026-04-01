@@ -1,0 +1,37 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        true: 0
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

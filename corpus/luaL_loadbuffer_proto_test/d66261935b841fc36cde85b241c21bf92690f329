@@ -1,0 +1,134 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                            }
+                          }
+                          fields {
+                            field {
+                              exprassign {
+                                key {
+                                  unary {
+                                    unop {
+                                      length: 40
+                                    }
+                                    exp {
+                                    }
+                                  }
+                                }
+                                value {
+                                  ellipsis: "loopunroll"
+                                }
+                              }
+                            }
+                            sep {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              bnot: 40
+                            }
+                            exp {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        unary {
+                          unop {
+                            length: 40
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                      value {
+                        ellipsis: ""
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "localnroll"
+        num: 67108864
+      }
+      startexp {
+        unary {
+          unop {
+            bnot: 40
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

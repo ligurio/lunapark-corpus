@@ -1,0 +1,50 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      condition {
+        ellipsis: "`"
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+                args {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

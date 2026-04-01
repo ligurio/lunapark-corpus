@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        lastname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                              binary {
+                                leftexp {
+                                  tableconstructor {
+                                  }
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                        expression {
+                                          prefixexp {
+                                            var {
+                                              indexexpr {
+                                                prefixexp {
+                                                  exp {
+                                                    unary {
+                                                      unop {
+                                                        negate: 15859712
+                                                      }
+                                                      exp {
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                                exp {
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+  }
+}

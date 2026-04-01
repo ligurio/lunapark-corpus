@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                    var {
+                                    }
+                                  }
+                                  args {
+                                    str: "\001\000\000\000\000\000\000\022"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

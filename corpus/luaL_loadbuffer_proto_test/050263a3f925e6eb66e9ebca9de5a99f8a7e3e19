@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    str: "\000\000\000"
+                  }
+                  binop {
+                    bor: 4
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: "\000\000\000\000"
+                    num: 8126464
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 5
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 5
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        localnames {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

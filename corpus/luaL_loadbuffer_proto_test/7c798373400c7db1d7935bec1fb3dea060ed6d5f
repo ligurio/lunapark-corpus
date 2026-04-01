@@ -1,0 +1,44 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 2097152
+                  }
+                  names {
+                    name: "\031\031\031"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

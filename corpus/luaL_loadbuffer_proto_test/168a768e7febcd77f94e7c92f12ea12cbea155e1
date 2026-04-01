@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                  }
+                  exp {
+                    str: "111111111111000000000000000000000000000000001545412954"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            mod: 134217728
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                        var {
+                        }
+                      }
+                      exp {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                              }
+                              exp {
+                                str: "111111111111000000000000000000000000000000001545412954"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        lastname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

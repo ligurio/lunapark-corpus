@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                number: 0
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

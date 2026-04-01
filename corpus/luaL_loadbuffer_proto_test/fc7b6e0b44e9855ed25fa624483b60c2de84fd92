@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                        negate: 2
+                      }
+                      exp {
+                        str: "111111111111111111111111111111111111111111111111111111"
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 2
+          }
+          exp {
+            str: "stop\372}\n    \372\372\372\372"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

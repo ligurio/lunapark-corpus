@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      str: ""
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    str: "z"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

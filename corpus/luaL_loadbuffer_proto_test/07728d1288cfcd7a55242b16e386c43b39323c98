@@ -1,0 +1,142 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              tableconstructor {
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                              exprassign {
+                                key {
+                                }
+                                value {
+                                }
+                              }
+                            }
+                            lastSep {
+                              comma: 10
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        lastSep {
+                          comma: 10
+                        }
+                      }
+                    }
+                  }
+                  expressions {
+                    tableconstructor {
+                    }
+                  }
+                  explast {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

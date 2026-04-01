@@ -1,0 +1,149 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              var {
+                name {
+                  name: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                  num: 0
+                }
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "$"
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: "\252"
+                              num: 0
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: "$"
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                }
+                rightexp {
+                  true: 0
+                }
+              }
+            }
+          }
+        }
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

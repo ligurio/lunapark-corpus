@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          false: 0
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            indexname {
+                              prefixexp {
+                              }
+                              Name: ""
+                            }
+                          }
+                          vars {
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      exp {
+                      }
+                    }
+                  }
+                  binop {
+                    add: 125
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 64
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            explist {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      sub: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073741824
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

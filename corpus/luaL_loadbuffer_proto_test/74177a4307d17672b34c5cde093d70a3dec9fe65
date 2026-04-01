@@ -1,0 +1,147 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 15
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        true: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                          }
+                          exp {
+                            nil: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                  expressions {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                                lastSep {
+                                  comma: 458752
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    unary {
+                      unop {
+                        length: 15
+                      }
+                      exp {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                              }
+                              exp {
+                                nil: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        nil: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                      }
+                      rightexp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  expressions {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  explast {
+                    number: -1.9656826079092814e-236
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

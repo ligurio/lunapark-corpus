@@ -1,0 +1,50 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                          unary {
+                            unop {
+                              negate: 24
+                            }
+                            exp {
+                              str: "55555555555555555555555555555555555555"
+                            }
+                          }
+                        }
+                        value {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                        comma: 1023410176
+                      }
+                    }
+                    lastSep {
+                      semicolon: 67108864
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

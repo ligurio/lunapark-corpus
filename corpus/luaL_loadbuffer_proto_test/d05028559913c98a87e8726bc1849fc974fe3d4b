@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  namedassign {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    value {
+                      number: 5.2997562699014483e+180
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      indexname {
+                        prefixexp {
+                          var {
+                            indexname {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                              Name: ""
+                            }
+                          }
+                        }
+                        Name: ""
+                      }
+                    }
+                  }
+                  args {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          laststat {
+            break: 0
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+}

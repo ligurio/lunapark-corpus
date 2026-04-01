@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                        laststat {
+                          semicolon: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greater: 1
+          }
+          rightexp {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          greater: 1
+                        }
+                        rightexp {
+                          prefixexp {
+                            var {
+                              indexname {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                      }
+                                      binop {
+                                        greater: 1
+                                      }
+                                      rightexp {
+                                      }
+                                    }
+                                  }
+                                }
+                                Name: ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  Name: ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          nil: 6488064
+        }
+      }
+    }
+    semicolon: true
+  }
+}

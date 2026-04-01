@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                  }
+                }
+                stopexp {
+                  ellipsis: "\010"
+                }
+                stepexp {
+                  ellipsis: "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                            ellipsis: "\010"
+                          }
+                          stepexp {
+                            ellipsis: "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      laststat {
+                        break: 589824
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 589824
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

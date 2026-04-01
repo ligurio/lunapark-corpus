@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\377\377\377\377\377\377\377\377\377\377\377"
+          num: 63744
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              binary {
+                                leftexp {
+                                  false: 0
+                                }
+                                binop {
+                                  exp: 0
+                                }
+                                rightexp {
+                                  tableconstructor {
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  and: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    ellipsis: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+}

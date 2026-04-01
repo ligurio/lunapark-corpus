@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        exp {
+                          ellipsis: "\""
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      number: 2.2250759390576548e-308
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

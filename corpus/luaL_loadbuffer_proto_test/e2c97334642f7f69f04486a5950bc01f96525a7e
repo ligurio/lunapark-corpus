@@ -1,0 +1,121 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            prefixexp {
+                              var {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  notEqual: 2
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  expressions {
+                  }
+                  explast {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

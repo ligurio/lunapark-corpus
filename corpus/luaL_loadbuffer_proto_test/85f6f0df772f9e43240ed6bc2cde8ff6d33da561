@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "w\000\000\000"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 8192
+                        }
+                        startexp {
+                          unary {
+                            unop {
+                              negate: 8388608
+                            }
+                            exp {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  mult: 8
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        stopexp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              mult: 8
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          unary {
+                            unop {
+                              not: 61
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                        binop {
+                          mult: 8
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                    binop {
+                      mod: 32
+                    }
+                    rightexp {
+                      ellipsis: "w\000\000\000"
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

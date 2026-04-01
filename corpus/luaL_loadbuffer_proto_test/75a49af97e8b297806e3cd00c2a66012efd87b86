@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              fields {
+                                field {
+                                }
+                                sep {
+                                  comma: 10
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          less: 0
+                        }
+                        rightexp {
+                          true: 16384
+                        }
+                      }
+                    }
+                    binop {
+                      idiv: 7
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                        binop {
+                          greaterEqual: 7
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              less: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

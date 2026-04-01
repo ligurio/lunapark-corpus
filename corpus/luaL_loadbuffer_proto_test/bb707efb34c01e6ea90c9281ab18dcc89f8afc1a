@@ -1,0 +1,28 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        ellipsis: "$"
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                ellipsis: "$"
+              }
+              first {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

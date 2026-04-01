@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            unary {
+              unop {
+                negate: 1
+              }
+              exp {
+                str: "instunroll"
+              }
+            }
+          }
+          binop {
+            and: 1
+          }
+          rightexp {
+            str: "instunroll"
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

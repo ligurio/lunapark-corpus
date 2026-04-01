@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: "\377\005"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          ellipsis: ""
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                div: 6488064
+              }
+              rightexp {
+                str: "1\000\000\377\35511111\23211111111111111111111111111111111111111111111111"
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 1
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                              }
+                              exp {
+                                unary {
+                                  unop {
+                                  }
+                                  exp {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                        }
+                                        lastSep {
+                                          semicolon: 32
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        args {
+                          explist {
+                            explist {
+                              explast {
+                                true: 10
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              semicolon: false
+            }
+            laststat {
+              explist {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

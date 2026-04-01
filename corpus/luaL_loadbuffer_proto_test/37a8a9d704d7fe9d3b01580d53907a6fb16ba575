@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            str: "5555555555555555555I555555555555555"
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            explist {
+                              explist {
+                                explast {
+                                  tableconstructor {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 64
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  str: "b"
+                }
+                value {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        mult: 512
+                      }
+                      rightexp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    false: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

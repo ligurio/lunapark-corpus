@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                  or: 65535
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+        vars {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              or: 65535
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  or: 65535
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+              sub: 65535
+            }
+            rightexp {
+              true: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 16
+    semicolon: true
+  }
+}

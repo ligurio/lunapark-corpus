@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        false: 0
+      }
+      stopexp {
+        unary {
+          unop {
+            not: 16384
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  namedassign {
+                    name {
+                      name: "\344\344\344\344\344\344\344\344\344\344\344\344\344"
+                      num: 0
+                    }
+                    value {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  namedassign {
+                    name {
+                      name: "."
+                      num: 0
+                    }
+                    value {
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        prefixexp {
+                          var {
+                          }
+                        }
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                              }
+                              args {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      exprassign {
+                                        key {
+                                        }
+                                        value {
+                                          ellipsis: "\\"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+  }
+}

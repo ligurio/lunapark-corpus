@@ -1,0 +1,144 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        expressions {
+                        }
+                        explast {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        true: 16
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  binop {
+                    and: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              explist {
+                explast {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      bxor: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              exp {
+                number: 3.39519326554444e-313
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

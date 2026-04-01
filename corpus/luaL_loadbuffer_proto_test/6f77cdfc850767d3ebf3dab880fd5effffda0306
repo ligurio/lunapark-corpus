@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: "\\t"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  str: "\\t"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            str: "\\t"
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      laststat {
+                        break: 7368448
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 4244570111
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: "\\t"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

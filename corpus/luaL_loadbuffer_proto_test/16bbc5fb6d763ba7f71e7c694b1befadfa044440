@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+            }
+          }
+        }
+        expressions {
+          nil: 0
+        }
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+                exp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: "fold"
+                              num: 5120
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 4294967020
+  }
+}

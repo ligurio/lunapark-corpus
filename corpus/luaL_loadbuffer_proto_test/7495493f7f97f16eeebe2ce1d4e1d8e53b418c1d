@@ -1,0 +1,40 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+                exp {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+              }
+              Name: ""
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

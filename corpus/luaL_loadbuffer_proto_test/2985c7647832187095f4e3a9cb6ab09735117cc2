@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    function {
+                      body {
+                        parlist {
+                          ellipsis: "@"
+                        }
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

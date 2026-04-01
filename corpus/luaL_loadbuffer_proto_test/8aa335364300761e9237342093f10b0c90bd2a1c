@@ -1,0 +1,71 @@
+chunk {
+  stat {
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            stat {
+                            }
+                          }
+                        }
+                        condition {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                  ellipsis: "+"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          ellipsis: ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,164 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 8126464
+          }
+          rightexp {
+            true: 0
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    lastSep {
+                      semicolon: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greaterEqual: 8126464
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greaterEqual: 8126464
+                      }
+                      rightexp {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+            nil: 8126464
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greaterEqual: 8126464
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        unary {
+                          unop {
+                            negate: 32
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                      binop {
+                        greaterEqual: 8126464
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                      str: "\001\t"
+                    }
+                  }
+                }
+              }
+              Name: ""
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

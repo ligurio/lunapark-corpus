@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            unary {
+              unop {
+                not: 50
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  tableconstructor {
+                  }
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                      nil: 16776960
+                    }
+                    binop {
+                      div: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                              laststat {
+                                semicolon: true
+                              }
+                            }
+                          }
+                          condition {
+                            binary {
+                              leftexp {
+                                ellipsis: "maxirconst"
+                              }
+                              binop {
+                                mod: 0
+                              }
+                              rightexp {
+                                nil: 536870912
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

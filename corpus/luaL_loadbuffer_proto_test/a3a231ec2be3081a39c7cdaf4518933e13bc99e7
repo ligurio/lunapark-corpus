@@ -1,0 +1,146 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    true: 4096
+                  }
+                  binop {
+                    lessEqual: 536870912
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            concat: 16776704
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 536870912
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                lessEqual: 536870912
+              }
+              rightexp {
+                str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          laststat {
+                          }
+                        }
+                      }
+                      condition {
+                        binary {
+                          leftexp {
+                            true: 4096
+                          }
+                          binop {
+                            lessEqual: 0
+                          }
+                          rightexp {
+                            number: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    lessEqual: 536870912
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                          binop {
+                            lessEqual: 536870912
+                          }
+                          rightexp {
+                            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                          }
+                        }
+                      }
+                      binop {
+                        lessEqual: 536870912
+                      }
+                      rightexp {
+                        str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

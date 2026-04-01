@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "`"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          str: "$\377\376\373"
+        }
+        expressions {
+          unary {
+            unop {
+              bnot: 0
+            }
+            exp {
+            }
+          }
+        }
+        expressions {
+          str: "\377\377\376\373"
+        }
+        expressions {
+          prefixexp {
+            exp {
+              false: 0
+            }
+          }
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      true: 1
+                    }
+                    binop {
+                      concat: 512
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        explist {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 536870912
+  }
+}

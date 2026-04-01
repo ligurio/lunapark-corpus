@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            or: 134217728
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 134217728
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        or: 134217728
+                      }
+                      rightexp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 134217728
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                or: 134217728
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    or: 134217728
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+      clauses {
+        condition {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

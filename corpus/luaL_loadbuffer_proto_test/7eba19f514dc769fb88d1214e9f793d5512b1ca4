@@ -1,0 +1,62 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            sub: 61696
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: "`"
+                          num: 0
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

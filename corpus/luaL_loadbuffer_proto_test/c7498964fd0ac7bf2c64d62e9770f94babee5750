@@ -1,0 +1,154 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                nil: 2
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              call {
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            call {
+            }
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                names {
+                  name: ""
+                  num: 256
+                }
+              }
+              expressions {
+                expressions {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      forcyclelist {
+                        names {
+                          firstname {
+                            name: ""
+                            num: 0
+                          }
+                          names {
+                            name: ""
+                            num: 0
+                          }
+                        }
+                        expressions {
+                          expressions {
+                            unary {
+                              unop {
+                                length: 0
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                          explast {
+                            function {
+                              body {
+                                block {
+                                  chunk {
+                                    stat {
+                                      call {
+                                        prefArgs {
+                                          prefixexp {
+                                          }
+                                          args {
+                                            str: ""
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

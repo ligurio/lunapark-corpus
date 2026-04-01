@@ -1,0 +1,44 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                }
+                sep {
+                  semicolon: 2097152
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

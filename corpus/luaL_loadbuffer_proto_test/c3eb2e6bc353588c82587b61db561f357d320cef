@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                explast {
+                  number: 0
+                }
+              }
+            }
+          }
+          laststat {
+            explist {
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            ellipsis: "\271"
+          }
+          binop {
+            exp: 10752
+          }
+          rightexp {
+            nil: 10752
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                              tableconstructor {
+                              }
+                            }
+                            binop {
+                              or: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      bor: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                exp {
+                  str: "\006\000\000\000"
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

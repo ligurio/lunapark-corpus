@@ -1,0 +1,67 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      tableconstructor {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+            ellipsis: "\000\000\000\000\000\000\000\024"
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

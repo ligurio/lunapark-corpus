@@ -1,0 +1,107 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "`"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          str: "$\377\376\373"
+        }
+        expressions {
+          unary {
+            unop {
+              bnot: 512
+            }
+            exp {
+            }
+          }
+        }
+        expressions {
+          str: "`"
+        }
+        expressions {
+          prefixexp {
+            exp {
+              false: 10
+            }
+          }
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                              }
+                              value {
+                                unary {
+                                  unop {
+                                    length: 0
+                                  }
+                                  exp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          fields {
+                            field {
+                              exprassign {
+                                key {
+                                }
+                                value {
+                                  unary {
+                                    unop {
+                                      length: 0
+                                    }
+                                    exp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            sep {
+                              comma: 589824
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        explist {
+                          explist {
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

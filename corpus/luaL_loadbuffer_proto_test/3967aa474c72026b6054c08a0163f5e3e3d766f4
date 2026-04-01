@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+                tableconstructor {
+                }
+              }
+            }
+            exp {
+              nil: 0
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              str: "&"
+            }
+          }
+        }
+        expressions {
+        }
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+                exp {
+                }
+              }
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          true: 0
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

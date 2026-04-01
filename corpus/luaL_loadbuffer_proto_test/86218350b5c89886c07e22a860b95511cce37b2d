@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 8
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "abor"
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          str: "q"
+                        }
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          expression {
+                                            tableconstructor {
+                                              fieldlist {
+                                                firstField {
+                                                  expression {
+                                                    prefixexp {
+                                                      var {
+                                                        indexexpr {
+                                                          prefixexp {
+                                                          }
+                                                          exp {
+                                                            nil: 0
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

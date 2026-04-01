@@ -1,0 +1,132 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              length: 0
+            }
+            exp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                            indexname {
+                              prefixexp {
+                              }
+                              Name: ""
+                            }
+                          }
+                          vars {
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            laststat {
+                              explist {
+                                explist {
+                                  explast {
+                                    binary {
+                                      leftexp {
+                                        prefixexp {
+                                          var {
+                                            indexname {
+                                              prefixexp {
+                                              }
+                                              Name: ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                      binop {
+                                      }
+                                      rightexp {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    true: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

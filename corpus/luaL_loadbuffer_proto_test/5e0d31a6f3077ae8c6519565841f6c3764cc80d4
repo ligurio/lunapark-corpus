@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            function {
+              body {
+                parlist {
+                  ellipsis: "#"
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            explist {
+              explist {
+                explast {
+                  function {
+                    body {
+                      parlist {
+                        namelist {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                            names {
+                              name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                      block {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        function {
+          body {
+            parlist {
+              namelist {
+                namelist {
+                  firstname {
+                    name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                    num: 0
+                  }
+                }
+              }
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

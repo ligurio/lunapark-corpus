@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        false: 0
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 8192
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

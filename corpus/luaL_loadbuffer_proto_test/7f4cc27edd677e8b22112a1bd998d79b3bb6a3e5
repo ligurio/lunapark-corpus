@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "\377\377\377\377\377\377\377\377"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    false: 0
+                  }
+                }
+              }
+              binop {
+                concat: 8192
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+          binop {
+            concat: 8192
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                }
+                laststat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    nil: 0
+                  }
+                  explast {
+                    ellipsis: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

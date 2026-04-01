@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 4
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      unary {
+                        unop {
+                          length: 2097152
+                        }
+                        exp {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

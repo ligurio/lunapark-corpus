@@ -1,0 +1,58 @@
+chunk {
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    binary {
+                      leftexp {
+                        nil: 256
+                      }
+                      binop {
+                        mult: 256
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+                lastSep {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

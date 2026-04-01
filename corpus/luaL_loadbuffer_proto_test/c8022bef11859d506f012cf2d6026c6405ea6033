@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        ellipsis: "\001\000\000\000\000\000\000\001"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        fields {
+                          field {
+                            expression {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  concat: 0
+                                }
+                                rightexp {
+                                  ellipsis: ""
+                                }
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                        lastSep {
+                          comma: 16777216
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              prefixexp {
+                                var {
+                                  indexexpr {
+                                    prefixexp {
+                                    }
+                                    exp {
+                                      number: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        lastSep {
+                          comma: 256
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

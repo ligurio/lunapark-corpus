@@ -1,0 +1,164 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                              binary {
+                                leftexp {
+                                  prefixexp {
+                                    exp {
+                                      false: 0
+                                    }
+                                  }
+                                }
+                                binop {
+                                  concat: 0
+                                }
+                                rightexp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              concat: 8192
+                            }
+                            rightexp {
+                              prefixexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    ellipsis: "hotexit="
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

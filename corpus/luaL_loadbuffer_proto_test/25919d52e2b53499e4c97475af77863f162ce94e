@@ -1,0 +1,114 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              str: "I"
+            }
+          }
+        }
+        expressions {
+          str: "I"
+        }
+        explast {
+          unary {
+            unop {
+            }
+            exp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            prefixexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  false: 838860800
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

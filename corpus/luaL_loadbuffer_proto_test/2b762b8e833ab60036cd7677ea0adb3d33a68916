@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  exp {
+                    true: 4456448
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                        }
+                        value {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                  var {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            prefixexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

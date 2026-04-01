@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                add: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            shl: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+              }
+            }
+            exp {
+            }
+          }
+        }
+        vars {
+          name {
+            name: "hote"
+            num: 0
+          }
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+              function {
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              equal: 16
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+  }
+}

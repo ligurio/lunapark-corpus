@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  unary {
+                    unop {
+                      length: 262144
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          expressions {
+                            str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                          }
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              break: 4294836224
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

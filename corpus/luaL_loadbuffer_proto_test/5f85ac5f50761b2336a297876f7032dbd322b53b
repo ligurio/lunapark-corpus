@@ -1,0 +1,125 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                true: 32768
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          ellipsis: "\377"
+                        }
+                      }
+                    }
+                    binop {
+                      add: 9728
+                    }
+                    rightexp {
+                      true: 0
+                    }
+                  }
+                }
+                stepexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          ellipsis: "\377"
+                        }
+                      }
+                    }
+                    binop {
+                      add: 9728
+                    }
+                    rightexp {
+                      true: 0
+                    }
+                  }
+                }
+                stepexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 9728
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

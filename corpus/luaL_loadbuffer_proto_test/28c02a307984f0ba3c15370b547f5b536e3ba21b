@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        nil: 6488064
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                ellipsis: ""
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+          stat {
+            ifstat {
+              condition {
+                str: "*"
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

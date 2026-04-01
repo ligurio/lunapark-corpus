@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        false: 1024
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  false: 1024
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        localnames {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 1024
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

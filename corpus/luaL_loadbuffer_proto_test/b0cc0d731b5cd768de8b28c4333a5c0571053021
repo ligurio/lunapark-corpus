@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            not: 2048
+          }
+          exp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        div: 0
+                      }
+                      rightexp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                div: 0
+              }
+              rightexp {
+                str: "+"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          div: 0
+                        }
+                        rightexp {
+                          number: 0
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                    laststat {
+                      explist {
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  true: 6488064
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                sub: 32
+              }
+              rightexp {
+                str: "1\000\000\377\35511111\23211111111111111111111111111111111111111111111111"
+              }
+            }
+          }
+          binop {
+            concat: 32
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

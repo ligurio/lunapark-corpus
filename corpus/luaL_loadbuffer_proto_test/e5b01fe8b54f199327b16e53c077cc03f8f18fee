@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          false: 64
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  nil: 64
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          nil: 64
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

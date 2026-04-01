@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      first {
+        chunk {
+          laststat {
+            explist {
+              explist {
+                expressions {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                              }
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              args {
+                                str: "?"
+                              }
+                            }
+                          }
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

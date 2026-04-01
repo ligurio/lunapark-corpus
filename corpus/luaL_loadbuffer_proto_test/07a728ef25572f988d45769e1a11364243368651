@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+                binary {
+                  leftexp {
+                    number: 0
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        number: 0
+                      }
+                      binop {
+                        mod: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                          exp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                mod: 2097152000
+                              }
+                              rightexp {
+                                str: "\377\377\376\377"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              stopexp {
+                binary {
+                  leftexp {
+                    number: 0
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            mod: 108
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          nil: 2097152000
+                        }
+                      }
+                    }
+                  }
+                  args {
+                    str: ""
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            lessEqual: 0
+          }
+          rightexp {
+            tableconstructor {
+            }
+          }
+        }
+      }
+    }
+  }
+}

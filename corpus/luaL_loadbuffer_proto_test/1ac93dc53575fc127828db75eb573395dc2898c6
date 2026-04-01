@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    nil: 0
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              explist {
+                                explist {
+                                  explast {
+                                    prefixexp {
+                                      var {
+                                        indexexpr {
+                                          prefixexp {
+                                            var {
+                                              name {
+                                                name: ""
+                                                num: 536870912
+                                              }
+                                            }
+                                          }
+                                          exp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            name {
+              name: ""
+              num: 117440512
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

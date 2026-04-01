@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            true: 10752
+                          }
+                        }
+                      }
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            true: 10752
+                          }
+                        }
+                      }
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              concat: 0
+            }
+            rightexp {
+              true: 10752
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+  laststat {
+    semicolon: false
+  }
+}

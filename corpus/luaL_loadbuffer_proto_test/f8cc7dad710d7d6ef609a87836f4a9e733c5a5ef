@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  ellipsis: "`"
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                }
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                unary {
+                  unop {
+                    not: 0
+                  }
+                  exp {
+                    prefixexp {
+                      var {
+                        name {
+                          name: ""
+                          num: 32
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            bnot: 32
+          }
+          exp {
+            prefixexp {
+              var {
+                name {
+                  name: ""
+                  num: 32
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

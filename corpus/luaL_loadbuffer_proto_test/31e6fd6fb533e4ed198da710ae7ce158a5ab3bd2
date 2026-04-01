@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 256
+        }
+      }
+      expressions {
+        expressions {
+          binary {
+            leftexp {
+            }
+            binop {
+              greater: 256
+            }
+            rightexp {
+              function {
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          binary {
+            leftexp {
+              str: "1"
+            }
+            binop {
+              add: 256
+            }
+            rightexp {
+              number: 2
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

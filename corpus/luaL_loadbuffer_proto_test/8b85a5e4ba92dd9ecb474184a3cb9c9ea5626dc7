@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+                bnot: 0
+              }
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        and: 0
+                      }
+                      rightexp {
+                        false: 0
+                      }
+                    }
+                  }
+                  binop {
+                    and: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        unary {
+                          unop {
+                          }
+                          exp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                and: 0
+                              }
+                              rightexp {
+                                prefixexp {
+                                  exp {
+                                    function {
+                                      body {
+                                        block {
+                                          chunk {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 4294967294
+    semicolon: false
+  }
+}

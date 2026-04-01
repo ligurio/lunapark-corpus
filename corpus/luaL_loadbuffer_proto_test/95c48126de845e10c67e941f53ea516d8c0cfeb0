@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                    }
+                    name {
+                      name: "\377\377\376\345"
+                      num: 0
+                    }
+                    args {
+                      str: "."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        number: 0
+                      }
+                    }
+                    lastSep {
+                      comma: 0
+                    }
+                  }
+                }
+              }
+            }
+            exp {
+              prefixexp {
+                var {
+                  indexexpr {
+                    prefixexp {
+                      exp {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                              expression {
+                                number: 0
+                              }
+                            }
+                            lastSep {
+                              comma: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                      prefixexp {
+                        var {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    str: "."
+                  }
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+            exp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

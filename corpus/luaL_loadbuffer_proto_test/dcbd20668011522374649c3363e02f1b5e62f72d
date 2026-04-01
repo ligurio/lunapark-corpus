@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        ellipsis: "!"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "0"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                  nil: 8192
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+  }
+}

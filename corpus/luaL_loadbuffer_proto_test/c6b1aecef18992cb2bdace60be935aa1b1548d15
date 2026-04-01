@@ -1,0 +1,133 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                    }
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+                laststat {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: "\000\000\000\000"
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                          namedArgs {
+                            prefixexp {
+                              exp {
+                                false: 0
+                              }
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                  function {
+                    body {
+                      block {
+                        chunk {
+                          stat {
+                            semicolon: true
+                          }
+                          laststat {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 536870912
+  }
+}

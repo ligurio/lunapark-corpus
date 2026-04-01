@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                        comma: 8
+                      }
+                    }
+                  }
+                }
+              }
+              explast {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        exprassign {
+                          key {
+                            function {
+                              body {
+                                block {
+                                  chunk {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            prefixexp {
+                              var {
+                                indexexpr {
+                                  prefixexp {
+                                    exp {
+                                      ellipsis: "maxsnap"
+                                    }
+                                  }
+                                  exp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                        comma: 8
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

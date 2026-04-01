@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                    tableconstructor {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            prefixexp {
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "ii"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    false: 1048576
+                  }
+                }
+              }
+              sep {
+                comma: 1073741824
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        exprassign {
+                          key {
+                            number: 0
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: false
+  }
+}

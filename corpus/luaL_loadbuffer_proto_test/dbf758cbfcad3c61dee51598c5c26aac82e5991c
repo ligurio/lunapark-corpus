@@ -1,0 +1,163 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                          }
+                        }
+                      }
+                      condition {
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                          }
+                        }
+                      }
+                      condition {
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                    ifstat {
+                      condition {
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                      clauses {
+                        condition {
+                        }
+                        block {
+                          chunk {
+                            stat {
+                              semicolon: true
+                            }
+                            stat {
+                              ifstat {
+                                condition {
+                                }
+                                first {
+                                  chunk {
+                                  }
+                                }
+                                clauses {
+                                  condition {
+                                  }
+                                  block {
+                                    chunk {
+                                      stat {
+                                        semicolon: true
+                                      }
+                                      stat {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

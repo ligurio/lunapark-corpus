@@ -1,0 +1,43 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "L"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 1048576
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        prefixexp {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

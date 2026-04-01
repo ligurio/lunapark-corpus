@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                              exp {
+                                nil: 4
+                              }
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                                ellipsis: "\000\000\000\000"
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: "\001\000\377\377"
+                    num: 0
+                  }
+                  args {
+                    str: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

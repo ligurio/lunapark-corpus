@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+        }
+        expressions {
+          binary {
+            leftexp {
+              unary {
+                unop {
+                  negate: 7143424
+                }
+                exp {
+                  number: 0
+                }
+              }
+            }
+            binop {
+              concat: 6488064
+            }
+            rightexp {
+              binary {
+                leftexp {
+                  unary {
+                    unop {
+                      negate: 7143424
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                binop {
+                  concat: 6488064
+                }
+                rightexp {
+                  str: "\016\000\000\000\000\000\000\000"
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

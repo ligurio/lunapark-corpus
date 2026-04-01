@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        true: 32
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          nil: 0
+        }
+        explast {
+          function {
+            body {
+              parlist {
+              }
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        expressions {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                        explast {
+                          true: 67108864
+                        }
+                      }
+                    }
+                    semicolon: false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

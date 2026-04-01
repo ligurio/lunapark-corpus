@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+                bnot: 0
+              }
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        and: 0
+                      }
+                      rightexp {
+                        false: 0
+                      }
+                    }
+                  }
+                  binop {
+                    and: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        unary {
+                          unop {
+                          }
+                          exp {
+                            binary {
+                              leftexp {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                    and: 0
+                                  }
+                                  rightexp {
+                                    str: "="
+                                  }
+                                }
+                              }
+                              binop {
+                                and: 536870912
+                              }
+                              rightexp {
+                                prefixexp {
+                                  exp {
+                                    unary {
+                                      unop {
+                                      }
+                                      exp {
+                                        binary {
+                                          leftexp {
+                                          }
+                                          binop {
+                                            and: 0
+                                          }
+                                          rightexp {
+                                            str: "="
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: "cal"
+            }
+            block {
+              chunk {
+                laststat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

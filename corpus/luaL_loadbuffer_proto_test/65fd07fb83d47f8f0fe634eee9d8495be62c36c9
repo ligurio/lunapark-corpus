@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 131072
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: "\335"
+                                  num: 0
+                                }
+                              }
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                      explist {
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

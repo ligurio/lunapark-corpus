@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 8192
+                }
+                startexp {
+                  tableconstructor {
+                  }
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      mult: 8
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          unary {
+                            unop {
+                              negate: 7143424
+                            }
+                            exp {
+                              str: "4444444\0244444444444444444444444444444444444444444444444444444444444444444444444"
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 6488064
+                        }
+                        rightexp {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        localnames {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

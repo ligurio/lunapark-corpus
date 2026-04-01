@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+              }
+              sep {
+                comma: 1024
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        prefixexp {
+          exp {
+            nil: 0
+          }
+        }
+      }
+      stepexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                prefixexp {
+                  var {
+                  }
+                }
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

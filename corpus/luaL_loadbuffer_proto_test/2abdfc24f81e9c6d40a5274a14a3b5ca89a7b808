@@ -1,0 +1,95 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                            repeatcycle {
+                              block {
+                                chunk {
+                                  laststat {
+                                  }
+                                }
+                              }
+                              condition {
+                                binary {
+                                  leftexp {
+                                    true: 4096
+                                  }
+                                  binop {
+                                    lessEqual: 15
+                                  }
+                                  rightexp {
+                                    number: 0
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      condition {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            lessEqual: 536870912
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                lessEqual: 536870912
+                              }
+                              rightexp {
+                                str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    true: 4096
+                  }
+                  binop {
+                    lessEqual: 536870912
+                  }
+                  rightexp {
+                    number: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 536870912
+          }
+          rightexp {
+            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+          }
+        }
+      }
+    }
+  }
+}

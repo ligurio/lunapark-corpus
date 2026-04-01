@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  exp {
+                    prefixexp {
+                      exp {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    call {
+                      prefArgs {
+                        prefixexp {
+                          exp {
+                            prefixexp {
+                              exp {
+                                str: "callunroll"
+                              }
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

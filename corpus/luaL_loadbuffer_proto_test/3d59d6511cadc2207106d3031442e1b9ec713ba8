@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          str: ""
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                        }
+                      }
+                      binop {
+                        concat: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    semicolon: false
+  }
+}

@@ -1,0 +1,44 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          str: "\001\000\000\000"
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            indexexpr {
+              prefixexp {
+              }
+              exp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

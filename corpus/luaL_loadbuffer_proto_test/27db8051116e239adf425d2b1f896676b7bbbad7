@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                  }
+                  exp {
+                    str: "111111111111111111111111111111111111111111111111111111"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

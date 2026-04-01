@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          args {
+                            str: "abort"
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            explist {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 56
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073805312
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

@@ -1,0 +1,136 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                        }
+                        value {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                and: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            or: 1701012480
+          }
+          rightexp {
+            tableconstructor {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          greater: 256
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                    binop {
+                      or: 1701012480
+                    }
+                    rightexp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          lastSep {
+                            comma: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

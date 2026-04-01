@@ -1,0 +1,125 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        ellipsis: "\000\000\000\000\000\000\377\336"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 131072
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                              unary {
+                                unop {
+                                  negate: 0
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                length: 131072
+                              }
+                              exp {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      expression {
+                                        unary {
+                                          unop {
+                                            negate: 0
+                                          }
+                                          exp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

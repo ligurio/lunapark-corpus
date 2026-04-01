@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

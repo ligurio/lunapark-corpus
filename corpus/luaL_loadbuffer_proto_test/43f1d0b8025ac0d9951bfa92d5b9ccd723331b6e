@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: "instunroll"
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                      }
+                      name {
+                        name: "instunroll"
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  laststat {
+                    break: 16777216
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            break: 16777216
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

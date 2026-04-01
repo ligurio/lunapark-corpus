@@ -1,0 +1,107 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                  }
+                                  args {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          expression {
+                                          }
+                                        }
+                                        lastSep {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            nil: 50331648
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                ellipsis: "\331\000\000\000\000\000\000\000"
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                        }
+                        first {
+                          chunk {
+                            laststat {
+                              explist {
+                                explist {
+                                  explast {
+                                    prefixexp {
+                                      functioncall {
+                                        namedArgs {
+                                          prefixexp {
+                                          }
+                                          name {
+                                            name: "\'"
+                                            num: 0
+                                          }
+                                          args {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        last {
+                          chunk {
+                            stat {
+                              whilecycle {
+                                condition {
+                                  ellipsis: "\331\000\000\000\000\000\000\000"
+                                }
+                                doblock {
+                                  block {
+                                    chunk {
+                                      laststat {
+                                        break: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

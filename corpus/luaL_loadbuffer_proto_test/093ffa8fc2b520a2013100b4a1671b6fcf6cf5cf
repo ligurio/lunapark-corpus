@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                    }
+                  }
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            prefixexp {
+                              functioncall {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 8
+  }
+}

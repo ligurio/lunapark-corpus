@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      concat: 33554432
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

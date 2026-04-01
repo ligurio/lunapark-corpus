@@ -1,0 +1,141 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "1"
+                  }
+                  binop {
+                    add: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          binary {
+                            leftexp {
+                              str: "1"
+                            }
+                            binop {
+                              add: 256
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        binary {
+                          leftexp {
+                            str: "1"
+                          }
+                          binop {
+                            add: 256
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                false: 0
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "1"
+                  }
+                  binop {
+                    add: 256
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          binary {
+                            leftexp {
+                              str: "1"
+                            }
+                            binop {
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          false: 64
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 64
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    prefixexp {
+                      exp {
+                        function {
+                          body {
+                            parlist {
+                              namelist {
+                                namelist {
+                                  firstname {
+                                    name: ""
+                                    num: 0
+                                  }
+                                }
+                                ellipsis: "\376\377"
+                              }
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    nil: 64
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

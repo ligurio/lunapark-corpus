@@ -1,0 +1,157 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          expression {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                }
+                exp {
+                  ellipsis: "\215\215"
+                }
+              }
+            }
+          }
+        }
+        expressions {
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                    var {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                  }
+                  exp {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      band: 512
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          exp {
+                            prefixexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

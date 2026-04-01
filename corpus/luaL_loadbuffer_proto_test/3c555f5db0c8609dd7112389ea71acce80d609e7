@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              unary {
+                unop {
+                  negate: 0
+                }
+                exp {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      unary {
+                        unop {
+                          not: 131072
+                        }
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                    true: 10496
+                                  }
+                                  value {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: "\311"
+          }
+        }
+      }
+      explist {
+        expressions {
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                    true: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          nil: 59
+        }
+      }
+    }
+  }
+}

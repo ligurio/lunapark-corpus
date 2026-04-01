@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            bnot: 2097152
+          }
+          exp {
+            ellipsis: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      function {
+                        body {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                          }
+                          first {
+                            chunk {
+                              laststat {
+                                explist {
+                                  explist {
+                                    explast {
+                                      number: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        ellipsis: ""
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                ellipsis: ""
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

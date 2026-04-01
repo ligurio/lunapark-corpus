@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                unary {
+                  unop {
+                    length: 0
+                  }
+                  exp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        fields {
+                          field {
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                      }
+                      rightexp {
+                        unary {
+                          unop {
+                            negate: 1
+                          }
+                          exp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  namedassign {
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                                fields {
+                                  field {
+                                    exprassign {
+                                      key {
+                                        tableconstructor {
+                                          fieldlist {
+                                            firstField {
+                                            }
+                                          }
+                                        }
+                                      }
+                                      value {
+                                      }
+                                    }
+                                  }
+                                  sep {
+                                  }
+                                }
+                                lastSep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+                comma: 536870912
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

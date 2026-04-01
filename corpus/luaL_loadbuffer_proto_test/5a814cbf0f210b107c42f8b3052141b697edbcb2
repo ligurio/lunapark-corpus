@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            parlist {
+              namelist {
+                namelist {
+                  firstname {
+                    name: "callunroll"
+                    num: 0
+                  }
+                }
+              }
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "="
+          num: 0
+        }
+        names {
+          name: " "
+          num: 256
+        }
+        names {
+          name: ""
+          num: 1
+        }
+      }
+      expressions {
+        expressions {
+          true: 0
+        }
+        expressions {
+          unary {
+            unop {
+            }
+            exp {
+              false: 0
+            }
+          }
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        str: "re"
+                      }
+                    }
+                  }
+                  vars {
+                    name {
+                      name: "="
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

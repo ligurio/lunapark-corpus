@@ -1,0 +1,125 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 131072
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        ellipsis: "\000\000\377\350"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                        negate: 33554432
+                      }
+                      exp {
+                        true: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            localfunc {
+              name {
+                name: "\377\377\376\355"
+                num: 0
+              }
+              funcbody {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                explast {
+                  unary {
+                    unop {
+                      negate: 33554432
+                    }
+                    exp {
+                      true: 0
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 64256
+    semicolon: true
+  }
+}

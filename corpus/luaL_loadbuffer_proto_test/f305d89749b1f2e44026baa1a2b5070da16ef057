@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: "@"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+            semicolon: false
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                names {
+                  name: "@"
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

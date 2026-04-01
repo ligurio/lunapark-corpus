@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            indexexpr {
+              prefixexp {
+                var {
+                  indexexpr {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                            var {
+                            }
+                          }
+                          exp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                or: 0
+                              }
+                              rightexp {
+                                prefixexp {
+                                  functioncall {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                      binary {
+                        leftexp {
+                          ellipsis: ""
+                        }
+                        binop {
+                          or: 0
+                        }
+                        rightexp {
+                          ellipsis: "\000\000\000\000\000\000\000\004"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+}

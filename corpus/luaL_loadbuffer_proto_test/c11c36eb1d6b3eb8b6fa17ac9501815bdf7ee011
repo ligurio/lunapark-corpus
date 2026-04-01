@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+              greaterEqual: 43
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                          str: "callunroll"
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            greaterEqual: 43
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    prefixexp {
+                      exp {
+                        ellipsis: "\226"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

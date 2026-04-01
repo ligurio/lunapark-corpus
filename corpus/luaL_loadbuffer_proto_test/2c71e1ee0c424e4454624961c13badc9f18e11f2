@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                }
+              }
+              explist {
+                expressions {
+                  number: 0
+                }
+                explast {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      true: 0
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  number: 0
+                }
+                explast {
+                  unary {
+                    unop {
+                      not: 0
+                    }
+                    exp {
+                      true: 0
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  explist {
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          ellipsis: "@"
+        }
+      }
+    }
+    semicolon: false
+  }
+}

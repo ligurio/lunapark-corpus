@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            and: 50
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                    fields {
+                      field {
+                        expression {
+                          unary {
+                            unop {
+                              length: 50
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                    fields {
+                      field {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                    fields {
+                      field {
+                        expression {
+                          unary {
+                            unop {
+                              length: 50
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                    fields {
+                      field {
+                        expression {
+                          prefixexp {
+                          }
+                        }
+                      }
+                      sep {
+                        comma: 0
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        ellipsis: "\376\377"
+      }
+    }
+  }
+}

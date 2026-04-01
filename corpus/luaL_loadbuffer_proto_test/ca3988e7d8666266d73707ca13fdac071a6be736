@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  ellipsis: "\265"
+                }
+                stopexp {
+                  true: 0
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 125
+                    }
+                    exp {
+                      ellipsis: "\265"
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 16
+                }
+                startexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                stopexp {
+                  true: 2621440
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 125
+                    }
+                    exp {
+                      false: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

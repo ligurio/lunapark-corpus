@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            true: 536870912
+          }
+          binop {
+            concat: 536870912
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    str: "ccccccccc"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

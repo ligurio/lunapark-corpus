@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              namedassign {
+                name {
+                  name: ""
+                  num: 0
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    prefixexp {
+                      var {
+                        name {
+                          name: "\000\000\000\000\000\000\000\000\000\000\000\000"
+                          num: 0
+                        }
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                  number: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

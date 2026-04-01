@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                functioncall {
+                }
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              tableconstructor {
+                fieldlist {
+                  firstField {
+                  }
+                  fields {
+                    field {
+                      exprassign {
+                        key {
+                        }
+                        value {
+                          false: 1048576
+                        }
+                      }
+                    }
+                    sep {
+                      comma: 1073741824
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              add: 268435456
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                }
+              }
+            }
+          }
+        }
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

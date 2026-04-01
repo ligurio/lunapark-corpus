@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                              }
+                              value {
+                                unary {
+                                  unop {
+                                    length: 0
+                                  }
+                                  exp {
+                                    prefixexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          prefixexp {
+                            exp {
+                              unary {
+                                unop {
+                                  length: 0
+                                }
+                                exp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            unary {
+                              unop {
+                                bnot: 0
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            func {
+              name {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

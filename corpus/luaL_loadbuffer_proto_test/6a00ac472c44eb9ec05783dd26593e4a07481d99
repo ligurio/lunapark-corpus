@@ -1,0 +1,115 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "\025"
+                    }
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "\025\377\377\377\006"
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              fields {
+                                field {
+                                }
+                                sep {
+                                  comma: 65024
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

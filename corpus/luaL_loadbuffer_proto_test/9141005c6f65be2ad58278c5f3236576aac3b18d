@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        var {
+                        }
+                      }
+                      exp {
+                        unary {
+                          unop {
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

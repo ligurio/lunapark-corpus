@@ -1,0 +1,67 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            number: 3.75375841440235e+255
+          }
+          binop {
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                    nil: 32768
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        binary {
+                          leftexp {
+                            nil: 32768
+                          }
+                          binop {
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                    semicolon: false
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

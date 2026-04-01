@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+        }
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                    }
+                    name {
+                      name: "\001\000\000\000"
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              mult: 0
+            }
+            rightexp {
+              number: 6.81691147847594e-313
+            }
+          }
+        }
+      }
+    }
+  }
+}

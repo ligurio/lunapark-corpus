@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    str: "\000\000\000\000"
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    number: 0
+                  }
+                }
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                      }
+                      name {
+                        name: "\001\000\377\307"
+                        num: 0
+                      }
+                      args {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                  }
+                  sep {
+                    semicolon: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

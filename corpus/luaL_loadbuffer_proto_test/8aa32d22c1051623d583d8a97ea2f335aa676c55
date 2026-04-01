@@ -1,0 +1,133 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  indexname {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                          }
+                          exp {
+                            nil: 0
+                          }
+                        }
+                      }
+                    }
+                    Name: ""
+                  }
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                      whilecycle {
+                        condition {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          explast {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        ellipsis: ""
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

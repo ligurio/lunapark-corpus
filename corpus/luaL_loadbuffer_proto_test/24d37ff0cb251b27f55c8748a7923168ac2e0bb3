@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                              }
+                              value {
+                                unary {
+                                  unop {
+                                    length: 0
+                                  }
+                                  exp {
+                                    prefixexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          fields {
+                            field {
+                            }
+                            sep {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

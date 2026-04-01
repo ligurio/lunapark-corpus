@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  call {
+                    prefArgs {
+                      prefixexp {
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        function {
+                          body {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

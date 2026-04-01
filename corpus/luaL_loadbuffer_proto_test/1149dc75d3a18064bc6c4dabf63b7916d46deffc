@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            prefixexp {
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "\001\000\000\000\000\000yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\000\001"
+                  num: 0
+                }
+                startexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      nil: 32
+                    }
+                  }
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      nil: 32
+                    }
+                  }
+                }
+                stepexp {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          add: 0
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    unary {
+                      unop {
+                        negate: 65280
+                      }
+                      exp {
+                        str: "3"
+                      }
+                    }
+                  }
+                  explast {
+                    false: 65280
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

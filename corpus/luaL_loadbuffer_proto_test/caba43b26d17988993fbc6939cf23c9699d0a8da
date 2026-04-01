@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+            }
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              bnot: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: "\003\377\377\377"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                namedassign {
+                  name {
+                    name: "\000\000\377\361"
+                    num: 0
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

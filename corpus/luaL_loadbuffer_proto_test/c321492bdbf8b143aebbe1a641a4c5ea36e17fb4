@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "-"
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            str: "\377\377\000\000"
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      stopexp {
+        str: "55555555555555555555555555555555555555"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 65535
+                }
+                startexp {
+                  str: "5555555555\222\000\000\000555555555555555555555555"
+                }
+                stopexp {
+                  str: "\377\377\000\000"
+                }
+                stepexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 8
+  }
+}

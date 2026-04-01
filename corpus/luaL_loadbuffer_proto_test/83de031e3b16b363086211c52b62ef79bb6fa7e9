@@ -1,0 +1,47 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 15
+          }
+          exp {
+            unary {
+              unop {
+                negate: 15
+              }
+              exp {
+                unary {
+                  unop {
+                    length: 11264
+                  }
+                  exp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            number: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 15
+  }
+}

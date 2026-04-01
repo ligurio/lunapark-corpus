@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    ellipsis: "\""
+                  }
+                  binop {
+                    exp: 268435456
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        not: 125
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          binary {
+                            leftexp {
+                              ellipsis: "\""
+                            }
+                            binop {
+                              exp: 268435456
+                            }
+                            rightexp {
+                              ellipsis: "mmmmmmmmmmmmmmmmm"
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                semicolon: false
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 1969775392
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

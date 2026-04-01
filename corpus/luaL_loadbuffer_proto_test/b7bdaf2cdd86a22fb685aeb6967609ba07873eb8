@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+            }
+            binop {
+              mod: 0
+            }
+            rightexp {
+              prefixexp {
+                functioncall {
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        div: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                          }
+                          first {
+                            chunk {
+                            }
+                          }
+                          clauses {
+                            condition {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  greaterEqual: 8126464
+                                }
+                                rightexp {
+                                  nil: 3211264
+                                }
+                              }
+                            }
+                            block {
+                              chunk {
+                                stat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

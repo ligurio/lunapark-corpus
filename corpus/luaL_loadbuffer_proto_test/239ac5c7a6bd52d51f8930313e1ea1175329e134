@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                explist {
+                  explist {
+                    explast {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          unary {
+                            unop {
+                              not: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              explast {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        not: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

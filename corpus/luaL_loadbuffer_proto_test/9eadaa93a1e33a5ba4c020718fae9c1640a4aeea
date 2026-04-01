@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  localnames {
+                    namelist {
+                      firstname {
+                        name: ""
+                        num: 0
+                      }
+                      names {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                  }
+                  semicolon: true
+                }
+                stat {
+                  list {
+                    varlist {
+                      var {
+                      }
+                    }
+                    explist {
+                      expressions {
+                        prefixexp {
+                          exp {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                      }
+                                      binop {
+                                        or: 0
+                                      }
+                                      rightexp {
+                                        prefixexp {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              binop {
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      explast {
+                      }
+                    }
+                  }
+                  semicolon: true
+                }
+                stat {
+                  repeatcycle {
+                    block {
+                      chunk {
+                      }
+                    }
+                    condition {
+                      prefixexp {
+                      }
+                    }
+                  }
+                }
+                laststat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

@@ -1,0 +1,152 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                    whilecycle {
+                      condition {
+                        tableconstructor {
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  stat {
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        functioncall {
+                          namedArgs {
+                            prefixexp {
+                              functioncall {
+                              }
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+              name {
+                name: ")"
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

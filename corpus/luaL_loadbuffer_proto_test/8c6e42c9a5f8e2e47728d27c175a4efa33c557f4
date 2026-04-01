@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: "\\t"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "\\t"
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          str: "\\t"
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+  laststat {
+  }
+}

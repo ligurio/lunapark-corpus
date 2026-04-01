@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                unary {
+                  unop {
+                    negate: 0
+                  }
+                  exp {
+                    prefixexp {
+                      var {
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

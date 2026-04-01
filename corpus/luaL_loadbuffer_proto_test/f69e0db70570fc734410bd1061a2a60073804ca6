@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 10
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            functioncall {
+            }
+          }
+        }
+        expressions {
+          tableconstructor {
+          }
+        }
+        explast {
+          binary {
+            leftexp {
+              tableconstructor {
+              }
+            }
+            binop {
+              lessEqual: 7208960
+            }
+            rightexp {
+              ellipsis: "\326\000\000\000\000\000\000\000"
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              nil: 0
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

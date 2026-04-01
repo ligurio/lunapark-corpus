@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: false
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                functioncall {
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                explist {
+                  explist {
+                    expressions {
+                      ellipsis: "t"
+                    }
+                    explast {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          tableconstructor {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

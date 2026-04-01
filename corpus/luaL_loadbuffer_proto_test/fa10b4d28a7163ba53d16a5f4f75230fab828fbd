@@ -1,0 +1,140 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          ellipsis: "maxsnap"
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          str: ""
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  expressions {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                        }
+                      }
+                      binop {
+                        or: 1024
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greaterEqual: 8126464
+                      }
+                      rightexp {
+                        nil: 0
+                      }
+                    }
+                  }
+                  explast {
+                    str: ""
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                            }
+                            vars {
+                            }
+                            vars {
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                            }
+                          }
+                          explist {
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                      laststat {
+                        break: 2097152
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

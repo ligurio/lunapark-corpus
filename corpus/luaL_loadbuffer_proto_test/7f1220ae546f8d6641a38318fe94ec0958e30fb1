@@ -1,0 +1,54 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+              functioncall {
+              }
+            }
+            Name: ""
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                  }
+                }
+              }
+            }
+            exp {
+              str: "abort"
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+          }
+        }
+        explast {
+          unary {
+            unop {
+              negate: 2097152000
+            }
+            exp {
+              number: 0
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                      exp {
+                        prefixexp {
+                          exp {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                explast {
+                  number: 0
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            exp: 10752
+          }
+          rightexp {
+            nil: 10752
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

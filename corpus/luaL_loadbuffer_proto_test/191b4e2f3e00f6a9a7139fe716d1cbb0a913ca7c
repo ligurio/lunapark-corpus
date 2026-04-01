@@ -1,0 +1,168 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: "\000\000\377\374"
+            }
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              block {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                            }
+                            lastSep {
+                              comma: 637534208
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    unary {
+                      unop {
+                        not: 524288
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 2147483648
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            prefixexp {
+                              var {
+                                indexexpr {
+                                  prefixexp {
+                                  }
+                                  exp {
+                                    prefixexp {
+                                      functioncall {
+                                        prefArgs {
+                                          prefixexp {
+                                          }
+                                          args {
+                                            tableconstructor {
+                                              fieldlist {
+                                                firstField {
+                                                }
+                                                lastSep {
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            ellipsis: "callunroll"
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            number: 2.2250759390576548e-308
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        false: 33554432
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+}

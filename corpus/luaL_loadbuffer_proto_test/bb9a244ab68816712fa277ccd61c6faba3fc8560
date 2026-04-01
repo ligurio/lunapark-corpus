@@ -1,0 +1,157 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                false: 2752512
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            false: 2752512
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                    false: 989855744
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    false: 0
+                  }
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    false: 0
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            and: 989855744
+          }
+          rightexp {
+            nil: 2752512
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          args {
+                            explist {
+                              explist {
+                                explast {
+                                  unary {
+                                    unop {
+                                      not: 2
+                                    }
+                                    exp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    false: 0
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    forcyclename {
+                      name {
+                        name: "%"
+                        num: 0
+                      }
+                      startexp {
+                      }
+                      stopexp {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

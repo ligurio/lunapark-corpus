@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 0
+              }
+              funcbody {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                            semicolon: false
+                          }
+                          stat {
+                            localfunc {
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              funcbody {
+                                block {
+                                  chunk {
+                                  }
+                                }
+                              }
+                            }
+                            semicolon: false
+                          }
+                          stat {
+                            repeatcycle {
+                              block {
+                                chunk {
+                                  stat {
+                                  }
+                                }
+                              }
+                              condition {
+                                true: 1811939344
+                              }
+                            }
+                          }
+                          laststat {
+                            semicolon: true
+                          }
+                        }
+                      }
+                      condition {
+                        nil: 1811939344
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                true: 1811939344
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        nil: 1811939344
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,96 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                              }
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              args {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      expression {
+                                        function {
+                                          body {
+                                            block {
+                                              chunk {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                expression {
+                  false: 1024
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                      functioncall {
+                                      }
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                              args {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      expression {
+                                        str: "    local v1@ v2 = ...\n    return always_number(v1) & always_num"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        args {
+                          str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        expression {
+                          unary {
+                            unop {
+                              length: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                        comma: 0
+                      }
+                    }
+                    lastSep {
+                      comma: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

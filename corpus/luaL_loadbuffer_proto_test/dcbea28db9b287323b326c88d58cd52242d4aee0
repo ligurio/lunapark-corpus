@@ -1,0 +1,37 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            str: "\\\'"
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 65280
+    semicolon: true
+  }
+}

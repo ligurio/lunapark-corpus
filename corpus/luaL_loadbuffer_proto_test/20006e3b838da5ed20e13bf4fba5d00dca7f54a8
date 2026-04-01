@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "1"
+                  }
+                  binop {
+                    add: 0
+                  }
+                  rightexp {
+                    number: 2
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      explist {
+                        explist {
+                          expressions {
+                            prefixexp {
+                              functioncall {
+                                namedArgs {
+                                  prefixexp {
+                                  }
+                                  name {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  args {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                        }
+                                        fields {
+                                          field {
+                                            namedassign {
+                                              name {
+                                                name: ""
+                                                num: 2105344
+                                              }
+                                              value {
+                                              }
+                                            }
+                                          }
+                                          sep {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 128
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

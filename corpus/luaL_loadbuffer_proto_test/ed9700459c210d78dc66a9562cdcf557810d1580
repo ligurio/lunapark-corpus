@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: "local"
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: "local"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "cocal"
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          function {
+            body {
+              parlist {
+              }
+              block {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+}

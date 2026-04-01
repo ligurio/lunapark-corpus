@@ -1,0 +1,162 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            mod: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    nil: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                exp {
+                  ellipsis: ""
+                }
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        number: 0
+                      }
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                      }
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          ellipsis: ""
+        }
+        explast {
+          number: 0
+        }
+      }
+    }
+  }
+}

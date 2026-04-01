@@ -1,0 +1,27 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "instunroll"
+          }
+          binop {
+            add: 0
+          }
+          rightexp {
+            ellipsis: ""
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

@@ -1,0 +1,118 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          binary {
+            leftexp {
+              nil: 8388608
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: "\377\377\376\377"
+                    num: 0
+                  }
+                }
+                expressions {
+                  explast {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            stat {
+                              func {
+                                name {
+                                  firstname {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  lastname {
+                                    name: ""
+                                    num: 0
+                                  }
+                                }
+                                body {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                              semicolon: true
+                            }
+                            laststat {
+                              explist {
+                                explist {
+                                  explast {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          expression {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              semicolon: true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

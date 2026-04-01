@@ -1,0 +1,103 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: "\\"
+          }
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              str: "\\"
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  true: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            laststat {
+                              explist {
+                                explist {
+                                  explast {
+                                    binary {
+                                      leftexp {
+                                        prefixexp {
+                                          functioncall {
+                                          }
+                                        }
+                                      }
+                                      binop {
+                                      }
+                                      rightexp {
+                                        ellipsis: "\\"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

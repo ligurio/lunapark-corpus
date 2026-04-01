@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            less: 1024
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: "callunroll"
+                    num: 0
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

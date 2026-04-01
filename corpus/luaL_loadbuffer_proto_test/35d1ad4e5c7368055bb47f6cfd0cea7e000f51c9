@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        function {
+          body {
+            parlist {
+            }
+            block {
+              chunk {
+                laststat {
+                  break: 0
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      stepexp {
+        prefixexp {
+          exp {
+            ellipsis: "#"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

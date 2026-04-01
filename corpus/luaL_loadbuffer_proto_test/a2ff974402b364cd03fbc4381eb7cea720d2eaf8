@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            explist {
+              explist {
+                expressions {
+                }
+                explast {
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    true: 131072
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            mod: 128
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                      }
+                      value {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                          }
+                          rightexp {
+                            ellipsis: "@"
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                    semicolon: 128
+                  }
+                }
+                lastSep {
+                  semicolon: 67108864
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

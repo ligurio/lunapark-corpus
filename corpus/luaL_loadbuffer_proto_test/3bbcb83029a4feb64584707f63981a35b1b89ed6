@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                              }
+                              value {
+                                unary {
+                                  unop {
+                                    length: 0
+                                  }
+                                  exp {
+                                    prefixexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          lastSep {
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

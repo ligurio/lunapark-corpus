@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    true: 536870912
+                  }
+                  binop {
+                    bxor: 268435456
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        negate: 268435456
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                mod: 0
+              }
+              rightexp {
+                unary {
+                  unop {
+                    length: 1023410176
+                  }
+                  exp {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            unary {
+              unop {
+                negate: 268435456
+              }
+              exp {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

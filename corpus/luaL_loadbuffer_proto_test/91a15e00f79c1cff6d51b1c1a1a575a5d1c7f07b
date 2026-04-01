@@ -1,0 +1,118 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                          indexname {
+                            prefixexp {
+                            }
+                            Name: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                          }
+                        }
+                      }
+                      explist {
+                        explast {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                            }
+                            rightexp {
+                              number: 4.8240874597693513e+228
+                            }
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                    semicolon: true
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                          }
+                          Name: "2"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            number: 4.8240874597693513e+228
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

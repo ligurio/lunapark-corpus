@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+              semicolon: false
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              block {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

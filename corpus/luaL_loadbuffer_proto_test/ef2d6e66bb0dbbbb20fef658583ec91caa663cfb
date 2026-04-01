@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            indexname {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                              Name: ""
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                    prefixexp {
+                      functioncall {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: "    local v1, v2 = ...\n    return always_number(v1) >> always_nu"
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

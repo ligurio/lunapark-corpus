@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    str: "\000\000\000\000"
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    number: 0
+                  }
+                }
+              }
+              binop {
+                exp: 536870912
+              }
+              rightexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                        stat {
+                          semicolon: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 536870912
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                                ellipsis: "\000\000\000\000"
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: "\000\000\000\000"
+                    num: 8126464
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

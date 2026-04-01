@@ -1,0 +1,36 @@
+chunk {
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  str: "\277"
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            true: 35
+          }
+          binop {
+            concat: 35
+          }
+          rightexp {
+            ellipsis: ""
+          }
+        }
+      }
+    }
+  }
+}

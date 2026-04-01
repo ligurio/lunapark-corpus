@@ -1,0 +1,49 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        ellipsis: "\326\000\000\000\000\000u\000"
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        number: 0
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                ellipsis: ""
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        ellipsis: ""
+      }
+    }
+  }
+}

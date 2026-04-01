@@ -1,0 +1,39 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        true: 32
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                nil: 0
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 32
+    semicolon: true
+  }
+}

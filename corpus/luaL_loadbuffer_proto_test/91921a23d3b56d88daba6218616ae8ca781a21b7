@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "1"
+                  }
+                  binop {
+                    add: 256
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        str: "1"
+                      }
+                      binop {
+                        mod: 25344
+                      }
+                      rightexp {
+                        number: 2
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          binary {
+                            leftexp {
+                              str: "1"
+                            }
+                            binop {
+                              add: 256
+                            }
+                            rightexp {
+                              binary {
+                                leftexp {
+                                  str: "1"
+                                }
+                                binop {
+                                  mod: 25344
+                                }
+                                rightexp {
+                                  number: 2
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                whilecycle {
+                                  condition {
+                                    binary {
+                                      leftexp {
+                                        str: "1"
+                                      }
+                                      binop {
+                                        mod: 25344
+                                      }
+                                      rightexp {
+                                        number: 2
+                                      }
+                                    }
+                                  }
+                                  doblock {
+                                    block {
+                                      chunk {
+                                        stat {
+                                          semicolon: true
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 131072
+      }
+      startexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            mult: 8
+          }
+          rightexp {
+          }
+        }
+      }
+      stopexp {
+        function {
+          body {
+            parlist {
+              namelist {
+                namelist {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+              }
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            str: "hote"
+                          }
+                        }
+                      }
+                    }
+                    Name: ""
+                  }
+                }
+              }
+              Name: ""
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              break: 0
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

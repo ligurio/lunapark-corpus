@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      str: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000,\000\000\000\000\000\000\000\000\000"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+        }
+        explast {
+          number: 0
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  nil: 2097152
+                }
+                value {
+                  prefixexp {
+                    var {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: "\000\000\000\000\000\000\377\336"
+                      num: 0
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        lastSep {
+                          comma: 2147483904
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

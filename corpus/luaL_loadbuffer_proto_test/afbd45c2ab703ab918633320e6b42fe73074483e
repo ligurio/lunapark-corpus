@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                    tableconstructor {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            ellipsis: ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                number: 4.7282819493278029e-308
+              }
+              explast {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      ellipsis: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                    }
+                    binop {
+                      bxor: 536870912
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        func {
+                          name {
+                            firstname {
+                              name: ""
+                              num: 16384
+                            }
+                          }
+                          body {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                            }
+                          }
+                          explist {
+                            expressions {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                  ellipsis: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                                }
+                              }
+                            }
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                      laststat {
+                        break: 16384
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+              explist {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

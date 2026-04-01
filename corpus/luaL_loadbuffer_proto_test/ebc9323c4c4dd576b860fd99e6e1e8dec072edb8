@@ -1,0 +1,118 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                            exp {
+                              binary {
+                                leftexp {
+                                  binary {
+                                    leftexp {
+                                      prefixexp {
+                                        exp {
+                                          binary {
+                                            leftexp {
+                                              str: "and"
+                                            }
+                                            binop {
+                                              concat: 8192
+                                            }
+                                            rightexp {
+                                              prefixexp {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    binop {
+                                      concat: 8192
+                                    }
+                                    rightexp {
+                                      prefixexp {
+                                      }
+                                    }
+                                  }
+                                }
+                                binop {
+                                  idiv: 20480
+                                }
+                                rightexp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          Name: "and"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

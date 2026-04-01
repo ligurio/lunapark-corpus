@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 8192
+      }
+      startexp {
+        unary {
+          unop {
+          }
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                mult: 8
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 8192
+                }
+                startexp {
+                  number: 0
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      mult: 2126848
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          mult: 538997760
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              or: 1024
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

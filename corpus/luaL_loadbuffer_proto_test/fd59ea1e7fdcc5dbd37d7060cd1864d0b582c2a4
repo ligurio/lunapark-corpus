@@ -1,0 +1,78 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          unary {
+            unop {
+              bnot: 203
+            }
+            exp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      lessEqual: 7208960
+                    }
+                    rightexp {
+                      ellipsis: "\326\000\000\000\000\000\000\000"
+                    }
+                  }
+                }
+              }
+              lastSep {
+                comma: 1048576
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+}

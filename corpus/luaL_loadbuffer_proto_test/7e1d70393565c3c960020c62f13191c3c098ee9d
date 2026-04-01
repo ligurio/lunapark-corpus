@@ -1,0 +1,50 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    call {
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+              }
+            }
+          }
+          stat {
+            call {
+            }
+            semicolon: true
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        number: 0
+      }
+    }
+  }
+  laststat {
+  }
+}

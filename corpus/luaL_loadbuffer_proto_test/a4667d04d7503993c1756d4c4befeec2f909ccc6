@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  nil: 0
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                            semicolon: true
+                          }
+                        }
+                      }
+                      condition {
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "*"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                              true: 262144
+                            }
+                          }
+                        }
+                        first {
+                          chunk {
+                            stat {
+                              repeatcycle {
+                                block {
+                                  chunk {
+                                    stat {
+                                      semicolon: true
+                                    }
+                                  }
+                                }
+                                condition {
+                                }
+                              }
+                              semicolon: true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

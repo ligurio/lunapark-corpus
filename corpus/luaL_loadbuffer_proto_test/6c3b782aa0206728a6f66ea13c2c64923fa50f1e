@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: "local"
+          num: 32768
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: "local"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                      stat {
+                        func {
+                          name {
+                            firstname {
+                              name: "local"
+                              num: 32768
+                            }
+                          }
+                          body {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: true
+                                }
+                                stat {
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: "local"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          function {
+            body {
+              parlist {
+                namelist {
+                  namelist {
+                    firstname {
+                      name: ""
+                      num: 0
+                    }
+                    names {
+                      name: "local"
+                      num: 0
+                    }
+                  }
+                  ellipsis: "\376\376\377\377"
+                }
+              }
+              block {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+}

@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 125
+        }
+      }
+      expressions {
+        expressions {
+          true: 0
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              band: 16
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      forcyclelist {
+                        names {
+                          firstname {
+                            name: ""
+                            num: 125
+                          }
+                        }
+                        expressions {
+                          explast {
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                            unary {
+                              unop {
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                          first {
+                            chunk {
+                            }
+                          }
+                          clauses {
+                            condition {
+                              nil: 4194304
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                          last {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

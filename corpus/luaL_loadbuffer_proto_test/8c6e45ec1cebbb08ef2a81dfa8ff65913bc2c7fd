@@ -1,0 +1,49 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "    local v1, v2 = ...\n    return always_number(v1) // always_nu"
+          num: 0
+        }
+        names {
+          name: ""
+          num: 6841088
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  number: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+}

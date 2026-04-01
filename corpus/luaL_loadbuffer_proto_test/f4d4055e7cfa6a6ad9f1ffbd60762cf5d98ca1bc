@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localnames {
+                namelist {
+                  firstname {
+                    name: "\000\000\000\000"
+                    num: 1024
+                  }
+                  names {
+                    name: ""
+                    num: 1024
+                  }
+                }
+                explist {
+                  explast {
+                    nil: 0
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                expression {
+                                  prefixexp {
+                                    var {
+                                      indexexpr {
+                                        prefixexp {
+                                        }
+                                        exp {
+                                          number: 0
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                          comma: 0
+                        }
+                      }
+                      lastSep {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

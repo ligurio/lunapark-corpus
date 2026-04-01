@@ -1,0 +1,52 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          true: 1
+        }
+        expressions {
+          binary {
+            leftexp {
+              false: 2048
+            }
+            binop {
+              concat: 6488064
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                  unary {
+                    unop {
+                      negate: 7143424
+                    }
+                    exp {
+                      str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          unary {
+            unop {
+              negate: 7143424
+            }
+            exp {
+              str: "444444444444444444444444444444444444444444444444444444444444444464444444444444"
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

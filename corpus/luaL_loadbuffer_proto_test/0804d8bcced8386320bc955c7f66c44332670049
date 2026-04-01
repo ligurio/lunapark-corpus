@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          unary {
+            unop {
+              negate: 0
+            }
+            exp {
+              str: "3"
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        expression {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      explist {
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "!\000\000\000\000\000\000\000"
+                  }
+                }
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: false
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                  exprassign {
+                    key {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          str: ""
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

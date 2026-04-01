@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        unary {
+          unop {
+            bnot: 4096
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  str: ""
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        localfunc {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          funcbody {
+                            block {
+                              chunk {
+                                stat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

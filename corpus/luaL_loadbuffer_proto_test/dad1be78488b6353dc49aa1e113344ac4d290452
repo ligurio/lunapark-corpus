@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            break: 1
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                lastSep {
+                  comma: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                              }
+                              rightexp {
+                                str: "\014\000"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+}

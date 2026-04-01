@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            false: 10752
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "b"
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            false: 10752
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

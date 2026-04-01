@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        fields {
+                          field {
+                            namedassign {
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              value {
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  explast {
+                    nil: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

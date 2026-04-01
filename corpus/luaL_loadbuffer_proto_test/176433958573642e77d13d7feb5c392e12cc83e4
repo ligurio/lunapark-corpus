@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greaterEqual: 41984
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greaterEqual: 8126464
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greaterEqual: 41984
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

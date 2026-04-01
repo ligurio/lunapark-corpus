@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "\377\377\377\377\377\377\377\377\377\377\377"
+          }
+          binop {
+          }
+          rightexp {
+            str: "\377\377\377\377\377\377\377\377\377\377\377"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "\377\377\377\377\377\377\377\377\377\377\377"
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                      exp {
+                        str: "\377\377\377\377\377\377\377\377\377\377\377"
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

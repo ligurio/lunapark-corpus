@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 25344
+      }
+      startexp {
+        unary {
+          unop {
+          }
+          exp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      stepexp {
+        unary {
+          unop {
+          }
+          exp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 1
+                }
+                startexp {
+                }
+                stopexp {
+                  prefixexp {
+                  }
+                }
+                stepexp {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      prefixexp {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

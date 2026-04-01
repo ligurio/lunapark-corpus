@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                exp {
+                  number: 0
+                }
+              }
+              name {
+                name: "["
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                }
+              }
+              fields {
+                field {
+                  exprassign {
+                    key {
+                      number: 0
+                    }
+                    value {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          fields {
+                            field {
+                            }
+                            sep {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

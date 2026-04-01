@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                      var {
+                      }
+                    }
+                    Name: ""
+                  }
+                }
+              }
+              Name: ""
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                unary {
+                  unop {
+                    bnot: 131072
+                  }
+                  exp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+            bnot: 131072
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}

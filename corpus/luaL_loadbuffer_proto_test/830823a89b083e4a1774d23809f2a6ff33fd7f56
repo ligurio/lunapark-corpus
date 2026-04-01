@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\000\000\000\000\000\000\000\037"
+          num: 0
+        }
+        names {
+          name: "\001\000"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                  stat {
+                    semicolon: false
+                  }
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                        }
+                      }
+                      explist {
+                        explast {
+                          tableconstructor {
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  laststat {
+                    explist {
+                      explist {
+                        explast {
+                          false: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          ellipsis: "\000\000\000\000\000\000\000\000"
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

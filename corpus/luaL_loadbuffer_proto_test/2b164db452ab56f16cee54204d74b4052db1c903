@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        str: "\\"
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            break: 3
+          }
+        }
+      }
+      condition {
+        str: "0\'"
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: false
+          }
+        }
+      }
+      condition {
+        str: "\\"
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: false
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+}

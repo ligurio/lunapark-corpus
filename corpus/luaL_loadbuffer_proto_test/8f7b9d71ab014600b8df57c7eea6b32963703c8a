@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  call {
+                    namedArgs {
+                      prefixexp {
+                        functioncall {
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                        str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

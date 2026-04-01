@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "="
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    explist {
+                      explist {
+                        expressions {
+                          unary {
+                            unop {
+                              negate: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                        explast {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                  explist {
+                                    explist {
+                                      explast {
+                                        prefixexp {
+                                          functioncall {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

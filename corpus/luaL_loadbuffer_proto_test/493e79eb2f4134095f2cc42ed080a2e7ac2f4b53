@@ -1,0 +1,154 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  nil: 33554432
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        nil: 33554432
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          binary {
+                            leftexp {
+                              binary {
+                                leftexp {
+                                  tableconstructor {
+                                  }
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                  unary {
+                                    unop {
+                                      length: 1023410176
+                                    }
+                                    exp {
+                                      tableconstructor {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              mod: 8192
+                            }
+                            rightexp {
+                              unary {
+                                unop {
+                                  length: 1023410176
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          unary {
+                            unop {
+                              length: 1023410176
+                            }
+                            exp {
+                              tableconstructor {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      mod: 8192
+                    }
+                    rightexp {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 8192
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

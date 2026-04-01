@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          str: ""
+        }
+        explast {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  explist {
+                    explist {
+                      expressions {
+                        true: 0
+                      }
+                      explast {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

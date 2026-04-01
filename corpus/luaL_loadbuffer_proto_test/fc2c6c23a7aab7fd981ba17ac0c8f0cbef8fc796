@@ -1,0 +1,129 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 131072
+                    }
+                    exp {
+                      tableconstructor {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                length: 131072
+                              }
+                              exp {
+                                tableconstructor {
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: false
+                                }
+                                laststat {
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                length: 131072
+                              }
+                              exp {
+                                tableconstructor {
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                      laststat {
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            laststat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+  }
+}

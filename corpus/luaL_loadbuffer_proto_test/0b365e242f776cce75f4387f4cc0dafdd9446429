@@ -1,0 +1,126 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+            semicolon: false
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                names {
+                  name: "@"
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          true: 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      forcyclelist {
+                        names {
+                          firstname {
+                            name: ""
+                            num: 0
+                          }
+                          names {
+                            name: "@"
+                            num: 0
+                          }
+                        }
+                        expressions {
+                          explast {
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            stat {
+                              call {
+                              }
+                              semicolon: false
+                            }
+                            laststat {
+                              break: 0
+                              semicolon: true
+                            }
+                          }
+                        }
+                        condition {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            block {
+              block {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

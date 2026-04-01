@@ -1,0 +1,132 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "-"
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            str: "\377\377\000\000"
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      stopexp {
+        str: "55555555555555555555555555555555555555"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 65535
+                }
+                startexp {
+                  str: "5555555555\222\000\000\000555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stepexp {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "\333"
+                        num: 0
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 65535
+                }
+                startexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stepexp {
+                  prefixexp {
+                    var {
+                      indexname {
+                        prefixexp {
+                        }
+                        Name: "\214"
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: "-"
+                            num: 65535
+                          }
+                          startexp {
+                            str: "55555555555555555555555555555555555555"
+                          }
+                          stopexp {
+                            str: "55555555555555555555555555555555555555"
+                          }
+                          stepexp {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: "\333"
+                                  num: 6750208
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 8
+  }
+}

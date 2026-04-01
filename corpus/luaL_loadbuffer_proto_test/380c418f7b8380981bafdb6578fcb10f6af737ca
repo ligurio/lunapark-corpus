@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 1
+      }
+      startexp {
+        false: 1
+      }
+      stopexp {
+        false: 0
+      }
+      stepexp {
+        number: -3.6260443998244473e-217
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greaterEqual: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

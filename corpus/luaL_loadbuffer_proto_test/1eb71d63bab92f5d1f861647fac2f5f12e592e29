@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                          binary {
+                            leftexp {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  exp: 512
+                                }
+                                rightexp {
+                                  ellipsis: "\377"
+                                }
+                              }
+                            }
+                            binop {
+                              add: 9728
+                            }
+                            rightexp {
+                              true: 0
+                            }
+                          }
+                        }
+                        value {
+                          prefixexp {
+                            functioncall {
+                              namedArgs {
+                                prefixexp {
+                                }
+                                name {
+                                  name: "instunroll"
+                                  num: 0
+                                }
+                                args {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                exp: 512
+              }
+              rightexp {
+                ellipsis: "\377"
+              }
+            }
+          }
+          binop {
+            add: 9728
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+}

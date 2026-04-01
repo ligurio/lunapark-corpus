@@ -1,0 +1,55 @@
+chunk {
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "555555555555\24555555555555555555555555555"
+          }
+          binop {
+            sub: 671088640
+          }
+          rightexp {
+            binary {
+              leftexp {
+                str: "555555555555\24555555555555555555555555555"
+              }
+              binop {
+                sub: 671088640
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  number: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 7143424
+          }
+          exp {
+            str: "55555555555555555555555555555555555555"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          number: 0
+        }
+        expressions {
+          binary {
+            leftexp {
+              unary {
+                unop {
+                  negate: 7143424
+                }
+                exp {
+                  str: "55555555555555555555555555555555555555"
+                }
+              }
+            }
+            binop {
+              concat: 6488064
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                      unary {
+                        unop {
+                          negate: 7143424
+                        }
+                        exp {
+                          str: "55555555555555555555555555555555555555"
+                        }
+                      }
+                    }
+                    binop {
+                      equal: 512
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          false: 7143679
+        }
+      }
+    }
+    semicolon: true
+  }
+}

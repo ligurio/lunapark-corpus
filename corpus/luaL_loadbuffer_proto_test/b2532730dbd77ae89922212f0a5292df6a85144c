@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        binary {
+          leftexp {
+            nil: 0
+          }
+          binop {
+            concat: 512
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 512
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    nil: 0
+                  }
+                  binop {
+                    concat: 512
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        mult: 10
+                      }
+                      rightexp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            concat: 512
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                                nil: 0
+                              }
+                              binop {
+                                mult: 10
+                              }
+                              rightexp {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                    concat: 512
+                                  }
+                                  rightexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

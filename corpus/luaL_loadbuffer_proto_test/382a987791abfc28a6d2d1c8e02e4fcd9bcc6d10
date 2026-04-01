@@ -1,0 +1,143 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\000\000\000\000\000\000\000\005"
+          num: 0
+        }
+        names {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          str: ""
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                  function {
+                    body {
+                      block {
+                        chunk {
+                          laststat {
+                            semicolon: true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        namedassign {
+                          name {
+                            name: "\036\000\000\000\000\000\000\000"
+                            num: 0
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            func {
+              name {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                lastname {
+                  name: "~~~~~~~~~~~~~~~~~~~~~"
+                  num: 0
+                }
+              }
+              body {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                        }
+                        explist {
+                          explast {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

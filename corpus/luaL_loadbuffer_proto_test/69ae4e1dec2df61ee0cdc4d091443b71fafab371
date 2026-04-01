@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  nil: 8
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      exp: 8
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+  }
+}

@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                          var {
+                            name {
+                              name: ""
+                              num: 4294967295
+                            }
+                          }
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              negate: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  Name: ""
+                }
+              }
+            }
+            exp {
+              unary {
+                unop {
+                  negate: 0
+                }
+                exp {
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              namedassign {
+                name {
+                  name: ""
+                  num: 0
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    ellipsis: ")"
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            ellipsis: ")"
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              ellipsis: ")"
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

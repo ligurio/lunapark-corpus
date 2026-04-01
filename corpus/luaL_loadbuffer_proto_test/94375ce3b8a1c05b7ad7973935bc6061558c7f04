@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      str: "1"
+                    }
+                    binop {
+                      add: 256
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            number: 2
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  whilecycle {
+                                    condition {
+                                      false: 0
+                                    }
+                                    doblock {
+                                      block {
+                                        chunk {
+                                          stat {
+                                            whilecycle {
+                                              condition {
+                                                false: 0
+                                              }
+                                              doblock {
+                                                block {
+                                                  chunk {
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          laststat {
+                                            break: 538970624
+                                            semicolon: true
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

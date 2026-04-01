@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      false: 125
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          number: nan
+                        }
+                        binop {
+                          add: 125
+                        }
+                        rightexp {
+                          true: 88
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

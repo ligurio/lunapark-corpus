@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "@\374A\200\000\000\000\000"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          prefixexp {
+                            exp {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    exprassign {
+                                      key {
+                                      }
+                                      value {
+                                        unary {
+                                          unop {
+                                            negate: 65280
+                                          }
+                                          exp {
+                                            prefixexp {
+                                              exp {
+                                                tableconstructor {
+                                                  fieldlist {
+                                                    firstField {
+                                                      expression {
+                                                        nil: 32768
+                                                      }
+                                                    }
+                                                    lastSep {
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  lastSep {
+                                    comma: 0
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    namedassign {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      value {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                          }
+                          rightexp {
+                            str: "\000\000\000\000\000\001\234\200"
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

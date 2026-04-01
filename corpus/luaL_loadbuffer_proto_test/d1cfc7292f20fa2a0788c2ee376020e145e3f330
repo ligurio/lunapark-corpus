@@ -1,0 +1,67 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+                exp {
+                }
+              }
+              Name: "And"
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        concat: 8192
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                            exp {
+                            }
+                          }
+                          Name: "and"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

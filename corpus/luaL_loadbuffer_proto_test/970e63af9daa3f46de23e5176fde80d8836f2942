@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  number: 0
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                        }
+                      }
+                      explist {
+                        explast {
+                          number: 0
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                          }
+                          Name: "2"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

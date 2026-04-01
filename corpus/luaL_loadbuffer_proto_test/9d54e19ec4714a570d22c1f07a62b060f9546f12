@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\001\031"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                          namedArgs {
+                            prefixexp {
+                              exp {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      exprassign {
+                                        key {
+                                        }
+                                        value {
+                                          nil: 0
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              prefixexp {
+                                functioncall {
+                                  namedArgs {
+                                    prefixexp {
+                                    }
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    args {
+                                      explist {
+                                        explist {
+                                          expressions {
+                                            function {
+                                              body {
+                                                block {
+                                                  chunk {
+                                                    laststat {
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          explast {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        lastSep {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

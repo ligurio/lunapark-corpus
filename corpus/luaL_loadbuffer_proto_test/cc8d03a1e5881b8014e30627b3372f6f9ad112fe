@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                        negate: 2
+                      }
+                      exp {
+                        str: "111111111111111111111111111111111111111111111111111111"
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 2
+          }
+          exp {
+            str: "111111111111111111111111111111111111111111111111111111"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

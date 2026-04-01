@@ -1,0 +1,96 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                        false: 14483456
+                      }
+                    }
+                    lastSep {
+                      semicolon: 61696
+                    }
+                  }
+                }
+              }
+              binop {
+                greaterEqual: 8126464
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greaterEqual: 8126464
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greaterEqual: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

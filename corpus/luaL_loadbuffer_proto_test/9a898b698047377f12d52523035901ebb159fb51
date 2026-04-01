@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: "\320"
+          num: 7
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greater: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greater: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greater: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

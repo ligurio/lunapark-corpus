@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                ellipsis: "\331\000\000\000\000\000\000\000"
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      break: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

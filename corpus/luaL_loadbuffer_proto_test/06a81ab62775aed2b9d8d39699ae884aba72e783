@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        true: 1
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                concat: 6488064
+              }
+              rightexp {
+                prefixexp {
+                  exp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            break: 0
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          name {
+            name: ""
+            num: 2621440
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+}

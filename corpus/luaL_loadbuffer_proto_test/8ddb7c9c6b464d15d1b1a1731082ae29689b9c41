@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    nil: 262144
+                  }
+                  binop {
+                    and: 0
+                  }
+                  rightexp {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            nil: 262144
+          }
+          binop {
+            and: 0
+          }
+          rightexp {
+            tableconstructor {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

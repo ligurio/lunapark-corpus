@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            or: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 134217728
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  str: "\272"
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                  prefixexp {
+                    var {
+                      indexname {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                        Name: "\031"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+            var {
+              indexname {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+                Name: "~"
+              }
+            }
+          }
+        }
+        expressions {
+          prefixexp {
+            var {
+              indexname {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+                Name: "\031"
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

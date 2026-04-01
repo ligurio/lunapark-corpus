@@ -1,0 +1,115 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                explist {
+                  explist {
+                    explast {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                  explist {
+                                    explist {
+                                      explast {
+                                        nil: 65535
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          greaterEqual: 0
+                        }
+                        rightexp {
+                          unary {
+                            unop {
+                              bnot: 65535
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              explast {
+                binary {
+                  leftexp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              false: 0
+                            }
+                            value {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+        }
+      }
+    }
+  }
+}

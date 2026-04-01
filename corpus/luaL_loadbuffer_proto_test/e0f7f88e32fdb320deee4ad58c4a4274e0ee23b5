@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: ""
+                num: 4
+              }
+              args {
+                explist {
+                  explist {
+                    explast {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          sub: 0
+                        }
+                        rightexp {
+                          unary {
+                            unop {
+                              not: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                unary {
+                  unop {
+                    not: 0
+                  }
+                  exp {
+                  }
+                }
+              }
+              explast {
+                binary {
+                  leftexp {
+                    prefixexp {
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        not: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+}

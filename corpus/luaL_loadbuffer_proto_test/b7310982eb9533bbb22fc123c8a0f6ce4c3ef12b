@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                true: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                    laststat {
+                      explist {
+                        explist {
+                          explast {
+                            number: 0
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    true: 0
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,126 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+              var {
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          length: 0
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              length: 0
+                            }
+                            exp {
+                              str: "loopunroll"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                  }
+                  sep {
+                    comma: 64768
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

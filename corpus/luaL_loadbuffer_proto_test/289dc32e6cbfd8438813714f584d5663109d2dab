@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      shr: 262144
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 262144
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                mod: 61952
+                              }
+                              rightexp {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                    exp: 167772160
+                                  }
+                                  rightexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          stepexp {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        lastSep {
+                          comma: 5
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            number: 0
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              lastSep {
+                comma: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

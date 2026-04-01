@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          nil: 0
+        }
+        explast {
+          function {
+            body {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                            semicolon: false
+                          }
+                        }
+                      }
+                      condition {
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    semicolon: true
+                  }
+                  stat {
+                    semicolon: false
+                  }
+                  laststat {
+                    explist {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

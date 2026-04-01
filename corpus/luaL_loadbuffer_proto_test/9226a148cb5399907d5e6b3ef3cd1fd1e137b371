@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        true: 32
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    localfunc {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      funcbody {
+                        parlist {
+                          ellipsis: "\372\376\377\377"
+                        }
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                nil: 0
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+          laststat {
+            break: 32
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  laststat {
+    break: 32
+    semicolon: true
+  }
+}

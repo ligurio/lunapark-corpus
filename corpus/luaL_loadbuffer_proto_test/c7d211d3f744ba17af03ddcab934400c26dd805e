@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 10
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            functioncall {
+              namedArgs {
+                prefixexp {
+                }
+                name {
+                  name: "\377\377\377\377"
+                  num: 1073741824
+                }
+                args {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                expression {
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              ellipsis: "\377\377\377\377"
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          number: 4.4850504775303759e-308
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

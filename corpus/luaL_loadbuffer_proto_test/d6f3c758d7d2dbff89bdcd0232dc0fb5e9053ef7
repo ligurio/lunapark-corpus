@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                shl: 512
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            concat: 512
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                lessEqual: 2097152
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 1919902305
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    ellipsis: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

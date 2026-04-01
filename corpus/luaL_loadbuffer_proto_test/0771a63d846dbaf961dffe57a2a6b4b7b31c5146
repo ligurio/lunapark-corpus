@@ -1,0 +1,54 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            add: 262144
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

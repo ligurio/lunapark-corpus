@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              exp {
+              }
+            }
+            exp {
+              ellipsis: "++"
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+              mod: 0
+            }
+            rightexp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      or: 16
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

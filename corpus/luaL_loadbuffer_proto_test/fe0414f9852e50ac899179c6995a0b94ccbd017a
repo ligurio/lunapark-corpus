@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          var {
+            indexexpr {
+              prefixexp {
+              }
+              exp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    name {
+                      name: "0"
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              prefixexp {
+                                var {
+                                  indexexpr {
+                                    prefixexp {
+                                    }
+                                    exp {
+                                      str: "0"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              true: 0
+                            }
+                          }
+                        }
+                        lastSep {
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    true: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

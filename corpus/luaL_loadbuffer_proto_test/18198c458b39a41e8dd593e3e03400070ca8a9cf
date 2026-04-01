@@ -1,0 +1,78 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    false: 64512
+                  }
+                  value {
+                    false: 0
+                  }
+                }
+              }
+              fields {
+                field {
+                  expression {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          namedassign {
+                            name {
+                              name: "("
+                              num: 0
+                            }
+                            value {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

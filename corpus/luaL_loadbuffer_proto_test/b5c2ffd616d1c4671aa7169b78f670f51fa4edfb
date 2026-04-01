@@ -1,0 +1,34 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            ellipsis: "n"
+          }
+          binop {
+            concat: 262144
+          }
+          rightexp {
+            function {
+              body {
+                parlist {
+                  ellipsis: "="
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

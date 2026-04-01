@@ -1,0 +1,67 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            explist {
+              explist {
+                expressions {
+                  str: "\260"
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            str: "\260"
+          }
+          binop {
+            concat: 6496256
+          }
+          rightexp {
+            prefixexp {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            unary {
+              unop {
+                negate: 6496256
+              }
+              exp {
+                false: 6496256
+              }
+            }
+          }
+          binop {
+            concat: 6496256
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                          str: "\004\000\000\000\000\000\000\000"
+                        }
+                        value {
+                        }
+                      }
+                    }
+                    fields {
+                      field {
+                        expression {
+                          ellipsis: "\325"
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                    fields {
+                      field {
+                        namedassign {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          value {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            ellipsis: ""
+          }
+          binop {
+          }
+          rightexp {
+            function {
+              body {
+                parlist {
+                  namelist {
+                    namelist {
+                      firstname {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                    ellipsis: "hot"
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

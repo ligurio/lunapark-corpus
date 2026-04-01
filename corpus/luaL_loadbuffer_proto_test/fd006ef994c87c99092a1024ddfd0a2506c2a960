@@ -1,0 +1,168 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "!"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        false: 2097152
+      }
+      stepexp {
+        unary {
+          unop {
+            negate: 2097152
+          }
+          exp {
+            number: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+              semicolon: false
+            }
+            laststat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "!"
+        num: 2097152
+      }
+      startexp {
+      }
+      stopexp {
+        nil: 0
+      }
+      stepexp {
+        unary {
+          unop {
+            negate: 2097152
+          }
+          exp {
+            number: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+            }
+            laststat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                unary {
+                  unop {
+                    negate: 2097152
+                  }
+                  exp {
+                    number: 0
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                      }
+                      semicolon: false
+                    }
+                    stat {
+                      forcyclename {
+                        name {
+                          name: "!"
+                          num: 0
+                        }
+                        startexp {
+                        }
+                        stopexp {
+                          false: 2097152
+                        }
+                        stepexp {
+                          unary {
+                            unop {
+                              negate: 2097152
+                            }
+                            exp {
+                              number: 0
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                call {
+                                }
+                                semicolon: false
+                              }
+                              laststat {
+                                semicolon: false
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    laststat {
+                      semicolon: false
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        tableconstructor {
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

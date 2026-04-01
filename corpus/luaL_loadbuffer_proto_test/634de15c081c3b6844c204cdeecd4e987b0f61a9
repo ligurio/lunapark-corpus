@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        str: "\027"
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          false: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+            laststat {
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

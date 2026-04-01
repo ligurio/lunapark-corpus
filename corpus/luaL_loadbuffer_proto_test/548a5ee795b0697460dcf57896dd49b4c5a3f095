@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: "\376\376\377\377"
+          num: 1
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  str: "    local v1, v2 = ...\n    return always_number(v1) >> always_nu"
+                }
+                explast {
+                  str: "9"
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    tableconstructor {
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        tableconstructor {
+                        }
+                      }
+                      binop {
+                        bor: 0
+                      }
+                      rightexp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            explist {
+              explist {
+                explast {
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+            }
+          }
+          binop {
+          }
+          rightexp {
+            binary {
+              leftexp {
+                tableconstructor {
+                }
+              }
+              binop {
+                bor: 0
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          function {
+            body {
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        explast {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                  laststat {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    semicolon: false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,148 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      nil: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      nil: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                      }
+                    }
+                    binop {
+                      or: 1073741824
+                    }
+                    rightexp {
+                      nil: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                      break: 1056964608
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            stat {
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073741824
+        }
+      }
+    }
+  }
+}

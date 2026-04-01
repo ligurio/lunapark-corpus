@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      concat: 6488064
+                    }
+                    rightexp {
+                      prefixexp {
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              fields {
+                                field {
+                                  exprassign {
+                                    key {
+                                      ellipsis: "    local v1, v2 = ...\n    return always_number(v1) | always_num"
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      call {
+                        prefArgs {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                      }
+                                      fields {
+                                        field {
+                                          exprassign {
+                                            key {
+                                              number: 5.1176698745665632e-307
+                                            }
+                                            value {
+                                            }
+                                          }
+                                        }
+                                        sep {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          args {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

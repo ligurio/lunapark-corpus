@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 512
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        sub: 512
+                      }
+                      rightexp {
+                        number: 0
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 512
+                  }
+                  rightexp {
+                    number: 1.6247916446565031e+243
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    str: ";"
+                  }
+                  value {
+                  }
+                }
+              }
+              lastSep {
+                comma: 4294967288
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

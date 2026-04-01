@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                }
+                sep {
+                }
+              }
+              lastSep {
+                semicolon: 256
+              }
+            }
+          }
+        }
+        expressions {
+          str: "\377\376\373"
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                                fields {
+                                  field {
+                                  }
+                                  sep {
+                                  }
+                                }
+                                lastSep {
+                                  semicolon: 256
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            prefixexp {
+                              functioncall {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                            }
+                            vars {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                          explist {
+                            expressions {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                  lastSep {
+                                    comma: 256
+                                  }
+                                }
+                              }
+                            }
+                            explast {
+                              true: 256
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

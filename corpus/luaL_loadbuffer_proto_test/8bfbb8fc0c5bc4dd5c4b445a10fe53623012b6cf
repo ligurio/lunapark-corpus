@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 8192
+        }
+      }
+      expressions {
+        explast {
+          binary {
+            leftexp {
+            }
+            binop {
+              greater: 65792
+            }
+            rightexp {
+              str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          false: 0
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "\014"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            ellipsis: "\014"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  parlist {
+                    namelist {
+                      namelist {
+                        firstname {
+                          name: ""
+                          num: 0
+                        }
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "n"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          prefixexp {
+            functioncall {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    explist {
+                      explist {
+                        expressions {
+                          false: 1024
+                        }
+                        explast {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                }
+                                args {
+                                  str: "377\\377\\377\\377\\377\\377\\377\\377\\377\\377\"\n                          num: 0\n                        }\n                      }\n                 ,"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    exp {
+                      str: "377\\377\\377\\377\\377\\377\\377\\377\\377\\377\"\n                          num: 0\n                        }\n                      }\n                 ,"
+                    }
+                  }
+                  args {
+                    explist {
+                      explist {
+                        explast {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                  exp {
+                                    str: "377\\377\\377\\377\\377\\377\\377\\377\\377\\377\"\n                          num: 0\n                        }\n                      }\n                 ,"
+                                  }
+                                }
+                                args {
+                                  explist {
+                                    explist {
+                                      explast {
+                                        prefixexp {
+                                          functioncall {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

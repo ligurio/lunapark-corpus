@@ -1,0 +1,168 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  true: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      laststat {
+                        break: 0
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                true: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          binary {
+                            leftexp {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                  nil: 2097152
+                                }
+                              }
+                            }
+                            binop {
+                              sub: 2097152
+                            }
+                            rightexp {
+                              prefixexp {
+                                exp {
+                                  str: "2"
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              laststat {
+                                break: 0
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: false
+                    }
+                    laststat {
+                      break: 0
+                      semicolon: false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        true: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      laststat {
+                        break: 0
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        unary {
+          unop {
+            bnot: 0
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                              }
+                              name {
+                                name: ""
+                                num: 131072
+                              }
+                              args {
+                                explist {
+                                  explist {
+                                    expressions {
+                                      true: 0
+                                    }
+                                    explast {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        or: 0
+                      }
+                      rightexp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

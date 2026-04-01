@@ -1,0 +1,118 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    forcyclename {
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      startexp {
+                      }
+                      stopexp {
+                        function {
+                          body {
+                            block {
+                              chunk {
+                                laststat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                str: "q"
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    str: "    local v1, v2 = ...\n    return always_number(v1) << always_nu"
+                  }
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          explist {
+            explist {
+              explast {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      exprassign {
+                        key {
+                        }
+                        value {
+                        }
+                      }
+                    }
+                    fields {
+                      field {
+                      }
+                      sep {
+                        semicolon: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          ellipsis: "\017"
+        }
+      }
+    }
+  }
+}

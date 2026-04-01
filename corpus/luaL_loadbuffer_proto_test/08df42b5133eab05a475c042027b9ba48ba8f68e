@@ -1,0 +1,174 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        number: 1.06224113855868e-321
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        true: 65534
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                            true: 0
+                          }
+                          stopexp {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  call {
+                                  }
+                                }
+                                laststat {
+                                  break: 65534
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        forcyclelist {
+                          names {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                          expressions {
+                            explast {
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                laststat {
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

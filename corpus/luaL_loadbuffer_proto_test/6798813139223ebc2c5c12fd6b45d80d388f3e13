@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 4096
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 6488064
+          }
+          rightexp {
+            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

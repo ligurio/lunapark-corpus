@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        false: 17
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 2
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

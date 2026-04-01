@@ -1,0 +1,37 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            str: "="
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          binary {
+            leftexp {
+              str: "="
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

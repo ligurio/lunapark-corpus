@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          laststat {
+                            explist {
+                            }
+                          }
+                        }
+                      }
+                      condition {
+                        binary {
+                          leftexp {
+                            false: 0
+                          }
+                          binop {
+                            sub: 536870912
+                          }
+                          rightexp {
+                            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        lessEqual: 536870912
+                      }
+                      rightexp {
+                        str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                      }
+                    }
+                  }
+                  binop {
+                    less: 0
+                  }
+                  rightexp {
+                    str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 0
+          }
+          rightexp {
+            str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                      number: 4.94065645841247e-324
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                  }
+                }
+                explast {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                      number: 4.94065645841247e-324
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                  }
+                }
+                explast {
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

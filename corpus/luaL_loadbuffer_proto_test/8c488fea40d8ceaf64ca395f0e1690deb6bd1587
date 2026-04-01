@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          not: 4
+                        }
+                        exp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                      }
+                      value {
+                        unary {
+                          unop {
+                            length: 0
+                          }
+                          exp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  exprassign {
+                                    key {
+                                    }
+                                    value {
+                                      false: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

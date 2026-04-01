@@ -1,0 +1,119 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  prefixexp {
+                    exp {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              str: "!"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+}

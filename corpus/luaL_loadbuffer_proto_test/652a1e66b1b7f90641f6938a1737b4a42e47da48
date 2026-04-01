@@ -1,0 +1,50 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 512
+      }
+      startexp {
+        unary {
+          unop {
+            negate: 108
+          }
+          exp {
+            str: "+"
+          }
+        }
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 131072
+                }
+                startexp {
+                }
+                stopexp {
+                  nil: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

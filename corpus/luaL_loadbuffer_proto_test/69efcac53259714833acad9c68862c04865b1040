@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: ""
+                    num: 5
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  add: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                explast {
+                  number: 0
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            exp: 10752
+          }
+          rightexp {
+            nil: 10752
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

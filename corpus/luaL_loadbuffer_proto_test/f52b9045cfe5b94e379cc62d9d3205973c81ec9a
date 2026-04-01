@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            unary {
+              unop {
+                negate: 0
+              }
+              exp {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  parlist {
+                    namelist {
+                      namelist {
+                        firstname {
+                          name: ""
+                          num: 0
+                        }
+                      }
+                      ellipsis: ""
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    nil: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

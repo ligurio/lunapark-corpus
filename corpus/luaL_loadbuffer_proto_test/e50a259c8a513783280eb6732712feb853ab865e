@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          tableconstructor {
+                          }
+                        }
+                        binop {
+                          less: 0
+                        }
+                        rightexp {
+                          true: 16384
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          greaterEqual: 7
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                              }
+                            }
+                            binop {
+                              less: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

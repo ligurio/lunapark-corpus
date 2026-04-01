@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  var {
+                    name {
+                      name: "\000\000\000\000\000\000\000\013"
+                      num: 0
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: ""
+                  }
+                }
+                vars {
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                  }
+                  Name: ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

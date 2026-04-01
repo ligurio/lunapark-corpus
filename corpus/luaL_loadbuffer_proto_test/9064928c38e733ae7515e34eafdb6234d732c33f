@@ -1,0 +1,159 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                namedassign {
+                                  name {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  value {
+                                    str: "fuse"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  exp {
+                  }
+                }
+              }
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  add: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  str: "~"
+                }
+                explast {
+                  number: 0
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            str: "~"
+          }
+          binop {
+            exp: 10752
+          }
+          rightexp {
+            nil: 10752
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

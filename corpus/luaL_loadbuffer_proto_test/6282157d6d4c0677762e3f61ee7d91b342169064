@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        unary {
+          unop {
+          }
+          exp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              or: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      or: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                stepexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          or: 0
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      or: 0
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              or: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

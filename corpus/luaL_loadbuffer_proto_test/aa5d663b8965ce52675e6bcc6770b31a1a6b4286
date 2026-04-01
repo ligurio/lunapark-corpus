@@ -1,0 +1,150 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          not: 1
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              length: 1
+                            }
+                            exp {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                        }
+                                        value {
+                                          ellipsis: "loopunroll"
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                    }
+                                    args {
+                                      str: "func"
+                                    }
+                                  }
+                                }
+                              }
+                              name {
+                                name: "loopunroll"
+                                num: 0
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      value {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                            }
+                            lastSep {
+                              semicolon: 61696
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    number: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "loopunroll"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 771751936
+    semicolon: true
+  }
+}

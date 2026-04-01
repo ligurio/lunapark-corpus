@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                              exp {
+                                nil: 4
+                              }
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                        str: "\001\000\377\377"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            name {
+                              name: "\000\000\000\000\000\000\000\n"
+                              num: 0
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  name {
+                    name: "\001\000\377\377"
+                    num: 0
+                  }
+                  args {
+                    str: "callunroll"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

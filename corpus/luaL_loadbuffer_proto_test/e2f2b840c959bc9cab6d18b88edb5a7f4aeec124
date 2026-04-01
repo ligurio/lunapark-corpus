@@ -1,0 +1,72 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+          stat {
+          }
+          stat {
+            ifstat {
+              condition {
+                nil: 0
+              }
+              first {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            laststat {
+              break: 0
+              semicolon: false
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+          stat {
+            ifstat {
+              condition {
+                nil: 0
+              }
+              first {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+          laststat {
+            break: 0
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

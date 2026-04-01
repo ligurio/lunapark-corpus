@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "0"
+          num: 0
+        }
+        names {
+          name: "0"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    explist {
+                      explist {
+                        explast {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 2
+  }
+}

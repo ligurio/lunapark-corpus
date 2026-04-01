@@ -1,0 +1,155 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        nil: 63
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                var {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                  }
+                  value {
+                  }
+                }
+              }
+              fields {
+                field {
+                  namedassign {
+                    name {
+                      name: "["
+                      num: 0
+                    }
+                    value {
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+              lastSep {
+              }
+            }
+          }
+        }
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                  }
+                  value {
+                  }
+                }
+              }
+              fields {
+                field {
+                  expression {
+                    tableconstructor {
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+              lastSep {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "g"
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

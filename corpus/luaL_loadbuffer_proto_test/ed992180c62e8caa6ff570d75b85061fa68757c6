@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            func {
+              name {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                lastname {
+                  name: "start"
+                  num: 0
+                }
+              }
+              body {
+                parlist {
+                  ellipsis: ""
+                }
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            call {
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        lastname {
+          name: "\376\376\377\377"
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+            ellipsis: "start"
+          }
+        }
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                  lastname {
+                    name: "start"
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

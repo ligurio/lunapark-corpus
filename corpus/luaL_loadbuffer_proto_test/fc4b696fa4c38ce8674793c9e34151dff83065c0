@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            prefixexp {
+                              exp {
+                              }
+                            }
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                  }
+                                  args {
+                                    explist {
+                                      explist {
+                                        explast {
+                                          tableconstructor {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 64
+                  }
+                  rightexp {
+                    nil: 1
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 64
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1
+        }
+      }
+    }
+  }
+}

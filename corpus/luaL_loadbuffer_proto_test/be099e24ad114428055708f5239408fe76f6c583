@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            ellipsis: "callunr"
+          }
+          binop {
+            or: 134217728
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 134217728
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 134217728
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

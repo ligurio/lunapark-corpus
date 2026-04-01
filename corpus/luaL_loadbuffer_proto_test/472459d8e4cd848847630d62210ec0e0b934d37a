@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        prefixexp {
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          lastSep {
+                            semicolon: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                stepexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                          }
+                        }
+                        binop {
+                          or: 0
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                }
+                              }
+                            }
+                            binop {
+                              or: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        localnames {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

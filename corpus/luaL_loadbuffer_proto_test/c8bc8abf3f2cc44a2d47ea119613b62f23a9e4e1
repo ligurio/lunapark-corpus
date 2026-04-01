@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+          }
+        }
+        expressions {
+        }
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        true: 0
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                  }
+                }
+                expressions {
+                  number: 0
+                }
+                explast {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

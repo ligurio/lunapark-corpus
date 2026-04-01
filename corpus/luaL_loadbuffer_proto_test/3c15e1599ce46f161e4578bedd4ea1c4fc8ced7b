@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        str: "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      stepexp {
+        str: "!"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          ellipsis: "\325"
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            ellipsis: "\325"
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                  number: 6.4970254658806307e-229
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          ellipsis: "\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                }
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  exprassign {
+                                    key {
+                                      tableconstructor {
+                                        fieldlist {
+                                          firstField {
+                                          }
+                                        }
+                                      }
+                                    }
+                                    value {
+                                      prefixexp {
+                                        functioncall {
+                                          prefArgs {
+                                            prefixexp {
+                                            }
+                                            args {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                            true: 0
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

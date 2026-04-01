@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  call {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      break: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

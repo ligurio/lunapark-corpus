@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    tableconstructor {
+                    }
+                  }
+                  value {
+                    binary {
+                      leftexp {
+                        ellipsis: ""
+                      }
+                      binop {
+                        mod: 0
+                      }
+                      rightexp {
+                        str: "7"
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  laststat {
+    semicolon: false
+  }
+}

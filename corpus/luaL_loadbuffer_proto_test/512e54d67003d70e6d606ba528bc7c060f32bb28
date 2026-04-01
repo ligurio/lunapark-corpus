@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 512
+              }
+              startexp {
+              }
+              stopexp {
+                true: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "abort"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        binary {
+          leftexp {
+            false: 0
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

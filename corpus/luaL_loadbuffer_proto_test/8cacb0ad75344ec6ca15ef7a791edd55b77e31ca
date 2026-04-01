@@ -1,0 +1,34 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+              }
+              name {
+                name: "instunroll"
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 28416
+    semicolon: true
+  }
+}

@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  unary {
+                    unop {
+                      length: 65536
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    ellipsis: " \000\000\000\000\000\000\000"
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+                comma: 0
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            false: 0
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

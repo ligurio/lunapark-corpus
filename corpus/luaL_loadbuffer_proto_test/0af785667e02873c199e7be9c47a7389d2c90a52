@@ -1,0 +1,163 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 0
+              }
+              funcbody {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  exprassign {
+                                    key {
+                                      true: 0
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            nil: 16
+          }
+          binop {
+            bxor: 0
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                    expression {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          fields {
+                            field {
+                              expression {
+                              }
+                            }
+                            sep {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          prefixexp {
+            exp {
+              number: 1.69759663277222e-313
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    true: 268435456
+                  }
+                  binop {
+                    exp: 268435456
+                  }
+                  rightexp {
+                    nil: 0
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+          ellipsis: "\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006\006"
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

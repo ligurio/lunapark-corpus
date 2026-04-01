@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 1024
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 125
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                            }
+                          }
+                          explist {
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                            nil: 1024
+                          }
+                          stepexp {
+                            unary {
+                              unop {
+                                negate: 125
+                              }
+                              exp {
+                                number: 2.42711557637711e-312
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        localnames {
+                          namelist {
+                            firstname {
+                              name: ""
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

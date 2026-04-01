@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: ""
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 2
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

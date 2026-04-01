@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                      functioncall {
+                                      }
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                              args {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      expression {
+                                        str: "    local v1@ v2 = ...\n    return always_number(v1) & always_num"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        args {
+                          str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+          ellipsis: ""
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

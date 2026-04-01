@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      ellipsis: "\265"
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 2097152
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+                stopexp {
+                  nil: 2097152
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      not: 2147483648
+                    }
+                    exp {
+                      ellipsis: "\265"
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

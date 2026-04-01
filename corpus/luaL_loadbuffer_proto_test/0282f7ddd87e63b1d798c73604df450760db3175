@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  number: 0
+                }
+                explast {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      true: 0
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          name {
+            name: ""
+            num: 0
+          }
+        }
+      }
+      explist {
+        expressions {
+          number: 0
+        }
+        explast {
+          unary {
+            unop {
+              length: 0
+            }
+            exp {
+              true: 0
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          function {
+            body {
+              parlist {
+                ellipsis: "\014\000\000\000\000\000\000\000"
+              }
+              block {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+          ellipsis: "@"
+        }
+      }
+    }
+    semicolon: false
+  }
+}

@@ -1,0 +1,138 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        ellipsis: "#"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              fields {
+                field {
+                  exprassign {
+                    key {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                        }
+                        fields {
+                          field {
+                            exprassign {
+                              key {
+                                false: 536870912
+                              }
+                              value {
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                        fields {
+                          field {
+                            exprassign {
+                              key {
+                                binary {
+                                  leftexp {
+                                    function {
+                                      body {
+                                        parlist {
+                                          ellipsis: "@\374A\200\000\000\000\000"
+                                        }
+                                        block {
+                                          chunk {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  binop {
+                                  }
+                                  rightexp {
+                                  }
+                                }
+                              }
+                              value {
+                              }
+                            }
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

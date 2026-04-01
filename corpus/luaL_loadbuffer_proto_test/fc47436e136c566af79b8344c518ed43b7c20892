@@ -1,0 +1,137 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: ""
+            num: 0
+          }
+        }
+        vars {
+          name {
+            name: "`"
+            num: 4
+          }
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              lastSep {
+                semicolon: 0
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            lastSep {
+              semicolon: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                            unary {
+                              unop {
+                                length: 0
+                              }
+                              exp {
+                                prefixexp {
+                                  exp {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          exprassign {
+                                            key {
+                                            }
+                                            value {
+                                              unary {
+                                                unop {
+                                                  length: 4096
+                                                }
+                                                exp {
+                                                  prefixexp {
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              unary {
+                                unop {
+                                  length: 4294967295
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

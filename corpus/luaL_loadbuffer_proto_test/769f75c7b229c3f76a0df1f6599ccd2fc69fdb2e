@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        mod: 1024
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              prefixexp {
+                                var {
+                                  indexname {
+                                    prefixexp {
+                                    }
+                                    Name: "\005\000\000\000\000\000\000\000"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        lastSep {
+                        }
+                      }
+                    }
+                  }
+                  expressions {
+                    nil: 0
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

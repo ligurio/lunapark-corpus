@@ -1,0 +1,128 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      false: 10752
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      unary {
+                        unop {
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            binary {
+                              leftexp {
+                                false: 10752
+                              }
+                              binop {
+                                concat: 0
+                              }
+                              rightexp {
+                                true: 10752
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    ellipsis: ""
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

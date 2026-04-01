@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        str: ""
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                str: ""
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  prefixexp {
+                    exp {
+                      str: "\004\000\000\000"
+                    }
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+            exp {
+              str: "\004\000\000\000"
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+            exp {
+              str: "\004\000\000\000"
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

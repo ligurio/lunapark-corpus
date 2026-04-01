@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      str: "000000000000000000000000000000000000000000000000000000000000000000000000000001"
+                    }
+                    binop {
+                      add: 256
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: false
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            laststat {
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              ellipsis: "@\000"
+            }
+            binop {
+            }
+            rightexp {
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

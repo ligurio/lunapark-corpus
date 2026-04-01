@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: "\377\377\377\377\377\377\377\022"
+                  num: 0
+                }
+              }
+              expressions {
+                explast {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            stat {
+                              semicolon: false
+                            }
+                          }
+                        }
+                        condition {
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+  }
+}

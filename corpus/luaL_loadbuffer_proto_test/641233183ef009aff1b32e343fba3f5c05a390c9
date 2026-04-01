@@ -1,0 +1,162 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                        }
+                        vars {
+                          name {
+                            name: "v"
+                            num: 0
+                          }
+                        }
+                      }
+                      explist {
+                        explast {
+                        }
+                      }
+                    }
+                    semicolon: false
+                  }
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          stat {
+                            semicolon: false
+                          }
+                          laststat {
+                            semicolon: true
+                          }
+                        }
+                      }
+                      condition {
+                        nil: 10
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                  stat {
+                    list {
+                      varlist {
+                        var {
+                        }
+                        vars {
+                          name {
+                            name: "v"
+                            num: 0
+                          }
+                        }
+                      }
+                      explist {
+                        explast {
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            ifstat {
+              condition {
+                nil: 0
+              }
+              first {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+              last {
+                chunk {
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: "v"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+            semicolon: false
+          }
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: false
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  name {
+                    name: "v"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                explast {
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

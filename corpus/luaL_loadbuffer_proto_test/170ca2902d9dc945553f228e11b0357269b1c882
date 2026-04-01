@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "==============================================================================================================================="
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      stepexp {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  function {
+                    body {
+                      parlist {
+                        namelist {
+                          namelist {
+                            firstname {
+                              name: "*"
+                              num: 0
+                            }
+                          }
+                        }
+                      }
+                      block {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          unary {
+            unop {
+            }
+            exp {
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    explist {
+                      explist {
+                        expressions {
+                          prefixexp {
+                            var {
+                              indexname {
+                                prefixexp {
+                                }
+                                Name: "&"
+                              }
+                            }
+                          }
+                        }
+                        explast {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              lastSep {
+                comma: 0
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

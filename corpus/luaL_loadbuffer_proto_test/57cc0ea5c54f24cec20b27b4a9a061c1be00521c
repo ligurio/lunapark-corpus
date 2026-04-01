@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                      }
+                      Name: "!"
+                    }
+                  }
+                  vars {
+                    name {
+                      name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                      num: 0
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  expressions {
+                    prefixexp {
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

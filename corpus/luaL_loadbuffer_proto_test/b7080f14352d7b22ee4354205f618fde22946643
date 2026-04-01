@@ -1,0 +1,138 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          var {
+                            indexname {
+                              prefixexp {
+                              }
+                              Name: "$"
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        sub: 1048576
+                      }
+                      rightexp {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    sub: 1048576
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                  }
+                                  value {
+                                    nil: 1572608
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                  namedassign {
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    value {
+                                      prefixexp {
+                                        functioncall {
+                                          prefArgs {
+                                            prefixexp {
+                                            }
+                                            args {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    false: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

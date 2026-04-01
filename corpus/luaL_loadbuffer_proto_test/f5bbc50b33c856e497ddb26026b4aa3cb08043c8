@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                nil: 16384
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250"
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          ellipsis: "\377\377\377\377"
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    str: "\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250\250"
+                  }
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                            ellipsis: "\377\377\377\377"
+                          }
+                          first {
+                            chunk {
+                            }
+                          }
+                          last {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    false: 12800
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+}

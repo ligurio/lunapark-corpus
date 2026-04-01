@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+              condition {
+                unary {
+                  unop {
+                    negate: 0
+                  }
+                  exp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 0
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                    }
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                    }
+                    value {
+                      unary {
+                        unop {
+                          bnot: 22
+                        }
+                        exp {
+                          unary {
+                            unop {
+                              length: 1
+                            }
+                            exp {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                  }
+                                  fields {
+                                    field {
+                                      exprassign {
+                                        key {
+                                        }
+                                        value {
+                                          ellipsis: "loopunroll"
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                                var {
+                                  name {
+                                    name: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+                                    num: 0
+                                  }
+                                }
+                              }
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  sep {
+                    comma: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    number: 2.781342323134e-309
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "loopunroll"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 771751936
+    semicolon: true
+  }
+}

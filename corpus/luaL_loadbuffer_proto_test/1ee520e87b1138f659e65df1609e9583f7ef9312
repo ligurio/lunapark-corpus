@@ -1,0 +1,131 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: ""
+            num: 0
+          }
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              number: -5.0911231358405468e+306
+            }
+            binop {
+              div: 6488064
+            }
+            rightexp {
+            }
+          }
+        }
+        explast {
+          ellipsis: "\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003"
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                prefixexp {
+                  var {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+                semicolon: 9728
+              }
+            }
+            fields {
+              field {
+                namedassign {
+                  name {
+                    name: "\001\000\000\000\000\000\000\032"
+                    num: 0
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                          str: "callunroll"
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    exp {
+                      str: " "
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

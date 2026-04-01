@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            ellipsis: "\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312\312"
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        function {
+                          body {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        number: -5.4861240687936887e+303
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

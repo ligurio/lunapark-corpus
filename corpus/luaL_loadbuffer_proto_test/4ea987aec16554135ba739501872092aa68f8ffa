@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    localfunc {
+      name {
+        name: "\031\031\031\031"
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            str: "\000"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  true: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                exp {
+                  number: 0
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+                explist {
+                  explist {
+                    expressions {
+                      function {
+                        body {
+                          block {
+                            chunk {
+                              laststat {
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    explast {
+                      unary {
+                        unop {
+                        }
+                        exp {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                  laststat {
+                                    semicolon: true
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

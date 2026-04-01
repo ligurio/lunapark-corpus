@@ -1,0 +1,37 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\377\377\377\377\377\377\377\377\377\377\377"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "\377\377\377\377\377\377\377\377\377\377\377"
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

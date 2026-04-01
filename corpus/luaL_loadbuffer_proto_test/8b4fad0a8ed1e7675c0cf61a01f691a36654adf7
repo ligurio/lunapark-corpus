@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 1024
+        }
+        lastname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            function {
+              body {
+                block {
+                  chunk {
+                    laststat {
+                      break: 65536
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: "\377\377"
+          num: 0
+        }
+      }
+      body {
+        parlist {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

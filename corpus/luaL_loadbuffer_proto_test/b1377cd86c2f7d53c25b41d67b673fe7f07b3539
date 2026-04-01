@@ -1,0 +1,102 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 7
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greater: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greater: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greater: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              break: 0
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 7694435
+  }
+}

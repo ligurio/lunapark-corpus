@@ -1,0 +1,100 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                  }
+                  exp {
+                    str: "11111\377\377\377\377\377\377\377\3771111111111111111111111111111111111111111111111111"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                              exp {
+                                str: "11111\377\377\377\377\377\377\377\3771111111111111111111111111111111111111111111111111"
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                          var {
+                            indexexpr {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                              exp {
+                                str: "1111111\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\00011111111111111111111111111111111111111111111111"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        number: 3.95252516672997e-323
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: "n"
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      str: ""
+                    }
+                    value {
+                    }
+                  }
+                }
+                lastSep {
+                  semicolon: 65536
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            namedassign {
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              value {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                    }
+                                    lastSep {
+                                      semicolon: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                      }
+                      value {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                                var {
+                                }
+                              }
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                    comma: 512
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 131072
+    semicolon: false
+  }
+}

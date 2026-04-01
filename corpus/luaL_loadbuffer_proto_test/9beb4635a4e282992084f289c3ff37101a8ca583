@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+              }
+            }
+            fields {
+              field {
+                expression {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          lastSep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                expression {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      unary {
+                        unop {
+                          negate: 2
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            fields {
+              field {
+                expression {
+                  nil: 0
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

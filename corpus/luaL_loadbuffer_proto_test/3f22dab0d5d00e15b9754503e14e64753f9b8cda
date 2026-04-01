@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: "/"
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 268435456
+          }
+          rightexp {
+            nil: 64000
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "`"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+        }
+        expressions {
+          str: "\377\376\373"
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

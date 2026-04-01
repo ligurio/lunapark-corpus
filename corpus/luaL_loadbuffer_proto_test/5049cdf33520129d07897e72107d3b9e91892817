@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          functioncall {
+            namedArgs {
+              prefixexp {
+                exp {
+                  prefixexp {
+                    var {
+                      indexname {
+                        prefixexp {
+                          exp {
+                            ellipsis: "fuse"
+                          }
+                        }
+                        Name: ""
+                      }
+                    }
+                  }
+                }
+              }
+              name {
+                name: ""
+                num: 0
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    false: 4194304
+                  }
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

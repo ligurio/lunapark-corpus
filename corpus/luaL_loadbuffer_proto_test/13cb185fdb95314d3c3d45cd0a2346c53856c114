@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              tableconstructor {
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        number: -1.2773377980934714e+294
+                      }
+                      binop {
+                        div: 0
+                      }
+                      rightexp {
+                        number: 2.02369288536575e-320
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        str: "\377\377\377\377\377"
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          number: -1.2773377980934714e+294
+                        }
+                        binop {
+                          div: 0
+                        }
+                        rightexp {
+                          number: 2.02369288536575e-320
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

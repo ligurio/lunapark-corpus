@@ -1,0 +1,63 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          prefixexp {
+            functioncall {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      lastSep {
+                        comma: 1073741824
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+          num: 1048576
+        }
+        args {
+        }
+      }
+    }
+  }
+}

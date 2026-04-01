@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                  exp {
+                                  }
+                                }
+                                exp {
+                                  prefixexp {
+                                    exp {
+                                      str: "111111111111111111111111111111111111111111111111111111"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          function {
+                            body {
+                              parlist {
+                                ellipsis: "\232"
+                              }
+                              block {
+                                chunk {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  exp {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                            var {
+                            }
+                          }
+                          exp {
+                            str: "111111111111111111111111111111111111111111111111111111"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          str: "111111111111111111111111111111111111111111111111111111"
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

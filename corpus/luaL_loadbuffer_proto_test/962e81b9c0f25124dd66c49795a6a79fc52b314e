@@ -1,0 +1,58 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                        var {
+                          indexname {
+                            prefixexp {
+                              exp {
+                              }
+                            }
+                            Name: ""
+                          }
+                        }
+                      }
+                      name {
+                        name: "i"
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                args {
+                  str: "."
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                str: "callunroll"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

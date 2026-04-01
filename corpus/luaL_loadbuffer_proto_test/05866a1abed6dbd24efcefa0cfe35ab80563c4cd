@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              namelist {
+                namelist {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                ellipsis: "\200"
+              }
+            }
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 2
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

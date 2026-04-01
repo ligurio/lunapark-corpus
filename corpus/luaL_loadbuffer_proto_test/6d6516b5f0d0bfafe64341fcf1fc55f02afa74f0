@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "\377\377\377\377\377\377\377\377\377\377\377"
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                ellipsis: ""
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            unary {
+              unop {
+                length: 553648128
+              }
+              exp {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 8192
+    semicolon: true
+  }
+}

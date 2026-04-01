@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                      }
+                      name {
+                        name: ""
+                        num: 0
+                      }
+                      args {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                          str: "callunroll"
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: "DDDDDD"
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            greater: 0
+                          }
+                          rightexp {
+                            nil: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

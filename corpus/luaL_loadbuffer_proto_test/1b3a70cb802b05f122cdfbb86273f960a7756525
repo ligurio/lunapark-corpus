@@ -1,0 +1,97 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  exp {
+                    prefixexp {
+                      exp {
+                        str: "callunroll"
+                      }
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    call {
+                      prefArgs {
+                        prefixexp {
+                          exp {
+                            prefixexp {
+                              var {
+                                indexexpr {
+                                  prefixexp {
+                                  }
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                        ellipsis: "\000\000\000\000\000\000\000\016"
+                                      }
+                                      binop {
+                                      }
+                                      rightexp {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    number: -7.4073210850367022e-231
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      exp {
+                        ellipsis: "stop"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            ellipsis: "stop"
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,88 @@
+chunk {
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                    stat {
+                      localnames {
+                        namelist {
+                          firstname {
+                            name: ""
+                            num: 0
+                          }
+                          names {
+                            name: ""
+                            num: 0
+                          }
+                        }
+                        explist {
+                          expressions {
+                          }
+                          explast {
+                            ellipsis: "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      semicolon: true
+                    }
+                    stat {
+                      ifstat {
+                        condition {
+                          ellipsis: "^"
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                    stat {
+                      ifstat {
+                        condition {
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                        clauses {
+                          condition {
+                          }
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

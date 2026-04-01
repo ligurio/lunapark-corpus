@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "E"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          str: "\376\377\000\000"
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    unary {
+                      unop {
+                        negate: 65280
+                      }
+                      exp {
+                        str: "3"
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

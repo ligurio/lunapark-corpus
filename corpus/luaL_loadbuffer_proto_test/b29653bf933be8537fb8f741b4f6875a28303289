@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            laststat {
+                              break: 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    ifstat {
+                      condition {
+                        prefixexp {
+                        }
+                      }
+                      first {
+                        chunk {
+                          stat {
+                            whilecycle {
+                              condition {
+                              }
+                              doblock {
+                                block {
+                                  chunk {
+                                    laststat {
+                                      break: 0
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          stat {
+                          }
+                        }
+                      }
+                      last {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

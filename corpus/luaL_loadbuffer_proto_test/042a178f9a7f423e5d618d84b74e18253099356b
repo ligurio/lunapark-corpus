@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    localfunc {
+      name {
+        name: "\000\000\000\000\000\000\000\000"
+        num: 0
+      }
+      funcbody {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+            ellipsis: "#"
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 512
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    mult: 512
+                  }
+                  rightexp {
+                    number: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  false: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: "DDDDDDDD"
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

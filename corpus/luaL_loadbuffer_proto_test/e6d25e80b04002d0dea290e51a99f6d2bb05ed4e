@@ -1,0 +1,149 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 65535
+                            }
+                            value {
+                              ellipsis: "maxirconst"
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                          comma: 0
+                        }
+                      }
+                      lastSep {
+                        semicolon: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            forcyclename {
+              name {
+                name: "\377\377\376\377"
+                num: 0
+              }
+              startexp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    binary {
+                      leftexp {
+                        ellipsis: ""
+                      }
+                      binop {
+                        sub: 65
+                      }
+                      rightexp {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              stopexp {
+                true: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

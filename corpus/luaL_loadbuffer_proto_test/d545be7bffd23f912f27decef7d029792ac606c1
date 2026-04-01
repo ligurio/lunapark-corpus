@@ -1,0 +1,29 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                number: 512
+              }
+            }
+          }
+          binop {
+            concat: 58112
+          }
+          rightexp {
+            nil: 536870912
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

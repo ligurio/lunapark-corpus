@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        nil: 128
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    call {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          str: "+"
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    semicolon: true
+                  }
+                }
+              }
+              condition {
+                prefixexp {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                expression {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                        unary {
+                          unop {
+                            negate: 16384
+                          }
+                          exp {
+                            number: 3.15073935042524e-310
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

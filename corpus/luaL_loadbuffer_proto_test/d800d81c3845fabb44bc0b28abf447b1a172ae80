@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        false: 0
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    semicolon: false
+                  }
+                }
+              }
+              condition {
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                        }
+                        exp {
+                          number: 0
+                        }
+                      }
+                    }
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            explist {
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                }
+                exp {
+                  number: 0
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    semicolon: false
+  }
+  laststat {
+    break: 64256
+  }
+}
