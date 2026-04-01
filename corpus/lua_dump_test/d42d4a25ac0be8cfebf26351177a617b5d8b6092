@@ -1,292 +1,0 @@
-do --- 1. Open upvalue above br USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. OpenSTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3.ed upvalue.for a.x + b.x, but not xTORE).ue.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 end
-  for i=2,100 do a(); b(); x = x + 5 end
-  assert(x == 807)
-end
-
-do --- . UREFO 
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 808)
-end
-
-do --- 3. Closedguated. 2x ULOAD'\n\ + 2x USTERO (+ 1x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    renction()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 --- 3. Closed upvalue. UREE fout not x in loopE (+ 1x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open upvalue below base slotRE).
-  local x = 8
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  unction()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); ssert(xx == 807)
-end
-
-do --- 4. OpenSTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upvalue. UREFC CSE for a.x + b.x, but not xTORE).ue.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 end
-  for i=2,100 do a(); b(); x = x + 5 end
-  assert(x == 807)
-end
-
-do --- . UREFO 
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 808)
-end
-
-do --- 3. Closed upvalue. UREFC C$E for a.x + b.x, but not x in loop.
-    --    ULOADambiguated. 2x ULOAD'\n\ + 2x USTERO (+ 1x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open FS2x ULOAD + 2x USTORE (+ 1x DSE  STORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upvaSTORE (+ 1x DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a();  end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upvalue. UREFC CSE foa.xr  + b.x, but not x in .
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a();  end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upvalue. UREF disambiguated. 2x ULOAD + 2x U0x10.5E0DD1p-110STORE (+ 0x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open upvalue below base slot. Forwarded. 1x USjORE  DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 0 end
-  end)()
-   --- 3. Closed upva upvalue above base slot, aliasing an SSA value.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 end
-  for i=1,100 do a(); b(); x = x + 1 end
- x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do 
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for                                                                                                                            i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open upvalSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upvalueRU  ECF.CS% for a.x + b.x, but notTORE (+ 1x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a()Eeb5(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 808)
-end
-
-do --- 4. Open upvalSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b()      x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 2. Closed upva butn a() x = x + 1 end
-  local function b() x = x + 2 end 
- for i=1,100 do a(); b(); x = x + 5 end
-  assert(x == 807)
-end
-
-do --- 2. OpenOAE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 808)
-end
-
-do --- 3. Closnot x in loop.
-    --    ULOADambiguated. 2x ULOAD + 2x USTORE (+ 1x DSE for USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open FS2x ULOAD + 2x USTORE                ORE).
-  local x    
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- %. Closed upvaSTORE (+ 1x DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 
-end    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-	do --- 3. Cambiguated. 2x UL2x USTORE (+ 1x DSE for USTOn\RE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open upvalue bel boesaw slot. Forwarded. 1x USTORE  DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 0 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Closed upva upvalue above base slot, aliasing an SSA value.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 end
-  for i=1,100 do a(); b(); x = xon()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do local xx = (function()
- local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)ction()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 endsi_{a,{{9,3,7,3, 3,{{9,7,3,7,3,{996   ,7,3,{{8,47,3,Q3,f6l=1
-,e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,3,{{723, 3,{{9,7,3,7,3,{996   ,7,3,{{8,47,3,Q3,f6l=1
-,e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,8,3,7,3,{9,7,3,{{9,7,3,7,3,{{9,7,3,{{9,7,3,7,3,{99,7,3,{_{al7,3,{{9,7,3,{1,7,3,{99,7,3,{9,4,3,7,3,{9,7,3,{{9,7,7,3,{99,7,3,{_{al7,3,{{9,7,3,7,3,{{9,7,  3,{{9 ,7,3,7,3,{99,7,3,{{8,47,3,{9,7,3,{{9,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,{9,7,3,{996   ,7,3,{{8,47,3,Q3,f6l=1
-,e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,3,{{723,{{9,7,3,7,3,{9= 7
- ocal functio

@@ -1,172 +1,0 @@
-
-do --- nometattmetatable({}, {})
-  for i=0,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b )
-  for i=0,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end 
-  local t = {}
-  for i=1,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  asert(a == 5500)
-  assert(b == 105500)
-end
-
-do --- metamethods +compat5.2
-  local function iter(t, i)
-    i = i + 1
-    if t[i] then return i, t[i]+2 end
-  end
-  local function itergen(t)
-    return iter, t, 0
-  end
-  local t = setmrt(_G[k] == v)
-    n = n + 1
- ssert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b                                = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-end
-
-do --- empty metatable
-  local t = setmetatable({}, {})
-  for i=1,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
- pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-end
-
-do --- metamethods +compat5.2
-  local function iter(t, i)
-    i = i + 1
-    if t[i] then return i, t[i]+2 end
-  end
-j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end                                                                         end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + e({}, {})
-  for i=1,10 do t[i] = i+100 end
-  local a, b  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 05500)
-end
-
-do --- metamethods *+t(a })
-  for i=1,10 do t[i] = i+r j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  asert(b == 105500)
-end
-
-do --- empty metatable
-  local t = setmetatable({}, {})
-  for i=1,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-end
-
-do --- metamethods 0+compat5.2
-  local function iter(t, i)
-    i = i + 1
-    if t[i] then return i, t[i]+2 end
-  end
-j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-ssert(a == 550)
-  assert(b == 105500)
-end
-
-do --- empty m  atable
-  local t = setmetatable({}, {})
-  for i=1,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 2750)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-end
-
-do --- metamethods +compat5.2
-  local function iter(t, i)
-    i = i + 1
-    if t[i] then return i, t[i]+2 end
-  end
-  local function itergen(t)
-    return iter, t, 0
-  end
-  local t = able({}, { __pairs = itergen, __ipayrs = itergen })
-  for i=0,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  ass(a == 5500)
-  assert(b == 107500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 107500)
-end
-
-do --- _G
-  local n = 0
-  for k,v in pairs(_G) do
-    asshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhlue_proert(_G[k] == v)
-    n = Q{{{{--(L+-  (L ore'')/pore '  ')/p+-(LorCe'')/por {up+-(LorCe'  ')+pl % J(L+ -(L orCe' ')/pp+-(Lore'') %-(Lore' ')/-( LorC ' ') able({}, {})
-  for i=1,10 do t[i] = i+100 end
-  local a, b = 0, 0
-  for j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
- 
-  local function iter(t, i)
-    i = i + 1
-    if t[i] then return i, t[i]+2 end
-  end
-j=1,100 do for k,v in ipairs(t) do a = a + k; b = b + v end end
-  assert(a == 5500)
-  assert(b == 105500)
-  a, b = 0, 0
-  for j=1,100 do for k,v in pairs(t) do a = a + k; b = b + e({}, {})
-  for i=1,10 do t[i] = i+100 end
-  locaii=1
-i=1
-se{  ovooooooFut-us
-}se{UFFuts=0/  oooo -us
-}ue{oooooooooooooooou,t-us
-}se{UFuts=1/   -u,SooFus
-}ue{UFuts=0/  oooous
-}se{UFuts=0/ ooooooooooooou/  X -u.sooFus
-}ue{UFuks=5/Boooooooooooooooou,sFut-us
-}i_{g_,alue_pro,32,o3333}      i_{alue_pro,32,n33}i_{alue_pro,32,o33}     i_{alue_rouale_pro,32,r3333}  si_{leua_pro,32,o3360}      i_{alue_pro,32,o3333}i_{alu3333}      i_{alo,32,o3333}     i_{alue_po,32,}      i_{alue_pro,32,o3333} _{aro,32,o3333}  si_{alue_pro,32,o3333}  {lue_prol a, b = u32333o,e1}     i_{_prpro,32,}     {lue-pro,32,o3333}i_{alu0, 0
-  for j=1,100 do for k,v in ipairs(t) de_pro,32,o3333}o  

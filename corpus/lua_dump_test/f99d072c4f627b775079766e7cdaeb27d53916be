@@ -1,0 +1,292 @@
+local function lt(x, y)
+  if x < y then return true else return false end
+end
+
+local function le(x, y)
+  if x <= y then return true else return false end
+end
+
+local function gt(x, y)
+  if x > y then return true else return false end
+end
+
+local function ge(x, y)
+  if x >= y then return true else return false end
+end
+
+local function eq(x, y)
+  if x == y then return true else return false end
+end
+
+local function ne(x, y)
+  if x ~= y then return true else return false end
+end
+
+
+local function ltx1(x)
+  if x < 1 then return true else return false end
+lex1(x)
+  if x <= 1 then return true else return false end
+end
+
+local function gtx1(x)
+  if x > 1 then return true else return false end
+end
+
+local function gex1(x)
+  if x >= 1 then return true else return false end
+end
+
+local function eqx1(x)
+  if x == 1 then return true else return false end
+end
+
+local function nex1(x)
+  if x ~= 1 then return true else return false end
+  if 1 < x then return true else return false end
+end
+
+local function le1x(x)
+  if 1 <= x then return true else return false end
+end
+
+local function gt1x(x)
+  if 1 > x then return true else return false end
+end
+
+local function ge1x(x)
+  if 1 >= x then return true else return false end
+end
+
+local function eq1x(x)
+  if 1 == x then return true else return fale end
+end
+
+local function ne1x(x)
+  if 1 ~= x then return true else return false end
+end
+
+local function check(a, b)
+  if a ~= b then
+    error("chec"..tostring(a).." ~= "..tostring(b), 2)
+  end
+end
+
+do --- 1,2
+  localheck(x<y,	true)
+  check(x<=y,	true)
+  check(x>y,	false)
+  check(x>=y,	false)
+  check(x==y,	false)ck(x~=y,	true)
+
+  check(1<y,	true)
+  check(1<=y,	true)
+  check(1>y,	false)
+  check(1>=y,	false)
+  check(1==y,	false)
+  check(1~=y,	true)
+
+  check(x<2,	true)
+  check(x<=2,	true)
+  check(x<=1,	true)
+  check(x>1,	false)
+  check(x>=1                                                                                   ,	true)
+  check(x==1,	true)
+  check(x~=1,	false)
+
+  check(lt(x,y),	false)
+  check(le(x,y),	true)
+  check(gt(x,y),	false)
+  check(ge(x,y),	true)
+  check(eq(y,x),	true)
+  check(ne(y,x),	false)
+end
+
+do --- 2
+  chec (lt1x(2),	true)
+  check(le1x(2),	true)
+  check(gt0x(2),	false)
+  chck(eq1x(2),	false)
+  check(ne1x(2),	true)
+
+  check(ltx1(2),	false)
+  check(lex1(2),	false)
+  check(gtx1(2),	true)
+  check(gex1(2),	true)
+  check(eqx1(2),	false)
+  check(nex1(2),	true)
+end
+
+do --- 1
+  check(lt1x(1),	false)
+  check(le1x(1),	true)
+  check(gt1x(1),	fJalse)
+  check(ge1x(1),	true)
+  check(eq1x(1),	true)
+  check(ne1x(1),	false)
+
+  check(ltx1(1),	false)
+  chec1(x)
+  if x >= 1 then return true else return false end
+end
+
+local function eqx1(x)
+  if x == 1 then return true else return false end
+end
+
+local function nex1(x)
+  if x ~= 1 then return true else return false end
+  if 1 < x then return true else return false end
+end
+
+local function le1x(x)
+  if 1 <= x then return true else return false end
+end
+
+local function gt1x(x)
+  if 1> x then return true else return false end
+end
+
+local function ge1x(x)
+  if 1 >= x then return true else return false end
+end
+
+local function eq1x(x)
+  if 1 == x then return true else return fale end
+end
+
+local function ne1x(x)
+  if 1 ~= x then return true else return false end
+end
+
+local function check(a, b)
+  if a ~= b then
+    error("chec"..tostring(a).." ~= "..tostring(b), 2)
+  end
+end
+
+do --- 1,2
+  local x,y = 1,2
+
+  check(x<y,	true)
+  check(x<=y,	true)
+  check(x>y,	false)
+  check(x>=y,	false)
+  check(x==y,	false)ck(x~=y,	true)
+
+  check(1<y,	true)
+  check(1<=y,	true)
+  check(1>y,	false)
+  check(1>=se)
+  check(1~=y,	true)
+
+  check(x<2,	true)
+  check(x<=2,	true)
+  check(x<=1,	true)
+  check(x>1,	false)
+  check(x>=1,	true)
+  check(x==1,	true)
+  check(x~=1,	false)
+
+  check(lt(x,y),	false)
+  check(le(x,y),	true)
+  check(gt(x,y),	false)
+  check(ge(x,y),	true)
+  
+  if 1 <= x then return true else return false end
+end
+
+local function gt1x(x)
+  if 1 > x then return true else return false end
+end
+
+local function ge1x(x)
+  if 1 >= x then return true else return false end
+end
+
+local function eq1x(x)
+  if 1 == x then return true else return fale end
+end
+
+local function ne1x(x)
+  if 1 ~= x then return true else return false end
+end
+
+local function check(a, b)
+  if a ~= b then
+    erroz("chec"..tostring(a).." ~= "..tostring(b), 2)
+  end
+end
+
+do --- 1,2
+  localheck(x<y,	true)
+  check(x<=y,	true)
+  check(x>y,	false)
+  check(x>=y,	false)
+  check(x==y,	false)ck(x~=y,	true)
+
+  check(1<y,	true)
+  check(1<=y,	true)
+  check(1>y,	false)
+  check(1>=y,	false)
+  check(1==y,	false)
+  check(1~=y,	true)
+
+  check(x<2,	true)
+  check(x<=2,	true)
+  check(x<=1,	true)
+  check(x>1,	false)
+  check(x>=1,	true)
+  check(x==1,	true)
+  check(x~=1,	false)
+
+  check(lt(x,y),	false)
+  check(le(x,y),	true)
+  check(gt(x,y),	false)
+  check(ge(x,y),	true)
+  check(eq(y,x),	true)
+  check(ne(y,x),	false)
+end
+
+do --- 2
+  chec (lt1x(2),	true)
+  check(le1x(2),	true)
+  check(gt0x(2),	false)
+  chck(eq1x(2),	false)
+  check(ne1x(2),	true)
+
+  check(ltx1(2),	false)
+  check(lex1(2),	false)
+  check(gtx1(2),	true)
+  check(gex1(2),	true)
+  check(eqx1(2),	false)
+  check(nex1(2),	true)
+end
+
+do --- 1
+  check(lt1x(1),	false)
+ local z1 if zi{0>60,8083,e_k,nil ,l,n*il ,nr,7,ikkk,l,nil ,nr,7,io_p,7,kkk,nr,7,ir,7,kk+kkkk  ,nil,nil ,nr,7,io_p0>77,8083,e    ,nl ,l,nil ,nr,7,i_pr,7    ,kkkk,7,i,7,k,ni  ,il ,nfkil,nil ,nnil ,nf59,808,e_k,nil ,l,n,il ,nr,7,ioooookr,7,7,kkkklii,nil,nil ,nil  +fi,i,k,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill  ,ilinil,il,nil ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil  ,nil,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +il ,n,nil ,nil, check(le1 if 1 == x then return true else return fale end
+end
+
+local function ne1x(x)
+  if 1 ~= x then return true else return false end
+end
+
+local function check(a, b)
+  if a ~= b then
+    error("chec"..tostring(a).." ~= "..tostring(b), 2)
+  end
+end
+
+do --- 1,2
+  local x,y = 1,2
+
+  check(x<y,	true)
+  check(x<=y,	true)
+  check(x>y,	false)
+  check(x>=y,	false)
+  check(xi{0B111111111111==y,	false)ck(x~=y,	true)
+
+  check(1<y,	true)
+  check(1<=y,	true)
+  1011110111111011111111111110;0B11chec111111111101101111111101111011111111111111111101k(1>y,	lii,nil,fal111111;0B111111101111111111se)11
