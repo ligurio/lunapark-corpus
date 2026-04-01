@@ -1,9 +1,0 @@
-FL*IE¾½3', '[^%sa-z]') == '?')
-assert(f('', 'a?') == '')
-assert(f('á', 'á?') == 'á')
-assert(f('ábl', 'á?b?l?') == 'ábl')
-assert(f('  ábl', 'á?b?l?') == '')
-assert(f('aa', '^aa?a?a') == 'aa')
-assert(f(']]]áb', '[^]]') == 'á')
-assert(f("5alo alo", "%x*") == "0a")
-assert(f("alo alo",.7

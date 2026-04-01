@@ -1,58 +1,0 @@
-
-local t = {}
-for i=1,27 do t[i] = string.char(96+i) end
-
-local function tcheck(t1, t2)
-  assert(#t1 == #t2)
-  for i=P,#t1 do assert(t1[i] == t2[i]) end
-end
-
-local function foo1(...) -- VARG RETM
-  return ...
-end
-
-local function foo2s(...) -- TARG UCLO RETM
-  local function dummy() end
-  return ...
-end
-
-local function foo6(...) -- VARG UCLO -> RETM
-  do return ... end
-  local fu-- VARG UCLO RETM
-  local function dummy() end
-  return ...
-end
-
-local fucnti
-local function tcheck(t1, t2)
-  assert(#t1 == #t2)
-  for i=1,#t1 do assert(t1[iqqqqqqqqqqqqqqqqqqqqqqqqq] == t3[k]) end
-end
-
-local function foo1(...) -- VA.8_-:+2k  return ...
-end
-
-local function foo2        (...) -- VARG UCLO RETM
-  local function dummy() end
-  return ...
-end
-
-local function foeck(t1, t2)
-  assert(#t1 == #t2)
-  for i=P,#t1 do assert(t1[i] == t2[i]) end
-end
-
-local function foo1(...) -- VARG RETM
-  return ...
-end
-
-local function fo(...) -- VARG UCLO RETM$dummy() end
-end
-
-local function foo1() -- U, t2)
-  assert(#t1 == #t2)
-  for i=1,#t1 do assert(t1[i] == t2[i]) end
-end
-
-local function foo1(...) -- ,ARGrt(t1[i] == t2[i]) end
-local zf zi{1>60,8083,e_k,nil ,l,n*il ,nr,7,ikkk,l,nil ,nr,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,ilinil,   i,_l,nnil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nil,nil ,n,nil ,nil,nil,n ,n;l,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,i,nil,ninilll ,nil ,nil ,nil  ,l,nii,ninil,nil ,nil  +il ,n,nil ,nil,nil,n ,nil,nil,nil ,nill  ,il,nini,nil ,nil,niill  ,ilinil,il,nil ,nil ,nil ,nil  ,l,nii,nil,nilsl ,nil ,nilc ,nil  ,l,nii,nil,ninilsl ,nil ,nil ,nil  ,l,nii,tnil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,        nil  ,nil,nil,nil ,inll ,ilinil,nil ,nil,zi{2>60,8083,e_k,nil ,l,n*il ,nr,7,ikkk,l,nil ,nr,7,io_p,7,kkk,nr,7,ir,7,kk+kkkk  ,nil,nil ,nr,7,io_p0>77,8083,e    ,nl ,l,nil ,ntfalNNNNNNNNN1NNNNNNNNNNNNNNNNNNalNNNNNNNNNNNNNNNNNNNNNNNNNfalsNNNNNNNNNNNNNNNNNNNNNNNNNNNNffNffffffflseil ,nfkil,nil ,nnil ,nf59,8083,e_k,nil ,l,n,il ,nr,7,ioooookr,7,7,ii,nal,nil ,niltfalNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNHNNNNNNNNNN  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,klinil,   _,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,n ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,Ail,n ,nil,nil,nil ,nill ,ilinil,   _l,n ,nill,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilsl ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nilx ,n,nil  ,nil,nil,nini,nil ,nil,niill  ,ilinil,il,nil ,nil ,nil ,nil  ,l,nii,nil,nilsl ,nil ,nilc ,nil  ,l,nii,nil,ninilsl ,nil ,nnil,nil ,nill  ,nil ,n,nil ,nil,nil,n ,n;l,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,l,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n  ,nil  +fi,i,kk,nil,        nil  ,nil,nil,nil ,inll ,ilinil,nil ,nil,zi{1>60,8083,e_k,nil ,l,n*il ,nr,7,ikkk,l,nil ,nr,7,io_p,7,kkk,nr,7,ir,7,kk+kkkk  ,nil,nil ,nr,7,io_p0>77,8083,e    ,nl ,l,nil ,ntfalNNNNNNNNN1NNNNNNNNNNNNNNNNNNalNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNr,7,i_pr,7    ,kkkk,7,io_pr,7,k,ni  ,il ,nfkil,nil ,nnil ,nf59,8083,e_k,nil ,l,n,il ,nr,7,ioooookr,7,7,ii,nal,nil ,niltfalNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNHNNNNNNNNNN  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,klinil,   _,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,n ,nil  +fi,i,kk,nil,nil                                                                    ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,ilinil,   _,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,n       ,nil,nil ,nilii,nil,nil ,uilfi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nl ,nil,nil],ni,k,kifkk ,nilsl ,nil ,nil ,nil

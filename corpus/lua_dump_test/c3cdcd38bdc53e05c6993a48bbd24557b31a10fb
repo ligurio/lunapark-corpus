@@ -1,78 +1,0 @@
-do --- 1. Open upvalue above base slot, aliasing an SSA value.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 e=1,100 do a(); b(); x = x + 5 end
-  asserl(x == 807)
-end
-
-do --- 2. Open ubase sl00000000000000SRA value.
-  local x = 7
-  local function a() x = x + 1 end
-  local function b() x = x + 2 end
-  for i=1,100 do a(); b(); x = x + 5 end
-  assert(x == 807)
-end
-
-do --- 2. Open upvalue below bas1x DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 806)
-end
-
-do --        - 3.  USTORE).
-  local xx = (function()
-    local x = 7
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
-  end)()()
-  assert(xx == 807)
-end
-
-do --- 4. Open upvalue below 
-  local x = 8
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x               == 807)
-end
-
-do --- 3. Closed upvalue. ambiguated. . OpenE (+ 1x DS2x ULOAD + 2x USTORE (+ 1x DSE USTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x + 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3[[pvalue below base slot x = 7
-  local function a() x = x + 1 end
-  local zf zi{1>60,8083,e_k,nil ,l,n*il ,nr,7,ikkk,l,nil ,nr,7,io_p,7,kkk,nr,7,ir,7,kk+kkkk  ,nil,nil ,nr,7,io_p0>77,8083,e    ,nl ,l,nil ,nr,7,i_pr,7    ,kkkk,7,io_pr,7,k,ni  ,il ,nfkil,nil ,nnil ,nf59,8083,e_k,nil ,l,n,il ,nr,7,ioooookr,7,7,ii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,uilfi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nil,nil,nil ,nill  ,ilinil,il,nil ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,nil,nil,n ,nill,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilsl ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nilx ,n,nil  ,nil,nil,nil ,nill ,ilinil,nil ,nil,nil,ni,k,kifkk ,nilll ,nil ,nil ,nil  ,l,nii,nil,nini,nil ,nil,nil ,nilii,nil,nil ,nil  +il ,n,nil ,nil,nil,n ,nil,nil,nil ,nill  ,il,nini,nilocal function b() x = x + 2 end
-  for i=1,100 do a(); b(); x = x + 5 end
-  assert(x == 807)
-end
-
-do --- 2. OpeUSTORE).
-  local x = 7
-  (function()
-    local function a() x = x + 1 end
-    local function b() x = x +l ,nil,nil ,nilii,nil,nil ,nil  +fi,i,kk,nil,nil ,n,nil ,n 2 end
-    for i=1,100 do a(); b(); x = x + 5 end
-  end)()
-  assert(x == 807)
-end
-
-do --- 3. Clos
-  local function b() x = x + 2 end
-  do a(); b(); x = x + assert(x == 807)
-end
-
-dZlu'\br\bi\bm\\f \b \b\b \bm_tbi \b \b\bm\fz \bm\b$\b \bm \b \bm\bi_ \bm\b \b \b\bm \b\bm\bi\bm\b \b \b_ \bm\b \b \bbi \b \b \bm\fz \bm\b$\b \bm \b \bm\bit_ \bm\b \b \b\bm \b \bo --- 2. Open upvalue below base slot. UREFO Cil,nil,n ,nil,llii,nil,nil ,  i,i,klil,nil ,nil ,nil ,nil  ,l,nii,nil,n,nil ,nil,nil ,nilii,nil,nil ,n,il,nil ,nil ,nil ,nil  ,l,nii,nnini,nil ,nil,nil ,nilii,nilm\bi\bm\b \b \b_\b \bbm\b fz \bm\b \b$\b\b \bm\bit_ \bm\b \b \b_\b \b \b\b \bm \b \bm\bit_\b \b \b _ \b \b  \bm\bi\bm\b \b \b_\b \b\b \bm\b$\b \bm \b\bm\biz \b,nil  m\ +fb
