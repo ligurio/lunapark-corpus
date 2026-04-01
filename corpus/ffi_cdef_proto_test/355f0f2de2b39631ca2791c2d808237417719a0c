@@ -1,0 +1,83 @@
+declarations {
+  declarators_and_initializers {
+    declarators {
+    }
+    declarators {
+      function_declarator {
+        noptr_declarator {
+        }
+        parameters_list {
+          parameters {
+          }
+        }
+      }
+    }
+    declarators {
+      pointer_declarator {
+        declarator {
+        }
+      }
+    }
+    declarators {
+      function_declarator {
+        noptr_declarator {
+        }
+        identifiers_list {
+        }
+      }
+    }
+  }
+}
+declarations {
+  declarators_and_initializers {
+    declarators {
+      declarator_parentheses {
+        declarator {
+        }
+      }
+    }
+    declarators {
+      function_declarator {
+        noptr_declarator {
+        }
+        parameters_list {
+          parameters {
+          }
+        }
+      }
+    }
+    declarators {
+      function_declarator {
+        noptr_declarator {
+          pointer_declarator {
+            declarator {
+            }
+          }
+        }
+        parameters_list {
+          parameters {
+          }
+          ellipsis: 104
+        }
+      }
+    }
+    declarators {
+      pointer_declarator {
+        declarator {
+          pointer_declarator {
+            declarator {
+              function_declarator {
+                noptr_declarator {
+                }
+                attr_spec_seq {
+                  keyword_noreturn_2: 26739
+                  keyword_reproducible: 7995392
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

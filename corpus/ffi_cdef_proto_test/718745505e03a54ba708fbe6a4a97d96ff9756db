@@ -1,0 +1,54 @@
+declarations {
+  specifiers_and_qualifiers_list {
+    specifiers_and_qualifiers_list {
+      specifiers_list {
+        specifiers_list {
+          type_specifier {
+          }
+        }
+        specifiers_list {
+          type_specifier {
+            union_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 1
+                    expression: 5
+                    message: "1]]c=not o[[5]]c= not  o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[6"
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_1: 5
+                    expression: 5
+                    message: "[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[61]]c=not o[[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[6"
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 1
+                    expression: 0
+                    message: "[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[61]]c=not o[[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[6"
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 1
+                    expression: 0
+                    message: "[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[61]]c=not o[[5]]c= no o[[6]]c= not o[[6][[5]]c= no  o[[6]]c= not o[[6"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+declarations {
+  declarators_and_initializers {
+    declarators {
+    }
+  }
+}

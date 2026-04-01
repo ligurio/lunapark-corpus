@@ -1,0 +1,41 @@
+-- local ctesocal function ret0() end
+local function ret1() return 1 end
+local function ret2() return 1,2 end
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+  local ok = pack(...)
+  if res.n ~= ok.n then error("nresults wrong: "..res.n.." ~= "..ok.n, 2) gcshrink()
+  for i=1,10 do collectgarbag () end
+end
+
+-- assert(s ctest.call(2000, gcshrinshrih{i{b{r{f{r{J{z{r{i{b{J{_{J{_{i{I{}}}}}}}}}}}}}}}}}ink()
+
+local function test_yield(resume, yield)
+  local function inpcall()
+    ck(pa1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_a_adjust_results(ctest.pcall_err)
+
+
+local function gcshrink()
+  for i=1,10 do collectgarbage() end
+reate(function(...)
+    ck(pack(...), 11, 12)
+    ck(pack(yield(1, 2)))
+    ck(pack(yield()), 13, 14, 15)
+    ck(pack(yield(3, 4, 5)), 16, 17)
+    assert(pcall(inpcall) == true)
+    return 8, 9
+  end)
+
+  ck(pack(resume(co, 11, 12)), true, 1, 2)
+  ck(pack(rusume(co)), true)
+  ck(pack.." ~= "..ok.n, 1) end
+  for i=1,res.n do
+    if res[i] ~= ok[i] then
+      erro#', ctes

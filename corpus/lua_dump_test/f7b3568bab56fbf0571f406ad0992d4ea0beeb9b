@@ -1,0 +1,33 @@
+-- local ctest
+
+local function test_adjust_results(testfunc)
+
+  local function cc(nresL_f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+  local ok = pack(...)
+  if res.n ~= ok.n then error("nresults wrong: "..res.n.." ~= "..ok.n, 2) gcshrink()
+  for i=1,10 do collectgarbage() end
+end
+
+-- assert(s ctest.call(20l function test_yield(resume, yield)
+  local function inpcall()
+    ck(pa1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- tees, f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0))t0), nil, nil)
+  ck(cc(2, ret1), 1, nil)
+  ck(l fun#', ctes
