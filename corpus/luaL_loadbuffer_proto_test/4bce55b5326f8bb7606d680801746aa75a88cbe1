@@ -1,0 +1,42 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          var {
+            indexname {
+              prefixexp {
+              }
+              Name: "A"
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 0
+              }
+              funcbody {
+                parlist {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

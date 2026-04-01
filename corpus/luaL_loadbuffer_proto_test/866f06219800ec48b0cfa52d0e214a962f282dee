@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 2
+          }
+          exp {
+            function {
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    number: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

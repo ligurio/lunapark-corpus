@@ -1,0 +1,61 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+            explist {
+              explast {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                        not: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                expression {
+                  true: 4
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+chunk {
+  stat {
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      negate: 268435456
+                    }
+                    exp {
+                      unary {
+                        unop {
+                          not: 0
+                        }
+                        exp {
+                          tableconstructor {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

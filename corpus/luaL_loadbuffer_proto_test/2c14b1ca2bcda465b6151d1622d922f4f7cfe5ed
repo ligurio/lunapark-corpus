@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        tableconstructor {
+        }
+      }
+      stopexp {
+        tableconstructor {
+        }
+      }
+      stepexp {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

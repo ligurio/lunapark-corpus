@@ -1,0 +1,138 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "*"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              localfunc {
+                name {
+                  name: "dce"
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    false: 512
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

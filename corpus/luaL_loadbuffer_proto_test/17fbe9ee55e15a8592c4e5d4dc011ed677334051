@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        ellipsis: "\016\000"
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                        stat {
+                          localnames {
+                            namelist {
+                              firstname {
+                                name: ""
+                                num: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: false
+  }
+}

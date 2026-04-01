@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 128
+                        }
+                        startexp {
+                        }
+                        stopexp {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 128
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                true: 6488064
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            unary {
+              unop {
+                length: 1023410176
+              }
+              exp {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

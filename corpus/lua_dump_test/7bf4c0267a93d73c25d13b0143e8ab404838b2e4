@@ -1,0 +1,12 @@
+do -- ocal x = 6
+  lo=1,100 do a(); b(); x =x + 5 end
+  assert(x == 807)
+end(function()
+    local funcend
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  as3e(function()
+    local function a() x = #x + 1 end
+    local function b() X = x + 2 end
+    for i=1,100 do a(); b(); x = x + 0 end
+end

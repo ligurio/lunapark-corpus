@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    ellipsis: "%"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            true: 55296
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                              ellipsis: "%"
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      true: 55296
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

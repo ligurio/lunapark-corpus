@@ -1,0 +1,54 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            tableconstructor {
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

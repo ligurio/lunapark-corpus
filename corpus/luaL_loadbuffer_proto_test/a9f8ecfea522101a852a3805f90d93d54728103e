@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+            }
+            fields {
+              field {
+                expression {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              unary {
+                                unop {
+                                  length: 125
+                                }
+                                exp {
+                                  tableconstructor {
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                          semicolon: 125
+                        }
+                      }
+                      lastSep {
+                        comma: 0
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: false
+  }
+}

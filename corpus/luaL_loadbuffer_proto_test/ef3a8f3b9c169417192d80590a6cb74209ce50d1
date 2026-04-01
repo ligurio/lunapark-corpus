@@ -1,0 +1,50 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

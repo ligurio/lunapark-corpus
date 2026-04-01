@@ -1,0 +1,142 @@
+chunk {
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+          ellipsis: "\214\000\000\000"
+        }
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      less: 0
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      lastSep {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            break: 0
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

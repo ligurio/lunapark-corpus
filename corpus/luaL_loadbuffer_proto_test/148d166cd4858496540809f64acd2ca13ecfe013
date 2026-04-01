@@ -1,0 +1,140 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                              stat {
+                              }
+                            }
+                          }
+                          condition {
+                          }
+                        }
+                      }
+                      stat {
+                        call {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                              explist {
+                                explist {
+                                  expressions {
+                                    function {
+                                      body {
+                                        block {
+                                          chunk {
+                                            laststat {
+                                              semicolon: true
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  explast {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

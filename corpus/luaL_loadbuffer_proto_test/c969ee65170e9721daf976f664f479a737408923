@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          laststat {
+            explist {
+              explist {
+                explast {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        exprassign {
+                          key {
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

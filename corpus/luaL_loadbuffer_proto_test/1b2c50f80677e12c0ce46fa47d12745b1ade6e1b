@@ -1,0 +1,67 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            unary {
+              unop {
+                negate: 256
+              }
+              exp {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            unary {
+              unop {
+                length: 6
+              }
+              exp {
+                binary {
+                  leftexp {
+                    unary {
+                      unop {
+                        negate: 7143424
+                      }
+                      exp {
+                        str: "4444444\000\00044444444444444444444444444444444444444444444444444444444444444444444444"
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 65536
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: "555555555555\24555555555555555555555555555"
+          }
+          binop {
+            sub: 10240
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                stepexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                          }
+                          stopexp {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

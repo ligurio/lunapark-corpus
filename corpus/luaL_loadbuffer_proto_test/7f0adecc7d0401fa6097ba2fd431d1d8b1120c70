@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 512
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      unary {
+                        unop {
+                          length: 131072
+                        }
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                    nil: 131072
+                                  }
+                                  value {
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                  expression {
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        binary {
+                          leftexp {
+                            number: -5.0911231358405468e+306
+                          }
+                          binop {
+                            div: 6488064
+                          }
+                          rightexp {
+                            str: "2"
+                          }
+                        }
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  sep {
+                    comma: 131072
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    break: 0
+  }
+}

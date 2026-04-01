@@ -1,0 +1,47 @@
+chunk {
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                  }
+                }
+                args {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                        }
+                      }
+                      lastSep {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

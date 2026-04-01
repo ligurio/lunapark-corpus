@@ -1,0 +1,129 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            unary {
+              unop {
+                negate: 4
+              }
+              exp {
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            function {
+              body {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                repeatcycle {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                  condition {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                    negate: 4
+                  }
+                  exp {
+                  }
+                }
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                function {
+                  body {
+                    block {
+                      chunk {
+                        stat {
+                          whilecycle {
+                            condition {
+                            }
+                            doblock {
+                              block {
+                                chunk {
+                                  stat {
+                                    repeatcycle {
+                                      block {
+                                        chunk {
+                                        }
+                                      }
+                                      condition {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            true: 6488064
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

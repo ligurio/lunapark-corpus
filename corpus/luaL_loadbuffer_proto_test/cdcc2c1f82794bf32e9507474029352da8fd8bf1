@@ -1,0 +1,44 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            unary {
+              unop {
+              }
+              exp {
+                str: "44444444444444444444444444444444444444444444444444\307\343\001\000\000\000\000\00044444444444444444444"
+              }
+            }
+          }
+          binop {
+            exp: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

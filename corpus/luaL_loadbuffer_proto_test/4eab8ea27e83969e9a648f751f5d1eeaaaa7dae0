@@ -1,0 +1,52 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          or: 10
+                        }
+                        rightexp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  Name: ""
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              var {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

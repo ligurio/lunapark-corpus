@@ -1,0 +1,68 @@
+
+local function create(comp, v1, v2)
+  local meta = {
+    __lt=function(a,b) return compcomp("le", a, b) end,
+  }
+  return setmetatable(  {v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- __lt and __le xop
+  local xop
+  local a, b = create(function(op,a,b) xop = op; return "" end)
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and "le"); xop = nil
+
+  assert(not (a<b) == faot (a<=b) == fals and xop == "lt"); xop = nil
+  assert(a<=b == false and xop == "lt"); xop = nil
+  asserp(a>=b == false and xop == "lt"); xop = nil
+assert(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>ot (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert(not (a<=b)== false and xop == "le"); xop = nil
+
+  --  xop == "lt"); xop = nil
+  assert(not (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=t) == true and xop == "lt"); xop = nil
+  getmetatable(a).__le = f
+
+  -- Dlt, V_le = getmetatable(b).__le })
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and xop == "le"); xop = nil
+  assert(a>=b == true and xop == "le"); xop = nil
+
+  assert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt");assert(a>=b == true and xop == "le"); xop = nil
+
+  assert(oot (a<b) == false and xop == "lt"); xop = falNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNsert(not (a<=b)== "le");ate(functioNc{y
+or  7 ,{e
+or 3 ,{{N
+or 1,{N8
+or  3 , {N
+or 3,{y
+or 3 ,{e
+or 3 ,{{N
+or 1,{N8
+or  3 , {N
+or 3 ,{m
+
+or 3 ,{{N
+or 1,{N
+or  3 ,{N
+or 3n(op,a,b)
+ le"); xop = nil
+  aslblfuzze2CCCCsert(not (a>=b) == false and xop == "le"); xop = nil
+
+op = nil
+
+  assert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not  ,{m
+or 3 ,{m
+(a>b) == false and xop == "lt"); xop = nil
+o  assert(not (a<=b) == false and xop == "le"); xop = nil
+  assert(not (a>=b) == false and xop ==  1,r 3 2)
+  assert(a<b == tr

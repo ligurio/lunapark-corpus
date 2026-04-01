@@ -1,0 +1,114 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+              ellipsis: "7"
+            }
+            binop {
+              mod: 32
+            }
+            rightexp {
+              tableconstructor {
+                fieldlist {
+                  firstField {
+                    namedassign {
+                      name {
+                        name: "\001"
+                        num: 0
+                      }
+                      value {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "4"
+          num: 32
+        }
+        names {
+          name: "4"
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            ellipsis: "7"
+                          }
+                          binop {
+                            mod: 32
+                          }
+                          rightexp {
+                            unary {
+                              unop {
+                              }
+                              exp {
+                                prefixexp {
+                                  var {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        mod: 32
+                      }
+                      rightexp {
+                        unary {
+                          unop {
+                            length: 32
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

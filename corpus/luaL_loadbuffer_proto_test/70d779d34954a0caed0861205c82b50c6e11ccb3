@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            or: 0
+                          }
+                          rightexp {
+                            unary {
+                              unop {
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          str: ""
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

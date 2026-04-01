@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                function {
+                  body {
+                    parlist {
+                    }
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            function {
+              body {
+                parlist {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                function {
+                  body {
+                    parlist {
+                    }
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            shl: 1024
+          }
+          rightexp {
+            str: "\213"
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}
