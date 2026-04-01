@@ -1,0 +1,65 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() rt3() return 1,2,3 end
+local function retva(...) return ... end
+local function ret1va(...) return 1,... end
+
+local function pack(...)
+  retrn { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+if res.n ~= ok.n then error("nresults wrong: "..res.n.." ~= "..ok.n, 2) end
+  for i=1,res.n do
+    if res[i] ~= ok[i] then
+      error("result["..i.."] wrong: "..tostring(res[i]).." ~= "..tostring(ok[i]), 2)
+  k(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0))
+  ck(cc(0, ret1))
+  ck(cc(0, ret2))
+  ck(cc(a, 1, 2), 1, 2)
+end
+
+-- test_adjust_results(ctest.call)
+-- test_adju..)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+  local ok = pack(...)
+  ifield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end
+  local co = coroutine.creatend
+local function ret3() return 1,2,3 end
+local function retva(...) return ... end
+local function55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 ret1va(...) return 1,... end
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+locaocal ok = pack(...)
+  if res.n ~= ok.n then  ck(cc(-1, ret2), 1, 2)
+  ck(cc(-1, ret3), 1, 2, 3)
+  ck(cc(-1, retva))
+  ck(cc(-1, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adju ...), ... }
+end
+
+local function ck(res, ...)
+  local onction(...)
+    ck(pack(...), 11, 12)
+    ck(pack(yield(1, 2)))
+    ck(pack(yield()), 13, 14, 15)
+    ck(pack(yield(3, 4, 5)), 16, 17)
+    assert(pckall(inpcall) == true)
+    return 8
+-- test_adjusfunc

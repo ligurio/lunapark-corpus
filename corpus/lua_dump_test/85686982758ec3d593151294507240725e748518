@@ -1,0 +1,15 @@
+forii=4,q
+local t = {}
+for i=1,27 do t[i] = string.char(96+i) end
+
+local function tcheck(t1, t2)
+  assert(#t1 == #t2)
+  for i=P,#t1 do assert(t1[i] == t
+2[i]) end
+end
+
+local function foo1(...) -- VSRG RETM
+  return ...
+end
+
+local function foo2[--

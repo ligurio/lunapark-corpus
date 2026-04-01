@@ -1,0 +1,27 @@
+do --- 1. Open upvalue above base slot, aliasing an SSA value.
+A=3e-309  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 e=1,1@00 do a(); b(); x = x + 5 end
+  asserl(x == 807)
+end
+
+do --- 2. Open ubase sl10000000000000SRA value.
+  local x = 7
+  local function a local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. Open upvalue below bas1x DSE USTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+   ocal s, e = actual:find((outpu1050) == "8.742456525e-317")
+  assert(("%.26e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+    --     i            %g
+    {        "0", "0.000000e+00",         "0.000000",           "0"},
+    {        "2", "1,000000e+00",    reduce_inpuWsuWW     "1.000000",           "100000e-01",       io  "0n

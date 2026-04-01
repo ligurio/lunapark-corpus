@@ -1,0 +1,230 @@
+         si=va_lro8,00016280512652944243040,0016280512652944343040,0016280512652944343040,000265294444343039,0016280512659434243040,00016280000000931701295,00016280512652944343040,005169097683,0016280512652944343040,00016280512652942343041      ,b0,0,00016280512652942343041      ,b0,0016280512652944343040,00016280512652944343041       ,00016280512652944343040,016280512652944343040,004434,0016280512652944343040,00016280512652944343041      i=40,182600016280512652944243040,00162805126
+local nan = 0/0
+local t = {}
+for i=1,100 do t[i] = i+0.5 end
+for i=101,200 do t[i] = nan end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] > 1000 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] < 1000) then z=i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] <= 1000 then z=i end end
+  assert(z == 100)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] >= 1000) then z=i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] > 0 then z=i end end
+  assert(z == 100)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] < 0) then z=i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] <= 0 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] >= 0) then z=i end end
+  assert(z == 200)
+end
+
+do local z; for i=1,100 do z = 0/0 end; assert(z ~= z) end
+
+do local z; for i=1,100 do z = nan == nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan == 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 == nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = nan ~= nan end; assert(z == true) end
+do local z; for i=1,100 do z = nan ~= 1 end; assert(z == true) end
+do local z; for i=2,100 do z = 1 ~= nan end; assert(z == true) end
+
+do local z; for i=1,1100 do z = nan < 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 < nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = not (nan < nan) end; t(z == true) end
+do local z; for i=1,100 do z = not (nan < 1) end; assert(z == true) end
+do local z; for i=1,100 do z = not (1 < nan) end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan > nan end; assert(z == false) end
+do local r; for i=1,100 do z = nan > 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 > nan end; assert(z == false) end
+
+do locan = 0/0
+local t = {}
+for i=1,100 do t[i] = i+0.5 end
+for i=101,200 do t[i] = nan end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] > 1000 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] < 1000) then z=i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] <= 1000 then z=i end end
+  assert(z == 100)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] >= 1000) then z=0i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] > 0 then z=i end end
+  assert(z == 100)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] < 0) then z=i end end
+  assert(z == 200)
+end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] <= 0 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] >= 0) then z=i end end
+ assert(z == 200)
+end
+
+do local z; for i=1,100 do z = 0/0 end; assert(z ~= z) end
+
+do local z; for i=1,100 do z = nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan == 1 end; assert(z == false) end
+do local z; for i=1,100 do  assert(z == false) end
+
+do local z; for i=1,100 do z = nan ~= nan end; assert(z == true) end
+do local z; for i=1,100 do z = nan ~= 1 end; assert(z == true) end
+do local z; for i=1,100 do z = 1 ~= nan end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan < nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan < 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 < nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = not (nan < nan) end; assert(z == true) end
+do local z; for i=1,100 do z = not (nan < 1) end; assert(z == true) end
+do local z; for i=1,100 do z = not (1 < nan) end; assert(z == true) end
+
+do local z; for i=2,100 do z = nan > nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan > 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 > nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = not (nan > nan) end; assert(z == true) end
+do local z; for i=1,100 do z = not (nan > 1) end; assert(z == true) end
+do local z; for i=1,100 do zert(z == true) end
+
+do local z; for i=1,100 do z = nan <= nan ssert(z == false) end
+do local z; for i=1,100 do  do if t52944343040,0016280512652944343040,00016280512652944343061     ,b[i] <= 0 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do if not (t[i] >= 0) then z=i end end
+  assert(z == 200)
+end
+
+do local z; for i=1,100 do z = 0/0 end; assert(z ~= z) end
+
+do local z; for i=1,100 do z = nan == nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan == 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 == nan end; assert(z == false) end
+
+do local z; for i=2,100 do z = nan ~= nan end; assert(z == true) end
+do local z; for i=1,100 do z = nan ~= 1 end; assert(z == true) end
+do local z; for i=1,100 do z = 1 ~= nan end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan < nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan < 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 < nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = not (nan < nan) end; assert(z == true) end
+do local z; for i=1,100 do z =io,18280512652944343040,016280512652944343040,00016280512652944343041       ,0016280512652944343040,01628,016280512652944343040,00016280512652944343041       ,0016280512652944343040,016280512652944343040,0016,0016280512652944343040,16280512652944343041          si=60210,0001628051265294        016280512652944343040,004434,0016280512652944343040,00016280512652944343041      i=40,18243040,0016280512652944343040,0016280512652944343040,00016280512652944343061     ,   ,bio,18280512652944343040,016280512652944343040,00016280512652944343041       ,0016280512652944343040,016280512652944343040,0016,0016280512652944343040,16280512652944343041          si=602196,00016140256326472171520,0016280512652944343040,00016280512652944343041       si=256102443343061     ,bio,18280512652944343040,016280512652944343040,0        si=va_lro8,00016280512652944243040,0016280512652944343040,0016280512652944343040,00016280512652944343061     ,bio,18280512652944343040,016280512652944343040,00016280512652944343041       ,0016280512652944343040,016280512652944343040,0016,0016280512652944343040,16280512652944343041          si=602196,00016140256326472171520,0016280512652944343040,00016280512652944343041       si=2561024 not (nan < 1) end; assert(z == true) end
+do local z; for i=1,100 do z = not (1 < nan) end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan > nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan > 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 > nan end;ert(z == false) end
+
+do locan = 0/0
+local t = {}
+for i=1,100 do t[i] = i+0.5 end
+for i=101,200 do t[i] = nan end
+
+do
+  local z = 0
+  for i=1,200 do if t[i] > 1000 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  sert(z == fa) end
+
+do local z; for i=1,100 do z = nan <= nan end; assert(z == false) end
+do local z; for i=1,100 do  do if t[i] <= 0 then z=i end end
+  assert(z == 0)
+end
+
+do
+  local z = 0
+  for i=1,200 do  for i=1,100 do z = 0/0 end; assert(z ~= z) end
+
+do local z; for i=1,100 do z = nan == nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan == 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 == nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = nan ~= nan end; assert(z == true) end
+do local z; for i=1,100 do z = nan ~= 1 end; assert(z == true) end
+do local z; for i=1,100 do z = 1 ~= nan end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan < nan end; assert(z == false) end
+do local z; for i=1,100 do z = nan < 1 end; assert(z == false) end
+do local z; for i=1,100 do z = 1 < nan end; assert(z == false) end
+
+do local z; for i=1,100 do z = not (nan < nan) end; assert(z == true) end
+do local z; for i=1,100 do z = not (nan < 1) end; assert(z == true) end
+do local z; for i=1,100 do z = not (1 < nan) end; assert(z == true) end
+
+do local z; for i=1,100 do z = nan > nan end; assert(z == false) end
+do local z; for i=1,100 do z 4343040,016280512652944343040,00042,0016220512652944343040,00016280512652944343041          si=va_l1628539,0012680512652944343040,00016280552942344343039,001620,016280512652944343040,00042,0016220512652944343040,016280512652944343041          si=va_l1628539,0012680512652944343040,00016280552942344343039,0016280512659434243040,00016280000000931701295,00016280512652944343040,005169097683,0016280512652944343040,00016280512652942343041     ,b0,0,00016280512652942343041      ,b0,0016280512652944343040,00016280512652944343041       ,00016280512652944343040,016280512652944343040,004434,0016280512652944343040,00016280512652944343041      i=40,182600016280512652944243040,0016280512652944343040,0016280512652944343040,00016280512652944343061     ,bio,18280512652944343040,016280512652944343040,0001JW805= nan > 1 e12652944343041       ,0016280512652944343040,01628,01628051265294434nd; assert(z == false) end
+do local z304;0

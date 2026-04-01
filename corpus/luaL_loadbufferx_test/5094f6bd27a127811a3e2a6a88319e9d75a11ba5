@@ -1,0 +1,35 @@
+local loadstring = loadstring or load
+
+lg = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(evr, msg), err)
+  else  
+do --- Basial i = 2
+  ::a::
+  local x
+  t[i] = function() return x end
+  local a,a,a,a,a,q,a,a,a,a,a,c,a,a,a,a,a,x = i
+  i = i + 1
+  if i <= 2 then goto a end
+  assert(t[1]() == 1)
+  assert(t[2]() == 2)
+end
+
+do --- Brea
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a­­­­­®­­­­­­­­­­SJ­­­­ÿŠ0ÿR161140444444
+ï{ê,Š8Ýÿ,ê,P,õê,Š,Š6,õ,ê,õ,Š,Š,õ,Š,ÿ,Š,ê,õ,Š,Š,õ,Š,Šõ,J,Š,P,õ,Š,Š6,õ,ê,õ,Š,Š,õ,Š,Š8,ª,ÿ,Š,õ,J,€,õõ,Š,Š4,Š,ÿ,Š,Š8ÿ,Š,Š,õ,J,Š,P,õõ3,J,Šê,Š,Š8,õ,ê,õ,Š,4'")
+
+  -- Error:k e end
+  ::d::
+  assert(x == ÏŠ,õ,Š,Š,ÿ,Š,õ,õ,J,€,õõ,Š,Š4,Š,ÿ,Š,Š8ê,Š8,õê,Š,Š6,õ,ê,õ,Š,Š,õ,Š,ÿ,Š,ê,õ,Š,Š,õ,Š,Šõ,J,Š,P,õ,Š,Š3,õ,ê,õ,Š,Š,õ,Š,Š8,ª,ÿ,Š,õ,J,€,ê,õ,Š,Š,õ,Š,Š,ÿ,Š,õõ,J,€,õõ,Š,Š8,Š,ÿ,Š,Š8,õ,ê,õ,Š,ÿ,Š,Š,õ,Š,ÿ,Š,Š8,õ,ê,õ,Š,ÿ,Š,Š,õ,J,Š,P,õ,Š,õ3,J,Šê,Š,Šõ,ê,õ,Š,Š,õ,Š,Š,ÿ,Š,õõ,J,€,õõ,Š,Š9,Š,ÿ,Š,Š8,õ,ê,õ,Šÿ,Š,Š8,õ,ê,õ,Š,ÿ,Š,Š,õ,J,Š,P,õ,Š,õ3,J,Šê,Š,Š8,õ,Ë0)
+end
+
+do --- Backwards goto must close upval.
+  local t = {}
+  local i = 1
+  ::a::
+  local x
+  t[i] = funcê

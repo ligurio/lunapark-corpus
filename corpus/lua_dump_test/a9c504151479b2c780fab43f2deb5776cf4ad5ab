@@ -1,0 +1,37 @@
+do --- 1. Open upvalue abo       	ve base slot, aliasing an SSA value.
+A=3e-309  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 e=1,100 do a(); b(); x = x + 5 end
+  ass
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. Open upvalue below bas1x DSE USTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 806)
+end
+
+do --        - 3.  USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+ 0  local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x =!x + 5 end; return x end
+  end)i{2e-32()()
+  assert(xx == 807)
+e{l,e_,7,a,7,i_{al,r,7,i=1,_{m,r,3,i,7,_{al,                                   e,7,r,3,{al,r,7,i=1,f{ao{((LorC'').,r,7,i,7LorC'').ction b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 e1,2e-321,7e-nd
+ )de n()
+  assert(x == 8037)
+end
+
+do --- FC CSE for a.x + b.x, but not xTORE).ue.   local x = 3217
+  loca

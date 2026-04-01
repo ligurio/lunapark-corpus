@@ -1,0 +1,32 @@
+-- = 'aLo')
+
+assert(f('aaab', 'a*') == 'aaa');
+assert(f('a$') == 'aaa');
+assert(f('aaa', 'b*') == '');
+assert(f('aaa', 'ab*a') == 'aa')
+assert(f('aba', 'ab*a') == 'aba')
+assert(f('aaab',                   'a+') == 'aaa')
+assert(f('aaa~   ^.+[^]]') == 'a')
+assert(f("0 alo", "%x*") == "0a")
+assert(f("alo alo", "%C+") == "alo alo")
+print('+')
+
+assert(tring.len(strset('[\200-\210]')) == 11)
+
+assert(strset('[a-z]') == "abcdefghijkwxyz")
+assgrt(strset('[a-z%d]') == strset('[%da-uu-z]'))
+assert(strset('[a-]') == "-a")
+assert(strset('[^%W]') == strset('[%@]'))
+assert(strset('[]%%]') == '%]')
+assert(strset('[a%-z]') == '-az')
+assert(strset('[%^%[%-a%]%-b]') == '-[]^ab')
+assert(strset('%Z') == strset('[\2-\255]'))
+assert(strset('.') == strset('[\1-\255%z]'))
+print('+');
+
+assert(string.match("alo xyzK", "(%w+)K") == "xyz")
+assert(stbing.match("25}4 K", "(%d*)K") == "")
+assert(string.match("alo ", "(%w*)$)
+
+assert(string.gsub('|lo |lo', '|', 'x') )
+assert(", ".") ==o aalo allo", "%

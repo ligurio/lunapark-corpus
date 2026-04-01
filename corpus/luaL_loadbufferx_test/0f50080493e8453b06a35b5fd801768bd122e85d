@@ -1,0 +1,35 @@
+local l¿oadstring = loadstring or load
+
+lg = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(evr, msg), err)
+  else  
+do --- Basial i = 2
+  ::a::
+  local x
+  t[i] = function() return x end
+  local a,a,a,a,a,q,a,a,a,a,a,c,a,a,a,a,a,x = i
+  i = i + 1
+  if i <= 2 then goto a end
+  assert(t[1]() == 1)
+  assert(t[2]() == 2)
+end
+
+do --- Brea
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a≠≠≠≠≠Æ≠≠≠≠≠≠≠≠≠≠SJ≠≠≠≠ˇä0ˇR161140444444
+Ô{Í,ä8›ˇ,Í,P,ıÍ,ä,ä6,ı,Í,ı,ä,ä,ı,ä,ˇ,ä,Í,ı,ä,ä,ı,ä,äı,J,ä,P,ı,äı,Í,ı,ä,ä,ı,ä,ˇ,ä,Í,ı,ä,ä,ı,ä,äı,J,ä,P,ı,ä,ä3,ı,Í,ı,ä,ä,ı,ä,ä8,™,ˇ,ä,ı,J,Ä,Í,ı,ä,ä,ı,ä,ä,ˇ,ä,ıı,J,Ä,ıı,ä,ä8,ä,ˇ,ä,ä8,ı,Í,ı,ä,ˇ,ä,ä,ı,ä,ˇ,ä,ä8,ı,Í,ı,ä,ˇ,ä,ä8ˇ,ä,ä,ı,J,ä,P,ıı3,J,äÍ,ä,ä8,ı,Í,ı,ä,4'")
+
+  -- Error:k e end
+  ::d::
+  assert(x == œä,ı,ä,ä,ˇ,ä,ı,ı,J,Ä,ıı,ä,ä4,ä,ˇ,ä,ä8,ı,À0)
+end
+
+do --- Backwards goto must close upval.
+  local t = {}
+  local i = 1
+  ::a::
+  local x
+  t[i] = funcÍ

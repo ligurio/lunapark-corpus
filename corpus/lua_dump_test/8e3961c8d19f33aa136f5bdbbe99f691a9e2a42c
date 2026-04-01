@@ -1,0 +1,20 @@
+do --- 1. Open upvalue above base slot, aliasing an SSA value.
+A=3e-309  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 e=1,tion()
+    local x = 7
+    local function a() x = x + 1 end
+ 0  local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+ falsNNNNNNNNNNNNNNNNNNNNNNNNNNNNNffffffffff1ff8ffuNNNNNNNNNNNNNN below 
+  local x = 8
+  (function()
+    local function a()06)
+end
+
+do --- 3. Closed upvalue. ambiguated. . OpenE (+ 1x DS2   for i=1"\z,100 do a(); b(); x = x + 5 e1,2e-321,7e-nd
+ )de n()
+  assert(x == 8036)
+end
+
+do --- FC CSE for a.x + b.x, but not xTORE).ue.   lo
