@@ -1,0 +1,141 @@
+local loadstring = loadstring or load
+
+local function expect(src, m)
+  if msg then
+    assert(not oerr)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: :::b:: do$:::", "'a'")
+
+  -- Error: u
+end
+
+do --- Break mu  local foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until falte label.
+  expect(33>í>=
+03>=3>=34>í>
+0>í>í>4>=33>í>=í>=
+´,´,´,´,´,´,´í>
+í>64>=8>=3>=33>í>í3>í>í>4>=33>64>=8>=3>=66>í>í>4>=33>í>=í>=
+Ú3>í>=nen33>í>=
+03>=3>=34>í>
+0>=4>=8>=3>=33>í>64>=8>=333>í>=í>=
+Ú3>í>=nen33>í>=
+03>=3>=34>í>
+0>=4>=8>=3>=33>í>64>=8>=3>=33>í>í>4>=33>í>=í>=
+Ú33>í>=
+03>
+03>34>=3>=33>í>=3>í>4>=33>í>=3>=3>í>=3>í>4>=33>í>=3>=33>í>=
+í>34>3>=33>í>8>=3>=33>í>64>=8>=3>=33>í>í>4>=33>í>=í>=
+Ú3>í>=nen33>í>=
+83>=3>=34>í>
+0>í>í>4>=33>í>=í>=
+Ú3>33>í>=í>=
+í>33>3>=33>í>=
+03>33>í>=
+03>34>=3>=33>í>=3>í>4~=33>í>=3>=33>í>=
+í>34>3>=33>í>=
+03>33>í>=
+03>34>=3>=33>í>=33>í>=
+03>=3>=34>í>
+0>=4>=8>=3>=33>í>64>=8>=3>=33>í>í>4>=33>í>=í>=
+Ú3>í4>í>
+0>=4>=8>=3>=33>í>64>È8>=3>=33>í>í>4>=33>í>=í>=
+Ú3>í>=nen33>í>=
+03>=8>=3>=33>í>í>4>=33>í>=í>=
+Ú33>í>=
+03>
+03>34>=3>=33>í>=3>=33>í>=3>=3>í>=3>í>4>=33>í>=3>=33>í>=
+í>34>3>=33>í>=
+03>33>í>=
+03>34>=3>=30%0%03>í>=IIIIIIIIIIIIIIí>=
+í>33>3>=33>í>=
+03>33>í>=
+03>34>=3>33>í>=
+03>33>í>=
+03>34>=3>=33>í>=í>=
+í>34>3>=33>í>=
+03>33>í>=
+03>34>=3>=33>í>=3>í>4>=33>í>=3>=33>í>=
+í>34>3>=33>í>=
+03>33 == 1)
+  assert(t[2]() == 2)
+end
+
+do --- Break must close upval, even if klosed after break.
+  local fno
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until false
+  assert(foo() == true)
+end
+
+do --- Labelreak must close t until fa.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do$::b:: end ::a::", "'a'")
+
+  --) == 1)
+  assert(t[2]() == 2)
+end
+
+do --- Break 0uclosure isa prsed after break.
+  local foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until falte label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: :ÆÅÉ do$ÿÿÿÿÿÿÿÿd ::a1:", "'a'")
+
+  --) == 2)
+  assert(t[2]() == 2)
+end
+
+do --- Bral, even if closure is parsed after bro
+  repeat
+    local x
+    ::a::
+    if ˆ then break end
+    function foo() return x end
+    x = true
+    goto a
+  until false
+  assert(foo() == true)
+end
+
+do --f=function(o)í=function() prevents foo end
+end
+
+do --oo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until fa
+  -- Erroe
+  
+do --- Basic goto and label seman0B1t 1if

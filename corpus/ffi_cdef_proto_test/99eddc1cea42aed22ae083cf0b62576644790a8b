@@ -1,0 +1,47 @@
+declarations {
+  declarators_and_initializers {
+    declarators {
+      array_declarator {
+        attr_spec_seq {
+          keyword_maybe_unused: 4
+        }
+      }
+    }
+    declarators {
+      pointer_declarator {
+        attr_spec_seq {
+          keyword_nodiscard_reason: 5
+        }
+        declarator {
+          pointer_declarator {
+            attr_spec_seq {
+              keyword_nodiscard_reason: 5
+            }
+            declarator {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+declarations {
+  declarators_and_initializers {
+    declarators {
+      function_declarator {
+        noptr_declarator {
+        }
+        parameters_list {
+          parameters {
+            parameters {
+              name {
+                name: ""
+                num: 5
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+declarations {
+  specifiers_and_qualifiers_list {
+    specifiers_and_qualifiers_list {
+      specifiers_list {
+        specifiers_list {
+          storage_class_specifier {
+            storage_class_constexpr: 1024
+          }
+        }
+      }
+    }
+    specifiers_and_qualifiers_list {
+      specifiers_list {
+        specifiers_list {
+          type_specifier {
+            struct_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                  static_assertion {
+                    expression: 2
+                  }
+                }
+              }
+            }
+          }
+        }
+        specifiers_list {
+          type_specifier {
+            struct_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                }
+              }
+            }
+          }
+        }
+        specifiers_list {
+          type_specifier {
+            struct_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 2
+                    expression: 2
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 2
+                    expression: 2
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

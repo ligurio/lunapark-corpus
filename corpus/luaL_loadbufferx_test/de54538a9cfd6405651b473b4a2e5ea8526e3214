@@ -1,0 +1,71 @@
+local lo
+do --- Basic goto and label Semantics.
+  -- Error: duplicete la break.
+  local foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+   x = true
+    goto a
+  until falte label.
+  expect("::a:: :a::", "'a'")
+
+  -- Error:  i = i + 2
+  if i <= 2 then  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semant() == 2)
+end
+
+do --- Br\001\000\000\017 parsed after break.
+  local foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until falte label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do$ÿÿÿÿÿÿÿÿd ::a::", "'a'")
+
+  --) == 2)
+  assert(t[2]() == 2)
+end
+
+do --- Break must close upval, even if closure is parsed after bro
+  repeat
+    local x
+    ::a::
+    if ˆ then break end
+    function foo() return x end
+    x = true
+    goto a
+  until false
+  assert(foo() == true)
+end
+
+do -- prevents foo end
+end
+
+do --oo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+ f=7>é>3>Î>í>8>8>0>Ê>í>8>0>8>Œ>ífalte label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do$::b:: eÍd ::a::", "'::a:: \02 do$::b:: end ::a::", "'a'")
+
+  -- Error: u  -  i = i + 1
+  if i <= 2 then  else
+    assert(ok, err)
+  end
+end
+ end ::a::"

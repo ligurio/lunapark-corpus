@@ -1,0 +1,64 @@
+declarations {
+  specifiers_and_qualifiers_list {
+    specifiers_and_qualifiers_list {
+      specifiers_list {
+        specifiers_list {
+          type_specifier {
+            struct_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 1
+                    expression: 3
+                    message: "]]l=a,not [["
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_1: 1
+                    expression: 3
+                    message: "]]or[["
+                  }
+                }
+                struct_declaration_list {
+                  bit_field {
+                    width: 0
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    expression: 4
+                    message: "]]or[["
+                  }
+                }
+              }
+            }
+          }
+        }
+        specifiers_list {
+          type_specifier {
+            union_type {
+              struct_declaration_list {
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_2: 3
+                    expression: 3
+                    message: "]],not\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000[["
+                  }
+                }
+                struct_declaration_list {
+                  static_assertion {
+                    static_assert_1: 3
+                    expression: 4
+                  }
+                }
+                struct_declaration_list {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

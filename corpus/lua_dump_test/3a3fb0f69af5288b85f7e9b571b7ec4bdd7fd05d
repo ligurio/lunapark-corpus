@@ -1,0 +1,105 @@
+do --- 1. Open upvalue above base slot, aliasing an SSA value.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 e=1,100 do a(); b(); x = x + 5 end
+  asserl(x == 807)
+end
+
+do --- 00000000000000SRA value.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. Open upvalue below bas1x DSE USTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 806)
+end
+
+do --        - 3.  USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4.  --- 3[[pvalue below base slot x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. OpeUSTTTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Clos
+  local function b() x = x + 2 end
+  do a(); b(); x = x + assert(x == 807)
+end
+
+do --- 2. Open upvalue below base slot. UREFO CSE fo7
+  (function()
+    local function a() x = x + 1 end
+function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x== 807)
+end
+
+do --- 3. Closed upvalue. UREFC 
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 6 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4. OpenSTORE).
+  local x = 8
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a();while T do
+while d
+do
+breai=0
+r=4097
+only_icfzl'['Q ''r''''''''''        ''''''''N''sl'['Qr''r'''YQQ[r'r'''''\'''''YN'
+do ---0!do     local ok), ok2, ok2, y = pcall(pcelsqrt, i*i)
+x = 0
+  fori =0,100 do
+    local o O, ok2, ok3, y = pcue{UFuts=0/ oooosoooFut-us
+}se{UFuts=1/ ooooooooolooou,oBoooooooooooooooou,sFut-u/ s
+}ue{UFuts=0/  ooooooio,f,fi3333333333;o,fi,i,f,fi333333,pro, Alf_K,ffi2333333;o,a,a,a,a,aJ ,a,a,a,a,a,aa,aa,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a333333io,o33333;o,fifi,io,f,fi333u33_pr,f333333333;y,ji,io,f333A3333a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a334,o3i,io,f,fi3333i33333333333;o,fi,io,f,fo,f,fi3333333,o3333333,o3i,io,f,fi,fI333,a,3,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a334i3333i,io333;o,fi,io,f,fi33333333333o,o,fi,io,f,fi3333,o,fi,io,f,fi3333,o3i,io33333;o,fi,ioi,io,f,fi3333,o3i,io33333;o,fi,io,f,fi33333333io,o33333;o,fifi,io,f,fi333u33_pr,f3ro,o3i,io33,o3333333333;o,fi,i,f,fi333333,pro, Alf_K,ffi2333333;o,fifi,a,6/E<z1/7-3-3/E<7-3/E,7-3/E<7-3/E<1/7-3- 3/E<7-o3i,io33333;o,fi,io,f,fi33333333io,o33333;o,fifi,io,f,fi342u33_pr,f3ro,o3i,io33,o3333333333;o,fi,i,f,fi333333,pro, Alf_K,ffi2333333;ofi,io,f,f33a,a,a,a,aJ ,a,a,a,aa,a;a,a,a,a,a,a,a,a,aa,a,a,a,a,a,a,a,a,a,a,aa,a,aa,a,a,a,a,a,a,a,a,aJ ,a,a,a,a,a,aa,aa,a,a,a,a,a,a,a,a,a,a,a,aio_p    ,3,1,1,1,1,1-1,1,1,1,1,
+ 1,1,1,1,1,1%1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,5,1,1,11,1,1,11,1,1,1,1,1,1,11,
+1,1,1,1,1,1       ,1,1,1,1,11, Alf_K,ffi2333333;o,fifi,io,f,fi,i,f,fi333333,pro, Alf_K,ffi2333333io,f,f33a,a,a,a,aJ ,a,a,a,a,a,a,a,a;a,a,a,a,a,a,a,a,aa,a,a,a,a,a,a,a,a,a  ,a,aa,a,aa,a,a,a,a,a,a,a,a,aJ ,a,a,a,a,a,aa,aa,a,a,a,a,a,a,a,a,a,H,a,a,a,a,a,a,a,a,a,a,a,afifi,io,f,fi3333333,o3i,io,f,fi3333i,io333;o,fi,io,f,fi33333333333o,o,fi,io,f,fi3333,o3i,io33333;o,vfi,ioi,io,f,fi3333,o3i,io33333;o,fi,io,f,fi33333333=#io,o333s3;o,fifi,io,f,fi316u33_pr,f3ro,o3i,io33,o36, x693333ro,ol5f,313933, xx8    , x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x22, x24, x25, x2us
+}le{UFuue_pro,32,oIro,32,o3,32,o333}  si_{33}i_{32,o3333}  {lue_ro,333}  si     r=4097
+only_icfzl'['Qr''s=0/  o,Fr''''''''''''''N''sl'['Qr''r'''['Qr''p'''''\''''''''N'''r['lQs''zlr''r''''''''''''''N''sl'['Qr
