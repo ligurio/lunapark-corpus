@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            or: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                }
+              }
+              binop {
+                div: 0
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greater: 7
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            number: -48.00000000000005
+                          }
+                          binop {
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                exp: 0
+                              }
+                              rightexp {
+                                number: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        exp: 7
+                      }
+                      rightexp {
+                        true: 6488064
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

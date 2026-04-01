@@ -1,0 +1,86 @@
+do --- operators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)
+  for i=1,100 do local a, b = 23, 11; y = a-b end; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 23, 11; y = a/b end; assert(y == 23/11)
+  for i=1,100 do local a, b = 23, 11; y = a%b end; assert(y == 23%11)
+  for i=1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing garbage collection')
+
+collectgarbage()
+
+_G["while"] = 234
+
+limit = 5000
+
+
+
+contCreate = 0
+
+print('tables')
+while contCreate <= limit do
+  local a = {}; a = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end; assert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a/b end; assert(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = math.abs(a) end; assert(y == math.abs( = nil
+  contCreate = contCreate+1
+end
+
+a = "a"
+
+contCreate = 0
+print('strings')
+while contCreate <= limit do
+  a = contCreate .. "b";
+  a = string.gsub(a, '(%d%d*)', string.upper)
+  a = "a"
+  contCreate = contCreate23))
+  for i=1,100 do local a=-23; y = math.abs(a) end; assert(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = math.abs(a) end; ass+1
+end
+
+
+contCreate = 0
+
+a = {}
+
+print('functions')
+function a:test ()
+  while contCreate <= limit do
+    loadstring(string.format("function temp(a) return 'a%d' end", contCreate))()
+    assert(temp() == string.format('a%d', contCreate))
+    contCreate = contCreate+1
+  end
+end
+
+a:test()
+
+-- collection of functions without locals, globals, etc.
+do local f = function () end end
+
+
+print("functions with errors")
+prog = [[
+do
+  a = 10;
+  function foo(x,y)
+    ert(y == math.abs(23.5))
+  for i=1,100 do local a=-23.5; y = math.abs(a) end; assert(y==math.abs(-23.5))
+  for i=1,100 do local a=-2^31; y = math.abs(a) end; assert(y==math.abs(-2^31))
+end
+
+do --- atan2 ldexp
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.a = sin(a+0.456-0.23e-12);
+    returan fu

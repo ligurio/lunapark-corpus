@@ -1,0 +1,96 @@
+chunk {
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          ellipsis: "\256"
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      ifstat {
+                        condition {
+                          prefixexp {
+                            exp {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    expression {
+                                      number: 416
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                      expression {
+                                        prefixexp {
+                                          exp {
+                                            unary {
+                                              unop {
+                                                negate: 16
+                                              }
+                                              exp {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                      expression {
+                                        prefixexp {
+                                          exp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+          laststat {
+            break: 26368
+          }
+        }
+      }
+      condition {
+        true: 32
+      }
+    }
+  }
+}

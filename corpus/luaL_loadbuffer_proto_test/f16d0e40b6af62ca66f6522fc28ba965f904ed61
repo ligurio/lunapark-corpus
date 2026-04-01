@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        prefixexp {
+                        }
+                      }
+                      first {
+                        chunk {
+                          laststat {
+                            break: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        prefixexp {
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                nil: 1048576
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

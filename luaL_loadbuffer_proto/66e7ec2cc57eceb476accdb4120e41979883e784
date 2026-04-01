@@ -1,0 +1,36 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    number: 1.0434277703334437e-309
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    str: "e3333"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

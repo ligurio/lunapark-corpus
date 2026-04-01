@@ -1,0 +1,121 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                ellipsis: "debug.getuservalue"
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+                number: 3.4112946364029249e+228
+              }
+            }
+          }
+          binop {
+            concat: 1
+          }
+          rightexp {
+            binary {
+              leftexp {
+                nil: 0
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    number: -1384
+                  }
+                  binop {
+                    exp: 67108865
+                  }
+                  rightexp {
+                    number: 92
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    name {
+                      name: "tonumber"
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 4
+                      }
+                      rightexp {
+                        binary {
+                          leftexp {
+                            prefixexp {
+                              functioncall {
+                              }
+                            }
+                          }
+                          binop {
+                            concat: 4
+                          }
+                          rightexp {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                  functioncall {
+                                  }
+                                }
+                              }
+                              binop {
+                                add: 4
+                              }
+                              rightexp {
+                                prefixexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    false: 0
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+do --- mat4mul !private_G
+function mat4mul(a11, a21, a31, a41,
+                 a12, a22, a32, a42,
+                     b13, b23, b33, b43,
+                 b14, b24, b34, b44)
+  return a11*b11+a21*b12+a31*b13+a41*b14,
+  a11*b21+a21*b22+a31*b23+a41*b24,
+  a11*b31+a21*b32+a31*b33+a41*b34,
+  a11*b41+a21*b42+a31*b43+a41*b44,
+  a12*b11+a22*b12+a32*b13+a42*b14,
+  a12*b21+a22*b22+a32*b23+a42*b24,
+                                 a12*b31+a22*b32+a32*b33+a42*b34,
+  a12*b41+a22*b42+a32*b4a34, a44 = mat4mul(a11, a21, a31, a41,
+                               a12, a22, a32, a42,
+                               a13, a23, a33, a43,
+                               a14, a24, a34, a44,
+                               b11, b21, b31, b41,
+                               b12, b22, b32, b42,
+                               b13, b23, b33, b43,
+                               b14, b24, b34, b44)
+end
+assert(a11 == 1)
+assert(a31 == 0)
+end

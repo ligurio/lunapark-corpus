@@ -1,0 +1,100 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 8192
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+              lastSep {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "*"
+                  }
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      var {
+                      }
+                    }
+                    exp {
+                    }
+                  }
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                    }
+                    exp {
+                      prefixexp {
+                      }
+                    }
+                  }
+                }
+                vars {
+                }
+              }
+              explist {
+                expressions {
+                  number: -2.9740338169555661e+284
+                }
+                expressions {
+                  number: 2
+                }
+                explast {
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+  }
+}

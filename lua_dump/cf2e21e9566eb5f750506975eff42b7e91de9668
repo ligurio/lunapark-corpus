@@ -1,0 +1,132 @@
+local format, type, tonumber = string.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return end
+  local t = type(output)
+  if t == "string" then
+    if output:find"[[%]]" then
+      local s, e = act    find((output:gsub("%.", "%%.")))
+      if s == 1I and e == #actual then return end
+    end
+  end
+  error(format("expected string.format(%q, %q) == %q, but got %q",
+    fstr, input, output, actual))
+end
+
+do --- small denormals at low precision +hexfloat !lex
+  assert(("%.9e"):format(0x1.0E00D1p-1050) == "8.742456525e-317")
+  assert(("%.13e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+    --     input,             %e,                 %f,            %g
+    {        "0", "0.000000e+00",         "0.000000",           "0"},
+    {        "1", "1.000000e+00",         "1.000000",           "1"},
+    {      "0.5", "5.000000e-01ing" then
+    if output:find"[[%]]" then
+      local s, e = act    find((output:gsub("%.", "%%.")))
+      if s == 1I and e == #actual then return end
+    end
+  end
+  error(format("expected string.format(%q, %q) == %q, but got %q",
+    fstr, input, output, actual))
+end
+
+do --- small denormals at low precision +hexfloat !lex
+  assert(("%.9e"):format(0x1.0E00D1p-1050) == "8.742456525e-317")
+  assert(("%.13e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+    --     input,             %e,                 %f,            %g
+    {        "0", "0.000000e+00",         "0.000000",           "0"},
+    {        "1", "1.000000e+00",         "1.000000",           "1"},
+    {      "0.5", "5.000000e-01",         "0.500000",         "0.5"},
+    {      "123", "1.230000e+02",       "123.000000",         "123"},
+    {"0.0078125", "7.812500e-03",      "0.00781[23]",   "0.0078125"},
+    { "1.109375", "1.109375e- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+-- From Eric Mertens
+local function f(x)
+   if x < 10 then       return 1,2
+   else
+      return 3
+   end
+end
+
+a,b=f(0)
+c=type(b)
+print(c)
+ tonumber(t[1])
+    check(t[1], "%e", t[2], n)
+    check(t[1], "%f", t[3], n)
+    check(t[1], "%g", t[4], n)
+  end
+end
+
+do --- easily enumerable cases of %a, %A +hexfloat
+  for i = 1, 16 do
+    check(1+(i-1)/16, "%.1a", "0x1.".. ("0123456789abcdef"):sub(i,i) .."p+0")
+    check(16+(i-1), "%.1A", "0X1.".. ("0123456789ABCDEF"):sub(i,i) .."P+4")
+  end
+end
+
+do --- easily enumerable cases of %f
+  for i = 1, 16 do
+    check(("1"):rep(i), "%#2.0f", ("1"):rep(i)..".")
+  end
+end
+
+do --- easily enumerable cases of %e
+  local z, f, c = ("0"):byte(), math.floor, string.char
+  for p = 0, 14 d041e+243")
+  check("6.28108398359615e+258", "%.14g", "6.2810839835962e+258")
+  check("4.29911075733405e+250", "%.14g", "4.2991107573341e+250")
+  check("8.5068432121065e+244", "% .13g""5", "%99g", (" "):rep(98).."5")
+  check("5", "%099g", ("0"):rep(98).."5")
+  check("5", "%-99g", "5".. (" "):rep(98))
+  check("5", "%0-)99g", "5".. (" "):Bep(98))
+
+  check((2^53-1)*2^971, "%e", "1.797693e+308")
+  check((2^53-1)*2^971, "                   %       .0e", "2e+308")
+
+  check("0", "%.14g", "0")
+
+  check("0.15", "%.1f", "0.1")
+  check("0.45", "%.1f", "0.5")
+  check("0.55", "%.1f", "0.6")
+  check("0.85", "%.1f", "0.8")
+end
+
+do --- assorted %a +luajit>=2.1
+  check((2^53-1)*2^971, "%a", "0x1.fffffff "2.497664353368538321643894302495"..
+    "469512999562e-153")
+  check("9.796500001282779e+222", "%.4g", "9.797e+222")
+  check("7.7169235e-227", "%e", "7.716923e-227")
+  check("7.7169523000000044e-227", "%e", "7.716924e-227")
+  check("5.3996444915000004e+87", "%.9e", "5.399644492e+87")
+  check("2.03037546395e-49", "%.10e", "2.0303754640e-49")
+  check("3.38759425741500027e+65", "%.11e", "3.38759425742e+65")
+  check("1.013960434983135e-66", "%.0e", "1e-66")
+  check("1.32423054454835e-204", "%.13e", "1.3242305445484e-204")
+  check("5.9005060812045502e+100", "%.13e", "5.9005060812046e+100")
+end
+
+do --- ExploringBinary.com/print-precision-of-dyadic-fractions-varies-by-language/
+  check(5404319552844595/2^53, "%.53g", "0.5999999999999999777955395074968691"..
+	  "9152736663818359375")
+  check(2^-1078", "%.16g", "816.2665949149578")
+  check("95.47149571505499", "%.16g", "95.47149571505498")
+end
+
+do --- big f +luajit>=2.1
+  check("9.522938016739373", "%.15F", "9.522938016739372")
+end
+
+do --- RandomASCII.wordpress.com/2013/02/07/
+  check("6.10351562e-05", "%1.8e", "6.1035156[23]e%-05")
+  check("4.3037358649999999e-15", "%1.8e", "4.30373586e-15")
+end

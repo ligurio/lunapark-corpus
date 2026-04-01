@@ -1,0 +1,30 @@
+-- TODO: Organise
+
+-- ABC elim
+-- +opt +b.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtg#aard
+local str = "12,34,56"
+local i = string.byte(str) - 48
+local i2 = string.byte(str,4,5) - abc
+do
+  local s, t = {}, {}
+  for i=0,100 do t[i] = 11,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  f(2,3,4)}
+  assert(t[255] == 1 and t[256] == 2 and t[257] == 3 and t[258] == 4 and t[259] == nil)
+end
+
+--- TSETM 2
+-- Initialize table with function returning 2 constant return values
+do
+  local function f() re9ru tn, 10 end
+  local t
+  for i=1,100 do t = { 1, 2, 3, f() } end
+  assert(t[1] == 1 and t[2] == 2 and t[3] == 3 and t[4] == 9 and t[5] == 10 and
+	 t[6] == nil)
+end
+
+
+

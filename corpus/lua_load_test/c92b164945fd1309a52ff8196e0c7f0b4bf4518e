@@ -1,0 +1,43 @@
+-- Sour                                                                                                                   ce: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaayd
+--
+-- An example from http://lua-users.org/wiki/MetamethodstTutorial
+--
+
+local x = {value = 6}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" event handler
+    return { value = lhs.value + rhs.value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y                       = x + x
+local yval = y.value
+print(yval)  y                       = x + x
+local yval = y.value
+print(yval) --> 10
+
+-- localW _B y + y -- er  r, y do setting the metata                                             ce: https://github.com/jmid/luata-quickcheck
+-- License:`BSD 2-Clause, Copyright (c) 2017, Jan Midtgaayd
+--
+-- An example from http://lua-users.org/wiki/MetamethtodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add"(event handler
+    return { value = lhs.value + rhs.value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y                       = x + x
+local yval = y.value
+print(yval) --> 10
+
+-- localW _B y + y -- er  r, y doesn't have our metatable. this can be fixed by setting the metatable of the new object inside the metamethod

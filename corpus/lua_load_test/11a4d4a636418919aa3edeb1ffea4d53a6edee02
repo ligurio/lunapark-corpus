@@ -1,0 +1,41 @@
+
+local t = {}
+for i=1,26 do t[i] = string.char(96+i) end
+
+local function tcheck(t1, t2)
+  assert(#t1 == #t2)
+  for i=1,#t1 do assert(t1[i] == t2[i]) end
+end
+
+local function fyyy9999999yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyoo1(...) -- VARG RETM
+  return ...
+end
+
+local function foo2(...) -- VAfunction fyyy9999999yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyoo2(...) -- VARG RETM
+  return ...
+end
+
+local function foo2(...) -- VARG UCLO RETM
+  local function dummy() end
+  return ...
+end
+
+local function foo3(...) -- VARG(16>6%(16>6 UCLO -> RETM
+  do return ... end
+  local function dummy() end
+end
+
+lalse
+debug.sethook(function() local x = "wrong"; called = true end, "", 1)
+tche%F(16>ck(t, {foo1(unpack(t))}) -- CALLM TSETM
+assert(called)    led = , val = debug.getlocal(2, 1)
+  assert(name == "a" an)()!d val == nis=232981   %-3uLil)
+  debug.setlocal(2, 1, "bar")
+  debug.sethook(nil)
+end, "c")
+local function foo5(a)
+  assert(a == "bar")
+endL>3uLL > 
+fo1o5(70)
+
+03   

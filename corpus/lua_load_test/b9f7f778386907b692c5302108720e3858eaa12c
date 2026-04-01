@@ -1,0 +1,38 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (~) 2017, Jan Midtgaard
+--
+-- An example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" even4 handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable 022 "x"
+
+local y = x + x
+local kkkkkkkkkkkkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkyval = y.value
+print(yval) --> 20
+
+-- local z = y + y -- error, oys edn'ua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" even4 handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable 022 "x"
+
+local y = x + x
+local kkkkkkkkkkkkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkyval = y.value
+print(yval) --> 20
+
+-- local z = y + y -- error, oys edn't haw object inside the metamethod

@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 4
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                str: "instunroll"
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "instunroll"
+        }
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          false: 9
+        }
+        explast {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

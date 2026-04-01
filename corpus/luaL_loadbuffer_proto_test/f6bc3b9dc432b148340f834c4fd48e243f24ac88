@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: "z"
+                    num: 2560
+                  }
+                  args {
+                    str: "\377\377\377\377\377\377\377\377"
+                  }
+                }
+              }
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                  }
+                }
+                binop {
+                  or: 2560
+                }
+                rightexp {
+                  false: 2560
+                }
+              }
+            }
+          }
+        }
+        vars {
+          name {
+            name: "\377\377\377\377\377\377\377"
+            num: 0
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                  }
+                }
+                binop {
+                  or: 2560
+                }
+                rightexp {
+                  nil: 16
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+        }
+        expressions {
+          true: 32
+        }
+        expressions {
+          nil: 0
+        }
+        explast {
+          prefixexp {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+}

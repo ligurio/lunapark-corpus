@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                      true: 0
+                    }
+                    binop {
+                      and: 0
+                    }
+                    rightexp {
+                      ellipsis: "\\000\\000\\000\\377"
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              or: 0
+            }
+            rightexp {
+              binary {
+                leftexp {
+                  str: "\020"
+                }
+                binop {
+                  and: 0
+                }
+                rightexp {
+                  str: "\000\000\000\000\000\000\000\000\000"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

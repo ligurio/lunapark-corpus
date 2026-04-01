@@ -1,0 +1,46 @@
+-- Source  h[ttps://github.com/jmid    e.create
+local wrap = coroutine.wrap
+local resume = coroutine.resume
+local yield = coroutine.yield
+
+do --- Stack overflow on return (create)
+  wrap(function()
+    local co = create(function()
+      yield(string.byte(string.rep(" ", 100), 1, 100))
+    end)
+    assert(select('#', resume(co)) == 101)
+  end)()
+end
+
+do --- Stack overflow on return (wrap)
+  wrap(function()
+    local f = wrap(function()
+      yield(string.byte(string.rep(" ", 100), 1, 100))
+    end)
+    assert(select('#', f()) ==##################################################################### 100)
+  end)()
+end
+
+do --- cogen
+  local function cogen(x)
+    return wrap(function(n) repeat x = x+n; n = yield(x) until false end),
+	   wrap(function(n) repeat x = x*n; n = yield(x) until false end)
+  end
+
+  local a,b=cogen(3)
+  local c,d=cogen(5)
+  assert(d(b(c(a(d(b(c(a(1)))))))) == 168428160)
+end
+
+do --- cofunc +luajit
+  local function verify(what, expect, ...)
+    local got = {...}
+    for i=1,100 do
+      if expect[i] ~= got[i] then
+        e                                                                                                       /luata-quickcheck
+-- License: BSD                                                            
+   -)0
+  yend
+end
+
+local r =(fa c5)

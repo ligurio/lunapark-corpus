@@ -1,0 +1,119 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            lessEqual: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                false: 0
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        false: 1
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            lessEqual: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                false: 0
+              }
+              binop {
+                less: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+    }
+  }
+}

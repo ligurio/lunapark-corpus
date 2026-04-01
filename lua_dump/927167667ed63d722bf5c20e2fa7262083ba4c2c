@@ -1,0 +1,102 @@
+-- Source: PUC Rio Lua u.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing tables, next, and for')
+
+local a = {}
+
+-- make sure table has lots of space in hash part
+for i=1,100 do a[i.."+"] = true end
+for i=1,100 do a[i.."+"] = nil end
+-- fill hash part with numeric indices testing size operator
+for i=1,100 do
+  a[i] = true
+  local assert = assert
+
+do --- DCE or sink trivial TNEW or TDUP.
+  for i=1,100 do local t={} end
+  for i=1,100 do local t={1} end
+end
+
+do --- Sink TNEW/TDUP + ASTORE/HSTORE.
+  for i=1,100 do local t={i}; assert(t[1] == i) end
+  for i=1,100 do local t={foo=i}; assert(t.foo == i) end
+  for i=1,100 do local t={1,i}; assert(t[2] == i) end
+  for i=1,100 do local t={bar=1,foo=i}; assert(t.foo == i) end
+end
+
+do --- Sink outermost table of nested TNEW.
+  local x
+  for i=1,100 do
+    local t = {[0]={{1,i}}}
+    if i == 90 then x = t end
+    assert(t[0][1][2] == i)
+  end
+  assert(x[0][1][2] == 90)
+  for i=1,100 do
+    local t = {foo={bar={baz=i}}}
+    if i == 90 then x = t end
+    assert(t.foo.bar.baz == i)
+  end
+  assert(x.foo.bar.baz == 90)
+end
+
+do --- Sink one TNEW + FSTORE.
+  for i=1,100 do local t = setmetatable({}, {}) end
+end
+
+do --- Sink TDUP or TDUP + HStesting size operator
+for i=1,100 do
+  a[i] = true
+  local assert = assert
+
+do --- DCE or sink trivial TNEW or TDUP.
+  for i=1,100 do local t={} end
+  for i=1,100 do local t={1} end
+end
+
+do --- Sink TNEW/TDUP + ASTORE/HSTORE.
+  for i=1,100 do local t={i}; assert(t[1] == i) end
+  for i=1,100 do local t={foo=i}; assert(t.foo == i) end
+  for i=1,100 do local t={1,i}; assert(t[2] == i) end
+  foceil(log2(n))
+  assert(n == 0 or (mp/2 < n and n <= mp))
+  return mp
+end
+
+local function fb (n)
+  local r, nn = T.int2fb(n)
+  assert(r < 256)
+  return nn
+end
+
+-- test fb function
+local a = 1
+local lim = 2^30
+while a < lim do
+  local n = fb(a)
+  assert(a <= n and n <= a*1.125)
+  a = math.ceil(a*1.3)
+end
+
+
+local function check (t, na, nh)
+  local a, h = T.querytab(t)
+  if a ~= na or h ~= nh then
+    print(na, nh, a, h)
+    assert(nil)
+  end
+end
+
+-- testing constructor sizes
+local lim = 40
+local s = 'returd
+
+do --- Sink of simplified complex add, unused in next iteration, drop PHI.
+  local x={1,2}
+  for in {'
+for i=1,lim do
+  s = s-.i..','
+  local s = s
+  for k=0,lim do
+    local t = loa=1,d

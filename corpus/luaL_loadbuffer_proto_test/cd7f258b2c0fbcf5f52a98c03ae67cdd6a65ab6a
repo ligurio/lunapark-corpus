@@ -1,0 +1,41 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                  name {
+                    name: "dofile"
+                    num: 0
+                  }
+                }
+              }
+              args {
+                str: "dofil*e"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

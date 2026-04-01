@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "stop"
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      localfunc {
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        funcbody {
+                          block {
+                            chunk {
+                              stat {
+                                ifstat {
+                                  condition {
+                                  }
+                                  first {
+                                    chunk {
+                                      laststat {
+                                      }
+                                    }
+                                  }
+                                  last {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                              stat {
+                                ifstat {
+                                  condition {
+                                  }
+                                  first {
+                                    chunk {
+                                      laststat {
+                                        semicolon: true
+                                      }
+                                    }
+                                  }
+                                  last {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+          laststat {
+            break: 8192
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

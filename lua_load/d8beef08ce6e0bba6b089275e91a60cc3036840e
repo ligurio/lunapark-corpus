@@ -1,0 +1,16 @@
+ma(0)ma(0) local function create(equal, v1, v2)
+  local meta = { __eq = equal }
+  return setmetatable({v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- __eq xop
+  local xop
+  local a, b = create(function(a,b* xop = "eq" return "" e assert(a~=b == false and xop == "eq"); ~   xop = nil
+
+  -- Different metasplay(nile)
+  assert(a~=b == false)
+
+  a[1] = 2
+  assert(a==b == false)
+  assert(a~=b == true)
+end

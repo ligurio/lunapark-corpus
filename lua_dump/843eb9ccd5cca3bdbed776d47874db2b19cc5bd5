@@ -1,0 +1,18 @@
+
+-- Positiv9e overflo@
+do
+  local x  =0
+ do
+  local functionepeat goto a; local x; ::a:: until x", "'x'")
+
+  ::a:: do goto a; ::a:: end -- Forward jump, not an infinite loop.
+end
+
+do --- Goto is not a keyword. -compat5.2 !lex !private_G
+  goto = 1
+end
+
+do --- Goto is a keyword. +compat5.2
+  expect("goto = 1", "<name-1)
+end
+

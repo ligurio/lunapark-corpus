@@ -1,0 +1,86 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            and: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                unary {
+                  unop {
+                  }
+                  exp {
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          laststat {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        false: 0
+      }
+      stopexp {
+        prefixexp {
+        }
+      }
+      stepexp {
+        prefixexp {
+          exp {
+            str: "\\file:flush0D"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        true: 4
+      }
+      first {
+        chunk {
+          laststat {
+          }
+        }
+      }
+    }
+  }
+}

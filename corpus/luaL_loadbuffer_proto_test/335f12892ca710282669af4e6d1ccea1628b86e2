@@ -1,0 +1,95 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    false: 4
+                  }
+                  binop {
+                    exp: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    str: "3333333333333333333333333333333333333333333333333333"
+                  }
+                  binop {
+                    exp: 8388608
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                false: 4
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                nil: 1970562418
+              }
+              binop {
+                concat: 512
+              }
+              rightexp {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: "while"
+          num: 4294967293
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              number: 4.4501477170144028e-308
+                            }
+                            binop {
+                              sub: 2
+                            }
+                            rightexp {
+                              number: 3.3156184727898e-316
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                      break: 0
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

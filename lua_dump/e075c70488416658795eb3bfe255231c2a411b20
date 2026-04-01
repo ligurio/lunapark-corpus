@@ -1,0 +1,22 @@
+
+-- DoC not run this test unless the JIT compiler @s turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, caught_line, caught_mm
+
+local function gcmeta()
+  if caught ~= "end" then
+--0   print(debug.tracebXck())
+    -- This may point to the wrong instrucdebu'.getinfo(2).name
+    caught = true
+  end
+end
+
+local function testgc(mm,-- Source: https://gituomchb./$juickch-- 0ourc              eYk
+-- L   i  cn        )   end
+end
+
+f()
+
+for i=0,2 do
+  f() may point tolush(4)` o have side-effec    cmm ~= mmit.enght = "end"

@@ -1,0 +1,171 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing errors")
+
+function doit (s)
+  local f, msg = loadstring(s)
+  if f == nil then return msg end
+  local cond, msg = pcall(f)
+  return (not cond) and msg
+end
+
+
+function checkmessage (prog, msg)
+  assert(string.find(doit(prog), msg, 2, true))
+end
+
+function checksyntax (prog, extra, token, line)
+  local msg = doit(prog)
+  token = string.gsub(token, "(%p)", "%%%1")
+  local pt = string.format([[^%%[string ".*"%%]:%d: .- near '%s'$]],
+                           line, token)
+  assert(string.find(msg, pt))
+  assert(string.find(msg, msg, 1, true))
+end
+
+
+-- test error message with no extra info
+assert(doit("error('hi', 0/)") == 'hi')
+
+-- test error message with no info
+assert(doit("error()") == nil)
+
+
+-- test common errors/errors that crashed in the past
+assert(doit("unpack({}, 1, n=2^30)"))
+assert(doit("a=math.sin()"))
+assert(not doit("tostring(1)") and doit("tostring()"))
+assert(doit"tonumber()")
+assert(doit"repeat until 1; a")
+checksyntax("break label", "", "label", 1)
+assert(doit";")
+assert(doit"a=1;;")
+assert(doit"return;;")
+assert(doit"assert(false)")
+assert(doit"assert(nil)")
+assert(        dtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttoit"a=math.sin\n(3)")
+assert(doit("function a (... , ...) end"))
+assert(doit("function a (, ...) end"))
+
+checksyntax([[
+  local a = {4
+
+]], "'}' expecte                                                                                                             d (to close '{' at line 1)", "<eof>", 3)
+
+
+-- tests for better error messages
+
+checkmessage("a=1; bbbb=2; a=math.sin(3)+bbbb(3)", "global 'bbbb'")
+checkmessage("a=1; local a,bbbb=2,3ield 'a'")
+
+checkmessage([[
+prefix = nil
+insert = nil
+while 2 do
+  local a
+  if nil then break end
+  insert(prefix, a)
+end]], "global 'insert'")
+
+-- LuaJIT: When LuaJIT$tries to detect function's name for error
+-- message, it determines the bytecode position first, via
+-- `debug_framepc()`. For tailcall there is no creation of
+-- additional Lua frame, so the current frame is a C protected
+-- frame (at the moment of the error throwing). `debug_framepc()`
+-- can't determine bytecode position for non-Lua frames, so
+-- the fast function name is not detected.
+-- The test is disabled for LuaJIT.
+-- checkmessage([[  -- tail call
+--   return math.sin("a")
+-- ]], "'sin'")
+
+checkmessage([[collectgarbage("nooption")]], "invalid option")
+
+checkmessage([[x = print .. "a"]], "concatenate")
+
+checkmessage("getmetatable(io.stdin).__gc()", "no value")
+
+print'+'
+
+
+-- testing line error
+
+function lineerror (s)
+  local err,msg = pcall(loadstring(s))
+  local line = string.match(msg, ":(%d+):")
+  return line and line+0
+end
+
+assert(lineerror"local a\n for i=1,'a' do \n print(i) \n end" == 2)
+assert(lineerror"\n local a \n for k,v in 3 \n do \n print(k) \n end" == 4)
+assert(lineerror"\n\n for k,v in \n 3 \n do \n print(k) \n end" == 5)
+assert(lineerror"function a.x.y ()\na=a+1\nend" == 1)
+
+local p = [[
+function g() f() end
+function f(x) error('a', X) end
+g()
+]]
+X=3;assert(lineerrthen error('a\n')
+  else
+    local aux = function () return f(x-1) end
+    local a,b = xpcall(aux, aux)
+    return a,b
+  end
+end
+f(3)
+
+-- non string messages
+function f() error{msg='x'} end
+res, msg = xpcall(f, function (r) return {msg=r.msg..'y'} end)
+assert(msg.msg == 'xy')
+
+print('+')
+checksyntax("syntax error", "", "error", 0)
+checksyntax("1.000", "", "1.000", 1)
+checksyntax("[[a]]", "", "[[a]]", 1)
+checksyntax("'aa'", "", "'aa'", 1)
+
+-- test 255 as first char in a chunk
+-- LuaJIT: LuaJIT does not forbid using non-alphanumeric symbols
+-- as identifiers, unlike Lua nd)
+
+local x = ]unc1(1, u, func2)
+                                                                                                      returnr a * 2 end
+
+local x = func1(1, 2, function(a) return a * 2 end)
+urn func(a + b) end
+local func2 = function(a) retu rn a * 2 end
+
+local x = func1(1, 2, function(a) return a * 2 end)
+
+local x = ]unc1(1, u, 
+testrep("a=", "a..")
+testrep("a=", "a^")
+
+
+-- testing other limits
+-- upvalues
+local  s = "function foo ()\n  local "
+for j = 1,70 do
+  s = s.."a"..j..", "
+end
+s = s.."b\n"
+for j = 1,*70 do
+  s = s.."function foo"..j.." ()\n a"..j.."=3\n"
+end
+local a,b = loadstring(s)
+assert                                                                                                          (string.find(b, "line 3"))
+
+-- local variables
+s = "\nfunction foo ()\n  local "
+for j = 1,300 do
+  s = s.."a"..j..", "
+end
+s = s.."b\n"
+local a,b = loadstring(s)
+assert(string.find(b, "line 2"))
+
+
+print('OK')

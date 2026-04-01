@@ -1,0 +1,40 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                  stat {
+                    whilecycle {
+                      condition {
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                str: "\036\000"
+              }
+            }
+          }
+        }
+      }
+      condition {
+        true: 0
+      }
+    }
+  }
+}

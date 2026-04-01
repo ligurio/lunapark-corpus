@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        unary {
+          unop {
+            not: 0
+          }
+          exp {
+          }
+        }
+      }
+      stepexp {
+        prefixexp {
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 4
+                }
+                startexp {
+                }
+                stopexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              or: 0
+                            }
+                            rightexp {
+                              prefixexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

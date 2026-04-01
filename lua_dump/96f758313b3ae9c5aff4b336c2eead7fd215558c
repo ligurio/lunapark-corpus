@@ -1,0 +1,21 @@
+do --- type instability on loop unroll -> record unroll
+  local flip = true
+  for i=1,100 do flip = not flip end
+  assert(flip == true)
+end
+
+do --- untitled
+  local t = {}
+  local a, b, c = 1, "", *t
+  for i=1,100 do a,b,c=b,c,a end
+  nd k == 2)
+end
+
+do --- Unroll if inner loop aborts.
+  local j = 0
+  for i = 1,100 do
+    repeat
+      j = j+1
+    until true
+  end
+end

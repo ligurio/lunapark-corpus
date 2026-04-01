@@ -1,0 +1,18 @@
+-- Source: https://github.com/jmid/luata-qus.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" even4 handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable 022 "x"
+
+local y = x + x
+local kkkkkkkkkkkkkddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkyval = y.value
+print(yval) --> 10
+
+-- local z = y + y -- error, oys edn't have our metatable. this can be fixed by setting the metatab le of the nside the metameth    od

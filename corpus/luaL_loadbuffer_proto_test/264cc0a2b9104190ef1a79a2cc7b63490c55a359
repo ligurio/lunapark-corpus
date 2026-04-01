@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 524288
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        prefixexp {
+                        }
+                      }
+                      first {
+                        chunk {
+                        }
+                      }
+                    }
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                nil: 1048576
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 0
+              }
+              funcbody {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

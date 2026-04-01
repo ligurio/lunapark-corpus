@@ -1,0 +1,70 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    number: 2
+                  }
+                  binop {
+                    concat: 4
+                  }
+                  rightexp {
+                    str: "UUUUUUUUUUUUU"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                              number: 2
+                            }
+                            binop {
+                              concat: 4
+                            }
+                            rightexp {
+                              str: "UUUUUUUUUUUUU"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

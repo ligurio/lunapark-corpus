@@ -1,0 +1,136 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          lastSep {
+                            comma: 0
+                          }
+                        }
+                      }
+                    }
+                    value {
+                      nil: 4
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 4
+          }
+          rightexp {
+            nil: 4
+          }
+        }
+      }
+      stopexp {
+      }
+      stepexp {
+        binary {
+          leftexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        number: 2
+                      }
+                      value {
+                        number: -0
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 4
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              block {
+                block {
+                  chunk {
+                    stat {
+                      ifstat {
+                        condition {
+                          unary {
+                            unop {
+                              not: 0
+                            }
+                            exp {
+                            }
+                          }
+                        }
+                        first {
+                          chunk {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        explast {
+          true: 1667592704
+        }
+      }
+    }
+    semicolon: true
+  }
+}

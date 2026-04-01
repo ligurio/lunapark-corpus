@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "collectgarbage"
+                        num: 8192
+                      }
+                    }
+                  }
+                  args {
+                    str: "st\004p"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

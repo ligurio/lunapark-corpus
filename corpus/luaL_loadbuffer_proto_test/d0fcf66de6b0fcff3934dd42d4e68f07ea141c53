@@ -1,0 +1,53 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "tonumber"
+              num: 4
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+              }
+              expressions {
+                number: 1.5
+              }
+              expressions {
+                nil: 1
+              }
+              explast {
+                binary {
+                  leftexp {
+                    nil: 0
+                  }
+                  binop {
+                    and: 1
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

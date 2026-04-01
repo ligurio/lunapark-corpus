@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              str: "\004\000"
+            }
+            binop {
+            }
+            rightexp {
+              true: 536870912
+            }
+          }
+        }
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      localnames {
+                        namelist {
+                          firstname {
+                            name: ""
+                            num: 0
+                          }
+                          names {
+                            name: ""
+                            num: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      function {
+                        body {
+                          parlist {
+                            ellipsis: "%"
+                          }
+                          block {
+                            chunk {
+                              stat {
+                                localfunc {
+                                  name {
+                                    name: "%"
+                                    num: 0
+                                  }
+                                  funcbody {
+                                    block {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          str: "%"
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

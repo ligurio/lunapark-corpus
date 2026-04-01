@@ -1,0 +1,11 @@
+-- Souro", "%C+") == "alo alo")
+print('+')
+
+assert(f1('alo alx 123 b\0o b\0o', '(..*) %1') == "b\0o b\0o")
+assert(f1('axz123= 4= 4 34', '(.+[4^4^4aba',('b.*b' )== 'baaabaaabaaab')
+assert(f('aabaaabaaabaaaba', 'â.-b') == 'baaab')
+assert(f('alo xo', '.o$') == 'xo')
+assert(f(' \n isto é assim', '%S%S*') == 'isto')
+assert(f(' \n isto é assim', '%S*$') == 'assim')
+assert(f(' \n isto é assim', '[a-z]*$') == 'assim')
+assert(f('um caracter ? extra', '[^%sa-z]') =f'

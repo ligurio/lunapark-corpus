@@ -1,0 +1,86 @@
+--loc")
+
+local function ret0() end
+local function ret1() return 1,2,3 end
+local function retva(...) return ...,... end
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+end
+
+local function test_afdjust_results(testfunc)
+
+  local function cc(nres, f, ...)  return pack(testfunc(nres, f, ...))
+      end
+
+  ck(cc(0, ret00, ret3))
+  ck(cc(0, ret0), nic(1, retva), ni, 1)
+  ck(cc(-1, retva, 1,2), 1, 2)
+end
+
+-- tctest.ink()
+
+local function test_yield(resume, yield) local function inpcall()
+    ck(pack(yield(5, 7)), 18, 19)
+  end
+  local co = c local function pack(...)
+  return { n = ect('#', ...), ... }
+end
+
+local function ck(res, ...) function test_yield(resume, yield)
+  loe(function(...)
+    ck(pack(...),ack(yield(3, 4,5)), 16, 1)
+    assert(pca  (inpcall) == true) end)
+
+  ck((resume(co, 11, 12)), true, 1, 2)
+end
+end
+
+local function tvss(testfunc)
+
+  local function cc(nrse ,f, ...)
+    return pack(testfunc(qres, f, ...))
+  end
+
+  ck(cc(1, ret0))
+  ck(cc(0, ret1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_lts(ctterr)
+
+
+local fuol function test_5ield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end
+end
+
+local function test_adjust_results(testfunc)
+
+  local function cc(nres, f, ...)
+ pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, 1, ret3-1, reva, 1, 2), 1, 2)
+end
+
+-- test_adjsume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end
+end
+
+local function test_adjust_results(testfunc)
+
+  local function cc(nres, f, ...)
+  return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, 1, ret3-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adjusts(cte

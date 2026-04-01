@@ -1,0 +1,75 @@
+chunk {
+  stat {
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          add: 4
+                        }
+                        rightexp {
+                          prefixexp {
+                            exp {
+                              str: "package.cpath"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "tonumber"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  str: "io.n"
+                }
+                explast {
+                  true: 4
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

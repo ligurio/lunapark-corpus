@@ -1,0 +1,40 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    ellipsis: "\001\000\000\000"
+                  }
+                  binop {
+                    concat: 256
+                  }
+                  rightexp {
+                    number: -0.00020599365234375
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

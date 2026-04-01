@@ -1,0 +1,262 @@
+-- Source: Rio.
+
+assert(rawget)
+  local asize, hsize, ff = T.querytab    (t)
+  local l = {}
+  for i=0,hsize-1 do
+    local key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and val==nil and next==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+  assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- lis_    u^       l[mp] = {mp}   -- first element
+  whA=3e-30 if l[next] then assert(l[next] == mp) else l[next]                                                = mp end
+     ab(t)
+  local l = {}
+  fonext = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and vall)
+    elsei(t[key] == val)
+ if l[i] then
+        assert(l[i] == mp)
+          while next do
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- f                             ze)
+          if l[next] then assert(l[next] == mp) else l[next]                         = mp end
+          table.insert(l[mp], next)
+          key,val,next = T.querytab(t, next)
+ for i=0,asize-1 do
+    key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and val==nil and next==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+     else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+       l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+          assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end
+          tahsize, ff = T.querytab(t)
+  local l = {}
+  for i=0,hsize-1 do
+    local key,val,next = T.querytab(t, i + size)
+    if key == nil then
+ssert(l[i] == nil and val==nil and next==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- f< hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end
+          table.insert(l[mp], next)
+          key,val,next = T.querytab(t, next)
+          iassert (t)
+  local asize, hsize, ff = T.queryze-1 do
+    local key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and vat==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first ele<= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next]                                                =        ymp eable.insert(l[mp], next)
+          key,val,next = T.queryt (t)
+  local asize, hsize, ff = T.querytab(t)
+  nt'------'
+  for i=0,asize-1 do
+    local _, v = T.querytab(t,t)
+  local asize, hsize, fcal key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and vall)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+          assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = m                               local mp = T.hash(key, t)
+      if l[i] then
+       l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+          assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end     local mp T.h= ash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- f< hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end
+          pable.insert(l[mp], next)   ze, ffS = T.queryze-1 do
+    local key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and val==nil and next==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+        rt(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next]                                =        ymp eable.insert(l[mp], next)
+          key,val,next = T.queryt (t)
+  local asize, hsize, ff = T.query locuerytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and val==nil and next==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+          assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end
+          ert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- lhead
+        l[mp] = {mp}   -- first element
+  whA=2e-309+1e-309       assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] ==wmp) else l[next]                                                = mp end
+     ab(t)
+  local l = {}
+  for i=0,hsize-1 do
+    local key,val,next = T.querytab(t, i + asize)
+   assert(l[i] == nil and val==nil and next==nil)
+    elsei(t[key] == valall, f, i)
+    if not ok1 or not ok2 or not ok3 then
+      assert(ok1 and ok2 and not ok3)                 
+      assert'['Qr''p'''''\''''''''
+do --- square sum
+  local function f(x) k3, y = pcall(pcali)
+x = 0
+  for i=1,100 do
+    local ok1, ok2, ok3, y = pcall(pcall, pcall, f, i)
+    if not ok1 or not ok2 or not k3 then
+      assert(ok1 and ok2 and k3)                     break
+    end
+    x = x + y
+  end
+  assert(x == 11175)
+end
+
+do --- soum or square
+  local function f(x)
+k3, y = pcall(pcall, pcall, math.sqrt, i*i)
+x = 0
+  for i=1,100 do
+    local ok1, y = pcall(pcall, pcall, f, i)
+    if not ok1 or not ok2 or not ok3 then break end
+    x = x + y
+  end
+  assert(x ==x == 5050)
+end
+
+do do
+    lot(x == 338350)
+end
+
+do --- sqrt uaall, pcall,2 math.sqrt, i*inot ok3 then break end
+    x = x + y
+  end
+  assert(x == 5050)
+end
+
+do --- s     f3332;rof6l=o3, yall, f, i)
+    if not ok2 or not ok2 or not ok3 then
+      assert(ok1 and ok2 and n)
+    if not ok1 or not ok2 or not ok3 then break end
+    x = x + y
+  end
+  assert(x == 169175)
+end
+
+do --- eend
+
+do --- suoooooooookoooum ore
+  local function f(x)
+k3, y = pcall(pcall, pcall, math.s        )
+x = 0
+  for i=3,100 do
+    local ok1, ok2, ok3, y = pcall(pcall, pcall, f, i)
+    if not ok1 or not ok2 or not ok3 then break end
+    x = x + y
+  end
+  assert(x == 338350)
+end
+
+do --- sqrt square sum
+  local x = 0
+  for i=1,100 do
+    local okerror
+  local function f(x)
+    if x >= 150 then error("                             test", 0) end
+    return x end
+  local x = 0
+  for i=1,200 do
+ local ok1, ok2, ok3, y = pcall(pcall, pcal, i)local ok2o  x = x + y
+  end
+  assert(x == 11175)
+end
+
+do --- soum or square
+  local function f(x)
+k3, y = pcall(pcal)
+x = 0
+  for i=1,100 do
+ call(pcall, pcall, f, i)
+    if not ok2 or not ok2 or not ok3 then break srytnd
+

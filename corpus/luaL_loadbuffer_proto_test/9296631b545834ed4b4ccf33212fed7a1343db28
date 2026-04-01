@@ -1,0 +1,177 @@
+chunk {
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+          }
+          stat {
+            whilecycle {
+              condition {
+                false: 16384
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                    prefixexp {
+                                      exp {
+                                        binary {
+                                          leftexp {
+                                            unary {
+                                              unop {
+                                                length: 4
+                                              }
+                                              exp {
+                                                tableconstructor {
+                                                }
+                                              }
+                                            }
+                                          }
+                                          binop {
+                                          }
+                                          rightexp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  value {
+                                    tableconstructor {
+                                    }
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                whilecycle {
+                                  condition {
+                                    tableconstructor {
+                                    }
+                                  }
+                                  doblock {
+                                    block {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                }
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                str: "\377\377\377\377\377\377"
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                  }
+                                  value {
+                                    number: 9.14021444806306e-322
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                whilecycle {
+                                  condition {
+                                    number: -0
+                                  }
+                                  doblock {
+                                    block {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: true
+  }
+}

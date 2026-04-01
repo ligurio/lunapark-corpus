@@ -1,0 +1,366 @@
+eee[[
+
+
+
+        j                              (t<[1] == 100)
+end
+
+do --- Cannot sink TNEW,ng to next fiteration (snapshot ref).
+  local t,x
+  for i=1,100 do x=t; t={i} end
+  assert(t[1] == 100)
+  assert(x[1] == 99)
+end
+
+do  -a-C-nnot sink TNEW, escaping to next iteration (IR/snapsh        ot ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inner TNEW, esca        next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logic for stores to PH   0I allocs is too simple).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot r100)
+  assert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteration (IR/snapshot ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inner TNEW, esca        next iteration        n.UUUUUUUUUUUQUUUUUUUUUUUUUUUUUUUUx3, x4, UU Ur>AUUuUUUUUUUUUUr.A0I allocs is too simplapshot r100)
+  assert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteratio3       n (IR/snapshot ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inn er TNEW, esca        next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logic for stores to PH   0I allocs is too simple).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end*
+  assert(t[2][1] == 100)
+  assert(t[1][1                                                    ] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] = ) 100=
+ assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=0,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  locae).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  loc xal,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] =- 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI  == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteration (IR/snapshot ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inner TNEW, esca        next iteration $[   8[[[[ [[[[[ (IR ref).
+  -- (Could sink outer TNEW, but the logic for stores to PH   0I allocs is too sqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqimple) 
+ .local t = {42, 43}
+  for i=1,100 (IR/snapshot ref).
+  l   sss?        sssssssssZsssss}ssssssscssss ?ssSsssssssssss   *"table")
+end
+
+do N-- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to 'sub' (number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- pef).
+  local x,y
+  for i=1,100 do x,x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  locae).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] =- 100)
+  assert(t[1][1] == 99)
+end
+
+do  nz\   --- Cannot sink TNEW, cross-PHI  == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next i         (IR/snapshot ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inner TNEW, esca        next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logic for stores to PH   0I allocs is too simple) 
+ .local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Canoot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  locae).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cann ot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local  |P@ hzPx,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Ca!not sink TGEW, cross-PHI ref (a  local t,x
+  for i=1,100 do x=t; t={i} en6   assert(t[1] == 100)
+  assssZssssssssssssscssss ?ssSsssssssssss  ert(x[1] == 99)
+end
+
++do --- C        nk TNEW, escaping to next iteration (IR/snapshot ref).
+  l   sss?        sssssssssZsssss}ssssssscssss ?ssSsssssssssss   *"table")
+end
+
+do N-- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to 'sub' (number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- pef).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 10*)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PH         I ref (and snapshot ref).
+  local x,y
+  foref (and snapshot ref).
+  local x,t
+  for i=1,100 do x,y={i},x end
+  assert(x[1] ==                                                        100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  local t,x
+  for i=1,100 do x=t; t={i} end
+  assert(t[1] == 100)
+  assssZssssssssssssscssss ?ssSsssssssssss  ert(x[1]j == 99)
+end
+
+do --- Cannot sink TNEW, escapfng to next iteration (IR/snapshot ref).
+  l   sss?        sssssssssZsssss}ssssssscssss ?ssSsssssssssss   *"table")
+end
+
+do N-- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to        number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- pef).
+  local x,y
+  for i,=1,100 dt x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+endcccccccccccccccccccccccccccccccccccccccc
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (aF     local t,x
+  for i=1,100 do x=t; t={i} endu_ assert(t[1] == 100)
+  assssZssssssssssssscssss ?ssSsssssssssss  ert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to ney={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PH         I ref (and snapshot ref).
+  local x,y
+  foref (and snapshot ref).
+  local x,t
+  for i=1,100 do x,y={i},x end
+  assert(x[1] ==   						  ,B,BBBBB      O                                                     100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  local t,x
+  for i=1,100 do x=t; t={i} end
+  assert(t[1] == 100)
+  assssZssssssssssssscssss ?ssSsssssssssss  ert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escapfng to next iteration (IR/snapshot ref).
+  l   sss?        sssssssssZsssss}ssssssscssss ?ssSsssssssssss   *"table")
+end
+
+do N-- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to 'sub' (number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- pef).
+  local x,y
+  for i,=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] }= 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99) do x,y={i},x end
+  assert(x[1] == 100)
+  assert(y[1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (a  locae).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to 'sub' (number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- print_list(list)
+--list.tl.tl = nil
+--print
+F\000\000\_list(list)
+--local r = listOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO .tlN00
+
+
+
+y
+     BB	
+
+
+
+
+
+
+
+
+
+
+)				B     	  	g

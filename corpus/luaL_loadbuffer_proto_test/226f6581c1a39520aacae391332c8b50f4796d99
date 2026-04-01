@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: -2
+      }
+      stopexp {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                          str: "1"
+                        }
+                        binop {
+                          div: 4
+                        }
+                        rightexp {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                        str: "1"
+                                      }
+                                      binop {
+                                        div: 4
+                                      }
+                                      rightexp {
+                                        prefixexp {
+                                          functioncall {
+                                            prefArgs {
+                                              prefixexp {
+                                              }
+                                              args {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                args {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

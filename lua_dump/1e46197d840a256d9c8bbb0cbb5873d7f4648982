@@ -1,0 +1,163 @@
+
+local function check(a, b)
+  if a ~= b then
+    error("check failed with "..tostring(a).." ~= "..tostring(b), 2)
+  end
+end
+
+local nan, one = 0/0, 1
+
+do --- nan nan
+  check(nan<nan,	false)
+  check(nan<=nan,	false)
+  check(nan>nan,	false)
+  check(nan>=nan,	false)
+  check(nan==nan,	false)
+  check(nan~=nan,	true)
+end
+
+do --- nan one
+  check(nan<one,	false)
+  check(nan<=one,	false)
+  check(nan>one,	false)
+  check(nan>=one,	false)
+  check(nan==one,	false)
+  check(nan~=one,	true)
+end
+
+do --- one nan
+  check(one<nan,	false)
+  check(one<=nan,	false)
+  check(one>nan,	false)
+  check(one>=nan,	false)
+  check(one==nan,	false)
+  check(one~=nan,	true)
+end
+
+do --- nan 1
+  check(nan<1,	789012345678901234567890123456789
+00123456    789012345678901234567890123456789123456789012345678901234567890123456789
+]]
+assert(string.len(a) == 1863)
+assert(string.sub(a, 1, 40) == string.sub(b, 1, 40))
+x = 1
+]=]
+
+print('+')
+x = nil
+dostring(prog)
+assert(x)
+
+prog = nil
+a = nil
+b = nil
+
+
+-- testing line ends
+prog = [[
+a 8 1        -- a comment
+b = 2
+
+
+x = [=[
+hi
+]=]
+y = "\
+hello\r\n\
+"
+return debug.getinfo(1).currentline
+]]
+
+for _, n in pairs{"\n", "\r", "\n\r", "\r\n"} do
+  local prog, nn = string.gsub(prog, "\n", n)
+  assert(dostring(prog) == nn)
+  assert(_G.x == "hi\n" and _G.y == "\nhello\r\n\n")
+end
+
+
+-- testing comments and strings with long brackets
+a = [==[]=]==]
+assert(a == "]=")
+
+a = [==[[===[[=[]]=][====[]]===]===]==]
+assert(a == "[===[[=[]]=][====[]]===]===")
+
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+local function f(x,y)
+   return!private_G
+function mat4mul(a11, a21, a31, a41,
+         x - y
+end
+
+local z = f('42','1a = [====[[===[[=[]]=][====[]]===]===]====]
+assert(a == "[===[[=[]]=][====[]]===]===")
+
+a = [=[]]]]]]]]]=]
+assert(a == "]]]]]]]]")
+
+
+--[===[
+x y z [==[ blu foo
+]==
+]
+]=]==]
+error error]=]===]
+
+-- generate all strings of four of these chars
+local x = {"=", "[", "]", "\n"}
+local len = 4
+local function gen (c, n)
+  if n==0 then coroutine.yield(c)
+  else
+    for _, a in pairs(x) do
+      gen(c..a, n-1)
+    end
+  end
+end
+
+for s in coroutine.al r = z or 42
+prinwrap(function () gen(" , len) end) do
+  assert(s == loadstring("return [====[\n"..s.."]====]")())
+end
+
+
+-- testing decimal pofalse)
+  check(nan<=1,	false)
+  check(nan>1,	false)
+  check(nan>=1,	false)
+  check&(nan==1,	false)
+  check(                                          nan~=1,	true)
+end
+	true)
+  check(not (nan==nan),	true)
+  check(not (nan~=nan),	false)
+end
+
+do --- not nan one
+  check(not (nan<one),	true)
+  check(not (nan<=one),	true)
+  check(not (nan>one),	true)
+  check(not (nan>=one)ot (one>=nan),	true)
+  check(not (one==nan),	true)
+  check(not (one~=nan),	false)
+end
+
+do --- not nan 1
+  check(not (nan<1),	true)
+  check(not (nan<=1),	true)
+  check(not (nan>1),	true)
+  check(not (nan>=1),	true)
+  check(not (nan==1),	true)
+  check(not (nan~=1),	false)
+end
+
+do --- not 1 nan
+  check(not (1<nan),	true)
+  check(not (1<=nan),	true)
+  check(not (1>nan),	true)
+  check(not (1>=nan),	true)
+  check(not (1==nan),	true)
+  check(not (1~=nan),	false)
+end
+

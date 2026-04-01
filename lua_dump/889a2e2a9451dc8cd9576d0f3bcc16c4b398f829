@@ -1,0 +1,7 @@
+do --- st       e  local t, y = {}, {}
+  for i=1,100 do t[i] = string.char(i, 16+i, 32+i) end
+  for i=1,100 do t[i] =                                                                                                              string.reverse(t , 16+i, 32+i)) end
+  for i=1,100 do y[i] = string.upper(t[i]) end
+  asseraq\129")
+  assert(y[100] == "dt\132")
+end

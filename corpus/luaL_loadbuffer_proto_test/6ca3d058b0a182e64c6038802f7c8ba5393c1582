@@ -1,0 +1,141 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "collectgarbage"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                nil: 4
+              }
+              expressions {
+                number: 4
+              }
+              explast {
+                tableconstructor {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              function {
+                body {
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                          namedArgs {
+                            prefixexp {
+                              var {
+                                indexname {
+                                  prefixexp {
+                                  }
+                                  Name: "[[[[[[[[[[[[[[[[[[[[[[[["
+                                }
+                              }
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            binop {
+              concat: 0
+            }
+            rightexp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          str: "\213"
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  and: 4
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          ellipsis: "collectgarbage"
+        }
+        expressions {
+        }
+        explast {
+          prefixexp {
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            name {
+                              name: "load"
+                              num: 536870912
+                            }
+                          }
+                        }
+                        args {
+                          str: "\213"
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                  sub: 4
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

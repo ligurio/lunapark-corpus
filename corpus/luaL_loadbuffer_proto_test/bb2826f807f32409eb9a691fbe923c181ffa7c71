@@ -1,0 +1,40 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                number: 432
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+                number: 432
+              }
+            }
+          }
+          binop {
+            or: 0
+          }
+          rightexp {
+            prefixexp {
+              var {
+                name {
+                  name: "end"
+                  num: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

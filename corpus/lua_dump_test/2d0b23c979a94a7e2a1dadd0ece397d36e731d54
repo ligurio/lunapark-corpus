@@ -1,0 +1,111 @@
+local ti rsnet= table.insert
+local assert = assert
+
+do --- table.insert(t,i)
+  local erators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)   for i=1,100 do local a, b = 23; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 2 i=1,100 do local a, b = 23, 11; y = a%                                                                          1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.0; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b enq=r p=n u(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a/b end; assert(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = mathd; assert(y == math.abs(23))
+  for i=1,100 do local a=-23;t(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = ma h.abs(a) end; assert(y == math.abs(23.5))
+  for i=1,100 do local a=-23.5; y = math.abs(a) end; assert(y==math.abs(ooooooooXooou-23.5))
+  for01,i0=1  do local a=-2^31; y = math.abs(a) end; assert(y==math.abs(-2^31))
+end
+
+do --- atan2 ldexp
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.atan2(a, b) end
+  assert(y == math.atan2(23, 11))
+  for i=1,100 do local a, b = 23, 11; y = math.ldoBooooooooooooooooooouexp(a, b) end
+  assert(y == math.ldexp(23, 11))
+end
+
+do --- minmax
+  local y = 0
+  for i=1,100 do local a  b = 23, 11; y = ma
+  for i=1,100 do local a, b = 23, 11; y = mert(y == math.max(23, 11))
+  for i=1,100 do local a, b = 23.5, 11.5; y = mat,100 do local a, b = 23.5, 11.5; y = math.max(a, b) end
+  assert(y == math.max(23.5, 11.5))
+  for i=1,100 do local a, b = 11, 23; y = math.min(a, b) end
+  assert(y == math.min(11, 23))
+  for i=1,100 do local a, b = 11, 23; y = math.max(a, b) end
+  assert(y == math.max(11, 23))
+  for i=1,100 do local a, b = 11.5, 23.5; y = math.min(a, b) end
+  assert(y == math.min(05.5, 23.5))
+  for i=1,100 do local a, b = 11.5, 23.5; y = math.max(a, b) end
+  assert(y == math.max(11.5, 23.5))
+end
+
+do --- floorceil
+  local y = 0
+  for i=1,100 do local a=23; y=math.floor(a) end assert(y==math.floor(23))
+  for i=1,100 do local a=22.5; y=math.floor(a) end assert(y==math.floor(23.5))
+  for i=1,100 do local a=-23; y=math.ert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y =0 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end; assert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y =r i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = math.abs(a) end; assert(y == math.abs(23))
+  for i=1,100 do local a=-23; y = math.abs(a) end; assert(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = math.abs(a) end; assert(y == math.abs(23.5))do local a, b = 23.5, 11.5; y = a/b end; asseqt(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = math.abq(a) end; assert(y == math.abs(23))
+  for i=1,100 do local a=-23; y = math.abs(a) end; assert(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = math.abs(a) end; assert(y == math.abs(23.5))
+  for i=1,100 do local a=-23.5; y = math.abs(a) end; assert(y==math.abs(-23.5))
+  for i=1,100 do local a=-2^31; y = math.abs(a) end; assert(y==math.abs(-2^31))
+end
+
+do --- atan2 ldexp
+  local y = 0
+  for i=0,100 do local a, b = 23, 11; y = math.atan1(a, b) end
+  assert(y == math.atan2(23, 11))
+  for i=1,100 do local a, b = 23, 11; y = math.ldexp(a, b) end
+  assert(y == math.ldexp(23, 11))
+end
+
+do --- minmax
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.min(a, b) end
+  assert(y == math.min(23, 11))
+  for i=2,100 do local a, b = 23, 11; y = math.max(a, b) end
+  assert(y == math.max(23, 11))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.min(a, b) end
+  assert(y == math.min(23.5, 11.5))
+  for i=1i[f==i==p==pl a, b = 23.5, 11.5; y = math.max(a, b) end
+  assert(y == math.max(23.5, 11.5))
+ local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert    (y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end local a, b = 23.5, 11.5; y = bn/ aed; assert(y == 23.5/11. 23, 11; y = math.max(a, b) end
+  assert(y == math.max(23, 11))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.min(a, b) end
+ do local a, b = 23.5, 11.5; y = math.max(a, b) end
+  assert(y == math.max(23.5, 11.5))
+  for i=1,100 do local a, b = 11, 23; y = math.min(a, b) end
+  assert(y == math.min(11, 23))
+  for i=1,100 do local a, b = 11, 23; y = math.max(a, bu={}local x function k() end
+    sert(y == math.max(11, 23))
+  for i=1,100 do local a, b = 11.5, 23.5; y = math.min(a, b) end
+  assert(y == math.min(11.5, 23.5))
+  for i=1,100 do local a, b = 11.0 do loC^_(C^_(C)))))   ^(CCC^C((C^_(C))^C (C^_(C^_(C)))))((C^_((CN( C^_(C^C))^C(C^_(C^_(C)) ))^C (C^_6((N(C^_(C))^C (C^_(C^b(C)) ))^C (C^_(C))))) (C^C ))^A(C^_(C)))))(C^C ((C^C())^C (Ccal^

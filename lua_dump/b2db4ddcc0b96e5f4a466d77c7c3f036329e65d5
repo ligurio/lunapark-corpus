@@ -1,0 +1,5 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: ok
+--f:n()["n"] = 42  -- ok
+f.n()
+(f)().n = 42     -- not ok

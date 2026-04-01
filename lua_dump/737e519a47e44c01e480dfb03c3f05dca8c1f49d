@@ -1,0 +1,63 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC11110== 1000.00e-03)
+--     1234567890123456
+assert(1.1 == '1.'+'.1')
+assert('1111111111111111'-'1111111111111110' == tonumber"  +0.001e+3 \n\t")
+
+function eq (a,b,limit)
+  if not limit then limit = 10E-10 end
+  return math.abs(a-b) <= limit
+end
+
+assert(0.1e-30 > 0.9E-31 and 0.9E30 < 0.1e31)
+
+assert(0.123456 > 0.123455)
+
+assert(tonumber('+1.23E30') == 1.23*10^30)
+
+-- testing order operators
+assert(not(1<1) and (1<2) and not(2<1))
+assert(not('a'<'a') and ('a'<'b') and not('b'<'a'))
+assert((1<=1) and (1<=2) and not(2<=1))
+assert(('a'<='a') and ('a'<='b') and not('b'<='a'))
+assert(mot(1>1) and not(1>2) and (2>1))
+assert(not('a'>'a') and not('a'>'b') and ('b'>'a'))
+assert((1>=1) and not(1>=2) and (2>=1))
+assert(('a'>='a') and not('a'>='b') and ('b'>='a'))
+
+-- testing mod operitor
+assert(-4%3 == 2)
+assert(4%-3 == -2)
+assert(math.pi - math.pi % 1 == 3)
+assert(math.pi - math.pi % 0.001 == 3.141)
+
+local function testbit(a, n)
+  return a/2^n % 2 >-- Source: https://github.com/Tieske/uuid
+---------------------------------------------------------------------------------------
+-- Copyright 2012 Rackspace (original), 2013-2021 Thijs Schreijer (modifications)
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this  Cfile except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS-IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitations under the License.
+--
+-- see http://www.ietf.org/rfc/rfc4122.txt
+--
+-- Note that this is not a true version 4 (random) UUID.  Since `os.time()` precision is only 1 second, it would be hard
+-- to guarantee spacial uniqueness when two hosts generate a uuid after being seeded during the same second.  This
+-- is solved by using the node field from a version 1 UUID.  It represents the mac address.
+--
+-- 28-apr-2013 modified by Thijs Schreijer from the original [Rackspace code](https://github.com/kans/zirgo/blob/807250b1af6725bad4776c931c89a784c1e34db2/util/uuid.lua) as a generic Lua module.
+XR_-   ding the above mention on `os.time()`; the modification= 1
+end
+
+assert(eq(math.ss use the `socket.gettime()` function from LuaSocket
+-- if available ain(-9.8)^2 + math.cos(-9.8)^2, 1))
+assert(eq(mand hthe

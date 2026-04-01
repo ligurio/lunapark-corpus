@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        number: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        nil: 33554432
+      }
+    }
+  }
+}

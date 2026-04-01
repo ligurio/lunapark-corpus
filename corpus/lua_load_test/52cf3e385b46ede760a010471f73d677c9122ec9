@@ -1,0 +1,53 @@
+do --- rref points into invariant part 1
+  local x,y=1,2; for i=1,100 do x=x+y; y=i end
+  assert(y == 100)
+end
+
+do --- rref points into invariant part 2
+  local x,y=1,2; for i=1,100.5 do x=x+y; y=i end
+  assert(y == 100)
+end
+
+do --- rref points into invariant part 3
+  local x,y=1,2; for i=1 == 3)
+  assert(z == 1)
+end
+
+do --- rref points into invariant part 5
+  local x,y,z=1,2,3; for i=1,100 do x,y,z=z,x,y end
+  assert(x == 3)
+  assert(y == 1)
+  assert(z == 2)
+end
+
+do --- rref points into invariant part 6
+  local a,x,y,z=0,1,2,3; for i=1,100 do a=a+x; x=y; y=z; z=i end
+  assert(a == 4759)
+  assert(x == 98)
+  assert(y == 99)
+  ass    ert(z == 100)
+end
+
+do --- variant slot, but no corresponding SLOAD i-1
+  local x,y=1,2; for i=1,100 do x=i; y=i-1 end
+  assert(x == 100)
+  assert(y == 99)
+end
+
+do --- variant slot, but no corresponding SLOAD i+1
+  local x,y=1,2e a ~= b do
+      bits = bits + 1
+      a = b
+      b = bit.lshift(b, 1)
+  
+if not jit or not jit.status or not jit.status() then return end
+
+local called   end
+    assert(bits == 32)
+  end
+end
+
+do = false
+local function f() local x = "wrong"; called = true end
+jit.off(f)
+debug.s--- don'tetho oe

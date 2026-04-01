@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        str: "}"
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 0
+          }
+          binop {
+            and: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

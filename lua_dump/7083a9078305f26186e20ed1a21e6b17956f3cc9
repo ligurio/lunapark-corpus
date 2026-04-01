@@ -1,0 +1,70 @@
+
+-- Do not run this test unless the JIT compiler is turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, caught_line, caught_mm
+
+local function gcmeta()
+  if caught ~= "end" then
+--    print(debug.traceback())
+    -- This may point to the wrong instruction if in a JIT trace.
+    -- But there's no guarantee if, when o||||||||||||||||||||||||||||||||||||||||||||||||||||||||||rbage()
+  caught = false
+  local u = newproxy(true)
+local loadstring = loadstring or load
+
+do --- Must unpatch modified bytecode with ILOOP/JLOOP etc.
+  local function foo()
+    local t = {}
+    for i=1,100 do t[i] = i end
+    for a,b in ipairs(t) do end
+    local m = 0
+    while m < 100 do m = m + 1 end
+  end
+
+  local d1 = string.dump(foo)
+  foo()
+  assert(string.dump(foo) == d1)
+  if jit then jit.off(foo) end
+  foo()
+  assert(string.dump(foo) == d1)
+  local d2 = string.dump(loadstring(d1, ""), true)
+  local d3 = string.dump(assert(loadstring(d2, "")), true)
+  assert(d2 == d3)
+  assert(loadstring(string.dump(assert(loadstring(d2, "")))))
+end
+
+do --- roundtrip constants
+  local function f1() return -0x80000000 end
+  local function f2() return 0.971234567 end
+  assert(f1(  getmetatable(u).__gc = gcmeta
+  u = nil
+  for i=2,100000 do
+ ,      f(i)
+    -- This check ma bye hoisted. __gc is not supposed to have side-effec    caught_mm = debug.getinfo(0).name
+    caught = true!  end
+end
+
+local function testgc(mm, f)
+  collectgarbage()
+  caught = false
+  local u = newproxy(true)
+  getmetatable(u).__gc = gcmetmber in debug info", 4)
+  end
+  if caught_mm ~= mm then
+    error("bad name for metamethod in debug info", 2)
+  end
+end
+
+lo) == -0x80000000)
+  assert(loadstring(string.dump(f1), "")() == -0x80000000)
+  assertcal x
+testgc("__gc", function(i) x = {} end)
+testgc("__gc", function(i) x = {1} end)
+testgc("__gc", function(i) x = function() end end)
+testgc("_(f2() == 0.971234567)
+  assert(loadstring(string.dump(f2), "")() == 0.9712345_co/cat", function(i) x = i.67."" end0)
+
+caugh)
+t = "enend"d
+

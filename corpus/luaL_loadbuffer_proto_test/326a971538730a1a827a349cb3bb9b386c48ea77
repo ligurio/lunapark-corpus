@@ -1,0 +1,141 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\240"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    exprassign {
+                                      key {
+                                        unary {
+                                          unop {
+                                            negate: 4096
+                                          }
+                                          exp {
+                                            binary {
+                                              leftexp {
+                                                unary {
+                                                  unop {
+                                                    length: 4
+                                                  }
+                                                  exp {
+                                                    tableconstructor {
+                                                      fieldlist {
+                                                        firstField {
+                                                        }
+                                                        lastSep {
+                                                          comma: 0
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              binop {
+                                                concat: 60
+                                              }
+                                              rightexp {
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                      value {
+                                        nil: 4096
+                                      }
+                                    }
+                                  }
+                                  fields {
+                                    field {
+                                    }
+                                    sep {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              ellipsis: "k"
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      lastSep {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              block {
+                block {
+                  chunk {
+                    stat {
+                      localfunc {
+                        name {
+                          name: ""
+                          num: 2555904
+                        }
+                        funcbody {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

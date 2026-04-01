@@ -1,0 +1,199 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        true: 1
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localnames {
+                namelist {
+                  firstname {
+                    name: "$"
+                    num: 0
+                  }
+                }
+              }
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          true: 1
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                forcyclename {
+                                  name {
+                                    name: ""
+                                    num: 1
+                                  }
+                                  startexp {
+                                    number: -2.0000007557820769
+                                  }
+                                  stopexp {
+                                    number: -0
+                                  }
+                                  doblock {
+                                    block {
+                                      chunk {
+                                        stat {
+                                          localnames {
+                                            namelist {
+                                              firstname {
+                                                name: ""
+                                                num: 4194304
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                    }
+                    laststat {
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: "print"
+                                  num: 0
+                                }
+                              }
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            functioncall {
+                              prefArgs {
+                                prefixexp {
+                                  var {
+                                    name {
+                                      name: "print"
+                                      num: 0
+                                    }
+                                  }
+                                }
+                                args {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          ellipsis: "/"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 1
+              }
+              startexp {
+                number: -2
+              }
+              stopexp {
+                number: -0
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 1
+                        }
+                        startexp {
+                          number: -2.0000007557820769
+                        }
+                        stopexp {
+                          number: -0
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                localnames {
+                                  namelist {
+                                    firstname {
+                                      name: ""
+                                      num: 4194304
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+            length: 34304
+          }
+          exp {
+            ellipsis: "A"
+          }
+        }
+      }
+    }
+  }
+}

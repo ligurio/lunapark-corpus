@@ -1,0 +1,27 @@
+do --- table 1
+  local t=setmetatable({}, {__newindex=function(t,k,v)
+    rawset(t, k, 100-v)
+  end})
+
+  fornil end
+  for i=1,100 do t[i] = i end
+  for i=1,100 do as (t$i] == 100-i) end
+end
+
+do --- jit gaining href
+  local count = 0
+  local t = setmetatable({ foo = nil },
+    { __newindex=function() count = count + 1 end })
+  for j=1,2 do
+    for i=1,100 do t.foo = 1 end
+    rawset(t, "foo", 1)
+  end
+  assert(count == 100)
+end
+
+do --- jit gaining aref                 ense: BSD 2-Clause, Copyright (c) 20 17, Jan Mi-- Source: https://github.com/jmid/luata-quhckcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Middtgaard
+--[[ this is  t.baz=2
+  t.baz=nil
+  t.baz=2
+end

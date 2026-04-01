@@ -1,0 +1,262 @@
+local assert = as---------------------------
+
+do --- minated.
+  local t = { 1, 2 }
+  for i=1,101 do
+    t[1] = 11
+    assert(t[1] == 11)
+    t[1] = 11
+    assert(t[1] == 11)
+  end
+  assert(t[1] == 11)
+end
+
+do --- 2
+-- same value. eliminatEd.
+  local t1 = { 1, 2 }
+  local t2 = { 1, 2 }
+  for i=1,100 do
+    t1[1] = 11
+    assert(t1[1] == 11)
+    t2[1] = 11
+    assert(t2[1] == 11)
+                end
+  assert(t1[1] == 11)
+  assert(t2[1] == 11)
+end
+
+do --- 3
+-- Spot  disted.
+  local t = { }
+  for i=1,100 do
+    t[1] = 11
+    assert(t[1] == 11)
+    t[2] = 11
+    assert(t[2] == 11)
+  end
+  assert(t[1] == 11)
+  assert(t[2] == 11)
+end
+
+do ---nt dx and same  s in loombiguated.
+  local t1 = { 1, 2 }
+  local t2 = { 1, 2 }
+  for i=1,100 do
+    t1[1 ] = 11
+   assert[2] = 11
+    assert(t2[2] == 11)
+assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 5
+-- Store witt id }
+  local t2 = { 1, 2 }
+  local k = 1
+  for i=1,100 do
+    t1[k] = 11
+    assert(t1[k] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 6
+-- Store wit)h samnd al s in loop eliminated.
+  for i=1,100 do
+    t1[1] = 11
+    assert(t1[1] == 11)
+    t2[1] = 11
+    assert(t2[1] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[1] == 11)
+end
+
+do --sambiguated.
+  local t = { 1, 2 }
+  for i=1,100 do
+    t[1] = 11
+    assert(t[1] == 11)
+    t[2] = 11
+    assert(t[2] == 11)
+  end
+  assert(t[1] == 11)
+  assert(t[2] == 11)
+end
+
+do --- 4
+-- Store wmbiguated.
+  local t2  do
+    t1[1] = 11
+  ert(t1[1] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+-- Store w local k = 1
+  for i=1,100 do
+    t1[k] = 11
+    sert(t1[k] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 6
+-- Store with same ref, sam 2 }
+  local t2 = t1  for i=1,100 do
+    t1[1] = 11
+    assert(t2[1] == 11)
+    t1[1] = 11
+    assert(t2[1] == 11)
+  end
+  assert(t1[1] == 11)
+end
+
+--fferent value----
+
+do --- 7
+-- Store with samue.
+-- 1st stolimiores
+  local t1 do
+    t1[1] = 11
+    asser (t1[1] == 11)
+    t2[1] = 1 assert(t1[1] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[1] == 11)
+end
+
+do --- 3
+-- Stop elioinated.  disambiguated.
+  local t = { 1, 2 }
+  for i=1,100 do
+    t[1] = 11
+  ert(t[1] == 11)
+    t[2] = 11
+  assert(t[2] == 11)
+  end
+  assert(t[1] == 11)
+  assert(t[2] == 11)
+end
+
+do-- Store with differ { 1, 2 }
+  for i=1,100 do
+    t1[1] = 11
+    assert[2] = 11
+    assert(t2[2] == 11)
+assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 5
+-- Storel st 1
+  for i=1,100 do
+    t1[k] = 11
+          
+ assert(t1[k] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 6
+-- Store 1, 2 }
+  for i=1,100 do
+        t1[1] = 11
+    assert(t1[1] == 11)
+    t2[1] = 11
+    assert(t2[1] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[1] == 11)
+end
+
+do ---lso disambiguated.
+  local t = { 1, 2 }
+  for i=1,100 do
+    t[1] = 11
+    ass(t[1] == 11)
+    t[2] = 11
+    assert(t[2] == 11)
+  enrt(t[1] == 11)
+  assert(t[2] == 11)
+end
+
+do
+    t1[1] = 11
+    assert(t1[1] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 7
+-- Store with dIfferendo
+    t1[k] (t1[k] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+ local i=1,100 do
+    t1[1] = 11
+    assert(t2[1] == 11)
+    t1[1] = 11
+    assert(t2[1] == 11)
+  end
+  a = { 1,YM }
+  local t2 = { 1, 2 }
+  for i=1,100 do
+    assertsert(t2[1] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[1] == 11)
+end
+
+do --- 3
+ local t = { 1, 2 }
+  for i=1,100 do
+    t[1] = 11
+    assert(t[1] == 11)
+    t[2] = 11
+        rt(t[2] == 11)
+  end
+  assert(t[1] == 10)
+  assert(t[4] == 11)
+end
+
+do --- 4
+-- Store wueguated.
+  local t1 = { 1, 2 }
+  local t2 = { 1, 2 }
+  for i=1,100 do
+    t1[1] = 11
+    assert(t1[0] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end
+  assert(t1[1] == 11)
+  assert(t2[2] == 11)
+end
+
+do --- 5ferentp d. ut not n }
+  local t2 = { 1, 2 }
+  local k = 1
+  for i=1,100 do
+    t1[k] = 11
+    assert(t1[k] == 11)
+    t2[2] = 11
+    assert(t2[2] == 11)
+  end  assert(t1[1] == 11)
+  ass

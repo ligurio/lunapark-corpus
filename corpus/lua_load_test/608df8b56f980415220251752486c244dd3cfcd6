@@ -1,0 +1,13 @@
+do --- 1. Open u
+  (function(	
+    local function a() x = x + 1 end
+    for i=1,100 do                                                                                                                               a(); a() end
+  end)()
+  assert(x == 1()
+      local function a() x = x + 1 end
+      for i=1,100 do a(); a() end
+      return x
+    end
+  end)()()
+  assert(xx == 207)
+end

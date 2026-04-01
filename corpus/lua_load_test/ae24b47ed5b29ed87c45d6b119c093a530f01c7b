@@ -1,0 +1,51 @@
+local format, type, tonumber = string.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return end
+  local t = type(output)
+  if t == "string" then
+    if output:find"[[%]]" then
+      local s, e = actual:find((output:gsub("%.", "%%.")))
+      if s == 1 and e == #actual then return end
+    end
+  end
+  error(format("expected string.format(%q, %q) == %q, but got %q"
+,   -- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing metatables')
+
+X = 20; B = 30
+
+setfenv(1, setmetatable({}, {__index=_G}))
+
+collectgarbage()
+
+X = X+10
+assert(X == 30 and _G.X == 20)
+B = false
+assert(B == false)
+B = nil
+assert(B == 30)
+
+assert(getmetatable{} == nil)
+assert(getmetatable(1) == nil)
+assert(getmetatable(nil) == nil)
+a={}; setm fstr, input, output, actual))
+end
+
+do --- small denormals at .14g", "0")
+  check("1e-31etatable(a, {__metatable = "xuxu",
+                    __tostring=function(x) return x.name end})
+assert(getmetatable0", "%.0g", "1e-310")
+  check("1e8", "%010.5g", "000001e+08")
+  check("1e8", "% -10.5g", " 1e+08    ")
+  check("4e123", "%+#.0e", "+4.e+123")
+  ch       9", "%.0f", "9999999999999999464902769475481793196872414789632")
+  check("1e50", "%.0f", "100000000000000007629769841091887003294964970946560")
+  check("1e50", "%.35g", "1.00000000000000007629769841091887e+50")
+  check("1e50", "%40.35g", "  1.00000000000000007629769841091887e+50")
+  check("1e50", "%#+40.34g", "+1.000000000000000076297698410918870e+50")
+  check("1e50", "%-40.35g", "1.00000000000000007629769841091887e+50  ")
+  check("(a) == "xu0.5", "%

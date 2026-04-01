@@ -1,0 +1,162 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              namedArgs {
+                prefixexp {
+                  functioncall {
+                    namedArgs {
+                      prefixexp {
+                      }
+                      name {
+                        name: "infile:setvbufstunroll"
+                        num: 0
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                name {
+                  name: "infile:setvbufstunroll"
+                  num: 0
+                }
+                args {
+                }
+              }
+            }
+          }
+          stat {
+            call {
+              namedArgs {
+                prefixexp {
+                }
+                name {
+                  name: "infile:setvbufstunroll"
+                  num: 2097152
+                }
+                args {
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            nil: 524288
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localnames {
+                namelist {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                        namedArgs {
+                          prefixexp {
+                            functioncall {
+                              namedArgs {
+                                prefixexp {
+                                }
+                                name {
+                                  name: "infile:setvbufstunroll"
+                                  num: 2097152
+                                }
+                                args {
+                                }
+                              }
+                            }
+                          }
+                          name {
+                            name: "infile:setvbufstunroll"
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      call {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: "infile:setvbufstunroll"
+                            num: 2097152
+                          }
+                          args {
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      nil: 524288
+                    }
+                    binop {
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

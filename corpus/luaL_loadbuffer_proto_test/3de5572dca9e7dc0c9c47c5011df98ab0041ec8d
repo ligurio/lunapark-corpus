@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        ellipsis: "sink"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+              condition {
+                unary {
+                  unop {
+                    negate: 12544
+                  }
+                  exp {
+                    nil: 16
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    false: 4096
+                  }
+                }
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+                number: 3
+              }
+            }
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            number: 768
+          }
+        }
+      }
+    }
+  }
+}

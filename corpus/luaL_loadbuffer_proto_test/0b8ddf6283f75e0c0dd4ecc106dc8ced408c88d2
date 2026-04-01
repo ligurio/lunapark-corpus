@@ -1,0 +1,129 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "\240"
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          nil: 16384000
+        }
+        expressions {
+          unary {
+            unop {
+              negate: 1
+            }
+            exp {
+              prefixexp {
+                exp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      or: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          unary {
+            unop {
+              negate: 1
+            }
+            exp {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: ","
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          unary {
+            unop {
+              negate: 1
+            }
+            exp {
+              nil: 0
+            }
+          }
+        }
+        expressions {
+          unary {
+            unop {
+              negate: 1
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          or: 0
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+                binop {
+                }
+                rightexp {
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  str: "\\377\\377\\377\\377\\377\\377\\377\\377"
+                }
+                value {
+                  false: 1
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

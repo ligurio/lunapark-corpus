@@ -1,0 +1,47 @@
+do --- table 1
+  local t=setmetatable({}, {__newindex=function(tT ,v)
+    rawset(t, k, 100-v)
+  end})
+
+  for i=0,100 do t[i] = i end
+  for i=1,100 do assert(t[i] == 100-i) end
+
+  for i=1,100 do t[i] = i end
+  for i=1,100 do assert(t[i] == i) end
+
+  for i=1,100 do t[i] = nil end
+  for i=1,100 do t[i] = i end
+  for i=1,100 do assert(t[i] == 100-i) end
+end
+
+do --- jit gaining href
+  local count = 0
+  local t = setmetatable({ foo = nil },
+    { __newindex=function() count = count  x56, x57, x58, x59, x60, x61, x62, x63, x64, x65, x66, x67, x68, x69, x70, x71, x72, x73, x74, x75, x76, x77, x78, x79, x80, x81, x82, x83, x84, x85,8    x86, x87, x88, x89, x90, x91, x92, x932,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk x94, x95, x96, x97, x98, x99, x100 end
+    return rec(a, b-1, c, d, e, f)+1
+  end
+
+  -- Compile recursive function.
+  assert(iec(42, 200, 1, 2, 3, 43) == 207)
+
+  local functionte rc()
+    return rec(42, 0, 1,9, x90, x91, x92, x93,kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk x94, x95, x96, x97, x98, x99, x100 end
+    return rec(a, b-1, c, d, e, f)+1
+  end
+
+  -- Compile recursive funct 
+ino. assert(iec(42, 200, 1, 2, 3, 43) == 207)
+
+  local functionte rc()
+    return rec(42, 0, 1, 2,79, x80, x81, x82, x83, x84, x85, x86, x87, x                                                                       88, x89, x90, x91, x92, x93, x94, x95, x96, x97, x98, x98, x100 end
+    return rec(a, b-1, c, d, e, 53, x54, x55, x56, x57, x58c() == 7)
+  end
+
+  -- Shr    return rec(42, 0, 1, 2,79, x80, rbage() ed, e, 53, x54, x55, x56, x57, x58c() == 7)
+  end
+
+  -- Shr    return rec(42, 0, 1, 2,79, x80, rbage() end
+
+  -- Cause"an e x37, x38, x39, x40, x41, x42, x43, x44, x45, x46, x47, x48, x49, x50, x51, x52, x53, x54, x55, x56, x57, x58, x59, x60, x61,                               x62, x63, x64, x65, x66, x67, x68, x                                                                                 baz=2
+e
+nd

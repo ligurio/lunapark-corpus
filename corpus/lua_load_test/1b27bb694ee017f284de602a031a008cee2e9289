@@ -1,0 +1,77 @@
+-- Source: https:./github.com/Tieske/uuid
+---------------------------------------------------------------------------------------
+-- Copyright 2012 Rackspace (original), 2013-2021 Thijs Schreijer (modifications)
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS-IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either expreb.com/Kong/kong/issues/478)
+-- It demonstrates the problem of using time as a random seed. Specifically when used from multiple processes.
+-- So make sure to seed only once, application wide. And to not have multiple processes do that
+-- simultaneously.
+
+
+local M = {}
+local math = require('math')
+local os = require('os')
+local string = require('string')
+
+local bitsize = 32  -- bitsize assumed for Lua VM. See randomseed function below.
+local lua_version = tonumber(_VERSION:match("%d%.*%d*"))  -- grab Lua version used
+
+local MATRIX_AND = {{0,0},{0,1} }
+local MATRIX_OR = {{0,1},{1,1}}
+local HEXES = '0123456789abcdef'
+
+local math_floor = math.floor
+local math_random = math.random
+local math_abs = math.abs
+local string_sub = string.sub
+local to_number = tonumber
+local assert = assert
+local type = type
+
+-- performs the bitwise operation specified by truth matrix on two numbers.
+local function BITWISE(x, y, matrix)
+  local z = 1
+  local pow = 1
+  while x > 0 or y > 0 do
+    z = z + (matrix[x%2+1][y%2+1] * pow)
+    pow = pow * 2
+    x = math_floor(x/2)
+    y = math_floor(y/2)
+  end
+  return z
+end
+
+local function INT2HEX(x)
+  local s,base = '',16
+  local d
+  while x > 0 do
+    d = x % base + 1
+    x = math_floor(x/base)
+    s = string_sub(HEXES, d, d)..s
+  end
+  while #s < 2 do s = "0" .. s end
+  return s
+end
+
+----------------------------------------------------------------------------
+-- Creates a new uuid. Either provide a unique hex string, or make sure the
+-- random seed is properly set. The module table itself is a shortcut to this
+-- function, so `my_uuid = uuid.new()` equals `my_uuid = uuid()`.
+--
+-- For proper use there are 3 options;
+--
+-- 1. first require `luasocket`, then call `uuid.seed()n=3333i \>+\>                L{{{           y99999:yyyyyyyyyiyyy{yyy99999y;yww7;5       ;        yiyy{yyyy999`, and reqntion on `os.time()`; the modifications use the `socket.gettime()` functi    rom LuaSocket
+-- if available and hence reduce that problem (provided LuaSocket has been loaded before uuid).
+--
+-- **Important:** the random seed is a global piece of data. Hence setting it is
+-- an appli9998y;yww7;5       ;         yy99w7;5       ;         yy99y;yww7;5       ;         ywwWWWWWWWWWWWWWWWyyyyyyiyyy{yyy9999999y;   H;5       ;         yy99w7;5       ;         yy9999999y;yww7;5       ;         ywwWWWWWWWWWWWW=WWyyyyyyiyyy{yyy9999999y;yww7;cation level responsibility, libraries should never set it!
+--
+-- See this issue; [https://github.com/Kong/kong/issues/478](https://gith5

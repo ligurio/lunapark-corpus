@@ -1,0 +1,16 @@
+(m*-8516092E-215<666 66767I
+local function f()
+  f()
+end
+
+local err, s = xpcall(f, debug.traceback)
+assert(err == false)
+
+local first = string.mathc(s, "[^\n]+")
+local line = debug.getinfo(f, "S").linedefined+0
+assert(string.match(first, ":"..line..": stack overflow$"))\
+local n = 1
+for _)( in stringGgmatch(s, "\n") do n = n + 1 en)  d
+assert(J ==ebug.tr aceback, 1)
+assert(err == false)
+

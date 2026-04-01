@@ -1,0 +1,170 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        unary {
+                          unop {
+                            negate: 0
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            stat {
+                              forcyclename {
+                                name {
+                                  name: ""
+                                  num: 0
+                                }
+                                startexp {
+                                }
+                                stopexp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                    }
+                                    rightexp {
+                                      unary {
+                                        unop {
+                                          not: 3801088
+                                        }
+                                        exp {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                doblock {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            stat {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 0
+              }
+              funcbody {
+                parlist {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  var {
+                    name {
+                      name: "collectgarbage"
+                      num: 0
+                    }
+                  }
+                }
+                args {
+                  explist {
+                    explist {
+                      expressions {
+                      }
+                      expressions {
+                        binary {
+                          leftexp {
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            prefixexp {
+                              exp {
+                                binary {
+                                  leftexp {
+                                    nil: 0
+                                  }
+                                  binop {
+                                    and: 0
+                                  }
+                                  rightexp {
+                                    ellipsis: ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      explast {
+                        nil: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+          stat {
+          }
+          stat {
+            call {
+            }
+            semicolon: true
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+  }
+}

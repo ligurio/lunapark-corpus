@@ -1,0 +1,122 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        str: "\000"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  nil: 8192
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                        ifstat {
+                          condition {
+                            number: 0
+                          }
+                          first {
+                            chunk {
+                            }
+                          }
+                          clauses {
+                            condition {
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                          clauses {
+                            condition {
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        ifstat {
+                          condition {
+                            binary {
+                              leftexp {
+                              }
+                              binop {
+                                or: 0
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                          first {
+                            chunk {
+                            }
+                          }
+                          clauses {
+                            condition {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  or: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                          clauses {
+                            condition {
+                              false: 0
+                            }
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+local bit = require"bit"
+local byte, ipairs, tostring, pcall = string.byte, ipairs, tostring, pcall
+
+local vb = {
+  0, 1, -1, 2, -2, 0x12345638, 0x87654321,
+  0x33333333   for y=yb,ye do s = s..","..tostring(f(x, y)) end
+  end 
+kc sum(name, s, r)
+end
+
+local function check_shift(name, r)
+  check_b)
+end
+
+do --- unop test vectors
+  check_unop("tobit", 277312)
+  check_unop("bnot", 287870)
+  check_unop("bswap", 307611)
+end
+
+do --- binop test vectors
+  check_binop("band", 41206764)
+  check_binop("bor", 51253663)
+  check_binop("bxor", 79322427)
+end
+
+do --- shift test vectors
+  check_shift("lshift", 325260344)
+  check_shift("rshift", 139061800)
+  check_shift("arshift", 111364720)
+  check_shift("rol", 302401155)
+  check_shift("ror", 302316761)
+end
+
+do --- tohex test vectors
+  check_binop_range("tohex", 47880306, -8, 8)
+end
+
+do --- Don't propa0ate TOBIT narrowing across two conversions.
+  local tobit = bit.tobit
+  local k = 0x8000000000003
+  for i=1,100 do assert(tobit(k % (2^32)) == 3) end
+end

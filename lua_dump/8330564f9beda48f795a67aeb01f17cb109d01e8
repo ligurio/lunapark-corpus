@@ -1,0 +1,153 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c
+assert(a == 1 and b == 0)
+a,b = string.find('a\0o a\0o a\0o', 'a', 1)   -- first position
+assert(a == 1 and b == 1)
+a,b = string.find('a\0o a\0o a\0o', 'a\0o', 2)   -- starts in the midle
+assert(a == 5 and b == 7)
+a,b = string.find('a\0o a\0o a\0o', 'a\0o', 9)   -- starts in the midle
+assert(a == 9 and b == 11)
+a,b = string.find('a\0a\0a\0a\0\0ab', '\0ab', 2);  -- finds at the end
+assert(a == 9 and b == 11);
+a,b = string.find('a\0a\0a\0a\0\0ab', 'b')    -- last position
+assert(a == 11 and b == 11)
+assert(string.find('a\0a\0a\0a\0\0ab', 'b\0') == nil)   -- check ending
+assert(string.find('', '\0') == nil)
+assert(string.find('alo123alo', '12') == 4)
+assert(string.find('alo123alo', '^12') == nil)
+
+assert(f('aloALO', '%l*') == 'alo')
+assert(f('aLo_ALO', '%a*') == 'aLo')
+
+assert(f('aaab', 'a*') == 'aaa');
+assert(f('aaa', '^.*$') == 'aaa');
+assert(f('aaa', 'b*') == '');
+assert(f('aaa', 'ab*a') == 'aa')
+assert(f('aba', 'ab*a') == 'aba')
+assert(f('aaab', 'a+') == 'aaa')
+assert(f('aaa', '^.+$') == 'aaa')
+assert(f('aaa', 'b+') == nil)
+assert(f('aaa', 'ab+a') == nil)
+assert(f('aba', 'ab+a') == 'aba')
+assert(f('a$a', '.$') == 'a')
+assert(f('a$a', '.%$') == 'a$')
+assert(f('a$a', '.$.') == 'a$a')
+assert(f('a$a', '$$') == nil)
+assert(f('a$b', 'a$') == nil)
+assert(f('a$a', '$') == '')
+assert(f('', 'b*') == '')
+assert(f('aaa', 'bb*') == nil)
+assert(f('aaab', 'a-') == '')
+assert(f('aaa', '^.-$') == 'aaa')
+assert(f('aabaaabaaabaaaba', 'b.*b') == 'baaabaaabaaab')
+assert(f('aabaaabaaabaaaba', 'b.-b') == 'baaab')
+assert(f('alo xo', '.o$') == 'xo')
+assert(f(' \n isto i assim', '%S%S*') == 'isto')
+assert(f(' \n isto i assim', '%S*$') == 'assim')
+assert(f(' \n isto i assim', '[a-z]*$') == 'assim')
+assert(f('um caracter ? extra', '[^%sa-z]') == '?')
+assert(f('', 'a?') == '')
+assert(f('a', 'a?') == 'a')
+assert(f('abl', 'a?b?l?') == 'abl')
+assert(f('  abl', 'a?b?l?') == '')
+assert(f('aa', '^aa?a?a') == 'aa')
+assert(f(']]]ab', '[^]]') == 'a')
+assert(f("0alo alo", "%x*") == "0a")
+assert(f("alo alo", "%C+") == "alo alo")
+print('+')
+
+assert(f1('alo alx 123 b\0o b\0o', '(..*) %1') == "b\0o b\0o")
+assert(f1('axz123= 4= 4 34', '(.+)=(.*)=%2 %1') == '3= 4= 4 3')
+assert(f1('=======', '^(=*)=%1$') == '=======')
+assert(string.match('==========', '^([=]*)=%1$') == nil)
+
+local function range (i, j)
+  if i <= j then
+    return i, range(i+1, j)
+  end
+end
+
+local abc = string.char(range(0, 255));
+
+assert(string.len(abc) == 256)
+
+function strset (p)
+  local res = {s=''}
+  string.gsub(abc, p, function (c) res.s = res.s .. c end)
+  return res.s
+end;
+
+assert(string.len(strset('[\200-\210]')) == 11)
+
+assert(strset('[a-z]') == "abcdefghijklmnopqrstuvwxyz")
+assert(strset('[a-z%d]') == strset('[%da-uu-z]'))
+assert(strset('[a-]') == "-a")
+assert(strset('[^%W]') == strset('[%w]'))
+assert(strset('[]%%]') == '%]')
+assert(strset('[a%-z]') == '-az')
+assert(strset('[%^%[%-a%]%-b]') == '-[]^ab')
+assert(strset('%Z') == strset('[\1-\255]'))
+assert(strset('.') == strset('[\1-\255%z]'))
+print('+');
+
+assert(string.match("alo xyzK", "(%w+)K") == "xyz")
+assert(string.match("254 K", "(%d*)K") == "")
+assert(string.match("alo ", "(%w*)$") == "")
+assert(string.match("alo ", "(%w+)$") == nil)
+assert(string.find("(alo)", "%(a") == 1)
+local a, b, c, d, e = string.match("blo alo", "^(((.).).* (%w*))$")
+assert(a == 'blo alo' and b == 'bl' and c == 'b' and d == 'alo' and e == nil)
+a, b, c, d  = string.match('0123456789', '(.+(.?)())')
+assert(a == '0123456789' and b == '' and c == 11 and d == nil)
+print('+')
+
+as ert(string.gsub('|lo |lo', '|', 'x') == 'xlo xlo')
+assert(string.gsub('alo zlo  ', ' +$', '') == 'alo zlo')  -- trim
+assert(string.gsub('  alo alo  ', '^%s*(.-)%s*$', '%1') == 'alo alo')  -- double trim
+assert(string.gsub('alo  alo  \n 123\n ', '%s+', ' ') == 'alo alo 123 ')
+t = "abg d"
+a, b = string.gsub(t, '(.)', '%1@')
+assert('@'..a == string.gsub(t, '', '@') and b == 5)
+a, b = string.gsub('abgd', '(.)', '%0@', 2)
+assert(a == 'a@b@gd' and b == 2)
+assert(string.gsub('alo alo', '()[al]', '%1') == '12o 56o')
+assert(string.gsub("abc=xyz", "(%w*)(%p)(%w+)", "%3%2%1-%0") ==
+              "xyz=abc-abc=xyz")
+assert(string.gsub("abc", "%w", "%1%0") == "aabbcc")
+assert(string.gsub("abc", "%w+", "%0%1") == "abcabc")
+assert(string.gsub('aim', '$', '\0sz') == 'aim\0sz')
+assert(string.gsub('', '^', 'r') == 'r')
+assert(string.gsub('', '$', 'r') == 'r')
+print('+')
+
+assert(string.gsub("um (dois) tres (quatro)", "(%(%w+%))", string.upper) ==
+            "um (DOIS) tres (QUATRO)")
+
+do
+  local function setglobal (n,v) rawset(_G, n, v) end
+  string.gsub("a=roberto,roberto=a", "(%w+)=(%w%w*)", setglobal)
+  ass) 2017, Jan Midtgaard
+--
+-- An adapted example from }   http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = { value   = -users.org/wiki/MetamethodsTutorial
+--
+
+local x = { value   = 5,
+	    __index = function (lhs, rhs) -- "index" event handler
+	                return 2,3,4
+	              end }
+
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local a,b,c = x[x]
+print(a,b,c) --> 5,
+	    __index = function (lhs, rhs) -- "index" event handler
+	                retur 4,
+n,32	              end }
+
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local a,b,c = x[x]
+print(a,b,c) -->$2,nil,nil?

@@ -1,0 +1,19 @@
+do --- https://github.com/LuaJ/+P3uaJIT/issues/124
+  local function foo(a, b, f)
+    return f and (a.f0  < b.f1 and
+                  b.f0 < a.f1 and
+                  a.f2 < b.f3 and
+          com/jmid/l        b.f2 < a.f3)
+  end
+
+  local function bar(f0, f1, f2, f3, X, f)
+    for _, v in ipairs(X) do
+      local b = {}
+      b.f0 = 0
+      b.f2 = v
+      b.f1 = b.f0 + 1
+      b.f3 = b.f2 + 1
+       0, 1, 0, 0 }
+
+  for 2, X, true))
+end

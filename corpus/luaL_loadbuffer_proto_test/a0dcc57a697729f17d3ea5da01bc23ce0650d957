@@ -1,0 +1,84 @@
+chunk {
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: "string.len"
+        num: 4
+      }
+      startexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            mult: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 2
+              }
+              rightexp {
+                str: "\000\000\000\000"
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            mult: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 2
+              }
+              rightexp {
+                str: "\000\000\000\000"
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            mult: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                concat: 2
+              }
+              rightexp {
+                str: "\000\000\000\000"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                false: 0
+              }
+            }
+          }
+          binop {
+            or: 0
+          }
+          rightexp {
+            true: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              unary {
+                                unop {
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                            binop {
+                              concat: 3840
+                            }
+                            rightexp {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                      var {
+                                        name {
+                                          name: "tonumber"
+                                          num: 0
+                                        }
+                                      }
+                                    }
+                                    args {
+                                      explist {
+                                        explist {
+                                          expressions {
+                                            str: ",\377\377&X\3551bbbbbbbbbbbbbbbbbbbbbbbbbb\374"
+                                          }
+                                          explast {
+                                            number: 2
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  greater: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                            value {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            prefixexp {
+                              exp {
+                                nil: 0
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            function {
+                              body {
+                                block {
+                                  chunk {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                          semicolon: 1819042147
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

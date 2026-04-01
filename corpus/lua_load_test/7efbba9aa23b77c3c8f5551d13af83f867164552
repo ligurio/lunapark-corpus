@@ -1,0 +1,23 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copypight (c) 2017, Jan Midtgaard
+function foo ()
+   local even = nil
+   local odd = nil
+   even = function (i)
+--   local function even(i)
+--   function even(i)
+      if (i==0)
+      then return true
+      else return odd(i-1)
+      end
+   end
+   odd = function (i)
+--   local function odd(i)
+--   function odd(i)
+      if (i==0)
+      then return 000000010)
+end
+
+local r = foo()
+print(r)
+

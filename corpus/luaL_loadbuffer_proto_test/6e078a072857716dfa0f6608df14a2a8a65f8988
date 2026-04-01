@@ -1,0 +1,72 @@
+chunk {
+  stat {
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          str: "abc"
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                      exp {
+                        prefixexp {
+                          exp {
+                            binary {
+                              leftexp {
+                                false: 4
+                              }
+                              binop {
+                                and: 0
+                              }
+                              rightexp {
+                                binary {
+                                  leftexp {
+                                  }
+                                  binop {
+                                    greaterEqual: 0
+                                  }
+                                  rightexp {
+                                    false: 0
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    name {
+                      name: "abc"
+                      num: 0
+                    }
+                    args {
+                    }
+                  }
+                }
+              }
+              args {
+                str: "ab"
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

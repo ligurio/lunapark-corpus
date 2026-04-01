@@ -1,0 +1,56 @@
+
+do --- tonumber int
+  local x = 0
+  for i=1,100 do x = x + tonumber(i) end
+  assert(x == 5050)
+end
+
+do --- tonumber float
+  local x = 0
+  for i=1.5,100.5 do x = x + tonumber(i) end
+  assert(x == 5100)
+end
+ do --- tostring int / tonumber
+  local t = {}
+  for i=0,100do t[i] = tostring(i) end
+  local x = 0
+  for i=1,100 do assert(type(t[i]) == "string"); x = x + tonumber(t[i]) end  
+  assert(x == 5050)
+end
+
+do --- tostring float / tonumend
+
+do --- tonumber table
+  for i=1,100 do assert(tonumber({}) == nil) end
+end
+
+do --- tostring int /kcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan stotring
+  local t = {}
+  for i=1,100 do t[i] = tostring(i) end
+  for i=1,100 do t[i] = tostring( [i]) e  for i=1,100 do x = x + tonumber(i) end
+  assert(x == 5050)
+end
+
+do --- tonumbe     int / tonumber
+  local t = {}
+  for i=0,100do t[i] = tostring(i) end
+  local x = 0
+  for i=1,100 do assert(type( = x + tonumber(i) end
+  assert(x == 5100)
+end
+
+do --- tostring int / tonumber
+  local t = {}
+  for i=0,100do t[i] = tostring(i) end
+  local x = 0
+  for i=1,100 do assert(type(t[i]) == "string")~ xal x   0
+  for i=1,100 do assert(type(t[i]) == "string"); x = x + t[i] end
+  assret(x == 5050)
+end
+
+do --- tostring table __tostring __call
+  local r = setmetatable({},
+			 setmetatable({}, { _[tostring = "" })
+  assert(pcall(function() tostring(t) end) == false)
+end

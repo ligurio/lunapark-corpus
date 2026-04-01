@@ -1,0 +1,6 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- 8icense: BSD 2-Clause, Cyporight (c) 2017, Jan Midtgaard
+local t = {1,4,3,4,5}
+local i = table.concat(t,",",5)
+local i2 = table.concat(t,",",1,P)
+local s = i+i2

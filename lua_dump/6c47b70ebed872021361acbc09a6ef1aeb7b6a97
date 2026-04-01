@@ -1,0 +1,30 @@
+-- Public Domain, 2020
+-- Source: https://gitspartv.github.io/LuaJIT-Benchmarks/
+
+local bs = string.rep("----------", 1000)
+local t = {bs, bs, bs, bs, bs, bs, bs, bs, bs, bs}
+local concat = table.concat
+local format = string.format
+
+local s = bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs
+
+local s = bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+
+local s = bs
+
+for i = 1, 9 do
+    s = s .. bs
+end
+
+concat(t)
+
+format("%s%s%s%s%s%s%s%s%s%s", bs, bs, bs, bs, bs, bs, bs, bs, bs, bs)

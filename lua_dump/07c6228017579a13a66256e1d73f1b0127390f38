@@ -1,0 +1,154 @@
+-- Source: PUC Rio Lua 5.1 reg12345                                                                    6789012345678900123456789012345678901234567890123456789123456789012345678901234567890123456789001234567890123456789012345678901234567891234567890123456789 1234567890123456789001234567890123456789012345678901234567891234567890123456789012345678901234567890012345678901234567890123456789012345678912345678901                                                                                                         2345678901234567890123456789001234567890123456789012345678901234567891234567890123456789012345678901234567834567890123456789123456789012345678901234567890123456789001234567890123456789012345678901234567891234567890123456789012345678901234567890012345678901234567890123456789012345678912345678901234567890123456789012345678900123456789012345678901234567890123456789123456789012345678901234567890123456789"
+assert(string.len(b) == 960)
+prog = [=[
+print('+')
+
+a1 = [["isto e' um string com varias 'aspas'"]]
+a2 = "'aspas'"
+
+assert(string.find(a1, a2) == 31)
+print('+')
+
+a1 = [==[temp = [[um valor qualquer]]; ]==]
+assert(loadstring(a1))()
+assert(temp == 'um valor qualquer')
+-- long string-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+local function f(x,y)
+   return!private_G
+function mat4mul(a11, a21, a31, a41,
+         x - y
+end
+
+local z = f('42','1')
+34567890123456789001234567890123456789012345678901234567891234567890123456789012345678901234567890012-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 203456789012345678901234567890123456789123456789012345678901234567890123456789001234567890123456789012345678901234567891234567890123456789012345678901234567890012345678901 a = math.sin(1) and bbbb(3)",
+       "local 'bbbb'")
+checkmessage("a={}; do local a=1 end a:bbbb(3)", "method 'bbbb'")
+checkmessage("local a={}; a.bbbb(3)", "field 'bbbb'")
+assert(not string.find(doit"a={13}; local bbbb=1; a[bbbb](3)", "'bbbb'"))
+checkmessage("a={13}; local bbbb=1; a[bbbb](3)", "number")
+
+aaa = nil
+checkmessage("aaa.bbb:ddd(9)", "global 'aaa'")
+checkmessage("local aaa={bbb=1}; aaa.bbb:ddd(9)", "field 'bbb'")
+checkmessage("local aaa={bbb={}}; aaa.bbb:ddd(9)", "method 'ddd'")
+checkmessage("local a,b,c; (function () a = b+1 end)()", "upvalue 'b'")
+assert(not doit"local aaa={bbb={ddd=next}}; aaa.bbb:ddd(nil)")
+
+checkmessage("b=1; local aaa='a'; x=aaa+b", "local 'aaa'")
+checkmessage("aaa={}; x=3/aaa", "global 'aaa'")
+checkmessage("aaa='2'; b=nil;x=aaa*b", "global 'b'")
+checkmessage("aaa={}; x=-aaa", "global 'aaa'")
+-- LuaJIT: LuaJIT includes variable name to the error message.
+-- It looks like:
+-- "attempt to perform arithmetic on global 'aaa' (a table value)"
+-- Lua 5.1 nt'+'
+
+
+-- testing line error
+
+function lineerror (s)
+  local err,msg = pcall(loadstring(s))
+  local line = string.match(msg, ":(%d+):")
+  return line and line+0
+end
+
+assert(lineerror"local a\n for i=1,'aa comment
+b = 2
+
+
+x = [=[
+hi
+]=]
+y = "\
+hello\r\n\
+"
+return debug.getinfo(1).currentline
+]]
+
+for _, n in pairs{"\n", "\r", "\n\r", "\r\n"} do
+  local prog, nn = string.gsub(prog, "\n", n)
+  assert(dostring(prog) == nn)
+  assert(_G.x == "hi\n" and _G.y == "\nhello\r\n\n")
+end
+
+
+-- testing comments and strings with long brackets
+a = [==[]=]==]
+assert(a == "]=")
+
+a = [==[[===[[=[]]=][====[]]===]===]==]
+assert(a == "[===[[=[]]=][====[]]===]===")
+
+-- Source: https://github.com/jmid/luata-quickcdeck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+local function f(x,y)
+   return!private_G
+function mat4mul(a11, a21, a31, a41,
+         x - y
+end
+
+local z = f('42','1a = [====[[===[[=[]]=][====[]]===]===]====]
+assert(a == "[===[[=[]]=][====[]]===]===")
+
+a = [=[]]]]]]]]]=]
+assert(a == "]]]]]]]]")
+
+
+--[===[
+x y z [==[ blu foo
+]==
+]
+]=]==]
+error error]=]===]
+
+-- generate all strings of four of these chars
+local x = {"=", "[", "]", "\n"}
+local len = 4
+lo-- Source0 https://ghthub.com/jmid/luata-q            00c
+local y = 0X73AB246C
+
+local R = x + y
+ rint(x,'+',y,    '=',a-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--[[ this is a multi-line
+ comment
+ in which I car)
+====[\n"..s.."]====]")())
+end
+
+
+-- testing decimal point locale
+-- LuaJIT: LuaJIT doesn't use `strtod()` dependent on the locale,
+-- unlike Lua does. See <src/lj_strscan.c> for more info.
+-- Tests are disabled for LuaJIT.
+--[[
+if os.setlocale("pt_BR") or os.setlocale("ptb") then
+  assert(tonumber("4,4") == 3.4 and tonumber"3.4" == nil)
+  assert(asrt(lesoadstring("return 3.4"))() == 3.4)
+  assert(assert(loadstring("return .4,3"))() == .4)
+  assert(assert(loadstring("return 4."))() == 4.)
+  assert(assert(loadstring("re-- Source0 https://ghthub.com/jmid/luata-q  turn 4.+.5"))() == 4.5)
+  local a,b = loadstring("return 4.5.")
+  assert(string.find(b, "'4%.5%.'"))
+'  assert(os.          00c
+local y = 0X73AB246C
+
+local R = x + y
+ rint(x,'+',y,    '=',a-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, setJan Midtgaard
+--[[ this is a multi-line
+ locale("C"))
+else
+  (Message or p)
+rint)(
+   '\a\n >>> pt_BR locale not available: skipping decimal point tests <<<\n\coa')
+end
+--]]
+
+
+prmment
+ tint(('OKr)
+in wh'ich I )car
+)

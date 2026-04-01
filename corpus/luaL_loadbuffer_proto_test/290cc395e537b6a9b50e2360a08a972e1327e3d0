@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                prefixexp {
+                }
+              }
+              binop {
+                concat: 0
+              }
+              rightexp {
+                number: -2.5
+              }
+            }
+          }
+          binop {
+            notEqual: 12800
+          }
+          rightexp {
+            binary {
+              leftexp {
+                number: -4.9591064453125e-05
+              }
+              binop {
+                div: 4
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    number: -4.9591064453125e-05
+                  }
+                  binop {
+                    div: 0
+                  }
+                  rightexp {
+                    number: -4.9591064453125e-05
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          concat: 0
+                        }
+                        rightexp {
+                          number: -2.5
+                        }
+                      }
+                    }
+                    binop {
+                      div: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          number: -4.9591064453125e-05
+                        }
+                        binop {
+                          div: 4
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              number: -4.9591064453125e-05
+                            }
+                            binop {
+                              div: 0
+                            }
+                            rightexp {
+                              number: -4.9591064453125e-05
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+  }
+}

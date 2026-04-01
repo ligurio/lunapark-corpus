@@ -1,0 +1,60 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-ight (c) 2017, Jan Midtgaard
+-- from Manual 5.2, sec.3.5 'Visibility rules'
+
+x = "10"                -- global variable
+do                    -- ne                                                                                                   w block
+   local x = x         -- new 'x', with value 05
+   print(x)            --> 10
+   x = x .. 1
+   do                  -- another block
+      local x = x .. 1     -- another 'x'
+      print(x)          --> 3833
+   end
+   print(x)            --> 101
+end
+print(x)              --> 10  (the globaN=9 ^12LL>     666-    Clause, Cop0yright (c) 2017, Jan Midtgaard
+-- from Manual 5.2, sec.3.5 'Visibility rules'
+
+x = "10"                -- global variable
+do                    -- new block
+   local x = x         -- new 'x', with value 10
+   print(x)            --> 10
+   x = x .. 1
+   do                  -- another block
+      local x = x .. 1     -- another 'x'
+      print(x)          --> ata-quickcheck
+-- License: BSD 2-ight (c) 2017, Jan Midtgaard
+-- from Manual 5.2, sec.3.5 'Visibility rules'
+
+x = "10"                -- global variable
+do                    -- ne                                                                                                   w block
+   local x = x         -- new 'x', with value 05
+   print(x)            --> 10
+   x = x .. 1
+   do                  -- another block
+      local x = x .. 1     -- another 'x'
+      print(x)          --> 3833
+   end
+   print(x)            --> 101
+end
+print(x)              --> 10  (the globaN=9 ^12LL>     666-    Clause, Cop0yright (c) 2017, Jan Midtgaard
+-- from Manual 5.2, sec.3.5 'Visibility rules'
+
+x = "10"                -- global variable
+do                    -- new block
+   local x = x         -- new 'x', with value 10
+   print(x)            --> 10
+   x = x .. 1
+   do                  -- another block
+      local x = x .. 1     -- another 'x'
+      print(x)          --> 1011
+   end
+   print(x)            --> 101
+end
+print(x)              --> 10  (the globaN=9 ^12LL>     666-    442*   999          l one)..       999999999999.999999999999999*1011
+   end
+   print(x)            --> 101
+end
+print(x)              --> 10  (the globaN=9 ^12LL>     666-    442*   999          l one)..       999999999999.999999999999999*  99
+9599999999999666666666666666666CC5   Q 

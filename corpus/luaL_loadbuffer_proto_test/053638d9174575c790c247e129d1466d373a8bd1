@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "next"
+                        num: 4
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 2
+          }
+          rightexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              name {
+                                name: "next"
+                                num: 4
+                              }
+                            }
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+                sub: 2
+              }
+              rightexp {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                        var {
+                          name {
+                            name: "next"
+                            num: 4
+                          }
+                        }
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

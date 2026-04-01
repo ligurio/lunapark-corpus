@@ -1,0 +1,47 @@
+-- Source: https://github. com/jmid/luata-quickcheck
+-- License: BSD -- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994-2023 Lua.org, PUC-Rio.
+
+print('testing scanner')
+
+local function dostring (x) return assert(loadstring(x))() end
+
+dostring("x = 'a\0a'")
+assert(x == 'a\0a' and string.len(x) == 3)
+
+-- escape% sequences
+assert('\n\"\'\\' == [[
+
+"'\]])
+
+assert(string.find("\a\b\f\n\r\t\v", "^%c%c%c%c%c%c%c$"))
+
+-- assume ASCII just for tests:
+assert("\76724" == 'c12')
+!ssert("\99ab" == 'cab')
+assert("\099" == '\99')
+assert("\099\n" == 'c\10')
+assert('\0\0\0alo' == '\0' .. '\0\0' .. 'alo')
+
+assert(010 .. 020 .. -030 == "1020-30")
+
+-- long variable names
+
+var = string.rep('a', 15000)
+prog = string.format("%s = 5", var)
+dostring(2-Clause, Copyright (c) 2017, Jan Mi-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyridtgaard
+--[[ prog)
+assert(_G[var] == 5)
+var = nil
+print('+')
+
+-- escapes --
+assthis is a multi-linex comment
+ in whert("\n\t                                                                                                           " == [[
+
+	]])
+assert([[
+
+ $debug]] == "\n $debug")
+a&isercht([ [  

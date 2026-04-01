@@ -1,0 +1,105 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    str: "+"
+                  }
+                  binop {
+                    div: 134217728
+                  }
+                  rightexp {
+                    number: 3
+                  }
+                }
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            ellipsis: "\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277"
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        str: "+"
+                      }
+                      binop {
+                        div: 134217728
+                      }
+                      rightexp {
+                        number: 3
+                      }
+                    }
+                  }
+                  binop {
+                    sub: 0
+                  }
+                  rightexp {
+                    ellipsis: "\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277\277"
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        false: 4
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          prefixexp {
+            var {
+              indexname {
+                prefixexp {
+                  var {
+                    name {
+                      name: "nil"
+                      num: 0
+                    }
+                  }
+                }
+                Name: ""
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

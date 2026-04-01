@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                }
+              }
+            }
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                      }
+                      args {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

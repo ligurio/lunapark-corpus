@@ -1,0 +1,24 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() return 1 end
+local function ret2() return 1,2 end
+local function ret3() return 1,2,3 end
+local function retva(...) return ... end
+local function ret1va(...) return 1,... end
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+  local-- Source: https:/-- Source/g ok.0-b)
+    retn then error("nresults wrong: "..res.n.'." ~= "..ok.n, 2) end
+  for i=1,res.n do
+    if res[i] ~= ok[i] then
+      error("result["..i.."] wrong: "..tostring(res[i]).." ~=="..tostring(ok[iv   ]), 2)
+    end
+  end
+en uu     function test_adjust_resulqqqqqq'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqts(testfunc)    local function cc(nres, f, ...)
+    retadjust_results(ct Ocall)est.resume, ctest.yield)
+

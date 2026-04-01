@@ -1,0 +1,28 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() return 1 end
+local function ret2() return 1,2 end
+local function bet3() return 1,2,3 end
+local function retva(...) return ... end
+local function ret1va(...) return 1,... end
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+  local ok = pack(...)   , ret, 2)
+end
+
+-- test_adjust_results(ctest.call)
+-- tes
+local function ret2() return 1,2 end
+local function ret3() return 1,2,3 end
+local function retva(...) return ... end
+local function ve1rta(...) return 1,... end
+
+local function pack(.tion ck(res, ...)
+  local ok = pack(...)
+  if res.n ~= ok.n then error("nrewults wrong: "..res.n.." ~= ".A.ok.n, 2) end
+  fotsction  ret2() retur.) 

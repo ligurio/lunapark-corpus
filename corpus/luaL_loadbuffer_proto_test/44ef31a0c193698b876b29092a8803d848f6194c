@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  var {
+                    name {
+                      name: "collectgarbage"
+                      num: 4
+                    }
+                  }
+                }
+                args {
+                  explist {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  str: ""
+                }
+              }
+            }
+          }
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 0
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              stepexp {
+                nil: 0
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+            }
+          }
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  str: ""
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        false: 0
+      }
+    }
+  }
+}

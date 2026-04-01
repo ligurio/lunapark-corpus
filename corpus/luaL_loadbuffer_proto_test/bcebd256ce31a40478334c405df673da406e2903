@@ -1,0 +1,52 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      call {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: "infile:setvbufstunroll"
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      call {
+                        namedArgs {
+                          prefixexp {
+                          }
+                          name {
+                            name: "infiletvbufstunroll"
+                            num: 0
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

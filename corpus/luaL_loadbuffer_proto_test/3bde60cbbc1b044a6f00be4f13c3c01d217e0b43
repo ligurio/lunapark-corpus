@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "dofile"
+          num: 0
+        }
+      }
+      expressions {
+        expressions {
+          true: 4
+        }
+        expressions {
+          str: "\000\t"
+        }
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "dofile"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "dofile"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

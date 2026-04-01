@@ -1,0 +1,24 @@
+do --- operators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)
+  for i=1,100 do local a, b = 23, 11; y = a-b end; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 23, 11; y = a/b end; assert(y == 23/11)
+  for i=1,100 do local a, b = 23, 11; y = a%b end; assert(y == 23%11)
+  for i=1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b End; assert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a/b end; assert(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; ass local a=23; y=math.exp(a) end assert(y==math.exp(23))
+  for i=1,100 do local a=23; y=math.log(a) end assert(y==math.log(23))
+  for i=1,100 do local a=23; y=math.log10(a) end assert(y==math.log10(23))
+  for i=1,100 do local a=23; y=math.sin(a) end assert(y==math.sin(23))
+  for i=1,100 do local a=23; y=math.cos(a) end assert(y==math.cos(23))
+  for i=1,100 do local a=23; y=math.tan(a) end assert(y==math.tan(23))
+end
+
+do --- exp -luajit==2.0
+  assert((10^-2 - 0.01) == 0)
+end

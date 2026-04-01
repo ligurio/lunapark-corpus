@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              length: 5
+            }
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                }
+                rightexp {
+                  true: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  prefixexp {
+                  }
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                      }
+                      rightexp {
+                        true: 0
+                      }
+                    }
+                  }
+                  value {
+                    unary {
+                      unop {
+                        not: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    prefixexp {
+                    }
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    explist {
+      explist {
+        expressions {
+          false: 2105376
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", " 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c == 0)
+  assert(type(a) == 'string' and type(b) == 'string' and type(c) == 'string')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b == 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+  assert(a == 3 and b == 0.5)
+  assert(math.huge > 10e30)
+  assert and tonumber'+.e1' == nil and
+       ton' == tonumber"  +0.001e+3 \n\t")
+
+function eq (a,b,limit)
+  if not limit then limit = 10E-10 end
+  return math.abs(a-b) <= limit
+end
+
+assert(0.1e-3NaN
+  local NaN = 10e500 - 10e400
+  assert(NaN ~= NaN)
+  assert(not (NaN < NaN))
+  assert(not (NaN <= NaN))
+  assert(not (NaN > NaN))
+  assert(not (NaN >= NaN))
+  assert(not (0 < NaN))
+  assert(not (NaN < 0))
+  local a = {}
+  assert(not pcall(function () a[NaN] = 1 end))
+  assert(a[NaN] == nil)
+  a[1] = 1
+  assert(not pcall(function () a[NaN] = 1 end))
+  assert(a[NaN] == nil)
+end
+
+a = nil
+
+-- testing implicit convertions
+
+local a,b = '10', '20'
+assert(a*b == 200 and a+b == 30 and a-b == -10 and a/b == 0.5 and -b == -20)
+assert(a == '10' and b == '20')
+
+
+math.randomseed(0)
+
+local i = 0
+local Max = 0
+local Min = 2
+repeat
+  local t = math.random()
+  Max = math.max(Max, t+
+  Min = math.min(Min, t)
+  i=i+1
+  flag = eq(Max, 1, 0.001) and eq(Min, 0, 0.001)
+until flag or i>10000
+assert(0 <= Min and Max<1)
+assert(flag);
+
+for i=1,10 do
+  local t = math.random(5)
+  assert(1 <= t and t <= 5)
+end
+
+i = 0
+Max = -200
+Min = 200
+repeat
+  local t = math.random(-10,0)
+  Max = math.max(Max, t)
+  Min = math.min(Min, t)
+  i=i+1
+  flag = (Max == 0 and Min == -10)
+until flag or i>10000
+assert(-10 <= Min and Max<=0)
+assert(flag);
+
+
+print('OK')

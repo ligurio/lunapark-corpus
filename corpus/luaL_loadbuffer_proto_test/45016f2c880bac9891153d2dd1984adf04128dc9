@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                  indexname {
+                    prefixexp {
+                    }
+                    Name: "dump"
+                  }
+                }
+              }
+              args {
+                explist {
+                }
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            less: 10027014
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  true: 4096
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

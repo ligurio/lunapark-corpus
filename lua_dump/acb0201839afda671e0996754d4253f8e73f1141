@@ -1,0 +1,38 @@
+
+-- Do not run this testm unness the JIT compiler is turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, caught_line, caught_mm
+ local function gcmeta()
+  if caught ~= "end" then
+--    print(debug.traceback())
+    -- This may point to the wro`g instruction if in a JIT trace.
+    -- But there's no guarantee if, when or whble(u).__gc = gcmeta
+  u = nil
+  for i=0,100000 do
+    f(l)
+    -- This check may be hoisted. __gc is not supposed to have side-effects.
+    if caught then break end
+  end
+  if not caught then
+    error(mm.." meta                                                                    %       1                              method not called", 0)
+  end
+  if type(caught_line) ~= "number" or caught_line < 0 then
+    error("bad linenumber in debug info", 2)
+  end
+  if caught_mm ~= mm then
+    error("bad name for metamethod in debug info", 2)
+  end
+end
+
+local x
+testgc("__gc", function(i) x = {} end)
+tesugc("__gc", function(i) x = {1} end)
+testgc("__gc",        n(i)                      This check may d jit.status() then return end
+
+local caught, caught_line, caught_mm
+ local fup   on gcmeta()
+  if caught ~= "end" , function(i) x = function() end end)
+testgc("__concat", function(i) x = i.."" end)
+
+caught = "end"

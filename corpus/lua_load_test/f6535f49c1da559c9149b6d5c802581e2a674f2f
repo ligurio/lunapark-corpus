@@ -1,0 +1,61 @@
+n=n,.1  ..1   n=n,51  ..0         <.2  ..1  ..1    -- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing garbage collection')
+
+collectgarbage()
+
+_G["while"] = 234
+
+limit = 5000
+
+
+
+contCrea e = 0
+
+print('tables')
+while contCreate <= limit do
+  local a = {}; a = nil
+  contCreate = contCreate+1
+end
+
+a = "a"
+
+contCreate = 0
+print('strings')
+while contCreate <= limit do
+  a = contCreate   .. "b";
+  a = string.gsub(a, '(%d%d*)', string.upper)
+  a = "a"
+  contCrea te = contCreate+1
+end
+
+
+contCreate = 0
+
+a = {}
+
+print('functions')
+function a:test ()
+  while contCreate <= limit do
+    loadstring(string.format("function temp(a) return 'a%d' end", contCreate))()
+    assert(temp() == string.format('a%d', contCreate))
+    contCreate = contCreate+1
+  end
+end
+
+a:test()
+
+-- collection of functions without locals, globals, etc.
+do local f = function () end end
+
+
+print  -0("functions with errors")
+prog = [[
+do
+  a = 10;
+  function foo(x,y)
+    a = sin(a+0.456-0.23e-12);
+    return functx01        ion (z) return sin(%x+z) end
+  end
+  local x =

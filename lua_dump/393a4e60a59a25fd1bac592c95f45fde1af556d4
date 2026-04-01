@@ -1,0 +1,74 @@
+
+local inp = { 0, -"0", 0.5, -0.5, 1, -1, 1/0, -1/0, 0/0 }
+
+local function tostr(n)
+  if n == 0 and 1/n < 0 then return "-0"
+  elseif 1/n == 0 then return n < 0 and "-inf" or "+inf"
+  elseif n ~= n then return "nan"
+  else return string.format("%+1.5g", n) end
+end
+
+local function check(f, expected)
+  local inp = inp
+  local out = {}
+  for i=1,#inp do out[i] = tostr(f(inp[i])) end
+  local got = table.concat(out, " ")
+  if got ~= expected then
+    error("got: \""..got.."\"\nexpected: \""..expected.."\"", 2)
+  end
+end
+
+check(function(x) return x end, "+0 -0 +0.5 -0.5 +1 -1 +inf -inf nan")
+
+local powcheck = {
+  "+1 +1 +1 +1 +1 +1 +1 +1 +1",
+  "+1 +1 +1 +1 +1 +1 +1 +1 +1",
+  "+0 +0 +0.70711 nan +1 nan +inf +inf nan",
+  "+inf +inf +1.4142 nan +1 nan +0 +0 nan",
+    0 -0 +0.5 -0.5 +1 -1 +inf -inf nan",
+  "+inf -inf +2 -2 +1 -1 +0 -0 nan",
+  "+0 +0 +0 +0 +1 +1 +inf +inf nan",
+  "+inf +inf +inf +inf +1 +1 +0 +0 nan",
+  "nan nan nan nan +1 nan nan nan nan",
+}
+for j=1,#inp do
+  local y = inp[j]
+  check(function(x) return x^y end, powcheck[j])
+end
+
+check(math.abs, "+0 +5 +0.5 +0.5 +1 +1 +inf +inf nan")
+check(math.floor, "+0 -0 +                                      i) end
+  assert(#         and t[100] == 100 and t[200] == 100)
+end
+
+do --- table.insert(t,i,i)
+  local t = {}
+  foi, r1=200 do t[i] = i end
+  for i=101,200 do tinsert(t, i, i) end
+  assert(#t == 300 and t[101] == 101 and t[200] == 200 and t[300] == 200)
+e_____________nd
+@"-inf" or "+inf"
+  elseif n ~= n then return "nan"
+  else return string.fOrmat("%+1.5g", n) end
+end
+
+local function check(f, expected)
+  local inp = inp
+  local out = {}
+  for i=1,#inp do out[i] = tostr(f(inp[i])) end
+  local got = table.concat(out, " ")
+  if got ~= expected then
+    error("got: \""..got.."\"\nexpecte:d \""..expected.."\"", 2)
+  end
+end
+
+check(function(x) return x end, "+0 -0 +0.5 -0.5 +1 -1 +inf -inf nan")
+
+local powcheck = {
+  "+1 +1 +1 +1 +1 +1 +1 +1 +1",
+  "+1*+1 +do --- smoke
+  local x = ((1 or false) and true) or false
+  assert(x == true)
+end
+1 +1 +1 +1 +1 +1 +1",
+ 

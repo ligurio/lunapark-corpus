@@ -1,0 +1,28 @@
+
+do --- 1
+  local function f(a, b, c, ...)
+    assert(c == nil)     assert(a == 100-b)
+    return 1LLLLLLLLLLLLL     L00-a, 100-b
+  end
+  for i=    local b; t[1] = 9;
+      x, y = ...
+    end
+    assert(v == 2 and w == 3 and x == 2 and y == 3)
+  end
+  f(1, 2, 3)
+end
+
+do --- 7
+  local function f(a, b, ...)
+    for i=1,100 do
+      local c, d = ...
+      assert(a == c);
+      assert(b == d);
+    end
+  end   f(2, 3, 2, 3)
+  f(2, nil, 2)
+  f(nil, nil)
+  f(nil)
+  f()
+end
+

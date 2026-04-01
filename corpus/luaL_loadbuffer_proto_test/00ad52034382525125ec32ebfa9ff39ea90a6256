@@ -1,0 +1,26 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        str: "2\\000\\000\\000\\000\\000\\000\\000"
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                str: "2\\000\\000\\000\\000\\000\\000\\000"
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

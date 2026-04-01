@@ -1,0 +1,176 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "collectgarbage"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              name {
+                                name: "collectgarbage"
+                                num: 0
+                              }
+                            }
+                          }
+                          args {
+                            explist {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                      function {
+                        body {
+                          block {
+                            chunk {
+                              stat {
+                                ifstat {
+                                  condition {
+                                    ellipsis: "table.remove"
+                                  }
+                                  first {
+                                    chunk {
+                                      stat {
+                                        repeatcycle {
+                                          block {
+                                            chunk {
+                                              stat {
+                                              }
+                                              stat {
+                                                list {
+                                                  varlist {
+                                                    var {
+                                                    }
+                                                    vars {
+                                                    }
+                                                    vars {
+                                                      indexexpr {
+                                                        prefixexp {
+                                                          functioncall {
+                                                            prefArgs {
+                                                              prefixexp {
+                                                                var {
+                                                                  name {
+                                                                    name: "collectgarbage"
+                                                                    num: 0
+                                                                  }
+                                                                }
+                                                              }
+                                                              args {
+                                                                explist {
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                        exp {
+                                                          function {
+                                                            body {
+                                                              block {
+                                                                chunk {
+                                                                  stat {
+                                                                    ifstat {
+                                                                      condition {
+                                                                        ellipsis: "table.remove"
+                                                                      }
+                                                                      first {
+                                                                        chunk {
+                                                                          stat {
+                                                                            repeatcycle {
+                                                                              block {
+                                                                                chunk {
+                                                                                }
+                                                                              }
+                                                                              condition {
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                  explist {
+                                                    expressions {
+                                                    }
+                                                    explast {
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                          condition {
+                                            nil: 704643072
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 704643072
+      }
+    }
+  }
+}

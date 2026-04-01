@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 65536
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    parlist {
+                    }
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "print"
+                        num: 0
+                      }
+                    }
+                  }
+                  args {
+                    explist {
+                      explist {
+                        explast {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            notEqual: 0
+          }
+          rightexp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  namedassign {
+                    name {
+                      name: "\004\000"
+                      num: 0
+                    }
+                    value {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                          }
+                          lastSep {
+                            semicolon: 3145728
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                true: 4
+              }
+              binop {
+                concat: 512
+              }
+              rightexp {
+                str: "0.3E2"
+              }
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 4294967293
+        }
+        args {
+          str: "math.tointeger"
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    ifstat {
+      condition {
+        false: 0
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

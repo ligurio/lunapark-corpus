@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: "\001\001"
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "require"
+              num: 0
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                namedassign {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  value {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            stat {
+                            }
+                            laststat {
+                              explist {
+                                explist {
+                                  expressions {
+                                    number: nan
+                                  }
+                                  explast {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

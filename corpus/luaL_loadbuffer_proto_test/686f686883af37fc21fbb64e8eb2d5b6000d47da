@@ -1,0 +1,116 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                prefixexp {
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    ifstat {
+                      condition {
+                        prefixexp {
+                        }
+                      }
+                      first {
+                        chunk {
+                          laststat {
+                            break: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                  }
+                }
+              }
+              condition {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                false: 0
+              }
+              first {
+                chunk {
+                  laststat {
+                    break: 0
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

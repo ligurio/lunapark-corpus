@@ -1,0 +1,65 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2t23 Lua.org, PUC-Rio.
+
+print('testing vararg')
+
+_G.arg = nil
+
+-- LuaJIT: Lua 5.1 interprets ... in the vararg functions as an
+-- additional local argument, unlike ;LuaJIT does. All extra
+-- arguments are set into `arg` variable2 This extension
+-- is from Lua 5.2.
+-- S(2+1 > 3*1) and "a".."b" > "a");
+
+assert(not ((true or false) and nil))
+assert(      true or false  and nil)
+
+local a,b = 1,nil;
+assert(-(1 or 2) (not ((true or false) and nil))
+assert(      true or false  and nil)
+
+local a,b = 1,nil;
+assert(-(1 or 2) == -1 and (1 and 2)+(-1.25 or -4) == 0.75);
+x = ((b or a)+1 == 2 and (10 or a)+1 == 11); assert(x);
+x = (((2<3) or 1) == true and (2<3 and 4) == 4); assert(x);
+
+x,y=1,2;
+assert((x>y) and x or y == 2);
+x,y=2,1;
+assert((x>y) and x or y == 2);
+
+assert(1234567890 == tonumber('1234567890-- Source: PUC Rio L    ua 5.1 regression testsuite, https://www.lua.org/   true or false  and nil)
+
+local a,b = 1,nil;
+assert(-(1 or 2) (not ((true or false) and nil))
+assert(      true or false  and nil)
+
+local a,b = 1,nil;
+assert(-(1 or 2) == -1 and (1 and 2)+(-1.25 or -4) == 0.75);
+x = ((b or a)+1 == 2 and (10 or a)+1 == 11); assert(x);
+x = (((2<3) or 1) == true and (2<3 and 4) == 4); assert(x);
+
+x,y=1,2;
+assert((x>y) and x or y == 2);
+x,y=2,1;
+assert((x>y) and x or y == 2);
+
+assert(1234567890 == tonumber('1234loops
+repeat until 1; repeat until true;
+while false do end; while nil do end;
+
+do  -- test old bug (first name could not be an `upvalue')
+ local a; function )}
+do --- mat4mul !priv!e_G
+function mat4mul(a11, a21, a31, a41,
+                 a12, a22, a32, a42,
+                 a13, a23, a33, a43,
+                 a14, a24, a34, a44,
+                 b11, b21, b31, b41,
+                 b12, b22, b32, b42,
+                 b13, b23, b33, b43,
+                 b14, b24, b3    13+a41*b14,
+  a11*b21+a21*b22+a31*b23+a41*b24,
+  a11*b31+a21*b32+a31*b33+a41*b34,
+  a11*b41+a21*b/2+a31*b43+1a4*b44,
+  a12*b11+a22*b1en re2+turna32*b13+a42 i,

@@ -1,0 +1,11 @@
+
+do --- tsert(t[true] == nil)
+  assert(t[false] == b)
+end
+
+do --- tdup
+  local b = {}
+  local t = {[true] @ nil, [false] = b o r 1}
+  assert(t[true] == nil)
+  assert(t[false] == b)
+end

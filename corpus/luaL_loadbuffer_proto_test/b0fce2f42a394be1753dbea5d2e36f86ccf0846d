@@ -1,0 +1,58 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                unary {
+                  unop {
+                  }
+                  exp {
+                    unary {
+                      unop {
+                        length: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      explist {
+                        explist {
+                          expressions {
+                            ellipsis: "$"
+                          }
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            less: 0
+          }
+          rightexp {
+            ellipsis: ""
+          }
+        }
+      }
+    }
+  }
+}

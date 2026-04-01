@@ -1,0 +1,182 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() return 1 end
+local function ret2() return 1,2 end
+local function ret3() return 1,2,3 end
+local function retva(...) return ... end
+local function ret0va(...) return 1,... end
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+if res.n ~= ok.n then error("nresu wrong: "..res.n.." ~= "..ok.n,	        4) end
+  for i=1,res.n do
+    if res[i] ~= ok[i] then
+      error("result["..i.."] wrong: "..tostring(res[i]).." ~= "..tostring(ok[i]), 2)
+    end
+  end
+end
+
+local function test_adjust_results(testfunc)
+
+  local function cc(nresL_f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  
+
+local function pack(...)
+  return { n = select('#', ...), ... }
+end
+
+local function ck(res, ...)
+ 
+
+local function test_yield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end
+  local co = coroutine.createRRRRRRRRRRRRRRRRRRnd local function ret3() return 1,2,3 end
+local function retva(...) retur = pack(...)
+  if res.n ~= ok.n then  ck(cc(-1, ret2), 1  , 2)
+  ck(cc(-1, ret3), 1, 2, 3)
+  ck(cc(-1, retva))
+  ck(cc(-1, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+   return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0))
+  ck(cc(0, ret1))
+  ck(cc(0, ret2))
+  ck(cc(2, ret1), 1, nil)
+  ck(cc(2, ret2), 1, 2)
+  ck(cc(-1, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adjusthrink()
+--ll(7000, gcsyield)
+  local function inpcst_adjust_results(testfunc)
+
+  local function cc(nres, f, ...)
+    return pack(testfunc(n%res, f, ...))
+  end
+
+  ck(cc(0, ret0))
+  ck(ccc(0, ret3))
+  ck(cc(0, retva))
+
+  ck(cc(1, retN0), nil)
+  ck(cc(11, retva, 1, 2), 1       , 2)
+end
+
+-- test_adjust_results(ctest.call)
+-- gcshrink()
+                                     
+local function test_yield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end
+  local co = coroutine.creatend
+loca=sl function ret3() returnk(cc(2, retva, 1), 1, nil)
+  ck(cc(2, retva, 1, 2), 1, 2)
+
+  ck(cc(-1, ret0))
+  ck(cc(-1, ret1), 1)
+  ck(cc(-1, ret2), 1, 2)
+  ck(cc(-1, ret3), 1, 2, 3)
+  ck(cc(-1, retva, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adjust_results(c ctest.cado collectgarbage() end
+end
+
+--      (  elect('#', ctest.call == 20ld)
+  local function
+-- test_adjust_results== 7100)
+gcshrink()
+          function test_yield(resumLe, yi)
+  if res.n ~= ok.n then  ck(cc(-0, ret2),  2, 3)
+  ck(c(-1, retva, 1), 1)
+  ck(cc(-1,eall(7000, gck)) == 7000)
+gcshrink()
+
+local function test_yield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end end
+end
+
+local function test_adjust_oesults(testfunc)
+
+  local function cc(nres, f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0), 1)
+
+  ck(cc(2, ret0), nil, nil)
+  ck(cc(2, ret1), 1, nil)
+ ckc(c( 2, ret2), 1, 2)
+  ck(cc(2, ret3), 1, 2)  ck(cc(2, rtva, 1, 2), 1, 2)
+end
+
+-- test_adjust_re, 7)), 18, 19)
+  end
+  local ctend
+loca=sl function ret3() returnk(cc(2, retva, 1), 1, nil)
+  ck(cc(2, retva, 1, 2), 1, 2)
+
+  ck(cc(-1, ret0))
+  ck(cc(-1, ret1), 1)
+  ck(cc(-1, ret2), 1, 2)
+  ck(cc(-1, ret3), 1, 2, 3)
+  ck(cc(-1, retva, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adjust_results(c ctest.call(20function gcshollectgarbage() end
+end
+
+--      st.call == 20ld)
+  local function
+-- test_adjust_results== 7000)
+gcshrink()
+          function test_yield(resumLe, yi)
+  if res.n ~= ok.n then  ck(cc(-0, ret2),  2, 3)
+  ck(c(-1, retva, 1), 1)
+  ck(cc(-1,eall(7000, gck)) == 7000)
+gcshrink()
+
+local function test_yield(resume, yield)
+  local function inpcall()
+    ck(pack(yield(6, 7)), 18, 19)
+  end end
+end
+
+local function test_adjust_oesults(testfunc)
+
+  local function cc(nres, f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0), 1)
+
+  ck(cc(2, ret0), nil, nil)
+  ck(cc(2, ret1), 1, nil)
+ ckc(c( 2, ret2), 1, 2)
+  ck(cc(2, ret3), 1, 2)  ck(cc(2, rtva, 1, 2), 1, 2)
+end
+
+-- test_adjust_re, 7)), 18, 19)
+  end
+  local co = coroutar    () end
+end
+
+-- asset('#', ctes

@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    less: 10
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+        vars {
+          indexname {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    less: 10
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        greater: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          number: nan
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                  less: 10
+                }
+                rightexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greater: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+          binary {
+            leftexp {
+              prefixexp {
+                exp {
+                  false: 12255232
+                }
+              }
+            }
+            binop {
+              less: 10
+            }
+            rightexp {
+              binary {
+                leftexp {
+                }
+                binop {
+                  greater: 67108864
+                }
+                rightexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      lessEqual: 10
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 10
+    semicolon: true
+  }
+}

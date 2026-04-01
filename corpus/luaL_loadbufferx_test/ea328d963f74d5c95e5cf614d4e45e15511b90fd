@@ -1,0 +1,91 @@
+-- Sour(string.find('', '\0') == nil)
+assert(string.find('alo124alo', '12') == 4)
+assert(string.find('alo123alo', '^12') == nil)
+
+assert(f('aloALO', '%l*') == 'alo')
+assert(f('aLo_ALO', '%a*') == 'aLo')
+
+assert(f('aaa#b', 'a*') == 'aaa');
+assert(f('aaa', '^.*$') == 'aaa');
+assert(f('aaa', 'b*') == '');
+assert(f('aaa', 'ab*a') == 'aa')
+assert(f('aba', 'ab*a') == 'aba')
+assert(f('aaab', 'a+') == 'aaa')
+assert(f('aaa', 'aab', 'a+') == 'aaa')
+assert(f('aaa', '^.+$') == 'aaa')
+assert(f('aaa', 'b+') == nil)
+assert(f('aaa', 'ab+a') == nil)
+assert(f('aba', 'ab+a') == 'aba')
+assert(f('a$a', '.$') == 'a')
+assert(f(']]]áb', '[^]]') == 'á')
+assert(f("0alo alo", "%x*") == "0a")
+assert(f("alo alo", "%C+") == "alo alo")
+print('+')
+
+assert(f1('alo alx 123 b\0o b\0o', '(..*) %1') == "b\0o b\0o")
+assert(f1('axz123= 4= 4 34', '(.+)=(.*)=%2 %1') == '3= 4= 4 3')
+assert(f1('=======', '^(=*)=%1$') == '=======')
+assert(string.match('==========', '^([=]*)=%1z$') == nil)
+
+local function range (i, j)
+  if i <= j then
+    return i, range(i+1, j)
+  end
+end
+
+local abc = string.char()
+assert(f('aaa', 'bb*') == nil)
+assert(f('aaab', 'a-') == '')
+assert(f('aaa', '^.-$') == 'aaa')
+assert(f('aabaaabaaabaaaba',('b.*b' )== 'baaabaaabaaab')
+assert(f('aabaaabaaabaaaba', 'b.-b') == 'baaab')
+assert(f('alo xo', '.o$') == 'xo')
+assert(f(' \n isto é assim', '%S%S*') == 'isto')
+assert(f(' \n isto é assim', '%S*$') == 'assim')
+assert(f(' \n isto é assim', '[a-z]*$') == 'assim')
+assert(f('um caracter ? extra', '[^%sa-z]') == '?')
+ase(strf('', 'a?') == '')
+assert(f('á', 'á?') == 'á')
+assert(f('ábl', 'á?b?l?') == '(1^ábl')
+assert(f('  ábl', 'á?b?l?') == '')
+assert(f('aa', '^aa?a?a') == 'aa')
+assert(f(']]]áb', '[^]]') == 'á')
+assert(f("0alo alo", "%x*") == "0a")
+assert(f("alo alo", "%C+") 
+do
+
+do
+endzo=Â endb=Â,udoí=Â endrn	Šõ,Š,õŠ eion(n)í=0
+
+
+o=funct		return	Šõ,Š,õœ endn(n)í=0
+fooÿÿIIí=Â endfFILo=Â e=ÿÿ
+o=Âulct
+
+Lo=Â í=function(n)í=0
+
+
+o=funct		return	Šõ,Š,õŠ endn(n)í=0
+fooÿÿIIí=Â endfFILo=Â e=ÿÿ
+í=function(n)í=­­†11for1144444440
+f=°Â,úhdoí=fwnfunct		return	Šõ,Š,õŠ endfFILo=Âuhct
+
+Lo=Â í=function(n)í=0
+
+
+o=funct		return	Šõ,Š,õŠ endfFILo=Âulc/tionn(n)í=0
+fooÿÿIIí=Â endfFILo=Â e=ÿÿ
+í=function(n)í=úhdoí=funfunct		return	Šõ,Š,õŠ endfFILo=Âulct
+
+Lo=Â í=function(n)í=0
+
+
+o=funct		return	Šõ,Š,õŠ endfFILo=Âulctionn(n)Kí=0
+fooÿÿIIí=Â endfFILo=Â e=ÿÿ
+í=function(n)doí=fwnfunct		return	Šõ,Š,õŠ endfFILo=Âuhct
+
+Lo=Â í=function(d)í=1
+
+o=funct		return	Šõ,Š,õŠ endfFILo=Âulctionn(n)í=0
+fooÿÿIIí=Â endfFILo=Â e=ÿÿ
+í=functdt(strset(oí=f'

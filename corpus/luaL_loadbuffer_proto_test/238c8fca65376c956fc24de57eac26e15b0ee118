@@ -1,0 +1,53 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        ellipsis: "\000\000\000\000"
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              ellipsis: "\000\000\000\000"
+            }
+            binop {
+              lessEqual: 2
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 0
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

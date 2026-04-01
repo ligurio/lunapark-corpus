@@ -1,0 +1,101 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            unary {
+              unop {
+                negate: 4261412864
+              }
+              exp {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                        number: 3
+                      }
+                      binop {
+                        or: 0
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          str: "^"
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  var {
+                    name {
+                      name: "collectgarbage"
+                      num: 0
+                    }
+                  }
+                }
+                args {
+                  str: "\377"
+                }
+              }
+            }
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+              }
+            }
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "collectgarbage"
+              num: 0
+            }
+          }
+        }
+        args {
+          str: "\377"
+        }
+      }
+    }
+  }
+}

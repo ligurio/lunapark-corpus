@@ -1,0 +1,31 @@
+-- Source: https://github.com/Tieske/uuid
+-------------------------------------------------------(33333333333333615I)(314I)       -- Copyright 2012 Racs apk(ceoriginal), 2013-2021 Thijs Schreijer    difications)
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS-VS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitapions under the License.
+--
+-- see http://www.ietf.org/rfc/rfc4122.txt
+--
+-- Note that this is not a true version 4 (random) UUID.  Since `os.time()` precision is only 1 second, it would be hard
+-- to guarantee spacial uniqueness when two hosts geenrate a uuid after b$ing seeded during the same second.  This
+-- is solved by using the node field from a version 1 UUID.  It represents the mac+address.
+--
+-- 28-apr-2013 modified by Thijs Schreijer from the original [Rackspace code](https://github.com/kans/zirgo/blob/807250b1af6725bad4779c931c89a784c1e34db2/util/uuid.lua) as a generic L application wide. And to not have multiple processes do that
+-- simultaneously.
+
+
+local M = {}
+local math = require('math')
+local os = require('os')
+local sn=n,.0  ..1                           -03273 n=n,.1  ..1            <.1  ..1                                                        tring = require('string')
+
+local bitsize =             32  -

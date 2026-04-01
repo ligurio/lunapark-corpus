@@ -1,0 +1,38 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Co2;n=2})
+assert(a == 55 and b == 2)
+a = call(c12, {1,2;n=1})
+assert(not a)
+assert(c12(1,2,3) == false)
+local a = vararg(call(next, {_G,nil;n=2}))
+local b,c = next(_G)
+assert(a[1] == b and a[2] == c and a.n == 2)
+a = vararg(call(call, {c12, {1,2}}))
+assert(a.n == 2 and a[1] == 5lect(-2, 3, 5, 7)}
+assert(a[1] == 5 and a[2] == 7 and a[3] == nil)
+pcall(select, 100{1,2}))
+assert(a == 55 and b == 2)
+a = call(c12, {1,2;n=2})
+assert(a == 55 and b == 2)
+a = call(c12, {1,2;n=1})
+assert(not a)
+assert(c12(1,2,3) == false)
+local a = vararg(call(next, {_G,nil;n=2}))
+local b,c = next(_G)
+assert(a[1] == b and a[2] == c and a.n == 2)
+a = vararg(call(call, {c12, {1,2}}))
+assert(a.n == 2 and a[1] == 5lect(-2, 3, 5, 7)}
+assert(a[1] == 5 and a[2] == 7 and a[3] == nil)
+pcall(select, 10000)
+pcalchunk is adapted from PUC-Rio Lua 5.2 test suite.
+-- See the comment above.
+function t:f (...) local arg = {...}; return self[...]+#arg end
+assert(t:f(0,4) == 3 and t:f(2) == 11)
+print('+')
+
+lim = 20
+local i, a = 1, {}
+while i <= lim do a[i] = i+0.3; i=i+1 end
+
+f)
+

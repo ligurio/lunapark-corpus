@@ -1,0 +1,244 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 4
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+            }
+            binop {
+              concat: 4
+            }
+            rightexp {
+              binary {
+                leftexp {
+                  ellipsis: "x"
+                }
+                binop {
+                  concat: 4
+                }
+                rightexp {
+                  prefixexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+        expressions {
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+        vars {
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "collectgarbage"
+        }
+        explast {
+          ellipsis: ")"
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      concat: 4
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          ellipsis: "x"
+                        }
+                        binop {
+                          concat: 4
+                        }
+                        rightexp {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                expressions {
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+                vars {
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              name {
+                                name: "collectgarbage"
+                                num: 0
+                              }
+                            }
+                          }
+                          args {
+                            explist {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 67108864
+                        }
+                        rightexp {
+                          ellipsis: "]"
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          binary {
+                            leftexp {
+                              binary {
+                                leftexp {
+                                  prefixexp {
+                                  }
+                                }
+                                binop {
+                                  concat: 4
+                                }
+                                rightexp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              concat: 0
+                            }
+                            rightexp {
+                              binary {
+                                leftexp {
+                                  prefixexp {
+                                  }
+                                }
+                                binop {
+                                  concat: 4
+                                }
+                                rightexp {
+                                  function {
+                                    body {
+                                      block {
+                                        chunk {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 4
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 6488064
+      }
+    }
+  }
+}

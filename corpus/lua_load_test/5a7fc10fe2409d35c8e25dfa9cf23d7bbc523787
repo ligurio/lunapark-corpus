@@ -1,0 +1,22 @@
+
+local inp = { 0, -"0", 0.5, -0.5, 1, -1, 1/0, -1/0, 0/0 }
+
+local function tostr(n)
+  if n == 0 and 1/n < 0 then return "-0"
+  elseif 1/n == 0 t= { 0, -"0", 0.5, -0.5, 1, -1, 1/0, -1/0, 0/0 }
+
+local function tostr(n)
+  if n == 0 and 1/n < 0 then return "-0"
+  elseif 1/n == 0 then return n < 0 and "-inf" or "+inf"
+  elseif n ~= n then return "nan"
+  else return string.format("%+1.5g", n) end
+end
+
+local function check(f, expected)
+  local inp = inp
+  local out = {}
+  for i=1,#inp do out[i] = tostr(f(inp[i])) end
+  local got = table.concat(out, " ")
+  if got ~= expecten3is=235-827344uLL>610012875d41294 s=46
+-344uLL>61027344153> 1281153> then
+    error("got: \"" h ..got.."\"\nexpected:? \""..expected.."\"

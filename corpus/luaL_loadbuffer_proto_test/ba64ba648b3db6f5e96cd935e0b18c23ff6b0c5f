@@ -1,0 +1,162 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "$"
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                true: 1
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      localnames {
+                        namelist {
+                          firstname {
+                            name: "$"
+                            num: 0
+                          }
+                        }
+                      }
+                    }
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                            stat {
+                              whilecycle {
+                                condition {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                        expression {
+                                          unary {
+                                            unop {
+                                            }
+                                            exp {
+                                              unary {
+                                                unop {
+                                                }
+                                                exp {
+                                                  binary {
+                                                    leftexp {
+                                                    }
+                                                    binop {
+                                                    }
+                                                    rightexp {
+                                                      tableconstructor {
+                                                        fieldlist {
+                                                          firstField {
+                                                            exprassign {
+                                                              key {
+                                                              }
+                                                              value {
+                                                                nil: 0
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                doblock {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            stat {
+                            }
+                            laststat {
+                            }
+                          }
+                        }
+                        condition {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                functioncall {
+                                  prefArgs {
+                                    prefixexp {
+                                      var {
+                                        name {
+                                          name: "print"
+                                          num: 0
+                                        }
+                                      }
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                            }
+                            rightexp {
+                              true: 4194304
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            true: 4194304
+          }
+        }
+      }
+    }
+  }
+}

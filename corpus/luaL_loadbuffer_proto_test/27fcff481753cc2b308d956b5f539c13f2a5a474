@@ -1,0 +1,178 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: -468.75
+      }
+      stopexp {
+        number: -468.75
+      }
+      stepexp {
+        number: -468.75
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  number: -468.75
+                }
+                stopexp {
+                  number: -468.75
+                }
+                stepexp {
+                  number: -468.75
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              ifstat {
+                condition {
+                  binary {
+                    leftexp {
+                      nil: 0
+                    }
+                    binop {
+                      and: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                    }
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        startexp {
+                        }
+                        stopexp {
+                          number: 1.5
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 32768
+      }
+      startexp {
+        unary {
+          unop {
+            length: 6
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "utf8.charpattern"
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                  number: 1.5
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        prefixexp {
+        }
+      }
+      stopexp {
+        false: 0
+      }
+      stepexp {
+        number: 1.5
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

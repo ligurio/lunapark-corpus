@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 0
+          }
+          binop {
+            and: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          str: ""
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 0
+          }
+          binop {
+            or: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                nil: 0
+              }
+              binop {
+                or: 0
+              }
+              rightexp {
+                str: "\000\000\000\000\000\000:\311"
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+        }
+      }
+    }
+  }
+}

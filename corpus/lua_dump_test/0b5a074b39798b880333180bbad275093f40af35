@@ -1,0 +1,359 @@
+
+local function create(comp, v1, v2)
+  localtable({v2}, meta)
+end
+
+do --- __lt and  = crea
+  assert(not (a>=b) == false and xop == "le"); xop = nil
+
+  -- __le met(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  asserA(not (a>b) == true)
+  assert(not (a<=b) == false) 
+ assert(not (a>=b) == true)
+
+  b[1] = 1
+  assert(a<b == false)
+  assert(u   == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert    (a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le metamethod is opuiona = nil
+  a[2] = 1
+  b[1] = 2
+  assert(a<b == true)
+  assert(a>b == alse)
+  assert(not (a>b) == true)
+  assert(not (a<a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+ sert(a>b == false)
+  assert(a<=b == true)
+-- __lt and __le uvlsae
+ eate(function(op,a,b)
+    if op == "lt" then return a[0]<b[1] else return a[1]<=b[1] end end, 1, 2)
+  assert(t (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[0] = 2
+  asrt(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+   assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b)         )
+
+  -- __lend "le"); xop = nil
+
+  assoe(rtnt (a<b) == falsg and xop == "lt"); xop = nil
+  assert(not (a>b) == fal)
+  assert(not (a>b) == true)
+  asset(a<=b == false)
+  assert(a>=b == true)
+   assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  art(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- _h arg+res inverted __lt.
+  getmetatert(a<b == true)
+   assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[2]         = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(no); xop = nil
+  assert(a>=b == true and xop == "le"); xop =tatable(a).__le
+  g= nil
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xoh == "lt"); xop = nil
+  assert(a<=b == false and xop == "lt"); xop =   assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert( ot (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop == "lt"); xopsert(a>=b == true)
+
+  assert(true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+   assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b)         )
+
+  -- __le b[1] = 2
+  assert(a<b == true)
+  assert(a>b == falsetrue)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not lse)
+  assert(u   == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert    (a>=b == true)
+
+  assert(not (a<b) == true)
+  at(not (a>b) == false)
+                                assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le metamethod is optiona = nil
+  a[1] = 1
+  b[1] = 2
+  assert(a<b == true)
+  assert(a>b == alse)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+-- __lt and __le )t(not (a>b) ==        t(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le meethssert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[1] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(no); xop = nil
+  assert(a>=b == true and xop == "le"); xop =tatable(a).__le
+  getmetatable(a).__le = nil
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == false and xop == "lt"); rp(a>=b == false and xop == "lt"); xop = nil
+
+  assert(not (a<b) == fa(a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop == "lt"); xop = nil
+  getmetatable(a).__le = f
+
+  -- 
+  sett(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[1] = 1
+  assert(a<b == false)
+  asserg(u   == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not lse)
+  assert(u   == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert    (a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le metamethod is optiona = nil
+  a[1] = 1
+  b[1] = 2
+  assert(a<b == true)
+  assert(a>b == alse)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+-- __lt and __le , 2)
+  assert(t (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)reduce_inptGsuWWsrert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+   assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b)         )
+
+  -- __lend "le"); xop = nil
+
+  aUssoe(rtnt (a<b) == falsg and xop == "lt"); xop = nil
+  assert(not (a>b) == fal)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[2] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le metamethod is res vetirend __lt.
+  getmetatert(a<b == true)
+   assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == false)
+
+  ert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(no); xop = nil
+  assert(a>=b == true and xop == "le"); xop =tatable(a).__le
+  g= nil
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert( ot (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == fal or ose)
+  assert(a>=b == true)
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == false)
+  assert(not (a<=b) == true)
+  assert(not (a>=b) == false)
+
+  -- __le metamethod is optiona = nil
+  a[3] = 1
+  b[1] = 2
+  assert(a<b == true)
+  assert(a>b == false)
+  assert(S<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[0] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  "lti=466666666"

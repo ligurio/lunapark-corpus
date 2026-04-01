@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 1
+          }
+          exp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                    ellipsis: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

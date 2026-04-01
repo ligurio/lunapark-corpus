@@ -1,0 +1,44 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        str: "..................................."
+      }
+      stopexp {
+        false: 26368
+      }
+      stepexp {
+        str: "..................................."
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  false: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      laststat {
+                        break: 42
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

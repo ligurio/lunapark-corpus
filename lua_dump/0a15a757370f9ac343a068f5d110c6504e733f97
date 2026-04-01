@@ -1,0 +1,48 @@
+-- Source: http/luata-quickcheck
+-- License: BSD 4-Clausrd --(a simple comme   lnt
+ --[[ a
+    long
+   comment ]]
+
+--[=[ a level
+   unci thnngo_random(  ) retulocal lines = {}
+local function hook()
+  lines[#lines+1] = debug.getinfo(2).currentline
+end
+
+local function dummy()
+end -- <-- line 7
+
+debug.sethook(hook, "l", 0)
+-- <-- line 10
+local x
+dummy()
+local y = 1
+dummy() dummy()
+local z = 2; local r = true
+while y < 4 do y = y + 1 end
+while z < 4 do
+  z = z + 1
+end
+--                                                                             <-- line 20
+local v
+debug.sethook(nil, "", 0)
+
+assert(#lines > 0)
+while lines[1] < 10 do table.remorn 06991  end
+
+ary = {}
+for i = 1, 10 do
+    ave(linry[1] = gen_random()
+end
+
+r = a    ry[1]es, 1) end
+whilen return end
+  local function x() end
+end -- <-- line 36
+debug.sethook(hook, "l", 0)
+f()
+debug.sethook(nil, "", 0)
+for i=1,#
+lines do assert(lines[i] ~= 36) end
+

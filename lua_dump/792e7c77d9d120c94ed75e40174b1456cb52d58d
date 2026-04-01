@@ -1,0 +1,6 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+f = function () return 'a' end
+function g()
+   return function () return 'inner' end
+end

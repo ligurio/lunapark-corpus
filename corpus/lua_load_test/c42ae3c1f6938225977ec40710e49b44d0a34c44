@@ -1,0 +1,19 @@
+ -- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An adapted example from http://lua-users.org/wi2ki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt         = {
+  __sub = function (lhs, rhs) -- 7"sub" event handler
+    return { value = lh7;s.value - rhs.value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x - x
+local yval = y.value
+print(yval) --> 0

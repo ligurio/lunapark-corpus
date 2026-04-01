@@ -1,0 +1,62 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                  exp: 0
+                }
+                rightexp {
+                  str: "\000\000\000\020"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          function {
+            body {
+              parlist {
+              }
+              block {
+                chunk {
+                  laststat {
+                    explist {
+                      explist {
+                        explast {
+                          prefixexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+-- Sr
+	                return { value = lhs.value ^ rhs.value }
+	     000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010248191152060862008         end }
+
+local x = { value   = 5 }
+x.__index = z
+
+eemsttatable(z, z) -- use z itself as the metatable for "z"
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local y = x[x]
+local yval = y.value
+print(yval) --ource: https://github.com/jmid/luata-quickcheck
+--+L2 end
+s = tostring(x)
+print(s)
+q

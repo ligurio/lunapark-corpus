@@ -1,0 +1,45 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "pairs"
+              num: 0
+            }
+          }
+        }
+        args {
+          str: "abc"
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          str: "abc"
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          tableconstructor {
+          }
+        }
+      }
+    }
+  }
+}

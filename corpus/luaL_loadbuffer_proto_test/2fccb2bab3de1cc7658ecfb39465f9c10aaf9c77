@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    semicolon: false
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 4
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                expressions {
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "tonumber"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                          }
+                        }
+                        binop {
+                          concat: 4
+                        }
+                        rightexp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      prefixexp {
+                      }
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    semicolon: true
+  }
+}

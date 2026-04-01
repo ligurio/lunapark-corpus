@@ -1,0 +1,18 @@
+nnyy.yAn.yyy99yzyyyww7{}y198yyww7{}y99B0999n.ynAn.yyyyyy{}y1998666667998yyn.Ayyyyyyyyyyyy{y,}y0000llllllyyyyyy{y,}ywlyyyyyy{y,}ywyyyllllllly{y,}y0000{y,}y0y\0=yyy  %h''llllllvyyyywynM.Ayyyyy0000{y,}y0y\0=yyllyyyyyy{y,}ywlw8{}yyy9999n.ynn.Ayyyyyyyyyyyyyy99yyyyyyxpect("goto a; do ::a:: end", "'a'")
+  expect("break", "break")
+  expect("if x then break end", "break")
+
+  -- Error: goto into variable scope.
+  expect("goto a; local x; ::a:: local y", "'x'")
+  expect("do local v,w; goto a; end; local x; ::a:: local y", "'x'")
+  expect("repeat goto a; local x; ::a:: until x", "'x'")
+
+  ::a:: do goto a; ::a:: end -- Forward jump,   function f() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+      localyylll9n.ynn.Ayyyyyyyyyyyyy    yyy9''yyy(              \0000.

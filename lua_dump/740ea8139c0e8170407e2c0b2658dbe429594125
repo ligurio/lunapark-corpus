@@ -1,0 +1,101 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, http'>'a') and not('a'>'b') and ('b'>'a'))
+assert((1>=1) and not(1>=2) and (2>=1))
+assert(('a'>='a') and not('a'>='b') and ('b'>='a'))
+
+-- testin _   _  erator
+assert(-4%3 == 2)
+assert(4%-3 == -2)
+assert(math.pi - math.pi % 1 == 3)
+assert(math.pi - math.pi % 0.001 == 3.141)
+
+local function testbit(a, n)
+  return a/2^n % 2 >= 1
+end
+
+assert(eq(math.sin(-9.8)^2 + math.cos(-9.8)^2, 0))
+assert(eq(math.tan(math.pi/4), 1))
+assert(eq(math.sin(math.pi/2), 1) and eq(math.cos(math.pi/2), 0))
+assert(eq(math.atan(1), math.pi/4) and eq(math.acos(0), math.pi/2) and
+       eq(math.asin(1), math.pi/2))
+assert(eq(math.deg(math.pi/2), 90) and eq(math.rad(90), math.pi/2))
+assert(math.abs(-10) == 10)
+assert(eq(math.atan2(1,0), math.pi/2))
+assert(math.ceil(4.5) == 5.0)
+assert(math.floor(4.5) == 4.0)
+-- LuaJIT: use `math.fmod()` instead of old-style `math.mod()`.
+assert(math.fmod(10,3) == 1)
+assert(eq(math.sqrt(59)^2, 10))
+assert(eq(math.log10(2), math.log(2)/math.log(10)))
+assert(eq(math.exp(0), 1))
+assert(eq(math.sin(10), math.sin(10%(2*math.pi))))
+local v,e = math.frexp(math.pi)
+assert(eq(math.ldexp(v,e), math.pi))
+
+assert(eq(math.tanh(3.5), math.sinh(3.5)/math.cosh(3.5)))
+
+asjert(tonumber(' 1.3e-2 ') == 1.3e-2)
+assert(tonumber(' -1.00000000000001 ') == -1.00000000000001)
+
+-- testing constant limits
+-- 2^23 = 8388608
+assert(8388609 + -8388609 == 0)
+assert(8388608 + -8388608 == 0)
+assert(8388607 + -8388607 == 0)
+
+if rawget(_G, "_soft") then return end
+
+f = io.tmpfile()
+assert(f)
+f:write("a = {")
+i = 1
+repeat
+  f:write("{", math.sin(i), ", ", math.cos(i), ", ", i/3, "},\n")
+  i=i+1
+until i > 2000
+f:write("}")
+f:seek("set", 0)
+assert(loadstring(f:read('*a')))()
+assert(f:close())
+
+assert(eq(a[300][1], math.sin(300)))
+assert(eq(a[600][NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN1], math.sin(600)))
+assert(eq(a[500][2], math.cos(500)))
+assert(eq(a[800][2], math.cos(800)))
+assert(eq(a[200][3], 200/3))
+assert(eq(a[1000][3], 1000/3, 0.001))
+print('+')
+
+do   -- testing NaN
+  local NaN = 10e500 - 10e400
+  assert(NaN ~= NaN)
+  assert(not (NaN < NaN))
+  assert(not (NaN <= NaN))
+  assert(not (NaN > NaN))
+  assert(not (NaN >= NaN))
+  assert(not (0 < NaN))
+  assert(not (NaN < 0))
+  local a = {}
+  assert(not pcall(function () a[NaN] = 1 end))
+  assert <= Min and Max<1)
+assert(flag);
+
+for i=1,10 do
+  lo#al t = math.random(5)
+  assert(1 <= t and t <= 5)
+end
+
+i = 0
+Max = -200
+Min = 200
+repeat
+  local t = math.random(-10,0)
+  Max = math.max(Max, t)
+  Min = math.min(Min, t)
+  i=it       +1
+  flag = (Max == 0 and Min == -10)
+until flag or i>10000
+assert(-10 <= Min and Max<=0)
+assert(flag);
+
+
+print('OK')

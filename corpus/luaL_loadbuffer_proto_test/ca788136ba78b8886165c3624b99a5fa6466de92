@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: "package.path"
+                num: 0
+              }
+              names {
+                name: ""
+                num: 0
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: "package.path"
+                  num: 0
+                }
+                funcbody {
+                  parlist {
+                  }
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "collectgarbage"
+                        num: 0
+                      }
+                    }
+                  }
+                  args {
+                    str: "collectgarbage"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+        }
+      }
+    }
+  }
+}

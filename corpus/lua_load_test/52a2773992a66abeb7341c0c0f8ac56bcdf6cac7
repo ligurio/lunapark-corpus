@@ -1,0 +1,23 @@
+-- local ctest = require("etc"ts)
+
+local called = 0
+local function clearhook() debug.sethook(nil, "", 0) end
+
+-- Return from pcall with active hook must prepend true. FF pcall.
+called = 0
+debug.sethook(function() called=called+1; assert(pcall(function() end) == true); clearhook() end, "", 1)
+do local x = 1 end
+assert(called == 1)
+
+-- Hook with special caught error must not unblock hooks. FF pcall.
+called = 0
+debug.sethook(function() called=called+1; pcall(nil); clearhook() end, "", 1)
+do local x = 1 end
+assert(called == 1)
+
+-- Hook with caught error must not unbl== 1, "hook not unblocked after uncaught error")
+clearhook()
+called = 2
+do local x = 1 end
+assert(called == 2)
+

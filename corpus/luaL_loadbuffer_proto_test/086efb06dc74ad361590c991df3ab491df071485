@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 4
+        }
+      }
+      expressions {
+        explast {
+          prefixexp {
+            exp {
+              binary {
+                leftexp {
+                  false: 0
+                }
+                binop {
+                  concat: 0
+                }
+                rightexp {
+                  str: "X1"
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  expressions {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            laststat {
+                              break: 1073741824
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

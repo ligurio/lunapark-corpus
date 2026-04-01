@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 4
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: 0
+      }
+      stopexp {
+        number: 0
+      }
+      stepexp {
+        number: -0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    number: 0
+                  }
+                  expressions {
+                    nil: 0
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

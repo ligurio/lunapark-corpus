@@ -1,0 +1,6 @@
+local format, type, tonumber = string.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return-- Source  https://github.coP       uata-quickcheck
+-- License: B    ! retu        fa-- Source: PUC Rio  eLn

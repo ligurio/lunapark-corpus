@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            ellipsis: "Na"
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    block {
+      block {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      repeatcycle {
+                        block {
+                          chunk {
+                          }
+                        }
+                        condition {
+                          unary {
+                            unop {
+                            }
+                            exp {
+                              prefixexp {
+                                functioncall {
+                                  namedArgs {
+                                    prefixexp {
+                                    }
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    args {
+                                      str: "\277\000\000\000\000\000\000\000"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

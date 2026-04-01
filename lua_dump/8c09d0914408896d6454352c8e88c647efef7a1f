@@ -1,0 +1,107 @@
+local loadstring = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a'")
+
+  -- Error: undefined label.
+  expect("goto a", "'a'")
+ -- Source: htt expect("goto a; ::b::", "'a'")
+  expect("do ::a:: end; goto a", "'a'")
+  expect("goto a; do ::a:: end", "'a'")
+  expect("break", "break")
+  expect("if x then break end", "break")
+
+  -- Error: goto into variable scope.
+  expect("goto a; local x; ::a:: local y", "'x'")
+  expect("do local v,w; goto a; end; local x; ::a:: local y", "'x'")
+  expect("repeat goto a; local x; ::a:: until x", "'x'")
+
+  ::a:: do goto a; ::a-- Source: https://github.com/jmid/lurial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __pow = function (lhs, rhs) -- "sub" event handler
+    return { value = lhs.value ^ rhs.value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x ^ x
+local yval = y.value
+print(yval) --> 3125
+y = 22
+    x = y
+    ::a::
+  use, Copyright (c) 2017, Jan Midtgaard
+local b = false
+local  mtedpty statements are considered to be out of scope. +comp                                                                                                                          at5.2 !lex
+  local x = 11
+  do
+    goto a
+    goto a
+    local y = 22
+    x = y
+    ::a:: ;;
+    ::b:: ;;
+  end
+  assert(x == 11)
+end
+
+do --- Simple loop with cross-jumping.
+  local x = 1
+  while true do
+    goto ps://github.com/jmid/lurial
+--
+
+local x = {value = 5}
+
+locab
+    ::a:: if x -- Source: https://github.cd
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a'")
+
+  -- Error: undefined label.
+  expect("goto a", "'a'")
+ -- Source: htt expect("goto a; ::b::", "'a'")
+  expect("do ::a:: end; goto a", "'a'")
+  expect("goto a; do ::a:: end", "'a'")
+  expect("break", "break")
+  expect("if x then break end", "break")
+
+  -- Error: goto into variable scope.
+  expect("goto a; local x; ::a:: local y", "'x'")
+  expect("do local v,w; goto a; end; local x; ::a:: local y", "'x'")
+  expect("repeat goto a; local x; ::a:: until x", "'x'")
+
+  ::a:: do goto a; ::a-- Source: https://githeeeeef() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+      local5 function f() return x end
+ 
+   end
+    goto foo
+  end
+  ::foo::
+end

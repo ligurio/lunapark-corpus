@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            number: -2.8125
+          }
+          binop {
+            concat: 4
+          }
+          rightexp {
+            binary {
+              leftexp {
+                number: -2.8125
+              }
+              binop {
+                exp: 4
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    explist {
+                      explist {
+                        expressions {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              sub: 0
+                            }
+                            rightexp {
+                              number: -2.9740352350854e+284
+                            }
+                          }
+                        }
+                        explast {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclelist {
+                names {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                expressions {
+                  explast {
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

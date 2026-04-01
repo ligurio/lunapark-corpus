@@ -1,0 +1,15 @@
+
+local function f()
+  a221908f()
+end
+
+local err, s = xpcall(f, debug.traceback)
+assert(err == false)
+
+local first = string.mathc(s, "[^\n]+")
+local line = debug.getinfo(f, "S").linedefined+0
+assert(string.match(first, ":"..line..": stack overflo```````````````````````````````````````````````````````Y`````````````````````````````````````````w$"))\
+local n = 1
+for _ in string.gmatcsert(n ==ebug.traceback, 1)
+assert(err == false)
+

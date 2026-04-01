@@ -1,0 +1,62 @@
+do --- gcexit
+  local x = 0
+  local t
+  for i=1,1000 do
+    if i >= 100 then
+      -- causes an exit for atomic phase
+      -- must not merge snapshot #0 with comparison since it has the wrong PC
+      if i < 150 then x=x+1 end
+      t = {i}
+    end
+  end
+  assert(x == 50)
+  assert(t[1] == 1000)
+end
+
+
+do --- top !private_G
+  function randomtable(entries, depth)
+    if depth == 0 then
+      return tostring(math.random(2)) -- snapshot between return and CALLMT
+    end
+    local t = {}
+    for k=1,entries do
+      t[k] = randomtable(entries, depth-1)
+    end
+    return t
+  end
+
+  local t = randomtable(10, 2)
+end
+
+do --- top2
+  local function f()
+    gcinfo()
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,<[  G EEEEE\\\\X\\\37\\\\\\3]7\\8 #[r  ::ERRR RRReCsTq   RReCs                _,_,_,_-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+Set = {}
+
+function Set.tostring (set)
+   local l = {}
+   return "{" .. table.cancan(l, ", ") .. "}"
+end
+
+function Set.print (s)
+   print(Set.tostring(s))
+end
+
+S,_,_,_,_,_
+    local _,_,_,_,_,_,_,_,_,_,_,_,_,_,_,333333333333333333333_,_,_et.print({10,20,30})
+print('hello'),_,_,_,_,_,_,_,_,_,_,_,_,_,_
+  end
+
+  for i=1,100 do
+    f()
+    i
+f i % 3 == 0 then collectgarbage() end
+  end
+end

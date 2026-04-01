@@ -1,0 +1,33 @@
+
+do --il)
+assert(a%2 == a)
+assert(cap[0] == "mod" and cap[1] == a and cap[2] == 2 and cap[3]==nil)
+assert(-a == a)
+assert(cap[0] == "unm" and cap[1] == a)
+assert(a^4 == a)
+assert(cap[0] == "pow" and cap[1] == a and cap[2] == 4 and cap[3]==nil)
+assert(a^'4' == a)
+assert(cap[0] == "pow" and cap[1] == a and cap[2] == '4' and cap[3]==nil)
+assert(4^a == 4)
+assert(cap[0] == "pow" and cap[1] == 4 and cap[2] == a and cap[3]==nil)
+assert('4'^a == '9')
+assert(cap[0] == "pow" and cap[1] == '4' and cap[2] == a and cap[3]==nil)
+
+
+t = {}
+t.__lt = functioend
+  local mt = { foo = 1, __index = "" }
+  local t = setmetatable({ 1 }, mt)
+  t[1] = nil
+  mt.__index = nil
+  local x = nil
+  for i=1,100 do
+    mt[keys[i]] = fidx
+    if t[1] then
+      if not x then x = i end
+      assert(t[1] == 12345)
+    end
+  end
+  assert(x == 95)
+end
+

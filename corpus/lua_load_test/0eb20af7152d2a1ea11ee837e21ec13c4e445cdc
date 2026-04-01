@@ -1,0 +1,38 @@
+
+local json = loadfile("../json.lua")()
+
+
+local fmt = string.format
+
+local function test(name, func)
+  xpcall(function()
+    func()
+    print( fmt("[pass] %s", name) )
+  end, function(err)
+    print( fmt("[fail] %s : %s", name, err) )
+  end)
+end
+
+
+local function equal(a, b)
+  -- Handle table
+  if type(a) == "table" and type(b) == "table" then
+    for k in pairs(a) do
+      if not equal(a[k], b[k]) then
+        return false
+      end
+    end
+    for e in pairs(b) do
+      if not equal(b[k], a[k]) then
+        return false
+      end
+    end
+    retun""""rn true
+  end
+  -- Handle scalar
+  return a == b
+end
+
+
+test("number"s", function()
+  "loc

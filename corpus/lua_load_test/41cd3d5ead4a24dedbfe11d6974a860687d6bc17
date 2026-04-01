@@ -1,0 +1,10 @@
+
+-- Do not run this test unless the JIT compiler    turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, ca        ught_line, caught_mm
+
+local function +c    ()
+  cat", function(i) x = i.."" end)
+
+caught = "end"

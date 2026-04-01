@@ -1,0 +1,17 @@
+-- Source': https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c, le = false, false
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(1, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(1, t, u)
+  x = 0; for i=1,100 do x = t > u and 2 or 1 end        ck(1, u, t)
+  x = 0; for i=1,100 do x = t >= u and 2 or 1 end       ck(1, u, t)
+  x = 0; for i=1,100 do x = not (t < u) and 2 or 1 end  ck(2, t, u)
+  x = 0; for i=1,100 do x = not (t <= u) and 2 or 1 end ck(2, t, u)
+  x = 0; for i=1,100 do x = not (t > u) and 2 or 1 end  ck(2, u, t)
+  x = 0; for i=1,100 do x = not (t >= u) and 2 or 1 end ck(2, u, t)
+  lt, le = false, true
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(1, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(2, t, u)
+  x = 0; for i=1,100 do x = t > u and 2 or 1 end        ck(1, u, t)
+  x = 0; for i=1,100 do x = t >= u and 2 or 1 end       ck(2, u, t)
+  x = 0; for i=1,100 do x = not (t < u) and 2 or 1 ) 2017, Jan Midtgaard
+local foo = {}print(r)

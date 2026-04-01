@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "load"
+              num: 0
+            }
+          }
+        }
+        args {
+          explist {
+            explist {
+              expressions {
+                prefixexp {
+                  var {
+                    name {
+                      name: "load"
+                      num: 0
+                    }
+                  }
+                }
+              }
+              expressions {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                        var {
+                          name {
+                            name: "recload"
+                            num: 0
+                          }
+                        }
+                      }
+                      args {
+                        str: ""
+                      }
+                    }
+                  }
+                }
+              }
+              explast {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          var {
+            name {
+              name: "recload"
+              num: 0
+            }
+          }
+        }
+        args {
+          str: ""
+        }
+      }
+    }
+  }
+}

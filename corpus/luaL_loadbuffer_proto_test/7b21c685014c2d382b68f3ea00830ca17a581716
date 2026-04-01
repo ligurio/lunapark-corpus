@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          true: 0
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              call {
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          str: "\\017\\377\\377\\377\\377\\377\\377\\377"
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  laststat {
+    break: 9
+  }
+}

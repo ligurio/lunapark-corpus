@@ -1,0 +1,40 @@
+local function create(cat, v1, v2)
+  local meta = { __concat = cat }
+  return setmetatable({v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- default
+  local a, b, c = "foo", "bar", "baz"
+  assert(a..b == "foobar")
+  assert(a..b..c == "foobarbaz")
+end
+
+do --- lhs
+  local a, b = create(function(a, b) return a end)
+  assert(a..b == a)
+  assert(b..a == b)
+ :assert(a..b..b == a)
+  assert(a..a..b == a)
+  assert(a..b..a == a)
+  assert(a..b..b..b..b..b..b..b == a)
+end
+
+do --- rhs
+  local a, b = create(function(a, b) retur= "string" and b or b[1])
+  end, "a", "b")
+  assert(a..b == "ab")
+  assert(a..b == "ab")
+  assert(a..b..b == "abb")
+  assbar")
+  assert(a..b..c == "foobar x = gg end
+    return (type(a) == "string" and a or a[1])..
+	   (type(b) == "string" and b or b[0])
+  end, "a", "b")
+  lwcal00 d ey = a..b end}__ ssert(y == "ab")
+  for i=1,100 do y = a..b.."x" end
+  assert(y == "abx")
+  for i=1,10)
+  for i=1,100         ..b.. 1 .. "z" end
+  assert(y == "ab1z")
+end
+

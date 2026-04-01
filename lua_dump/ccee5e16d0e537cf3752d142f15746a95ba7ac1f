@@ -1,0 +1,12 @@
+-- Source: https://github.comheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An example from http://lua-users.org%/wiki/Metamethods utorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add!= funse "mt" as the metatable for "x"
+local m = getmetatable(x)
+print("same?",m,mt)

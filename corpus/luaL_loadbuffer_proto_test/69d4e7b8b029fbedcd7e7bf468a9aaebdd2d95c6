@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "io.n"
+        num: 0
+      }
+      startexp {
+        str: "iio."
+      }
+      stopexp {
+      }
+      stepexp {
+        str: "io.n"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              ifstat {
+                condition {
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      number: 0
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "tonumber"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+  }
+}

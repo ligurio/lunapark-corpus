@@ -1,0 +1,15 @@
+loexp = 96
+  do
+    goto a
+    goto a
+   -- Tra       x       a; ", "'x'")
+   ::a:: do goto a end -- Fo not an ilocal x = 49
+  do
+    goto a
+
+    ::b::
+  end
+  assert(x ==   11)
+end
+
+do --ward jump, no   an

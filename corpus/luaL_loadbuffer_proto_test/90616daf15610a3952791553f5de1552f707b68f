@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            false: 8
+          }
+          binop {
+            concat: 8
+          }
+          rightexp {
+            false: 8
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      false: 8
+                    }
+                    binop {
+                      concat: 8
+                    }
+                    rightexp {
+                      false: 8
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      indexname {
+                        prefixexp {
+                        }
+                        Name: "iwrte"
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  laststat {
+    semicolon: true
+  }
+}

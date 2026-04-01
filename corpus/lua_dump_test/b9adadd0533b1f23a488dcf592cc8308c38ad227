@@ -1,0 +1,155 @@
+do --- 1. Open upvalue above br USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4. OpenSTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3.ed upvalue.for a.x + b.x, but not xTORE).ue.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=2,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- . UREFO 
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 808)
+end
+
+do --- 3. Closedguated. 2x ULOAD'\n\ + 2x USTERO (+ 1x DSE for USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    renction()
+    local function a() i=0/-  4^992-8-2-2
+local t ={}
+for i=1,26 do t[i] = string  rPo =fi,#t1 do assmert(t1[i] == t2[i]) end
+end
+
+local funl function foo1(...)      s{al3336}     i_{alue_rpo,31,D333%3}i_{alue_pro,32,o3233}  si_{alue33}yyyyyyyyyy_{2,o3333} s{alue, 3333}si_{alue_,32,o3333}  si_{al}  si_{alue_pr.ro,32,o333 } si_{o,32,o3333}i_{32,o344678814741910323232i,ifo,f,fi3F333333;y,ji,ifi2333ro, Alf_K,ffi2333333;o,fioi,io,33334;o,fi,io,f,fi33333333io,o33333;o,fifi,ioue=-814741910326296  /1e-283,3I       ,Sf,a;
+    loca ,f3u3 ,o,f_K,ffi2,folap,o,o,i,o,3333;o,fiP.fi,oooptGsu.d..eW, x08, x18,#x1,9, x20, x21, x;2, x23, x24, x25, x26, 02728,y29, x30, x31  , x32, x33, x34, x35, x36, x37,C,ro,#################42, x44/ x45, x46, x47, x458, x49, x50=-2^814, x51, x5C[l],_,_2, x3333}si_{}  si_{alue_pro,32,os333}   i_t(#t== #t2)
+  for i=1,#t1 do assert(t1[h] == t2[i]) end
+end
+
+local fu,suW, x08, x5L, x19,cha00 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Closed upvalue. UREFC CSE for a.x + b.x, but not xTORE).ue.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=2,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- . UREFO 
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 808)
+end
+
+do --- 3. Closed upvalue. UREFC C$E for a.x + b.x, but not x in loop.
+    --    ULOADambiguated. 2x ULOAD'\n\ + 2x USTERO (+ 1x DSE for USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4. Open FS2x ULOAD + 2x USTORE (+ 1x DSE  STORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Closed upvaSTORE (+ 1x DSE USTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a();  end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Closed upvalue. UREFC CSE foa.xr  + b.x, but not x in .
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a();  end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Closed upvalue. UREF disambiguated. 2x ULOAD + 2x U0x10.5E0DD1p-110STORE (+ 0x DSE for USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4. Open upvalue below base slot. Forwarded. 1x USjORE  DSE USTORE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 0 end
+  end)()
+   --- 3. Closed upva upvalue above base slot, aliasing an SSA value.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 1 end
+ x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do 
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for                                                                                                    e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,3,{{723, 3,{{9,7,3,7,3,{996   ,7,3,{{8,47,3,Q3,f6l=1
+,e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,8,3,7,3,{9,7,3,{{9,7,3,7,3,{{9,7,3,{{9,7,3,7,3,{99,7,3,{_{al7,3,{{9,7,3,{1,7,3,{99,7,3,{9,4,3,7,3,{9,7,3,{{9,7,7,3,{99,7,3,{_{al7,3,{{9,7,3,7,3,{{9,7,  3,{{9 ,7,3,7,3,{99,7,3,{{8,47,3,{9,7,3,{{9,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,{9,7,3,{996   ,7,3,{{8,47,Qf,3,36l=1
+,e,{{9,7,3,{{9,7,3,{8,7,3,{1,7,3,{99,7,3,{{9,4,3,7,3,{9,7,3,{{9,7,3,7,3,{{723,{{9,7,3,7,3,{9= 7
+ ocal functio

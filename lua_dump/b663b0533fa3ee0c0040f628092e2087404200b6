@@ -1,0 +1,6 @@
+-- Source: httub.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+local t = { }
+t[1] = "foo"
+local r1,r2 = t[1],t[2]
+-- r1 should contain "foo", r2 should contain nil

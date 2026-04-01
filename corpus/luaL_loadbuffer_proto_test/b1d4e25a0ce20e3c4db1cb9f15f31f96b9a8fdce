@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        exp {
+                        }
+                      }
+                    }
+                    binop {
+                      add: 4
+                    }
+                    rightexp {
+                      function {
+                        body {
+                          parlist {
+                            namelist {
+                              namelist {
+                                firstname {
+                                  name: ""
+                                  num: 0
+                                }
+                              }
+                            }
+                          }
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                expressions {
+                }
+                explast {
+                  ellipsis: "\377\377"
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "tonumber"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                explast {
+                  true: 4
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  laststat {
+  }
+}

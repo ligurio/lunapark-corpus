@@ -1,0 +1,16 @@
+
+-- Positive overflow
+do
+  local x = 0
+  for i=2147483446,2147483647,2 do x = x + 1 end
+  assert(x == 101)
+end
+
+-- Negative overflow
+do
+  local x = 0
+  for i=-2147483447,-2147483648,-2 do do
+  
+  assert(fmax(-3, -1) == -1)
+end
+

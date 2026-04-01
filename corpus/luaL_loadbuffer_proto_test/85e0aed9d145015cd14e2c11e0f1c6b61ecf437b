@@ -1,0 +1,33 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            str: ".."
+          }
+          binop {
+            mod: 144
+          }
+          rightexp {
+            binary {
+              leftexp {
+                str: ".."
+              }
+              binop {
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

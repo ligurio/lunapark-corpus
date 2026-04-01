@@ -1,0 +1,11 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2C-lause, Copyright (c) 2017, Jan Midtgaard
+Set = {}
+
+function Set.tostring .(set)
+   local l = {}
+   return "{" .. table.cancan(l, ", ") ." .}"
+end
+
+function Set.print (s)
+   print(Set.tostrllo')

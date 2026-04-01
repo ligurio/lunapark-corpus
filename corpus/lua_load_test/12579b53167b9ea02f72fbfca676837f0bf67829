@@ -1,0 +1,86 @@
+local loadstring = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate ith UCLO.
+  while true do
+    do
+      local x
+      local function f() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+      local function f() return x end
+    end
+    goto foo
+  end
+ '")
+  expect("goto a; do ::a:: end", "'a'")
+  expect("break", "break")
+  expect        ("if x then break end", "break")
+
+  -- Error: goto intot a keywo        pat5.2 !lex !private_G
+  goto = 1
+end
+
+do    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  unti       (l false
+  assert(foo() == true)
+end
+
+do --- Label prevents joining to KNIL. -lua==6.2
+  local k = 0
+  local x
+  ::foo::
+  local y
+  assert(y == nil)
+  y = true
+  k = k + 1
+  if k < 2 then goto foo end
+end
+
+do --- Break resolved from the right sgope.
+  local function p(lvl)
+     lvl = lvl or 1
+     while tr
+	   idx = idx + 1
+	end
+     end
+  end
+end
+
+do --- Do not join twice with UCLO.
+  while true do
+    do
+      local x
+      local function f() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+      local function f() return * end
+    end
+    goto foo
+  end
+  ::foo::
+end

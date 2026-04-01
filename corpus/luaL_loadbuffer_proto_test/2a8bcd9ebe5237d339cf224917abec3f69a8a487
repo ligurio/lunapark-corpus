@@ -1,0 +1,99 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        true: 1
+      }
+      stopexp {
+        unary {
+          unop {
+            not: 7
+          }
+          exp {
+            unary {
+              unop {
+                not: 0
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      stepexp {
+        unary {
+          unop {
+            negate: 4
+          }
+          exp {
+            unary {
+              unop {
+                not: 0
+              }
+              exp {
+                prefixexp {
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 1684104562
+      }
+      startexp {
+        unary {
+          unop {
+            not: 0
+          }
+          exp {
+            unary {
+              unop {
+                not: 0
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      stepexp {
+        number: 0.00048828125
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

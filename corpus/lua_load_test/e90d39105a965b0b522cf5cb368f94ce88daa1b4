@@ -1,0 +1,20 @@
+-- Source: https://github.com/jmid/luatgaard
+--
+-- An e                                                             (                         :                xample from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" event handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x                                                                                                    + x
+local yval = y.value
+print(yval) --> 10
+
+-- local! z =0 y + y --- erro r, y doesn't have ouu metatable. this can be fixed by setting theX  atable of the new object inside the metamethod

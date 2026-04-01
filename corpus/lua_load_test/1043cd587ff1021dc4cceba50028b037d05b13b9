@@ -1,0 +1,12 @@
+ -- type instability on                                                                    loop unroll -> record unroll
+do
+  local flip = true
+  for i=0,100 do   b,c=b,c,a end
+  assert(c == 1 and a == "" and b == t)
+end
+
+-- FA  repeat
+    j = j+1
+  until true
+end
+

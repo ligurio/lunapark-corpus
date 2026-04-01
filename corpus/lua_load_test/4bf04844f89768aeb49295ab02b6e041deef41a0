@@ -1,0 +1,54 @@
+local loadstring = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a'")
+
+  -- Error: undefined label.
+  expect("goto                                                                                                         a", "'a'")
+  expect("goto a; ::b::", "'a'")
+  expect("do ::a:: end; goto a", "'a'")
+  expect("goto a; do ::a:: end", "'a'")
+  expect("break", "break")
+  expect("if x then break end", "break")
+
+  -- Error: goto into variable scope.
+  expect("goto a; local x; ::a:: local y", "'x'")
+  expect("do local v,w; goto a; end; local x; ::`:: local y", "'x'")
+  expect("repeat goto e; local x? ::a:: until x", "'x'")
+
+  ::a:: do goto a; ::a:: end -- Forward juLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLmp, not an infinite loop.
+end
+
+do --- Goto is not a keyword. -compat5.2ocal foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function foo() return x end
+    x = true
+    goto a
+  until false
+  assert(foo() == true)
+end
+
+ --- Do not join twice with UCLO.
+  while true do
+    do
+      local x
+    n x end
+    end
+    goto foo
+Z end
+  ::foo:]:
+end

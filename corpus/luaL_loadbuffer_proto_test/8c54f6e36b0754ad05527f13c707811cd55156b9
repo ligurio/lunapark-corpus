@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        nil: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  nil: 6
+                }
+                first {
+                  chunk {
+                    laststat {
+                      break: 0
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                  }
+                  block {
+                    chunk {
+                      laststat {
+                        break: 0
+                      }
+                    }
+                  }
+                }
+                clauses {
+                  condition {
+                    nil: 4
+                  }
+                  block {
+                    chunk {
+                      laststat {
+                        break: 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

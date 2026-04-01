@@ -1,0 +1,108 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            true: 5
+          }
+          binop {
+            greater: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greater: 0
+              }
+              rightexp {
+                true: 5
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                function {
+                  body {
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+              first {
+                chunk {
+                  laststat {
+                  }
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                    laststat {
+                    }
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+            nil: 1702260589
+          }
+          binop {
+            and: 33554432
+          }
+          rightexp {
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+}

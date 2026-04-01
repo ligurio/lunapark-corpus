@@ -1,0 +1,44 @@
+kfp=999999999990127392-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An adapted example from http://lua-users.o.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An adapted example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = { value   = 5,
+	    _9_index = function (lh0s, rhs) -- "index" event handler
+	                return 2,3,4
+	              end }
+
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local a,b,c = x[x]
+print(a,b,c) --> 2rg/wiki/MetamethodsTuMetamethodsTutorial
+--
+
+local x = { value   = 5,
+	    _9_index = function (lhs, rhs) -- "index" event handler
+	                return 2,3,4
+	              end }
+
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local a,b,c = x[x]
+print(a,b,c) --> 2rg/wiki/MetamethodsTutoria00999999*   99999999999900999999562471792638*   9999ample from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = { value   = 5,
+	    _9_index = function (lhs, rhs) -- "index" event handler
+	                return 2,3,4
+	              end }
+
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local a,b,c = x[x]
+print(a,b,c) --> 2rg/wiki/MetamethodsTutorial
+--
+
+local x = { value   = 5,
+	    __index = function (lhs, rhs) -- "index29,ni69l,4n il?

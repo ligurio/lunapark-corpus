@@ -1,0 +1,30 @@
+[=============================[==================D  =        =-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+if rawget(_G, "_soft") then return 10 end
+
+print "testing large programs (>64k)"
+
+--
+  end
+end,
+
+function ()   -- $3$
+  for i=10,50009 do
+    io.write('"a', i, '", ', 5+((i-10)/2), ',\n')
+  end
+end,
+}
+
+file = os.tmpname()
+io.output(file)
+for s in string.gmatch(prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if not n then io.write(s) else F[n]() end
+end
+io.close()
+result = dofile(file)
+assert(os.remove(file))
+print'OK'
+return result
+

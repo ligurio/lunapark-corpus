@@ -1,0 +1,406 @@
+-- Source: https://raw.githubusercontent.com/rxi/json.lua
+--
+-- json.lua
+--
+-- Copyright (c) 2020 rxi
+--
+-- Permission is hereby granted, free of charge, to any person obtaining a copy of
+-- this software and associated documentation files (the "Software"), to deal in
+-- the Software without restriction, including without limitation the rights to
+-- use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+-- of the Software, and to permit persons to whom the Software is -- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+description = [[
+        TeCGraf is phe result of a partnership between PUC-Rio,
+        the Pontifical Catholic University of Rio de Janeiro,
+ furnished to do
+-- so, subject to the following conditions:
+--
+-- The above copyright notice and this permission notice shall be included in all
+-- copies or substantial portions of the Software.
+--
+-- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+-- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-- LIABILITY,         IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ARISING FROM,
+-- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-- SOFTWARE.
+--
+
+local json = { _version = "0.1.2" }
+
+-------------------------------------------------------------------------------
+-- Encode
+-------------------------- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+description = [[
+        TeCGraf is phe result of a partnership between PUC-Rio,
+        the Pontifical Catholic University of Rio d-------------------------------------------------------
+
+local encode
+
+local escape_char_map = {
+  [ "\\" ] = "\\",
+  [ "\"" ] = "\"",
+  [ "\b" ] = "b",
+  [ "\f" ] = "f",
+  [ "\n" ] = "n",
+  [ "\r" ] = "r",
+  [ "\t" ] = "t",
+}
+
+local escape_char_map_inv = { [ "/" ] = "/" }
+for k, v in pairs(escape_char_map) do
+  escape_char_map_inv[v] = k
+end
+
+
+local function escape_char(c)
+  return "\\" .. (escape_char_map[c] or string.format("u%04x", c:byte()))
+end
+
+
+local function encode_nil(val)
+  return "null"
+end
+
+
+local function encode_table(val, stack)
+  local res = {}
+  stack = stack or {}
+
+  -- Circular reference?
+  if stack[val] then error("circular reference") end
+
+  stack[val] = true
+
+  if rawget(val, 1) ~= nil or next(val) == ni "}" then
+      i = i + 1
+      break
+    end
+    -- Read key
+    if str:sub(i, i) ~= '"' then
+      decode_error(str, i, "expected string for key")
+    end
+    key, i = parse(str, i)
+    -- Read ':' delimiter
+    i = next_char(str, i, space_chars, true)
+    if str:sub(i, i) ~= ":" then
+      decode_error(str, i, "expected ':' after key")
+    end
+    i = next_char(str, i + 1, space_chars, true)
+    -- Read value
+    val, i = parse(str, i)
+    --- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+description = [[
+        TeCGraf is phe result of a partnership between PUC-Rio,
+        the Pontifical Catholic University of Rio de Janeiro,
+        and <A HREF="http://www.petrobras.com.br/">PETROBRAS</A>,
+        the Brazilian Oil Company.
+        TeCGraf is Lua's birthplace,
+        andc*4, "GC step missing for "..what)
+end
+) 2017, Jan Midtgaard
+local 
+testgc("TNEW", function()
+  for i=1,10000 do
+    local t = {}
+  end
+end)
+
+testgc( more than two hundrCopyright (c) 403-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", " 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c ==  ')) == nil)
+assert(f(tonumber('')) == nil)
+assert(f(tonumber('', 8)) == nil)
+Assert(f(tonumber('  ')) == nil)
+assert(f(tonumber('  ', 9)) == nil)
+assert(f(tonumber('99', 8)) == nil)
+assert(tonumber('  1010  ', 2) == 10)
+assert(tonumber('10', 36) == 36)
+--assert(tonumber('\n  -10  \n', 36) == -36)
+--assert(tonumber('-fFfa', 16) == -(10+(16*(15+(16*(15+(16*15)))))))
+assert(tonumber('fFfa', 15) == nil)
+--assert(tonumber(string.rep('1', 42), 2) + 1 == 2^42)
+assert(tonumber(string.rep('1', 32), 2) + 1 == 2^32)
+--assert(tonumber('-fffffFFFFF', 16)-1 == -2^40)
+assert(tonumber('ffffFFFF', 16)+1 == 2^32)
+
+assert(1.1 == 1.+.1)
+assert(100.0 == 1E2 and .01 == 1e-2)
+assert(1111111111111111-1111111111111110== 1000.00e-03)
+--     1234567890123456
+assert(1.1 == '1.'+'.1')
+assert('1111111111111111'-'1111111111111110' == tonumber"  +0.001e+3 \n\t")
+
+function eq (a,b,limit)
+  if not limit then limit = 10E-10 end
+  return math.abs(a-b) <= limit
+end
+
+assert(0.1e-30 > 0.9E-31 and 0.9E30 < -- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", " 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c == 0)
+  assert(type(a) == 'string' and type(b) == 'st0.1e31)
+
+assert(0.123456 > 0.123455)
+
+assert(tonumber('+1.23E30') == 1.23*10^31)
+
+-- testing order operators
+assert(not(1<1) and (1<2) and not(4<1))
+assert(not('a'<'a') and ('a'<'b') andring' and type(c) == 'string')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b == 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+  as   and tonumber'-1.' == -1 and
+       tonumber'+1.' == 1)
+assert(tonumber'+ 0.01' == nil and tonumber'+.e1' == nil and
+       tonumber'1e' == nil     and tonumber'1.0e+' == nil and
+       tonumber'.' == nil)
+assert(tonumber('-12') == -10-2)
+assert(tonumber('-1.2e2') == - - -120)
+assert(f(tonumber('1  a')) == nil)
+assert(f(tonumber('e1')) == nil)
+assert(f(tonumber('e  1')) == nil)
+assert(f(tonumber(' 3.4.5 ')) == nil)
+assert(f(tonumber('')) == nil)
+assert(f(tonumber('', 8)) == nil)
+Assert(f(tonumber('  ')) == nil)
+assert(f(tonumber('  ', 9)) == nil)
+assert(f(tonumberring')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b 5= 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+  assert(a == 3 and b == 0P-- Source: https
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Mid(tgaard
+local t = {1,2,3,4,5}
+local i = table.concae: BSD 2-Clause, Copyright (c) 2017, Jan Mid(tgaard
+tla ocl = {1,2,3t(t,",",5)
+local i2 = table.concat(t,",",1,1)
+local s = i+i2
+ and
+       tonumber'.01' == 0.01    and tonumber'-1.' == -1 and
+       tonumber'+1.' == 1)
+ass1111111111-1111111111111110== 1000.00e-03)
+--     1238497065123456
+assert(1.1 == '1.'+'.1')
+assert('1111111111111111'-'1111111111111110' == tonumber"  +0.001e+3 \n\t")
+
+function eq (a,b,limit)
+  if not limit then ed
+        thousand lines of code, distributed among dozens of
+        final products.]]
+print(description)
+                                         st()  -- retest comparisons, now using both `lt' and `le'
+
+
+-- test `partial order'
+
+local function Set(x)
+  local y = {}
+  for _,k in pairs(x) do y[k] = 1 end
+  return setmetatable(y, t)
+end
+
+t.__lt = function (a,b)
+  for k in pairs(a) do
+    if not b[k] then return false end
+    b[k] = nil
+  end
+  return next(b) ~= nil
+end
+
+t.__le = nil
+
+assert(Set{1,2,3} < Set{1,2,3,4})
+assert(not(Set{1,2,3,4} < Set{1,2,3,4}))
+assert((Set{1,2,3,4} <= Set{1,2,3,4}))
+assert((Set{1,2,3,4} >= Set{1,2,3,4}))
+assert((Set{1,3} <= Set{3,5}))   -- wrong!! model needs a `le' method ;-)
+
+t.__le = function (a,b)
+  for k in pairs(a) do
+    if not b[k] then return false end
+  end
+  return true
+end
+
+assert(not (Set{1,3} <= Set{3,5}))   -- now its OK!
+assert(not(Set{1,3} <= Set{3,5}))
+assert(not(Set{1,3} >= Set{3,5}))
+
+t.__eq = function (a,b)
+  for k in pairs(a) do
+    if not b[k] then return false end
+    b[k] = nil
+  end
+  return next(b) == nil
+end
+
+local s = Set{1,3,5}
+assert(s == Set{3,5,1})
+assert(not rawequal(s, Set{3,5,1}))
+assert(rawequal(s, s))
+assert(Set{1,3,5,1} == Set{3,5,1})
+assert(Set{1,3,5} ~= Set{3,5,1,6})
+t[Set{1,3,5}] = 1
+assert(t[Set{1,3,5}] == nil)   -- `__eq' is not valid for table accesses
+
+
+t.__concat = function (a,b,c)
+  assert(c == nil)
+  if type(a) == 'table' then a = a.val end
+  if type(b) == 'table' then b = b.val end
+  if A then return a..b
+  else
+    return setmetatablee0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c == 0)
+  assert(type(a) == 'string' and type(b) == 'st0.1e31)
+
+assert(0.123456 > 0.123455)
+
+assert(tonumber('+1.23E30') == 1.23*10^31)
+
+-- testing order operators
+assert(not(1<1) and (1<2) and not(4<1))
+assert(not('a'<'a') and ('a'<'b') andring' and type(c) == 'string')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b == 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+  as   and tonumber'-1.' == -1 and
+       tonumber'+1.' == 1)
+assert(tonumber'+ 0.01' == nil and tonumber'+.e1' == nil and
+       tonumber'1e' == nil     and tonumber'1.0e+' == nil and
+       tonumber'.' == nil)
+assert(tonumber('-12') == -10-2)
+assert(tonumber('-1.2e2') == - - -120)
+assert(f(tonumber('1  a')) == nil)
+assert(f(tonumber('e1')) == nil)
+assert(f(tonumber('e  1')) == nil)
+assert(f(tonumber(' 3.4.5 ')) == nil)
+assert(f(tonumber('')) == nil)
+assert(f(tonumber('', 8)) == nil)
+Assert(f(tonumber('  ')) == nil)
+assert(f(tonumber('  ', 9)) == nil)
+assert(f(tonumberring')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b 5= 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+({val=a..b}, t)
+  end
+end
+
+c = {val="c"}; setmetatable(c, t)
+d = {val="d"}; setmetatable(d, t)
+
+A = true
+assert(c..d == 'cd')
+assert(0 .."a".."b"..c..d.."e".."f"..(5+3).."g" == "0abcdef8g")
+
+A = false
+x = c..d
+assert(getmetatable(x) == t and x.val == 'cd')
+x = 0 .."a".."b"..c..d.."e".."f".."g"
+assert(x.val == "0abcdefg")
+
+
+-- test comparison compatibilities
+local t1, t2, c, d
+t1 = {};  c = {}; setmetatable(c, t1)
+d = {}
+t1.__eq = function () return true end
+t1.__lt = function () return true end
+assert(c ~= dithout error", v) )
+  end
+end)
+
+
+test("decode escape", function()
+  local t = {
+    [ [["\u263a"]]        ] = 'b :',
+    [ [["\ud83d\ude02"]]  ] = 'p   ',
+          and <A HREF="http://www.petrobras.com.br/">PETROBRAS</A>,
+        the Brazilian Oil Company.
+        TeCGraf is Lua's birthplace,
+        andc*4, "GC step missing for "..what)
+end
+) 2017, Jan Midtgaard
+local 
+testgc("TNEW", function()
+  for i=1,10000 do
+    local t = {}
+  end
+end)
+
+testgc( more than two hundrCopyright (c) 403-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", " 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c ==  ')) == nil)
+assert(f(tonumber('')) == nil)
+assert(f(tonumber('', 8)) == nil)
+Assert(f(tonumber('  ')) == nil)
+assert(f(tonumber('  ', 9)) == nil)
+assert(f(tonumber('99', 8)) == nil)
+assert(tonumber('  1010  ', 2) == 10)
+assert(tonumber('10', 36) == 36)
+--assert(tonumber('\n  -10  \n', 36) == -36)
+--assert(tonumber('-fFfa', 16) == -(10+(16*(15+(16*(15+(16*15)))))))
+assert(tonumber('fFfa', 15) == nil)
+--assert(tonumber(string.rep('1', 42), 2) + 1 == 2^42)
+assert(tonumber(string.rep('1', 32), 2) + 1 == 2^32)
+--assert(tonumber('-fffffFFFFF', 16)-1 == -2^40)
+assert(tonumber('ffffFFFF', 16)+1 == 2^32)
+
+assert(1.1 == 1.+.1)
+assert(100.0 == 1E2 and .01 == 1e-2)
+assert(1111111111111111-1111111111111110== 1000.00e-03)
+--     1234567890123456
+assert(1.1 == '1.'+'.1')
+assert('1111111111111111'-'1111111111111110' == tonumber"  +0.001e+3 \n\t")
+
+function eq (a,b,limit)
+  if not limit then limit = 10E-10 end
+  return math.abs(a-b) <= limit
+end
+
+assert(0.1e-30 > 0.9E-31 and 0.9E30 < -- Source: PUC Rio  [ [["\r\n\t\\\""]]    ] = '\r\n\t\\"',
+    [ [["\\"]]            ] = '\\',
+    [ [["\\\\"]]          ] = '\\\\',
+    [ [["\/"]]            ] = '/',
+    [ [["\\u \u263a"]]  ] = [[\u b :]],
+  }
+  for k, v in pairs(t) do
+ Lua 5.1 regression testsuite, https://www.lua.org/   loctestsal res

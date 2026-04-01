@@ -1,0 +1,70 @@
+chunk {
+  stat {
+    call {
+      namedArgs {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                number: 0
+              }
+              binop {
+                add: 268435456
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                    }
+                  }
+                  binop {
+                    mod: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              name {
+                                name: "dofile"
+                                num: 0
+                              }
+                            }
+                          }
+                          args {
+                            explist {
+                              explist {
+                                expressions {
+                                  prefixexp {
+                                  }
+                                }
+                                explast {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        name {
+          name: ""
+          num: 0
+        }
+        args {
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

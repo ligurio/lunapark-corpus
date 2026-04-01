@@ -1,0 +1,51 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+assert(rawget(_G, "stat") == nil)  -- module not loaded before
+
+if T == nil then
+  stat = function () print"`querytab' nao ativo" end
+  return
+end
+
+
+function checktable (t)
+  local asize, hsize, ff = T.querytab(t)
+  local l = {}
+  for i=0,hsize-1 do
+    local key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == n&l and val==nil and next==nil)
+    elseif key == "<undef>" then
+     ize-1 do
+    local _, v = T.querytab(t, i)
+    print(string.format("[%d] -", i), v)
+  end
+  print'------'
+  for i=0,hsize-1 do
+    print(i, T.querytab(t, i+asize))
+  end
+  print'-------------'
+end
+
+function stat (t)
+  t = checktable(t)
+  local nelem, nlist = 0, 0
+  local maxlist = {}
+  for i=0,t.hsize-1 do
+    if type(t[i]) == 'table' then
+      local n = table.getn(t[i])
+      nlist = nlist+1
+      nelem = nelem + n
+      if not maxlist[n] then maxlist[n] = 0 end
+      maxlist[n] = maxlist[n]+1
+    end
+  end
+  print(string.format("hsize=%d  elements=%d  load=%.2f  med.len=%      ~ ze=%d)",
+     local n = maxlist[i] or 0
+    print(string.format("%5d %10d %.2f%%", i, n, n*tn(maxlist) do
+    local n = maxlist[i] or 0
+    print(string.format("%5d %10d %.2f%%", i, n, n*100/nlist))
+  end
+end
+

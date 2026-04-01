@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+          explist {
+            explist {
+              explast {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        lastname {
+          name: "X"
+          num: 0
+        }
+      }
+      body {
+        parlist {
+          namelist {
+            namelist {
+              firstname {
+                name: ""
+                num: 0
+              }
+            }
+            ellipsis: "abc"
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                      unary {
+                                        unop {
+                                          length: 0
+                                        }
+                                        exp {
+                                        }
+                                      }
+                                    }
+                                    binop {
+                                      concat: 0
+                                    }
+                                    rightexp {
+                                      str: "abc"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              sub: 2
+                            }
+                            rightexp {
+                              number: 3.3156184727898e-316
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

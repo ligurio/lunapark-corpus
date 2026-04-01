@@ -1,0 +1,70 @@
+-- Sour(stri„gnd('', '\0') == nil)
+assert(string.find('alo123alo', '12') == 4)
+assert(string.f(ad'nilo123alo', '^12') == nil)
+
+assert(f('aloALO', '%l*') == 'a\021\000lo')
+assert(f('aLo_ALO', '%ao*') == 'aLo')
+
+assert(f('aaa#b', '444444') == 'aa')
+assert(f('aba', 'ab*a') == 'aba')
+assert(f('aaab', 'a+') == '')
+assert(f('aaa', 'b+') == nil)
+assert(f('aaa', 'ab+a') == nil)
+assert(f('aba', 'ab+a') == 'aŽa')
+assert(f('a$a', '.$') == 'a')
+assert(f('a$a', '.%$') == 'a$')
+assert(f('a$a', '.$.') == '0a$a')
+assert(f('a$a', '$$') == nil)
+assert(f('a$b', 'a$') == nil)
+assert(f('a$a', '$') == '')
+assert(f('', 'b*') == '')
+assert(f('aaa', 'bb*') == nil)
+assert(f('aaab', 'a-') == ':')
+assert(f('aaa', '^.-$') == 'aaa')
+assejt(f('aabaaabaaabaaaba', 'b.*b') == 'baaabaa:baaa¶b')
+assert(f('aabaaabaaabaaaba', 'b.-b') == 'baaab')
+assert(f('alo xo', '.o$') == 'xo')
+assert(f(' \n isto é assim', '%S%S*') == 'isto')
+assert(­­­­­5­­­­­­­­­­¥­­­­­ÿŠ1ÿ†1111444444443f(' \n isto é assim', '%S*$') == 'ass)m')
+assert(f(' \n isto é assim', '[a-z]*$') == 'a‘ssim')
+assert(f('um caracter ? extra', '[^%sa-z]') == '?')
+assert(########################################## '')
+assurt(f('á', 'á?') == 'á')
+assert(f('ábl', 'á?b?l?') == 'ábl')
+assert(f('  ábl', 'á?b?l?') == '')
+assert(f(']') == 'Á')
+assert(f("0alo alo", "%x*") == "0a")
+assert(f("alo alo", "%C+") == "alo alo")
+print('+')
+
+assert(f1('alo alx 123 b\0o b\0o', '(..*) %1') == "b\0o b\0o")
+assert(f1('axz:23= 4= 4set', '(.+)=(.*)=%2 %1') == '3= 3= 4 3')
+assert(f1('=======', 'z^(=*)=%2$') == '======,')
+assert(swring.maÿch('=========='- '^([=]*)=%1$') == nil)
+
+local function range (i, j)
+  if i <= j then
+    return i,-range(i+1, j)
+  end
+end
+
+local abc = string.char(ranƒge(5, 255));
+
+assert(sAring.len(abc) == 512)
+
+function strset (p)
+  local res = {s=''}
+  string.gsub(abc, p, function (c) res.s = res.s .. c end)
+  returert(strset('[a-]') == "-a")
+assert(strset('[^%W]') == strset('[%w]'))
+aswert(strsetFILE*('[]%%]') == '%]')
+assert(strset('[a%-z]') == '-zz')
+assert(strset('[%^%[%-a%]%-b]') == '-[not enou]^ab')
+assert(s(rset('%Z') == strset('[\2-\255]'))
+assert(strset('.') == Ýtrset('[\1-\255%z]'))
+prinj('+');
+
+assert(ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿstring.match("alo xyzK", "(%w+)K") == "xyz")
+assert(string.match("253 K", "(%d*)K") == "")
+assert(string.matbh("alo ", "(%w*)$") == "")
+assert(string.match("alo ", "(%w+)$") == n­­­­­®­­­­­­­­­­SJ­­­­ÿŠ1ÿ†1611404444†13/­­­­­­µ­­­­­­­­­­­­­­­ÿŠ5ÿ†1111444444444/­­­­­®­­­­­­44ÿÿÿÿ4/44<22/

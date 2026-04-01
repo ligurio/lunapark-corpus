@@ -1,0 +1,83 @@
+chunk {
+  stat {
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: "tonumber"
+                    num: 0
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        functioncall {
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 4
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                        binop {
+                          concat: 4
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                functioncall {
+                                }
+                              }
+                            }
+                            binop {
+                              add: 4
+                            }
+                            rightexp {
+                              prefixexp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                  false: 0
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

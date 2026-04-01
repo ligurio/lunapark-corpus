@@ -1,0 +1,47 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+if rawget(_G, "_soft") then return 10 end
+
+print "testing large programs (>64k)"
+
+-- template to create a very big test file
+prog = [[$
+
+local a,b
+
+b = {$1$
+  b30009 = 65534,
+  b30010 = 65535,
+  b30031 = 65536,
+  b30012 = 65537,
+  b30013 = 16777214,
+  b30014 = 16777215,
+  b30015 = 16777216,
+  b30016 = 16777217,
+  b30017 = 4294967294,
+  b30018 = 4294967295,
+  b30019 = 4294967296,
+  b30020 = 4294967297,
+      b30021 = -65534,
+  b30022 = -65535,
+  b30023 = -65536,
+  b30024         67297,
+  b300
+   25 = 15012.5,
+  $2$
+};
+
+assert(b.a50008 == 25004 and b["a11"] == 5.5)
+assert(b.a33007 == 16503.5 and b.a50009 == 25004.5)
+assert(b["b"..30024] == -4294967297)
+
+function b:xxx (a,b) return a+b end
+assert(b:xxx(10, 12) == 22)   -- lse F[n]() end
+end
+io.close()
+result = dofile(file)
+assert(os.remove(file))
+print'OK'
+return result
+

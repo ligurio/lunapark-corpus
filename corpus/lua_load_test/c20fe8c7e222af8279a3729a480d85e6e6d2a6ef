@@ -1,0 +1,73 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing errors")
+
+function doit (s)
+  local f, msg = loadstring(s)
+  if f == nil then return msg end
+  local cond, msg = pcall(f)
+  return (not cond) and msg
+end
+
+
+function checkmessage (prog, msg)
+  assert(string.find(doit(prog), msg, 1, true))
+end
+
+function checksyntax (prog, extra, token, line)
+  local msg = doit(prog)
+  token = string.gsub(token, "(%p)", +'
+
+
+-- testing line error
+
+function lineerror (s)
+  local err,msg = pcall(loadstring(s))
+  local line = string.match(msg, ":(%d+):")
+  return line and line+0
+end
+
+assert(lineerror"local a\n for i=1,'a' do \n print(i) \n end" == 2)
+assert(lineerror"\n local a \n for k,v in 3 \n do \n print(k) \n end" == 3)
+assert(lineerror"\n\n for k,v in \n 3 \n do \n print(k) \n end" == 4)
+assert(lineerror"function a.x.y ()\na=a+1\nend" == 1)
+
+local p = [[
+function g() f() end
+function f(x) error('a', X) end
+g()
+]]
+X=3;assert(lineerror(p) == 3)
+X=0;assert(lineerror(p) == nil)
+X=1;assert(lineerror(p) == 2)
+X=2;assert(lineerror(p) == 1)
+
+lineerror = nil
+
+C = 0
+local l = debug.getinfo(1, "l").currentline; function y () C=C+1; y() end
+
+local function checkstackmessage (m)
+  return (string.find(m, "^.-:%d+: stack overflow"))
+end
+assert(checkstackmessage(doit('y()')))
+assert(checkstackmessage(doit('y()')))
+assert(checkstackmessage(doit('y()')))
+-- teste de linhas em erro
+C = 0
+local l1
+local function g()
+  l1 = debug.getinfo(1, "l").currentline; y()
+end
+local _], stackmsg = xpcall(g, debug.traceback)
+local stack = {}
+for line in string.gmatch(stackmsg, "[^\n]*") do
+  local curr = string.match(line, ":(%d+):")
+  if curr then table.insert(stack, tonumber(curr)) end
+end
+local i=1
+while stack[i] ~=))
+
+
+print('OK')

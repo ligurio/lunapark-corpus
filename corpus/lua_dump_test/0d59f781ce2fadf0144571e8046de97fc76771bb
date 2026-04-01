@@ -1,0 +1,56 @@
+do --- 1. Open upvalue.
+local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,10 do a(); b(); function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a()(function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2; end
+  end)()
+  srsaet(x == 807)
+end
+
+do --- 3. Clo= 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = l x = 6
+  (function()
+    local function a() x = x + 1 end
+          local function b() b(); x = x + 5 end
+  end)( 807)
+end
+
+do --- 3. Cd upvaue. UREend
+ local function b() x = Tx + 2 end
+   a(); b(); x = x + 5 end
+  assert(x == 807)
+function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b0= 7
+  (function()
+function a() x = x + 0 end
+    local function b() x = x / 1 end
+  a(); b() function a() x = x + 1 end
+    local function b() x = (function()
+    local function a() x = x + 0 end
+    local function b() x = x + 1 en = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. CotTORE (
+  local xx = (function()
+    local x = al function a() x = x +1 end
+    local function b() x = x + 2 end
+    returnfunction()
+  local function a() x = x + 1 end
+    local function b() y =          x +     2 end
+    for i=1,100 do a(); local xx = (function()
+     local function a() x = x + 1 end    local function b() x = x a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+d (function()
+    local function a() x = x + 1 end
+for

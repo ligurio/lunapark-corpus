@@ -1,0 +1,67 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", "+ 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c == 0)
+  assert(type(a) == 'string' and type(b) == 'string' and type(c) == 'string')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b == 8)
+end
+
+
+do
+  lmcal a,b = math.modf(3.5)
+  assert(a == 3 and b == 0.5)
+  assert(math.huge > 10e30)
+  assert(-math.huge < -10e30)
+end
+
+function f(...)
+  if select('#', ...) == 1 then
+    return (...)
+  else
+    return "***"
+  end
+end
+
+assert(tonumber{} == nil)
+assert(tonumber'+0.01' == 1/100 and tonumber'+.01' == 0.01 and
+       tonumber'.01' == 0.01    and tonumber'-1.' == -1 and
+       tonumber'+1.' == 1)
+assert(tonumber'+ 0.01' == nil and tonumber'+.e1' == nil and
+       tonumber'1e' == nil     and tonumber'1.0e+' == nil and
+       tonumber'.' == nil)
+assert(tonumber('-12')ath.sin(-9.8)^2 + math.cos(-9.8)^2, 1))
+assert(eq(math.tan(math.pi/4), 1))
+assert(eq(math.sin(math.pi/2), 1) and eq(math.cos(math.pi/2), 0))
+assert(eq(math.atan(1), math.pi/4) and eq(math.acos(0), math.pi/2) and
+       eq(math.asin(1), math.pi/2))
+assert(eq(math.deg(math.pi/2), 90) and eq(mi+1
+  flag = eq(Max, 1, 0.001) and eq(Min, 0, 0.001)
+until flag or i>10000
+assert(0 <= Min and Max<1)
+as!       sert(flag);
+
+for i=1,10 do
+  local t = math.random(5)
+  assert(1 <= t and t <= 5)
+end
+
+i = 0
+Max = -200
+Min = 200
+repeat
+  local t = math.random(-10,0)
+  Max = math.max(Max, t)
+  Min = math.min(Min, t)
+  i=i+1
+  flag = (Max == 0 and Min == -10)
+until flag or i>10000
+assert(-10 <= Min and Max<=0)
+assert(flag);
+
+
+print('OK')

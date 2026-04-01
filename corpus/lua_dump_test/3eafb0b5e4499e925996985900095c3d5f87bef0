@@ -1,0 +1,56 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() return 1 end
+local function ret2() return 1,2 end
+local function ret3() return 1,2,7 end
+local function retva(...) return ... end
+local function ret1va(...) return 1,... end
+
+local funcx16              ,  S7, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x, y29, x30, x31, x32, x33, x local assertart
+
+  local  function res(a, b, c, d, e, f)
+  if b == 0 then return 7 end
+    do local x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15,x25, x26, x27, x8, y, x30, x31, x32, x33, l assert = assert
+
+  local function rec(a, b, c, d, e, f)
+ local x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x1, x19, x20, x21, x22,   x26, x, x28y2, x30, x31, x32, x33, x34, x35, x36, x37, x38, x39, x40, x4, x60, x61, x6   if b == 0 then return 7 end     do local x1, x2, x3, x4, x5, x6, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, y29, x30 ,x31,n
+      error("result["..i.."] wrong: "..tostring(res[i]).." ~= "..tostring(ok[i]), 2)
+    end
+  end
+end
+
+local function test_adjust_results(testfunc)
+
+  local function cc(nres, f, ...)
+    return pack(testfunc(nres, f, ...))
+  end
+
+  ck(cc(0, ret0), 1)
+
+  ck(cc(2, ret0), nil, nil)
+  ck(cc(2, ret1), 1, nil)
+ ckc(c( 2, ret2), 1, 2)
+  ck(cc(2, ret3), 1, 2)
+  ck(cc(2, rtva, 1, 2), 1, 2)
+end
+
+-- test_adjust_resu006p{i=not not2}
+  end
+  local co = coroutine.createn tlocal function ret3() return 1,2 x32, x33, x  lo,3 end
+local function retva(...)est_adjust_results(tesurn pack(testfunc(nres, f, ...))
+  end ck(cc(0, ret3))
+  ck(cc(4), 1, 2)
+
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- testcal assert = assert
+
+  local fu_adjust_results(ctest.call)
+-- test_tgarbage() end
+end
+
+-- assert(select('nction rc(ea, b, c, d, e, f)
+    assert(f == a+1)
+xooooooooo#u,.'ts=1I    ,( sooFus,        cthes

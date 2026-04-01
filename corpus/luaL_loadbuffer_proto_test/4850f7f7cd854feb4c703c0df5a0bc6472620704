@@ -1,0 +1,107 @@
+chunk {
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                exp {
+                                  binary {
+                                    leftexp {
+                                      unary {
+                                        unop {
+                                          length: 0
+                                        }
+                                        exp {
+                                        }
+                                      }
+                                    }
+                                    binop {
+                                      concat: 0
+                                    }
+                                    rightexp {
+                                      str: "abc"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              sub: 4278190082
+                            }
+                            rightexp {
+                              number: 3.3156184727898e-316
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              semicolon: false
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    laststat {
+                    }
+                  }
+                }
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      str: "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

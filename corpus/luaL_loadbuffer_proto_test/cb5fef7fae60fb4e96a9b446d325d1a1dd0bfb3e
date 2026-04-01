@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        true: 128
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                exprassign {
+                                  key {
+                                  }
+                                  value {
+                                  }
+                                }
+                              }
+                              fields {
+                                field {
+                                  exprassign {
+                                    key {
+                                    }
+                                    value {
+                                      str: "\\000\\for\\377\\256"
+                                    }
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                              fields {
+                                field {
+                                }
+                                sep {
+                                }
+                              }
+                              fields {
+                                field {
+                                  expression {
+                                    nil: 0
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                condition {
+                  true: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

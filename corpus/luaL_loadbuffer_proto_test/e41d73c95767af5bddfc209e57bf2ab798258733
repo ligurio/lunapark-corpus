@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        false: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: 2.25
+      }
+      stopexp {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              whilecycle {
+                condition {
+                  ellipsis: ","
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                      }
+                                      binop {
+                                        or: 0
+                                      }
+                                      rightexp {
+                                        prefixexp {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              binop {
+                                mod: 4
+                              }
+                              rightexp {
+                                str: "\'"
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

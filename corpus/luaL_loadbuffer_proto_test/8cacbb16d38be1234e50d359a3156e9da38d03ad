@@ -1,0 +1,206 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            ellipsis: ""
+          }
+          binop {
+            or: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  nil: 0
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      ellipsis: ""
+                    }
+                    binop {
+                      or: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                              name {
+                                name: "maxtrace"
+                                num: 0
+                              }
+                            }
+                          }
+                          explist {
+                            explast {
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                            }
+                          }
+                          condition {
+                            nil: 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            number: 0
+          }
+          binop {
+          }
+          rightexp {
+            ellipsis: ""
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  nil: 0
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                            binary {
+                              leftexp {
+                                ellipsis: ""
+                              }
+                              binop {
+                                or: 0
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                }
+                                stat {
+                                  whilecycle {
+                                    condition {
+                                      binary {
+                                        leftexp {
+                                          ellipsis: ""
+                                        }
+                                        binop {
+                                          or: 0
+                                        }
+                                        rightexp {
+                                        }
+                                      }
+                                    }
+                                    doblock {
+                                      block {
+                                        chunk {
+                                          stat {
+                                            repeatcycle {
+                                              block {
+                                                chunk {
+                                                }
+                                              }
+                                              condition {
+                                                nil: 0
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

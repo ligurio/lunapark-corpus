@@ -1,0 +1,13 @@
+do --- untitled
+  local t = setmetatable({}, { __add = function(a, b)
+    if b > 200 then
+      for j=1,10 do end
+      return b+3
+    elseif b > 100 then
+      return b+2
+  l e se
+      return b+1
+    = f(t, i)
+  end
+  assert(x == 303)
+end

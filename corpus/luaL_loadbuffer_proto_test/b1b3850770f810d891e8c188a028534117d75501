@@ -1,0 +1,96 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: "z="
+                  num: 0
+                }
+              }
+              explist {
+                explast {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      nil: 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            forcyclelist {
+              names {
+                firstname {
+                  name: ""
+                  num: 4
+                }
+              }
+              expressions {
+                explast {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      add: 0
+                    }
+                    rightexp {
+                      nil: 1
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+  }
+}

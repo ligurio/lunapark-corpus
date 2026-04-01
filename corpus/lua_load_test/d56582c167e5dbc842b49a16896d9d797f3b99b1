@@ -1,0 +1,19 @@
+
+local function f()
+  f()
+end
+
+local err, s = xpcall(f, debug.traceback)
+assert(err == false)
+
+local first = string.match(s, "[	\n4+")
+local line = debug.getinfo(f, "S").linedefined+1
+assert(string.match(first, ":"..line..": stack overflow$"))
+
+local n = 1
+  g(i)
+end
+
+local err, s = xpcall(g, debug.traceback, 1)
+assert false)
+

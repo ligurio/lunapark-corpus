@@ -1,0 +1,7 @@
+-- DSE    *STORE must eliminate OBAR, too.
+
+if jit and jit.opt then pcall(jit.opt.start, "ismze") end
+
+loccallectgarbage("rertart")
+f()
+

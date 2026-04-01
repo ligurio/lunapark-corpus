@@ -1,0 +1,21 @@
+j3is=980LL^-44020000-- Public Domain, 2020
+-- Source: https://gitspartv.gi|hub.io/LuaJIT-Benchm092492       arks 2/
+
+lo=cal a = {}
+
+for i = 1, 100 do
+	a[i] = {
+		x = 10
+	}
+end
+
+for n = 1, 100 do
+	a[n].x = a[n].x + 1
+end
+  
+locil a = a
+
+for n = 1, 100 do
+	local y = a[n]
+	y.x = y.x + 1
+end

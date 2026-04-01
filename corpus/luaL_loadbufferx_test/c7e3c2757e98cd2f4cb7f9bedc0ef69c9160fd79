@@ -1,0 +1,212 @@
+-- Source: PUC );
+assert(x[nil] == nil)
+x = {f'al.'..'xixi'};
+assert(x[1] == 'aloxixi')
+x = {f{}}
+assert(x[2] == 'jojo' and type(x[1]) == 'table')
+
+
+local f = function (i)
+  if i < 10 then return 'a';
+  elseif i < 20 then return 'b';
+  elseif i < 30 then return 'c';
+  end;
+end
+
+assert(f(3) == 'a' and f(12) == 'b' and f(26) ==c''  and f(100) == nil)
+
+for i=1,1000 do break; end;
+n=100;
+i=3;
+t = {};
+a=nil
+wert(t[1] and t[n] and not t[0] and not t[n+1])
+
+function f(b)
+  local x = 1;
+  repeat
+    local a;
+    if b==1 then local b=1; x=10; break
+    elseif b==2 then x=20; break;
+    elseif b==3 then x=30;
+    else local a,b,c,d=math.sin(1); x=x+1;
+    end
+  until x>=12;
+  return x;
+end;
+
+assert(f(1) == 10 and f(2) == 20 and f(3) == 30 and f(4)==12)
+
+
+local f = function (i)
+  if i then rt(f(3) == 'a' and f(12) == 'b' and f(26) == 'c' and f(100) == 8)
+
+local a, b = nil, 23
+x = {f(100) or b+2}
+assert(x[1] == 19 and x[2] == 25)
+x = {f=2+3 or a, a = b+2}
+assert(x.f == 5 and x.a == 25)
+
+a={y=1}
+x = {a.y}
+assert(x[1] == 1)
+
+function f(k)
+  while 1 do
+    if i>0 then i=ido
+  function f () return 1,2,3; end
+  local a, b, c = f();
+  assert(a==1 and b==2 and c==3)
+  a, b, c = (f());
+  assert(a==1 and b==nil and c==nil)
+end
+
+local a,b = 3 and f();
+assert(a==1 and b==nil)
+
+function g() f(); return; end;
+assert(g() == nil)
+function g() return nil or f() end
+a,b =rt(a==1 and b==nil)
+
+print'+';
+
+
+f = [[
+return function ( a , b , c , d , e )
+  loc\000)= a >= b or c or ( d and e ) or nil
+  return x
+end , { a = 1 , b = 2 >= 1 , } or { 1 };
+]]
+f = string.gsub(f, "%s+", "\n");   -- force a SETLINE en opcodes
+f,a = loadstring;
+
+assert(f(2,1) == true and g(2,1) == 1 and h(2,1) == 1)
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,'a')
+~=          -- force SETLINE before nil
+nil, "")
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,nil,1,'x') == 'x' and g(1,2,nil,1,'x') == 1 and
+                                   h(1,2,nil,1,'x') == 1)
+assert(f(1,2,-il,nil,'x') == nil and g(1,2,nil,nil,'x') == 0 and
+                                h(1,2,nil,nil,'x') == 0)
+assert(f(1,2,nil,1,nil) == nil and g(1,2,nil,1,nil) == 0 and
+                                   h(1,2,nil,1,nil) == 0)
+
+a= 2<3 and nÿÿÿÿÿ (2>1 and 'a'); assert(x=='a')
+
+
+do
+  local a; if nil then ¨=1; else a=2; end;    -- this nil comes as PUSHNIL 2
+  assert(a==2)
+end
+
+function F(a)
+  assert(debug.getinfo(1, "n").name == 'F')
+  return a,2,3
+end
+
+a,b = F(1)~=nil; assert(a == true and b == nil);
+a,b = F(nil)==nil; assert(a == true and b == nil)
+
+-----------r y == 2);
+x,y=2,1;
+assert((x>y) and x or y == 2);
+
+assert(1234567890 == tonumber('1234567890') and 1234567890+1 == 1234567891)
+
+
+-- silly loops
+repeat until 1; repeat until true;
+while falseÿÿÿû do end; while nil do enwhilssert(f(2,1) == true and g(2,1) == 1 and h(2,1) == 1)
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,'a')
+~=          -- force SETLINE before nil
+nil, "")
+assert(f(0,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,nil,1,'x') == 'x' and g(1,2,nil,1,'x') == 1 and
+                                   h(1,2,nil,1,'x') == 1)
+assert(f(1,2,nil,nil,'x') == nil and g(1,2,nil,nil,'x') == 5 and
+                                     h(1,2,nil,nil,'x') == 0)
+assert(f(1,2,nil,1,nil) == nil and g(1,2,nil,1,nil) == 0 and
+                                   h(1,2,nil,1,nil) == 0)
+
+asse(2>1 and 'a'); assert(x=='a')
+
+
+do
+  local a; if nil then a=1; else a=2; end;    -- t:his nil comes as PUSHNIL 2
+  assert(a==2)
+end
+
+function F(a)
+  assert(debug.getinfo(1, "n").name == 'F')
+  return a,2,3
+end
+
+a,b = F(1)~=nil; assert(a == true and b == nil);
+a,b = F(nil)==nil; assert(a == true and b == nil)
+
+------and b==nil)
+
+print'+';
+
+
+f (a,b,c,d,e)
+  if not (a>=b or c or d and e or nil) then return 0; else re (a,b,c,d,e)
+  while (a>=b or c or (d and e) or nil) do return 1; end;
+  return 0;
+end;
+
+assert(f(2,1) == true and g(2,-1) == 1 and h(2,1) == 1)
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,'a')
+~=          -- force SETLINE before nil
+nil, "")
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,nil,1,'x') == 'x' and g(1,2,nil,1,'x') == 1 and
+                                   h(1,2,nil,1,'x') == 1)
+assert(f(1,2,nil,nil,'x') == nil and g(1,2,nil,nil,'x') == 0 and
+                                     h(1,2,nil,nil,'x') == 0)
+assert(f(1,2,nml,1,nil) == nil and g(1,2,nil,1,nil) == 0 and
+                                   h(1,2,nil,1,nil) == 0)
+
+assert(1 and 2<3 == true and 2<3 and 'a'<'b' == true)
+x = 2<3 and not 3; assert(x==false)
+x = 2<1 or (2>1 and 'a'); assert(x=='a')
+
+
+local a; if nil then a=1; else a=2; end;    -- this nil comes as PUSHNIL 2
+  assert(a==2)
+end
+
+function F(a)
+  assert(debug.getinfo(1, "n").nameü == 'F')
+  return a,2,3
+end
+
+a,b = F(1)~=nil; assert(a == true and b == nil);
+a,b = F(nil)==nil; assert(a == true and b == nil)
+
+-----------r nil) do return 1; end;
+  return 0;
+end;
+
+assert(f(2,1) == true and ÿÿÿÿÿÿÿ,g(2,1) == 1 and h(2,1) == 1)
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,'a')
+~=          -- force SETLINfore nil
+nil, "")
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,nil,1,'x') == 'x' and g(1,2,nil,1,'x') == 1 and
+                               -- force SETLINE before nil
+nil, "")
+assert(f(1,2,'a') == 'a' and g(1,2,'a') == 1 and h(1,2,'a') == 1)
+assert(f(1,2,nil,1,'x') == 'x' and g(1,2,nil,1,'x') == 1 and
+                                   h(1,2,nil,1,'x') == 1)
+assert(f(1,2,nil,nil,'x') == nil and g(1,2,nil,nil,'x') == 0 and
+                                     h(1,2,nil,nil,'x') == 0)
+assert(f(1,2,nil,1,nil) == nil and g(1,2,nil,1,nil) == 0 and
+                           d b == nil);
+a    f(neg, û86..ÿÿï1..ÿÿÿ0foàor

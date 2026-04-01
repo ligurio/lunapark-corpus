@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      exp {
+                        binary {
+                          leftexp {
+                            unary {
+                              unop {
+                              }
+                              exp {
+                                nil: 4
+                              }
+                            }
+                          }
+                          binop {
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        nil: 0
+                      }
+                    }
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                nil: 4
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            binary {
+              leftexp {
+                nil: 4
+              }
+              binop {
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: "end"
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

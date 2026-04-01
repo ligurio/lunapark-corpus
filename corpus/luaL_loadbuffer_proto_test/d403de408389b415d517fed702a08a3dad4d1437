@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+              functioncall {
+              }
+            }
+            exp {
+              tableconstructor {
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+              functioncall {
+                namedArgs {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                  name {
+                    name: "z"
+                    num: 2560
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+            exp {
+              binary {
+                leftexp {
+                  prefixexp {
+                  }
+                }
+                binop {
+                  or: 0
+                }
+                rightexp {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              binary {
+                leftexp {
+                }
+                binop {
+                  or: 2560
+                }
+                rightexp {
+                  tableconstructor {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+}

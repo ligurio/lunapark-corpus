@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greater: 7
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                  }
+                }
+              }
+              binop {
+              }
+              rightexp {
+                number: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greater: 7
+          }
+          rightexp {
+            binary {
+              leftexp {
+                prefixexp {
+                  exp {
+                    number: -48.00000000000005
+                  }
+                }
+              }
+              binop {
+                exp: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

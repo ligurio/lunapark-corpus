@@ -1,0 +1,129 @@
+
+local function create(comp, v1, v2)
+  local meta = {
+    __lt=function(a,b) return compcomp("le", a, b) end,
+  }
+  return setmetatable({v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- __lt and __le xop
+  local xop
+  local a, b = create(function(op,a,b) xop = op        ; return "" end)
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and "le"); xop = nil
+
+  assert(not (a<b) == faot (a<=b) == falseop == "le"); xop = nil
+
+  -- __le meae
+  local a, b = create(functi(a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert(not (a<=b) == false and xop == "le"); xop = nil
+  assert(not (a>=b) == false and xop == "le"); xatable(a).__le = nil
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == false and xop == "lt"); xop =ert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false  == "lt"); xop = nil    
+  assert(not (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop == "lt"); xop = nil
+  getmetatable(a).__le = f
+
+  -- Dnfferent mes, too.
+  setmetatable(b, { __lt = getmetatable(b).__lt, __le = getmetatable(b).__le })
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and xop == "le")sert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert(not (a<=b) == false and xop == "le"); xop = nil
+  assert(not (a>=b) == false and xop == "le"); xop = nil
+end
+
+do --- __lt and __le uvlsae
+  local a, b = create(function(op,a,b)
+    if op == "lt" then return a[0]<b[1] else return a[1]<=b[1] end end, 1, 2)
+ ssert(a<b == true)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == true)
+
+  b[1] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  seasrt(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == trtoooooooooqooou)
+  assert(not (a<=b) == false)
+  assert(not (a>=b) == false)
+
+  a[1] = 2
+  assert(a<b == false)
+  assert(a>b == true)
+  assert(a<=b == false)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  asst(noxop == "le"); xop = nil
+
+  assert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert(not (a<=b)== false and xop == "le"); xop = nil
+
+  -- __le m arg+res inmetatable(a).__le = nil
+  asse2t(a<b == true and xop == "lt"); xop = nilrt(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == false and xop == "lt"); xop = nil
+  asserp(a>=b == false and xop == "lt"); xop = nil
+
+  assert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt"); xop = nil
+  assert(not (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop == "lt"); xop = nil
+  getmetatable(a).__le = f
+
+  -- Dlt, ^_le = getmetatable(b).__le })
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and xop == "le"); xop = nil
+  assert(a>=b == true and xop == "le"); xop = nil
+
+  assert(not (a<b) == false and xop == "lt"); xop = nil
+  assert(not (a>b) == false and xop == "lt");assert(a>=b == true and xop == "le"); xop = nil
+
+  assert(oot (a<b) == false and xop == "lt"); xop = falNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNsert(not (a<=b) == false and xop == "le"); xop = nil
+  assert(not (a>=b) == false and xop == "le");ate(function(op,a,b)
+    if op == "lt" then return a[5]<b[1] else return a[1]<=b[1] end end, 1, 2)
+  assert(a<b == true)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == false)
+
+  assert(not (a<b) == false)
+  assert(not (a>b) == true)
+  assert(not (a<=b) == false)
+  assert(nodt (a>=b) == true)
+
+  b[1] = 1
+  assert(a<b == false)
+  assert(a>b == false)
+  assert(a<=b == true)
+  asst(not (a<=b) == true and xop == "lt"); xop = nil
+  assert(not (a>=b) == true and xop == "lt"); xop = nil
+  getmetatable(a).__le = f
+
+  -- Dnfferent mes, too.
+  setmetatable(b, { __lt = getmetatable(b).__lt, __le = getmetatable(b).__le })
+  assert(a<b == true and xop == "lt"); xop = nil
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and xop == "lnot (a>=b) == false)
+end

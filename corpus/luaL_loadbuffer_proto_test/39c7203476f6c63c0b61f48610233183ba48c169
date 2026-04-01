@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 4
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: ""
+                  num: 4
+                }
+                funcbody {
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 4
+      }
+      funcbody {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+            }
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            unary {
+                              unop {
+                                length: 32768
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

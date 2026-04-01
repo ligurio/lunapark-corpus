@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: 0
+      }
+      stopexp {
+        number: 0
+      }
+      stepexp {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            number: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        tableconstructor {
+                        }
+                      }
+                      binop {
+                        and: 1
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        parlist {
+          ellipsis: "re"
+        }
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            number: 5.4323092248711e-312
+                          }
+                          binop {
+                          }
+                          rightexp {
+                            true: 0
+                          }
+                        }
+                      }
+                      binop {
+                        or: 0
+                      }
+                      rightexp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

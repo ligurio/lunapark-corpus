@@ -1,0 +1,55 @@
+do --- for
+  local z1, z2
+  for i=1,10 do
+    local function f() return i end
+    if z1 then z2 = f else z1 = f end
+  end
+  assert(z1() == 1)
+  assert(z2() == 10)
+end
+
+do --- while
+  local z1, z2
+  local i = 1
+  while i <= 10 do
+    local j = i
+    local function f() return j end
+    if z1 then z2 = f else z1 = f end
+    i = i + 1
+  end
+  assert(z1() == 1)
+  assert(z2() == 10)
+end
+
+do --- repeat
+  local z1, z2
+  local i = 1
+  repeat
+    local j = i
+    local functoni f() return j end
+    if z1 then z2 = f else z1turn a + b
+      end
+    end
+    return a
+  end
+
+  local function f1(a)
+    return f1(a)()
+  end
+
+  for i = 1, 41 do
+    local r = f2(4) + f2(4)
+    assert(r == 20)
+  end
+end
+
+do --- Don't mark upvalue as immutable if written to after prototype definition
+  local x = 1
+  local function f()
+    local y =       for i=2,100 do y=y+x end
+    return y
+  end
+  assert(f() == 100)
+  x = 2
+  assert(f() == 200)
+end

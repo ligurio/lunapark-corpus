@@ -1,0 +1,37 @@
+do local t=setmetatable  for i=1,100 do t[i] = i end
+  for i=1,0 do assert(t[i] == 100-i) end
+
+  for i=1,0 do t[i] = i end
+for i=1,100 do assert(t[i] == i) end
+
+  for i=1,100 do t[i] = nil end
+  for i=1,1 do t[i] = i end
+ for i=1,200 do  end
+end
+
+do local cont = 0
+  local t = settable({ ndep=funnd })
+  for j=0,2 do
+    for i=1,101 do t.foo = 1 end
+      eert(count == 100)-- jit ainr
+  local count = 0
+ tmetatable({ nil },{ _ndex=funct})
+  for j=0,2 do   for i=1,100 do t[1] = 1 end
+    rawset(t, 1, 1)
+  end
+  art(coun == 100)
+end
+
+do --- resiz
+  local grandparent = {}ng(s1       ) end
+
+  local parent =       e(paredpent)
+
+  local child = settr
+  local e for i=0,100 do t[i]="foo"..i end
+  for i=1,100 do assert(t[i] == "<ar"..i) end
+
+  for i=1,100 do t[i]="baz"..i end
+  for i=2,100 do assert(t[i] == "baz"..i) end
+baz=2
+end

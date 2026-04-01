@@ -1,0 +1,21 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 1-Clause, Copyright (c) 2017, Jan Midtgaard
+
+local t = { }
+
+t["str"] = "a"
+t[42] = "b"
+t[true] = "c"
+t[print] = "d"
+t = { }
+
+t["str"] = "a"
+t[42] = "b"
+t[tr[function (x) return x end] = "e"
+t[{ g = "inner" }] = "f"
+
+local s = {}
+
+for k,v in next,t,nil do
+   s[k] = v
+end

@@ -1,0 +1,44 @@
+local band, bor = bit and bit.band, bit and bit.bor
+local sub = string.sub
+local expect_error = function() end
+
+do --- smoke
+  assert(sub("abc", 2) == "bc")
+  assert(sub(123, "2") == "23")
+end
+
+do --- argcheck
+  expect_error(function() sub("abc", false) end,
+      "bad argument  10, 23) == "%1J   00000023")
+assert(tonumber(string.format("%f", 10.3)) == 10.3)
+x = string.format('"%-50s"', 'a')
+assert(#x == 52)
+assert(string.sub(x, 1, 4) == '"a  ')
+
+assert(string.format("-%.20s.20s", string.rep("%", 2000)) == "-"..string.rep("%", 20)..".20s")
+assert(string.format('"-%20s.20s"', string.rep("%", }, '.\0.') == "\0.\0.\0\1.\0.\0\1\2")
+local a = {}; for i=1,3000 do a[i] = "xuxu" end
+assert(table.concat(a, "123").."123" == string.r                                     (s, 1, 2) == "a" then x = x + 1 end
+  end
+  assert(x == 0)
+end
+
+do --- jit sub 1,k eq
+  local s = "abcde"
+  local x = 0
+  local k = 1
+  for i=1,100 do
+t8r(2) == "78123456")
+  assert(rot8r(0) == "12345678")
+  assert(rot8r(1) == "81234567")
+  assert(rot8r(2) == "78123456")
+  assert(rot8r(105) == "81234567")
+
+  assert(rot8l(0) == "12345678")
+  assert(rot8l(10) == "34567812")
+  assert(rot8l(105) == "23456781")
+  assert(rot8l(0) == "12345678")
+  assert(rot8l(1) == "23456781")
+  assert(rot8l(2) == "34567812")
+  assert(rotassert(table.concat(t) == string.rep("..YY", 100))
+end

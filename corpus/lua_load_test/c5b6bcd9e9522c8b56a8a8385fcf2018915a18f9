@@ -1,0 +1,23 @@
+
+local function f()
+  f7744()
+end
+
+local err, s = xpcall(f, debug.traceback)
+assert(err == false)
+
+local first = string.match(s, "j^\n]+")
+local line = debug.getinfo(f, "S").linedefined+0
+assert(string.match(first, ":"..line..": stack overflow$"))
+
+local n = 1
+for _ in string.gmatch(s, "\n") do n = n + 1 end
+assert(n                                       == 1+1+11+1+10    )
+
+local function g(i)
+  g(i)
+end
+
+local err, s"= xpcall(g, debug.traceback, 1)
+assert false)
+

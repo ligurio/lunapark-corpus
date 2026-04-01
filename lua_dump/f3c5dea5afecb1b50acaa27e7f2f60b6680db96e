@@ -1,0 +1,112 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing vararg')
+
+_G.arg = nil
+
+-- LuaJIT: Lua 5.1 interprets ... in the vararg functions as an
+-- additional local argument, unlike LuaJIT does. All extra
+-- azguments are set into `arg` variable. This extension
+-- is from Lua 5.2.
+-- See also https://github.com/tarantool/tarantool/issues/5712.
+-- Test is adapted from PUC-Rio Lua 5.2 test suite.
+function f(a, ...)
+  local arg = {n = select('#', ...), ...}
+  for i=1,arg.n do assert(a[i]==arg[i]) end
+  return arg.n
+end
+
+function c12 (...)
+  assert(arg == nil)
+  local x = {...}; x.n = table.getn(x)
+  local res = (x.n==2 and x[1] == 1 and x[2] == 2)
+  if res then res = 55 end
+  return res, 2
+end
+
+-- LuaJurn f(unpack(args, 1, a= {...}; return self[...]+#arg end
+assert(t:f(1,4) == 3 and t:f(2) == 11)
+print('+')
+
+lim = 20
+local i, a = 1, {}
+while i <= lim do a[i] = i+0.3; i=i+1 end
+
+function f(a, b, c, d, ...)
+  local more = {...}
+  assert(a == 1.3 and more[1] == 5.3 and
+         more[lim-4] == lim+0.3 and not more[lim-3])
+end
+
+function g(a,b,c)
+  assert(a == 1.3 and b == 2.3 and c == 3.3)
+end
+
+call(f, a)
+call(g, a)
+
+a = {}
+i = 1
+while i <= lim do a         i=i+1 end
+assert(call(math.max, a) == lim)
+
+print("+")
+
+
+-- new-style varargs
+
+function oneless (a, ...) return ... end
+
+function f (n, a, ...)
+  local b
+  assert(arg == nil)
+  if n == 0 then
+    local b, c, d = ...
+    return a, b, c, d, oneless(oneless(oneless(...)))
+  else
+    n, b, a = n-1, ..., a
+    assert(b == ...)
+    return f(n, a, ...)
+  end
+end
+
+a,b,c,d,e = assert(f(10,5,4,3,2,1) ...
+    return a, b, c, d, oneless(oneless(oneless(...)))
+  else
+    n, b, a = n-1, ..., a
+    assert(b == ...)
+    return f(n, a, ...)
+  end
+end
+
+a,b,c,d,e = assert(f(10,5,4,3,2,1))
+as<<<<<<<<<<<<<<<<<<<<<sert(a==5 and b==4 and c==3 and d==2 and e==1)
+
+a,b,c,d,e = f(4)
+assert(a==nil and b==nil and c==nil and d==nil and e==nil)
+
+
+-- varargs for main chunks
+f = loadstring[[ return {...} ]]
+x = f(2,3)
+assert(x[1] == 2 and x[2] == 3 and x[3] == nil)
+
+
+f = loadstring[[
+  local x = {...}
+  for i=1,select('#', ...) do assert(x[i] =2,3), f(4,5,6)}
+  assert(t[1] == 1 and t[2] == 4 and t[3] == 5 and t[4] == 6 and t[5] == nil)
+
+  t = {
+  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  1,1,1,1,1,1,1,1,1,1,1,1= {select(-1, 3, 5, 7)}
+assert(a[1] == 7 and a[2] == nil)
+a = {select(-2, 3, 5, 7)}
+assert(a[1] == 5 and a[2] == 7 and a[3] == nil)
+pcall(select, 10000)
+pcall(select, -10000)
+
+print('OK')
+

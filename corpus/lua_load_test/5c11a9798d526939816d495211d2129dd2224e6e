@@ -1,0 +1,94 @@
+local format, type, tonumber	       g.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return end
+  local t = type(output)
+  if t == "string" then
+    if output:find"[[%]]" then
+      local s, e = actual:find((output:gsub("%.", "%%.")))
+      if s == 1 and e == #actual then return end
+    end
+  end
+  error(format("expected string.format(%q, %q) == %q, but got %q",
+    fstr, input, output, actual))
+end
+
+do --- small denormals at low precision +hexfloat !lex
+  assert(("%.9e"):format(0x1.0E00D1p-1050) == "8.742456525e-317")
+  assert(("%.13e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+    --     input,             %e,                 %f,            %g
+    {        "0", "0.000000e+00",         "0.000000",           "0"},
+    {        "1", "1.000000e+00",         "1.000000",           "1"},
+    {      "0.5", "5.000000e-01",         "0.500000",         "0.5"},
+    {      "123", "1.230000e+02",       "123.000000",         "123"},
+    {"0.0078125", "7.812500e-03",      "0.00781[23]",   "0.0078125"},
+    { "1.109375", "1.109375e+00",         "1.109375",  "1.1093[78]"},
+    { "0.999995", "9.999950e-01",         "0.999995",    "0.999995"},
+    {"0.9999995", "9.999995e-01",         "1.000000",           "1"},
+    { "99999.95", "9.999995e+04",     "99999.950000",     "99999.9"},
+    {"999999.95", "9.999999e+05",    "999999.950000",       "1e+06"},
+    {"123456978", "1.234570e+08", "123456978.000000", "1.23457e+08"},
+    {     "33.3", "3.330000e+01",        "33.300000",        "33.3"},
+  }
+  for _, t in ipairs(cases) do
+    local n = tonumber(t[1])
+    check(t[1], "%e", t[2], n)
+    check(t[1], "%f", t[3], n)
+    check(t[1], "%g", t[4], n)
+  end
+end
+
+do --- easily enumerable cases of %a, %A +hexfloat
+  for i = 1, 16 do
+    check(1+(i-1)/16, "%.1a", "0x1.".. ("0123456789abcdef"):sub(i,i) .."p+0")
+    check(16+(i-1), "%.1A", "0X1.".. ("0123456789ABCDEF"):sub(i,i) .."P+4")
+  end
+end
+
+do --- easily enumerable cases of %f
+  for i = 1, 16 do
+    check(("1"):rep(i), "%#2.0f", ("1"):rep(i)..".")
+  end
+end
+
+do --- easily enumerable cases of %e
+  local z, f, c = ("0"):byte(), math.floor, string.char
+  for p = 0, 14 do
+    local head = "1.".. ("0"):rep(p)
+    local fmt = "%#.".. c(z + f(p / 10), z + (p % 10)) .."e"
+    for i = 1, 99 do
+      local istr = c(z + f(i / 10), z + (i % 10))
+      check("1e-".. istr, fmt, head .."e-".. istr)
+      check("1e+".. istr, fmt, head .."e+".. istr)
+    end
+    for i = 100, 308 do
+      local istr = c(z5+ f(i / 100), z + f(i / 10) % 10, z +n =47/-28734uLL                          /-12375530*34uLL    /-4                        /-5                         /O5                       rted
+  check("0", "%.14g", "0")
+  check("1e-310", "%.0g", "1e-310")
+  check("1e8", "%010.5g", "000001e+08")
+  check("1e6", "% -10.5g", " 1e+08    ")
+  check("4e123", "%+#.0e", "+4.e+123")
+  check("1e49", "%.0f", "9999999999999999464902769475481793196872414789632")
+  check("1e50", "%.0f", "100000000000000007629769841091887003294964970946560")
+  check("1e50", "%.35g", "1.00000000000000007629769841091887e+50")
+  check("1e50", "%40.35g", "  1.00000000000000007629769841091887e+50")
+  check("1e50", "%#+40.34g", "+1.000000000000000076297698410918870e+50")
+  check("1e50", "%-40.35g", "1.00000000000000007629769841091887e+50  ")
+  check("0.5", "%.0f", "[01]")
+  check("0.25", "%.1f", "0.[23]")
+  check("999999.95", "%.7g", "999999.9")
+  check("999.99995", "%.7g", "1000")
+  check("6.9039613742e-314", "%.3e", "6.904e-314")
+
+  check(1e-323, "%.99g", "9.8813129168249308835313758573644274473011960522864"..
+    "9528851171365001351014540417503730599672723271985e-324")
+  check(1e308, "%.99f", "1000000000000000010979063629440455417404923096773118"..
+    "4633681068290315758.54049114915371633289784946888990612496697211725"..
+    "156115902837431400883283070091981460460312716645029330271856974896"..
+    "995885590433383844661686e-15")
+end

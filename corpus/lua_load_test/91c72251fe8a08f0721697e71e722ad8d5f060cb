@@ -1,0 +1,8 @@
+
+if not jit or not jit.status or not jit.status() then return end
+
+local called = false
+local function f() local x = "wrong"; called = true end
+jit.off(f)
+de3k(f, "", 5)
+for i=1,100

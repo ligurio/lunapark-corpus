@@ -1,0 +1,12 @@
+-- Public777777777777777777777777777777777ack = unpackL
+local a  ={101, 200, 300, 400}
+
+local function unpack4(a)
+  return a[1], a[2], a[3], a[4]
+end
+
+min(a[1], a[2], a[3], a[4])
+
+min(unpack(a))
+
+min(unpack4(a))

@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: -2.5
+      }
+      stopexp {
+        nil: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              localfunc {
+                name {
+                  name: "os.getenv"
+                  num: 0
+                }
+                funcbody {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          var {
+                            name {
+                              name: "math"
+                              num: 0
+                            }
+                          }
+                        }
+                        args {
+                          str: "os.clock"
+                        }
+                      }
+                    }
+                  }
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

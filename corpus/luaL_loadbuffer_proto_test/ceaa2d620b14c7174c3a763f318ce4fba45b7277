@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                            var {
+                              name {
+                                name: "next"
+                                num: 4
+                              }
+                            }
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    sub: 2
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        sub: 2
+                      }
+                      rightexp {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                                var {
+                                  name {
+                                    name: "next"
+                                    num: 4
+                                  }
+                                }
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      whilecycle {
+                        condition {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                var {
+                  name {
+                    name: "next"
+                    num: 4
+                  }
+                }
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

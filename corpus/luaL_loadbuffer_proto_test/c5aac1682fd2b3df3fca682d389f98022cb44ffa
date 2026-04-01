@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          ellipsis: "hotexit"
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                  exp {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                              unary {
+                                unop {
+                                  length: 4
+                                }
+                                exp {
+                                  tableconstructor {
+                                  }
+                                }
+                              }
+                            }
+                            value {
+                              false: 10240
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                exp {
+                  unary {
+                    unop {
+                      length: 1
+                    }
+                    exp {
+                      tableconstructor {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

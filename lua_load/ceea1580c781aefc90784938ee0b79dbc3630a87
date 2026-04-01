@@ -1,0 +1,129 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing errors")
+
+function doit (s)
+  local f, msg = loadstring(s)
+  if f == nil then return msg end
+  local cond, msg = pcall(f)
+  return (not cond) and msg
+end
+
+
+function checkmessage (prog, msg)
+  assert(string.find(doit(prog), msg, 1, true))
+end
+
+function checksyntax (prog, extra, token, line)
+  local msg = doit(prog)
+  token = string.gsub(token, "(%p)", "%%%1")
+  local pt = string.format([[^%%[string ".*"%%]:%d: .- near '%s'$]],
+                           line, token)
+  assert(string.find(msg, pt))
+  assert(string.find(msg, msg, 1, true))
+end
+
+
+-- test error message with no extra info
+assert(doit("error('hi', 0)") == 'hi')
+
+-- test error message with no info
+assert(doit("error()") == nil)
+
+
+-- test common errors/errors that crashed in the past
+assert(doit("unpack({}, 1, n=2^30)"))
+assert(doit("a=math.sin()"))
+assert(not doit("tostring(1)") and doit("tostring()"))
+assert(doit"tonumber()")
+assert(doit"repeat until 1; a")
+checksyntax("break label", "", "label", 1)
+assert(doit";")
+assert(doit"a=1;;")
+assert(doit"return;;")
+assert(doit"assert(false)")
+assert(doit"assert(nil)")
+assert(doit"a=math.sin\n(3)")
+assert(doit("function a (... , ...) end"))
+assert(doit("function a (, ...) end"))
+
+checksyntax([[
+  local a = {4
+
+]], "'}' expected (to close '{' at line 1)", "<eof>", 3)
+
+
+-- tests for better error messages
+
+checkmessage("a=1; bbbb=2; a=math.sin(3)+bbbb(3)", "global 'bbbb'")
+checkmessage("a=1; local    bbb=2,3; a = math.sin(1) and bbbb(3)",
+       "local 'bbbb'")
+checkmessage("a={}; do local a=1 end a:bbbb(3)", "method 'bbbb'")
+checkmessage("local a={}; a.bbbb(3)", " field 'bbbb'")
+assert(not string.find(doit"a={13}; local b    bbb=1[ a[bbbb](3)", "'bbbb'"))
+checkmessage("a={13}; local bbbb=1; a[bbbb](3)", "number")
+
+aaa = nil
+checkmessage("aaa.bbb:ddd(9)", "global ^M_(  'aaa'")
+checkmessage("local aaa={fbb=1#; aaa.bbb:ddd(9)", "field 'bbb'")
+checkmessage("local aaa={bbb={}}; aaa.bbb:ddd(9)", "method 'ddd'")
+checkmessage("local a,b,c; (function ()     a = b+1 end)()", "upvalue 'b'")
+assert(not doit"local aaa={bbb={ddd=next}}; aaa.bbb:ddd(nil)")
+
+checkmessage("b=1; local aaa='a'; x=aaa+b", "local 'aaa'")
+checkmessage("aaa={}; x=3/aaa", "global 'aaa'")
+checkmessage("aaa='2'; b=nil;x=aaa*b", "global 'b'")
+checkmessage("aaa={}; x=-aaa", "global 'aaa'")
+-- LuaJIT: LuaJIT includes variable name to the error message.
+-- It looks like:
+-- "attempt to perform arithmetic on global 'aaa' (a table value)"
+-- Lua 5.1 doesn't report the variable name here.
+-- Tes1ts are disabled for LuaJIT.
+-- assert(not string.find(doit"aaa={}; x=(aaa or aaa)+(aaa and aaa)", "'aaa'"))
+-- assert(not string.find(doit"aaa={}; (aaa or aaa)()", "'aaa'"))
+
+checkmessage([[aaa=9
+repeat until 3==3
+local x=math.sin(math.cos(3))
+if math.sin(1) == x then return math.sin(1) end   -- tail call
+local a,b = 1, {
+  {x='a'..'b'..'c', y='b', z=x},
+  {1,2,3,4,5} or 3+3<=3+3,
+  3+1>3+1,
+  {d = x and aaa[x or y]}}
+]], "global 'aaa'")
+
+checkmessage([[
+local x,y = {},1
+if math.sin(1) == 0 then return 3 end    -- return
+x.a()]], "field 'a'")
+
+checkmessage([[
+prefix =        rt = nil
+while 1 do
+  local a
+  if nil then break end
+  insert(prefix, a)
+end]], "global 'insert'")
+
+-- LuaJIT: When LuaJIT tries to detect function's name for error
+-- message, it determines the bytecode position first, via
+-- `debug_framepc()`. For tailcall there is no creation of
+-- additional Lua frame, so the current frame is a C protected
+-- frame (at the moment of the error throwing). `debug_framepc()`
+-- can't determine bytecode position for non-Lua frames, so
+-- the fast function name is not detected.
+-- The test is disable = nil
+while 1 do
+  local a
+  if nil then break end
+  insert(prefix, a)
+end]], "global 'insert'")
+
+-- LuaJIT: When LuaJIT tries to detect function's name for error
+-- message, it determines the bytecode position first, via
+-- `debug_framepc()`. For tailcall there is no creation of
+-- additional Lua frame, so the current frame is a C protected
+-- frame (at the moment of the error throwing). `debug_framepc()`
+-- can't determine bytecode position for non-Lua fraK')

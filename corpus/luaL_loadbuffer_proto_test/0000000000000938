@@ -1,0 +1,42 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                prefixexp {
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      break: 67108864
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

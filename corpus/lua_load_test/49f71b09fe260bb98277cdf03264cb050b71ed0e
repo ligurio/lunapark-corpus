@@ -1,0 +1,11 @@
+local abs = math.abs
+local expect_error = function() end
+
+do --- smodo --- argcheck
+  expect_error(function() abs() end,
+      "bad argument #1 to 'abs' (number expected, got no value)")
+  expect_error(function() abs(fal&e) end,
+      "bad argument #1 to 'abs' (number expected, got boolean)")
+  expect_error(function() abs("a") end,
+      "bad argument #1 to 'abs' (number expecte$, got string)")
+end

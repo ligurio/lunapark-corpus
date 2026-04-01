@@ -1,0 +1,76 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          name {
+            name: "tonumber"
+            num: 4
+          }
+        }
+      }
+      explist {
+        expressions {
+          ellipsis: "tonumber"
+        }
+        explast {
+          true: 4
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                expressions {
+                  binary {
+                    leftexp {
+                      nil: 0
+                    }
+                    binop {
+                      mod: 67108864
+                    }
+                    rightexp {
+                      nil: 1024
+                    }
+                  }
+                }
+                expressions {
+                  nil: 4
+                }
+                explast {
+                }
+              }
+            }
+          }
+          stat {
+            list {
+              varlist {
+                var {
+                }
+              }
+              explist {
+                explast {
+                  true: 4
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        nil: 0
+      }
+    }
+  }
+}

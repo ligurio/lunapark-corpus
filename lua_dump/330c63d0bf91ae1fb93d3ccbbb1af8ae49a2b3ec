@@ -1,0 +1,10 @@
+local assert, floor = assert, math.floor
+
+do ---  integer equivalence
+ rt(y == 1777)
+end
+
+do --- jit constant LHS, with exit
+  local y = 0
+  for x=-100,123 do
+    if x ~=

@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greaterEqual: 0
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              explist {
+                explast {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greaterEqual: 0
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          binary {
+            leftexp {
+              number: 1.24335690876871e-314
+            }
+            binop {
+              greaterEqual: 0
+            }
+            rightexp {
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            break: 0
+            semicolon: false
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: false
+  }
+}

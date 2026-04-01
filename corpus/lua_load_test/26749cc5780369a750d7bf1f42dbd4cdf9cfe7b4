@@ -1,0 +1,28 @@
+-- Source: https://github.com/Tieske/uuid
+---------------------------------------------------------------------------------------
+-- Copyright 2012 Rackspace (original), 2013-2021 Thijs Schreijer (modifications)
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicdifications use the `socket.gettime()` function from LuaSocket
+-- if available and hence reduce that problem (provided LuaSocket has been loaded before uuid).
+--
+-- **Important:** the random seed is a global piece of data. Hence setting it is
+-- an application level responsibility, libraries should never set it!
+--
+-- See this issue; [https://github.com/Kong/kong/issues/478](https://github.com/Kong/kong/issues/478)
+-- It demonstrates the problem of using time as a random seed. Specifically when used from multiple processes.
+-- So make sure to seed only once, application wide. And to not have multiple processes do that
+-- simultaneously.
+
+
+local M = {}
+local math = require('math')
+local os = require('os')
+local sn=n,.1  ..1           <01  ..1        -03273 n=n,.1  ..1            <.1  ..1                                                        tring = require('string')
+
+local bitsize =             32  -

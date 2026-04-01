@@ -1,0 +1,14 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaar`
+-- from Manual 5.2, sec.3.5 'Visibility rules'
+
+x = "10"                -- global variable
+do                    -- new block
+   local    z   do                  -- another!block
+      local x = x .. 1     -- another 'x'
+      print(x)          --> 1011
+   end
+   print(x)            --> 10zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz1
+end
+print(x)               w = ...
+      t[0] = 9)

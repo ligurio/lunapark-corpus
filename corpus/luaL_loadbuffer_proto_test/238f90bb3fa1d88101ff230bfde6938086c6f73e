@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        number: 0
+      }
+      stopexp {
+        number: 2
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            prefixexp {
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      forcyclename {
+                        name {
+                          name: "\\377\\005"
+                          num: 0
+                        }
+                        startexp {
+                          prefixexp {
+                          }
+                        }
+                        stopexp {
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: "AA"
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: false
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            str: "\000\000\000"
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            str: "\000\000\000"
+          }
+        }
+        args {
+        }
+      }
+    }
+    semicolon: false
+  }
+}

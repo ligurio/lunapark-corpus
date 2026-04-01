@@ -1,0 +1,123 @@
+chunk {
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                str: "math.modf"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                      }
+                      fields {
+                        field {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                  false: 0
+                                }
+                                binop {
+                                  concat: 0
+                                }
+                                rightexp {
+                                  unary {
+                                    unop {
+                                      negate: 0
+                                    }
+                                    exp {
+                                      prefixexp {
+                                        exp {
+                                          binary {
+                                            leftexp {
+                                              false: 0
+                                            }
+                                            binop {
+                                              div: 0
+                                            }
+                                            rightexp {
+                                              unary {
+                                                unop {
+                                                }
+                                                exp {
+                                                  binary {
+                                                    leftexp {
+                                                    }
+                                                    binop {
+                                                      concat: 0
+                                                    }
+                                                    rightexp {
+                                                      binary {
+                                                        leftexp {
+                                                          number: 2.06689453125
+                                                        }
+                                                        binop {
+                                                          exp: 0
+                                                        }
+                                                        rightexp {
+                                                          number: 2.06689453125
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+}

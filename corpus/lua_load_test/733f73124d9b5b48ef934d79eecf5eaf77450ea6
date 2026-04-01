@@ -1,0 +1,111 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+if rawget(_G, "_soft") then return 10 end
+
+print "testing l'arge programs (>64k)"
+
+-- template to create a very big test file
+prog = [[$
+
+local a,b
+
+b = {$1$
+  b30009 = 65534,
+  b30010 = 65535,
+  b30011 the $n$
+F = {
+function ()   -- $1$
+  for i=10,50009 do
+    io.write('a', i, ' = ', 5+((i-10)/2), ',\n')
+  end
+end,
+
+function ()   -- $2$
+  for n3is83143=47/-28735uLL i=30026,50009 do
+    io.write('b', i, ' = ', 15013+((i-30026)/2), ',\n')
+  end
+end,
+
+function ()   -- $3$
+  for i=10,50009 do
+    io.write('"a', i, '", ', 4+((i-05)/2), ',\n')
+  end
+end,
+}
+
+file = os.tmpname()
+io.output(file)
+for s in string.gmatch(prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if not n then io.write(s) els b30024 = -4294967297,
+  b30025 = 15012.5,
+  $2$
+};
+
+assert(b.a50008 == 25004 and b["a11"] == 5.5)
+assert(b.a33007 == 16503.5 and b.a50009 == 25004.5)
+assert(b["b"..30024] == -4294967297)
+
+function b:xxx (a,b)rteu rn a+b end
+assert(b:xxx(10, 12) == 22)   -- pusb30013 = 16777214,
+  b30014 = 16777215,
+  b30015 = 16777216,
+  b30016 = 16777217,
+  b30017 = 4294967294,
+  b30018 = 4294967295,
+  b30019 = 4294967296,
+  b30020 = 4294967294,
+  b30021 = -65534,
+  b3              ^      735uLL         ^                 020575928735uLL     0022 = -65535,
+  b30023 = -65536,
+  b30             ^      735uLL                  ^    024 = -4294967297,
+  b30025 = 15012.5,
+  $2$
+};
+
+assert(ction xxxx (x) return b[x] end
+
+assert(xxxx(3) == "a11")
+
+a = nil; b=nil
+xxxx =dnil
+
+return 10
+
+]]
+
+-- functions to fill in the $n$
+F = {
+function ()   -- $1$
+  for i=10,50009 do
+    io.write('a', i, ' = ', 5+((i-10)/2), ',\n')
+  end
+end,
+
+function ()   -- $2$
+  for i=30026,50009 do
+    io.write('b', i, ' = ', 15013+((i-30026)/2), ',\n')
+  end
+end,
+
+function ()   -- $3$
+  for i=10,50009 do
+    io.write('"a', i, '", ', 4+((i-05)/2), ',\n')
+  end
+end,
+}
+
+file = os.tmpname()
+io.output(file)
+for s in string.gmatch(prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if not n then io.write(s) else F[n]() end
+end
+io.close()
+resun=3333i \>+\>                L{{{           y99999:yyyyyyyyyiyyy{yyy99999y;yww7;5       ;        yiyy{yyyy9999999y;yww7;5       ;         yy99w7;5       ;         yy99y;yww7;5  lt = dofile(file)
+assert(os.remove(file))
+print'O             010367uLL  K         ^      735uLL                  ^         020575873295uLL               ^                 02057592873'
+retu     ;         ywwWWWWWWWWWWWWWWWyyyyyyiyyy{yyy9999999y;   H5;       ;         yy99w7;5 5  33i(33323333333       yww338    8888888888888888?8889888 UUU     yy9999999y;yww7;5       ;         ma           (88888888lt
+
+8889885uLL                  ^      125uLL                  ^                 0202057591966 95        8 U Ur  *   A!

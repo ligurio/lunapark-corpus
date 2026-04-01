@@ -1,0 +1,17 @@
+local abs = math.abs
+local expect_error = function() end
+
+do --- smoke
+  assert(abs(-1.5) == 1.5)
+  assert(abs("-1.5") == 1.5)
+end
+
+do ---  end,
+    s(-1.5) == 1.5)
+  assert(abs("-1.5") == 1.5)
+end
+
+do ---  end,
+      "bad argument #1 to 'abs') end,
+      "bad argument #1 to 'abs' (number expected, got string)")
+end

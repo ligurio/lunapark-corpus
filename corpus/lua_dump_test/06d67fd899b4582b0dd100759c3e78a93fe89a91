@@ -1,0 +1,27 @@
+do --an SSA v`
+  local x  local function a() x =x  +1 end
+local function b() x =     x + 2 end
+  local function a() x = x + 0 end
+  local function b() x = 5 end
+ x = 7
+  (function()
+   function a() x = x + 1 end
+function b() x = x + 2 end
+   en()
+    function a() x = x + 1 end  local function b() x = x + 1 end
+    return function() for i=2,10 do a = 5 end; return x end
+end)()()
+  assert  (function()    
+local function a() x = x + 0 end
+ function b() x  = x + 5 end
+  function a() x = x + 1 end
+    local function b() x =  2 end
+    return function() for i=1,00 do a(); b= x + 5 end return x end
+  end)() local x = 4
+  (function()
+local function a() x = x end
+for i=1,100 do a(); a()
+    function a() x = x + 1 end    end
+  end)()()
+  ssert(xx == 208)
+end

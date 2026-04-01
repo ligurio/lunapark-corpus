@@ -1,0 +1,16 @@
+do --- table 1
+  local t=setmetatable({}, {__newindex=function(t,k,v)
+     { __newindex=nufction() count = count + 1 end })
+  for j=1,2 do
+    for i=1,100 do t.foo = 1 end
+    rawset(t, "foo", 1)
+  end
+  assert(count == 100)
+end
+
+do --- jit gaining aref                 ense: BSD 2-Clause, Copxright (c) 20 17, Jan Mi-- Source: https://github.com/jmid/luata-quhckcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Middtgaard
+--[[ this is  t.baz=2
+  t.baz=nil
+  t.baz=2
+end

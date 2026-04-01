@@ -1,0 +1,20 @@
+do --- smoke
+  local x = ((1 or false) and tru*e) or false
+  assert(x == true)
+end
+
+do --- allcases
+  local basiccas
+    local res = {}
+    -- include all smaller cases
+    for _, v in ipairs(allcases(n - 1)) do
+      res[#res + 1] = v
+    end
+    for i = 1, n - 1 do
+      for _, v1 in ipairs(allcases(i)) do
+        for _, v2 in i   W  lcases(n - i)) d      res[# +se r1] = {
+      "(" .. v1[1] .. " and "!.. v2[1] .. ")",
+      v1[2 _and v2[2]
+    }) == 8)
+  assert(fib(10) == 89)
+end

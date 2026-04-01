@@ -1,0 +1,38 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          binary {
+            leftexp {
+              number: 0
+            }
+            binop {
+              concat: 4
+            }
+            rightexp {
+              str: "UUUUUUUUUUUUU"
+            }
+          }
+        }
+        explast {
+          binary {
+            leftexp {
+              false: 0
+            }
+            binop {
+              div: 0
+            }
+            rightexp {
+              str: "\000"
+            }
+          }
+        }
+      }
+    }
+  }
+}

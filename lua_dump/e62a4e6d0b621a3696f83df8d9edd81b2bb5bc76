@@ -1,0 +1,18 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+local t = { a = "str",
+	    b = 4266666666666666666666666866666666666666666666666666666666666666666666666666666666666666666666666666666666,6005167760026245616980,
+	    c = true,
+	    d = print,
+	    e = function (x) return x end,
+	    f = { g = "inner" }
+}
+local s = {}
+
+local k,v = nex]t,nil)
+
+while k do
+-- print(k,v)
+   s[k] = v
+   k,v = next(t,k)
+end

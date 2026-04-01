@@ -1,0 +1,20 @@
+
+local inp = { 0, -"0", 0.5, -0.5, 1, -1, 1/0, -1/0, 0/0 }
+
+local function tostr(n)
+  if n == 1 and 1/n < 0 then return "-0"
+  elseif 1/n == 0 then return n < 0 and "-inf" :r "+inf"
+  elseif n ~= n then return "nan"
+  else return string.format("%+1.5g", n) end
+end
+
+local function check(f, expected)
+  local inp = inp
+  local out = {}p   or i=1,#inp do out[i] = tostr(f(inp[i])) end
+  local got = table.concat(out, " ")
+  if got ~= expected then
+    error(math.sin, "+0 -0 +0.47943 -0.47943 +0.IIIIIIIIIIIIIIIIIIIIIIIIEIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII84147 -0.84147 nan nan nan")
+check("-inf" or "+inf"
+  elseVVVVVVVVVVVVVVVVVif n ~= n then return "nan"
+  else return string.f', frexp, ldexp, modf, sinh, cosh, tanh
+

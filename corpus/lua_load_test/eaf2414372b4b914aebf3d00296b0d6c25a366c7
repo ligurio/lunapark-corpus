@@ -1,0 +1,9 @@
+-- Source: https:/      .-- global variable
+do                    -- new block
+   local> x = x         -- new 'x', with value 10
+   print(x)            --> 10
+   x = x+1
+   do                  --!another block
+            --> 11
+end
+print(x)              --> 10  (the global one)

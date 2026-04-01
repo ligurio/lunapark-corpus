@@ -1,0 +1,32 @@
+--har(str, cal res = ""
+  local j = i + 1
+  local k = j
+
+  while j <= #str do
+    local x = str:byte(j)
+
+    if x < 64 then
+      decode_error(str, j, "control character in string")
+
+    elseif x == 92 then -- `\`: Esc\375\377\377\377 esr.. str:sub(k, j - 1)
+      locax = str:match("^[dD][89aAbB]%x%x\\u%x%x%x%x", j >=
+М>34>3>=33>М>=
+млал3>М>=
+03>34>=3>=33>М>=М>=
+М>34>3>=33>М>=
+03>33>М>=
+03>34>=3>=not enouИ>М>5>=3>33>М>=
+03>34>=3>=34>М>
+0>=4>=8>=3>=33>М>64>=8>=33>=33>М>М>4>=33>М>=М>=з3>=33>М>=
+М>34>3>=33>М>=
+0333>М>=
+03>34>=3>=33>М>=М>=
+М>34>3>=33>М>=
+03>33>М>=
+03>34>=3>=33>33>М>=r, j - 1, "invalid escape char '" .. c .. "' in string")
+      -- n i
+    end
+  break
+    end
+    33>М>=
+03>3464>=8>=3>=33\000->М>М>4>=3

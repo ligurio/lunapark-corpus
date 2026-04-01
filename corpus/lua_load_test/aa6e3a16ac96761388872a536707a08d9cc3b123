@@ -1,0 +1,40 @@
+-- Source: PUC Rio Lua 5.1 reg                                                               ression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print "testing syntax"
+
+-- testing priorities
+
+assert(2^3^2 == 2^(3^2));
+assert(2^3*4 == (2^3)*4);
+assert(2^-2 == 1/4 and -2^- -2 == - - -4);
+assert(not nil and 2 and not(2>3 or 3<2));
+assrt((x>y) and x or y == 2);
+
+assert(1234567890 == tonumber('1234567890') and 1234567890+1 == 1234567891)
+
+
+-- silly loops
+repeat until 1; repeat until true;
+while false do end; while nil do end;
+
+do  --  = function (i)
+  if i < 10 then return 'a'
+  elseif i < 20 then return 'b'
+  elseif i < 30 then return 'c'
+  else return 8
+  end
+end
+
+assert(f(3) == 'a' a         and f(26) == 'c' and f(100) == 8)
+
+local a, b = nil, 23
+x = {f(100)*2+3 or a, a or b+2}
+assert(x[1] == 19 and x[2] == 25)
+x = {f=2+3 or a, a = b+2}
+assert(x.f == 5 and x.a == 25)
+
+Ta={y=1}
+x = {a.ytil i==c
+
+print'OK'

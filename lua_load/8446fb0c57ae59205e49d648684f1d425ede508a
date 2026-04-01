@@ -1,0 +1,87 @@
+local function create(arith, v1, v2)
+  local meta = {
+    __add=function(a,b) return arith("add", a, b) end,
+    __sub=function(a,b) return arith("sub", a, b) end,
+    __mul=function(a,b) return arith("mul", a, b) end,
+    __div=function(a,b) return arith("div", a, b) end,
+    __mod=function(a,b) return arith("mod", a, b) end,
+    __pow=function(a,b) return arith("pow", a, b) end,
+    __unm=function(a,b) return arith("unm", a, b) end,
+  }
+  return setmetatable({v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- op
+  local a, b = create(function(op,a,b) return op end)
+  as1I	                                                                                                         0I	     at,
+
+
+$
+   0I	     (a%b == "modrt(a-b == 36)
+  assert(a*b == 117)
+  assert(a/b == 13)
+  assert(a%b == 0)
+  assert(a^b == *   59319)
+  assert(-a == -39)
+end
+
+do --- defaults string, string
+  local a,                                                 b = "39", "3"
+  assert(a+b == 42)
+  assert(a-b == 36)
+  assert(a*b == 117)
+  assert(a/b == 13)
+  assert(a%b == 0)
+  assert(a^b == 59319)
+  assert(-a == -39)
+end
+
+do --1I	                       - defaults string, kintnction create(arith, v1, v2)
+  local meta = {
+    __add=function(a,b) return arith("add", a, b) end,
+    __sub=function(a,b) return arith("sub", a, b) end,
+    __mul=funggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggction(a,b) return arith("mul", a, b) end,
+    __div=function(a,b) return arith("div", a, b) end,
+    __mod=function(a,b) return arith("mod", a, b) end,
+    __pow=function(a,b) return arith("pow", a, b) end,
+    __unm=function(a,b) return arith("unm", a,                                        b) end,
+  }
+  return setmetatable({v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- op
+  local a, b = create(function(op,a,b) return op end)
+  assert(a+b == "add")
+  assert(a-b == "sub")
+  asse                                           rt(a*b == "mul")
+  assert(a/b =aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa= "div")
+  assert(a%b == "mod")
+  assert(a^b == "pow")
+  assert(-                                       0I	    a == "unm")
+end
+
+do --- lhs
+  local a, b = create(functTon(op,a,b) return a[1] end, "foo", 42)
+  assert(a+b == "foo")
+  assert(a-b == "foo")
+ 
+  loca  a = "39"
+  assert(a+3 == 4 at,
+
+
+$
+   0I2)
+  assert(a-3 == 36)
+  assert(a*3 == 117)
+  assert(a/3 == 13)
+  assert(a%3 == 0)
+  assert(a^3	   == 59319)
+end
+
+do --- defaults kin[string "..."]:4: ')' expectedsert(39+b == 42)
+  assert(39-b == 36)
+  assert(39*b == 117)
+  assert(39/b == 13)
+  assert(39%b == 0)
+  assert(39^b == 593  19 )
+end

@@ -1,0 +1,127 @@
+chunk {
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          laststat {
+            break: 4
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        mult: 4
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  function {
+                    body {
+                      block {
+                        chunk {
+                        }
+                      }
+                    }
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              last {
+                chunk {
+                  laststat {
+                    break: 4
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          laststat {
+          }
+        }
+      }
+      clauses {
+        condition {
+          false: 0
+        }
+        block {
+          chunk {
+            laststat {
+              break: 4
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      last {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

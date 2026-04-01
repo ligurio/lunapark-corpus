@@ -1,0 +1,297 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+assert(rawget(_G, "stat") == nil)  -- module not loaded before
+
+if T == nil then
+  stat = function () print"`querytab' nao ativo" end
+  return
+end
+
+
+function checktable (t)
+  local asize, hsize, ff = T.querytab(t)
+  local l = {}
+  for i=0,hsize-1 do
+    local key,val,next = T.querytab(t, i + asize)
+    if key == nil then
+      assert(l[i] == nil and val==nil and next==nil)
+    elseif key == "<undef>" then
+      assert(val==nil)
+    else
+      assert(t[key] == val)
+      local mp = T.hash(key, t)
+      if l[i] then
+        assert(l[i] == mp)
+      elseif mp ~= i then
+        l[i] = mp
+      else  -- list head
+        l[mp] = {mp}   -- first element
+        while next do
+          assert(ff <= next and next < hsize)
+          if l[next] then assert(l[next] == mp) else l[next] = mp end
+          table.insert(l[mp], next)
+          key,val,next = T.querytab(t, next)
+          assert(key)
+        end
+      end
+    end
+  end
+  l.asize = asize; l.hsize = hsize; l.ff = ff
+  return l
+end
+
+function mostra (t)
+  local asize, hsize, ff = T.querytab(t)
+  print(asize, hsize, ff)
+  print'------'
+  for i=0,asize-1 do
+    local _, v = T.querytab(t, i)
+    print(string.format("[%d] -", i), v)
+  end
+  print'------'
+  for i=0,hsize-1 do
+    print(i, T.querytab(t, i+asize))
+  end
+  print'-------------'
+end
+
+function stat (t)
+  t = checktable(t)
+  local nelem, nlist = 0, 0
+  local maxlist = {}
+  for i=0,t.hsize-1 do
+    if type(t[i]) == 'table' then
+      local n = table.getn(t[i])
+      nlist = nlist+1
+      nelem = nelem + n
+      if not maxlist[n] then maxlist[n] = 0 end
+      maxlist[n] = maxlist[n]+1
+    end
+ airs(val) do
+      if type(k) ~= "string" then
+        error("invalid table: mixed or invalid key types")
+      end
+      table.insert(res, encode(k, stack) .. ":" .. encode(v, stack))
+    end
+    stack[val] = nil
+    return "{" .. table.concat(res, ",") .. "}"
+  end
+end
+
+
+local function encode_string(val)
+  return '"' .. val:gsub('[%z\1-\31\\"]', escape_char) .. '"'
+end
+
+
+local function encode_number(val)
+  -- Check for NaN, -inf and inf
+  if val ~= val or val <= -math.huge or val >= math.huge then
+    error("unexpected number value '" .. tostring(val) .. "'")
+  end
+  return string.format("%.14g", val)
+end
+
+
+local type_func_map = {
+  [ "nil"     ] = encode_nil,
+  [ "table"   ] = encode_table,
+  [ "string"  ] = encode_string,
+  [ "number"  ] = encode_number,
+  [ "boolean" ] = tostring,
+}
+
+
+encode = function(val, stack)
+  local t = type(val)
+  local f = type_func_map[t]
+  if f then
+    return f(val, stack)
+  end
+  error("unexpected type '" .. t .. "'")
+end
+
+
+function json.encode(val)
+  return ( encode(val) )
+end
+
+
+-------------------------------------------------------------------------------
+-- Decode
+-------------------------------------------------------------------------------
+
+local parse
+
+local function create_set(...)
+  local res = {}
+  for i = 1, select("#", ...) do
+    res[ select(i, ...) ] = true
+  end
+  return res
+end
+
+local space_chars   = create_set(" ", "\t", "\r", "\n")
+local delim_chars   = create_set(" ", "\t", "\r", "\n", "]", "}", ",")
+local escape_chars  = create_set("\\", "/", '"', "b", "f", "n", "r", "t", "u")
+local literals      = create_set("true", "false", "null")
+
+local literal_map = {
+  [ "true"  ] = true,
+  [ "false" ] = false,
+  [ "null"  ] = nil,
+}
+
+
+local function next_char(str, idx, set, negate)
+  for i = idx, #str do
+    if set[str:sub(i, i)] ~= negate then
+      return i
+    end
+  end
+  return #str + 1
+end
+
+
+local function decode_error(str, idx, msg)
+  local line_count = 1
+  local col_count = 1
+  for i = 1, idx - 1 do
+    col_count = col_count + 1
+    if str:sub(i, i) == "\n" then
+      line_count = line_count + 1
+      col_count = 1
+    end
+  end
+  error( string.format("%s at line %d col %d", msg, line_count, col_count) )
+end
+
+
+local function codepoint_to_utf8(n)
+  -- http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=iws-appendixa
+  local f = math.floor
+  if n <= 0x7f then
+    return string.char(n)
+  elseif n <= 0x7ff then
+    return string.char(f(n / 64) + 192, n % 64 + 128)
+  elseif n <= 0xffff then
+    return string.char(f(n / 4096) + 224, f(n % 4096 / 64) + 128, n % 64 + 128)
+  elseif n <= 0x10ffff then
+    return string.char(f(n / 262144) + 240, f(n % 262144 / 4096) + 128,
+                       f(n % 4096 / 64) + 128, n % 64 + 128)
+  end
+  error( string.format("invalid unicode codepoint '%x'", n) )
+end
+
+
+local function parse_unicode_escape(s)
+  local n1 = tonumber( s:sub(1, 4),  16 )
+  local n2 = tonumber( s:sub(7, 10), 16 )
+   -- Surrogate pair?
+  if n2 then
+    return codepoint_to_utf8((n1 - 0xd800) * 0x400 + (n2 - 0xdc00) + 0x10000)
+  else
+    return codepoint_to_utf8(n1)
+  end
+end
+
+
+local function parse_string(str, i)
+  local res = ""
+  local j = i + 1
+  local k = j
+
+  while j <= #str do
+    local x = str:byte(j)
+
+    if x < 32 then
+      decode_error(str, j, "control character in string")
+
+    elseif x == 92 then -- `\`: Escape
+      res = res .. str:sub(k, j - 1)
+      j = j + 1
+      local c = str:sub(j, j)
+      if c == "u" then
+        local hex = str:match("^[dD][89aAbB]%x%x\\u%x%x%x%x", j + 1)
+                 or str:match("^%x%x%x%x", j + 1)
+                 or decode_error(str, j - 1, "invalid unicode escape in string")
+        res = res .. parse_unicode_escape(hex)
+        j = j + #hex
+      else
+        if not escape_chars[c] then
+          decode_error(str, j - 1, "invalid escape char '" .. c .. "' in string")
+        end
+        res = res .. escape_char_map_inv[c]
+      end
+      k = j + 1
+
+    elseif x == 34 then -- `"`: End of string
+      res = res .. str:sub(k, j - 1)
+      return res, j + 1
+    end
+
+    j = j + 1
+  end
+
+  decode_error(str, i, "expected closing quote for string")
+end
+
+
+local function parse_number(str, i)
+  local x = next_char(str, i, delim_chars)
+  local s = str:sub(i, x - 1)
+  local n = tonumber(s)
+  if not n then
+    decode_error(str, i, "invalid number '" .. s .. "'")
+  end
+  return n, x
+end
+
+
+local function parse_literal(str, i)
+  local x = next_char(str, i, delim_chars)
+  local word = str:sub(i, x - 1)
+  if not literals[word] then
+    decode_error(str, i, "invalid literal '" .. word .. "'")
+  end
+  return literal_map[word], x
+end
+
+
+local function parse_array(str, i)
+  local res = {}
+  local n = 1
+  i = i + 1
+  while 1 do
+    local x
+    i = next_char(str, i, space_chars, true)
+    -- Empty / end of array?
+    if str:sub(i, i) == "]" then
+      i = i + 1
+      break
+    end
+    -- Read token
+    x, i = parse(str, i)
+    res[n] = x
+    n = n + 1
+    -- Next token
+    i = next_char(str, i, space_chars, true)
+    local chr = str:sub(i, i)
+    i = i + 1
+    if chr == "]" then break end
+    if chr ~= "," then decode_error(str, i, "expected ']' or ','") end
+  end
+  return res, i
+end
+
+
+local fun end
+  print(string.format("hsize=%d  elements=%d  load=%.2f  med.len=%.2f (asize=%d)",
+          t.hsize, nelem, nelem/t.hsize, nelem/nlist, t.asize))
+  for i=1,table.getn(maxlist) do
+    local n = maxlist[i] or 0
+    print(string.format("%5d %10d %.2f%%", i, n, n*100/nlist))
+  end
+end
+

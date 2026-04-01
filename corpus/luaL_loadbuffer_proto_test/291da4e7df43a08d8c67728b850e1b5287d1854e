@@ -1,0 +1,214 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+                condition {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      prefixexp {
+                        exp {
+                          binary {
+                            leftexp {
+                              number: -8.3711609936427134e+298
+                            }
+                            binop {
+                              concat: 0
+                            }
+                            rightexp {
+                              unary {
+                                unop {
+                                  negate: 0
+                                }
+                                exp {
+                                  prefixexp {
+                                    exp {
+                                      binary {
+                                        leftexp {
+                                          number: -8.3711609936427134e+298
+                                        }
+                                        binop {
+                                          concat: 0
+                                        }
+                                        rightexp {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                  }
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    tableconstructor {
+                    }
+                  }
+                  value {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+              semicolon: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                              }
+                              name {
+                                name: "instunroll"
+                                num: 0
+                              }
+                              args {
+                              }
+                            }
+                          }
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            number: -5
+          }
+          binop {
+            add: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    nil: 1
+                  }
+                  binop {
+                    and: 1
+                  }
+                  rightexp {
+                    number: -5
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        binary {
+          leftexp {
+            nil: 2304
+          }
+          binop {
+            add: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    nil: 1
+                  }
+                  binop {
+                    and: 16777216
+                  }
+                  rightexp {
+                    number: -5
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+  }
+}

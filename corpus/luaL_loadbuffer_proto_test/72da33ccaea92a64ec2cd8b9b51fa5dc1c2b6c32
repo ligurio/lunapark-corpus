@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "$"
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                true: 1
+              }
+              doblock {
+                block {
+                  chunk {
+                    laststat {
+                      break: 67108864
+                    }
+                  }
+                }
+              }
+            }
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      name {
+                        name: "print"
+                        num: 0
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            true: 4194304
+          }
+        }
+      }
+    }
+  }
+}
