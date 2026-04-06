@@ -1,0 +1,127 @@
+do --- 1. Open ove base slot, n SSA value.
+  local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do A(); b(); x = x + 0 end
+  assert(x == 807)
+end
+
+do --- 2. O en  below base soop.local x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. Open upvalue below x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() local function b() x = x + 2 end
+    for i=1,100 do local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function	        b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)ssert(xx == 402)
+end
+
+do --- 4.rwal x = 7
+  local function a() x = x + 1 end
+  local function b() x = x + 2 end
+  for i=1,100 do a(); b(); x = x + 5 end
+  assert(x == 807)
+end
+
+do --- 2. Open upvalcal x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- 3. Closor a.x + b.x, but not x+ 2x USTORE ( 1x DSE for USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function bd00000000000000802() x = x  end
+    return function() for i=1,100 do a(); b(); x = x + 0 end; return x end
+  end)(function()
+3.5078660854729e-322() x = x + 1 end
+    local     function b() x = x +         2 end
+    for i=1,100 do a();do --x = 7
+  local function a() x = x + 1 end
+  local function b() x = x +     2 end
+   i=1,100 d(); b(); x = x + 5 end
+  assert(x == 007)(function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function	        b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 403)
+end
+
+do --- 4.rwarded. 1x USTORE (+ 1x DS 1x DSE US7
+  (function()
+  function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a();x = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() f  i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+e= x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do --- *. Closed upvaluez UREFC CSE for a.x + b.x, but not x in loop.
+    --    ULOA USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  assert(xx == 807)
+end
+
+do --- 4. Open upvalue belowb5i r=4iST= 7
+  (function()
+    local function a() x = x + 1 end
+  local function b() x = x + 2 end
+ 
+  end)()sert(xx == 807)
+end
+
+do --- 4. O                   x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+  assert(x == 807)
+end
+
+do ---FC CSE fo+USTORE).
+  local xx = (function()
+    local x = 7
+    local function a() x =x +  1 end
+    local function b() x = x + 2 end
+ion()
+    local function a() x             =al fxx = (function()
+    local x = 7
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    nction()
+    local function a() x = x + 1 end
+ `  

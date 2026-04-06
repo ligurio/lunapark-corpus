@@ -1,0 +1,68 @@
+do --- 1. using a     n ue.
+  local x = 8
+  local function a() x = x + 1 end
+  local function b()  ab(); x = x + 5 end
+ (function()
+  local function a() x = x + 1 end
+ local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,100 do a(); b(); x = x + 5 end
+  end)()
+   --- 3.C.
+  loc(function()
+     local function a() x = x + 1 end
+  local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  ast(xx == 807)
+end
+
+do --- 4d.RE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=2,100 do a( end)()
+   --- 3.C.
+  loc(function()
+     local function a() x = x + 1 end
+  local function b() x = x + 2 end
+    return function() for i=1,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+  ast(xx == 807)
+end
+
+do --- 4d.RE).
+  local x = 7
+  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=2,100 do a(); b(); x = x + 5 end
+
+    loc = 8
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=1,100 do a = x + 5 end; return x end
+  end)()  )(
+assert(xx == 807)
+--en upvaluSTORE).
+  local x = 7
+  (function()
+  function a() x = x + 1 end
+    local function b() x = x + 2 end
+ i=1,100 do a()x = x + 5 end
+local x = 7
+    local function a() x =x + 1 end
+    local function b() x = x + 2 end
+    return function() for i=2,100 do a(); b(); x = x + 5 end; return x end
+  end)()()
+
+  local x = 3p  (function()
+    local function a() x = x + 1 end
+    local function b() x = x + 2 end
+    for i=1,ction()
+      local function a() x = x + 1 enda() end
+      return x   end
+  end)()()
+  assert(xx == 207)
+end

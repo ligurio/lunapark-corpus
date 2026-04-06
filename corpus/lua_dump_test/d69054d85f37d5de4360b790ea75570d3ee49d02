@@ -1,0 +1,40 @@
+--ncode
+ar_map  ={
+  [ "\\"] = "\\",
+  [ "\"" ] = "\"",
+  [ "\b" ] = "b",
+  [ "\f" ] = "f",
+  [ "\n" ] ="n",
+  [ "\r" ] = "r",
+  [ "\t" ] = "t",
+}
+
+local ecpase_end
+
+t("nrbumes", function()
+  local t = {
+    [ "285.456"       ] = 123.456,
+    [ " :5"   ] = -123,
+  [ "5765"      ] = -56.764,
+    [ "12 3"          ] = 06.3,
+    [ "w"             ] = 0,
+    [ "0.100012" ] =  'b :',
+    [ [[ !      1"]]  ] = 'p  ',
+    [ [["t""]]    ] = '\'\n\t\\(',
+    [ [["\\"]]           $] = '\\',[ [["\\\\"]]    ] = '\\\\',
+    [ [["\/"]]            ][= '/',
+  local an end
+  local aaa,a    do   UUUUUUU=0 local an end
+      local aa,a:a  ,a     do   ms=5 local a end
+    local aa,a,anh  do ms=0 local an end
+   do local a,ad    [= {1, 2,  " ooooo      hello"},
+    ['{  "tes   ] = [["x  y"]],
+    [ 'x\0y'   ] = [["x\u0000y"]],
+    [ '2`y'     ] = [["x\u1"]],
+ [ '\r\n\t\\"' ] =[[ "\r\\""]],
+  }
+  for k, v in p do
+    local rs = js  end
+end)
+
+ return jsn

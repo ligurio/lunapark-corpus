@@ -1,0 +1,100 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                              exp {
+                              }
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                        ellipsis: "55555555500000000003215483575348960369"
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                  }
+                                }
+                                fields {
+                                  field {
+                                    exprassign {
+                                      key {
+                                      }
+                                      value {
+                                        number: 2.5131350027914734e+180
+                                      }
+                                    }
+                                  }
+                                  sep {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}

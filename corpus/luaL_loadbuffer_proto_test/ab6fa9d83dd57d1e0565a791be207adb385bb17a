@@ -1,0 +1,48 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            sub: 2621440
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                sub: 0
+              }
+              rightexp {
+                true: 8224
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}
