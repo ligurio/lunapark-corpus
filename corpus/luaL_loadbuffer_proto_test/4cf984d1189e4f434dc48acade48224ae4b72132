@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                binary {
+                  leftexp {
+                    unary {
+                      unop {
+                        negate: 0
+                      }
+                      exp {
+                        str: "44444444444444444444440000000000000000000000000000000000000000001401634255"
+                      }
+                    }
+                  }
+                  binop {
+                    mult: 0
+                  }
+                  rightexp {
+                    str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                  }
+                }
+              }
+              binop {
+                mult: 0
+              }
+              rightexp {
+                str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                          }
+                          Name: "/"
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

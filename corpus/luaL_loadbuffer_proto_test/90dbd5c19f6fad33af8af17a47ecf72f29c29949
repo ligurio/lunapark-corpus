@@ -1,0 +1,58 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            not: 0
+          }
+          exp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+          number: 0
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
