@@ -1,0 +1,87 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              var {
+                indexexpr {
+                  prefixexp {
+                    exp {
+                    }
+                  }
+                  exp {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                            var {
+                            }
+                          }
+                          exp {
+                            ellipsis: "\346"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              functioncall {
+                prefArgs {
+                  prefixexp {
+                    var {
+                      indexexpr {
+                        prefixexp {
+                          exp {
+                          }
+                        }
+                        exp {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                  var {
+                                  }
+                                }
+                                exp {
+                                  ellipsis: "\346"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  args {
+                    explist {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: false
+  }
+}

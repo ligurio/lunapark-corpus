@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              str: "I"
+            }
+          }
+        }
+        expressions {
+          str: "I"
+        }
+        explast {
+          unary {
+            unop {
+            }
+            exp {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          laststat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+              }
+              binop {
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

@@ -1,0 +1,30 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            unary {
+              unop {
+                negate: 125
+              }
+              exp {
+                number: 0
+              }
+            }
+          }
+          binop {
+            mod: 125
+          }
+          rightexp {
+            true: 0
+          }
+        }
+      }
+    }
+  }
+}

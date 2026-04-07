@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      var {
+                        indexexpr {
+                          prefixexp {
+                          }
+                          exp {
+                            prefixexp {
+                              functioncall {
+                                namedArgs {
+                                  prefixexp {
+                                  }
+                                  name {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  args {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            explist {
+              explist {
+                expressions {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      number: 0
+                    }
+                  }
+                }
+                explast {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}
