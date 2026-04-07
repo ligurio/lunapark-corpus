@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: ""
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            call {
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: ""
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          laststat {
+            break: 0
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

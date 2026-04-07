@@ -1,0 +1,126 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            exp {
+              tableconstructor {
+                fieldlist {
+                  firstField {
+                  }
+                  fields {
+                    field {
+                      expression {
+                        unary {
+                          unop {
+                          }
+                          exp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    sep {
+                    }
+                  }
+                  lastSep {
+                    comma: 10
+                  }
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        number: 3.0517578125e-05
+                      }
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                  }
+                  explast {
+                    prefixexp {
+                      functioncall {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    false: 3276800
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

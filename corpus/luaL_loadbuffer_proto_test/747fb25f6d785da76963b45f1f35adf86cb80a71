@@ -1,0 +1,121 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 8
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 8
+                    }
+                    exp {
+                      unary {
+                        unop {
+                        }
+                        exp {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        list {
+                          varlist {
+                            var {
+                            }
+                            vars {
+                              indexexpr {
+                                prefixexp {
+                                  functioncall {
+                                  }
+                                }
+                                exp {
+                                  number: 0
+                                }
+                              }
+                            }
+                            vars {
+                              indexexpr {
+                                prefixexp {
+                                  functioncall {
+                                  }
+                                }
+                                exp {
+                                  number: 0
+                                }
+                              }
+                            }
+                          }
+                          explist {
+                            explast {
+                              tableconstructor {
+                                fieldlist {
+                                  firstField {
+                                    expression {
+                                      tableconstructor {
+                                        fieldlist {
+                                          firstField {
+                                            expression {
+                                              prefixexp {
+                                                functioncall {
+                                                  prefArgs {
+                                                    prefixexp {
+                                                      exp {
+                                                        number: 6.57818695199234e-313
+                                                      }
+                                                    }
+                                                    args {
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}
