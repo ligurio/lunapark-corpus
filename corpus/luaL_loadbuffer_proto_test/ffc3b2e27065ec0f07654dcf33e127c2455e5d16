@@ -1,0 +1,46 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            nil: 65280
+          }
+          binop {
+            sub: 262144
+          }
+          rightexp {
+            true: 262144
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            str: "\\\'"
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

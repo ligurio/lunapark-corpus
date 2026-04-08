@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            number: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  tableconstructor {
+                  }
+                }
+                stopexp {
+                  false: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                              laststat {
+                              }
+                            }
+                          }
+                          condition {
+                            binary {
+                              leftexp {
+                                ellipsis: "maxirconst"
+                              }
+                              binop {
+                                mod: 0
+                              }
+                              rightexp {
+                                nil: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                              laststat {
+                              }
+                            }
+                          }
+                          condition {
+                            binary {
+                              leftexp {
+                                ellipsis: "maxirconst"
+                              }
+                              binop {
+                                mod: 0
+                              }
+                              rightexp {
+                                nil: 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+}

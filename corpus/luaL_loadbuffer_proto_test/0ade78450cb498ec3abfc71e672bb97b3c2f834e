@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                false: 0
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              clauses {
+                condition {
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+            number: 0
+          }
+        }
+      }
+    }
+  }
+}
