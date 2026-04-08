@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            number: 4.4850503037842e-308
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            nil: 1073741824
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        functioncall {
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      nil: 0
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                  lastname {
+                    name: ""
+                    num: 4
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 1073741824
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

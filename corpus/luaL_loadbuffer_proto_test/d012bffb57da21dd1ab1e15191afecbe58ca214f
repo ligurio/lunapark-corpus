@@ -1,0 +1,122 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      number: 0
+                    }
+                    value {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            false: 0
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            explist {
+                              explist {
+                                explast {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+  }
+}

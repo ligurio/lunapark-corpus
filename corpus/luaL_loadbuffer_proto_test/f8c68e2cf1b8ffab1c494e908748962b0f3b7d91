@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "-"
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        str: "55555555555555555555555555555555555555"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 65535
+                }
+                startexp {
+                  str: "5555555555\222\000\000\000555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stepexp {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 0
+                }
+                startexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stepexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    break: 8
+  }
+}
