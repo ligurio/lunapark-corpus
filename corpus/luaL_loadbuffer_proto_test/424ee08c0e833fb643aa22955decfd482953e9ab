@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+      }
+      stepexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            add: 32
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                div: 512
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    number: 4.04738577073149e-320
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    str: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+    }
+    semicolon: true
+  }
+}

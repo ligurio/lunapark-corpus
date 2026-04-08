@@ -1,0 +1,55 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              negate: 4
+            }
+            exp {
+              prefixexp {
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          unary {
+            unop {
+              negate: 4
+            }
+            exp {
+              prefixexp {
+                exp {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      ellipsis: "\017"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

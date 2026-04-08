@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        binary {
+          leftexp {
+            unary {
+              unop {
+              }
+              exp {
+                str: "\\\'"
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+            unary {
+              unop {
+              }
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+      }
+      stepexp {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+                functioncall {
+                  namedArgs {
+                    prefixexp {
+                    }
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    args {
+                      str: "v"
+                    }
+                  }
+                }
+              }
+              args {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}

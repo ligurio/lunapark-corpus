@@ -1,0 +1,71 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                number: 512.00001525878906
+              }
+              binop {
+                mod: 0
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            concat: 64
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "z"
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    str: "\\"
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            number: 0
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: "\000\000\377\374"
+            }
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: false
+          }
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "\\\000\000\000\000\0007\231"
+            }
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              str: "\\\000\000\000\000\0007\231"
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            list {
+              varlist {
+                var {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                }
+                vars {
+                  indexexpr {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                          }
+                        }
+                      }
+                    }
+                    exp {
+                      str: "\\\000\000\000\000\0007\231"
+                    }
+                  }
+                }
+              }
+              explist {
+                expressions {
+                  function {
+                    body {
+                      block {
+                        chunk {
+                          laststat {
+                            semicolon: true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explast {
+                  str: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+                }
+              }
+            }
+          }
+          laststat {
+            break: 10
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}
