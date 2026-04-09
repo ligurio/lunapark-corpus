@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        str: "5555555555555555555555"
+      }
+      stepexp {
+        nil: 6488064
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stopexp {
+                  nil: 4096
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 65536
+                    }
+                    exp {
+                      false: 4096
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        repeatcycle {
+                          block {
+                            chunk {
+                            }
+                          }
+                          condition {
+                            unary {
+                              unop {
+                              }
+                              exp {
+                                binary {
+                                  leftexp {
+                                    str: "\376\377"
+                                  }
+                                  binop {
+                                  }
+                                  rightexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

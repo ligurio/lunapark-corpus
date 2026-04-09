@@ -1,0 +1,70 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            nil: 0
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            forcyclename {
+              name {
+                name: ""
+                num: 1048576
+              }
+              startexp {
+              }
+              stopexp {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+          stat {
+            ifstat {
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    nil: 0
+                  }
+                }
+              }
+              first {
+                chunk {
+                  stat {
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

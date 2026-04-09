@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: "="
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                namedassign {
+                                  name {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  value {
+                                    unary {
+                                      unop {
+                                        length: 0
+                                      }
+                                      exp {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}
