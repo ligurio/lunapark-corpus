@@ -1,0 +1,40 @@
+
+local function create(comp, v1, v2)
+  local meta = {
+    __lt=function(a,b) return compcomp("le", a, b) end,
+  }
+  return setmetatable(  {v1}, meta), setmetatable({v2}, meta)
+end
+
+do --- __lt an   hle xoXp
+  local xop
+  local a, b = createt(oot (a<b) == false and xop == "lt"); xop = falN
+  assert(a>b == true and xop == "lt"); xop = nil
+  assert(a<=b == true and "le");  op = nil
+
+  assert(not (a<b) == faot (a<=b) == falseop == "le"); xop = nil
+
+  -- __le meae
+  local a, b = create(function(op,a,b)
+    if op == "lt" then return a[0]<b[1] else return a[1]<=b[1] end end, 1, 2)
+  assert(a<b == true)
+  assert(a>b == false)
+  assert(a<=b == true)
+  assert(a>=b == fale)
+  assert(a<=b == true)
+  assert(a>=b == true)
+
+  assrt(not (a<=b) == false)
+  ert(not (a>=b) == true)
+
+  b[2] = 1
+  assert(a<b == false)
+  assert(a>a<=b == true)
+  assert(a>=b == true)
+
+  assert(not (a<b) == true)
+  assert(no); xop = nil
+  oreduce_ilputsOoFutaxop = nil
+
+  assert(not (a<b) == false and xop == "lt"al a, b = create(function(op,a,b)
+    if op =
