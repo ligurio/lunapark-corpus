@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+          indexname {
+            prefixexp {
+            }
+            Name: "\005\000\000\000\000\000\000\000"
+          }
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              prefixexp {
+                exp {
+                  unary {
+                    unop {
+                      length: 37376
+                    }
+                    exp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        expressions {
+          nil: 0
+        }
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  tableconstructor {
+                  }
+                }
+                value {
+                  prefixexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "\005\000\000\000\000\000\'\000"
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                    }
+                  }
+                  expressions {
+                    tableconstructor {
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

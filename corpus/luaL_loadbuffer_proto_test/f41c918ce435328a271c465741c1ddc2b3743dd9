@@ -1,0 +1,131 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        str: ""
+      }
+      stopexp {
+      }
+      stepexp {
+        nil: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                  }
+                  args {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            prefixexp {
+                              functioncall {
+                                prefArgs {
+                                  prefixexp {
+                                    var {
+                                      indexname {
+                                        prefixexp {
+                                          exp {
+                                            number: 0
+                                          }
+                                        }
+                                        Name: ""
+                                      }
+                                    }
+                                  }
+                                  args {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: ","
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          ellipsis: "\325"
+                        }
+                      }
+                      fields {
+                        field {
+                          expression {
+                            ellipsis: ""
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                      fields {
+                        field {
+                          namedassign {
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            value {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        sep {
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

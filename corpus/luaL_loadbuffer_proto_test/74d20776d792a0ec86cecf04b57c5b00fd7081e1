@@ -1,0 +1,42 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            nil: 125
+          }
+          binop {
+            mult: 125
+          }
+          rightexp {
+            false: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+  }
+  laststat {
+  }
+}
