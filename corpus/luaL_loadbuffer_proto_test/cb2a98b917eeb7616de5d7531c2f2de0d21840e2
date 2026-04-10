@@ -1,0 +1,144 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        str: ""
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 4194304000
+                }
+                startexp {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      str: ""
+                    }
+                  }
+                }
+                stopexp {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          startexp {
+                            prefixexp {
+                            }
+                          }
+                          stopexp {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                }
+                              }
+                              binop {
+                                exp: 9728
+                              }
+                              rightexp {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                        prefixexp {
+                                        }
+                                      }
+                                      binop {
+                                        exp: 9728
+                                      }
+                                      rightexp {
+                                        tableconstructor {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        call {
+                          prefArgs {
+                            prefixexp {
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        true: 0
+      }
+      first {
+        chunk {
+          laststat {
+          }
+        }
+      }
+    }
+  }
+}
