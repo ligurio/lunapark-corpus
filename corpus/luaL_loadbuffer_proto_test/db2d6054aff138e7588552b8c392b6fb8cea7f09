@@ -1,0 +1,84 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                function {
+                  body {
+                    parlist {
+                      namelist {
+                        namelist {
+                          firstname {
+                            name: ""
+                            num: 524288
+                          }
+                        }
+                      }
+                    }
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                ellipsis: "."
+              }
+              binop {
+                sub: 32
+              }
+              rightexp {
+                str: "1\000\000\377\35511111\23211111111111111111111111111111111111111111111111"
+              }
+            }
+          }
+          binop {
+            concat: 6488064
+          }
+          rightexp {
+            true: 32
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}
