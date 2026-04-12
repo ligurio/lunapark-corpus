@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 1962934272
+          }
+          exp {
+            binary {
+              leftexp {
+                ellipsis: ""
+              }
+              binop {
+                add: 0
+              }
+              rightexp {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  str: "j"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

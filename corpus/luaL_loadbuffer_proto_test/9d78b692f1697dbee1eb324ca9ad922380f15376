@@ -1,0 +1,72 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    or: 0
+                  }
+                  rightexp {
+                    ellipsis: "\001#"
+                  }
+                }
+              }
+            }
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
