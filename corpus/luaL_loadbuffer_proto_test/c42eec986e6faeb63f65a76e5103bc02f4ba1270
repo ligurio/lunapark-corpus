@@ -1,0 +1,65 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+                false: 67108864
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    localfunc {
+      name {
+        name: "]"
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+            laststat {
+              explist {
+                explist {
+                  explast {
+                    ellipsis: "\005"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+}
