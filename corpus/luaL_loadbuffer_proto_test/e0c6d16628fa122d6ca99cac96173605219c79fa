@@ -1,0 +1,57 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            binary {
+              leftexp {
+                false: 8192
+              }
+              binop {
+                concat: 8192
+              }
+              rightexp {
+                prefixexp {
+                }
+              }
+            }
+          }
+        }
+        args {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                    false: 7143424
+                  }
+                  value {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+}

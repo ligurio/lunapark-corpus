@@ -1,0 +1,77 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        tableconstructor {
+        }
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                            exp {
+                              binary {
+                                leftexp {
+                                  prefixexp {
+                                    functioncall {
+                                    }
+                                  }
+                                }
+                                binop {
+                                  bor: 0
+                                }
+                                rightexp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          Name: "and"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

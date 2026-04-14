@@ -1,0 +1,107 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: "    local v1, v2 = ...\n    return always_number(v1) & always_num"
+        num: 0
+      }
+      startexp {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                                unary {
+                                  unop {
+                                    length: 512
+                                  }
+                                  exp {
+                                    tableconstructor {
+                                    }
+                                  }
+                                }
+                              }
+                              value {
+                                unary {
+                                  unop {
+                                    length: 512
+                                  }
+                                  exp {
+                                    tableconstructor {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                value {
+                  unary {
+                    unop {
+                      length: 512
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            exprassign {
+                              key {
+                                nil: 0
+                              }
+                              value {
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      stopexp {
+        str: "+"
+      }
+      stepexp {
+        str: "+"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+                namedArgs {
+                  prefixexp {
+                  }
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  args {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

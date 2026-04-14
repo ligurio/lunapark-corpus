@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 512
+      }
+      startexp {
+        unary {
+          unop {
+            negate: 108
+          }
+          exp {
+            str: "+"
+          }
+        }
+      }
+      stopexp {
+        binary {
+          leftexp {
+          }
+          binop {
+            less: 0
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          number: 0
+                        }
+                        binop {
+                          less: 0
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                              prefixexp {
+                                functioncall {
+                                  namedArgs {
+                                    prefixexp {
+                                      functioncall {
+                                        namedArgs {
+                                          prefixexp {
+                                            exp {
+                                              true: 0
+                                            }
+                                          }
+                                          name {
+                                            name: ""
+                                            num: 0
+                                          }
+                                          args {
+                                          }
+                                        }
+                                      }
+                                    }
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    args {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            binop {
+                              less: 0
+                            }
+                            rightexp {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  less: 0
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          nil: 512
+                        }
+                        binop {
+                          less: 0
+                        }
+                        rightexp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              less: 0
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

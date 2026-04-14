@@ -1,0 +1,95 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+        }
+      }
+      condition {
+        nil: 10
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexname {
+            prefixexp {
+              var {
+                indexname {
+                  prefixexp {
+                    functioncall {
+                      namedArgs {
+                        prefixexp {
+                          functioncall {
+                            namedArgs {
+                              prefixexp {
+                              }
+                              name {
+                                name: ""
+                                num: 0
+                              }
+                              args {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                    }
+                                    fields {
+                                      field {
+                                      }
+                                      sep {
+                                        comma: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        name {
+                          name: ""
+                          num: 0
+                        }
+                        args {
+                        }
+                      }
+                    }
+                  }
+                  Name: ""
+                }
+              }
+            }
+            Name: ""
+          }
+        }
+      }
+      explist {
+        explast {
+          number: -1.9999990127980709
+        }
+      }
+    }
+  }
+}
