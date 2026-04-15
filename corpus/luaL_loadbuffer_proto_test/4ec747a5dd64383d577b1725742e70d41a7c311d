@@ -1,0 +1,66 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 1962934272
+          }
+          exp {
+            binary {
+              leftexp {
+                ellipsis: ""
+              }
+              binop {
+                add: 0
+              }
+              rightexp {
+                nil: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  nil: 0
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        call {
+                          namedArgs {
+                            prefixexp {
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                              str: "A"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

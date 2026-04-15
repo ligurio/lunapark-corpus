@@ -1,0 +1,98 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            nil: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    name {
+                      name: "/"
+                      num: 0
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            prefixexp {
+                            }
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            prefixexp {
+                              exp {
+                                binary {
+                                  leftexp {
+                                    prefixexp {
+                                    }
+                                  }
+                                  binop {
+                                    concat: 0
+                                  }
+                                  rightexp {
+                                    prefixexp {
+                                      exp {
+                                        binary {
+                                          leftexp {
+                                            prefixexp {
+                                            }
+                                          }
+                                          binop {
+                                            concat: 0
+                                          }
+                                          rightexp {
+                                            prefixexp {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                          functioncall {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

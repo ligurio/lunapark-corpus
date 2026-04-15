@@ -1,0 +1,126 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        unary {
+          unop {
+            not: 0
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        unary {
+          unop {
+            bnot: 4096
+          }
+          exp {
+          }
+        }
+      }
+      stopexp {
+        str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  nil: 4096
+                }
+                stopexp {
+                  str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  false: 131072
+                }
+                stopexp {
+                  str: "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 16
+                    }
+                    exp {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        localfunc {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          funcbody {
+                            block {
+                              chunk {
+                                stat {
+                                  call {
+                                  }
+                                  semicolon: true
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}
