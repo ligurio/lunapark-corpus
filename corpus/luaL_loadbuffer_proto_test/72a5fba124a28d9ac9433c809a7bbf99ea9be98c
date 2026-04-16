@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: "+"
+          num: 0
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                    }
+                    exp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          sub: 0
+                        }
+                        rightexp {
+                          number: 0
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}
