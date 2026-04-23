@@ -1,42 +1,42 @@
-INFO: found LLVMFuzzerCustomMutator (0x55eb9b9c9a30). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x557d222d2a30). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 1113889587
-INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55eb9bfc7890, 0x55eb9bfccbca), 
-INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55eb9bfccbd0,0x55eb9c01ff70), 
+INFO: Seed: 1813074975
+INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x557d228d0890, 0x557d228d5bca), 
+INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x557d228d5bd0,0x557d22928f70), 
 MERGE-OUTER: 8716 files, 0 in the initial corpus, 0 processed earlier
 MERGE-OUTER: attempt 1
-INFO: found LLVMFuzzerCustomMutator (0x56074a64fa30). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x55818cd31a30). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 1113950435
-INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x56074ac4d890, 0x56074ac52bca), 
-INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x56074ac52bd0,0x56074aca5f70), 
+INFO: Seed: 1813133463
+INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55818d32f890, 0x55818d334bca), 
+INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55818d334bd0,0x55818d387f70), 
 INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 1048576 bytes
-MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge690.txt'
+MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge694.txt'
 MERGE-INNER: 8716 total files; 0 processed earlier; will process 8716 files now
-#1	pulse  cov: 1544 ft: 1545 exec/s: 0 rss: 34Mb
-#2	pulse  cov: 1559 ft: 1626 exec/s: 0 rss: 34Mb
-#4	pulse  cov: 1568 ft: 1695 exec/s: 0 rss: 34Mb
-#8	pulse  cov: 1979 ft: 2214 exec/s: 0 rss: 34Mb
-#16	pulse  cov: 1984 ft: 2290 exec/s: 0 rss: 34Mb
-#32	pulse  cov: 1986 ft: 2363 exec/s: 0 rss: 34Mb
-#64	pulse  cov: 2516 ft: 3773 exec/s: 0 rss: 35Mb
-#128	pulse  cov: 2953 ft: 4926 exec/s: 0 rss: 35Mb
-#256	pulse  cov: 3357 ft: 6647 exec/s: 0 rss: 35Mb
-#512	pulse  cov: 3980 ft: 9214 exec/s: 512 rss: 35Mb
-#1024	pulse  cov: 4642 ft: 12613 exec/s: 512 rss: 35Mb
-#2048	pulse  cov: 5206 ft: 16830 exec/s: 512 rss: 35Mb
-#4096	pulse  cov: 5816 ft: 23155 exec/s: 372 rss: 36Mb
-#8192	pulse  cov: 6277 ft: 31562 exec/s: 240 rss: 41Mb
-#8716	DONE   cov: 6300 ft: 32303 exec/s: 229 rss: 42Mb
+#1	pulse  cov: 1560 ft: 1561 exec/s: 0 rss: 34Mb
+#2	pulse  cov: 1581 ft: 1664 exec/s: 0 rss: 34Mb
+#4	pulse  cov: 1586 ft: 1735 exec/s: 0 rss: 34Mb
+#8	pulse  cov: 1980 ft: 2222 exec/s: 0 rss: 34Mb
+#16	pulse  cov: 1985 ft: 2276 exec/s: 0 rss: 34Mb
+#32	pulse  cov: 1988 ft: 2366 exec/s: 0 rss: 34Mb
+#64	pulse  cov: 2517 ft: 3761 exec/s: 0 rss: 34Mb
+#128	pulse  cov: 2954 ft: 4921 exec/s: 0 rss: 35Mb
+#256	pulse  cov: 3360 ft: 6738 exec/s: 0 rss: 35Mb
+#512	pulse  cov: 3983 ft: 9230 exec/s: 512 rss: 35Mb
+#1024	pulse  cov: 4641 ft: 12605 exec/s: 512 rss: 35Mb
+#2048	pulse  cov: 5206 ft: 16838 exec/s: 512 rss: 35Mb
+#4096	pulse  cov: 5817 ft: 23200 exec/s: 372 rss: 35Mb
+#8192	pulse  cov: 6282 ft: 31586 exec/s: 248 rss: 41Mb
+#8716	DONE   cov: 6299 ft: 32315 exec/s: 235 rss: 42Mb
 Total number of samples: 8716
 Total number of samples with errors: 96 (1%)
 Total number of samples with record traces: 7567 (86%)
 Total number of samples with start traces: 7567 (86%)
-Total number of samples with stop traces: 7031 (80%)
-Total number of samples with abort traces: 6726 (77%)
+Total number of samples with stop traces: 7033 (80%)
+Total number of samples with abort traces: 6727 (77%)
 Total number of samples with exit traces: 5926 (67%)
 Total number of samples with compiled bc: 8716 (100%)
 MERGE-OUTER: successful in 1 attempt(s)
-MERGE-OUTER: the control file has 1404788 bytes
+MERGE-OUTER: the control file has 1404853 bytes
 MERGE-OUTER: consumed 0Mb (33Mb rss) to parse the control file
-MERGE-OUTER: 5481 new files with 32303 new features added; 6300 new coverage edges
+MERGE-OUTER: 5475 new files with 32315 new features added; 6299 new coverage edges
