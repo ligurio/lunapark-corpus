@@ -1,0 +1,146 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    unary {
+                      unop {
+                        negate: 0
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  namedassign {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                    value {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                              unary {
+                                unop {
+                                  negate: 0
+                                }
+                                exp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                length: 0
+                              }
+                              exp {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                      expression {
+                                        unary {
+                                          unop {
+                                            negate: 0
+                                          }
+                                          exp {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 131072
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  expression {
+                    ellipsis: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      tableconstructor {
+                        fieldlist {
+                          firstField {
+                            expression {
+                              ellipsis: ""
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                }
+              }
+            }
+            stat {
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,91 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 512
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        names {
+          name: ""
+          num: 512
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                  names {
+                    name: ""
+                    num: 512
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+            stat {
+              func {
+                name {
+                  firstname {
+                    name: ""
+                    num: 0
+                  }
+                  names {
+                    name: "<"
+                    num: 512
+                  }
+                }
+                body {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  laststat {
+    explist {
+    }
+    semicolon: true
+  }
+}
