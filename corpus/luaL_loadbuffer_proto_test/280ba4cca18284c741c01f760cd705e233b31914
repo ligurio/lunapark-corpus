@@ -1,0 +1,90 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        prefixexp {
+          functioncall {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              whilecycle {
+                condition {
+                  prefixexp {
+                    functioncall {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        call {
+                          namedArgs {
+                            prefixexp {
+                            }
+                            name {
+                              name: ""
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  namedassign {
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    value {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  ifstat {
+                                    condition {
+                                    }
+                                    first {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                  semicolon: false
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

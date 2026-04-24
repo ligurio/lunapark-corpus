@@ -1,0 +1,82 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    call {
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            func {
+              name {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+                lastname {
+                  name: ""
+                  num: 0
+                }
+              }
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                    fields {
+                      field {
+                        exprassign {
+                          key {
+                            tableconstructor {
+                            }
+                          }
+                          value {
+                          }
+                        }
+                      }
+                      sep {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}
