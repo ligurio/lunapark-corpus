@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                nil: 0
+              }
+              first {
+                chunk {
+                  stat {
+                    repeatcycle {
+                      block {
+                        chunk {
+                          laststat {
+                          }
+                        }
+                      }
+                      condition {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                              namedassign {
+                                name {
+                                  name: ""
+                                  num: 0
+                                }
+                                value {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      equal: 0
+                                    }
+                                    rightexp {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  stat {
+                    semicolon: true
+                  }
+                  laststat {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                number: -2
+              }
+              binop {
+                div: 768
+              }
+              rightexp {
+              }
+            }
+          }
+          binop {
+            div: 768
+          }
+          rightexp {
+            nil: 771751936
+          }
+        }
+      }
+    }
+  }
+  laststat {
+  }
+}
