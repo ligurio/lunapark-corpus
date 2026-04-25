@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                    }
+                  }
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              ifstat {
+                condition {
+                  tableconstructor {
+                  }
+                }
+                first {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                          vars {
+                            indexname {
+                              prefixexp {
+                                exp {
+                                  tableconstructor {
+                                  }
+                                }
+                              }
+                              Name: ""
+                            }
+                          }
+                        }
+                        explist {
+                          expressions {
+                            tableconstructor {
+                            }
+                          }
+                          explast {
+                            tableconstructor {
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}

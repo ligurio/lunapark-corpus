@@ -1,0 +1,104 @@
+chunk {
+  stat {
+    call {
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 131072
+                    }
+                    exp {
+                      str: "&"
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        forcyclename {
+                          name {
+                            name: ""
+                            num: 8192
+                          }
+                          startexp {
+                            tableconstructor {
+                            }
+                          }
+                          stopexp {
+                            binary {
+                              leftexp {
+                                unary {
+                                  unop {
+                                    negate: 7143424
+                                  }
+                                  exp {
+                                    str: "4444444\0244444444444444444444444444444444444444444444444444444444444444444444444"
+                                  }
+                                }
+                              }
+                              binop {
+                                concat: 6488064
+                              }
+                              rightexp {
+                              }
+                            }
+                          }
+                          stepexp {
+                            unary {
+                              unop {
+                                negate: 7143424
+                              }
+                              exp {
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                }
+                                stat {
+                                  localnames {
+                                    namelist {
+                                      firstname {
+                                        name: ""
+                                        num: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: false
+  }
+}

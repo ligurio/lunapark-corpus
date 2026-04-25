@@ -1,0 +1,139 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          nil: 0
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: false
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    localfunc {
+      name {
+        name: ""
+        num: 0
+      }
+      funcbody {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+          }
+        }
+      }
+      clauses {
+        condition {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        function {
+          body {
+            parlist {
+              ellipsis: "\000\000 }"
+            }
+            block {
+              chunk {
+                stat {
+                  semicolon: true
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+      clauses {
+        condition {
+          function {
+            body {
+              block {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

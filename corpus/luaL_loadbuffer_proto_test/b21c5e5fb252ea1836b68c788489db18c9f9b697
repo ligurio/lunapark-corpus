@@ -1,0 +1,48 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                      greaterEqual: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          greaterEqual: 0
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                }
+                value {
+                  number: 0
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

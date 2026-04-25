@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 8
+          }
+          exp {
+            unary {
+              unop {
+              }
+              exp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                          prefArgs {
+                            prefixexp {
+                              exp {
+                                number: 6.57818695199234e-313
+                              }
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                        number: 0
+                      }
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          expression {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          expression {
+                                            tableconstructor {
+                                              fieldlist {
+                                                firstField {
+                                                  expression {
+                                                    prefixexp {
+                                                      var {
+                                                        indexexpr {
+                                                          prefixexp {
+                                                          }
+                                                          exp {
+                                                            nil: 0
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    ellipsis: "\\"
+                  }
+                }
+              }
+              fields {
+                field {
+                }
+                sep {
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        tableconstructor {
+                          fieldlist {
+                            firstField {
+                              expression {
+                                unary {
+                                  unop {
+                                  }
+                                  exp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              prefixexp {
+                                functioncall {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        lastSep {
+                          semicolon: 536870912
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                    tableconstructor {
+                      fieldlist {
+                        firstField {
+                          exprassign {
+                            key {
+                            }
+                            value {
+                              ellipsis: ""
+                            }
+                          }
+                        }
+                        fields {
+                          field {
+                          }
+                          sep {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

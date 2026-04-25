@@ -1,0 +1,110 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            lessEqual: 8126464
+          }
+          rightexp {
+            binary {
+              leftexp {
+              }
+              binop {
+                greaterEqual: 8126464
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    less: 8126464
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+            nil: 8126464
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greaterEqual: 8126464
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        less: 8126464
+                      }
+                      rightexp {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            greaterEqual: 8126464
+          }
+          rightexp {
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,59 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexexpr {
+                      prefixexp {
+                        functioncall {
+                          namedArgs {
+                            prefixexp {
+                            }
+                            name {
+                              name: "\327"
+                              num: 0
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      exp {
+                      }
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    number: 0
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
