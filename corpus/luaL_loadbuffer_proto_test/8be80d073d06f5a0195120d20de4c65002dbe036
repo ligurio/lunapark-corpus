@@ -1,0 +1,94 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          tableconstructor {
+            fieldlist {
+              firstField {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    nil: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  expressions {
+                    unary {
+                      unop {
+                      }
+                      exp {
+                        unary {
+                          unop {
+                            negate: 256
+                          }
+                          exp {
+                            unary {
+                              unop {
+                                length: 2097152
+                              }
+                              exp {
+                                tableconstructor {
+                                  fieldlist {
+                                    firstField {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  explast {
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}
