@@ -1,42 +1,42 @@
-INFO: found LLVMFuzzerCustomMutator (0x55f97190ea30). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x55b2c95c4a30). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 3585968761
-INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55f971f0c890, 0x55f971f11bca), 
-INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55f971f11bd0,0x55f971f64f70), 
+INFO: Seed: 1559738711
+INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55b2c9bc2890, 0x55b2c9bc7bca), 
+INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55b2c9bc7bd0,0x55b2c9c1af70), 
 MERGE-OUTER: 9686 files, 0 in the initial corpus, 0 processed earlier
 MERGE-OUTER: attempt 1
-INFO: found LLVMFuzzerCustomMutator (0x556619f91a30). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x55dd78d72a30). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 3586036743
-INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55661a58f890, 0x55661a594bca), 
-INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55661a594bd0,0x55661a5e7f70), 
+INFO: Seed: 1559806322
+INFO: Loaded 1 modules   (21306 inline 8-bit counters): 21306 [0x55dd79370890, 0x55dd79375bca), 
+INFO: Loaded 1 PC tables (21306 PCs): 21306 [0x55dd79375bd0,0x55dd793c8f70), 
 INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 1048576 bytes
-MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge734.txt'
+MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge742.txt'
 MERGE-INNER: 9686 total files; 0 processed earlier; will process 9686 files now
-#1	pulse  cov: 1569 ft: 1570 exec/s: 0 rss: 34Mb
-#2	pulse  cov: 1578 ft: 1638 exec/s: 0 rss: 34Mb
-#4	pulse  cov: 1582 ft: 1744 exec/s: 0 rss: 34Mb
-#8	pulse  cov: 1977 ft: 2238 exec/s: 0 rss: 35Mb
-#16	pulse  cov: 1978 ft: 2281 exec/s: 0 rss: 35Mb
-#32	pulse  cov: 1987 ft: 2347 exec/s: 0 rss: 35Mb
-#64	pulse  cov: 2517 ft: 3769 exec/s: 0 rss: 35Mb
-#128	pulse  cov: 2950 ft: 4929 exec/s: 0 rss: 35Mb
-#256	pulse  cov: 3357 ft: 6745 exec/s: 0 rss: 35Mb
-#512	pulse  cov: 3968 ft: 9184 exec/s: 512 rss: 35Mb
-#1024	pulse  cov: 4612 ft: 12283 exec/s: 512 rss: 36Mb
-#2048	pulse  cov: 5167 ft: 16378 exec/s: 512 rss: 36Mb
-#4096	pulse  cov: 5748 ft: 22465 exec/s: 372 rss: 37Mb
-#8192	pulse  cov: 6237 ft: 30361 exec/s: 292 rss: 39Mb
-#9686	DONE   cov: 6303 ft: 32363 exec/s: 254 rss: 43Mb
+#1	pulse  cov: 1537 ft: 1538 exec/s: 0 rss: 34Mb
+#2	pulse  cov: 1553 ft: 1619 exec/s: 0 rss: 34Mb
+#4	pulse  cov: 1579 ft: 1731 exec/s: 0 rss: 34Mb
+#8	pulse  cov: 1971 ft: 2219 exec/s: 0 rss: 35Mb
+#16	pulse  cov: 1979 ft: 2285 exec/s: 0 rss: 35Mb
+#32	pulse  cov: 1985 ft: 2355 exec/s: 0 rss: 35Mb
+#64	pulse  cov: 2516 ft: 3778 exec/s: 0 rss: 35Mb
+#128	pulse  cov: 2951 ft: 4940 exec/s: 0 rss: 35Mb
+#256	pulse  cov: 3356 ft: 6757 exec/s: 0 rss: 35Mb
+#512	pulse  cov: 3965 ft: 9165 exec/s: 512 rss: 35Mb
+#1024	pulse  cov: 4610 ft: 12286 exec/s: 512 rss: 35Mb
+#2048	pulse  cov: 5167 ft: 16389 exec/s: 409 rss: 36Mb
+#4096	pulse  cov: 5747 ft: 22446 exec/s: 372 rss: 36Mb
+#8192	pulse  cov: 6258 ft: 30405 exec/s: 273 rss: 39Mb
+#9686	DONE   cov: 6301 ft: 32395 exec/s: 236 rss: 43Mb
 Total number of samples: 9686
 Total number of samples with errors: 113 (1%)
 Total number of samples with record traces: 8394 (86%)
 Total number of samples with start traces: 8394 (86%)
 Total number of samples with stop traces: 7815 (80%)
-Total number of samples with abort traces: 7460 (77%)
+Total number of samples with abort traces: 7464 (77%)
 Total number of samples with exit traces: 6577 (67%)
 Total number of samples with compiled bc: 9686 (100%)
 MERGE-OUTER: successful in 1 attempt(s)
-MERGE-OUTER: the control file has 1535854 bytes
+MERGE-OUTER: the control file has 1536038 bytes
 MERGE-OUTER: consumed 0Mb (33Mb rss) to parse the control file
-MERGE-OUTER: 5527 new files with 32363 new features added; 6303 new coverage edges
+MERGE-OUTER: 5524 new files with 32395 new features added; 6301 new coverage edges
