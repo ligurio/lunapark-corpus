@@ -1,0 +1,140 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 65527
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+            var {
+              indexexpr {
+                prefixexp {
+                  var {
+                    indexname {
+                      prefixexp {
+                        var {
+                          indexname {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: "."
+                                  num: 0
+                                }
+                              }
+                            }
+                            Name: ""
+                          }
+                        }
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                exp {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            binary {
+              leftexp {
+                ellipsis: "="
+              }
+              binop {
+                lessEqual: 65527
+              }
+              rightexp {
+                function {
+                  body {
+                    parlist {
+                      ellipsis: "="
+                    }
+                    block {
+                      chunk {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 25344
+          }
+          rightexp {
+            false: 65532
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                          ellipsis: "="
+                        }
+                        binop {
+                          concat: 512
+                        }
+                        rightexp {
+                          function {
+                            body {
+                              block {
+                                chunk {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 512
+                    }
+                    rightexp {
+                      false: 65532
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

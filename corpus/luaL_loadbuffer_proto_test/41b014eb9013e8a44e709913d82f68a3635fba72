@@ -1,0 +1,115 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 8192
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      forcyclename {
+                        name {
+                          name: ""
+                          num: 8
+                        }
+                        startexp {
+                          unary {
+                            unop {
+                              negate: 8388608
+                            }
+                            exp {
+                              binary {
+                                leftexp {
+                                }
+                                binop {
+                                  mult: 8
+                                }
+                                rightexp {
+                                }
+                              }
+                            }
+                          }
+                        }
+                        stopexp {
+                          binary {
+                            leftexp {
+                            }
+                            binop {
+                              mult: 8
+                            }
+                            rightexp {
+                            }
+                          }
+                        }
+                        doblock {
+                          block {
+                            chunk {
+                              stat {
+                                semicolon: true
+                              }
+                            }
+                          }
+                        }
+                      }
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                      binary {
+                        leftexp {
+                        }
+                        binop {
+                          exp: 4294967014
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                    binop {
+                      mod: 32
+                    }
+                    rightexp {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
