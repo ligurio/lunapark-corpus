@@ -1,0 +1,88 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                          vars {
+                            indexname {
+                              prefixexp {
+                              }
+                              Name: ""
+                            }
+                          }
+                        }
+                        explist {
+                          expressions {
+                            false: 0
+                          }
+                          explast {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+            str: "5555555\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\240\2405555555555555555555555555555555"
+          }
+          binop {
+            mult: 8
+          }
+          rightexp {
+            binary {
+              leftexp {
+                nil: 8
+              }
+              binop {
+                mult: 8
+              }
+              rightexp {
+                binary {
+                  leftexp {
+                    unary {
+                      unop {
+                        negate: 8
+                      }
+                      exp {
+                        str: "444444444444444444444444444444444444444444444444444444444444444444444444444444"
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 2048
+                  }
+                  rightexp {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

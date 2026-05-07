@@ -1,0 +1,83 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: ""
+          num: 0
+        }
+        lastname {
+          name: ""
+          num: 0
+        }
+      }
+      body {
+        block {
+          chunk {
+            stat {
+              call {
+                prefArgs {
+                  prefixexp {
+                    exp {
+                      unary {
+                        unop {
+                        }
+                        exp {
+                          prefixexp {
+                            var {
+                              indexexpr {
+                                prefixexp {
+                                }
+                                exp {
+                                  true: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  args {
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    prefixexp {
+                      exp {
+                        true: 0
+                      }
+                    }
+                  }
+                  explast {
+                    prefixexp {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+        }
+      }
+    }
+  }
+  laststat {
+    break: 0
+    semicolon: true
+  }
+}

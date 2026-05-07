@@ -1,0 +1,106 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                    stat {
+                      semicolon: true
+                    }
+                  }
+                }
+                condition {
+                }
+              }
+            }
+          }
+        }
+      }
+      clauses {
+        condition {
+        }
+        block {
+          chunk {
+            stat {
+              semicolon: true
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 0
+      }
+      first {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                nil: 0
+              }
+              first {
+                chunk {
+                  stat {
+                    semicolon: true
+                  }
+                  stat {
+                  }
+                }
+              }
+              last {
+                chunk {
+                }
+              }
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+  }
+}

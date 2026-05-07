@@ -1,0 +1,92 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 512
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                  exprassign {
+                    key {
+                      unary {
+                        unop {
+                          length: 131072
+                        }
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              fields {
+                                field {
+                                  expression {
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    value {
+                    }
+                  }
+                }
+                fields {
+                  field {
+                    exprassign {
+                      key {
+                        unary {
+                          unop {
+                            length: 512
+                          }
+                          exp {
+                            tableconstructor {
+                              fieldlist {
+                                firstField {
+                                  expression {
+                                    false: 0
+                                  }
+                                }
+                                fields {
+                                  field {
+                                    expression {
+                                    }
+                                  }
+                                  sep {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      value {
+                      }
+                    }
+                  }
+                  sep {
+                    comma: 131072
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

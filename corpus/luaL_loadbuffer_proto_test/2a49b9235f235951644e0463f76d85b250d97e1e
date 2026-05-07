@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            semicolon: true
+          }
+          stat {
+            func {
+              name {
+                firstname {
+                  name: ""
+                  num: 0
+                }
+              }
+              body {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}
