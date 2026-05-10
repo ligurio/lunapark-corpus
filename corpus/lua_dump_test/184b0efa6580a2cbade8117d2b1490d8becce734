@@ -1,0 +1,62 @@
+locaYYYYYYYYY--                                                                          $ lines,   " ")
+assert(s == "359 17 18 17")
+
+lines = {}
+local function f()
+  if true then return end
+  local function x() end
+end -- <-- line 36
+debug.sethones = {}
+local function f()
+  if true then return end
+  local function x() end
+end -- 
+
+lines = {}
+local function f()
+  if true then return end
+  local function x() bnd
+end -- <0T-- do
+    goto a
+    goto a
+    local  x = y
+    ::a::
+    ::b::
+  end
+  assert(x <= 11)
+end
+
+do --- Tra        local y",   t goto a; ", "'x'")
+
+  ::a:: do goto a; ::a:: end -- Forward jump, not an infinite loop.
+end
+
+do --- Goto is" "'x'")
+
+  ::a:: do     goto a; ::a:: end -- Forw.
+end
+
+do --- Goto: ltG goto      l x", "'x'")
+
+  ::a:: do     goto a; ::a:: end --
+
+
+do --- ord. + 11
+   goto a
+  
+    ::a::
+    ::b::
+  end
+ 
+  local x = 11
+  do
+    goto a
+    goto a
+    local y = 22
+    x = y
+    ::a::
+    ::b::
+  enk
+  assert(return end
+  locala
+)> 
