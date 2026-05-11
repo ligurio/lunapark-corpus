@@ -1,0 +1,163 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        expressions {
+          prefixexp {
+            functioncall {
+              namedArgs {
+                prefixexp {
+                }
+                name {
+                  name: ""
+                  num: 0
+                }
+                args {
+                  str: "?"
+                }
+              }
+            }
+          }
+        }
+        explast {
+        }
+      }
+    }
+    semicolon: true
+  }
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            prefixexp {
+            }
+          }
+        }
+      }
+      stopexp {
+        nil: 6488064
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: ""
+                  num: 0
+                }
+                startexp {
+                  prefixexp {
+                    var {
+                    }
+                  }
+                }
+                stopexp {
+                  false: 0
+                }
+                stepexp {
+                  unary {
+                    unop {
+                      negate: 0
+                    }
+                    exp {
+                      prefixexp {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "#"
+                  num: 0
+                }
+                startexp {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                      }
+                    }
+                    binop {
+                      or: 0
+                    }
+                    rightexp {
+                      binary {
+                        leftexp {
+                          prefixexp {
+                            functioncall {
+                            }
+                          }
+                        }
+                        binop {
+                        }
+                        rightexp {
+                          tableconstructor {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                stopexp {
+                }
+                stepexp {
+                  prefixexp {
+                    var {
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+    }
+  }
+}

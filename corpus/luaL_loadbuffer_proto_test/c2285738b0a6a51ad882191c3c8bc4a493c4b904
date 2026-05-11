@@ -1,0 +1,75 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    str: "2"
+                  }
+                  binop {
+                    mult: 2126848
+                  }
+                  rightexp {
+                    binary {
+                      leftexp {
+                        str: "444444400000000000000000000000000000000000000000000000000014347467612885206811"
+                      }
+                      binop {
+                        mult: 2126848
+                      }
+                      rightexp {
+                        binary {
+                          leftexp {
+                            unary {
+                              unop {
+                                negate: 7143424
+                              }
+                              exp {
+                                str: "444444400000000000000000000000000000000000000000000000000014347467612885206811"
+                              }
+                            }
+                          }
+                          binop {
+                            concat: 25344
+                          }
+                          rightexp {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        false: 9728
+      }
+    }
+  }
+}

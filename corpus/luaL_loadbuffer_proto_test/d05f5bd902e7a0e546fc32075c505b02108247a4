@@ -1,0 +1,109 @@
+chunk {
+  stat {
+    func {
+      name {
+        firstname {
+          name: "abc"
+          num: 0
+        }
+      }
+      body {
+        parlist {
+        }
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            number: 0
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                }
+                explist {
+                  explast {
+                    binary {
+                      leftexp {
+                        binary {
+                          leftexp {
+                            prefixexp {
+                            }
+                          }
+                          binop {
+                            concat: 0
+                          }
+                          rightexp {
+                            prefixexp {
+                              exp {
+                                binary {
+                                  leftexp {
+                                    prefixexp {
+                                    }
+                                  }
+                                  binop {
+                                    concat: 0
+                                  }
+                                  rightexp {
+                                    prefixexp {
+                                      exp {
+                                        binary {
+                                          leftexp {
+                                            prefixexp {
+                                            }
+                                          }
+                                          binop {
+                                            concat: 0
+                                          }
+                                          rightexp {
+                                            prefixexp {
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      binop {
+                        concat: 0
+                      }
+                      rightexp {
+                        prefixexp {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}
