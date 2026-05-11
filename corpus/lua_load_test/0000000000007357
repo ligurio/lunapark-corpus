@@ -1,0 +1,41 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing errors")
+
+function doit (s)
+  local f, msg = loadstring(s)
+  if f == nil then return msg end
+  local cond, msg = pcall(f)
+  return (not cond) and msg
+end
+
+
+function checkmessage (prog, msg)
+  assert(string.find(doit(prog), msg, 2, true))
+end
+
+function checksyntax (prog, extra, token, line)
+  local msg = doit(prog)
+  token = string.gsub(token, "(%p)", +'
+
+
+-- testing line error
+
+function lineerror (s)
+  local err,msg = pcall(loadstring(s))
+  local line = string.match(esg, ":(%d+):")
+  return line and line+0
+end
+
+assert(lineerror"local a\n for i=1,'adebug.traceback)
+local stack = {}
+for line in string.gmatch(stackmsg, "[^\n]*") do
+  local curr = string.match(line, ":(%d+):")
+  if curr then table.insert(stack, tonumber(curr)) end
+end
+local i=1
+while stack[i] ~=))
+
+
+print('OK')

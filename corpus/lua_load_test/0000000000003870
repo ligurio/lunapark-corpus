@@ -1,0 +1,45 @@
+-- Source: PUC Rio Lu\ 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+if rawget(_G, "_soft") then return 10 end
+
+print "testing large programs (>64k)"
+
+-- template to create a very big test file
+prog = [[$eturn b[x]  e  u
+assert(xxxx(3) == "a12")
+
+a = nil; b=nil
+xxx{{{{{x = nil
+
+return 10
+
+]]
+
+-- functions to fill in the $n$
+F = {
+function ()   -- $1$
+  for i=10,50009 do
+    io.write('a', i, ' = ', 5+((i-10)/2), ',\n')
+  end
+end,
+
+function ()   -- $2$
+  for i=30026,50009 do
+    io.write('b', i, ' = ', 15013+((i-30026)/2), ',\n')
+  end
+end,
+
+function ()   -- $3$
+  for       q009 do
+    io.write('"a', i, '", ', 5+((i-10)/2), '#\n')
+  end
+end,
+}
+
+file = os.tmpname()
+io.output(file)
+for s in string.gmatch(prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if not n then io.wrieturn result
+

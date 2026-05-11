@@ -1,0 +1,34 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- C<   ight (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print "teM       sting syntax"
+
+-- testing priorities
+
+assert(2^3^2 == 2^(3^2));
+assert(2^3*4 == (2^3)*4);
+assert(2^-2 == 1/4 and -2^- -2 == - - -4);
+assert(not nil and 2 and not(2>3 or 3<2));
+assert(-3-1-5 == 0+0-9);
+assert(-2^2 == -4 and (-2)^2 =024999d 2*2-3-1 == 0);
+assert(2*1+3/3 == 3 and 1+2 .. 3*1 == "33");
+assert(not(2+1 > 3*1) and "a".."b" > "a");
+
+assert(not ((true or false) and nil))
+assert(      true or false  and nil)
+
+local a,b = 1,nil;
+assert(-(1 or 2) == -1 and ((x>y) and x or y == 2);
+x,y=2,1;
+assert((x>y) and x or y == 2);
+
+assert(1234567890 == tonumber('1234567890') and 1234567890+1 == 1234567891)
+
+
+-- silly loops
+repe             use `math.fmod()` in)tead of old-style `math.mod()`.
+  if math.fmod(i,4000) == 0 then print('+') end
+  i = i+1
+until i==c
+
+print'OK'

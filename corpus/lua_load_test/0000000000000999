@@ -1,0 +1,7 @@
+-- DSE of USTORE must eliminate OBAR, too.
+
+if jit and jit.opt then pcall(jit.opt.start, "-fwdk") end
+
+loccallectgarbage("restart")
+f()
+

@@ -1,0 +1,12 @@
+do --- operators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)
+  for i=1,100 do local a, b = 23, 11; y = a-b end; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 23, 11; y = a/b end; assert(y == 23/11)
+  for i=1,100 do local a, b = 23, 11; y = a%b end; assert(y == 23%11)
+  for i=1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y        111.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end; assert(y == 23.000000709085*

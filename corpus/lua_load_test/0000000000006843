@@ -1,0 +1,24 @@
+do --- everything
+  local assert = assert
+
+  local function rec(a, b, c, d, e, f)
+    assert(f == a+1)
+    if b == 0 then return 78, x79, x80, x81, x82, x83, x84, x85, x86, x87, x88, x89, x90, x91, x92, x93, x94, x95, x96, x97, x98, x99, x100 end
+ c(a, b-1, c, d, e, f)+1
+  end
+
+  -- Compile recursive function.
+  assert(rec(42, 200, 1, 2, 3, 43) == 207)
+
+  local function trec()
+    return rec(42, 0, 1, 2, 3, 43)
+7)
+  end
+
+  -- Shrink stack.
+  for j=1,10 do collectgarbage() end
+
+  -- Cause aFUNCF.
+  -- Needs to load RD with nres+1 and not with the bytecode RD.
+  assert(trec() == 7)
+end

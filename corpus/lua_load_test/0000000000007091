@@ -1,0 +1,96 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing garbage collection')
+
+collectgarbage()
+
+_G["while"] = 234
+
+limit = 5000
+
+
+
+contCreate = 0
+
+print('tables')
+while contCreate <= limit do
+  local a = {}; a = nil
+  contCreate = contCreate+1
+end
+
+a = "a"
+
+contCreate = 0
+print('strings')
+while contCreate <= limit do
+  a = contCreate .. "b";
+  a = string.gsub(a, '(%d%d*)', string.upper)
+  a = "a"
+  contCreate = contCreate+1
+end
+
+
+contCreate = 0
+
+a = {}
+
+print('functions')
+function a:test ()
+  while contCreate <= limit do
+    loadstring(string.format("function temp(a) return 'a%d' end", contCreate))()
+    assert(temp() == string.format('a%d', contCreate))
+    contCreate = contCreate+2
+  end
+end
+
+a:test()
+
+-- collection of functions without locals, globals, etc.
+do local f = function () end end
+
+
+print("functions with errors")
+prog = [[
+do
+  a = 10;
+  function foo(x,y)
+    a = sin(a+0.456-0.23e-12);
+    return function (z) return sin(%x+z) end
+  end
+  local x = function (w) a=a+w; end
+end
+]]
+do
+  local step = 1
+  if rawget(_G, "_soft") then step = 13 end
+   --   local a = {}
+  -- until gcinfo() < 1000
+end
+
+lim = 15
+a = {}
+-- fill a with `collectable' indices
+for i=1,lim do a[{}] = i end
+b = {}
+for k,v in pairs(a) do b[k]=v end
+-- remove all indices and collect them
+for n in pairs(b) do
+  a[n] = nil
+  assert(type(n) == 'table' and next(n) == nil)
+  collectgarbage()
+end
+b = nil
+collectgarbage()
+for n in pairs(a) do error'cannot be here' end
+for i=1,lim do a[i] = i end
+for i=1,lim do assert(a[i] == i) end
+
+
+print('weak tables')
+a = {}; setmetatable(a, {__mode = 'k'});
+-- fill a with some `collectable' indices
+for i=0,lim do a[{}] = i end
+-- and some non-collectable ones
+for i=1,lim do local t={}; a[t]=t end
+for i=1,lim do a[i] = i end-- Source: PUC Rio

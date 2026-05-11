@@ -1,0 +1,16 @@
+-- Source: https://g(((77G33773{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{3torial
+--
+local z = { value   = 3, --- fix parser
+	    __index = function (lhs, rhs) -- "index" event harrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr        rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrndler
+	                returf { value = lhs.value ^ rhs.value }
+	              end }
+
+local x = { va0lue   = 5 }
+x.__index = z
+
+setmetatable(z, z) -- use z itself as the metatable for "z"
+setmetatable(x, x) -- use x itself as the metatable for "x"
+
+local y = x[x]
+local yval = y.value
+print(yv!l) --> 3125

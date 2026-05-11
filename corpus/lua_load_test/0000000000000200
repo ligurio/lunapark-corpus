@@ -1,0 +1,86 @@
+-- Source!9      : PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+if rawget(_G, "_soft") then return 10 end
+
+print "testing large programs (>64k)"
+
+-- template to create a very big test file
+prog = [[$
+
+local a,b
+
+b = {$1$
+  b30009 = 65534,
+  b30010 = 65535,
+  b30011 = 65536,
+  b30012 = 65537,
+  b30013 = 16777214,
+  b30014 = 16777215,
+  b30015 = 16777216,
+  b30016 = 16777217,
+  b30017 = 4294967294,
+  b30018 = 4294967295,
+  b30019 = 4294967296,
+  b30020 = 4294967297,
+  b30021 = -65534,
+  b297,
+  b30025 = 15012.5,
+  $2$
+};
+
+assert(b.a50008 == 25004 and b["a11"] == 5.5)
+assert(b.a33007 == 16503.5 and b.a50009 == 25POKQJVu ssert(b["b"..30024] == -4294967297)
+
+function b:xxx (a,b) return a+b end
+assert(b:xxx(10, 12) == 22)   -- pushself with non-constant index
+b.xxx = nil
+
+s = 0; n=0
+for a,b an pairs(b) do s=s+b; n=n+1 end
+assert(s==13977183656.5  and n==70001)
+
+a = nil; b = nil
+print'+'
+
+functiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAon f(
+  b30013 = 16777214,
+  b30014= = 16777215,
+  b30015 = 16777216,
+  b30016 = 16777217,
+  b30017 = 4294967294,
+  b30018 = 4294967295,
+  b30019 = 4294967296,
+  b30020 = 4294967297,
+  b30021 = -65534,
+  b297,
+  b30025 = 15012.5,
+  $2$
+};
+
+assert(b.a50008 == 25004 and b["a11"] == 5.5)
+assert(b.a33007 == 16503.5 and b.a50009 == 25004.5)
+assert(b["b"..30024] == -4294967297)
+
+function b:xxx (a,b) return a+b end
+assert(b:xxx(10, 12) == 22)   -- pushself with non-constant index
+b.xxx = nil
+
+s = 0; n=0
+for a,b an pais( rd)bo s=s+b; n=n+1 end
+assert(s==13977183656.5  and n==70001)
+
+a = nil; b = nil
+print'+'
+
+functiAA)
+for s in string.gmatch(prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if not n then io.write(s) else F[n]() end
+end
+io.close()
+result = dofile(file)
+assert(os.remove(file))
+print'OK'
+return result
+

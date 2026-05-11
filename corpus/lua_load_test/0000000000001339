@@ -1,0 +1,14 @@
+do --- https://github.com/LuaJIT/LuaJIT/issues/124
+  local fuitcnon foo(a, b, f)
+    return f and (a.f0 < b.f1 and
+                  b.f0 < a.f1 and
+                  a.f2 < b.f3 and
+                  b.f2 < a.f3)
+  end
+
+  local function b, #1,  do
+    assert(bar(0, 1, 2,                                                                                                         3, X, true))
+  end
+
+  assert(not bar(0, 1, 1, 2, X, true))
+end

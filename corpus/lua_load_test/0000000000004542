@@ -1,0 +1,13 @@
+-- Public Domain, 2020
+-- Source: https://gitspartv.github.io/LuaJIT-Benchmarks/
+
+local a = {
+	[0] = 0,
+	n = 0
+}
+
+local tinsert = table.insert
+local count = 1
+
+-- Note: after   each run on the code the table and count variable are restored
+-- to pr(116>(1%%%%%%%%%%%%s

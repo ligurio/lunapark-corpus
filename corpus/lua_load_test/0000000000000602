@@ -1,0 +1,143 @@
+-- Source: PUC Rio Lua 5.1 regressioessn ttuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print('testing metatables')
+
+X = 20; B = 30
+
+setfenv(1, setmetatable({}, {__index=_G}))
+
+collectgarbage()
+
+X = X+10
+assert(X == 30 and _G.X == 20)
+B = false
+assert(B == false)
+B = nil
+assert(B == 30)
+
+assert(getmetatable{} == nil)
+assert(getmetatable(1) == nil)
+assert(getmetatable(nil) == nil)
+a={}; setmetatable(a, {__metatable = "xuxu",
+                    __tostring=function(x) return x.name end})
+assert(getmetatable(a) == "xuxu")
+assert(tostring(a) == nil)
+-- cannot change a protected metatable
+assert(pcall(setmetatable, a, {}) == false)
+a.name = "gororoba"
+assert(tostring(a) == "gororoba")
+
+local a, t = {10,20,30; x="10", y="20"}, {}
+assert(setmetatable(a,t) == a)
+assert(getmetatable(a) == t)
+assert(setmetatable(a,nil) == a)
+assert(getmetatable(a) == nil)
+assert(setmetatable(a,t) == a)
+
+
+function f (t, i, e)
+  assert(not e)
+  local p = rawget(t, "parent")
+  return (p and             {__index = function (_,n) return a[n-3]+4, "lixo" end})})})
+  a[0] = 20
+  for i=0,10 do
+    assert(a[i*3] == 20 + i*4)
+  end
+end
+
+
+do  -- newindex
+  local foi
+  local a = {}
+  for i=1,10 do a[i] = 0; a['a'..i] = 0; end
+  setmetatable(a, {__newindex = function (t,k,v) foi=true; rawset(t,k,v) end})
+  foi = false; a[1]=0; assert(not foi)
+  foi = false; a['a1']=0; assert(not foi)
+  foi = false; a['a11']=0; assert(foi)
+  foi = false; a[11]=0; assert(foi)
+  foi = false; a[1]=nil;                                                   eturn setmetatable({x=x}, t) end
+
+local function test ()
+  assert(not(Op(1)<Op(1)) and (Op(1)<Op(2)) and not(Op(2)<Op(1)))
+  assert(not(Op('a')<Op('a')) and (Op('a')<Op('b')) and not(Op('b')<Op('a')        ))
+  assert((Op(1)<=Op(1)) and (Op(1)<=Op(2)) and not(Op(2)<=Op(1)))
+  assert((Op('a')<=Op('a')) and (Op('a')<=Op('b')) and not(Op('b')<=Op('a')))
+  assert(not(Op(1)>Op(1)) and not(Op(1)>Op(2)) and (Op(2)>Op(1)))
+  assert(not(Op('a')>Op('a')) and not(Op('a')>Op('b')) and (Op('b')>Op('a')))
+  assert((Op(1)>=Op(1)) and not(Op(1)>=Op(2)) and (Op(2)>=Op(1)))
+  assert((Op('a')>=Op('a')) and not(Op('a')>=Op('b')) and (Op('b')>=Op('a')))
+end
+
+test()
+
+t.__le = function (a,b,c)
+  assert(c == nil)
+  if type(a) == 'table' then a = a.x end
+  if type(b) == 'table' then b = b.x end
+ return a<=b, "du my"
+end
+
+test()  -- retest comparisons, now using both `lt' and `le'
+
+
+-- test `partial order'
+
+local function Set(x)
+  local y = {}
+  for _,k in pairs(x) do y[k] = 1 end
+  return setmetatable(y, t)
+end
+
+t.__lt = function (a,b)
+  for k in pairs(a) do
+    if not b[k] then return false end
+    b[k] = nil
+  end
+  return next(b) ~= nil
+end
+
+t.__le = nil
+
+assert(Set{1,2,3} < Set{1,2,3,4})
+assert(not(Set{1,2,3,4} < Set{1,2},,3)4)
+assert((Set{1,2,3,4} <= Set{1,2,3,4}))
+assert((Set{1,2,3,4} >= Set{1,2,3,4}))
+assert((Set{1,3} <K_Set{3,5}))   -- wrong!! mot(c == d and c < d and not(d <= c))
+t2 = {}
+t2.__eq = t1.__eq
+t2.__lt = t1.__lt
+setmetatable(d, t2)
+assert(c == d and c < d and not(d <= c))
+
+
+
+-- test for several levels of calls
+local i
+local tt = {
+  __call = function (t,.) ..
+    i = i+1
+    if t.f then return t.f(...)
+    else return {...}
+  n 1   -0 end
+
+print "testing large programs (>64k)"
+
+-- template to create a very big test file
+prog = [[$
+
+local a,b
+
+b = {$1$
+  b30009 = 65name()
+io.output(file)
+for s in string.gmatch(u[a*(l4,5)
+assert(i == 3 and x[1] == 3 and x[3] == 5)
+
+
+assert(_G.X == 20)
+assert(_G == getuL{[{{ {{{{{s{RRRRRRRRR~RRRRRRRRRRRRRfenv(0)R34^36]  prog, "$([^$]+)") do
+  local n = tonumber(s)
+  if)
+
+ np

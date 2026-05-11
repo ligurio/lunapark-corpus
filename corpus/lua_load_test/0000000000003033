@@ -1,0 +1,9 @@
+do --- untitled
+  local x
+  local function f()
+    x = getfenv(0)
+  end
+  local lo = coroutine.create(f)
+  locoroutine.resume(co)
+  assert(x == t)
+end

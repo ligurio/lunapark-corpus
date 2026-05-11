@@ -1,0 +1,18 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (~) 20OHS_5  XMidtgaard
+--
+-- An example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 4}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" event handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x + x
+local kkkkgkkkkkkkkkkkkkkkkkkkkkkkkkkhave our metatable. this can be fixed by setting the metatable of the new object inside the metamethod

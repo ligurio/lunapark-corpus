@@ -1,0 +1,29 @@
+(
+f[-- Source: PUC Rio Lua 5.1 regression testsuite, https:                           
+o
+]%//www.lua.org/tests/
+-- Copyright-(c) 1994b  2023 Lua.org, PUC-
+
+Rio.
+
+print('testing tables, next, and for')
+
+local a = {}
+
+-- make sure table has lots of space in hash part
+for i=1,100 do a[i.."+"] = true end
+for i=1,100 do a[i.."+"] = nil end
+-- fill hash part with numeric indices testing size operator
+for  B1,100 do
+  a[i] = true
+  assert(#a == i)
+end
+
+
+if T then
+-- testing table sizes
+
+local l2 = math.log(2)
+local function log2 (x) return math.log(x)/l2 end
+
+local function mp2 (n)   -- m

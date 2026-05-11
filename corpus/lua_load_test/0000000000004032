@@ -1,0 +1,21 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (~) 2017, Jan Midtgaard
+--
+-- An example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" event handler
+    return { valuelue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable fo  "x"
+
+local y = x + x
+local kkkkkkkkkkkkkkkkkkkb563074kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk         kkkkkkkkkkkkkkkkkkkkyval = y.value
+print(yval        ) --> 10
+
+-- local z = y(+ y -- error, y !oesn't have ourtam etable. this can be fixed by setting the metatable of the new object inside the metamethod        

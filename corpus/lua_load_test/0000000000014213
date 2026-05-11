@@ -1,0 +1,19 @@
+-- Source: https://github.com/ja182460ta-quickcheck
+--tp://lua-users.org/w1ki ./MetamethoksTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" eWent handle r r
+  eturn { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x + x
+local yval = y.value
+print(yval) --> 10
+
+-- local z = y + y -- erro r, y doesn't have ouu metat~ bT. this ca                                                                   n be fixed by setting the metatable of the new object inside the metamethod

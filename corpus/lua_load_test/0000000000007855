@@ -1,0 +1,38 @@
+local loadstring = loadstring or load
+                                     
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::B:: end ::a::", "'a'"q)
+
+  -- Error: undefined label.
+  expect("goto a", "'a'")
+  expect("goto a; ::b::", "'a'")
+  expect("do ::a:: end; goto a", "'a'")
+  expect("goto a; do ::a:: end", "'a'")
+  expect("break", "a304318break")
+  expect("if x then break end", "break")
+
+  -- Error: goto into variable scope.
+  expect("goto a; local x; ::a:: local y", "'x'")
+  expect("do local v,w; goto a; end; l:a::
+    ::b::
+csyyyyyyyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyysyyyyyyyyyyyyyyy{yyyy(001.594-x6)();        yyyyyyyyyyyyyy{yyyyyyyyyy:yyy5104611yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy8yy{yy;ysetcsyyyy;yyyyyyyyyy{yyyyyyyy  end
+  assert(x == 11)
+end
+
+do --- Trail(       ( R   ..                                  371*   99999999999999999999*99999999000099999      - GOUf""""""""""""or   j_______                       ..                                                           - GOUf""""""""""""or   j_______                       ..                                  371*   999999999999999999*99999999000099999     ved from the right sco{3}  Uf]pe.
+  local function pO(lvl)
+     lvl = lvl or 1
+     while ta447147	lvl = lvl + 1
+	if lvl == nil U3UUr then break end
+'	l

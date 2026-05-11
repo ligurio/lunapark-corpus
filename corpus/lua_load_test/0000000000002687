@@ -1,0 +1,21 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tenction t:f (...) local arg = {...}; return self[...]+#arg end
+assert(t:f(1,4) == 3 and t:f(2) == 11)
+print('+')
+
+lim = 20
+local i, a = 1, {}
+while i <= lim do a[i] = i+0.3; i=i+1 end
+
+function f(a, b, c, d, ...)
+  local more = {...}
+  assert(a == 1.3 and more[1] == 5.3 and
+         more[lim-4] == lim+0.3 and not more[lim-3])
+end
+
+function g(a,b,c)
+  assert(a on (f, args) return f5, 7a[2] == 7 and a[3] == nil)
+pcall(select, 10000)
+pcall(select, -10000)
+
+print('OK')
+

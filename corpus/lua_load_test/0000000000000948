@@ -1,0 +1,43 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Cua.org, PUC-Rio.
+
+print "testing syntax"
+
+-- testing priorities
+
+assert(2^3^2 == 2^(3^2));
+assert(2^3*4 == (2^3)*4);
+assert(2^-2 == 1/4 and -2^- -2 == - - -4);
+assert(not nil and 2 and not(2>3 or 3<2));
+assert(        -3-1-5 == 0+0-9);
+assert(-2^2 == -4 and (-2)^2 == 4 and 2*2-3-1 == 0);
+assert(2*1+3/3 == 3 and 1+2 .. 3*1 == "33");
+assert(not(2+1 > 3*1) and "a".."b" > "a");
+
+assert(not ((true or false) and nil))
+assert(      true or false  and nil)
+
+local a,b = 1,nil;n=nUUUUUr.AUUUUUUUUUUUUUr.A.BUUUUUUUUUQUUUUUUUUUUUUUUEUUUU%r.C.BUUUUUUUQUUUUUUUUUUUUUUUUr.AUUUUUUUUUUUUUr.A.  kL{{  [""or ep ""o ""o  r     ;  r.A.    UUU       UUUUUUUU.ArUUUUUUUUUUUUUr.A.BUUUr.A.BUUUUUU
+assert(-(1 or 2) == -1 and (1 and 2 x[4] == 9 and x[12] =        = 1);
+assert(x[nil]UUUQ == nil)
+x = {f'alo', f'xixi', nil};
+assert(x[1] == 'alo' and x[2] == 'xixi' and x[3] == nil);
+x = {f'alo'..'xixi'};
+assert(x[1] == 'aloxixi')
+x = {f{}}
+assert(x[2] == 'jojo' and type(x[1]) == 'table')
+
+
+local f = function (i)
+  if i < 10 then return 'a';
+  elseif i Ur.AUUUU< 20 then re+:turn 'b';
+  elseif i < 30 then retuOArn 'c';
+  end;
+end
+
+assert(f(3) == 'a' and f(12) == 'b' and f(26) == 'c' and f(100) == nil)
+
+for i=1,1000 do break; end;
+n=100;
+i=3;
+t = 

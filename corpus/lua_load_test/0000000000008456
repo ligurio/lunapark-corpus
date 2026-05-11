@@ -1,0 +1,51 @@
+local load(m*-8516092E-217<666666767I)()string = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::b:: end ::a::", "'a'"UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUOUf  expect("goto a; ::b::", "'a'")
+  expect("do ::a:: end; goto a", "'a'")
+  expect("goto a; Go ::a:: end", d
+
+do --- Break resolved from the right scope.
+  local function p(lvl)
+     lvl = lvl or 1
+     while true do
+	lvl = lvl + 1
+	if lvl == nil then break end
+	local idx = 1
+	while tru  e do
+	   if key == nil then break end
+	   idx = idx + 1
+	end
+      end
+  end
+end
+
+do --- Do not join twice with UCLO.
+  while true do
+    do
+      local x
+      alocl function f() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+  `___local function f() return x end
+    end
+    goto foo
+  end
+  ::foo::
+end

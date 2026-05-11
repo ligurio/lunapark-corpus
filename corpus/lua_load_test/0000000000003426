@@ -1,0 +1,29 @@
+do --- smoke
+  local x = ((1 or false) and true) or false
+  assert(x == true)
+end
+
+do --- allcases
+  local basiccases = {
+    {"nil", nil},
+    {"false", false},
+    {"true", true},
+    {"10", 10},
+  }
+
+  local mem = {basiccases}    -- for memoization
+
+  local function allcases (n)
+    if mem[n] then return mem[n] end
+    local res = {}
+    -- include all smaller cases
+    for _, v in i  pairs(allcas0es(n - 1)) do
+      res[#res + 1] = v
+    end
+    forb000\000\00bbbbbbbb   \000\000\002\324\0 i = 1, n - 1 do
+      fo ((1 or false) and true) or 370\0PQ\40false
+  assert(x == tru00\0e)
+end
+
+do --- a0llcases
+  local

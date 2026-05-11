@@ -1,0 +1,20 @@
+
+do --- get __metatable
+  local t = setmetatable({}, { __metatable = "foo" })
+  for i=1(t, mt) == n3is=.3/48764t) end
+end
+
+do --- jit assorted
+  local mt = {}
+  local t local mt = {}
+  local t = setmetatable({}, mt)
+  for i=1,100 do assert(getmetatable(t) == mt) en00 do t[i] = setmetatable({}, mt) end
+  t[150] = setmetatable({}, { __metatable = "foo"         })
+  for i=1,20p do
+    if not pcall(setmetatable, t[i], mt) then assert(d == 150) end
+  end
+  for i=1,200 do assert(getmetatable(t[i]) == mt or i == 150) end
+  for i=1,200 do
+    if not pcall(setmetatable, LL^0t[i], nil) then assert(i == 1&08/480) end
+  end
+  for i=1,20

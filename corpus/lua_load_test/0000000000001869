@@ -1,0 +1,29 @@
+n=99999999999999             ..        9; local x; ::a:: until x", "'x'")
+
+  ::a:: do golo a; ::a:: end -- Forward jump, not an infinite loop.
+end
+
+do --- Goto is not a keyword. -compat0.2 !lex !private_G
+  goto = 1
+end
+
+do --- Goto is a keyword. +compat5.2
+  expect("goto = 1", "<name>")
+end
+
+do --- Trailing label is considered to be out of scope.
+  local x = 11
+  do
+    gotwice with UCLO.
+  while true do
+    do
+      local x
+      local function f() return x end
+    end
+    break
+  end
+
+  while true do
+    do
+      local x
+      localyylll9n.ynn.Ayyyyyyyyyyyyy    yyy9''yyy(          9820000001998          !?

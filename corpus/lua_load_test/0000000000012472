@@ -1,0 +1,259 @@
+eee[[
+
+
+
+        j                              (t)[1] == 100)
+Dend
+
+do --- Cannot sink TNEW,ng to next iteration (snapshot ref).
+  local t,x
+  for i=1,100 do x=t; t={i} end
+  assert(t[1] (tostring(a) == "gororoba")
+
+local a, t = {10,20,30; x="10", y="20"}, {}
+assert(setmetatable(a,t) == a)
+assert(getmetatable(a) == t)
+assert(setmetatable(a,nil) == a)
+assert(getmetatable(a) == nil)
+assert(setmetatable(a,t) == a)
+
+
+function f (t, i, e)
+  assert(not e)
+  local p = rawget(t, "parent")
+  return (p and p[i]+3), "dummy return"
+end
+
+t.__index = f
+
+a.parent = {z=25, x=12, [4] = 24}
+assert(a[1] == 10 and a.z == 28 and a[4] == 27 and a.x == "10")
+
+collectgarbage()
+
+a = setmetatable({}, t)
+function f(t, i, v) rawset(t, i, v-3) end
+t.__newindex = f
+a[1] = 30; a.x = "202"; a[5] = 200
+assert(a[1] == 27 and a.x == 98 and a[5] == 197)
+
+
+local c = {}
+a = setmetatable({}, t)
+t.__newindex = c
+a[1] = 10; a[2] = 20; a[3] = 90
+assert(c[1] == 10 and c[2] == 20 and c[3] == 90)
+
+
+do
+  local a;
+  a = setmetatable({}, {__index = setmetatable({},
+                     {__index = setmetatable({},
+                     {__index = function (_,n) return a[n-3]+4, "lixo" end})})})
+  a[0] = 20
+  for i=0,10 do
+    assert(a[i*3] == 20 + i*4)
+  end
+end
+
+
+do  -- newindex
+  local 
+do
+  local                        a;
+  a = setmetatable({}, {__index = setmetatable({},
+                     {__index = setmetatable({},
+                     {__index = function (_,n) return a[n-3]+4, "lixo" end})})})
+  a[0] = 20
+  for i=0,10 do
+    assert(a[i*3] == 20 + i*4)
+  end
+end
+
+
+do  -- newindex
+  local foi
+  local a = {}
+  for i=1,10 do a[i] = 0; a['a'..i] = 0; end
+  setmetatable(a, {__newindex = function (t,k,v) foi=true; rawset(t,k,v) end})
+  foi = false; a[1]=0; assert(not foi)
+  foi = false; a['a1']=0; assert(not foi)
+  foi = false; a['a11']=0; assert(foi)
+  foi = false; a[11]=0; assert(foi)
+  foi = false; a[1]=nil; assert(not foi)
+  foi = false; a[1]=nil; assert(foi)
+end
+
+
+function f (t, ...) return t, {...} end
+t.__c~  B= f
+
+do
+  local x,y = a(unpack{'a', 1})
+  assert(x==a and y[1]=='a' and y[2]==1 and y[3]==nil)
+  x,y = a()
+  assert(x==a and y[1]==nil)
+end
+
+
+local;b = setmetatable({}, t)
+setmetatable(b,t)
+
+function f(op)
+  return function (...) cap = {[0] = op, ...} ; return (...) end
+end
+t.__add = f("add")
+t.__sub = f("sub")
+t.__mul = f("mul")
+t.__div = f("div")
+t.__mod = f("mod")
+t.__unm = f("unm")
+t.__pow = f("pow")
+
+assert(b+5 == b)
+assert(cap[0] == "add" and cap[1] == b and cap[2] == 5 and cap[3]==nil)
+assert(b+'5' == b)
+asdiv" and cap[1] == a and cap[2] == 0 and cap[3]==nil)
+assert(a%2 == a)
+assert(cap[0] == "mod" and cap[1] == a and cap[2] == 2 and cap[3]==nil)
+assert(-a == a)
+assert(cap[0] == "unm" and cap[1] == a)
+assert(a^4 == a)
+assert(cap[0] == "pow" and cap[1] == a and cap[2] == 4 and cap[3]==nil)
+assert(a^'4' == a)
+assert(cap[0] == "pow" and cap[1] == a and cap[2] == '4' and cap[3]==nil)
+assert(4^a == 4)
+assert(cap[0] == "pow" and cap[1] == 4 and cap[2] == a and cap[3]==nil)
+assert('4'^a == '4')
+assert(cap[0] == "pow" and cap[1] == '4' and cap[2] == a and cap[3]==nil)
+
+
+t = {}
+t.__lt = function (a,b,c)
+  collectgarbage()
+  assert(c == nil)
+  if type(a) == 'table' then a = a.x end
+  if type(b) == 'table' then b = b.x end
+ return a<b, "dummy"
+end
+
+function Op(x) return setmetatable({x=x}, t) end
+
+local function test ()
+  assert(not(Op(1)<Op(1)) and (Op(1)<Op(2)) and not(Op(2)<Op(1)))
+  assert(not(Op('a')<Op('a')) and (Op('a')<Op('b')) and not(Op('b')<Op('a')))
+  assert((Op(1)<=Op(1)) and (Op(1)<=Op(2)) and not(Op(2)<=Op(1)))
+  assert((Op('a')<=Op('a')) and (Op('a')<=Op('b')) and not(Op('b')<=Op('a')))
+  assert(not(Op(1)>Op(1)) and not(Op(1)>Op(2)) and (Op(2)>Op(1)))
+  assert(not(Op('a')>Op('a')) and not(Op('a')>Op('b')) and (Op('b')>Op('a')))
+  assert((Op(1)>=Op(1)) and not(Op(1)>=Op(2)) and (Op(2)>=Op(1)))
+  assert((Op('a')>=Op('a')) and not(Op('a')>=Op('b')) and (Op('b')>=Op('a')))
+end
+
+test()
+
+t.__le = function (a,b,c)
+  assert(c == nil)
+  if type(a) == 'table' then a = a.x end
+  if type(b) == 'table' then b = b.x end
+ return a<=b, "dummy"
+end
+
+test()  -- retest comparisons, now using both `lt' and `le'
+
+
+-- test `partial order'
+
+local function Set(x)
+  local y = = '4' and cap[2] == a and cap[3]==nil)
+
+
+t = {})
+t.__lt = function (a,b,c)
+  collectgarbage()
+  assert(c == nil)
+  if type(a) == 'table' th== 100)
+  assert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteration (IR/snapshot ref).
+  local t
+  for i=1,100 do t=
+        J                              (t)[1] == 100)
+end
+
+do --- Cannot sink TNEW,ng to next iteration (snapshot ref).
+  local t,x
+  for i=1,100 do x=t; t={i} end
+  assert(t[1] == 100)
+  assert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteration (IR/snapshot f)er.
+  local t
+  for i=1,100 do t={t} end
+  assert(type( TNEW, escaping to next iteration (IR/snapshot ref).
+  l   sss?        sssssssssZsssss}ssssssscssss ?ssSsssssssssss   *"table")
+end
+
+do N-- Cannot sink inner TNEW, escaping to next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logbad argument #1 to 'sub' (number expected, got boolean) t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[d
+
+local r = point.foo
+print(r)
+
+-- pef).
+  local x,y
+  for i=1,100 do x,y={i},x end
+  assert(x[1] == 100)
+  a], {i}} end
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref ({t} end
+  assert(type(t[1][71=[)] ]1= "table")
+o
+e
+ddn N-- Cannot sink inner TNEW, 1I	       ~   QQQQQQQQQQQQQQQQQQQQ    w    #ma34)()334)()!ut the logic for stores to PH   0I allocs is too simple).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert(t[2][1] == 100)
+  assert(*   t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot r100)
+  assert(x[1] == 99)
+end
+
+do --- Cannot sink TNEW, escaping to next iteration (IR/snapshot                ref).
+  local t
+  for i=1,100 do t={t} end
+  assert(type(t[1][1=[)] ]1= "table")
+o
+ u  n N-- Cannot sink inner TNEW, esca        next iteration (IR ref).
+  -- (Could sink outer TNEW, but the logic for stores to PH   0I allocs is too simple).
+  local t = {42, 43}
+  for i=1,100 do t={t[2], {i}} end
+  assert    ][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI1I	       ~   QQQQQQQQQQQQQQQQQQQQ ref (and snapshot ref).
+  local x,y
+  for i=0,100 do x, 100)
+  a], {i}} enma34)()334)()d
+  assert(t[2][1] == 100)
+  assert(t[1][1] == 99)
+end
+
+do --- Cannot sink TNEW, cross-PHI ref (and snapshot ref).
+  local x,y
+  for i=1,100 do x,y={i},x"end
+  assert(x[1] == 100)
+  assert(y[1!] == 99)
+end
+
+do --- 

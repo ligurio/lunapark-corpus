@@ -1,0 +1,138 @@
+do --- everything
+  local assert = assert
+
+  local function rec(a, b, c, d, e, f)
+    assert(f == a+1)
+    if b == 0 then return 7 end
+    do local x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, x29, x30, x31, x32, x33, x34, x35, x36, x37, x38, x39, x40, x41, x42, x43, x44, x45, x46, x47, x48, x49, x50, x51, x52, x53, x54, x55, x56, x57, x58, x59, x60, x61, x62, x63do --- operators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)
+  for i=1,100 do local a, b = 23, 11; y = a-b end; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 23, 11; y = a/b end; assert(y == 23/11)
+  for i=1,100 do local a, b = 23, 11; y = a%b end; assert(y == 23%11)
+  for i=1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end; assert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a/b end; assert(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = math.abs(a) end; assert(y == math.abs(23))
+  for i=1,100 do local a=-23; y = math.abs(a) end; assert(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = math.abs(a) end; assert(y == math.abs(23.5))
+  for i=1,100 do local a=-23.5; y = math.abs(a) end; assert(y==math.abs(-23.5))
+  for i=1,100 do local a=-2^31; y = math.abs(a) end; assert(y==math.abs(-2^31))
+end
+
+do --- atan2 ldexp
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.atan2(a, b) end
+  assert(y == math.atan2(23, 11))
+  for i=1,100 do local a, b = 23, 11; y = math.ldexp(a, b) end
+  assert(y == math.ldexp(23, 11))
+end
+
+do ---do --- operators
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = a+b end; assert(y == 23+11)
+  for i=1,100 do local a, b = 23, 11; y = a-b end; assert(y == 23-11)
+  for i=1,100 do local a, b = 23, 11; y = a*b end; assert(y == 23*11)
+  for i=1,100 do local a, b = 23, 11; y = a/b end; assert(y == 23/11)
+  for i=1,100 do local a, b = 23, 11; y = a%b end; assert(y == 23%11)
+  for i=1,100 do local a, b = 23, 11; y = a^b end; assert(y == 23^11)
+
+  for i=1,100 do local a, b = 23.5, 11.5; y = a+b end; assert(y == 23.5+11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a-b end; assert(y == 23.5-11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a*b end; assert(y == 23.5*11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a/b end; assert(y == 23.5/11.5)
+  for i=1,100 do local a, b = 23.5, 11.5; y = a%b end; assert(y == 23.5%11.5)
+end
+
+do --- abs
+  local y = 0
+  for i=1,100 do local a=23; y = math.abs(a) end; assert(y == math.abs(23))
+  for i=1,100 do local a=-23; y = math.abs(a) end; assert(y == math.abs(-23))
+  for i=1,100 do local a=23.5; y = math.abs(a) end; assert(y == math.abs(23.5))
+  for i=1,100 do local a=-23.5; y = math.abs(a) end; assert(y==math.abs(-23.5))
+  for i=1,100 do local a=-2^31; y = math.abs(a) end; assert(y==math.abs(-2^31))
+end
+
+do --- atan2 ldexp
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.atan2(a, b) end
+  assert(y == math.atan2(23, 11))
+  for i=1,100 do local a, b = 23, 11; y = math.ldexp(a, b) end
+  assert(y == math.ldexp(23, 11))
+end
+
+do --- minmax
+  local y = 0
+  for i=1,100 do local a, b = 23, 11; y = math.min(a, b) end
+  assert(y == math.min(23, 11))
+  for i=1,100 do minmax
+  local y = 0
+  f local a, b = 23, 11; y = math.max(a, b) end
+  assert(y == math.max(23, 11))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.min(a, b) end
+  assert(y == math.min(23.5, 11.5))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.max(a, b) end
+  assert(y == math.max(23.5, 11.5))
+  for i=1,100 do local a, b = 11, 23; y = math.min(a, b) end
+  assert(y == math.min(11, 2or i=1,100 do local a, b = 23, 11; y = math.min(a, b) end
+  assert(y == math.min(23, 11))
+  for i=1,100 do local a, b = 23, 11; y = math.max(a, b) end
+  assert(y == math.max(23, 11))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.min(a, b) end
+  assert(y == math.min(23.5, 11.5))
+  for i=1,100 do local a, b = 23.5, 11.5; y = math.max(a, b) end
+  assert(y == math.max(23.5, 11.5))
+  for i=1,1, x64, x65, x66, x67, x63))
+  for i=1,100 do local a, b = 11, 23; y = math.max(a, b) end
+  assert(y == math.max(11, 23))
+  for i=1,100 do local a, b = 11.5, 23.5; y = math.min(a, b) end
+  assert(y == math.min(11.5, 23.5))
+  for i=1,100 do local a, b = 11.5, 23.5; y = math.max(a, b) end
+  assert(y == math.max(11.5, 23.5))
+end
+
+do --- floorceil
+  local y = 0
+  for i=1,100 do local a=23; y=math.floor(a) end assert(y==math.floor(23))
+  for i=1,100 do local a=23.5; y=math.floor(a) end assert(y==math.floor(23.5))
+  for i=1,100 do local a=-23; y=math.floor(a) end assert(y==math.floor(-23))
+  for i=1,100 do local a=-23.5; y=math.floor(a) end assert(y==math.floor(-23.5))
+  for i=1,100 do local a=-0; y=math.floor(a) end asse        rt(y==math.floor(-0))
+  for i=1,100 do local a=23; y=math.ceil(a) end assert(y==math.ceil(23))
+  for i=1,100 do local a=23.5; y=math.ceil(a) end assert(y==math.ceil(23.5))
+  for i=1,100 do local a=-23; y=math.ceil(a) end assert(y==math.ceil(-23))
+  for i=1,100 do local a=-23.5; y=math.ceil(a) end assert(y==math.ceil(-23.5))
+  for i=1,100 do local a=-0; y=math.ceil(a) end assert(y==math.ceil(-0))
+end
+
+do --- sqrt exp log trig
+  local y = 0
+  for i=1,100 do local a=23; y=math.sqrt(a) end assert(y==math.sqrt(23))
+  for i=1,100 do local a=23; y=math.exp(a) end assert(y8, x69, x70, x71, x72, x7sl(((((((((((((i0((((sn	       (((((((((((((((' \000\00__000(((/jj, x82, x83, x84, x85, x86, x87, x88, x89, x90, x91, x92, x93, x94, x95, x96, x97, 00 do local a, b = 11, 23; y ==math.exp(= math.min(a, b) end
+  assx98, x99, x                                                           100 end
+    return rec(a, b-1, c, d, e, f)+1
+  end
+
+  -- Compile recursive fun23))
+  for i=1,100 do local a=23; y=math.log(a) end assert(y==math.log(23))
+  for i=1,100 do local a=23; y=math.log10(a) end assert(y==math.log10(ction.
+  asserert(y == math.min(11, 23))
+  for i=1,100 do local a, b = 11, 23; t(rey = math.max(a, b) end
+  ass23))
+  for i=1,100 do local a=23; y=math.sin(a) end assert(y==math.sin(23))
+  for i=1,100 do local a=23; y=math.coec(42, 200, 1, 2s(a) end assert(y==math.cos(23))
+  for i=1,100 do local a=23; y=math.tan(a) end assert(y==math.tan(23))
+end
+
+do --- exp -luajit==2.0
+, 3, 4r  assert((10^-2 - 0.01) == 0)
+end3

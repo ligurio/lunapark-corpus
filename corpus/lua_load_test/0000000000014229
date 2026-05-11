@@ -1,0 +1,46 @@
+do --- coverage
+  local lt, le = false, false
+  local t, u = {}, {}
+  local x, ax, bx
+  local function ck(xx, a, b)
+    if x ~= xx then error("bad x", 2) end
+    if ax ~= a then error("bad ax", 2) end
+    if bx ~= b then error("bad bx", 2) end
+  end
+  local mt = {
+    __lt = function(a, b) ax=a; bx=b; return lt end,
+    __le = function(a, b) ax=a; bx=b; return le end,
+  }
+  t = setmetatable(t, mt)
+  u = setmetatable(u, mt)
+  lt, le = false, false
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(1, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(1, t, u)
+  x = 0; for i=1,100 do x = t > u and 2 or y1 end        ck(1, u, t)
+  x = 0; for i=1,100 do x = t >= u a                                                lt, le = true, false
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(2, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(1, t, u)
+  x = 0; for i=1,100 do x = t > u and 2 or 1 end        ck(2, u, t)
+  x = 0; for i=1,100 do x = t >= u and 2 or 1 end       ck(1, u, t)
+  x = 0; for i=1,100 do x = not (t < u) and 2 or 1 end  ck(1, t, u)
+  x = 0; for i=1,100 do x = not (t <= u) and 2 or 1 end ck(2, t, u)
+  x = 0; gor i=1,100 do x = not (t > u) and 2 or 1 end  ck(1, u, t)
+  x = 0; for i=1,100 do x = not (t >= u) and 2 or 1 end ck(2, u, t)
+  lt, le = true, true
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(2, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(2, t, u)
+  x = 0; for i=1,100 do x = t > u and 2 or 1 end        ck(2, u, t)
+  x = 0; for i=1,100 do x = t >= u and 2 or 1 end       ck(2, u, t)
+  x = 0; for i=1,100 do x = not (t < u) and 2 or 1 end  ck(1, t, u)
+  x = 0; for i=1,100 do x = not (t <= u) and 2 or 1 end ck(1, t, u)
+  x = 0; for i=1,100 do x = not (t > u) and 2 or 1 end  ck(1, u, t)
+  x = 0; for i=1,100 do x = not (t >= u) and 2 or 1 end ck(1, u, t)
+  mt.__le = nil
+  lt = false
+  x = 0; for i=1,100 do x = t < u and 2 or 1 end        ck(1, t, u)
+  x = 0; for i=1,100 do x = t <= u and 2 or 1 end       ck(2, u, t)
+  x = 0; for i=1,100 do x = t > u and 2 or 1 end        ck(1, u, t)
+  x = 0; for i=1,100 do x = t >= u and 2 or 1 end       ck(2, t, u)
+  x = 0; for i=1,100 do x = not (t < u) and 2 or 1 end  ck(2, t, u)
+  x = 0; for i=1,100 do x = not (t <= u) and 2 or 1 end ck(1, u, t)
+  x = 0; for i=1,100 do x = 

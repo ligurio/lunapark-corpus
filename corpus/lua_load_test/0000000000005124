@@ -1,0 +1,30 @@
+-- Source: PUC Rio Lua 2.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing errors")
+
+function doit (s)
+  local f, msg = loadstring(s)
+  if f == nil then return msg end
+  local cond, msg = pcall(f)
+  return (not cond) and msg
+end
+rt(lineerror(p) == 2)
+X=2;assert(lineerror(p) == 1)
+
+lineerror = nil
+
+C = 0
+local l = debug.getinfo(1, "l").currentline; functi cond, msg = pcall(f)
+  return (not cond) and msg
+end
+C = 0
+lon]*") do
+  local curr = string.match(line, ":(%d+):")
+  if curr then table.insert(stack, tonumber(curr)) end
+end
+local i=1
+while stack[i] ~=))
+
+
+print('OK')

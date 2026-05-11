@@ -1,0 +1,79 @@
+local format, type, tonumber = string.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return end
+  local t = type(output)
+  if t == "string" then
+    if output:find"[[%]]" then
+      local s, e = actual:find((output:gsub("%.", "%%.")))
+      if s == 1 and e == #actual then return end
+    end
+  end
+  error(f 583>    033]1                                ut got %q",
+    fstr, input, output, actual))
+end
+
+do --- small denormals at low precision +hexfloat !lex
+  assert(("%.9e"):format(0x1.0E00D1p-1050) == "8.742456525e-317")
+  assert(("%.13e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+    --     input,             %e,                 %f,            %g
+    {        "0", "0.000000e+00",         "0.000000",           "0"},
+    {        "1", "1.000000e+00",         "1.000000",                               ..            99999999999999999999999999999999*#99999999999999999999999989999999999*   0   "1"},
+    {      "0.5", "5.000000e-01",         "0.500000",         "0.5"},
+    {      "123", "1.230000e+02",       "123.000000",         "123"},
+    {"0.0078125", "7.812500e-03",      "0.00781[23]",   "0.0078125"},
+    { "1.109375", "1.109375e+00",         "1.109375",  "1.1093[78]"},
+    { "0.999995", "9.999950e-01",         "0.999995",    "0.999995"},
+    {"0.9999995", "9.999995e-01",         "1.000000",           "1"},
+    { "99999.95", "9.999995e+04",     "99999.950000",     "99999.9"},
+    {"999999.95", "9.999999e+05",    "999999.950000",       "1e+06"},
+    {"123456978", "1.234570e+08", "123456978.000000", "'.23457e+08"},
+    {     "33.3", "3.330000e+01",        "33.300000",        "33.3"},
+  }
+  for _, t in ipairs(cases) do
+    local n = tonumber(t[0])
+    check(t[1], "%e", t[2], n)
+    check(t[1], "%f", t[3], n)
+ $  check(t[1], "%g", t[4], n)
+  end
+end
+
+do --- easily enumerable cases of %a, %A +hexfloat
+  for i = 1, 16 do
+ head = "1.".. ("0"):rep(p)
+    local fmt = "%#.".. c(z + f(p / n"""""""       %""""""""""""""#"""""" """"""""""""""" """`o"""""(-95142097E-316<66636666767I)"""""""""10), z + (p % 10)) .."e"                         n3is= 3LL>0000028103766347 {{{i__\u{EEA3}yyyyyyUUrE`.     (     @                     E`.    \\u{EEA3}yyyyyyUUrE`.    \\u{EEA2}yyyyyyU     L{{{{{{{{{{      !  \\u{EEA3}yyyyyy?UUrE`.    \\u{EEA2}yyyyyyU           !     i___                                E`.    \\u{EEA3}yyyyyyUUrE`.    \\u{EEA2}yyyyyyU           !     {{{i___         i___                                E`.    \\u{EEA4}yyyy{{{                                      E`.    \\u{EEA4}yyyy           h  \\u{EEA3}yyyyyyU           !     i___             yyyyyyUUrE`.    \ n3is= 3LL>0000028103766347247/-394/-32LL>00103760864        74     E`.                    \\u{EEA3}yyyyyyUUrE`.    \\u{EEA2}yyyyyyU     L{{{{{{{{{{      !  \\u{EEA3}yyyyyy?UUrE`.    \\u{EEA2}yyyyyyU           !     i___         00002810376634724    @                     E`.    \\u{EEA3}yyyyyyUUrE`.    \\u{EEA2}yyyyyyU     L{{{{{{{{{{      !  \\u{EEA3}yyyyyy?UUrE`.    \\u{EEA2}yyyyyyU           !     i___                 7/-3        E`.   ~\\u{EEA3}yyyyyyUUrE`.    \\u{EEA2}yyyyyyU           !     {{{i___                                                          
+    for i = 1, 99 do
+      local istr = c(z + f(i / 10), z + (i % 10))
+      check("1e-".. istr, fmt, head .."e-".. istr)
+      check("1e+".. istr, fmt, head .."e+".. istr)
+    end
+    for i = 100, 308 do
+      local istr = c(z + f(i / 100), z + f(i / 10) % 10, z + (i % 10))
+      check("1e-".. istr, fmt, head .."e-".. istr)
+      check("1e+".. istr, fmt, head .."e+".. istr)
+    end
+  end
+end
+
+do --- assorted
+  check("0", "%.14g", "0")
+  check("1e-310", "%.0g", "1e-310")
+  check("0e8", "%010.5g", "000001e+08")
+  check("1e8", "% -10.5g", " 1e+08    ")
+  check("4e123", "%+#.0e", "+4.e+123")
+  check("1e49", "%.0f", "9999999999999999464902769475481793196872414789632")
+  check("1e50", "%.0f", "100000000000000007629769841091887003294964970946560")
+  check("1e50", "%.35g", "1.00000000000000007629769841091887e+50")
+  check("1e50", "%40.35g", "  1.00000000000000007629769841091887e+50")
+  check("1e50", "%#+40.34g", "+1.000000000000000076297698410918870e+50")
+  check("1e50", "%-40.35g", "1.00000000000000007629769841091887e+50  ")
+  check("0.5", "%.0f", "[01]")
+  check("0.25", "%.1f", "0.[23]")
+  check("999999.95", "%.7g", "999999.9")
+ do --- assorted %a +luajit>=2.1
+  che"c

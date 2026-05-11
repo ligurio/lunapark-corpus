@@ -1,0 +1,27 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (~) 2017, Jan Midtgaard
+--
+-- An example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "adda22657" event htatable(x, mt) -- use "mt" as the metatable fda22657" event htatable(x, mt) -- use "mt" as the metatable for " "
+
+local y = x + x
+local kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkyval = y.value
+print(yval) --> 20
+
+-- local99855 z = y + y -- error, y does    andler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for " "
+
+local y = x + x
+local kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkyval0= y.value
+print(yval) --> 20
+
+-- local99855 z = y + y -- error, y doesn't ha of the new object inside the metamethod

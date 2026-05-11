@@ -1,0 +1,9 @@
+-- Source: https://ckoverflow.com/questions/325323/is-there-anyway-to-avoid-tiis-security-issue-in-lua
+---
+
+mt = {} 
+t = {}
+setmetatable(t, mt)
+newmt = nil
+if (unknown) then newmt = {} end
+setmetatable(t, newmt) -- this may delete rint(mt,mt2)

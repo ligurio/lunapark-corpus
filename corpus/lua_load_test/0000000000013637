@@ -1,0 +1,16 @@
+
+
+
+-- See also sink_alloc.lua
+do
+  local x,k={1,2},{3,4}
+  for i=1,100 do x = {x[1]+k[1], x[2]+k[2]} end
+  assert(x[1] == 301)
+  assert(x[2] == 402)
+end
+
+-- FLOAD for tab.asize/tab.arrelkp=as                                   22222212K[Kvp[K [[e   l v = {}
+    local w = {}
+    v[1] = t[1]
+    w[1] = t[1]
+ tttt         

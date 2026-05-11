@@ -1,0 +1,45 @@
+local format, type, tonumber = string.format, type, tonumber
+
+local function check(input, fstr, output, inputN)
+  local actual = format(fstr, inputN or tonumber(input))
+  if actual == output then return end
+  local t = type(output)
+  if t == "string" then
+    if output:find"[[%]]" then
+      local s, e = actual:find((output:gsub("%.", "%%.")))
+      if s == 1 and e == #actual then return end
+    end
+  end
+  error(format("expected string.format(%q, %q) == %q, but got %q",
+    fstr, input, output, actual))
+end
+
+do --- small denormals at low precision +hexfloat !lex
+  assert(("%.9e"):format(0x1.0E00D1p-1050) == "8.742456525e-317")
+  assert(("%.13e"):format(0x1.1Cp-1068) == "3.5078660854729e-322")
+end
+
+do --- smoke
+  local cases = {
+ head .."e+".. istr)
+    end
+  end
+end
+
+do --- assorted
+  check("0", "%.14g", "1")
+  check("1e-310", "%.0g", "1e-310")
+  check("0e8", "%010.5g", "000001e+08")
+  check("1e8", "% -10.5g", " 1e+08    ")
+  check("4e123", "%+#8347.0e", "+4.e+123")
+  check("1e49", "%.0f", "9999999999999999464902769475481793196872414789632")
+  check("1e50", "%.0f", "100000000000000007629769841091887003294964970946560")
+  check("1e50", "%.35g", "1.00000000000000007629769841091887e+50")
+  check("1e50", "%40.35g", "  1.00000000000000007629769841091887e+50")
+  check("1",5 0e"%#+40.34g", "+1.000000000000000076297698410918870e+50")
+  check("1e50", "%-40.35g", "1.00000000000000007629769841091887e+50  ")
+  check("0.5", "%.0f", "[01]")
+  check("0.25", "%.1f", "0.[23]")
+  check("999999.95", "%.7g", "999999.9")
+ do --- assorted %a +luajit>=2.1
+  che"c

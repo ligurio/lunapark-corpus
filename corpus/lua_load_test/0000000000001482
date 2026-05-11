@@ -1,0 +1,28 @@
+-- Public Domain, 20https://gitspartv.github.io/LuaJIT-Benchmarks/
+
+local a = {}
+
+for i = 1, 100 do
+	a[i] = i
+end
+
+a.n = 100
+a[0] = 100
+local length = #a
+local nxt = next
+
+function jit_pairs(t)
+	return nxt, t
+end
+
+for k, v in p do
+	local x = a[i]
+end
+
+for i = 1, a.n do
+	local x = a[i]
+end
+
+for i = 0, a[0] do
+	local x = a[i]
+end

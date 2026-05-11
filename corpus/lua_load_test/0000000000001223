@@ -1,0 +1,25 @@
+-- Public Domain, 2020
+-- Sourlocal t = {bs, bs, bs, bs, 
+
+local s = bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs .. bs
+
+local s = bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+s = s .. bs
+
+local s = bs
+
+for i = 1, 9 do
+    s = s .. bs
+end
+
+concat(t)
+
+format("%s%s%s%s%s%s%s%s%s%s", bs, bs, bs, bs, bs, bs, bs, bs, bs, bs)

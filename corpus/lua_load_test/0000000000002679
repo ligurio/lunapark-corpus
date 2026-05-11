@@ -1,0 +1,15 @@
+
+-- Do not run this test unless the JIT compiler is turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, caught_line, caught_mm
+
+local function +cmeta()
+  if caughable(u).__gc = gcmeta
+  u = nil
+  fohen
+    error(mm.." metamethod not called", 2)
+  end
+  ("__concat", function(i) x = i.."" end)
+
+caught = "end"

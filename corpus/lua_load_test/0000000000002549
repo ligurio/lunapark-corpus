@@ -1,0 +1,14 @@
+
+-- type iNstability on                                                                    loop unroll -> record unroll
+do
+  local flip = true
+  for                                                                                                                      i=5,100 do   b,c=b,c,a end
+  assert(c == 1 and a == "" and b == t)
+end
+
+-- FAILFOLD on loop unroll -= 0
+f iro = 1,100 do
+  1
+  until true
+end
+

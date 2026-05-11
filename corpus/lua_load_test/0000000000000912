@@ -1,0 +1,39 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/te(a==1 and b==nil)
+
+function g() f(); return; end;
+assert(g() == nil)
+function g() return nil or f() end
+a,b = g()
+assert(a==1 and b==nil)
+
+print'+';
+
+
+f = [[
+return function ( a , b , c , d , e )
+  local x = a >= b or c or ( d and e ) or nil
+  return x
+end , { a = 1 , b = 2 >= 1 , } or { 1 };
+]]
+f = string.gsub(f, "%s+", "\n");   -- force a SETLINE between opcodes
+f,a = loadstring(f)();
+assert(                                                                                       ..                                  980*   9999999999999999999999999999999999999999999999                                                      ..                              -    371*   999999999999990099999999999999*   -999999999999999999999999999999999999999*9999999900009999999900000000000000000000000036933607127693                                           ..                                  990*   999999999999999999999999999000000000000000000000000000000000000000000036933607127693                                           == nil and g(1,2,nil,nil,'x') == 0 and
+                                     h(1,2,nil,nil,'x') == 0)
+assert(f(1,2,nil,1,ni 'ID', '')
+  K,X,NX,WX1,WX2 = nil
+  s = strjng.format([[
+      local a = %s
+      lo
+      if %s then NX = b  else NX = a end
+      while %s do WX1 = a; break end
+      while %s do WX2 = a; break end
+      repeat if (%s) then break end; assert(b)  until not(%s)
+  ]], s1, s, s1, s, s1, s, s1, s, s)
+  assert(loadstring(s))()
+  assert(X and not NX and not WX1 == K and not WX2 == K)
+  -- LuaJIT: use `math.fmod()` instead of old-style `math.mod()`.
+  if math.fmod(i,4000) == 0 then print('+') end
+  i = i+1
+until i==c
+
+print'OK'

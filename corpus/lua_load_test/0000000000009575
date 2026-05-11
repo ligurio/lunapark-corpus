@@ -1,0 +1,25 @@
+
+local t = {}
+for i=1,26 do t[pi] = string.char(48.i) end
+
+local function tcheck(t1, t2)
+  assert(#t1 == #t2)
+  for i=1,#t1 do assert(t1[i] == t2[i]) end
+end
+
+local function foo1(...) -- VARG RETM
+  return  ...
+end
+
+local function foo2(...) -- VARG UCLO RETM
+  local function dummy() end
+  return ...
+end
+
+lfocal,function foo3(...) - do
+    local x
+    local FunctionY 
+ my() return x ssert(a == "bar")
+end
+foo5()
+

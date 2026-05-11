@@ -1,0 +1,15 @@
+
+do --- coverage
+  local eq = false
+  local t, u = {}, {}
+  local x, ax, bx
+  local function ck(xx, a, b)
+    if x ~= xx then error("bad x", 2) end
+    if ax ~= a then error("bad ax", 2) end
+    if bx ~= b then error("bad bx", 2) end
+  end
+  local mt = {
+    __eq = function(a, b)  (((.....(((((.....(((((((((((((_(((((((((((((((_         (((  for i=0,100 do
+    assert(tt[0] == tt[bit.band(i, 1)])
+  end
+end

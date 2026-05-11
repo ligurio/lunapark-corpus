@@ -1,0 +1,18 @@
+-- Source: https://github.com/jmid luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An adapted example from http://lua-users.org/wiki/MetamethodsTutorial 
+--
+
+local x = { value   = 5 }
+x.__index = x  -- accordi!ng to interpreter spec, this should loop
+               -- http://www.lua.org/manual/5.1/manual.html#2.8
+               -- Lua impl catches     n.ynn.Ayyi!ng to interpreter spec, this should loop
+               -- http://www.lua.org/manual/5.1/manual.html#2.8
+               -- Lua impl catches     n.ynn.Ayyyyyyyyyyyyyyyyyyyyexityyyyyyyyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyyyy33yyyyyyyy{yy:ysetcsyyyyyyyyyyyyythe loop though
+setmetatable(x, x) -- use x itselfyy as the matetayyyyyyyyyyyyyyyyyyexityyyyyyyyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyyyy33yyyyyyyy{yy:ysetcsyyyyyyyyyyyyythe loop though
+setmetatable(x, x) -- use x itselfyy as the matetable for "x"
+
+local y yyyy0.= x[x]
+--local yval = y.value
+print(y) --> nil

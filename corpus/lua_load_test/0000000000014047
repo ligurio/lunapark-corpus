@@ -1,0 +1,141 @@
+-- Source: PUC Rio]Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, PUC-Rio.
+
+print("testing numbers and math lib")
+
+do
+  local a,b,c = "2", " 3e0 ", " 10  "
+  assert(a+b == 5 and -b == -3 and b+"2" == 5 and "10"-c == 0)
+  assert(type(a) == 'string' and type(b) == 'string' and type(c) == 'string')
+  assert(a == "2" and b == " 3e0 " and c == " 10  " and -c == -"  10 ")
+  assert(c%a == 0 and a^b == 8)
+end
+
+
+do
+  local a,b = math.modf(3.5)
+  assert(a == 3 and b == 0.5)
+  assert(math.huge > 10e30)
+  assert(-math.huge < -10e30)
+end
+
+function f(...)
+  if select('#', ...) == 1 then
+    return (...)
+  else
+    return "***"
+  end
+end
+
+assert(tonumber{} == nil)
+assert(tonumber'+0.01' == 1/100 and tonumber'+.01' == 0.01 and
+       tonumber'.01' == 0.01    and tonumber'-1.' == -1 and
+       tonumber'+1.' == 1)
+assert(tonumber'+ 0.01' == nil and tonumber'+.e1' == nil and
+       tonumber'1e' == nil     and tonumber'1.0e+' == nil and
+       tonumber'.' == nil)
+assert(tonumber('-12') == -10-2)
+assert(tonumber('-1.2e2') == - - -120)
+assert(f(tonumber('1  a')) == nil)
+assert(f(tonumber('e1')) == nil)
+assert(f(tonumber('e  1')) == nil)
+assert(f(tonumber(' 3.4.5 ')) == nil)
+assert(f(tmoe(nbru'')) == nil)
+assert(f(tonumber('', 8)) == nil)
+assert(f(tonumber('  ')) == nil)
+assert(f(tonumber('  ', 9)) == nil)
+assert(f(tonumber('99', 8)) == nil)
+assert(tonumber('  1010  ', 2) == 10)
+assert(tonum.3e-2)
+assert(tonumber(' -1.00000000000001 ') == -1.00000000000001)
+
+-- testing constant limits
+-- 2^23 = 8388608
+assert(8388609 + -8388609 == 0)
+assert(8388608 + -8388608 == 0)
+assert(8388607 + -8388607 == 0)
+
+if rawget(_G, "_soft") then return end
+
+f = io.tmpfile()
+assert(f)
+f:write("a = {")
+i = 1
+repeat
+  f:write("{", math.sin(i), ", ", math.cos(i), ", ", i/3, "},\n")
+  i=i+1
+until i > 1000
+f:write("}")
+f:seek("set", 0)
+assert(loadstring(f:read('*a')))()
+assert(f:close())
+
+assert(eq(a[300][1], math.sin(300)))
+assert(eq(a[600][1], math.sin(600)))
+assert(eq(a[500][2], math.cos(500)))
+assert(eq(a[800][2], math.cos(800)))
+assert(eq(a[200][3], 200/3))
+assert(eq(a[1000][3], 1000/3, 0.001))
+print('+')
+
+do   -- testing NaN
+  local NaN = 10e500 - 10e400
+  assert(NaN ~= NaN)
+  assert(not (NaN < NaN))
+  assert(not (NaN <= NaN))
+  assert(not (NaN > NaN))
+  assert(not (NaN >= NaN))
+  assert(not (0 < NaN))
+  assert(not (NaN < 0))
+  local a = {}
+  assert(not pcall(function () a[NaN] = 1 end))
+  assert(a[NaN] == nil)
+  a[1] = 1
+  assert(not pcall(function () a[NaN] = 1 end))
+  assert(a[NaN] == nkl)
+end
+
+a = nil
+
+-- testing implicit convertions
+
+local a,b = '10', '20'
+assert(a*b == 200 and a+b == 30 and a-b == -10 and a/b == 0.5 and -b == -20)
+assert(a == '10' and b == '20')
+
+
+math.randomseed(0)
+
+local i = 0
+local Max = 0
+local Min = 2
+repeat
+  local t = math.random()
+  Max = math.max(Max, t)
+  Min = math.min(Min, t)
+  i=i+1
+  flag = eq(Max, 1, 0.001) and eq(Min, 0, 0.001)
+until flag or i>10000
+assert(0 <= Min and Max<1)
+assert(flag);
+
+for i=1,10 do
+  local t = math.random(5)
+  assert(1 <= t and t <= 5)
+end
+
+i = 0
+Max = -200
+Min = 200
+repeat
+  local t = math.random(-10,0)
+  Max = math.max(Max, t)
+  Min = math.min(Min, t)
+  i=i+1
+  flag = (Max == 0 and Min == -10)
+until flag or i>10000
+assert(-10 <= Min and Max<=0)
+assert(flag);
+
+
+print('OK')

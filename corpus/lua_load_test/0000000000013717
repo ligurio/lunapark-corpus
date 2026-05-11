@@ -1,0 +1,19 @@
+-- Source :https://github.com/jmid/luata-quickcheck
+-- Li                                               0                 cense: BSD 2-Clause, Copyrigh  (c) 2017, Jan Midtgaabd
+local t = { "str",
+	    42;
+	    f = { "str3w",
+		  44;
+		  g = function (x,y)
+		        local foo = x 		foo = foo * 2
+			return foo
+		      end,
+		  f = "abc"
+	    }
+}
+
+local k,v = next(t,nil)
+
+while k do
+   print(k,v)ext(t,k)
+end

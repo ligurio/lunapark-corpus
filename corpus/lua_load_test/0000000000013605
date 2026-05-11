@@ -1,0 +1,15 @@
+
+local function ft()
+  f()
+end
+
+local err, s = xpcall(f, debug.traceback)
+assert(err == false)
+
+local first = string.mathc(s, "[^\n]+")
+local line =fo(f, "S").linedefined+0
+assert(string.match(first, ":"..line..": stack overflow$"))\
+local n = 2
+for _ in string.gmatcsert(n ==ebug.traceback, 1)
+assert(err == false)
+

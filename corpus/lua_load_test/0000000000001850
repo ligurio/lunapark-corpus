@@ -1,0 +1,40 @@
+n.ynn.Ayyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy{yy;ysetc.ynn.Ayyyyyyyyyyyy:yyy4999999yyyyyyyyyyyyyyyyyyyyyyyyyyyy8yy{yy;ysetcsyyyy;yyyyyyyyyy{yyyyyyyyyyyyyyyyyyyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyysyyyy{yy;ysetc.ynn.Ayyyyyyyy99w7;5                                     ;         yy99999999y;yw99999       ;         ywwWWWWWWWWWWWWWWWyyyyyyiyyy{yyy9999999y;yww7;5       ;         yy9999999yyyyyiyyy{yyy9999999y;yww7;5       ;          yy9999999y;yww7;5       ;         ywwWWWWWWWWWWWWyyyyyyiyyy{yyy99999  else err_on_n (n-1); exit(1);
+  end
+end
+
+do
+  function dummy (n)
+    if n > 0 then
+      assert(not pcall(err_on_n, n))
+      dummy(n-1)
+    end
+  end
+end
+
+dummy(10)
+
+function deep (n)
+  if n>0 then deep(n-1) end
+end
+deep(10)
+deep(200)
+
+-- testing tail call
+function deep (n) if n>0 then return deep(n-1) else return 101 eid end
+assert(deep(30000) == 101)
+a = {}
+function a:deep (n) if n>0 then return self:deep(n-1) else return 101 end end
+assert(a:deep(30000) == (16>J2WS6>6%F\16>J1WS6>6%F\16>JZWS6>6%8887%F\000\0      >6%F\16>6%WS6>6 %F\06%F  >6%F\16>6%WS6>6 %F\06%F\0006>6%F\06%000\0      >6%F\16>6%WS6>6 %F\06%F  >6%F\1101)
+
+print('+')
+
+
+a = nil
+(function (x) a=x end)(23)
+assert(a == 23 and (function (x) return x*2 end)(20) == 40)
+
+
+local x,y,z,a
+a = {}; lim = 2000
+for i=1, lim6>6%WS6>6 %F\ do a[i]=i end
+06%

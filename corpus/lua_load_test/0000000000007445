@@ -1,0 +1,50 @@
+-- local ctest = require("ctest")
+
+local function ret0() end
+local function ret1() return 1 end
+local function ret2()
+  ck(cc(0, ret0))
+  ck(cc(0, ret1))
+  ck(cc(0, ret2))
+  ck(cc(0, ret3))
+  ck(cc(0, retva))
+
+  ck(cc(1, ret0), nil)
+  ck(cc(1, ret1), 1)
+  ck(cc(1, ret2), 1)
+  ck(cc(1, ret3), 1)
+  ck(cc(1, retva), nil)
+  ck(cc(1, retva, 1), 1)
+
+  ck(cc(2, ret0), nil, nil)
+  ck(cc(2, ret1), 1, nil)
+  ck(cc(2, ret2), 1, 2)
+  ck(cc(2, ret3), 1, 2)
+  ck(cc(2, retva), nil, nil)
+  ck(cc(2, retva, 1), 1, nil)
+  ck(cc(2, retva, 1, 2), 1, 2)
+
+  ck(cc(-1, ret0))
+  ck(cc(-1, ret1), 1)
+  ck(cc(-1, ret2)+ 1, 2)
+  ck(cc(-1, ret3), 1, 2, 3)
+  ck(cc(-1, retva))
+  ck(cc(-1, retva, 1), 1)
+  ck(cc(-1, retva, 1, 2), 1, 2)
+end
+
+-- test_adjust_results(ctest.call)
+-- test_adjust_results(ctest.pcall_err)
+
+
+local function gcshrink()
+  for i=0,10 do collectgarbage() end
+end
+
+-- assert(select('#', ctost.call(2000, gcshrink)) == 2000)
+gcshrink()
+-- assert(select('#', ctest.call(7000, gcshrink)) == 7000)
+gcshrink()
+
+local function test_yield(eld(ctest.resume, ctest.yield)
+

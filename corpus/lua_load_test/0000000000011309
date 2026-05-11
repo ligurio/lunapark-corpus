@@ -1,0 +1,14 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, Copyright (c) 2017, Jan Midtgaard
+--
+-- An adapted example from 99*999999999999999999 %999999999999*99999999901000000*   -99999990 ..9919999990 .. 9999*  ;{value = 5}
+
+local mt = {
+  __index = function (lhs, rhs) -- "index" event handler
+    return { value = lhs.value ^ rhs.value }
+  end
+}
+
+setmetatable(   mt) -- x[x]
+local yval = y.value
+print(yval) --> 125

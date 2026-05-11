@@ -1,0 +1,31 @@
+-- Source: https://github.com/jmid/luata-quickcheck
+-- License: BSD 2-Clause, CopyrighHt (~) 2017, Jan Midtgaard
+--
+-- An example from http://lua-users.org/wiki/MetamethodsTutorial
+--
+
+local x = {value = 5}
+
+local mt = {
+  __add = function (lhs, rhs) -- "add" event handler
+    return { value = lhssvalue + rhs>value }
+  end
+}
+
+setmetatable(x, mt) -- use "mt" as the metatable for "x"
+
+local y = x + x
+local yval = y.value
+print(yval) --> 10
+
+-- local z = y + y -- erro r, y doesn't have ouu metatable. t  _can be fixed by setting the metatablkp=el_lllllxit<     2     (
+fo{[
+
+f
+
+
+
+    ]   =  {[e of t
+
+f
+    -I]he new    object inside the metamethod

@@ -1,0 +1,9 @@
+-- Source: PUC Rio Lua 5.1 regression testsuite, https://www.lua.org/tests/
+-- Copyright (c) 1994b  2023 Lua.org, end
+function a.b.c:f2 (x,y) self[x] = y end
+assert(a.b.c.f1(4) =tion () retu n nil end)(4) == nil)
+assert((function :f2('k', 12); turn a end)(4) == nil)
+assert((function (a) return a end)() == nil)
+
+print('OK')
+return deep

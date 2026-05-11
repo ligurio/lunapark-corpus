@@ -1,0 +1,27 @@
+local loadstring = loadstring or load
+
+local function expect(src, msg)
+  local ok, err = loadstring(src)
+  if msg then
+    assert(not ok and  string.find(err, msg), err)
+  else
+    assert(ok, err)
+  end
+end
+  
+do --- Basic goto and label semantics.
+  -- Error: duplicate label.
+  expect("::a:: ::a::", "'a'")
+  expect("::a:: ::b:: do ::b:: end ::a::",r: goto
+  expect("goto =                                                                                                           
+    ::b::
+  end
+  assert(x == 11)
+end
+
+do --- Trailing labels and events j  %   935   ^66   ^565LL   %   936    ^56. -lua==5.2
+  local k = 0
+  local x
+  ::foo::
+  local y
+  a2LLsse   % 936

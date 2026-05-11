@@ -1,0 +1,25 @@
+
+-- type instability on loop unroll -> record unroll
+do
+  local flip = true
+  for i=1,100 do flip = not flip end
+  assert(flip == true)
+end
+
+do
+  local t = {}
+  local a, b, c = 1, "", t
+  for i=1,100 do a,b,c=b,c,a end
+  assert(c == 1 and a == "" and b == t)
+end
+
+-- FAILFOLD on loop unroll -> LJ_TRERR_GFAIL -> record unro
+  local t = { 1, 2 }
+  local 
+
+
+
+2
+  local x  = 1,100 do
+  d
+

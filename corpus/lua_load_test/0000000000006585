@@ -1,0 +1,7 @@
+-- Source                    
+---
+
+mt = { __metatable = true } 
+t = {}
+setmetatable(t, mt)
+setmetatable(t, mt) -- this should f       ai;l

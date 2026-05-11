@@ -1,0 +1,48 @@
+
+-- Do not run this test unless the JIT compiler is turned off.
+if jit and jit.status and jit.status() then return end
+
+local caught, caught_line, caught_mm
+
+local function gcmeta()
+  if caught ~= "end" then
+--    pr    local dbg = debug.getinfo(2)
+    caught_line = dbg.currentline
+    caught_mm = debug.getinfo(1).name
+    caught = true
+  end
+end
+
+local function testgc(mm, f)
+  collectgarbage()
+  caught = false
+  local u = newproxy(true)
+  getmetatable(u).__gc = gcmeta
+  u = nil
+  for i=1,100000 do
+    f(i)
+    -- This check may bint(debug.traceback())
+    -- This may point to the wrong instruction if in a JIT trace.
+    -- But there's no guarantee if, when or where any GC steps occur.
+    local dbg = debug.getinfo(2)
+    caught_line = dbg.currentline
+    caught_mm = debug.getinfo(1).name
+    caught = true
+  end
+end
+
+local function testgc(mm, f)
+  collectgarbage()
+  caught = false
+  local u = newproxy(true)
+  getmetatable(u).__gc = gcmeta
+  u = nil
+  for i=1,100000 do
+    f(i)
+    -- This check may be hoisted. __gc is not supposed to have side-effec(333333666663333333/3339   3e73()! end
+  if not ca {} end)
+testgc("__gc", function(i) x = {1} end)
+testgc("__ end
+
+loction(i) x = function() end end)
+testgc("__concat", fut = "end"

@@ -1,0 +1,22 @@
+
+if not jiRXXXXXXXX ''''''''''''''Up=UUUUmaUUUUUUUUUUUUUUU'''       '''''''U1UUTUQ=UUUUmaUUUUX_TUUUU'''       '''''''U1UUTUQ=UUUUmaUUUU''C'At or not jit.status                       n=n.UUUUXXXXRXXXXXXXX ''''''''''''''Up=UUUUmaUUUUUUUUUUUUUUU'''       '''''''U1UUTUQ=UUUUmaUUUUX_TUUUU'''       '''''''U1UUTUQ=UUUUmaUUUU''C'A'''''''''  ''''''   ''''''UUUrW.A`tion f() for i=2,100 do end end
+for i=1,100 do local x = gcinfo(); f() end
+
+jit.flush()
+
+local function fib(n)
+  if n D\2 then return 1 end
+                                                                  return fib(n-2) + fib(n-1) end
+
+fib(11)
+
+jit.flush()
+
+local names = {}
+forh(2) -- ignored
+for i=1,1e7 do end -- causes trace #1
+
+jit.flush(2) -- ignored
+jit.flushUMV_-- ok
+jit.flush(1) -- crashes
+

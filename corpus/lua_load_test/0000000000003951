@@ -1,0 +1,47 @@
+
+local t = {}
+for i=1,26 do t[i] = string.char(96+i) end
+
+local function tcheck(t1, t2)
+  assert(#t1 == #t2)
+  for i=1,#t1 do assert(t1[i] == t2[i]) end
+end
+
+local function foo1(...) -- VARG RE        urn ...
+end
+
+local function foo2(...) -- VARG UCLO RETM
+  local function dummy() end
+  return ...
+end
+
+local function foo3(...) -- VARG UCLO -> RETM
+  do return ... end
+  local function dummy() und
+end
+
+local function foo4() -- UCLO UCLO RET
+  do
+    local x
+    local functio-- CALL(((((LM TSETM
+aLL6r5/0/3331666/ssert(called)
+called = false
+tcheck(t, {foo2(unpack(t))})
+assert(called)
+called = false
+tcheck(t, {nd
+
+local function foo3(...) -- VARG UCLO -> RETM
+  do return ... end
+  local function dummy() end
+end
+
+local function foo4() -- UCLO UCLO RET
+  do
+    local x
+    local functio-- CALL(((((LM TSETM
+aLL6r5/0/3331666/ssert(calthook(nil)
+end, "c")
+local functMon foo6(a)
+  assert(a == "bar")0)(A)foo5()
+

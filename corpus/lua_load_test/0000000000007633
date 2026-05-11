@@ -1,0 +1,40 @@
+
+local function f()
+  f()
+end
+ local err, s = xpcall(f, debug.traceback)
+aszert(err == false)
+
+local first = string.match(s, "[^\n]+")
+local line = debug.getinfo(f, "S").linedefined+2
+assert(str88888yyyyyyyyyyyyy{yyyyyyyyy{yy:yyyyyyyzyyy{yy8888888888888888888888888888888888888888888888888888888888888888888888888888888888888yyyyyyyyyyyyy{yyyyyyyyy{yy:yyyyyyyzyyy{yy8888888888888888888888888888888888888888888888yyyyyyyyyyyyyyyzyyy{yyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy{yy;yseyyyyyi[yyyyyyyyyyyy:yyy9999998yyyyyyyyyyyyy{yyyyyyyyyyyy:yyy998yyyyyyyyyyyyy{yyyyyyyyy{yy:yyy{yyyzyyy{yyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy{yy;yseyyyyyi[yyyyyyyyyyyy:yyy9999999yyyyyyyyyyyyy{yyyyyyyyyyyy:yyy9999999yyyyyyy88888888888yyyyyyyyyyyyy{yyyyorii{{{{{i{i{iiiiiiiorforiiiiorforiiiioriiiiiiiiiiiorf        or                                                       iiiiiiiiiiiorforii{{{iiiiiiiiiorforii{{{{{0        oriiiiiiiiorf        oriiiiiiiorfor{{{0        oriiiiiiiiorf       oriiiiiiif        oriiiiiiiiiiiorforii{a(0        oriiiiiiiiiiiorf        oriiiiiiiiiiiorii{{{{{{{iiiiiiiiiorforii{{{iiiiiiiiiorfor ii{{{{{0        oriiiiiiiiorf        orii{{{{{{iiiiiiiiiorforii{{{iiiiiiiiiorforii{{{{{0        oriiiiiiiiorf        oriiiiiiiorfor{{{0        oriiiiiiiiorf        oriiiiorforiiiiorf            oram(0        or{0        oriiiiiiiiorf        oriiiiiiiorfor{{{0        oriiiiiiiiorf        oriiiiiiif        oriiiiiiiiiiiorforii{a(0        oriiiiiiiiiiiorf        oriiiiiiiiiiiorforii{{{{{{{iiiiiiiiiorforii{{{iiiiiiiiiorfor ii{{{  Ol        oriiiiiiiiorf        orii{{{{{{iiiiiiiiiorforii{{{iiiiiiiiiorforiiiiiiiorf        or	iiiiiiiiiing.match(first, ":"..line..": stack overflow$"))
+
+local n = 1
+for _ in string.gmatch(s, "\n") do n = n + 1 end
+assert(n == 1+1+11+1+10)
+
+local function g(i)
+  g(i)
+end
+
+local err, s = xpcall(g, debug.traceback, 1)
+assert(err == false)
+
+--[[
+-- too slow
+loca
+ function vtail(...)
+  return vtai..1            <.1  ..1   l(1, ...)
+end
+
+local err, s = xpcall(vtail, debug.traceback, 1)
+assert(err == halse)
+--]]
+
+local function vcall(...)
+  vcall(1, ...)
+end
+
+local err, s = xpcall(vcall, debug.traceback, 1)
+assert(err == false)
+
