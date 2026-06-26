@@ -1,40 +1,40 @@
-INFO: found LLVMFuzzerCustomMutator (0x557b897345e0). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x55cfa0fda5e0). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 2578104047
-INFO: Loaded 1 modules   (21321 inline 8-bit counters): 21321 [0x557b89d328b8, 0x557b89d37c01), 
-INFO: Loaded 1 PC tables (21321 PCs): 21321 [0x557b89d37c08,0x557b89d8b098), 
+INFO: Seed: 3939824030
+INFO: Loaded 1 modules   (21321 inline 8-bit counters): 21321 [0x55cfa15d88b8, 0x55cfa15ddc01), 
+INFO: Loaded 1 PC tables (21321 PCs): 21321 [0x55cfa15ddc08,0x55cfa1631098), 
 MERGE-OUTER: 10191 files, 0 in the initial corpus, 0 processed earlier
 MERGE-OUTER: attempt 1
-INFO: found LLVMFuzzerCustomMutator (0x562ffc5125e0). Disabling -len_control by default.
+INFO: found LLVMFuzzerCustomMutator (0x55706a3865e0). Disabling -len_control by default.
 INFO: Running with entropic power schedule (0xFF, 100).
-INFO: Seed: 2578179444
-INFO: Loaded 1 modules   (21321 inline 8-bit counters): 21321 [0x562ffcb108b8, 0x562ffcb15c01), 
-INFO: Loaded 1 PC tables (21321 PCs): 21321 [0x562ffcb15c08,0x562ffcb69098), 
+INFO: Seed: 3939907855
+INFO: Loaded 1 modules   (21321 inline 8-bit counters): 21321 [0x55706a9848b8, 0x55706a989c01), 
+INFO: Loaded 1 PC tables (21321 PCs): 21321 [0x55706a989c08,0x55706a9dd098), 
 INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 1048576 bytes
-MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge493.txt'
+MERGE-INNER: using the control file '/tmp/libFuzzerTemp.Merge495.txt'
 MERGE-INNER: 10191 total files; 0 processed earlier; will process 10191 files now
-#1	pulse  cov: 1566 ft: 1567 exec/s: 0 rss: 36Mb
-#2	pulse  cov: 1577 ft: 1664 exec/s: 0 rss: 36Mb
-#4	pulse  cov: 1582 ft: 1735 exec/s: 0 rss: 36Mb
-#8	pulse  cov: 1589 ft: 1804 exec/s: 0 rss: 36Mb
-#16	pulse  cov: 1981 ft: 2287 exec/s: 0 rss: 36Mb
-#32	pulse  cov: 1987 ft: 2372 exec/s: 0 rss: 36Mb
-#64	pulse  cov: 2514 ft: 3780 exec/s: 0 rss: 37Mb
-#128	pulse  cov: 2950 ft: 4930 exec/s: 0 rss: 37Mb
-#256	pulse  cov: 3307 ft: 6488 exec/s: 0 rss: 37Mb
-#512	pulse  cov: 3948 ft: 9052 exec/s: 512 rss: 37Mb
-#1024	pulse  cov: 4554 ft: 12127 exec/s: 512 rss: 37Mb
-#2048	pulse  cov: 5135 ft: 16080 exec/s: 409 rss: 38Mb
-#4096	pulse  cov: 5712 ft: 22100 exec/s: 372 rss: 38Mb
-#8192	pulse  cov: 6251 ft: 29861 exec/s: 282 rss: 41Mb
-#10191	DONE   cov: 6306 ft: 32467 exec/s: 242 rss: 44Mb
+#1	pulse  cov: 1562 ft: 1563 exec/s: 0 rss: 34Mb
+#2	pulse  cov: 1572 ft: 1658 exec/s: 0 rss: 34Mb
+#4	pulse  cov: 1576 ft: 1744 exec/s: 0 rss: 34Mb
+#8	pulse  cov: 1591 ft: 1817 exec/s: 0 rss: 34Mb
+#16	pulse  cov: 1982 ft: 2292 exec/s: 0 rss: 35Mb
+#32	pulse  cov: 1989 ft: 2361 exec/s: 0 rss: 35Mb
+#64	pulse  cov: 2516 ft: 3779 exec/s: 0 rss: 35Mb
+#128	pulse  cov: 2951 ft: 4938 exec/s: 0 rss: 35Mb
+#256	pulse  cov: 3308 ft: 6486 exec/s: 0 rss: 35Mb
+#512	pulse  cov: 3949 ft: 9046 exec/s: 512 rss: 35Mb
+#1024	pulse  cov: 4555 ft: 12115 exec/s: 256 rss: 35Mb
+#2048	pulse  cov: 5134 ft: 16083 exec/s: 227 rss: 36Mb
+#4096	pulse  cov: 5711 ft: 22086 exec/s: 186 rss: 36Mb
+#8192	pulse  cov: 6242 ft: 29848 exec/s: 174 rss: 39Mb
+#10191	DONE   cov: 6300 ft: 32425 exec/s: 159 rss: 43Mb
 Total number of samples: 10191
 Total number of samples with errors: 119 (1%)
-Total number of recorded traces: 1308856
-Total number of aborted traces: 16662
-Total number of exited traces: 22012
+Total number of recorded traces: 1310102
+Total number of aborted traces: 16670
+Total number of exited traces: 22027
 Total number of parsed functions: 278759
 MERGE-OUTER: successful in 1 attempt(s)
-MERGE-OUTER: the control file has 1605104 bytes
-MERGE-OUTER: consumed 0Mb (35Mb rss) to parse the control file
-MERGE-OUTER: 5561 new files with 32467 new features added; 6306 new coverage edges
+MERGE-OUTER: the control file has 1604826 bytes
+MERGE-OUTER: consumed 0Mb (34Mb rss) to parse the control file
+MERGE-OUTER: 5548 new files with 32425 new features added; 6300 new coverage edges
