@@ -1,0 +1,89 @@
+chunk {
+  stat {
+    forcyclelist {
+      names {
+        firstname {
+          name: ""
+          num: 0
+        }
+      }
+      expressions {
+        explast {
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            nil: 134217728
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              globalnames {
+                namelist {
+                  firstname {
+                    name {
+                      name: ""
+                      num: 0
+                    }
+                  }
+                }
+                explist {
+                  expressions {
+                    ellipsis: "\000\000\000\000\000\000"
+                  }
+                  explast {
+                  }
+                }
+              }
+            }
+            stat {
+              semicolon: true
+            }
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      length: 0
+                    }
+                    exp {
+                      ellipsis: ""
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  laststat {
+    semicolon: true
+  }
+}
