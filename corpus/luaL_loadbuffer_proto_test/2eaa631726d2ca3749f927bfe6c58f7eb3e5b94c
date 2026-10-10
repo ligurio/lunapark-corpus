@@ -1,0 +1,81 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                  stat {
+                    whilecycle {
+                      condition {
+                        binary {
+                          leftexp {
+                            str: "1"
+                          }
+                          binop {
+                            add: 0
+                          }
+                          rightexp {
+                            number: 2
+                          }
+                        }
+                      }
+                      doblock {
+                        block {
+                          chunk {
+                            stat {
+                              func {
+                                name {
+                                  firstname {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  lastname {
+                                    name: "\377\377\377\377\377\377\000\000"
+                                    num: 0
+                                  }
+                                }
+                                body {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            stat {
+                              localfunc {
+                                name {
+                                  name: ""
+                                  num: 8192
+                                }
+                                funcbody {
+                                  block {
+                                    chunk {
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              condition {
+                nil: 8192
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+      condition {
+      }
+    }
+  }
+}

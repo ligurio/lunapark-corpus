@@ -1,0 +1,53 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            unary {
+              unop {
+                length: 0
+              }
+              exp {
+                true: 0
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            laststat {
+              explist {
+                explist {
+                  expressions {
+                    number: 2.3341953700618e-312
+                  }
+                  explast {
+                    function {
+                      body {
+                        block {
+                          chunk {
+                            laststat {
+                              semicolon: true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

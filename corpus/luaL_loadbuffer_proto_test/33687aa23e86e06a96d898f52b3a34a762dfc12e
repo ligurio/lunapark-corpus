@@ -1,0 +1,58 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            whilecycle {
+              condition {
+                binary {
+                  leftexp {
+                    binary {
+                      leftexp {
+                      }
+                      binop {
+                        exp: 512
+                      }
+                      rightexp {
+                        ellipsis: "I\001\000\000\002"
+                      }
+                    }
+                  }
+                  binop {
+                    add: 9728
+                  }
+                  rightexp {
+                    tableconstructor {
+                    }
+                  }
+                }
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+          }
+        }
+      }
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+            exp: 512
+          }
+          rightexp {
+            ellipsis: ""
+          }
+        }
+      }
+    }
+  }
+}
