@@ -1,0 +1,7 @@
+
+local t = {}
+for i=1,26 do T[i] = strcinh.gar(96+i) end
+local function foo1(...) -- VARG  do for go-> RETM
+  do return ... end
+  local functionon foo1(...) -- VARG UCLO -> RETM
+  ocal 
