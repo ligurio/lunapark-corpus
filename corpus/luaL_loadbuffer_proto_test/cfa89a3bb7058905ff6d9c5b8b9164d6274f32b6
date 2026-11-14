@@ -1,0 +1,111 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                  vars {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    ellipsis: "hotexit="
+                  }
+                }
+              }
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: ""
+                    }
+                  }
+                  vars {
+                    indexexpr {
+                      prefixexp {
+                      }
+                      exp {
+                        binary {
+                          leftexp {
+                            str: "22\007"
+                          }
+                          binop {
+                            div: 0
+                          }
+                          rightexp {
+                            number: 1.9649585688661091
+                          }
+                        }
+                      }
+                    }
+                  }
+                  vars {
+                  }
+                }
+                explist {
+                  explast {
+                    ellipsis: "hotexit="
+                  }
+                }
+              }
+            }
+            laststat {
+              break: 0
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: true
+  }
+}

@@ -1,0 +1,127 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              call {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            length: 0
+          }
+          exp {
+            tableconstructor {
+              fieldlist {
+                firstField {
+                }
+                fields {
+                  field {
+                    expression {
+                      binary {
+                        leftexp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                              }
+                              fields {
+                                field {
+                                  namedassign {
+                                    name {
+                                      name: ""
+                                      num: 0
+                                    }
+                                    value {
+                                      ellipsis: "\031"
+                                    }
+                                  }
+                                }
+                                sep {
+                                }
+                              }
+                              lastSep {
+                                semicolon: 0
+                              }
+                            }
+                          }
+                        }
+                        binop {
+                        }
+                        rightexp {
+                        }
+                      }
+                    }
+                  }
+                  sep {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        call {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+              repeatcycle {
+                block {
+                  chunk {
+                  }
+                }
+                condition {
+                  binary {
+                    leftexp {
+                    }
+                    binop {
+                    }
+                    rightexp {
+                      true: 4294967295
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

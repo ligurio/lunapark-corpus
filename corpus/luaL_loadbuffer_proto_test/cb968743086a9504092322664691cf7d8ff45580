@@ -1,0 +1,69 @@
+chunk {
+  stat {
+    localnames {
+      namelist {
+        firstname {
+          name {
+            name: ""
+            num: 0
+          }
+        }
+        names {
+          name {
+            name: ""
+            num: 0
+          }
+          prefix {
+            const: true
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        namedassign {
+                          name {
+                            name: ""
+                            num: 0
+                          }
+                          value {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
