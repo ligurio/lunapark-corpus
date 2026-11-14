@@ -1,0 +1,79 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        prefixexp {
+          exp {
+            function {
+              body {
+                block {
+                  chunk {
+                    stat {
+                      list {
+                        varlist {
+                          var {
+                          }
+                          vars {
+                          }
+                        }
+                        explist {
+                          explast {
+                            binary {
+                              leftexp {
+                                prefixexp {
+                                }
+                              }
+                              binop {
+                                concat: 0
+                              }
+                              rightexp {
+                                prefixexp {
+                                  exp {
+                                    binary {
+                                      leftexp {
+                                        prefixexp {
+                                        }
+                                      }
+                                      binop {
+                                        concat: 0
+                                      }
+                                      rightexp {
+                                        prefixexp {
+                                          exp {
+                                            function {
+                                              body {
+                                                block {
+                                                  chunk {
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      first {
+        chunk {
+          stat {
+            semicolon: true
+          }
+        }
+      }
+    }
+  }
+}
