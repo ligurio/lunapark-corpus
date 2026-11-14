@@ -1,0 +1,47 @@
+chunk {
+  stat {
+  }
+  stat {
+    semicolon: true
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            localfunc {
+              name {
+                name: ""
+                num: 10240
+              }
+              funcbody {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                nil: 0
+              }
+            }
+            semicolon: true
+          }
+        }
+      }
+      condition {
+        nil: 16
+      }
+    }
+  }
+}

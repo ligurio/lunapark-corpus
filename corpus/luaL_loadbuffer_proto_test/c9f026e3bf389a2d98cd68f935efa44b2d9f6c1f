@@ -1,0 +1,119 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              call {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              expression {
+                prefixexp {
+                  var {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  tableconstructor {
+                    fieldlist {
+                      firstField {
+                        expression {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                expression {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                        expression {
+                                          tableconstructor {
+                                          }
+                                        }
+                                      }
+                                      fields {
+                                        field {
+                                          expression {
+                                            prefixexp {
+                                              functioncall {
+                                                namedArgs {
+                                                  prefixexp {
+                                                  }
+                                                  name {
+                                                    name: ""
+                                                    num: 0
+                                                  }
+                                                  args {
+                                                    tableconstructor {
+                                                      fieldlist {
+                                                        firstField {
+                                                        }
+                                                        fields {
+                                                          field {
+                                                          }
+                                                          sep {
+                                                            semicolon: 0
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                        sep {
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      lastSep {
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
