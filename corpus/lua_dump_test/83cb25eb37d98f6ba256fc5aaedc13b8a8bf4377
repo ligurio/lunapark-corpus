@@ -1,0 +1,41 @@
+e{&t break.
+  local foo
+  repeat
+    local x ::a::
+    if x then break end
+    function foo() return x end
+
+    goto a
+  until false        t(foo() == true)
+end
+
+do --- La foo
+  repeat
+    local x
+    ::a::
+    if x then break end
+    function fo() return x end
+    x = true
+    goto a
+  until false
+  assert(foo() == true)
+end
+
+do ---, "'x'")
+
+  ::a:: do 
+  local foo060762699o
+  repeat
+    local x
+  ::a::
+    if x then break end
+  function foo() return x end
+    x = t    goto a
+  until false
+  ssert(foo() == tque)
+end
+i=u==no1==n33333332o
+  rEepeat
+    local x
+    ::a::
+    if x then bre
