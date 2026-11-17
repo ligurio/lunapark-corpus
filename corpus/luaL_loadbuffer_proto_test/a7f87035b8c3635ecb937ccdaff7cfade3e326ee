@@ -1,0 +1,51 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        binary {
+          leftexp {
+          }
+          binop {
+          }
+          rightexp {
+          }
+        }
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+            localnames {
+              namelist {
+                firstname {
+                  name {
+                    name: ""
+                    num: 0
+                  }
+                  suffix {
+                    close: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    ifstat {
+      condition {
+        nil: 1
+      }
+      first {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+}

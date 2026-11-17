@@ -1,0 +1,85 @@
+chunk {
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                }
+                args {
+                  explist {
+                    explist {
+                      expressions {
+                        unary {
+                          unop {
+                          }
+                          exp {
+                            ellipsis: ""
+                          }
+                        }
+                      }
+                      expressions {
+                        unary {
+                          unop {
+                            not: 0
+                          }
+                          exp {
+                          }
+                        }
+                      }
+                      expressions {
+                        function {
+                          body {
+                            block {
+                              chunk {
+                                laststat {
+                                  break: 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      explast {
+                        prefixexp {
+                          functioncall {
+                            prefArgs {
+                              prefixexp {
+                              }
+                              args {
+                                explist {
+                                  explist {
+                                    expressions {
+                                    }
+                                    explast {
+                                      tableconstructor {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      condition {
+        unary {
+          unop {
+          }
+          exp {
+          }
+        }
+      }
+    }
+  }
+}
