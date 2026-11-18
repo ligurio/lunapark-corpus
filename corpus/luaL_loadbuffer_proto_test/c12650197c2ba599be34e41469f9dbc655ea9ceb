@@ -1,0 +1,131 @@
+chunk {
+  stat {
+    list {
+      varlist {
+        var {
+        }
+      }
+      explist {
+        explast {
+          binary {
+            leftexp {
+              prefixexp {
+              }
+            }
+            binop {
+              concat: 0
+            }
+            rightexp {
+              prefixexp {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  number: 0
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+              }
+              sep {
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    true: 1
+                  }
+                }
+              }
+              sep {
+              }
+            }
+            lastSep {
+              comma: 0
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                  number: 0
+                }
+                value {
+                }
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                  }
+                  value {
+                    true: 1
+                  }
+                }
+              }
+              sep {
+                comma: 0
+              }
+            }
+            fields {
+              field {
+                exprassign {
+                  key {
+                    ellipsis: ""
+                  }
+                  value {
+                  }
+                }
+              }
+              sep {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    semicolon: false
+  }
+  laststat {
+  }
+}

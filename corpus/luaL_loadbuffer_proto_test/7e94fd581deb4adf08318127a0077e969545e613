@@ -1,0 +1,56 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        tableconstructor {
+          fieldlist {
+            firstField {
+              exprassign {
+                key {
+                }
+                value {
+                  prefixexp {
+                    functioncall {
+                      prefArgs {
+                        prefixexp {
+                        }
+                        args {
+                          explist {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            lastSep {
+              semicolon: 16
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  ellipsis: "\377\377\377\377\377\377\377\377"
+                }
+                first {
+                  chunk {
+                    stat {
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}

@@ -1,0 +1,117 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 15
+          }
+          exp {
+            unary {
+              unop {
+                length: 15
+              }
+              exp {
+                tableconstructor {
+                  fieldlist {
+                    firstField {
+                      expression {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  unary {
+                    unop {
+                      negate: 15
+                    }
+                    exp {
+                      unary {
+                        unop {
+                          length: 15
+                        }
+                        exp {
+                          tableconstructor {
+                            fieldlist {
+                              firstField {
+                                expression {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                        semicolon: true
+                      }
+                      stat {
+                        whilecycle {
+                          condition {
+                            unary {
+                              unop {
+                                negate: 15
+                              }
+                              exp {
+                                unary {
+                                  unop {
+                                    length: 15
+                                  }
+                                  exp {
+                                    tableconstructor {
+                                      fieldlist {
+                                        firstField {
+                                          expression {
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                                stat {
+                                  semicolon: true
+                                }
+                                stat {
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+  }
+}

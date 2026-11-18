@@ -1,0 +1,68 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        unary {
+          unop {
+            negate: 0
+          }
+          exp {
+            unary {
+              unop {
+                length: 15
+              }
+              exp {
+                false: 131072
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  prefixexp {
+                    exp {
+                      function {
+                        body {
+                          block {
+                            chunk {
+                              stat {
+                                globalfunc {
+                                  name {
+                                    name: ""
+                                    num: 0
+                                  }
+                                  funcbody {
+                                    block {
+                                      chunk {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                first {
+                  chunk {
+                  }
+                }
+              }
+            }
+            laststat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
