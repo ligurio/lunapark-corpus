@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+        false: 256
+      }
+      first {
+        chunk {
+        }
+      }
+      clauses {
+        condition {
+          str: ""
+        }
+        block {
+          chunk {
+            stat {
+              ifstat {
+                condition {
+                  false: 256
+                }
+                first {
+                  chunk {
+                  }
+                }
+                clauses {
+                  condition {
+                    str: ""
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+                last {
+                  chunk {
+                    stat {
+                    }
+                    laststat {
+                      semicolon: true
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            laststat {
+              semicolon: true
+            }
+          }
+        }
+      }
+      last {
+        chunk {
+          stat {
+            ifstat {
+              condition {
+                false: 256
+              }
+              first {
+                chunk {
+                }
+              }
+              clauses {
+                condition {
+                  str: ""
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                  }
+                  laststat {
+                    semicolon: true
+                  }
+                }
+              }
+            }
+            semicolon: true
+          }
+          laststat {
+            semicolon: true
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+}
