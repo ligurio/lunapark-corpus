@@ -1,0 +1,112 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            nil: 9830400
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            binary {
+              leftexp {
+                str: "555555555555\24555555555555555555555555555"
+              }
+              binop {
+                mult: 16580608
+              }
+              rightexp {
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 0
+                }
+                startexp {
+                  str: "5555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stepexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                doblock {
+                  block {
+                    chunk {
+                      stat {
+                      }
+                      stat {
+                        forcyclename {
+                          name {
+                            name: "-"
+                            num: 0
+                          }
+                          startexp {
+                            str: "55555555555555555555555555555555555555"
+                          }
+                          stopexp {
+                            str: "55555555555555555555555555555555555555"
+                          }
+                          stepexp {
+                            prefixexp {
+                              var {
+                                name {
+                                  name: "\333"
+                                  num: 0
+                                }
+                              }
+                            }
+                          }
+                          doblock {
+                            block {
+                              chunk {
+                              }
+                            }
+                          }
+                        }
+                        semicolon: true
+                      }
+                    }
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+              forcyclename {
+                name {
+                  name: "-"
+                  num: 0
+                }
+                startexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                stopexp {
+                  str: "55555555555555555555555555555555555555"
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+              semicolon: false
+            }
+          }
+        }
+      }
+    }
+  }
+}
