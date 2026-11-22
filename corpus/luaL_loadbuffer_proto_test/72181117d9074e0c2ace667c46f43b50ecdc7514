@@ -1,0 +1,64 @@
+chunk {
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          functioncall {
+            prefArgs {
+              prefixexp {
+              }
+              args {
+                explist {
+                  explist {
+                    explast {
+                      str: "*"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+  stat {
+    list {
+      varlist {
+        var {
+        }
+        vars {
+          indexexpr {
+            prefixexp {
+            }
+            exp {
+              function {
+                body {
+                  parlist {
+                    vararg {
+                      name: "["
+                    }
+                  }
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      explist {
+        explast {
+          prefixexp {
+            functioncall {
+            }
+          }
+        }
+      }
+    }
+  }
+}
