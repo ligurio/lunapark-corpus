@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+          }
+          stat {
+            whilecycle {
+              condition {
+              }
+              doblock {
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+      }
+      first {
+        chunk {
+          stat {
+            repeatcycle {
+              block {
+                chunk {
+                }
+              }
+              condition {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                  }
+                  rightexp {
+                    prefixexp {
+                      var {
+                        indexname {
+                          prefixexp {
+                            exp {
+                              binary {
+                                leftexp {
+                                  binary {
+                                    leftexp {
+                                    }
+                                    binop {
+                                      concat: 0
+                                    }
+                                    rightexp {
+                                      str: "&"
+                                    }
+                                  }
+                                }
+                                binop {
+                                  equal: 822083584
+                                }
+                                rightexp {
+                                  prefixexp {
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          Name: "and"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          laststat {
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

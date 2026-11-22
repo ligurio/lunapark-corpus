@@ -1,0 +1,73 @@
+chunk {
+  stat {
+    semicolon: true
+  }
+  stat {
+    ifstat {
+      condition {
+        ellipsis: ""
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+          stat {
+          }
+          stat {
+            ifstat {
+              condition {
+                ellipsis: ""
+              }
+              first {
+                chunk {
+                }
+              }
+              last {
+                chunk {
+                  stat {
+                  }
+                }
+              }
+            }
+            semicolon: false
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        ellipsis: ""
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+    semicolon: false
+  }
+  stat {
+    ifstat {
+      condition {
+        ellipsis: ""
+      }
+      first {
+        chunk {
+        }
+      }
+      last {
+        chunk {
+        }
+      }
+    }
+    semicolon: true
+  }
+}
