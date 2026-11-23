@@ -1,0 +1,93 @@
+chunk {
+  stat {
+    forcyclename {
+      name {
+        name: ""
+        num: 0
+      }
+      startexp {
+      }
+      stopexp {
+        binary {
+          leftexp {
+            number: 155.46875
+          }
+          binop {
+            mod: 0
+          }
+          rightexp {
+            number: 155.46875
+          }
+        }
+      }
+      stepexp {
+        nil: 0
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    whilecycle {
+      condition {
+        number: 0
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+              whilecycle {
+                condition {
+                  binary {
+                    leftexp {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                            }
+                            exp {
+                              str: "11111\377\377\377\377\377\377\377\3771111111111111111111111111111111111111111111111111"
+                            }
+                          }
+                        }
+                      }
+                    }
+                    binop {
+                      concat: 0
+                    }
+                    rightexp {
+                      prefixexp {
+                        var {
+                          indexexpr {
+                            prefixexp {
+                            }
+                            exp {
+                              str: "11111\377\377\377\377\377\377\377\3771111111111111111111111111111111111111111111111111"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                doblock {
+                  block {
+                    chunk {
+                    }
+                  }
+                }
+              }
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+    semicolon: false
+  }
+}
