@@ -1,0 +1,120 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                  }
+                  binop {
+                    greater: 4
+                  }
+                  rightexp {
+                  }
+                }
+              }
+            }
+          }
+          binop {
+            concat: 0
+          }
+          rightexp {
+            prefixexp {
+              exp {
+                binary {
+                  leftexp {
+                    prefixexp {
+                      var {
+                      }
+                    }
+                  }
+                  binop {
+                    concat: 0
+                  }
+                  rightexp {
+                    prefixexp {
+                      functioncall {
+                        prefArgs {
+                          prefixexp {
+                          }
+                          args {
+                            explist {
+                              explist {
+                                explast {
+                                  tableconstructor {
+                                    fieldlist {
+                                      firstField {
+                                      }
+                                      lastSep {
+                                        semicolon: 0
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+    block {
+      block {
+        chunk {
+          stat {
+            call {
+              prefArgs {
+                prefixexp {
+                  functioncall {
+                    prefArgs {
+                      prefixexp {
+                        functioncall {
+                          namedArgs {
+                            prefixexp {
+                            }
+                            name {
+                              name: ""
+                              num: 3
+                            }
+                            args {
+                            }
+                          }
+                        }
+                      }
+                      args {
+                      }
+                    }
+                  }
+                }
+                args {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    semicolon: true
+  }
+  laststat {
+    semicolon: true
+  }
+}

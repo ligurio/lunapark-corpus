@@ -1,0 +1,36 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+      }
+      doblock {
+        block {
+          chunk {
+          }
+        }
+      }
+    }
+  }
+  stat {
+  }
+  stat {
+    repeatcycle {
+      block {
+        chunk {
+          stat {
+          }
+          stat {
+            semicolon: true
+          }
+          laststat {
+          }
+        }
+      }
+      condition {
+        true: 4096
+      }
+    }
+  }
+  stat {
+  }
+}
