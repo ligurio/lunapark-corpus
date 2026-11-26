@@ -1,0 +1,80 @@
+chunk {
+  stat {
+    whilecycle {
+      condition {
+        binary {
+          leftexp {
+            ellipsis: "."
+          }
+          binop {
+            sub: 0
+          }
+          rightexp {
+            function {
+              body {
+                parlist {
+                  namelist {
+                    namelist {
+                      firstname {
+                        name: ""
+                        num: 0
+                      }
+                    }
+                  }
+                }
+                block {
+                  chunk {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      doblock {
+        block {
+          chunk {
+            stat {
+            }
+            stat {
+              list {
+                varlist {
+                  var {
+                  }
+                  vars {
+                    indexname {
+                      prefixexp {
+                      }
+                      Name: "z"
+                    }
+                  }
+                }
+                explist {
+                  explast {
+                    str: "\\"
+                  }
+                }
+              }
+              semicolon: true
+            }
+            stat {
+            }
+          }
+        }
+      }
+    }
+  }
+  stat {
+    call {
+      prefArgs {
+        prefixexp {
+          exp {
+            number: 0
+          }
+        }
+        args {
+        }
+      }
+    }
+  }
+}
